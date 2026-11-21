@@ -1,0 +1,48 @@
+# Sources — Baseline (work 000)
+
+One line per source, numbered in order of first use. The baseline chapters cite these as [H1], [H2] …; a bare [H] marks a fact so well established in the record that no single source is needed. Where a source is a tertiary summary (an encyclopedia entry), the line names the primary or official history it relies on where that is stated. Sources consulted in Part 1 (chapters P1 and P2) are [S1]–[S44].
+
+[S1] "Battle of Binh Gia" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Binh_Gia (draws on MACV reporting and A. J. Birtle, US Army Center of Military History, 2024) — dates, VC 271st/272nd Regiments, ARVN Ranger and 4th Marine Battalion losses, US helicopter losses, VC claims
+[S2] "Viet Cong Attack Bien Hoa Air Base" — US Vietnam War Commemoration, https://vietnamwar50th.com/1945-1964_the_road_to_war/Viet-Cong-Attack-Bien-Hoa-Air-Base — date, duration, 4 killed and 72 wounded, up to 30 aircraft hit
+[S3] "The B-57B Canberra bomber kept getting destroyed on the ground in Vietnam" — HistoryNet, https://www.historynet.com/the-b-57b-canberra-bomber-kept-getting-destroyed-on-the-ground-in-vietnam/ — B-57Bs destroyed and damaged at Bien Hoa, 1 Nov 1964
+[S4] "Battle of Nam Dong" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Nam_Dong — garrison composition, Detachment A-726, timing, casualties, Donlon Medal of Honor
+[S5] "Attack on Camp Holloway" — Wikipedia, https://en.wikipedia.org/wiki/Attack_on_Camp_Holloway — 409th Battalion attack, US casualties, aircraft losses, Flaming Dart strikes, Qui Nhon bombing
+[S6] "Battle of Dong Xoai" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Dong_Xoai — units, sequence, casualties by source, 173rd Airborne Brigade commitment, Medals of Honor
+[S7] "Gulf of Tonkin incident" — Wikipedia, https://en.wikipedia.org/wiki/Gulf_of_Tonkin_incident (draws on the 2001 NSA history by R. J. Hanyok, declassified 2005) — 2 and 4 Aug 1964 actions, DESOTO and OPLAN 34A, Pierce Arrow, resolution
+[S8] "January 1964 South Vietnamese coup" — Wikipedia, https://en.wikipedia.org/wiki/January_1964_South_Vietnamese_coup — date, participants, arrests, US reaction
+[S9] "Operation Rolling Thunder" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Rolling_Thunder — first strike, restricted zones and route packages, 1965 sortie and loss figures, first SA-2 loss, VPAF growth, Operation Bolo, cumulative tonnage
+[S10] "September 1964 South Vietnamese coup attempt" — Wikipedia, https://en.wikipedia.org/wiki/September_1964_South_Vietnamese_coup_attempt — triumvirate, coup of 13–14 Sep, aftermath
+[S11] "Battle of Ba Gia" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Ba_Gia (draws on Birtle, US Army Center of Military History) — units, sequence, casualties by source, July 1965 loss of the post
+[S12] "1965 United States embassy bombing in Saigon" — Wikipedia, https://en.wikipedia.org/wiki/1965_United_States_embassy_bombing_in_Saigon — date, charge, killed and wounded
+[S13] "Battle of Song Be" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Song_Be — dates, units, adviser detachment B-34, casualties by source
+[S14] "9th Marine Expeditionary Brigade" — Wikipedia, https://en.wikipedia.org/wiki/9th_Marine_Expeditionary_Brigade — Karch, mission, III MAF formation 6 May 1965
+[S15] J. Shulimson and C. M. Johnson, *U.S. Marines in Vietnam: The Landing and the Buildup, 1965* — USMC History and Museums Division, https://www.marines.mil/Portals/1/Publications/U.S.%20Marines%20in%20Vietnam_The%20Landing%20and%20the%20Buildup%201965%20%20PCN%2019000307600_1.pdf — BLT 3/9 and BLT 1/3 landing, JCS restriction, 1 Apr 1965 change of mission, III MAF strength at end of 1965
+[S16] "Thanh Hoa Bridge" — Wikipedia, https://en.wikipedia.org/wiki/Thanh_Hoa_Bridge — strikes of 3–4 Apr 1965, aircraft, losses, MiG-17 engagement, 1972 destruction
+[S17] "Operation Arc Light" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Arc_Light — first mission, collision, aggregate sorties
+[S18] "Arc Light" — US Vietnam War Commemoration, https://www.vietnamwar50th.com/1965_stemming_the_tide/Arc-Light — 30 B-52s launched, target near Ben Cat, collision, 8 crewmen killed
+[S19] "Operation Arc Light" fact sheet — Air Force Historical Support Division, https://www.afhistory.af.mil/FAQs/Fact-Sheets/Article/458962/operation-arc-light — 27 B-52Fs of the 7th and 320th Bomb Wings struck; sortie growth 1966–67
+[S20] "Brinks Hotel bombing" — Wikipedia, https://en.wikipedia.org/wiki/Brinks_Hotel_bombing — date, charge, killed and wounded (sources differ), Johnson's refusal to retaliate
+[S21] *Foreign Relations of the United States, 1964–1968*, vol. III, document 97, editorial note — Office of the Historian, https://history.state.gov/historicaldocuments/frus1964-68v03/d97 — the 28 Jul 1965 announcement: 75,000 to 125,000, draft calls 17,000 to 35,000 a month, Airmobile Division
+[S22] "325th Division (Vietnam)" — Wikipedia, https://en.wikipedia.org/wiki/325th_Division_(Vietnam) — 95th Regiment in Kontum Dec 1964, 101st Feb 1965, 18th later; 33rd Regiment lineage; 95B at A Shau
+[S23] "Phan Huy Quat" — Wikipedia, https://en.wikipedia.org/wiki/Phan_Huy_Qu%C3%A1t — 16 Feb 1965 appointment, 19–20 Feb coup, 12 Jun 1965 resignation
+[S24] "Operation Steel Tiger" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Steel_Tiger — Barrel Roll 14 Dec 1964, Steel Tiger 3 Apr 1965, 1965 US estimate of monthly infiltration through Laos
+[S25] *FRUS 1964–1968*, vol. I, document 371, Embassy Saigon telegram, 6 Oct 1964 (Taylor) — https://history.state.gov/historicaldocuments/frus1964-68v01/d371 — Hop Tac priority on the Saigon area; provinces rated unsatisfactory rising from 7 (July) to 14 (August)
+[S26] "Operation Starlite" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Starlite — dates, units, deserter intelligence, casualties by source, Medals of Honor
+[S27] "Battle of Ia Drang" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Ia_Drang — Plei Me, LZ X-Ray and LZ Albany, units, B-52 support, casualties by source
+[S28] "Operation Masher" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Masher — dates, units, casualties by source, displacement, renaming, aftermath
+[S29] "Battle of A Shau" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_A_Shau (draws on Shulimson, USMC history) — garrison, weather, losses, Fisher rescue, loss of the valley
+[S30] "Buddhist Uprising" — Wikipedia, https://en.wikipedia.org/wiki/Buddhist_Uprising — Honolulu, Thi's dismissal, Da Nang and Hue, casualties, end
+[S31] "Operation Hastings" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Hastings — Task Force Delta, 324B Division, 90th and 812th Regiments, casualties
+[S32] "Battle of Long Tan" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Long_Tan — D Company 6 RAR, 275th Regiment and D445, weather, casualties by source
+[S33] "Operation Attleboro" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Attleboro — dates, units, casualties by source, caches, captured-document assessment
+[S34] "Operation Cedar Falls" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Cedar_Falls — Iron Triangle, Ben Suc removal, tunnels, casualties, VC return
+[S35] "Operation Junction City" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Junction_City — parachute assault, Prek Klok, Ap Bau Bang II, Suoi Tre, Ap Gu, casualties by source, displacement into Cambodia
+[S36] "Battle of Dak To" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Dak_To — PAVN 1st Division, US and ARVN units, Hill 875, ammunition dump, casualties by source, fire support totals
+[S37] "Civil Operations and Revolutionary Development Support" — Wikipedia, https://en.wikipedia.org/wiki/Civil_Operations_and_Revolutionary_Development_Support — creation 9 May 1967, Komer, structure, OCO precursor, RF/PF growth
+[S38] "1967 South Vietnamese presidential election" — Wikipedia, https://en.wikipedia.org/wiki/1967_South_Vietnamese_presidential_election — date, results, turnout, constitution of 1 Apr 1967, irregularities
+[S39] "Tet Offensive" (planning background) — Wikipedia, https://en.wikipedia.org/wiki/Tet_Offensive — Nguyen Chi Thanh, COSVN proposal, Revisionist Anti-Party Affair, October 1967 decision, Westmoreland's 21 Nov 1967 speech, MACV–CIA order-of-battle dispute
+[S40] E. E. Moïse, "Selected Statistics on the Vietnam War" — Clemson University, https://edmoise.sites.clemson.edu/VNStats.html — US personnel in Vietnam at year end; US deaths by hostile action by year
+[S41] "The Hill Fights" — Wikipedia, https://en.wikipedia.org/wiki/The_Hill_Fights — dates, Hills 861, 881S, 881N, 2/3 and 3/3 Marines, 325C Division, casualties
+[S42] "Con Thien" — Wikipedia, https://en.wikipedia.org/wiki/Con_Thien — Operation Buffalo, the Marketplace, September–October 1967 bombardment, supporting fires
+[S43] "Operation Igloo White" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Igloo_White — Jason study, Defense Communications Planning Group, Practice Nine/Dyemarker/Muscle Shoals, Task Force Alpha, sensors, cost
+[S44] *FRUS 1964–1968*, vol. IV, document 164, editorial note — https://history.state.gov/historicaldocuments/frus1964-68v04/d164 — authorization of the Hanoi–Haiphong POL strikes, 28–29 Jun 1966
