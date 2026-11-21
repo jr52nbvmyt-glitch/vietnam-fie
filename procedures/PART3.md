@@ -1,4 +1,4 @@
-<!-- fie v1.0 -->
+<!-- fie v1.0.1 -->
 # Part 3 — §4 The course of the war · §5 Delta ledger · §6 Changed / not changed
 
 **Trigger:** `CONTINUE` when the open memorandum's status is `part2`.

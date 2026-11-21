@@ -17,7 +17,7 @@
 #
 # Adding a variable is a version change: bump VERSION and every version header.
 
-version = "1.0"
+version = "1.0.1"
 
 # ----------------------------------------------------------------- population
 [[var]]

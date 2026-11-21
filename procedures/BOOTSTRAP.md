@@ -1,20 +1,21 @@
-<!-- fie v1.0 -->
+<!-- fie v1.0.1 -->
 # Bootstrap — read on the first turn of every thread
 
 The repository is the record. The conversation is scratch. Nothing you need may exist only in the conversation, and nothing in the record may come from memory.
 
 ## First turn of a thread
 
-1. **Attach and clone.** The project instructions name the repository. Call `add_repo` with that owner and repo and `access: "push"`, run the clone command it returns, then call `register_repo_root` with the clone's path. Work from the clone's root.
-2. **Git identity.** If a commit later fails for lack of identity, set it locally: `git config user.name "COMUSMACV (Claude)"` and `git config user.email "noreply@anthropic.com"`.
-3. **Status.** Run `python3 scripts/fie.py status` and act on it:
+1. **Find or attach the repository.** In a new-style project the repository is already attached and cloned when the thread starts: find the clone (it holds `scripts/fie.py`) and work from its root. If it is not there, call `add_repo` with the owner and repo the project instructions name and `access: "push"`, run the clone command it returns, then call `register_repo_root` with the clone's path.
+2. **Work on main, up to date.** The war is one sequence: every thread starts from the latest `main` and pushes back to it. Run `git checkout main` (or `git checkout -b main origin/main` if there is no local `main`), then `git pull --ff-only origin main`. If the pull refuses because the histories have diverged, stop and tell me: someone else has written to the record.
+3. **Git identity.** If a commit later fails for lack of identity, set it locally: `git config user.name "COMUSMACV (Claude)"` and `git config user.email "noreply@anthropic.com"`.
+4. **Status.** Run `python3 scripts/fie.py status` and act on it:
    - **Version** must equal the version the project instructions expect. If not, stop and tell me: the instructions field and the repository are out of step.
    - **Config incomplete**: stop, list the unset values, and ask me for them. Never choose a constraint setting yourself.
    - **Uncommitted changes or unpushed commits**: an earlier turn was interrupted. Look at `git status` and `git diff --stat`, tell me in one line what they are, then commit and push them before anything else.
    - **In progress**: a memorandum is open. If my message is CONTINUE, resume it; if it is a new provision, tell me memo NNN is open at Part N and ask whether to finish it first.
    - **Checkpoint due**: mention it in one line, then do what I asked.
-4. **Read** `rules/RULES.md` in full, `rules/CONFIG.toml`, and `schema/FORMATS.md`.
-5. **Read the procedure** for my message (table below) in full, and follow it.
+5. **Read** `rules/RULES.md` in full, `rules/CONFIG.toml`, and `schema/FORMATS.md`.
+6. **Read the procedure** for my message (table below) in full, and follow it.
 
 ## Commands
 
@@ -33,14 +34,22 @@ The repository is the record. The conversation is scratch. Nothing you need may 
 
 Before the first memorandum, `BASELINE` must have run (`fie.py new` refuses otherwise). If I send a provision first, tell me and offer to run `BASELINE`.
 
+## One piece of work at a time
+
+The memoranda form a single sequence: each one edits the chapters the next one reads. So:
+
+- **One thread per memorandum.** Its three parts run in the same thread, on `CONTINUE`. BASELINE, TNA, each checkpoint, each meta-checkpoint and each revision gets its own thread.
+- **Never two at once.** No thread that writes to the repository starts while another such thread has unfinished work. `fie.py status` shows open work; a new memorandum waits until the open one is complete and pushed.
+- **If you are a project's coordinator** (a new-style project's main chat, directing threads): start one thread per piece of work above, in order, each after the previous one has pushed. Route my `CONTINUE` to the thread whose work is open. Parallel threads are allowed only for work that writes nothing to the repository — reading, answering a question, research for me. Report progress from the files the threads send (`build/memos/…`, `build/WAR-HISTORY.md`, `history/TRAJECTORY-LOG.md`), not from your own summary of them.
+
 ## Every turn
 
-- **One thread per memorandum.** Its three parts run in the same thread, on `CONTINUE`. A checkpoint or meta-checkpoint gets its own thread.
 - **If you cannot see an earlier part** in the conversation (compaction, or a new thread), read it from `memos/NNN/`. Never reconstruct it.
 - **Every part ends the same way:**
   1. `python3 scripts/fie.py finish …` — fix every ERROR and run it again until it passes. Read every WARNING: fix it, or, where it reports a genuine shortfall, make sure the text states the reason (G7).
-  2. `git add -A && git commit -m "<what>" && git push`. If the push fails, retry once; if it still fails, tell me — the work is committed locally but survives only as long as this session.
+  2. `git add -A && git commit -m "<what>" && git push origin main`. Push straight to `main`: never leave work on a branch and never open a pull request — the next thread reads `main`, and work anywhere else does not exist for it. If the push is rejected because `main` moved, stop and tell me rather than merging: two pieces of work have run at once. If it fails for any other reason, retry once, then tell me — the work is committed locally but survives only as long as this session.
   3. Send me the reading copy the script names, with SendUserFile, display `render`. Do not paste the memorandum into chat.
   4. In chat, at most three sentences, as yourself: anything I should know (a floor shortfall and why, a decision you made, a ripple you followed), then the next command, e.g. *Send CONTINUE for Part 2.*
 - **Never edit** a finished part, a register in `history/` (registers are written by the script from blocks in your text), or anything in `build/`.
+- **Project memory is not a source.** A project's shared memory may hold my preferences and notes on how the work runs. It never holds, and you never take from it, a figure, finding, event, position, or the state of the war: those come only from the repository. Do not write summaries of memoranda into memory.
 - **Context.** Load only what the procedure says. The packs are sized for this; whole earlier memoranda are read only when a card lacks something you need, and `fie.py grep` finds the line first.

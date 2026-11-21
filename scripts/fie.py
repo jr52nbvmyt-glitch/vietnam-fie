@@ -24,6 +24,7 @@ from __future__ import annotations
 
 import argparse
 import re
+import signal
 import shutil
 import subprocess
 import sys
@@ -519,6 +520,9 @@ def cmd_status(_):
         print("META-CHECKPOINT DUE")
     es = load_toml(HIST / "endstate.toml")
     print(f"End state: rung ({es.get('rung')}) {es.get('rung_label')} — {es.get('summary')}")
+    branch = git("rev-parse", "--abbrev-ref", "HEAD")
+    if branch and branch != "main":
+        print(f"Git: ON BRANCH '{branch}' — switch to main and pull before writing anything (procedures/BOOTSTRAP.md step 2)")
     dirty = git("status", "--porcelain")
     ahead = git("rev-list", "--count", "@{u}..HEAD")
     if dirty:
@@ -1293,7 +1297,7 @@ def cmd_finish(a):
     build_all(quiet=True)
     print(f"\nFinished Part {part} of memo {tok}.")
     print(f"Send the user: build/memos/{tok}/Part-{part}.md" + (f" · build/memos/{tok}/MEMO-{tok}.md · build/WAR-HISTORY.md · history/TRAJECTORY-LOG.md" if part == 3 else ""))
-    print(f"Then: git add -A && git commit -m \"Memo {tok} Part {part}\" && git push")
+    print(f"Then: git add -A && git commit -m \"Memo {tok} Part {part}\" && git push origin main")
 
 
 # ----------------------------------------------------------------------------- baseline and reviews
@@ -1348,7 +1352,7 @@ def cmd_baseline(a):
         write(path, f"+++\n{fm_raw}\n+++\n{EVENT_HDR.sub(fix, body)}")
     write(HIST / ".last_work", "000\n")
     build_all(quiet=True)
-    print("Baseline finished. Send the user build/WAR-HISTORY.md, then: git add -A && git commit -m \"Baseline\" && git push")
+    print("Baseline finished. Send the user build/WAR-HISTORY.md, then: git add -A && git commit -m \"Baseline\" && git push origin main")
 
 
 def cmd_review(a):
@@ -1394,7 +1398,7 @@ def cmd_review(a):
     rt = read(d / "review.toml") if (d / "review.toml").exists() else f'work = "{tok}"\nkind = "{kind}"\nstatus = "open"\nafter_memo = "000"\n'
     write(d / "review.toml", re.sub(r'^status\s*=.*$', 'status = "complete"', rt, flags=re.M))
     build_all(quiet=True)
-    print(f"\n{tok} finished. Send the user its reading copy in build/reviews/{tok}/; then git add -A && git commit -m \"{tok}\" && git push")
+    print(f"\n{tok} finished. Send the user its reading copy in build/reviews/{tok}/; then git add -A && git commit -m \"{tok}\" && git push origin main")
 
 
 # ----------------------------------------------------------------------------- build
@@ -1563,6 +1567,7 @@ def cmd_grep(a):
 # ----------------------------------------------------------------------------- main
 
 def main():
+    signal.signal(signal.SIGPIPE, signal.SIG_DFL)  # quiet when piped into head
     ap = argparse.ArgumentParser(prog="fie.py", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sp = ap.add_subparsers(dest="cmd", required=True)
     sp.add_parser("status").set_defaults(f=cmd_status)

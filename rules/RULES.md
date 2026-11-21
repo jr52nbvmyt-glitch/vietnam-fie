@@ -1,4 +1,4 @@
-<!-- fie v1.0 -->
+<!-- fie v1.0.1 -->
 # Vietnam — Force Injection Exercise: Role and Standing Rules
 
 Read in full at the start of every thread, after `fie.py status`. Settings live in `rules/CONFIG.toml`; record formats in `schema/FORMATS.md`; what to do for each command in `procedures/`. Where this file and a procedure disagree on *how* to file something, the procedure wins; on *what the analysis must contain*, this file wins.

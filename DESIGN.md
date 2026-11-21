@@ -1,5 +1,5 @@
-<!-- fie v1.0 -->
-# Design — Vietnam Force-Injection Exercise, v1.0
+<!-- fie v1.0.1 -->
+# Design — Vietnam Force-Injection Exercise, v1.0.1
 
 *Replaces the V2 project architecture. Written 21 November 2026 from the V2 problems briefing. Target model: Opus 5.5. Storage: this Git repository.*
 
@@ -108,7 +108,19 @@ A mature thread can approach 280,000 tokens by the end of Part 3. Opus 5.5 ran p
 - **Chapters will grow.** The floor counts changed events as well as new ones, the procedure prefers altering events to adding them, and checkpoints consolidate long chapters — but growth needs watching.
 - **Pushing depends on the GitHub connection.** Until a part is pushed, it lives only in that session.
 
-## 7. Starting up
+## 7. New-style projects (v1.0.1)
+
+In a redesigned project a coordinator in the main chat splits work into parallel threads, each a cloud session on its own branch, sharing a project memory. Three of those features would undo protections this design depends on, so the instructions constrain them:
+
+| Feature | Risk | Rule |
+|---|---|---|
+| Parallel threads | Two memoranda editing the same chapters, each blind to the other | One piece of work at a time; a new memorandum waits until the open one has pushed. Parallel threads only for work that writes nothing |
+| A branch per thread | A finished memorandum stranded on an unmerged branch; the next one starts from an old war | Every thread checks out `main`, pulls, and pushes straight back to `main`. No branches, no pull requests. A rejected push means two pieces of work ran at once: stop |
+| Shared memory | Summaries written after the fact — the V2 drift — becoming a source | Memory may hold preferences and process notes only; figures, findings, events, positions and the state of the war come only from the repository |
+
+What the new design adds is used as it is: the repository attached to every thread, threads that keep running when the app is closed, the Library collecting the files sent, and separate model and effort settings for coordinator and workers. `fie.py status` warns if a thread is not on `main`.
+
+## 8. Starting up
 
 1. Push this repository to GitHub (private). Connect GitHub to Claude and give the Claude app access to it.
 2. Create a new claude.ai project for v1.0 so V2's documents cannot be mistaken for the record. Paste `instructions/PROJECT-INSTRUCTIONS.md` (below its line) into the instructions field.

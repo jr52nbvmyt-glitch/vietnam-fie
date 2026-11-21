@@ -5,7 +5,7 @@ memo = "NNN"
 title = ""                       # short title for indexes, e.g. "AH-64E attack helicopter battalion"
 received = ""                    # date the provision was received, YYYY-MM-DD
 status = "open"                  # open → part1 → part2 → complete (set by fie.py)
-version = "1.0"
+version = "1.0.1"
 phases_changed = []              # set by `fie.py chapters NNN P2 P3 …`
 links = []                       # earlier memos you explicitly want routed, e.g. ["003"]
 
