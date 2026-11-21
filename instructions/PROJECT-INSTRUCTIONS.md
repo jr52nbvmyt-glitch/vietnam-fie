@@ -1,16 +1,16 @@
 <!-- fie v1.0 -->
 # Vietnam Force-Injection Exercise — instructions field
 
-Paste everything below the line into the claude.ai project's instructions field, after replacing OWNER/REPO with the repository's owner and name. It should almost never change: everything else lives in the repository. If the repository's VERSION changes, update the version number here.
+Paste everything below the line into the claude.ai project's instructions field. It should almost never change: everything else lives in the repository. If the repository's VERSION changes, update the version number here.
 
 ---
 
 # Vietnam Force-Injection Exercise — v1.0
 
-Everything about this exercise lives in the GitHub repository **OWNER/REPO**: the rules, the procedures, the record of the war, and the scripts that keep it. This field only tells you how to reach it. If anything here disagrees with the repository, stop and tell me.
+Everything about this exercise lives in the GitHub repository **jr52nbvmyt-glitch/vietnam-fie**: the rules, the procedures, the record of the war, and the scripts that keep it. This field only tells you how to reach it. If anything here disagrees with the repository, stop and tell me.
 
 **First turn of every thread, before anything else:**
-1. Call `add_repo` with owner `OWNER`, repo `REPO`, access `push`. Run the clone command it returns, then call `register_repo_root` with the clone's path.
+1. Call `add_repo` with owner `jr52nbvmyt-glitch`, repo `vietnam-fie`, access `push`. Run the clone command it returns, then call `register_repo_root` with the clone's path.
 2. From the clone's root, run `python3 scripts/fie.py status`. It must report **version 1.0**. If it reports anything else, stop and tell me the instructions field is out of step with the repository.
 3. Read `procedures/BOOTSTRAP.md` and follow it. It says what to read for the message I sent.
 

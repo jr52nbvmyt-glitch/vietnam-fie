@@ -111,7 +111,7 @@ A mature thread can approach 280,000 tokens by the end of Part 3. Opus 5.5 ran p
 ## 7. Starting up
 
 1. Push this repository to GitHub (private). Connect GitHub to Claude and give the Claude app access to it.
-2. Create a new claude.ai project for v1.0 so V2's documents cannot be mistaken for the record. Paste `instructions/PROJECT-INSTRUCTIONS.md` (below its line) into the instructions field, with the repository name filled in.
-3. Set the political constraints in `rules/CONFIG.toml`. They are UNSET on purpose: V2's "Loosened" never said which constraints it relaxed.
+2. Create a new claude.ai project for v1.0 so V2's documents cannot be mistaken for the record. Paste `instructions/PROJECT-INSTRUCTIONS.md` (below its line) into the instructions field.
+3. Political constraints: set 21 November 2026 — every constraint as historical (MODELLED), no troop ceiling.
 4. `BASELINE` (one thread, three parts), then `TNA` (one thread).
 5. **Pilot:** re-run V2's four provisions as memoranda 001–004 — land reform with the NACC; police reform with merit selection; the CIA PAG with general officer reform; 2026 BCT/OSUT with TCCC. Three of the four V2 records are unverified, and re-running them is cheaper than carrying them. Fix whatever the pilot exposes, then freeze v1.0.
