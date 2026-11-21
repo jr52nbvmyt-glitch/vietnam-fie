@@ -23,15 +23,15 @@ phase_redraw = "AT_CHECKPOINT"    # AT_CHECKPOINT = memos may propose a redraw; 
 # "Loosened" is not a value: say which constraints are suspended.
 # ---------------------------------------------------------------------------
 [constraints]
-bombing_north   = "UNSET"   # restricted and prohibited zones around Hanoi and Haiphong; Washington target approval
-haiphong_mining = "UNSET"   # mining of Haiphong and the northern ports (historically prohibited until May 1972)
-laos_ground     = "UNSET"   # US/ARVN ground operations into Laos (historically barred; Lam Son 719 in 1971 was ARVN-only)
-cambodia_ground = "UNSET"   # ground operations into the Cambodian base areas (historically barred until May 1970)
-cambodia_air    = "UNSET"   # bombing of the Cambodian base areas (historically secret, from March 1969)
-north_ground    = "UNSET"   # ground operations into North Vietnam (historically never authorised)
-dmz             = "UNSET"   # DMZ conventions
-roe             = "UNSET"   # standing rules of engagement in the South
-troop_ceiling   = "NONE"    # carried over from V2 ("TROOP CEILING: suspended")
+bombing_north   = "MODELLED"   # restricted and prohibited zones around Hanoi and Haiphong; Washington target approval
+haiphong_mining = "MODELLED"   # mining of Haiphong and the northern ports (historically prohibited until May 1972)
+laos_ground     = "MODELLED"   # US/ARVN ground operations into Laos (historically barred; Lam Son 719 in 1971 was ARVN-only)
+cambodia_ground = "MODELLED"   # ground operations into the Cambodian base areas (historically barred until May 1970)
+cambodia_air    = "MODELLED"   # bombing of the Cambodian base areas (historically secret, from March 1969)
+north_ground    = "MODELLED"   # ground operations into North Vietnam (historically never authorised)
+dmz             = "MODELLED"   # DMZ conventions
+roe             = "MODELLED"   # standing rules of engagement in the South
+troop_ceiling   = "NONE"    # no limit on US personnel in RVN (set 21 Nov 2026)
 
 # ---------------------------------------------------------------------------
 # Floors — minima on effort, not targets (G7). A shortfall is reported in the
