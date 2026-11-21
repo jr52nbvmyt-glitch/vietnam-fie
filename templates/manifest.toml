@@ -1,0 +1,47 @@
+# Manifest for memorandum NNN. Fill every field; `fie.py check` rejects blanks.
+# status and phases_changed are set by fie.py; leave them alone.
+
+memo = "NNN"
+title = ""                       # short title for indexes, e.g. "AH-64E attack helicopter battalion"
+received = ""                    # date the provision was received, YYYY-MM-DD
+status = "open"                  # open → part1 → part2 → complete (set by fie.py)
+version = "1.0"
+phases_changed = []              # set by `fie.py chapters NNN P2 P3 …`
+links = []                       # earlier memos you explicitly want routed, e.g. ["003"]
+
+[deviation]                      # G6: "none", or describe the structural deviation in that part
+part1 = "none"
+part2 = "none"
+part3 = "none"
+
+# One [[provision]] per system. Letters a, b, c … in order.
+[[provision]]
+id = "PNNNa"
+designation = ""                 # full real designation
+category = ""                    # air | ground | naval | riverine | isr | infrastructure | institutional | medical | other
+quantity = ""                    # tagged, e.g. "24 airframes [U]"
+ceiling_spaces = ""              # tagged, e.g. "~480 [E: battalion TO&E of 400–500]"
+arrival = "1964-01-01"           # date in theater; not before campaign_opens
+in_service = ""                  # real-world in-service date, information only
+systems = []                     # any of FIND FIX STRIKE INTERDICT SECURE ADVISE SUBVERT SUSTAIN
+status = "active"                # active | lost | withdrawn | transferred
+
+# What each provision pushes, with a band of −3 to +3 (schema/VARIABLES.toml says what "higher" means).
+[[push]]
+provision = "PNNNa"
+var = ""
+band = 0
+note = ""                        # one line: the mechanism
+
+# What each provision depends on.
+[[depend]]
+provision = "PNNNa"
+var = ""
+note = ""
+
+# Optional: change the status of an earlier provision.
+# [[status_change]]
+# provision = "P003a"
+# status = "transferred"
+# date = "1971-06"
+# note = "Handed to the VNAF under Vietnamization"

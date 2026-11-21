@@ -1,0 +1,87 @@
+<!-- fie v1.0 -->
+# Part 3 — §4 The course of the war · §5 Delta ledger · §6 Changed / not changed
+
+**Trigger:** `CONTINUE` when the open memorandum's status is `part2`.
+**Output:** edited chapters in `memos/NNN/chapters/`, `memos/NNN/part3.md` (created from the template when Part 2 finished), and `history/endstate.toml` if the end state changes. Reading copies: `build/memos/NNN/Part-3.md`, `build/WAR-HISTORY.md`, `history/TRAJECTORY-LOG.md`.
+
+§4 is the largest section of the memorandum and is never compressed. It now has two halves: **the war itself**, which you change by editing the chapters, and **the analysis of the change**, which you write in `part3.md`.
+
+## Steps
+
+1. If Parts 1 and 2 are not visible in the conversation, read them from `memos/NNN/`.
+2. `python3 scripts/fie.py pack NNN --part 3`, then read `build/packs/PACK-NNN-part3.md`.
+3. **Read every chapter** in `history/chapters/`, in phase order. This is the war as it now stands, with every earlier provision in it. Write nothing about the war until you have read it. Once the war outgrows the full-read limit, the pack says so and switches to digest mode: read in full the chapters you will change (and the one before each), and the pack's exact digests for the rest.
+4. **Decide which phases this provision materially changes** (materiality rule below), and stage them: `python3 scripts/fie.py chapters NNN P2 P3 …` (add more later the same way; `--drop Pk` unstages).
+5. **Edit the staged chapters** in `memos/NNN/chapters/` with the Edit tool — see *Editing the war*.
+6. **Write `part3.md`** — see *The analysis*. Write §4.0 last of the §4 sections, after the chapters are edited, from the chapters.
+7. **End state.** If the war's end changes, edit `history/endstate.toml`: the fields, `last_changed = "NNN"`, and a new `[[history]]` entry (`by`, `rung`, `reason`).
+8. `python3 scripts/fie.py finish NNN --part 3`. It stamps the events you touched, promotes your chapters into `history/`, appends the log, positions and persons, and rebuilds the War History. Then commit, push, and send `build/memos/NNN/Part-3.md`, `build/WAR-HISTORY.md` and `history/TRAJECTORY-LOG.md`, and close.
+
+## Editing the war
+
+The chapters are the only copy of the war. You change them; you never retell them.
+
+- **Edit in place. Never rewrite a passage that does not change.** Unchanged text is carried forward word for word, which is what keeps the hundredth memorandum's Phase II the same war as the tenth's. If divergence has made a chapter unworkable as an edit, rewrite it and declare the deviation in the manifest (G6).
+- **A historical event that plays out differently:** edit its text; change its origin from `HIST` to `HIST-ALT`; say in the text what changed and which provision or finding changed it.
+- **A historical event that no longer happens:** origin `CANCELLED`; replace its text with what happens instead and why it does not occur. Never delete an event.
+- **A new event:** insert it at its date, ID `EVNNN-k` (k counts from 1 across all chapters in this memorandum), origin `NEW` (a provision caused it) or `FREE` (free play, G4), works field `NNN`. New operations take operation names: `Operation SILVER LANCE`.
+- **An event that moves into another phase:** `CANCELLED` where it was, with a pointer; `NEW` where it now falls, citing the old ID.
+- **Prefer changing the war to adding to it.** The war has only so many battles. Where a provision changes how an existing event goes, alter that event rather than adding a parallel one; the floor counts events created *or* changed.
+- **Keep events in date order**, and keep the overview and `## How the phase ends` consistent with them.
+- **Update the phase's `end_vector`**: bands for each headline variable at the phase's end against the historical state at the same date. If a band moves, the next phase must answer it (ripple rule).
+- Figures the exercise generates carry `[X-NNN]`; historical ones `[H]`; earlier memoranda's `[M…]`.
+
+**The chronicle standard.** Every phase is written as a chronicle, not a trend report. A trend report says the interdiction campaign degraded throughput and the offensive culminated early. A chronicle says which formations, on which dates, at which places, with what, against whom, and with what result. Every event you create or change carries:
+
+- a date, or a range tight enough to be useful;
+- the formations on both sides, by designation;
+- the place, by name — and by grid, route number or province where it sharpens the picture;
+- the systems and munitions that decided it, by designation;
+- terrain, weather, canopy or monsoon where they bore on the outcome;
+- the outcome in concrete terms — ground taken or lost, tonnage, hulls, airframes, prisoners, a bridge standing or down;
+- casualties on both sides, with their reliability stated per A13.
+
+An event that cannot be written to this standard is being asserted rather than analysed. Find the detail, or mark the event as an estimate and say what it rests on. **A new operation is described at exactly the granularity of a historical one.** A new operation described more thinly is a failure of nerve, not of information.
+
+**At least one event per memorandum is narrated at length because it embodies a §2 downstream effect** rather than the provision's primary use — the enemy declining battle, the bottleneck that moved, the released formation arriving somewhere nobody planned for it. Cite the finding ID in the event's text. This is how the second-order analysis is shown to be true of the world rather than asserted about it.
+
+## The analysis — `part3.md`
+
+### `## §4.0 The course of the war`
+
+The whole war, January 1964 to its end, as it now runs with everything COMUSMACV holds — a through-line of 1,500–3,500 words in his voice, written fresh in every memorandum. Write it after editing the chapters and from them: it may not contradict a chapter, and it ends where `history/endstate.toml` says the war ends. Show where this provision bends the line and where the line holds regardless of it. This is the part of the memorandum most worth reading; write it as history, not summary.
+
+### One section per phase: `## §4.Pk …` (the template lists them)
+
+**Materiality rule.** Full depth for every phase the provision materially changes. For a phase it does not change, a **stated null** of 40–160 words naming the specific reason it fails to bite, under `<!-- null Pk -->`. A null is an analytical claim and must be defended; "unchanged" and move on is a failure, and padding is equally a failure. If the phase before it had its end vector moved (the checker calls this a ripple), the null must say why the incoming change does not alter this phase, and carry `<!-- ripple-addressed -->` — or the phase must be staged and revised after all.
+
+**A revised phase**, in this order:
+
+1. `<!-- chapter Pk -->` — the chronicle. The reading copy inlines your edited chapter here, with ◆ on the events you created or changed. It holds three kinds of thing, kept distinct: historical events that play out differently; historical events that no longer happen, with the reason; and new operations the provisions create.
+2. `### Mechanism` — why it went that way: which provision, which interaction, which §2 finding by ID. Each revised phase carries at least one finding forward by ID, and across §4 at least one of them is the strongest positive effect, grounded in a dated, named event. A phase written purely in first-order terms — the capability arrives, does its job, the phase improves — has not been analysed. Equally, a phase written purely in limitations, adaptations and costs has not been analysed either.
+3. `### Enemy response and initiative` — what the enemy does, as reaction and on his own initiative (G3). What he detected, when, and what he did about it; what the adaptation cost him. At least once per memorandum, mark with `<!-- initiative -->` a decision not provoked by anything you did, taken for his own reasons, on his own timeline, out of his own politics, doctrine, rivalry, or misreading, and state what drove it — at the chronicle's standard of specificity.
+4. `### Causal chains` — at least three per memorandum across all phases, each reaching a third link: `**CNNN-k** [lag] A → B → C → D`, lag one of `immediate`, `weeks`, `months`, `war-shaping`. The terminal link must satisfy: **it would not have been predicted from A alone.** A chain whose third link restates its first has failed; discard it and find another. Place each chain in the phase where its terminal link lands, cross-referring to the phase where it begins.
+5. `### Downstream` — consequences for every later phase.
+6. `### Clock` — from Phase III on: the provision's effect on **American political tolerance** through the US casualty rate, the visibility of escalation, the appearance of progress or stalemate, and the appropriation cycle. A provision that wins battles and shortens the clock may be a net loss. This is the mechanism by which the war was actually decided.
+
+### `## §4.H Historical comparison`
+
+Across all phases, what the cumulative force has changed from history, stated concretely — formations preserved or destroyed, cities held or lost, offensives blunted, months gained, lives saved, capabilities created — with the margin stated plainly where the outcome is substantially better than historical.
+
+### `## §4.N Net assessment and end state`
+
+The A9 call: which rung the cumulative force now makes reachable, and why the next is not; or, per G5, the outcome in its own terms first. If the war's shape has outgrown its phases, propose a redraw here (G2); the next checkpoint carries it out.
+
+### `## §5 Delta ledger`
+
+Changes only: forces gained or lost, variables moved and by how many bands, new categories. The inventory lives in `build/INDEX.md`.
+
+### `## §6 Changed / not changed`
+
+Two bullet lists, `### What has changed` and `### What has not changed`, at least three items each. **"What has changed" carries analytical priority** — genuine improvements at their true weight, with the margin over the historical baseline where it is substantial. Then the constraints, deficits and problems that persist. The balance between the two reflects the balance of reality, not a presumption that downsides and upsides deserve equal space. Do not soften genuine achievement to match the tone of genuine limitation; do not inflate limitation to balance achievement. Back-reference is permitted here (C2).
+
+### Blocks at the end
+
+- `<!-- log -->` — the Trajectory Log entry, 80–220 words: how this provision shifted the war's course and where the end state moved, written for a reader following the whole arc provision by provision. Not a summary of the memorandum.
+- `<!-- positions -->` — any judgment this memorandum commits to that later ones must not silently contradict, and any reversal (E3), in the register format.
+- `<!-- persons -->` — anyone, historical or invented, who now recurs.

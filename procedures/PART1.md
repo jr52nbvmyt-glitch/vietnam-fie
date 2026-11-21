@@ -1,0 +1,47 @@
+<!-- fie v1.0 -->
+# Part 1 — Triage and §1 Provision dossier
+
+**Trigger:** a provision arrives and no memorandum is in progress.
+**Output:** `memos/NNN/manifest.toml`, `sources.md`, `part1.md`. Reading copy: `build/memos/NNN/Part-1.md`.
+
+## Steps
+
+1. `python3 scripts/fie.py new` — note the memorandum number NNN it opens.
+2. **Triage — fill `memos/NNN/manifest.toml`.**
+   - One `[[provision]]` per distinct system: `PNNNa`, `PNNNb` … A provision message naming two systems makes two provisions.
+   - `quantity`: as stipulated, tagged `[U]`. If the message gives none, choose a realistic first increment and tag it `[E: basis]`.
+   - `arrival`: as stipulated, else `default_arrival` from CONFIG. Never before the campaign opens (A1a).
+   - `systems`: the functional systems it joins (FIND, FIX, STRIKE, INTERDICT, SECURE, ADVISE, SUBVERT, SUSTAIN).
+   - `[[push]]` and `[[depend]]`: every world variable it moves (with a band) and every variable it relies on, from `schema/VARIABLES.toml`. Read each variable's "higher means" before choosing a sign. This drives routing in Part 2, so be generous with `depend` — the cross-system interactions travel through what a provision depends on. Draft now; refine in Part 2.
+   - `links`: earlier memoranda you already know this one must be read against.
+3. **Research the specifications.** Use web search and fetch: manufacturer data, service publications, official programme documents, reputable defence references. For an institutional or programme provision, the sources are its design, comparable real programmes, and the historical studies of the problem it addresses. Record every source you use in `sources.md` as `[S1] Title — publisher or URL — what it supports`, numbered in order of first use. Cite them in the text. Where no source gives a figure, estimate and tag `[E: basis]`. Never fabricate (A3a).
+4. **Write `memos/NNN/part1.md`.** The file exists from the template. For each provision, one section `## §1.<n> <full designation> — PNNNa` with all sixteen fields below as `### D<k> · <name>` headings. Never abbreviate a field, never write "as with the previous system" (C2, C3). Every figure carries a tag.
+5. **Card blocks.** D14, D15 and D16 are written inside their card blocks (the template places them), so the card takes them verbatim. After D16, fill `card:figures` with five to ten tagged bullets: the figures a later memorandum is most likely to need. Write card blocks to stand alone — a later memorandum sees only the card.
+6. `python3 scripts/fie.py finish NNN --part 1`, then commit, push, send `build/memos/NNN/Part-1.md`, and close (BOOTSTRAP, *Every turn*).
+
+## The sixteen fields
+
+| Field | Content |
+|---|---|
+| **D1 · Designation, manufacturer, in-service date, quantity, unit organisation** | Full designation and variant, manufacturer, real-world in-service date, quantity provided, and how it is organised in theater (units, sections, basing) |
+| **D2 · Crew and complement; personnel spaces against the ceiling** | Crew per platform or staff per element, total personnel, and **the personnel spaces it consumes** under CONFIG's troop ceiling setting |
+| **D3 · Weapons and payload** | With munition designations and quantities |
+| **D4 · Sensors: triple canopy, night, monsoon** | With designations and detection ranges against stated target types — and specifically **performance under triple canopy, at night, and in monsoon** |
+| **D5 · Performance** | Range, speed, endurance, altitude, protection |
+| **D6 · Communications, datalink, and talking to ARVN** | Architecture, and whether it can talk to ARVN |
+| **D7 · Domain conditions** | **Air:** basing, runway length and surface, revetment and hardening needs, and survivability against the *specific* threat — small arms and 12.7mm over the South, 37mm and 57mm AAA over the Trail, SA-2 and MiG-21 over the North. **Ground:** mobility in paddy, canopy and laterite; monsoon degradation. **Naval or riverine:** draught, sea state, the Rung Sat and delta channel constraints |
+| **D8 · Logistics footprint** | Fuel, spares, specialist personnel, sustainment rate, and what it needs that RVNAF cannot supply |
+| **D9 · Transferability to ARVN** | Could this be handed over under Vietnamization, on what timeline, with what training pipeline, and what happens to it if it is transferred |
+| **D10 · Employment envelope** | The conditions under which it performs to specification, and the conditions under which performance collapses: weather, sea state or monsoon, canopy, night, EW environment, radius from base, and tempo sustained over weeks rather than demonstrated once |
+| **D11 · Failure modes** | How it breaks, what breaks first, what a partial failure looks like as distinct from a total one, and what the force does during the window it is unavailable |
+| **D12 · Degradation curve** | Capability at month one against month twelve: mission-capable rate, crew proficiency, spares depth, and specifically what declines first |
+| **D13 · Comparative benchmark** | The in-theater system it displaces or outperforms, named, and the size of the margin. "Better" is not an attribute; a stated multiple or delta against a named baseline is |
+| **D14 · Negative specification** | What it cannot do that a reader of everything above might reasonably assume it can. State this explicitly. It is the most useful line in the dossier, because it is what stops §2 inheriting an inflated premise |
+| **D15 · What it denies the enemy** | If anything |
+| **D16 · Honest verdict** | One paragraph on what it actually buys |
+
+**Institutional and programme provisions** (reforms, training systems, advisory programmes, medical systems): the fields keep their numbers and are read as follows. D3 — *instruments and authorities*: the laws, funds, powers and leverage it brings, and what it can compel. D4 — *information inputs*: what it learns, how, and how reliably in contested hamlets and at night. D5 — *throughput and capacity*: cases, hectares, trainees, patients per month, and the rate limit. D6 — *reporting chain and interface with the GVN and RVNAF*. D7 — *reach and security preconditions*: which provinces, districts and hamlets it covers, and what security it needs to operate. State the reading in the field's first line.
+
+## Rules that bind hardest here
+
+A3 and A3a (real figures, sources, no fabrication), A4 (2026 configurations), A6 (which half of find-and-fix it touches), A11 (precise designations), C2 and C3 (no back-reference, no compression).

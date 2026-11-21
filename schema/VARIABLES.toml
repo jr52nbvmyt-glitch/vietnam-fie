@@ -1,0 +1,487 @@
+# World variables — the controlled vocabulary through which provisions interact.
+#
+# Provisions rarely act on each other directly; they act on the same parts of the
+# war. Each provision's manifest declares which variables it PUSHES (with a band)
+# and which it DEPENDS ON. scripts/fie.py routes earlier provisions to a new memo
+# by shared variables, and builds a ledger per variable.
+#
+# Bands are judgments, never measurements (A12, A13):
+#   0 no effect · ±1 noticeable · ±2 substantial · ±3 transformative
+# For a provision's push: its own contribution, other things equal.
+# For a phase end vector: the state at the end of the phase relative to the
+# historical state at the same date.
+# "higher" says what a positive band means for that variable.
+#
+# vector = true marks the headline variables every phase chapter carries in its
+# end vector. The ripple rule compares these.
+#
+# Adding a variable is a version change: bump VERSION and every version header.
+
+version = "1.0"
+
+# ----------------------------------------------------------------- population
+[[var]]
+id = "POP.night_control"
+name = "Night control of hamlets"
+higher = "more hamlets held by the GVN after dark"
+indicators = "VCI tax collection; PF night ambush and patrol rate; hamlet officials sleeping in the hamlet; HES only with its A13 caveat"
+systems = ["SECURE"]
+vector = true
+
+[[var]]
+id = "POP.displacement"
+name = "Displacement and forced urbanisation"
+higher = "more refugees and more rural depopulation"
+indicators = "refugee registrations; urban population growth; abandoned hamlets in free-fire areas"
+systems = ["SECURE", "STRIKE"]
+vector = true
+
+[[var]]
+id = "POP.civilian_harm"
+name = "Civilian harm from all sides' operations"
+higher = "more civilian deaths and injuries"
+indicators = "province hospital admissions by cause; claims paid; enemy terror incidents"
+systems = ["STRIKE", "SECURE"]
+vector = false
+
+[[var]]
+id = "POP.gvn_legitimacy"
+name = "Legitimacy of the Saigon government in the countryside"
+higher = "more rural acceptance of the GVN"
+indicators = "voluntary intelligence from the population; rice sold to the GVN rather than taxed by the VC; voluntary RF/PF enlistment"
+systems = ["SECURE", "SUBVERT"]
+vector = true
+
+[[var]]
+id = "POP.land_tenure"
+name = "Land tenure"
+higher = "more owner-cultivators with secure title"
+indicators = "titles distributed and still held; rents actually paid to absentee landlords"
+systems = ["SECURE"]
+vector = false
+
+[[var]]
+id = "POP.rural_economy"
+name = "Rural economy"
+higher = "more rice production and market access"
+indicators = "paddy output; rice reaching provincial markets; fertiliser and credit uptake"
+systems = ["SECURE", "SUSTAIN"]
+vector = false
+
+# ------------------------------------------------------------------- economy
+[[var]]
+id = "ECON.inflation"
+name = "Inflation and the piaster"
+higher = "more inflation"
+indicators = "Saigon retail price index; piaster black-market rate"
+systems = ["SUSTAIN"]
+vector = false
+
+[[var]]
+id = "ECON.rice_denial"
+name = "Rice denial to the enemy"
+higher = "less rice reaching the VC and PAVN in the South"
+indicators = "enemy rice caches found; enemy rations in captured documents; prisoner reports of hunger"
+systems = ["SECURE", "INTERDICT"]
+vector = false
+
+# ---------------------------------------------------------------- government
+[[var]]
+id = "GVN.admin_capacity"
+name = "Province and district administration"
+higher = "more functioning administration"
+indicators = "district officials resident and working; budgets executed; village elections held and respected"
+systems = ["SECURE", "ADVISE"]
+vector = false
+
+[[var]]
+id = "GVN.corruption"
+name = "Corruption and diversion"
+higher = "more corruption"
+indicators = "US supplies on the black market; sale of offices; ghost soldiers on unit rolls"
+systems = ["ADVISE", "SUSTAIN"]
+vector = false
+
+[[var]]
+id = "GVN.political_stability"
+name = "Political stability in Saigon"
+higher = "more stable government and junta cohesion"
+indicators = "coups and coup attempts; Buddhist and student unrest; cabinet turnover"
+systems = ["ADVISE"]
+vector = true
+
+[[var]]
+id = "GVN.police"
+name = "National Police in the countryside"
+higher = "more capable and present rural police"
+indicators = "police resident in villages; arrests that lead to convictions; identity-card coverage"
+systems = ["SECURE", "SUBVERT"]
+vector = false
+
+# ------------------------------------------------------------ VC and the VCI
+[[var]]
+id = "VCI.strength"
+name = "The VC infrastructure"
+higher = "a stronger, better-functioning VCI"
+indicators = "documents captured from village and district committees; tax receipts; cadre replacement rate"
+systems = ["SUBVERT", "SECURE"]
+vector = true
+
+[[var]]
+id = "VCI.tax_take"
+name = "VC taxation"
+higher = "more revenue to the VC"
+indicators = "captured tax ledgers; prisoner and defector reports"
+systems = ["SUBVERT", "SECURE"]
+vector = false
+
+[[var]]
+id = "VC.recruitment"
+name = "VC recruitment and conscription in the South"
+higher = "more recruits"
+indicators = "southern-born share of captured soldiers; age of captured guerrillas"
+systems = ["SECURE", "SUBVERT"]
+vector = false
+
+[[var]]
+id = "VC.local_force"
+name = "VC local force and guerrillas"
+higher = "stronger local force and guerrilla units"
+indicators = "incidents initiated by local units; mines and booby traps encountered"
+systems = ["SECURE", "FIX"]
+vector = false
+
+[[var]]
+id = "VC.main_force"
+name = "VC main force"
+higher = "stronger southern main-force units"
+indicators = "regimental strengths from documents; southern share of main-force fillers"
+systems = ["FIX", "STRIKE"]
+vector = false
+
+# ------------------------------------------------------- PAVN and Hanoi
+[[var]]
+id = "PAVN.strength_south"
+name = "PAVN combat strength in the South"
+higher = "more PAVN combat power in RVN"
+indicators = "identified PAVN regiments in country; infiltration groups traced to units"
+systems = ["FIX", "STRIKE"]
+vector = false
+
+[[var]]
+id = "ENEMY.engagement_control"
+name = "Enemy control of engagements"
+higher = "the enemy decides more often whether, when and where battle happens"
+indicators = "share of contacts initiated by the enemy; share of contacts broken off by the enemy"
+systems = ["FIND", "FIX"]
+vector = true
+
+[[var]]
+id = "ENEMY.regeneration"
+name = "Enemy regeneration in sanctuary"
+higher = "faster rebuilding of mauled units"
+indicators = "time from a unit's mauling to its reappearance at strength"
+systems = ["INTERDICT"]
+vector = false
+
+[[var]]
+id = "HANOI.will"
+name = "Hanoi's commitment to armed reunification"
+higher = "more commitment"
+indicators = "Politburo resolutions; mobilisation decrees; negotiating posture"
+systems = ["STRIKE", "SUBVERT"]
+vector = true
+
+# ----------------------------------------------- the Trail and infiltration
+[[var]]
+id = "TRAIL.capacity"
+name = "Trail system capacity"
+higher = "more throughput capacity on the Trail"
+indicators = "road kilometres; truck parks; repair tempo after strikes"
+systems = ["INTERDICT"]
+vector = false
+
+[[var]]
+id = "TRAIL.tonnage_arriving"
+name = "Tonnage arriving in the South"
+higher = "more tonnage reaching RVN and the border base areas"
+indicators = "tonnage estimates at the exits of the Trail; cache sizes; enemy ammunition expenditure"
+systems = ["INTERDICT"]
+vector = true
+
+[[var]]
+id = "INFIL.personnel"
+name = "Personnel infiltration"
+higher = "more infiltrators arriving"
+indicators = "infiltration groups detected; binh tram logs; prisoner interrogations"
+systems = ["INTERDICT"]
+vector = false
+
+[[var]]
+id = "INFIL.sea"
+name = "Seaborne and Sihanoukville infiltration"
+higher = "more supply arriving by sea or through Cambodian ports"
+indicators = "trawlers intercepted; Cambodian port receipts; Market Time detections"
+systems = ["INTERDICT"]
+vector = false
+
+[[var]]
+id = "SANCT.cambodia"
+name = "Value of the Cambodian sanctuary to the enemy"
+higher = "more useful to the enemy"
+indicators = "base-area activity; supply through Sihanoukville"
+systems = ["INTERDICT"]
+vector = false
+
+[[var]]
+id = "SANCT.laos"
+name = "Value of the Laotian sanctuary to the enemy"
+higher = "more useful to the enemy"
+indicators = "base-area activity; Trail traffic counts"
+systems = ["INTERDICT"]
+vector = false
+
+# ------------------------------------------------------------ find and fix
+[[var]]
+id = "FIND.main_force"
+name = "Finding the main force"
+higher = "better ability to locate PAVN and VC main-force units"
+indicators = "share of contacts initiated by friendly forces on located units; time from detection to contact"
+systems = ["FIND"]
+vector = true
+
+[[var]]
+id = "FIND.vci"
+name = "Identifying the VCI"
+higher = "better ability to identify VCI members inside the population"
+indicators = "VCI neutralised who were on a pre-existing target list, at district level or above"
+systems = ["FIND", "SUBVERT"]
+vector = true
+
+[[var]]
+id = "INTEL.penetration"
+name = "Enemy penetration of the GVN and RVNAF"
+higher = "more enemy agents inside the GVN and RVNAF"
+indicators = "compromised operations; agents uncovered"
+systems = ["FIND", "ADVISE"]
+vector = false
+
+[[var]]
+id = "FIX.capability"
+name = "Fixing an enemy who chooses whether to fight"
+higher = "better ability to hold an enemy in place once found"
+indicators = "share of contacts that develop into engagements on friendly terms"
+systems = ["FIX"]
+vector = false
+
+[[var]]
+id = "STRIKE.responsiveness"
+name = "Speed from detection to effect"
+higher = "faster fires on located targets"
+indicators = "minutes from request to rounds or ordnance on target"
+systems = ["STRIKE"]
+vector = false
+
+# -------------------------------------------------- the air war in the North
+[[var]]
+id = "AIR.north_effect"
+name = "Effect of the air campaign against the North"
+higher = "more effect on the North's capacity and will"
+indicators = "rail and port throughput in the North; imports; repair crews diverted"
+systems = ["STRIKE", "INTERDICT"]
+vector = false
+
+[[var]]
+id = "AIR.north_defences"
+name = "Air defence density over the North"
+higher = "denser and more lethal air defence"
+indicators = "SA-2 sites; AAA counts; MiG sorties"
+systems = ["STRIKE"]
+vector = false
+
+[[var]]
+id = "AIR.losses"
+name = "US aircraft losses"
+higher = "more aircraft lost"
+indicators = "loss rate per 1,000 sorties by area"
+systems = ["STRIKE"]
+vector = false
+
+# --------------------------------------------------------- RVNAF and advice
+[[var]]
+id = "ARVN.effectiveness"
+name = "ARVN combat effectiveness"
+higher = "more effective ARVN units in combat"
+indicators = "outcomes of ARVN-only engagements; weapons lost against weapons captured"
+systems = ["ADVISE", "FIX"]
+vector = true
+
+[[var]]
+id = "ARVN.leadership"
+name = "RVNAF officer selection and quality"
+higher = "better officers, selected on merit"
+indicators = "promotions on merit; commanders relieved for cause; officer casualties in the lead"
+systems = ["ADVISE"]
+vector = false
+
+[[var]]
+id = "ARVN.desertion"
+name = "RVNAF desertion"
+higher = "more desertion"
+indicators = "desertion rates by unit and month"
+systems = ["ADVISE"]
+vector = false
+
+[[var]]
+id = "ARVN.self_sufficiency"
+name = "RVNAF self-sufficiency"
+higher = "more able to fight, maintain and supply itself without US combat support"
+indicators = "maintenance rates; logistics without US contractors; fire support without US air"
+systems = ["ADVISE", "SUSTAIN"]
+vector = true
+
+[[var]]
+id = "RFPF.effectiveness"
+name = "Regional and Popular Forces"
+higher = "more effective territorial forces"
+indicators = "outposts lost; night operations; weapons lost"
+systems = ["SECURE", "ADVISE"]
+vector = false
+
+[[var]]
+id = "VNAF.capability"
+name = "South Vietnamese Air Force"
+higher = "more capable VNAF"
+indicators = "sorties flown; mission-capable rates; close support without US controllers"
+systems = ["ADVISE", "STRIKE"]
+vector = false
+
+[[var]]
+id = "ADVISE.leverage"
+name = "Advisory leverage"
+higher = "advisors can change more RVNAF decisions"
+indicators = "advice acted on; commanders replaced at US request"
+systems = ["ADVISE"]
+vector = false
+
+# ------------------------------------------------- US force and sustainment
+[[var]]
+id = "US.personnel_demand"
+name = "Demand on US personnel spaces"
+higher = "more spaces consumed"
+indicators = "spaces against the ceiling; specialist shortages"
+systems = ["SUSTAIN"]
+vector = false
+
+[[var]]
+id = "US.casualties"
+name = "US casualty rate"
+higher = "more US killed and wounded"
+indicators = "weekly US killed in action and died of wounds"
+systems = ["SUSTAIN"]
+vector = true
+
+[[var]]
+id = "US.unit_quality"
+name = "US unit quality"
+higher = "better US units"
+indicators = "replacement turbulence; disciplinary rates; fragging and drug cases"
+systems = ["SUSTAIN"]
+vector = false
+
+[[var]]
+id = "MED.survival"
+name = "Casualty survival"
+higher = "more wounded survive (US and RVNAF)"
+indicators = "died-of-wounds rate; time to surgical care"
+systems = ["SUSTAIN"]
+vector = false
+
+[[var]]
+id = "LOG.ports"
+name = "Port throughput"
+higher = "more port capacity and clearance"
+indicators = "tons cleared per day at Cam Ranh Bay, Da Nang, Qui Nhon, Nha Trang, Saigon"
+systems = ["SUSTAIN"]
+vector = false
+
+[[var]]
+id = "LOG.distribution"
+name = "In-country distribution"
+higher = "better road, rail and air distribution"
+indicators = "convoy losses; road kilometres open; days of supply forward"
+systems = ["SUSTAIN"]
+vector = false
+
+[[var]]
+id = "LOG.helicopter_hours"
+name = "Helicopter hours available"
+higher = "more lift hours available"
+indicators = "hours flown against hours requested"
+systems = ["SUSTAIN", "FIX"]
+vector = false
+
+[[var]]
+id = "LOG.engineers"
+name = "Engineer capacity"
+higher = "more engineer effort available"
+indicators = "engineer battalions free of base construction"
+systems = ["SUSTAIN"]
+vector = false
+
+# -------------------------------------------- politics and the outside world
+[[var]]
+id = "US.political_tolerance"
+name = "American political tolerance"
+higher = "more time and money Washington will grant"
+indicators = "appropriations; troop decisions; congressional votes; polling"
+systems = ["SUSTAIN"]
+vector = true
+
+[[var]]
+id = "US.credibility_gap"
+name = "The credibility gap"
+higher = "wider gap between what MACV reports and what the press reports"
+indicators = "press contradiction of MACV claims; leaks"
+systems = ["SUBVERT"]
+vector = false
+
+[[var]]
+id = "INTL.communist_aid"
+name = "Soviet and Chinese aid to the North"
+higher = "more aid"
+indicators = "imports through Haiphong and the Chinese rail line; SA-2 deliveries"
+systems = ["INTERDICT"]
+vector = false
+
+[[var]]
+id = "INTL.chinese_intervention_risk"
+name = "Risk of Chinese intervention"
+higher = "greater risk"
+indicators = "Chinese troop deployments in the North; Beijing's statements"
+systems = ["STRIKE"]
+vector = false
+
+[[var]]
+id = "INTL.allied_forces"
+name = "Third-country forces"
+higher = "more and better ROK, Australian, Thai and other contributions"
+indicators = "troops deployed; operations conducted"
+systems = ["SECURE", "FIX"]
+vector = false
+
+[[var]]
+id = "SUBVERT.defection"
+name = "Genuine enemy defection"
+higher = "more real defectors from the VC and PAVN"
+indicators = "Chieu Hoi returnees who bring weapons or name cadre; defections of cadre at district level or above"
+systems = ["SUBVERT"]
+vector = false
+
+[[var]]
+id = "NEGOT.position"
+name = "US and GVN negotiating position"
+higher = "stronger position against Hanoi"
+indicators = "Hanoi's concessions; terms on offer; who is asking for talks"
+systems = ["STRIKE", "SUBVERT"]
+vector = true

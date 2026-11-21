@@ -1,0 +1,52 @@
+# The phases of the war, in order. This is state, not configuration:
+# a checkpoint may redraw it (G2). Phase IDs never change meaning once used;
+# a redraw renames and redates phases, or adds P7, P8 ... and retires others.
+# Each phase has one chapter: history/chapters/<id>.md
+
+[[phase]]
+id = "P1"
+title = "The advisory war and escalation"
+start = "1964-01"
+end = "1965-07"
+historical = "Phase I, historically 1961-65, opened here at the campaign date and closed at the July 1965 decision to deploy US ground forces in strength"
+retired = false
+
+[[phase]]
+id = "P2"
+title = "The main force war"
+start = "1965-08"
+end = "1967-12"
+historical = "Phase II (1965-67)"
+retired = false
+
+[[phase]]
+id = "P3"
+title = "Tet and its aftermath"
+start = "1968-01"
+end = "1968-12"
+historical = "Phase III (1968)"
+retired = false
+
+[[phase]]
+id = "P4"
+title = "Vietnamization and drawdown"
+start = "1969-01"
+end = "1971-12"
+historical = "Phase IV (1969-71)"
+retired = false
+
+[[phase]]
+id = "P5"
+title = "The Easter Offensive and Linebacker"
+start = "1972-01"
+end = "1972-12"
+historical = "Phase V (1972)"
+retired = false
+
+[[phase]]
+id = "P6"
+title = "Paris, the endgame, and 1975"
+start = "1973-01"
+end = "1975-12"
+historical = "Phase VI (1973-75)"
+retired = false

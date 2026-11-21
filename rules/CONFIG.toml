@@ -1,0 +1,68 @@
+# Vietnam Force-Injection Exercise — CONFIG
+# Edit values here, never in the prose of RULES.md or the procedures.
+# scripts/fie.py reads this file: the floors below are the floors the checker enforces.
+# A value of "UNSET" blocks new memoranda until it is set (fie.py status reports it).
+
+version = "1.0"
+
+era_default = "2026"              # provisions are 2026 configurations unless the provision names another era
+campaign_opens = "1964-01-01"     # COMUSMACV's opening date; no provision acts before its arrival date
+default_arrival = "1964-01-01"    # arrival in theater when the provision message gives none
+parts_per_memo = 3                # Part 1 = §1 · Part 2 = §2–§3 · Part 3 = §4–§6
+checkpoint_every = 10             # complete memoranda between checkpoints
+meta_every_checkpoints = 3        # a META after every third checkpoint
+body_count = "ESTIMATED"          # ESTIMATED = cite only as a reported figure with its inflation acknowledged, and give your own estimate beside it (A13)
+free_play = "ON"                  # ON | OFF (G4)
+phase_redraw = "AT_CHECKPOINT"    # AT_CHECKPOINT = memos may propose a redraw; a checkpoint carries it out (G2)
+
+# ---------------------------------------------------------------------------
+# Political constraints, one switch each (A5).
+#   MODELLED  = live and binding, as historical; work within it or argue to CINCPAC for relief and state the political cost
+#   SUSPENDED = stipulated away for this exercise
+# troop_ceiling takes HISTORICAL, NONE, or a whole number of US personnel in RVN.
+# "Loosened" is not a value: say which constraints are suspended.
+# ---------------------------------------------------------------------------
+[constraints]
+bombing_north   = "UNSET"   # restricted and prohibited zones around Hanoi and Haiphong; Washington target approval
+haiphong_mining = "UNSET"   # mining of Haiphong and the northern ports (historically prohibited until May 1972)
+laos_ground     = "UNSET"   # US/ARVN ground operations into Laos (historically barred; Lam Son 719 in 1971 was ARVN-only)
+cambodia_ground = "UNSET"   # ground operations into the Cambodian base areas (historically barred until May 1970)
+cambodia_air    = "UNSET"   # bombing of the Cambodian base areas (historically secret, from March 1969)
+north_ground    = "UNSET"   # ground operations into North Vietnam (historically never authorised)
+dmz             = "UNSET"   # DMZ conventions
+roe             = "UNSET"   # standing rules of engagement in the South
+troop_ceiling   = "NONE"    # carried over from V2 ("TROOP CEILING: suspended")
+
+# ---------------------------------------------------------------------------
+# Floors — minima on effort, not targets (G7). A shortfall is reported in the
+# audit line with its reason, never padded.
+# ---------------------------------------------------------------------------
+[floors]
+dossier_fields = 16                  # D1–D16 per provision (Part 1)
+channels = 9                         # of the 10 channels, content or a defended null (Part 2); the open channel may be empty
+employment_concepts = 2              # per provision, plus any tried and abandoned
+designations_per_part = 20           # distinct real designations per part (A11); counted approximately by the script
+events_per_full_phase = 3            # dated, named events touched (new or altered) per revised phase
+paragraphs_per_full_phase = 7        # touched event text plus the phase's analysis
+new_operations_per_memo = 1          # once divergence is material
+chains_per_memo = 3
+chain_links = 3                      # A → B → C → D reaches link 3
+findings_carried_per_full_phase = 1  # each revised phase cites at least one §2 finding by ID
+clock_from_phase = "P3"              # every revised phase from this one on states the clock effect
+enemy_initiative_per_memo = 1        # G3
+changed_items = 3                    # §6
+not_changed_items = 3                # §6
+
+# ---------------------------------------------------------------------------
+# Size limits — enforced by the script so always-loaded material cannot creep.
+# ---------------------------------------------------------------------------
+[limits]
+card_chars = 7000                    # about 1,700 tokens per card
+pack_cards = 8                       # most earlier cards loaded into a Part 2 pack
+pack_chars = 140000                  # about 35,000 tokens per pack
+course_of_war_words = [1500, 3500]   # §4.0
+null_words = [40, 160]               # a stated null for an unrevised phase
+log_words = [80, 220]                # one Trajectory Log entry
+log_entries_in_pack = 5              # recent Trajectory Log entries loaded for Part 3
+chapters_full_read_chars = 320000     # about 80,000 tokens: above this, Part 3 reads staged chapters in full and digests of the rest
+chapter_words_warn = 15000           # a chapter this long is flagged for consolidation at the next checkpoint

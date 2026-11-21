@@ -1,0 +1,18 @@
+# The end state of the war as it now stands. One copy, here.
+# A memo or review that changes it sets last_changed and appends a [[history]] entry.
+# rung: a | b | c | d | e (A9), or "off" with off_ladder naming the outcome (G5).
+
+rung = "a"
+rung_label = "Collapse"
+off_ladder = ""
+summary = "The Republic of Vietnam falls on the historical timeline: the Ho Chi Minh Campaign takes Saigon on 30 April 1975."
+saigon_falls = "yes"             # yes | no | open
+saigon_falls_date = "1975-04-30"
+us_combat_forces = "Withdrawn by March 1973 under the Paris Peace Accords"
+hanoi_posture = "Committed to armed reunification throughout"
+last_changed = "000"
+
+[[history]]
+by = "000"
+rung = "a"
+reason = "Historical baseline before any provision"
