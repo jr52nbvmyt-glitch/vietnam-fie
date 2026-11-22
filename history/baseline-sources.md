@@ -46,3 +46,22 @@ One line per source, numbered in order of first use. The baseline chapters cite 
 [S42] "Con Thien" — Wikipedia, https://en.wikipedia.org/wiki/Con_Thien — Operation Buffalo, the Marketplace, September–October 1967 bombardment, supporting fires
 [S43] "Operation Igloo White" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Igloo_White — Jason study, Defense Communications Planning Group, Practice Nine/Dyemarker/Muscle Shoals, Task Force Alpha, sensors, cost
 [S44] *FRUS 1964–1968*, vol. IV, document 164, editorial note — https://history.state.gov/historicaldocuments/frus1964-68v04/d164 — authorization of the Hanoi–Haiphong POL strikes, 28–29 Jun 1966
+[S45] "Battle of Hue" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Hu%E1%BA%BF — dates, PAVN/VC, ARVN and US units, casualties by source, civilian dead and executions
+[S46] "Battle of Khe Sanh" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Khe_Sanh — siege dates, 26th Marines, PAVN divisions, Operation Niagara, air resupply, Lang Vei, Operation Pegasus, casualties by source, evacuation, the diversion debate
+[S47] "My Lai massacre" — Wikipedia, https://en.wikipedia.org/wiki/My_Lai_massacre — date, unit, deaths, Thompson, cover-up, revelation, Peers inquiry, Calley conviction and sentence
+[S48] "Battle of Kham Duc" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Kham_Duc — dates, PAVN 2nd Division, A-105 and 2/1st Infantry, evacuation, C-130 losses, Jackson Medal of Honor, casualties
+[S49] "Battle of Dai Do" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Dai_Do — dates, 2/4 Marines, PAVN 320th Division regiments, casualties
+[S50] "Creighton Abrams" — Wikipedia, https://en.wikipedia.org/wiki/Creighton_Abrams — deputy from May 1967, COMUSMACV from 10 Jun 1968, continuity and change in strategy
+[S51] "Paris Peace Accords" — Wikipedia, https://en.wikipedia.org/wiki/Paris_Peace_Accords — opening of the Paris talks, 31 Oct 1968 halt, table dispute, Chennault affair, PRG, secret Kissinger talks from 4 Aug 1969
+[S52] "Phoenix Program" — Wikipedia, https://en.wikipedia.org/wiki/Phoenix_Program — ICEX June 1967, Phung Hoang decree, Thieu's July 1968 decree, PRUs, neutralization statistics 1968–72, quotas, assessments
+[S53] "Operation Commando Hunt" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Commando_Hunt — phases and dates, Igloo White, truck claims and CIA doubts, AC-130, losses, Trail growth, outcome
+[S54] "Battle of Hamburger Hill" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Hamburger_Hill — Apache Snow, units, PAVN 29th Regiment, casualties, abandonment, political effects
+[S55] "Cambodian campaign" — Wikipedia, https://en.wikipedia.org/wiki/Cambodian_campaign — Sihanouk's fall, PAVN offensive in Cambodia, incursion dates and units, captured materiel, casualties, Kent State, Cooper–Church
+[S56] "Operation Lam Son 719" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Lam_Son_719 — dates, ARVN and PAVN formations, US support and helicopter losses, Cooper–Church constraint, casualties by source, assessment
+[S57] "Operation Menu" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Menu — start and end, phases and base areas, sorties and tonnage, dual reporting, the May 1969 leak and wiretaps
+[S58] "Vietnamization" — Wikipedia, https://en.wikipedia.org/wiki/Vietnamization — origin of the term at the NSC on 28 Jan 1969, Laird, Marine redeployment in 1969
+[S59] "Operation Ivory Coast" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Ivory_Coast — the Son Tay raid: force, result, casualties, consolidation of prisoners
+[S60] "1971 South Vietnamese presidential election" — Wikipedia, https://en.wikipedia.org/wiki/1971_South_Vietnamese_presidential_election — result, turnout, withdrawals of Minh and Ky
+[S61] "Battle of Fire Support Base Ripcord" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Fire_Support_Base_Ripcord — dates, 2/506th Infantry, PAVN 324B Division regiments, CH-47 loss, casualties, evacuation, assessments
+[S62] "RVNAF strength" — GlobalSecurity.org, https://www.globalsecurity.org/military/world/vietnam/rvn-af-strength.htm (tabulated from US Army Center of Military History data) — RVNAF regular, RF and PF strength by year; the June 1968 mobilization law
+[S63] "Land reform in South Vietnam" — Wikipedia, https://en.wikipedia.org/wiki/Land_reform_in_South_Vietnam — Land to the Tiller from 26 Mar 1970, 15-hectare limit, US financing, titles for land the VC had distributed

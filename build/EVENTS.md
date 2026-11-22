@@ -43,3 +43,36 @@
 | EV000-38 | P2 | 3 Sep 1967 | The constitution and the presidential election | Republic of Vietnam | HIST | 000 |
 | EV000-39 | P2 | 8 Sep – Dec 1967 | The barrier and Muscle Shoals | The DMZ and the Laotian panhandle; Nakhon Phanom, Thailand | HIST | 000 |
 | EV000-40 | P2 | 3–23 Nov 1967 | The battle of Dak To | Dak To and Hills 1338, 724 and 875, Kontum Province | HIST | 000 |
+| EV000-41 | P3 | 21 Jan – 15 Apr 1968 | The siege of Khe Sanh | Khe Sanh Combat Base, Lang Vei and the surrounding hills, Quang Tri Province | HIST | 000 |
+| EV000-42 | P3 | 30–31 Jan 1968 | The Tet Offensive: the first wave | Saigon, Hue and the provincial and district capitals of South Vietnam | HIST | 000 |
+| EV000-43 | P3 | 31 Jan – 7 Mar 1968 | The battle for Saigon and the attack on the US embassy | Saigon, Cholon and Tan Son Nhut | HIST | 000 |
+| EV000-44 | P3 | 31 Jan – 2 Mar 1968 | The battle of Hue | Hue, Thua Thien Province | HIST | 000 |
+| EV000-45 | P3 | 20 Feb – 31 Mar 1968 | The reinforcement request and the decision of 31 March | Saigon and Washington | HIST | 000 |
+| EV000-46 | P3 | 16 Mar 1968 | The My Lai massacre | Son My village (My Lai 4 and My Khe), Son Tinh District, Quang Ngai Province | HIST | 000 |
+| EV000-47 | P3 | 30 Apr – 3 May 1968 | The battle of Dai Do | Dai Do and the hamlets north of Dong Ha on the Cua Viet, Quang Tri Province | HIST | 000 |
+| EV000-48 | P3 | May 1968 | The Paris talks open | Paris | HIST | 000 |
+| EV000-49 | P3 | 5 May – 15 Jun 1968 | The May offensive in Saigon | Saigon and its outskirts, and towns throughout the South | HIST | 000 |
+| EV000-50 | P3 | 10–12 May 1968 | The evacuation of Kham Duc | Kham Duc Special Forces camp and Ngok Tavak, Quang Tin Province | HIST | 000 |
+| EV000-51 | P3 | 10 Jun – 11 Jul 1968 | Abrams takes command; mobilization in the South; Khe Sanh abandoned | Saigon and Quang Tri Province | HIST | 000 |
+| EV000-52 | P3 | 17 Aug – 23 Sep 1968 | The third offensive | Provincial towns and bases, especially in III Corps and the Central Highlands | HIST | 000 |
+| EV000-53 | P3 | 31 Oct – 5 Nov 1968 | The bombing halt and the American election | Washington, Paris and Saigon | HIST | 000 |
+| EV000-54 | P3 | 1 Nov 1968 – Jan 1969 | The Accelerated Pacification Campaign and Phoenix | The countryside of South Vietnam | HIST | 000 |
+| EV000-55 | P3 | 15 Nov 1968 | Commando Hunt begins | The Laotian panhandle | HIST | 000 |
+| EV000-56 | P4 | 20 Jan – Mar 1969 | Nixon takes office; Vietnamization | Washington and Saigon | HIST | 000 |
+| EV000-57 | P4 | 23 Feb – Mar 1969 | The post-Tet offensive | Saigon, Da Nang and installations throughout the South | HIST | 000 |
+| EV000-58 | P4 | 18 Mar 1969 – 26 May 1970 | Operation Menu | Base Areas 350, 351, 352, 353, 609 and 740, eastern Cambodia | HIST | 000 |
+| EV000-59 | P4 | 13–20 May 1969 | Hamburger Hill | Ap Bia Mountain (Hill 937), A Shau valley, Thua Thien Province | HIST | 000 |
+| EV000-60 | P4 | 8 Jun – Dec 1969 | Midway, the first withdrawals and the Nixon Doctrine | Midway Island; Guam; South Vietnam | HIST | 000 |
+| EV000-61 | P4 | Jul – 2 Sep 1969 | COSVN Resolution 9 and the death of Ho Chi Minh | COSVN headquarters and Hanoi | HIST | 000 |
+| EV000-62 | P4 | 4 Aug 1969 – Feb 1970 | The secret Paris channel opens | Paris | HIST | 000 |
+| EV000-63 | P4 | 15 Oct – 24 Nov 1969 | My Lai revealed; the Moratorium | Washington and the United States | HIST | 000 |
+| EV000-64 | P4 | 18 Mar – Apr 1970 | Sihanouk falls; the PAVN turns on Cambodia | Phnom Penh and eastern Cambodia | HIST | 000 |
+| EV000-65 | P4 | 26 Mar 1970 | Land to the Tiller | Republic of Vietnam | HIST | 000 |
+| EV000-66 | P4 | 29 Apr – 30 Jun 1970 | The Cambodian incursion | The Parrot's Beak and the Fishhook, eastern Cambodia | HIST | 000 |
+| EV000-67 | P4 | 1–23 Jul 1970 | Fire Support Base Ripcord | Fire Support Base Ripcord, near the A Shau valley, Thua Thien Province | HIST | 000 |
+| EV000-68 | P4 | 10 Oct 1970 – Dec 1971 | Commando Hunt and the growth of the Trail | The Laotian panhandle and northeastern Cambodia | HIST | 000 |
+| EV000-69 | P4 | 21 Nov 1970 | The Son Tay raid | Son Tay prison camp, about 37 km west of Hanoi | HIST | 000 |
+| EV000-70 | P4 | 29 Dec 1970 | The Cooper–Church amendment | Washington | HIST | 000 |
+| EV000-71 | P4 | 8 Feb – 25 Mar 1971 | Lam Son 719 | Route 9 from Khe Sanh to Tchepone, the Laotian panhandle (Base Areas 604 and 611) | HIST | 000 |
+| EV000-72 | P4 | 29 Mar – 30 Jun 1971 | The war on trial at home | Fort Benning, Washington and New York | HIST | 000 |
+| EV000-73 | P4 | Oct 1971 | Thieu's unopposed re-election | Republic of Vietnam | HIST | 000 |
