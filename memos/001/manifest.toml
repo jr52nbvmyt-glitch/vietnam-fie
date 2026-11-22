@@ -4,7 +4,7 @@
 memo = "001"
 title = "Accelerated land-to-the-tiller reform and an enforced GVN anti-corruption programme"
 received = "2026-11-22"
-status = "part1"
+status = "part2"
 version = "1.0.1"
 phases_changed = []              # set by `fie.py chapters 001 P2 P3 …`
 links = []                       # no earlier memoranda exist
@@ -145,6 +145,48 @@ provision = "P001b"
 var = "ADVISE.leverage"
 band = 1
 note = "The Aid Compliance Board gives the US Mission a lever it can pull short of withholding all aid, at a legitimacy cost (POSTNA-6)"
+
+# ---------------------------------------------------------------- Part 2 refinements
+[[push]]
+provision = "P001a"
+var = "POP.civilian_harm"
+band = 1
+note = "Titled families and land committee members in contested hamlets become targets of the enemy's security sections (F001-8)"
+
+[[push]]
+provision = "P001a"
+var = "ECON.rice_denial"
+band = -1
+note = "Rent no longer paid stays in the hamlet, within the enemy's tax reach where it is contested or held; reverses as hamlets are secured (F001-8)"
+
+[[push]]
+provision = "P001a"
+var = "SUBVERT.defection"
+band = 1
+note = "Southern-born guerrillas and their families can now keep land the Front gave them without the Front; slow and confined to areas the government can reach"
+
+[[push]]
+provision = "P001a"
+var = "HANOI.will"
+band = 1
+note = "Hanoi reads the reform as eroding its southern base and hurries its decision for military victory (F001-12)"
+
+[[push]]
+provision = "P001b"
+var = "INTEL.penetration"
+band = -1
+note = "Investigations of officials who sell documents, passes and posts uncover some of the enemy's purchased agents"
+
+[[push]]
+provision = "P001b"
+var = "US.political_tolerance"
+band = 1
+note = "Visible reform and true strength returns modestly lengthen tolerance, with negative spikes from corruption headlines (F001-14)"
+
+[[depend]]
+provision = "P001b"
+var = "LOG.helicopter_hours"
+note = "Musters of posts off the roads are flown in"
 
 # ---------------------------------------------------------------- dependencies
 [[depend]]
