@@ -1,4 +1,4 @@
-<!-- fie v1.0.1 -->
+<!-- fie v1.0.2 -->
 # Part 2 — §2 Integration and second-order effects · §3 Changes to existing forces
 
 **Trigger:** `CONTINUE` when the open memorandum's status is `part1`.
@@ -69,4 +69,4 @@ Under **Prior provisions**: every earlier provision whose employment changes, by
 
 ## Rules that bind hardest here
 
-A6 (two halves of find-and-fix), A7 (sanctuary), A8 (the population), A13 (metrics), C2, G3, G7.
+A10a (writing for the reader), A6 (two halves of find-and-fix), A7 (sanctuary), A8 (the population), A13 (metrics), C2, G3, G7.

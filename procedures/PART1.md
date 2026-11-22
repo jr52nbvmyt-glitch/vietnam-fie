@@ -1,4 +1,4 @@
-<!-- fie v1.0.1 -->
+<!-- fie v1.0.2 -->
 # Part 1 — Triage and §1 Provision dossier
 
 **Trigger:** a provision arrives and no memorandum is in progress.
@@ -44,4 +44,4 @@
 
 ## Rules that bind hardest here
 
-A3 and A3a (real figures, sources, no fabrication), A4 (2026 configurations), A6 (which half of find-and-fix it touches), A11 (precise designations), C2 and C3 (no back-reference, no compression).
+A10a (writing for the reader — a dossier can be exact and still readable), A3 and A3a (real figures, sources, no fabrication), A4 (2026 configurations), A6 (which half of find-and-fix it touches), A11 (precise designations), C2 and C3 (no back-reference, no compression).

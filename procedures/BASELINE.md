@@ -1,4 +1,4 @@
-<!-- fie v1.0.1 -->
+<!-- fie v1.0.2 -->
 # BASELINE — the historical war as the starting record
 
 **Trigger:** `BASELINE`. Runs once, before the first memorandum, in its own thread, in three parts on `CONTINUE`.

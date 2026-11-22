@@ -1,4 +1,4 @@
-<!-- fie v1.0.1 -->
+<!-- fie v1.0.2 -->
 # TNA — Theater Needs Assessment
 
 **Trigger:** `TNA`. Runs once, after BASELINE and before the first provision, in its own thread.

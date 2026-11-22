@@ -1,4 +1,4 @@
-<!-- fie v1.0.1 -->
+<!-- fie v1.0.2 -->
 # Part 3 — §4 The course of the war · §5 Delta ledger · §6 Changed / not changed
 
 **Trigger:** `CONTINUE` when the open memorandum's status is `part2`.
@@ -48,6 +48,8 @@ An event that cannot be written to this standard is being asserted rather than a
 ## The analysis — `part3.md`
 
 ### `## §4.0 The course of the war`
+
+*Write every part of Part 3 under A10a: this is the part the reader reads for the war itself.*
 
 The whole war, January 1964 to its end, as it now runs with everything COMUSMACV holds — a through-line of 1,500–3,500 words in his voice, written fresh in every memorandum. Write it after editing the chapters and from them: it may not contradict a chapter, and it ends where `history/endstate.toml` says the war ends. Show where this provision bends the line and where the line holds regardless of it. This is the part of the memorandum most worth reading; write it as history, not summary.
 

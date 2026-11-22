@@ -1477,6 +1477,93 @@ def reading_copy_part(tok: str, part: int) -> str:
     return strip_comments(s).strip() + "\n"
 
 
+# ----------------------------------------------------------------------------- reader copies
+
+SUPERSCRIPT = str.maketrans("0123456789", "⁰¹²³⁴⁵⁶⁷⁸⁹")
+ORIGIN_WORDS = {"HIST": "historical", "HIST-ALT": "changed from history", "CANCELLED": "no longer happens",
+                "NEW": "new", "FREE": "free play"}
+REF_GROUP = re.compile(r"\s?\((?:see\s)?(?:(?:F\d{3}-\d+|G-\d+|POS\w+-\d+|REV\w+-\d+|DIR\w+-\d+|EV" + WORK_RE +
+                       r"-\d+|C\d{3}-\d+|EC\d{3}-\d+|P\d{3}[a-z]|M-\d+|A\d{1,2}a?|G\d)(?:,\s*|;\s*|\s+and\s+)?)+\)")
+
+
+def source_lines(path: Path) -> dict[int, str]:
+    out = {}
+    for m in re.finditer(r"^\[S(\d+)\]\s+(.+)$", read(path), flags=re.M):
+        out[int(m.group(1))] = m.group(2).strip()
+    return out
+
+
+def for_reader(text: str, memo_sources: dict[int, str] | None = None) -> str:
+    """The reading copy: same words, less apparatus. Provenance tags become numbered notes at the end, bare
+    cross-reference IDs in parentheses are dropped, event headers become titles with a quiet line beneath.
+    The record itself is untouched."""
+    base = source_lines(HIST / "baseline-sources.md")
+    memo_sources = memo_sources or {}
+    notes, order = {}, []
+
+    def note_for(inner: str) -> str | None:
+        if inner in ("H", "D"):
+            return None
+        if inner == "U":
+            return "Stipulated in the provision."
+        if re.fullmatch(r"H\d+", inner):
+            return "Source: " + base.get(int(inner[1:]), f"baseline source {inner[1:]}")
+        if re.fullmatch(r"S\d+", inner):
+            return "Source: " + memo_sources.get(int(inner[1:]), f"source {inner[1:]}")
+        if inner.startswith("E:"):
+            return "Estimate — " + inner[2:].strip()
+        if inner.startswith("X-"):
+            return f"The exercise's own judgment ({'memo ' + inner[2:] if inner[2:].isdigit() else inner[2:]}), not a measured figure."
+        if re.fullmatch(r"M\d{3}(?:·S\d+)?", inner):
+            return f"From memorandum {inner[1:4]}'s record."
+        return None
+
+    def number(n: str) -> str:
+        if n not in notes:
+            order.append(n)
+            notes[n] = len(order)
+        return str(notes[n]).translate(SUPERSCRIPT)
+
+    out_paras = []
+    for para in re.split(r"(\n\s*\n)", text):
+        if not para.strip() or para.startswith("```"):
+            out_paras.append(para)
+            continue
+        tags = list(TAG_RE.finditer(para))
+        last = {}
+        for m in tags:
+            last[m.group(1)] = m.start()
+
+        def tag(m):
+            n = note_for(m.group(1))
+            if n is None or last.get(m.group(1)) != m.start():
+                return ""
+            return number(n)
+        para = TAG_RE.sub(tag, para)
+        para = re.sub(r"[ \t]+([¹²³⁴⁵⁶⁷⁸⁹⁰.,;:)])", r"\1", para)
+        para = re.sub(r"[ \t]{2,}", " ", para)
+        para = REF_GROUP.sub("", para)
+        para = re.sub(r"^\*\*(F\d{3}-\d+)\*\*\s+\*\*", r"**\1 · ", para)
+        para = re.sub(r"^(\*\*F\d{3}-\d+)(?: · ([^*]+))?\*\*\s*\([A-Z, ]+\)\s*", lambda mm: mm.group(1) + (" · " + mm.group(2) if mm.group(2) else "") + "** ", para)
+
+        def hdr(mm):
+            hashes, mark, eid, rest = mm.group(1), mm.group(2) or "", mm.group(3), mm.group(4)
+            f = rest.split(" · ")
+            if len(f) < 5:
+                return mm.group(0)
+            title, date, place, origin = " · ".join(f[:-4]), f[-4], f[-3], f[-2]
+            return f"{hashes} {mark}{title}\n*{date} · {place} · {ORIGIN_WORDS.get(origin, origin)} · {eid}*"
+        para = re.sub(r"^(#{2,6}) (◆ )?(EV" + WORK_RE + r"-\d+) · (.+)$", hdr, para, flags=re.M)
+        out_paras.append(para)
+    body = "".join(out_paras)
+    audit = re.search(r"^\*Audit — .*\*$\n?", body, re.M)
+    if audit:
+        body = body.replace(audit.group(0), "", 1).rstrip() + "\n\n---\n\n" + audit.group(0).strip() + "\n"
+    if order:
+        body = body.rstrip() + "\n\n## Notes\n\n" + "\n".join(f"{i}. {n}" for i, n in enumerate(order, 1)) + "\n"
+    return body
+
+
 def build_all(quiet: bool = False):
     BUILD.mkdir(exist_ok=True)
     say = (lambda *_: None) if quiet else print
@@ -1522,23 +1609,24 @@ def build_all(quiet: bool = False):
             b = mark_events(body, last)
             b = re.sub(r"^(# .*\n)", lambda mm: mm.group(1) + "\n" + vector_line(fm) + "\n", b, count=1)
             chap_txt.append(b.strip())
-    write(BUILD / "WAR-HISTORY.md", "\n\n".join(wh) + "\n\n---\n\n" + "\n\n---\n\n".join(chap_txt) + "\n")
+    write(BUILD / "WAR-HISTORY.md", for_reader("\n\n".join(wh) + "\n\n---\n\n" + "\n\n---\n\n".join(chap_txt) + "\n"))
     # reading copies
     for t in memo_tokens():
         m = load_toml(work_dir(t) / "manifest.toml")
         done_parts = {"open": 0, "part1": 1, "part2": 2, "complete": 3}.get(m.get("status"), 0)
         parts = []
         for i in range(1, done_parts + 1):
-            rc = reading_copy_part(t, i)
+            rc = for_reader(reading_copy_part(t, i), source_lines(work_dir(t) / "sources.md"))
             write(BUILD / "memos" / t / f"Part-{i}.md", rc)
             parts.append(rc)
         if done_parts == 3:
             head = f"# Memorandum {t} — {m.get('title')}\n\n*COMUSMACV to CINCPAC · received {m.get('received')} · three parts*\n\n"
-            write(BUILD / "memos" / t / f"MEMO-{t}.md", head + "\n\n---\n\n".join(parts))
+            whole = "\n\n---\n\n".join(reading_copy_part(t, i) for i in (1, 2, 3))
+            write(BUILD / "memos" / t / f"MEMO-{t}.md", head + for_reader(whole, source_lines(work_dir(t) / "sources.md")))
     for d in sorted((ROOT / "reviews").glob("*")) + sorted((ROOT / "revisions").glob("*")):
         if d.is_dir():
             for p in sorted(d.glob("part*.md")):
-                write(BUILD / "reviews" / d.name / p.name, strip_comments(read(p)).strip() + "\n")
+                write(BUILD / "reviews" / d.name / p.name, for_reader(strip_comments(read(p)).strip() + "\n", source_lines(d / "sources.md")))
     say("Built: build/INDEX.md, build/cards/, build/LEDGERS.md, build/EVENTS.md, build/WAR-HISTORY.md, build/memos/, build/reviews/")
 
 

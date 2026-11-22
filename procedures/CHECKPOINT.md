@@ -1,4 +1,4 @@
-<!-- fie v1.0.1 -->
+<!-- fie v1.0.2 -->
 # CHECKPOINT — calibration of the analysis against the war it describes
 
 **Trigger:** `CHECKPOINT`, due every `checkpoint_every` complete memoranda (`fie.py status` says when). Its own thread, two parts on `CONTINUE`. No new provision is introduced.

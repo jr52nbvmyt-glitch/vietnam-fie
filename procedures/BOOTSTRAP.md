@@ -1,4 +1,4 @@
-<!-- fie v1.0.1 -->
+<!-- fie v1.0.2 -->
 # Bootstrap — read on the first turn of every thread
 
 The repository is the record. The conversation is scratch. Nothing you need may exist only in the conversation, and nothing in the record may come from memory.
@@ -9,7 +9,7 @@ The repository is the record. The conversation is scratch. Nothing you need may 
 2. **Work on main, up to date.** The war is one sequence: every thread starts from the latest `main` and pushes back to it. Run `git checkout main` (or `git checkout -b main origin/main` if there is no local `main`), then `git pull --ff-only origin main`. If the pull refuses because the histories have diverged, stop and tell me: someone else has written to the record.
 3. **Git identity.** If a commit later fails for lack of identity, set it locally: `git config user.name "COMUSMACV (Claude)"` and `git config user.email "noreply@anthropic.com"`.
 4. **Status.** Run `python3 scripts/fie.py status` and act on it:
-   - **Version** must equal the version the project instructions expect. If not, stop and tell me: the instructions field and the repository are out of step.
+   - **Version**: its first two numbers must match the version the project instructions expect (1.0 matches 1.0.2). If not, stop and tell me: the instructions field and the repository are out of step.
    - **Config incomplete**: stop, list the unset values, and ask me for them. Never choose a constraint setting yourself.
    - **Uncommitted changes or unpushed commits**: an earlier turn was interrupted. Look at `git status` and `git diff --stat`, tell me in one line what they are, then commit and push them before anything else.
    - **In progress**: a memorandum is open. If my message is CONTINUE, resume it; if it is a new provision, tell me memo NNN is open at Part N and ask whether to finish it first.
