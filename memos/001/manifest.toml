@@ -1,0 +1,223 @@
+# Manifest for memorandum 001. Fill every field; `fie.py check` rejects blanks.
+# status and phases_changed are set by fie.py; leave them alone.
+
+memo = "001"
+title = "Accelerated land-to-the-tiller reform and an enforced GVN anti-corruption programme"
+received = "2026-11-22"
+status = "part1"
+version = "1.0.1"
+phases_changed = []              # set by `fie.py chapters 001 P2 P3 …`
+links = []                       # no earlier memoranda exist
+
+[deviation]                      # G6: "none", or describe the structural deviation in that part
+part1 = "none"
+part2 = "none"
+part3 = "none"
+
+[[provision]]
+id = "P001a"
+designation = "Land-to-the-Tiller Programme, 1964 (accelerated and enhanced): zero retention of tenanted rice land, free distribution to the present tiller, confirmation of Viet Minh and Viet Cong distributions, US-financed landlord compensation, and a fit-for-purpose aerial-photo titling apparatus"
+category = "institutional"
+quantity = "One national programme: about 1.0–1.2 million ha of tenanted land to about 850,000–950,000 families [E: Prosterman's 1960–61 tenancy census and the GAO's 1970 LTTT target of 1 million ha to 800,000 tenants]"
+ceiling_spaces = "~260 US personnel, of whom ~60 military spaces [E: USAID land and survey advisers in each province plus an Army engineer topographic detachment; the 1970s LTTT advisory staff was 31]"
+arrival = "1964-01-01"
+in_service = "No direct analogue; nearest is the RVN Land to the Tiller law of 26 Mar 1970, with Japan 1946–50, Taiwan 1953 and Rwanda 2010–13 as design references"
+systems = ["SECURE", "SUBVERT"]
+status = "active"
+
+[[provision]]
+id = "P001b"
+designation = "GVN Anti-Corruption Programme with Enforcement Mechanism: an independent Commission Against Corruption on the Hong Kong ICAC model with powers of arrest, search, seizure and compelled asset declaration, a special anti-corruption court, an independent RVNAF pay-and-muster verification service, and a joint US–GVN Aid Compliance Board empowered to suspend aid to a command or ministry"
+category = "institutional"
+quantity = "One national commission of about 2,000 Vietnamese staff with about 320 US advisers, investigators and auditors [E: ICAC's 1,213 staff for a city of about 7 million, scaled for a country of about 15 million and an armed force of about 514,000]"
+ceiling_spaces = "~320 US personnel, of whom ~140 military spaces [E: Army CID agents, finance and audit officers and muster teams; the rest USAID, Treasury and GAO-trained civilians]"
+arrival = "1964-01-01"
+in_service = "No direct analogue in the RVN; nearest are the Hong Kong ICAC (15 Feb 1974) and Indonesia's KPK (2003), with the Afghan APPS biometric payroll (2010s) as the cautionary reference"
+systems = ["ADVISE", "SUSTAIN", "SECURE"]
+status = "active"
+
+# ---------------------------------------------------------------- P001a pushes
+[[push]]
+provision = "P001a"
+var = "POP.land_tenure"
+band = 3
+note = "Zero retention of tenanted land and free title to the present tiller end tenancy on most tenanted rice land where the state can reach it"
+
+[[push]]
+provision = "P001a"
+var = "POP.gvn_legitimacy"
+band = 2
+note = "The government's return to a hamlet no longer means the landlord's return; for the first time it gives the peasant something the Viet Cong cannot take away by winning"
+
+[[push]]
+provision = "P001a"
+var = "VC.recruitment"
+band = -1
+note = "Removes the land argument that tied a family's sons to the revolution's victory; slow and partial, because conscription by the VCI does not depend on persuasion"
+
+[[push]]
+provision = "P001a"
+var = "VCI.tax_take"
+band = -1
+note = "Owner-cultivators with a title to defend are harder to tax by consent; coercive taxation in VC-held hamlets is untouched"
+
+[[push]]
+provision = "P001a"
+var = "POP.rural_economy"
+band = 1
+note = "End of 34–50% rents raises the tiller's surplus and his incentive to invest; production response lags a season or two"
+
+[[push]]
+provision = "P001a"
+var = "GVN.political_stability"
+band = -1
+note = "Expropriates the landed class from which much of the officer corps and the civil service come; a coup grievance in a junta already prone to coups"
+
+[[push]]
+provision = "P001a"
+var = "RFPF.effectiveness"
+band = 1
+note = "A Popular Forces militiaman who owns the field he guards has a reason to fight at night that pay alone does not give"
+
+[[push]]
+provision = "P001a"
+var = "ECON.inflation"
+band = 1
+note = "Cash share of landlord compensation enters a war economy; small against aid flows, but positive"
+
+[[push]]
+provision = "P001a"
+var = "FIND.vci"
+band = 1
+note = "Village land committees, a parcel map and a register of who tills what give the state its first census of the hamlet; volunteered information rises where titles are delivered and defended"
+
+# ---------------------------------------------------------------- P001b pushes
+[[push]]
+provision = "P001b"
+var = "GVN.corruption"
+band = -2
+note = "Investigation, prosecution and an aid-suspension lever against ghost payrolls, sale of offices and diversion; substantial, not transformative, because the enforcer's reach stops where the junta's protection begins"
+
+[[push]]
+provision = "P001b"
+var = "GVN.political_stability"
+band = -1
+note = "Threatens the incomes of the generals who make and unmake governments; prosecutions become coup grievances and coup weapons"
+
+[[push]]
+provision = "P001b"
+var = "ARVN.leadership"
+band = 1
+note = "Office-buying and transfers for cash become prosecutable; commanders relieved for cause with evidence an adviser could never produce"
+
+[[push]]
+provision = "P001b"
+var = "ARVN.desertion"
+band = -1
+note = "Pay delivered to the soldier by an independent paymaster rather than through his commander removes one cause of desertion"
+
+[[push]]
+provision = "P001b"
+var = "ARVN.effectiveness"
+band = 1
+note = "Ghost soldiers removed from the rolls: battalions known to be their real strength, rice and pay reaching the men present"
+
+[[push]]
+provision = "P001b"
+var = "GVN.admin_capacity"
+band = 1
+note = "Budgets executed as voted; province and district funds reaching their purpose"
+
+[[push]]
+provision = "P001b"
+var = "POP.gvn_legitimacy"
+band = 1
+note = "Visible prosecution of officials who prey on the population, if it reaches above the district level"
+
+[[push]]
+provision = "P001b"
+var = "US.credibility_gap"
+band = -1
+note = "Independent musters and audits give MACV strength and expenditure figures that do not pass through the reporting chain (G-10)"
+
+[[push]]
+provision = "P001b"
+var = "ADVISE.leverage"
+band = 1
+note = "The Aid Compliance Board gives the US Mission a lever it can pull short of withholding all aid, at a legitimacy cost (POSTNA-6)"
+
+# ---------------------------------------------------------------- dependencies
+[[depend]]
+provision = "P001a"
+var = "POP.night_control"
+note = "A title delivered by day to a hamlet the VC hold by night is a death warrant; delivery follows security"
+
+[[depend]]
+provision = "P001a"
+var = "GVN.admin_capacity"
+note = "Province land services and village committees must exist and work"
+
+[[depend]]
+provision = "P001a"
+var = "GVN.corruption"
+note = "Fees to accept applications, collusion with landlords and false worship-land claims hollow out the programme (P001b)"
+
+[[depend]]
+provision = "P001a"
+var = "GVN.political_stability"
+note = "The decree must survive the next coup; each new junta may reopen it"
+
+[[depend]]
+provision = "P001a"
+var = "GVN.police"
+note = "Protection of new owners against landlords' agents and against VC retaliation"
+
+[[depend]]
+provision = "P001a"
+var = "RFPF.effectiveness"
+note = "Territorial forces hold titled hamlets after the land teams leave"
+
+[[depend]]
+provision = "P001a"
+var = "US.political_tolerance"
+note = "Congress funds the compensation bonds over eight years"
+
+[[depend]]
+provision = "P001a"
+var = "ADVISE.leverage"
+note = "American pressure keeps the programme moving through juntas that would rather not"
+
+[[depend]]
+provision = "P001a"
+var = "LOG.helicopter_hours"
+note = "Land teams and survey parties reach contested villages by air"
+
+[[depend]]
+provision = "P001b"
+var = "GVN.political_stability"
+note = "The commission lives only while some faction in Saigon protects it"
+
+[[depend]]
+provision = "P001b"
+var = "ADVISE.leverage"
+note = "The Aid Compliance Board is only as strong as Washington's willingness to suspend aid to a command at war"
+
+[[depend]]
+provision = "P001b"
+var = "US.political_tolerance"
+note = "Washington must accept slower military operations while commands are purged"
+
+[[depend]]
+provision = "P001b"
+var = "GVN.police"
+note = "Arrests need a police that will execute warrants against the powerful"
+
+[[depend]]
+provision = "P001b"
+var = "INTEL.penetration"
+note = "A commission holding the regime's secrets is a target for the enemy's agents as well as the generals'"
+
+[[depend]]
+provision = "P001b"
+var = "ARVN.leadership"
+note = "Relief for cause needs replacements; without a pool of honest officers, removal leaves vacancies"
