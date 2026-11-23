@@ -4,9 +4,9 @@
 memo = "001"
 title = "Accelerated land-to-the-tiller reform and an enforced GVN anti-corruption programme"
 received = "2026-11-22"
-status = "part2"
+status = "complete"
 version = "1.0.1"
-phases_changed = []              # set by `fie.py chapters 001 P2 P3 …`
+phases_changed = ["P1", "P2", "P3", "P4"]
 links = []                       # no earlier memoranda exist
 
 [deviation]                      # G6: "none", or describe the structural deviation in that part

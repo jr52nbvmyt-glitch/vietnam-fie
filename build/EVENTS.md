@@ -3,12 +3,16 @@
 
 | Event | Phase | Date | Title | Place | Origin | Works |
 |---|---|---|---|---|---|---|
-| EV000-1 | P1 | 30 Jan 1964 | Khanh's coup | Saigon | HIST | 000 |
+| EV001-1 | P1 | 1 Jan 1964 | The Land-to-the-Tiller Decree and the Commission Against Corruption | Saigon | NEW | 001 |
+| EV000-1 | P1 | 30 Jan 1964 | Khanh's coup | Saigon | HIST-ALT | 000,001 |
+| EV001-2 | P1 | 16 Mar – 31 Dec 1964 | The first titling teams | An Giang, Phong Dinh, Vinh Long, Gia Dinh, Bien Hoa and Long An Provinces, and the coastal Centre from Quang Nam to Binh Dinh | NEW | 001 |
+| EV001-4 | P1 | 7 Apr – 31 Dec 1964 | The dawn musters | ARVN 7th, 9th and 21st Divisions and the Regional and Popular Forces of the Delta, then countrywide | NEW | 001 |
+| EV001-3 | P1 | 9 Jun – 14 Jul 1964 | The Can Giuoc killings | Can Giuoc and Can Duoc Districts, Long An Province | NEW | 001 |
 | EV000-2 | P1 | 6 Jul 1964 | The battle of Nam Dong | Nam Dong CIDG camp, about 50 km west of Da Nang near the Laotian border | HIST | 000 |
 | EV000-3 | P1 | 2–10 Aug 1964 | The Gulf of Tonkin incidents and the Southeast Asia Resolution | Gulf of Tonkin and Washington | HIST | 000 |
-| EV000-4 | P1 | 16 Aug – 14 Sep 1964 | The Vung Tau Charter crisis and the September coup attempt | Saigon, Hue and Da Nang | HIST | 000 |
-| EV000-5 | P1 | Sep 1964 – mid-1965 | The Hop Tac programme | Saigon and the surrounding provinces | HIST | 000 |
-| EV000-6 | P1 | Sep 1964 – Apr 1965 | Hanoi commits the regulars; the Trail and the first air war in Laos | North Vietnam, the Laotian panhandle and the Central Highlands | HIST | 000 |
+| EV000-4 | P1 | 16 Aug – 14 Sep 1964 | The Vung Tau Charter crisis and the September coup attempt | Saigon, Hue and Da Nang | HIST-ALT | 000,001 |
+| EV000-5 | P1 | Sep 1964 – mid-1965 | The Hop Tac programme | Saigon and the surrounding provinces | HIST-ALT | 000,001 |
+| EV000-6 | P1 | Sep 1964 – Apr 1965 | Hanoi commits the regulars; the Trail and the first air war in Laos | North Vietnam, the Laotian panhandle and the Central Highlands | HIST-ALT | 000,001 |
 | EV000-7 | P1 | 1 Nov 1964 | The attack on Bien Hoa air base | Bien Hoa air base, Bien Hoa Province | HIST | 000 |
 | EV000-8 | P1 | 19–24 Dec 1964 | The Brink Hotel bombing and the purge of the High National Council | Saigon | HIST | 000 |
 | EV000-9 | P1 | 28 Dec 1964 – 1 Jan 1965 | The battle of Binh Gia | Binh Gia, Phuoc Tuy Province | HIST | 000 |
@@ -18,6 +22,7 @@
 | EV000-13 | P1 | 8 Mar – 6 May 1965 | The Marines land at Da Nang | Da Nang, Quang Nam Province | HIST | 000 |
 | EV000-14 | P1 | 30 Mar 1965 | The bombing of the US embassy | Saigon | HIST | 000 |
 | EV000-15 | P1 | 3 Apr – 24 Jul 1965 | The Thanh Hoa Bridge and the northern air defences | Thanh Hoa (Ham Rong), Thanh Hoa Province, and the Hanoi region | HIST | 000 |
+| EV001-5 | P1 | 6 Apr – 11 May 1965 | The Vinh Long suspension | Vinh Long Province | NEW | 001 |
 | EV000-16 | P1 | 10–12 May 1965 | The battle of Song Be | Song Be (Phuoc Long province capital) and Phuoc Binh, Phuoc Long Province | HIST | 000 |
 | EV000-17 | P1 | 28–31 May 1965 | The battle of Ba Gia | Ba Gia, Son Tinh District, Quang Ngai Province | HIST | 000 |
 | EV000-18 | P1 | 9–13 Jun 1965 | The battle of Dong Xoai | Dong Xoai district town and CIDG camp, Phuoc Long Province | HIST | 000 |
@@ -26,7 +31,8 @@
 | EV000-21 | P1 | 28 Jul 1965 | The July decision | Washington | HIST | 000 |
 | EV000-22 | P2 | 18–24 Aug 1965 | Operation Starlite | Van Tuong peninsula, south of Chu Lai, Quang Ngai Province | HIST | 000 |
 | EV000-23 | P2 | 19 Oct – 18 Nov 1965 | Plei Me and the Ia Drang | Plei Me CIDG camp and the Ia Drang valley below the Chu Pong massif, Pleiku Province | HIST | 000 |
-| EV000-24 | P2 | 24 Jan – 6 Mar 1966 | Operation Masher/White Wing | Bong Son plain and the Kim Son and An Lao valleys, Binh Dinh Province | HIST | 000 |
+| EV001-6 | P2 | 10 Jan – 30 Jun 1966 | Operation GOLDEN SHEAF | Phong Dinh and Chuong Thien Provinces, along the Xa No canal from Can Tho to Vi Thanh | NEW | 001 |
+| EV000-24 | P2 | 24 Jan – 6 Mar 1966 | Operation Masher/White Wing | Bong Son plain and the Kim Son and An Lao valleys, Binh Dinh Province | HIST-ALT | 000,001 |
 | EV000-25 | P2 | 8–10 Mar 1966 | The fall of the A Shau camp | A Shau Special Forces camp, A Shau valley, Thua Thien Province | HIST | 000 |
 | EV000-26 | P2 | 10 Mar – 19 Jun 1966 | The Buddhist uprising | Da Nang and Hue | HIST | 000 |
 | EV000-27 | P2 | 29 Jun 1966 | The POL strikes | Hanoi and Haiphong petroleum storage areas | HIST | 000 |
@@ -36,15 +42,16 @@
 | EV000-31 | P2 | 2 Jan 1967 | Operation Bolo | Over the Hanoi area, North Vietnam | HIST | 000 |
 | EV000-32 | P2 | 8–26 Jan 1967 | Operation Cedar Falls | The Iron Triangle and Ben Suc, Binh Duong Province | HIST | 000 |
 | EV000-33 | P2 | 22 Feb – 14 May 1967 | Operation Junction City | War Zone C, Tay Ninh Province, to the Cambodian border | HIST | 000 |
+| EV001-7 | P2 | 6 Mar – 18 Apr 1967 | The Special Court convicts the IV Corps quartermaster | Can Tho, Phong Dinh Province, and the Special Court for Corruption, Saigon | NEW | 001 |
 | EV000-34 | P2 | 24 Apr – 11 May 1967 | The Hill Fights at Khe Sanh | Hills 861, 881 South and 881 North, northwest of Khe Sanh, Quang Tri Province | HIST | 000 |
-| EV000-35 | P2 | 9 May 1967 | CORDS is established | Saigon | HIST | 000 |
+| EV000-35 | P2 | 9 May 1967 | CORDS is established | Saigon | HIST-ALT | 000,001 |
 | EV000-36 | P2 | 2 Jul – 31 Oct 1967 | Operation Buffalo and the siege of Con Thien | Con Thien and "the Marketplace", Quang Tri Province, south of the DMZ | HIST | 000 |
-| EV000-37 | P2 | 6 Jul 1967 – Jan 1968 | Hanoi decides on a general offensive | Hanoi and COSVN | HIST | 000 |
+| EV000-37 | P2 | 6 Jul 1967 – Jan 1968 | Hanoi decides on a general offensive | Hanoi and COSVN | HIST-ALT | 000,001 |
 | EV000-38 | P2 | 3 Sep 1967 | The constitution and the presidential election | Republic of Vietnam | HIST | 000 |
 | EV000-39 | P2 | 8 Sep – Dec 1967 | The barrier and Muscle Shoals | The DMZ and the Laotian panhandle; Nakhon Phanom, Thailand | HIST | 000 |
 | EV000-40 | P2 | 3–23 Nov 1967 | The battle of Dak To | Dak To and Hills 1338, 724 and 875, Kontum Province | HIST | 000 |
 | EV000-41 | P3 | 21 Jan – 15 Apr 1968 | The siege of Khe Sanh | Khe Sanh Combat Base, Lang Vei and the surrounding hills, Quang Tri Province | HIST | 000 |
-| EV000-42 | P3 | 30–31 Jan 1968 | The Tet Offensive: the first wave | Saigon, Hue and the provincial and district capitals of South Vietnam | HIST | 000 |
+| EV000-42 | P3 | 30–31 Jan 1968 | The Tet Offensive: the first wave | Saigon, Hue and the provincial and district capitals of South Vietnam | HIST-ALT | 000,001 |
 | EV000-43 | P3 | 31 Jan – 7 Mar 1968 | The battle for Saigon and the attack on the US embassy | Saigon, Cholon and Tan Son Nhut | HIST | 000 |
 | EV000-44 | P3 | 31 Jan – 2 Mar 1968 | The battle of Hue | Hue, Thua Thien Province | HIST | 000 |
 | EV000-45 | P3 | 20 Feb – 31 Mar 1968 | The reinforcement request and the decision of 31 March | Saigon and Washington | HIST | 000 |
@@ -54,20 +61,20 @@
 | EV000-49 | P3 | 5 May – 15 Jun 1968 | The May offensive in Saigon | Saigon and its outskirts, and towns throughout the South | HIST | 000 |
 | EV000-50 | P3 | 10–12 May 1968 | The evacuation of Kham Duc | Kham Duc Special Forces camp and Ngok Tavak, Quang Tin Province | HIST | 000 |
 | EV000-51 | P3 | 10 Jun – 11 Jul 1968 | Abrams takes command; mobilization in the South; Khe Sanh abandoned | Saigon and Quang Tri Province | HIST | 000 |
-| EV000-52 | P3 | 17 Aug – 23 Sep 1968 | The third offensive | Provincial towns and bases, especially in III Corps and the Central Highlands | HIST | 000 |
+| EV000-52 | P3 | 17 Aug – 23 Sep 1968 | The third offensive | Provincial towns and bases, especially in III Corps and the Central Highlands | HIST-ALT | 000,001 |
 | EV000-53 | P3 | 31 Oct – 5 Nov 1968 | The bombing halt and the American election | Washington, Paris and Saigon | HIST | 000 |
-| EV000-54 | P3 | 1 Nov 1968 – Jan 1969 | The Accelerated Pacification Campaign and Phoenix | The countryside of South Vietnam | HIST | 000 |
+| EV000-54 | P3 | 1 Nov 1968 – Jan 1969 | The Accelerated Pacification Campaign and Phoenix | The countryside of South Vietnam | HIST-ALT | 000,001 |
 | EV000-55 | P3 | 15 Nov 1968 | Commando Hunt begins | The Laotian panhandle | HIST | 000 |
 | EV000-56 | P4 | 20 Jan – Mar 1969 | Nixon takes office; Vietnamization | Washington and Saigon | HIST | 000 |
 | EV000-57 | P4 | 23 Feb – Mar 1969 | The post-Tet offensive | Saigon, Da Nang and installations throughout the South | HIST | 000 |
 | EV000-58 | P4 | 18 Mar 1969 – 26 May 1970 | Operation Menu | Base Areas 350, 351, 352, 353, 609 and 740, eastern Cambodia | HIST | 000 |
 | EV000-59 | P4 | 13–20 May 1969 | Hamburger Hill | Ap Bia Mountain (Hill 937), A Shau valley, Thua Thien Province | HIST | 000 |
 | EV000-60 | P4 | 8 Jun – Dec 1969 | Midway, the first withdrawals and the Nixon Doctrine | Midway Island; Guam; South Vietnam | HIST | 000 |
-| EV000-61 | P4 | Jul – 2 Sep 1969 | COSVN Resolution 9 and the death of Ho Chi Minh | COSVN headquarters and Hanoi | HIST | 000 |
+| EV000-61 | P4 | Jul – 2 Sep 1969 | COSVN Resolution 9 and the death of Ho Chi Minh | COSVN headquarters and Hanoi | HIST-ALT | 000,001 |
 | EV000-62 | P4 | 4 Aug 1969 – Feb 1970 | The secret Paris channel opens | Paris | HIST | 000 |
 | EV000-63 | P4 | 15 Oct – 24 Nov 1969 | My Lai revealed; the Moratorium | Washington and the United States | HIST | 000 |
 | EV000-64 | P4 | 18 Mar – Apr 1970 | Sihanouk falls; the PAVN turns on Cambodia | Phnom Penh and eastern Cambodia | HIST | 000 |
-| EV000-65 | P4 | 26 Mar 1970 | Land to the Tiller | Republic of Vietnam | HIST | 000 |
+| EV000-65 | P4 | 26 Mar 1970 | Land to the Tiller | Republic of Vietnam | CANCELLED | 000,001 |
 | EV000-66 | P4 | 29 Apr – 30 Jun 1970 | The Cambodian incursion | The Parrot's Beak and the Fishhook, eastern Cambodia | HIST | 000 |
 | EV000-67 | P4 | 1–23 Jul 1970 | Fire Support Base Ripcord | Fire Support Base Ripcord, near the A Shau valley, Thua Thien Province | HIST | 000 |
 | EV000-68 | P4 | 10 Oct 1970 – Dec 1971 | Commando Hunt and the growth of the Trail | The Laotian panhandle and northeastern Cambodia | HIST | 000 |
@@ -75,7 +82,8 @@
 | EV000-70 | P4 | 29 Dec 1970 | The Cooper–Church amendment | Washington | HIST | 000 |
 | EV000-71 | P4 | 8 Feb – 25 Mar 1971 | Lam Son 719 | Route 9 from Khe Sanh to Tchepone, the Laotian panhandle (Base Areas 604 and 611) | HIST | 000 |
 | EV000-72 | P4 | 29 Mar – 30 Jun 1971 | The war on trial at home | Fort Benning, Washington and New York | HIST | 000 |
-| EV000-73 | P4 | Oct 1971 | Thieu's unopposed re-election | Republic of Vietnam | HIST | 000 |
+| EV001-8 | P4 | 14 May – 9 Jul 1971 | The Commission placed under the Inspectorate | Saigon | NEW | 001 |
+| EV000-73 | P4 | Oct 1971 | Thieu's unopposed re-election | Republic of Vietnam | HIST | 000,001 |
 | EV000-74 | P5 | 30 Mar – 2 Apr 1972 | The Easter Offensive opens: the DMZ front | Quang Tri Province, from the DMZ to the Cua Viet and Camp Carroll | HIST | 000 |
 | EV000-75 | P5 | 5 Apr – 23 Oct 1972 | Freedom Train, Pocket Money and Linebacker | North Vietnam, Haiphong harbour and the approaches to the DMZ | HIST | 000 |
 | EV000-76 | P5 | 7 Apr – 18 Jun 1972 | Loc Ninh and the siege of An Loc | Loc Ninh and An Loc, Binh Long Province, on Route 13 | HIST | 000 |
