@@ -1,0 +1,193 @@
+# Manifest for memorandum 004. Fill every field; `fie.py check` rejects blanks.
+# status and phases_changed are set by fie.py; leave them alone.
+
+memo = "004"
+title = "Modern infantry small arms for US, ARVN and RF/PF: M4A1 URG-I with Aimpoint CompM5, M110A2 squad marksman rifle, M249 squad automatic weapon"
+received = "2026-11-23"
+status = "part1"
+version = "1.0.3"
+phases_changed = []
+links = ["001", "002"]           # the RF/PF who escort the titling teams and hold the hamlets behind the police posts are the men this rifle rearms; the National Police and its Police Field Force are not covered by the provision and keep their carbines
+
+[deviation]
+part1 = "none"
+part2 = "none"
+part3 = "none"
+
+[[provision]]
+id = "P004a"
+designation = "M4A1 carbine with the Upper Receiver Group – Improved (URG-I: Geissele Automatics upper, Daniel Defense 14.5-inch 1:7 barrel, mid-length gas, Mk16 13.5-inch M-LOK rail, SureFire SF4P flash hider) and Aimpoint CompM5 2 MOA red-dot sight, firing M855A1 5.56mm, 2026 configuration"
+category = "ground"
+quantity = "All rifles and carbines of US forces and the RVNAF, and all RF/PF [U]: a first increment of about 600,000 carbines and sights in 1964, rising to about 1.7–1.9 million cumulative by 1972 [E: RVNAF 514,000 in 1964 and about 1,048,000 in 1971–72 per S9, US strength rising to about 540,000 at peak, plus a 10% float]"
+ceiling_spaces = "~250 [E: about 120 new-equipment training spaces in the first year, about 80 small-arms and optics repair technicians at the depots, and about 50 added small-arms advisers to the RF/PF training centres; no troop ceiling is set, but each space still costs]"
+arrival = "1964-01-01"
+in_service = "M4A1 standard US Army carbine (M4 type-classified 1994; M4A1 Army-wide conversion from 2014); URG-I fielded by US Army special operations from about 2019 in place of SOPMOD Block II; Aimpoint CompM5 marketed from about 2018; M855A1 fielded June 2010"
+systems = ["SECURE", "FIX", "ADVISE", "SUSTAIN"]
+status = "active"
+
+[[provision]]
+id = "P004b"
+designation = "Knight's Armament Company M110A2 7.62mm semi-automatic rifle (20-inch free-floated match barrel, integral suppressor, 12-inch M-LOK handguard, collapsible stock) with SIG Sauer TANGO6T 1-6x24mm first-focal-plane illuminated variable-power scope, firing M118LR and M80A1 7.62mm, issued one per infantry squad as the designated marksman's rifle, 2026 configuration"
+category = "ground"
+quantity = "One per US and ARVN infantry squad [U]: about 5,000 rifles and scopes in 1964, about 13,000 cumulative by 1972 [E: about 120 ARVN, Ranger, Airborne and Marine battalions of about 36 squads in 1964 rising to about 180 by 1972, plus up to about 112 US Army and Marine manoeuvre battalions at the 1968–69 peak, plus a 10% float]"
+ceiling_spaces = "~120 [E: marksman instructor teams of about 60 at the training centres and about 60 match-rifle and scope armourers; the marksmen themselves are squad members already counted]"
+arrival = "1964-01-01"
+in_service = "M110 semi-automatic sniper system from 2007 (KAC); M110A2 shown in Army configuration October 2021 and used at the April 2022 Best Ranger Competition; KAC holds an open Army contract for it; TANGO6T selected for the Army's Squad Designated Marksman Rifle"
+systems = ["FIX", "SECURE", "STRIKE"]
+status = "active"
+
+[[provision]]
+id = "P004c"
+designation = "FN America M249 5.56mm light machine gun (PIP-standard, 465mm barrel, collapsible stock) with SIG Sauer TANGO6T 1-6x24mm scope (DWLR-556 reticle), firing linked M855A1 from 200-round pouches or STANAG magazines, at squad level in US and ARVN infantry in place of the BAR and the squad's automatic weapon, 2026 configuration"
+category = "ground"
+quantity = "At squad level in US and ARVN infantry [U]: about 5,200 guns in 1964, about 17,000–19,000 cumulative by 1972 [E: one per ARVN squad in place of its BAR, two per Army squad and three per Marine squad in place of the fire teams' automatic rifles, on the battalion counts of P004b, plus a 10% float]"
+ceiling_spaces = "~100 [E: machine-gun instructor teams of about 40 and about 60 armourers for barrels, gas systems and feed trays; the gunners are squad members already counted]"
+arrival = "1964-01-01"
+in_service = "M249 adopted February 1982, in Army service from 1984 and Marine Corps from 1985; PIP standard from the late 1980s; selected for replacement by the M250 in April 2022 but in wide 2026 service"
+systems = ["FIX", "SECURE"]
+status = "active"
+
+# ---------------------------------------------------------------- P004a pushes
+[[push]]
+provision = "P004a"
+var = "ARVN.effectiveness"
+band = 1
+note = "ARVN infantry matches and outshoots the AK-47 from 1964 instead of mid-1968; faster hits in the first seconds of a contact at 10–50 m, more volume per man, a lighter weapon for smaller soldiers"
+
+[[push]]
+provision = "P004a"
+var = "RFPF.effectiveness"
+band = 1
+note = "The outpost platoon holds its wall against a VC local-force company with 30-round magazines and a red dot instead of carbines and Garands; the territorial forces are rearmed five years before 1969"
+
+[[push]]
+provision = "P004a"
+var = "US.unit_quality"
+band = 1
+note = "No 1967 M16 jamming crisis, a red-dot sight in every rifleman's hands, and M855A1 through brush and light cover"
+
+[[push]]
+provision = "P004a"
+var = "US.casualties"
+band = -1
+note = "Fewer men lost in the first seconds of the meeting engagement; the rifle that does not jam in the Hill 881 sense"
+
+[[push]]
+provision = "P004a"
+var = "POP.night_control"
+band = 1
+note = "Hamlet outposts that hold a night longer because their garrisons are not outgunned; small, real, and dependent on whether the platoon is awake and present"
+
+[[push]]
+provision = "P004a"
+var = "VC.local_force"
+band = 1
+note = "Counter-direction: every outpost overrun gives the Front modern carbines and 5.56mm, so the local force rearms from our stocks rather than from the Trail"
+
+# ---------------------------------------------------------------- P004b pushes
+[[push]]
+provision = "P004b"
+var = "FIX.capability"
+band = 1
+note = "Precise fire at 300–800 m in paddy, on the coastal plain, from hilltop and firebase perimeters; kills the enemy's own snipers, machine gunners and leaders at ranges the AK cannot answer"
+
+[[push]]
+provision = "P004b"
+var = "ARVN.effectiveness"
+band = 1
+note = "Small but real: a trained marksman in each squad in the open delta and plains country where ARVN does most of its fighting"
+
+# ---------------------------------------------------------------- P004c pushes
+[[push]]
+provision = "P004c"
+var = "FIX.capability"
+band = 1
+note = "Belt-fed base of fire inside the squad: the ARVN squad can hold an enemy in contact with 200-round belts instead of a 20-round BAR"
+
+[[push]]
+provision = "P004c"
+var = "ARVN.effectiveness"
+band = 1
+note = "Squad firepower matching the RPD-armed PAVN infantry from 1964"
+
+[[push]]
+provision = "P004c"
+var = "LOG.distribution"
+band = -1
+note = "Linked 5.56mm and spare barrels in quantity down a road net the enemy cuts; small per gun, large across 6,000 squads"
+
+# ---------------------------------------------------------------- depends
+[[depend]]
+provision = "P004a"
+var = "LOG.distribution"
+note = "Ammunition, batteries, optics spares and replacement carbines must reach districts and outposts over interdicted roads"
+
+[[depend]]
+provision = "P004a"
+var = "LOG.ports"
+note = "About 600,000 weapons and hundreds of millions of rounds in the first year through five ports"
+
+[[depend]]
+provision = "P004a"
+var = "ADVISE.leverage"
+note = "Zeroing, marksmanship and maintenance training is only as good as the advisers' ability to make ARVN and RF/PF commanders hold it"
+
+[[depend]]
+provision = "P004a"
+var = "ARVN.leadership"
+note = "A better rifle does not make a unit go out at night or accept contact; leaders decide that"
+
+[[depend]]
+provision = "P004a"
+var = "GVN.corruption"
+note = "Rifles, optics, batteries and ammunition are saleable; leakage to the market and to the Front is set by command honesty"
+
+[[depend]]
+provision = "P004a"
+var = "ENEMY.engagement_control"
+note = "The rifle acts only in a contact; the enemy still chooses most contacts"
+
+[[depend]]
+provision = "P004a"
+var = "FIND.main_force"
+note = "Firepower in the squad is wasted on empty jungle; it needs the enemy found"
+
+[[depend]]
+provision = "P004a"
+var = "RFPF.effectiveness"
+note = "The rifle's value in the hamlet depends on whether the platoon is present and awake after dark"
+
+[[depend]]
+provision = "P004a"
+var = "ARVN.desertion"
+note = "Deserters take their carbines; the weapon must stay with the force to matter"
+
+[[depend]]
+provision = "P004b"
+var = "ARVN.leadership"
+note = "Marksmen must be selected on skill, not on favour, and employed by squad leaders who understand them"
+
+[[depend]]
+provision = "P004b"
+var = "LOG.distribution"
+note = "Match 7.62mm ammunition and scope spares in a second calibre at squad level"
+
+[[depend]]
+provision = "P004b"
+var = "FIND.main_force"
+note = "Long-range precision fire needs a target seen at range: open ground, not canopy"
+
+[[depend]]
+provision = "P004c"
+var = "LOG.distribution"
+note = "Linked ammunition, spare barrels, links and feed parts"
+
+[[depend]]
+provision = "P004c"
+var = "ENEMY.engagement_control"
+note = "A base of fire fixes only an enemy who has accepted the fight"
+
+[[depend]]
+provision = "P004c"
+var = "ADVISE.leverage"
+note = "Machine-gun fire discipline, barrel changes and ammunition management are trained or the guns burn out and run dry"
