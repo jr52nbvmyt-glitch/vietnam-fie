@@ -4,7 +4,7 @@
 memo = "002"
 title = "National Police reform with a rural constabulary, and merit-based selection of province and district chiefs"
 received = "2026-11-23"
-status = "part1"
+status = "part2"
 version = "1.0.2"
 phases_changed = []              # set by `fie.py chapters 002 P2 P3 …`
 links = ["001"]                  # the land programme and the Commission Against Corruption both depend on the police and the province chief
@@ -248,3 +248,37 @@ note = "A competent chief in a district the enemy holds by night is a competent 
 provision = "P002b"
 var = "US.political_tolerance"
 note = "Washington must accept that a chief who will not falsify returns reports bad news"
+
+# ---------------------------------------------------------------- refined in Part 2
+[[push]]
+provision = "P002a"
+var = "SUBVERT.defection"
+band = 1
+note = "A resident constable and a Special Branch officer are a door a frightened cadre can walk through at night; Special Branch, not the Army, debriefs and turns ralliers"
+
+[[push]]
+provision = "P002a"
+var = "VC.recruitment"
+band = -1
+note = "The family census shows which sons have gone to the forest and makes VC conscription in held villages visible and costly; confined to held villages, and partly offset by youths who leave before the census reaches them"
+
+[[push]]
+provision = "P002a"
+var = "ARVN.desertion"
+band = -1
+note = "Identity cards and the family census make a deserter at home findable; the deterrent is modest and the police are reluctant to arrest the sons of the village"
+
+[[depend]]
+provision = "P002a"
+var = "ECON.inflation"
+note = "A police pay statute fixed in piasters is eroded by the inflation of 1966-68; a constable paid less than a labourer begins to live on the village again"
+
+[[depend]]
+provision = "P002b"
+var = "ECON.inflation"
+note = "The pay and allowance reform that makes an honest chief possible loses its value as prices rise"
+
+[[depend]]
+provision = "P002b"
+var = "ARVN.effectiveness"
+note = "Competent officers drawn to province and district posts leave battalions and regiments; the selection competes with the line for the same few hundred able officers"

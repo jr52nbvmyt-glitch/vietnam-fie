@@ -6,22 +6,30 @@
 *Higher means more hamlets held by the GVN after dark.*
 
 - P001a (memo 001) depends — A title delivered by day to a hamlet the VC hold by night is a death warrant; delivery follows security
+- P002a (memo 002) pushes +1 — A police post that sleeps in the village adds a resident presence and a radio; it holds only where Popular Forces stand with it and a reaction arrives in the dark (POSTNA-2)
+- P002b (memo 002) pushes +1 — A district chief who knows his villages and keeps his Popular Forces in them at night, rather than in the district town, is the mechanism of night control
+- P002a (memo 002) depends — A resident constable in a village held by the VC at night is a target, not a policeman; posts follow security
+- P002b (memo 002) depends — A competent chief in a district the enemy holds by night is a competent chief in a besieged town
 
 ## POP.civilian_harm — Civilian harm from all sides' operations
 *Higher means more civilian deaths and injuries.*
 
 - P001a (memo 001) pushes +1 — Titled families and land committee members in contested hamlets become targets of the enemy's security sections (F001-8)
+- P002a (memo 002) pushes -1 — Arrest on evidence and detention under review replace part of the military's sweep-and-detain; offset in part by enemy terror against resident constables
 
 ## POP.gvn_legitimacy — Legitimacy of the Saigon government in the countryside
 *Higher means more rural acceptance of the GVN.*
 
 - P001a (memo 001) pushes +2 — The government's return to a hamlet no longer means the landlord's return; for the first time it gives the peasant something the Viet Cong cannot take away by winning
 - P001b (memo 001) pushes +1 — Visible prosecution of officials who prey on the population, if it reaches above the district level
+- P002a (memo 002) pushes +1 — A policeman who settles disputes, records crime and arrests on evidence is the government's most frequent face in the village; the gain reverses where the police extort or torture
+- P002b (memo 002) pushes +1 — The district chief is the government in the countryside; one who is resident, competent and not for sale changes what the government means in his district
 
 ## POP.land_tenure — Land tenure
 *Higher means more owner-cultivators with secure title.*
 
 - P001a (memo 001) pushes +3 — Zero retention of tenanted land and free title to the present tiller end tenancy on most tenanted rice land where the state can reach it
+- P002a (memo 002) depends — A titled peasant has a reason to tell the constable who threatens his title (P001a)
 
 ## POP.rural_economy — Rural economy
 *Higher means more rice production and market access.*
@@ -32,23 +40,31 @@
 *Higher means more inflation.*
 
 - P001a (memo 001) pushes +1 — Cash share of landlord compensation enters a war economy; small against aid flows, but positive
+- P002a (memo 002) depends — A police pay statute fixed in piasters is eroded by the inflation of 1966-68; a constable paid less than a labourer begins to live on the village again
+- P002b (memo 002) depends — The pay and allowance reform that makes an honest chief possible loses its value as prices rise
 
 ## ECON.rice_denial — Rice denial to the enemy
 *Higher means less rice reaching the VC and PAVN in the South.*
 
 - P001a (memo 001) pushes -1 — Rent no longer paid stays in the hamlet, within the enemy's tax reach where it is contested or held; reverses as hamlets are secured (F001-8)
+- P002a (memo 002) pushes +1 — Checkpoints, family census and market controls on the Malayan pattern reduce rice moving to the enemy from held areas
 
 ## GVN.admin_capacity — Province and district administration
 *Higher means more functioning administration.*
 
 - P001b (memo 001) pushes +1 — Budgets executed as voted; province and district funds reaching their purpose
 - P001a (memo 001) depends — Province land services and village committees must exist and work
+- P002b (memo 002) pushes +2 — Chiefs chosen for ability, kept long enough to learn a province, and inspected by a body they do not command: the single largest lever on provincial administration
+- P002a (memo 002) depends — Courts, prosecutors and the province and district chief direct and protect the police
 
 ## GVN.corruption — Corruption and diversion
 *Higher means more corruption.*
 
 - P001b (memo 001) pushes -2 — Investigation, prosecution and an aid-suspension lever against ghost payrolls, sale of offices and diversion; substantial, not transformative, because the enforcer's reach stops where the junta's protection begins
 - P001a (memo 001) depends — Fees to accept applications, collusion with landlords and false worship-land claims hollow out the programme (P001b)
+- P002b (memo 002) pushes -1 — A post that cannot be bought cannot be farmed to repay the price; vetting and asset declarations close the front door, while the side doors of contracts, rice and the draft stay open
+- P002a (memo 002) depends — Police posts are bought and sold, checkpoints become toll gates, and Special Branch files can be sold; the Commission Against Corruption (P001b) polices the police
+- P002b (memo 002) depends — Examinations can be leaked and boards bought; the Commission Against Corruption (P001b) vets candidates and audits the Board
 
 ## GVN.political_stability — Political stability in Saigon
 *Higher means more stable government and junta cohesion.*
@@ -57,22 +73,35 @@
 - P001b (memo 001) pushes -1 — Threatens the incomes of the generals who make and unmake governments; prosecutions become coup grievances and coup weapons
 - P001a (memo 001) depends — The decree must survive the next coup; each new junta may reopen it
 - P001b (memo 001) depends — The commission lives only while some faction in Saigon protects it
+- P002a (memo 002) pushes +1 — A Special Branch that watches the generals as well as the VC, and a police that is not one faction's instrument, slightly raises the cost of a coup; the reform is itself a prize for the faction that captures it
+- P002b (memo 002) pushes -1 — Takes from the generals their most valuable patronage; a coup grievance in 1964, and a coup-maker's first target is the selection board
+- P002a (memo 002) depends — Every junta since 1955 has used the police as a political instrument; the Director General's fixed term survives only while a coup does not sweep it away
+- P002b (memo 002) depends — The Board and the two-year tenure survive only as long as the government that decreed them, and the next coup may sweep both
 
 ## GVN.police — National Police in the countryside
 *Higher means more capable and present rural police.*
 
 - P001a (memo 001) depends — Protection of new owners against landlords' agents and against VC retaliation
 - P001b (memo 001) depends — Arrests need a police that will execute warrants against the powerful
+- P002a (memo 002) pushes +3 — A resident constable in each village that the government holds, a district station in every district, and a police force paid enough not to live on the population: the National Police becomes a rural institution five years before it did historically
+- P002b (memo 002) depends — A district chief governs through the police as well as the Popular Forces (P002a)
+
+## VCI.strength — The VC infrastructure
+*Higher means a stronger, better-functioning VCI.*
+
+- P002a (memo 002) pushes -1 — Village cadre identified and arrested on evidence, legal cadre forced underground; slow, cumulative and confined to villages the state holds
 
 ## VCI.tax_take — VC taxation
 *Higher means more revenue to the VC.*
 
 - P001a (memo 001) pushes -1 — Owner-cultivators with a title to defend are harder to tax by consent; coercive taxation in VC-held hamlets is untouched
+- P002a (memo 002) pushes -1 — Resource control on roads and waterways and a constable in the market town raise the cost of moving tax rice and cash
 
 ## VC.recruitment — VC recruitment and conscription in the South
 *Higher means more recruits.*
 
 - P001a (memo 001) pushes -1 — Removes the land argument that tied a family's sons to the revolution's victory; slow and partial, because conscription by the VCI does not depend on persuasion
+- P002a (memo 002) pushes -1 — The family census shows which sons have gone to the forest and makes VC conscription in held villages visible and costly; confined to held villages, and partly offset by youths who leave before the census reaches them
 
 ## HANOI.will — Hanoi's commitment to armed reunification
 *Higher means more commitment.*
@@ -83,34 +112,44 @@
 *Higher means better ability to identify VCI members inside the population.*
 
 - P001a (memo 001) pushes +1 — Village land committees, a parcel map and a register of who tills what give the state its first census of the hamlet; volunteered information rises where titles are delivered and defended
+- P002a (memo 002) pushes +2 — A single Special Branch holding the files, a resident constable who knows the hamlet, and a family census that makes a stranger visible; the VCI half of find-and-fix, not the main-force half
 
 ## INTEL.penetration — Enemy penetration of the GVN and RVNAF
 *Higher means more enemy agents inside the GVN and RVNAF.*
 
 - P001b (memo 001) pushes -1 — Investigations of officials who sell documents, passes and posts uncover some of the enemy's purchased agents
 - P001b (memo 001) depends — A commission holding the regime's secrets is a target for the enemy's agents as well as the generals'
+- P002a (memo 002) pushes -1 — Special Branch counter-intelligence and vetting against an enemy that has had agents in the police and the RVNAF for a decade; partial, and itself a target
+- P002a (memo 002) depends — A Special Branch penetrated by the enemy hands him its informants
 
 ## ARVN.effectiveness — ARVN combat effectiveness
 *Higher means more effective ARVN units in combat.*
 
 - P001b (memo 001) pushes +1 — Ghost soldiers removed from the rolls: battalions known to be their real strength, rice and pay reaching the men present
+- P002b (memo 002) depends — Competent officers drawn to province and district posts leave battalions and regiments; the selection competes with the line for the same few hundred able officers
 
 ## ARVN.leadership — RVNAF officer selection and quality
 *Higher means better officers, selected on merit.*
 
 - P001b (memo 001) pushes +1 — Office-buying and transfers for cash become prosecutable; commanders relieved for cause with evidence an adviser could never produce
 - P001b (memo 001) depends — Relief for cause needs replacements; without a pool of honest officers, removal leaves vacancies
+- P002b (memo 002) pushes +1 — Selection for a province or district becomes a reward for merit in the field, and the examination creates a record of officers' ability that promotion boards can use
+- P002a (memo 002) depends — Military Security Service and ARVN intelligence must accept Special Branch primacy on the VCI
+- P002b (memo 002) depends — The candidate pool is the officer corps and a thin civil service; merit selection cannot select merit that does not exist
 
 ## ARVN.desertion — RVNAF desertion
 *Higher means more desertion.*
 
 - P001b (memo 001) pushes -1 — Pay delivered to the soldier by an independent paymaster rather than through his commander removes one cause of desertion
+- P002a (memo 002) pushes -1 — Identity cards and the family census make a deserter at home findable; the deterrent is modest and the police are reluctant to arrest the sons of the village
 
 ## RFPF.effectiveness — Regional and Popular Forces
 *Higher means more effective territorial forces.*
 
 - P001a (memo 001) pushes +1 — A Popular Forces militiaman who owns the field he guards has a reason to fight at night that pay alone does not give
 - P001a (memo 001) depends — Territorial forces hold titled hamlets after the land teams leave
+- P002b (memo 002) pushes +1 — The province and district chief commands the Regional and Popular Forces; a competent chief who stays two years is the largest single improvement territorial forces can receive without new equipment
+- P002a (memo 002) depends — Popular Forces hold the village with the constable at night; the police post is not a fort
 
 ## ADVISE.leverage — Advisory leverage
 *Higher means advisors can change more RVNAF decisions.*
@@ -118,12 +157,21 @@
 - P001b (memo 001) pushes +1 — The Aid Compliance Board gives the US Mission a lever it can pull short of withholding all aid, at a legitimacy cost (POSTNA-6)
 - P001a (memo 001) depends — American pressure keeps the programme moving through juntas that would rather not
 - P001b (memo 001) depends — The Aid Compliance Board is only as strong as Washington's willingness to suspend aid to a command at war
+- P002b (memo 002) pushes +1 — Province and district advisers get a counterpart who stays and an Inspectorate to which their evidence can go; the leverage is institutional rather than American, which is why it costs little legitimacy
+- P002a (memo 002) depends — Americans keep the identity, pay and review provisions moving through governments that would prefer a political police
+- P002b (memo 002) depends — The Aid Compliance Board's power to suspend a province's counterpart funds (P001b) enforces appointment through the list
+
+## US.personnel_demand — Demand on US personnel spaces
+*Higher means more spaces consumed.*
+
+- P002a (memo 002) pushes +1 — About 520 Americans, of whom about 150 in uniform, mostly in the provinces
 
 ## LOG.helicopter_hours — Helicopter hours available
 *Higher means more lift hours available.*
 
 - P001b (memo 001) depends — Musters of posts off the roads are flown in
 - P001a (memo 001) depends — Land teams and survey parties reach contested villages by air
+- P002a (memo 002) depends — Field Force companies and identity teams reach villages off the roads by air
 
 ## US.political_tolerance — American political tolerance
 *Higher means more time and money Washington will grant.*
@@ -131,13 +179,17 @@
 - P001b (memo 001) pushes +1 — Visible reform and true strength returns modestly lengthen tolerance, with negative spikes from corruption headlines (F001-14)
 - P001a (memo 001) depends — Congress funds the compensation bonds over eight years
 - P001b (memo 001) depends — Washington must accept slower military operations while commands are purged
+- P002a (memo 002) depends — Congress funds a police programme that its critics will call a secret police
+- P002b (memo 002) depends — Washington must accept that a chief who will not falsify returns reports bad news
 
 ## US.credibility_gap — The credibility gap
 *Higher means wider gap between what MACV reports and what the press reports.*
 
 - P001b (memo 001) pushes -1 — Independent musters and audits give MACV strength and expenditure figures that do not pass through the reporting chain (G-10)
+- P002b (memo 002) pushes -1 — An Inspectorate that verifies province reporting gives MACV a check on figures produced by the men rated on them (A13)
 
 ## SUBVERT.defection — Genuine enemy defection
 *Higher means more real defectors from the VC and PAVN.*
 
 - P001a (memo 001) pushes +1 — Southern-born guerrillas and their families can now keep land the Front gave them without the Front; slow and confined to areas the government can reach
+- P002a (memo 002) pushes +1 — A resident constable and a Special Branch officer are a door a frightened cadre can walk through at night; Special Branch, not the Army, debriefs and turns ralliers
