@@ -1,0 +1,175 @@
+# Manifest for memorandum 003. Fill every field; `fie.py check` rejects blanks.
+# status and phases_changed are set by fie.py; leave them alone.
+
+memo = "003"
+title = "Two U-2S Dragon Lady and four RQ-4B Global Hawk Block 40 high-altitude reconnaissance aircraft"
+received = "2026-11-23"
+status = "part1"
+version = "1.0.3"
+phases_changed = []              # set by `fie.py chapters 003 P2 P3 …`
+links = ["002"]                  # the Special Branch and the province chief decide whether anything found from 70,000 ft about the countryside is acted on; the first two memoranda's reforms are where the VCI half of find-and-fix lives, which these aircraft do not touch
+
+[deviation]                      # G6: "none", or describe the structural deviation in that part
+part1 = "none"
+part2 = "none"
+part3 = "none"
+
+[[provision]]
+id = "P003a"
+designation = "Lockheed Martin U-2S Dragon Lady (Block 20), 2026 configuration: ASARS-2A synthetic aperture radar with moving-target indication, SYERS-2C multispectral electro-optical and infrared camera, ASIP signals intelligence payload, with a deployable ground exploitation station"
+category = "isr"
+quantity = "2 aircraft [U]"
+ceiling_spaces = "~220 [E: four to five pilots and a mobile-crew cell, about 90 maintainers and life-support technicians, about 20 contractor field engineers, and an exploitation and SIGINT cell of about 100 in shifts]"
+arrival = "1964-01-01"
+in_service = "U-2S from the re-engining programme of 1994 onward on the U-2R/TR-1 airframe (U-2R first flight 1967); 2026 fleet 27 U-2S and 4 TU-2S at Beale AFB"
+systems = ["FIND", "STRIKE", "INTERDICT"]
+status = "active"
+
+[[provision]]
+id = "P003b"
+designation = "Northrop Grumman RQ-4B Global Hawk Block 40, 2026 configuration: MP-RTIP active electronically scanned array radar with simultaneous ground moving-target indication and synthetic aperture imaging, with a Launch and Recovery Element and a Mission Control Element"
+category = "isr"
+quantity = "4 aircraft [U]"
+ceiling_spaces = "~380 [E: six to seven three-person mission crews for one continuous orbit, an LRE detachment, about 140 maintainers and contractor technicians, and a GMTI and radar-imagery exploitation cell of about 150 in shifts]"
+arrival = "1964-01-01"
+in_service = "RQ-4B Block 40 IOC August 2016; Global Hawk first flight February 1998; 2026 USAF inventory 9 Block 40 at Grand Forks AFB"
+systems = ["FIND", "INTERDICT", "STRIKE"]
+status = "active"
+
+# ---------------------------------------------------------------- P003a pushes
+[[push]]
+provision = "P003a"
+var = "FIND.main_force"
+band = 1
+note = "Radio direction-finding on regimental and front nets from 70,000 ft, radar imagery of base camps, trails and river crossings outside the canopy; finds where a regiment has been and roughly where its headquarters is, not where its companies are tonight"
+
+[[push]]
+provision = "P003a"
+var = "AIR.north_effect"
+band = 1
+note = "Target folders, radar and EO imagery of rail, bridges and ports in the North, and same-day damage assessment, so fewer sorties are wasted on targets already down or never there"
+
+[[push]]
+provision = "P003a"
+var = "AIR.losses"
+band = -1
+note = "An electronic order of battle of the North's radars, and later of its SA-2 sites, built before the strike forces need it; routes planned around what is known rather than learned by losses"
+
+[[push]]
+provision = "P003a"
+var = "US.personnel_demand"
+band = 1
+note = "About 220 spaces of scarce specialists: U-2 pilots, sensor technicians, imagery analysts and Vietnamese-language SIGINT linguists"
+
+# ---------------------------------------------------------------- P003b pushes
+[[push]]
+provision = "P003b"
+var = "INFIL.sea"
+band = -1
+note = "Wide-area maritime radar picks steel-hulled trawlers out of the coastal traffic day and night; it reduces sea infiltration only where a patrol vessel can be sent to the track"
+
+[[push]]
+provision = "P003b"
+var = "FIND.main_force"
+band = 1
+note = "Persistent moving-target radar over open ground, roads, rivers and canals: shows vehicle and boat movement, and column movement in the open, around the clock and in any weather; blind to whatever moves under canopy"
+
+[[push]]
+provision = "P003b"
+var = "STRIKE.responsiveness"
+band = 1
+note = "A live track passed to a strike controller by line-of-sight link cuts the time from detection to ordnance where an aircraft is already airborne; it does nothing where the strike asset is an hour away"
+
+[[push]]
+provision = "P003b"
+var = "POP.civilian_harm"
+band = 1
+note = "Night movement tracks in the Delta and the coastal plain are fired on under the historical rules; a radar cannot tell a farmer's sampan from a VC supply sampan"
+
+[[push]]
+provision = "P003b"
+var = "US.personnel_demand"
+band = 1
+note = "About 380 spaces: pilots and sensor operators for a 24-hour orbit, maintainers, contractor engineers and an exploitation cell"
+
+# ---------------------------------------------------------------- P003a depends
+[[depend]]
+provision = "P003a"
+var = "STRIKE.responsiveness"
+note = "A location from the U-2 is worth what can be done with it in the hours it stays true"
+
+[[depend]]
+provision = "P003a"
+var = "FIX.capability"
+note = "Finding a regiment's base area does not hold the regiment there"
+
+[[depend]]
+provision = "P003a"
+var = "AIR.north_defences"
+note = "The U-2 is safe from guns and MiG-17s at 70,000 ft; it is not safe from the SA-2 once the SA-2 arrives"
+
+[[depend]]
+provision = "P003a"
+var = "INTEL.penetration"
+note = "Anything shared with the Joint General Staff can reach the enemy; the product is only as secret as the least secure office that reads it"
+
+[[depend]]
+provision = "P003a"
+var = "INTL.chinese_intervention_risk"
+note = "SIGINT tracks along the Chinese border and any loss over or near China carry a political cost"
+
+[[depend]]
+provision = "P003a"
+var = "US.political_tolerance"
+note = "A lost U-2 is a public event; the 1960 and 1962 losses are in every politician's memory"
+
+[[depend]]
+provision = "P003a"
+var = "ENEMY.engagement_control"
+note = "A regiment that knows it is seen moves at night and under canopy; the U-2's value falls as the enemy learns it"
+
+# ---------------------------------------------------------------- P003b depends
+[[depend]]
+provision = "P003b"
+var = "FIX.capability"
+note = "A moving column on a road is a target for minutes; without a force able to reach it, the track is history"
+
+[[depend]]
+provision = "P003b"
+var = "LOG.helicopter_hours"
+note = "The reaction to a radar track in the South is an airmobile force; in 1964 there are few helicopter hours to spend on it"
+
+[[depend]]
+provision = "P003b"
+var = "TRAIL.capacity"
+note = "Moving-target radar sees trucks only where the Trail has trucks and open road; the 1964 Trail is mostly porters under canopy"
+
+[[depend]]
+provision = "P003b"
+var = "SANCT.laos"
+note = "Tracks in Laos can be struck only within the Laotian rules; standoff radar can see into the sanctuary but cannot authorise action there"
+
+[[depend]]
+provision = "P003b"
+var = "SANCT.cambodia"
+note = "From South Vietnamese airspace the radar looks 150–200 km into Cambodia; what it sees there cannot be attacked under the present constraints"
+
+[[depend]]
+provision = "P003b"
+var = "INFIL.sea"
+note = "Maritime detection is worth what the patrol forces can intercept"
+
+[[depend]]
+provision = "P003b"
+var = "LOG.distribution"
+note = "Air base security and fuel at Bien Hoa and Da Nang; an aircraft on the ramp is exposed to mortars"
+
+[[depend]]
+provision = "P003b"
+var = "AIR.north_defences"
+note = "At 60,000 ft the RQ-4 is inside the SA-2 envelope; once the North has SA-2s it can look into the North only from outside their range"
+
+[[depend]]
+provision = "P003b"
+var = "ENEMY.engagement_control"
+note = "An enemy that learns moving-target radar exists moves under canopy, in small groups and in rain, and stops when the aircraft is overhead"
