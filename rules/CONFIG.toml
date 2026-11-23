@@ -34,6 +34,13 @@ roe             = "MODELLED"   # standing rules of engagement in the South
 troop_ceiling   = "NONE"    # no limit on US personnel in RVN (set 21 Nov 2026)
 
 # ---------------------------------------------------------------------------
+# Standing conditions of the world, set by the user. Not provisions: no memorandum
+# is written for them and they enter no provision index. They hold from campaign_opens.
+# ---------------------------------------------------------------------------
+[conditions]
+space_constellations = "PRESENT"   # GPS and military SATCOM constellations exist and serve provisions built to use them (set 23 Nov 2026; errata E01, E02). The historical force gains no user equipment from this (A3a).
+
+# ---------------------------------------------------------------------------
 # Floors — minima on effort, not targets (G7). A shortfall is reported in the
 # audit line with its reason, never padded.
 # ---------------------------------------------------------------------------
