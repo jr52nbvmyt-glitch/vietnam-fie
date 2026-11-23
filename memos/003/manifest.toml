@@ -4,9 +4,9 @@
 memo = "003"
 title = "Two U-2S Dragon Lady and four RQ-4B Global Hawk Block 40 high-altitude reconnaissance aircraft"
 received = "2026-11-23"
-status = "part2"
+status = "complete"
 version = "1.0.3"
-phases_changed = []              # set by `fie.py chapters 003 P2 P3 …`
+phases_changed = ["P1", "P2", "P3", "P4", "P5"]
 links = ["002"]                  # the Special Branch and the province chief decide whether anything found from 70,000 ft about the countryside is acted on; the first two memoranda's reforms are where the VCI half of find-and-fix lives, which these aircraft do not touch
 
 [deviation]                      # G6: "none", or describe the structural deviation in that part
