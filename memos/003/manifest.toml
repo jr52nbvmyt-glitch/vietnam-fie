@@ -4,7 +4,7 @@
 memo = "003"
 title = "Two U-2S Dragon Lady and four RQ-4B Global Hawk Block 40 high-altitude reconnaissance aircraft"
 received = "2026-11-23"
-status = "part1"
+status = "part2"
 version = "1.0.3"
 phases_changed = []              # set by `fie.py chapters 003 P2 P3 …`
 links = ["002"]                  # the Special Branch and the province chief decide whether anything found from 70,000 ft about the countryside is acted on; the first two memoranda's reforms are where the VCI half of find-and-fix lives, which these aircraft do not touch
@@ -78,7 +78,7 @@ note = "Persistent moving-target radar over open ground, roads, rivers and canal
 provision = "P003b"
 var = "STRIKE.responsiveness"
 band = 1
-note = "A live track passed to a strike controller by line-of-sight link cuts the time from detection to ordnance where an aircraft is already airborne; it does nothing where the strike asset is an hour away"
+note = "A live track passed to a strike controller by line-of-sight or satellite link (E01) cuts the time from detection to ordnance where an aircraft is already airborne; it does nothing where the strike asset is an hour away"
 
 [[push]]
 provision = "P003b"
@@ -91,6 +91,12 @@ provision = "P003b"
 var = "US.personnel_demand"
 band = 1
 note = "About 380 spaces: pilots and sensor operators for a 24-hour orbit, maintainers, contractor engineers and an exploitation cell"
+
+[[push]]
+provision = "P003b"
+var = "AIR.north_effect"
+band = 1
+note = "Under the standing condition (E01) an orbit over the Gulf of Tonkin, outside the SA-2 belt, watches the coastal road and rail net from Vinh to Thanh Hoa and the lighter traffic out of Haiphong in any weather; armed reconnaissance is sent to what is moving rather than to where traffic used to be"
 
 # ---------------------------------------------------------------- P003a depends
 [[depend]]
@@ -152,7 +158,7 @@ note = "Tracks in Laos can be struck only within the Laotian rules; standoff rad
 [[depend]]
 provision = "P003b"
 var = "SANCT.cambodia"
-note = "From South Vietnamese airspace the radar looks 150–200 km into Cambodia; what it sees there cannot be attacked under the present constraints"
+note = "From South Vietnamese airspace the radar looks 150–200 km into Cambodia and sees the road traffic from Sihanoukville to the border base areas; what it sees there cannot be attacked under the present constraints, but the argument over how the sanctuary is supplied is settled by evidence (F003-3, F003-17)"
 
 [[depend]]
 provision = "P003b"
@@ -168,6 +174,16 @@ note = "Air base security and fuel at Bien Hoa and Da Nang; an aircraft on the r
 provision = "P003b"
 var = "AIR.north_defences"
 note = "At 60,000 ft the RQ-4 is inside the SA-2 envelope; once the North has SA-2s it can look into the North only from outside their range"
+
+[[depend]]
+provision = "P003b"
+var = "INTL.chinese_intervention_risk"
+note = "A Gulf of Tonkin orbit, reachable only by satellite control (E01), runs within radar sight of Hainan; a loss there is an incident with China as well as with Hanoi"
+
+[[depend]]
+provision = "P003b"
+var = "STRIKE.responsiveness"
+note = "A track is worth a strike aircraft within twenty to forty minutes of it; the historical force must be airborne or on strip alert to use it"
 
 [[depend]]
 provision = "P003b"

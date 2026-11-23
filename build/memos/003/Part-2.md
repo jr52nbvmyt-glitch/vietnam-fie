@@ -1,0 +1,307 @@
+# Memorandum 003 — Part 2 of 3 · §2 Integration and second-order effects · §3 Changes to existing forces
+
+
+*COMUSMACV to CINCPAC · Saigon*
+
+One correction governs everything that follows. The first part of this memorandum assumed that these aircraft arrive in a world without satellites, and drew the Global Hawk on a leash of about 250 nautical miles from a ground terminal at Bien Hoa or Da Nang. That assumption is withdrawn. By standing condition, the navigation and communications satellites these aircraft were built to use are present from the first day of the campaign¹, and the record has been corrected accordingly (E01). Both aircraft therefore fly exactly as they fly in 2026: the Global Hawk navigates and lands by satellite navigation, is controlled and passes its picture by satellite as well as by line of sight, and can hold its orbit wherever its endurance and the enemy's missiles allow; the U-2S sends its take home by satellite from beyond the reach of any ground station². The condition brings the satellites, not the receivers. Nothing else in this command gains a satellite receiver or a satellite terminal by it, and every coordinate these aircraft produce must still be used by aircraft, guns and men who navigate by map, compass, LORAN and TACAN.
+
+## §2 Part A — Integration
+
+### Functional systems
+
+These two provisions give this command, for the first time, an honest picture of the enemy's rear — and almost nothing about the war in the hamlets. That sentence is the frame for everything below. The U-2S builds the map: radar and camera imagery of the North's railways and ports, the Laotian panhandle's roads and passes, the base areas along the Cambodian border, and a signals take that locates the transmitters of the enemy's higher headquarters. The RQ-4B watches the traffic on the map: one continuous orbit, day and night, in any weather, over whatever stretch of open road, river, canal or sea I choose. With satellite control, the choice is no longer bounded by a terminal's horizon. The Global Hawk can sit over the Gulf of Tonkin and watch the coastal road from Vinh to Thanh Hoa as easily as it can sit over the Plain of Reeds.
+
+**Finding the main force.** Both join it, and both strengthen the half of it that is about the enemy's movement rather than his presence. Neither makes it newly viable, because the enemy's regiments live under canopy and the radar and the camera stop at the treetops. What is new is that the enemy's movement in the open — the trawler standing in to the coast of Phu Yen, the truck column at the ford below the Mu Gia pass, the sampan convoy crossing the Plain of Reeds at two in the morning — is visible whenever it happens, rather than when an OV-1 Mohawk with its AN/APS-94 side-looking radar happens to be overhead. And what the U-2S's signals payload adds is a location, to kilometres, for every regimental and front headquarters that transmits². That is the find. It is not the fix.
+
+**Interdiction.** Joined and strengthened, at sea most of all. The sea route has been the least watched of the enemy's lines since the North's maritime group began running steel-hulled trawlers south; the Junk Force and a few US Navy destroyers cannot sort one hundred-ton trawler from the tens of thousands of fishing craft on a coast of about 2,000 kilometres [M-TNA]. A wide-area maritime radar at 60,000 feet does exactly that sorting: a steel hull moving at a steady ten knots on a course from the Gulf of Tonkin toward the II Corps coast is a different object from a junk working its nets³. On the Trail the radar is a lesser instrument, because the 1964 Trail is a footpath under trees and becomes a truck road only from 1965. Where trucks run in the open, it sees them.
+
+**Strike.** Joined, and made more responsive only where a strike aircraft can reach a track within the hour. A U-2S target folder improves every sortie flown against a fixed target in the North². A Global Hawk track improves only the sorties already airborne or on strip alert, and in 1964 this command has few of either: the A-1H Skyraiders and T-28D fighter-bombers of the Vietnamese Air Force and the US Air Commandos, the B-57B bombers from August, and no night attack capability worth the name.
+
+**Hamlet security, the advisory effort and the attack on the infrastructure.** Not joined in the first order. Nothing that flies at 60,000 feet tells a district chief who collects the Front's taxes in his villages, and I said so at the head of this memorandum². There is one narrow and real point of contact with hamlet security, through the police, and it is the subject of the first compound pairing below.
+
+**Sustainment.** Small in tonnage, large in a scarce kind of man. About 600 people, most of them specialists — imagery analysts, signals linguists, radar operators, contractor engineers². The satellite condition lets the Global Hawks themselves leave South Vietnam: they need only a runway with their launch and recovery element, and Clark Air Base in the Philippines, about 900 nautical miles from Saigon, puts them out of mortar range at a cost of about six hours' transit on a thirty-hour sortie.
+
+### Compound pairings
+**Interactions with earlier provisions**
+
+- P003b × P002a: the radar sees movement, the police establishes identity; a night track on a Delta canal goes to a police and Field Force checkpoint to be stopped and searched, not to a gun
+- P003b × P002b: the merit-selected province chief is the clearance authority for fire in his province; whether a radar track is a target is his decision, and a chief kept for two years learns what his canals look like at night
+- P003a × P003b: the U-2S builds the map and finds the new road, truck park or landing beach; the Global Hawk watches the traffic on it; together they turn a guessed logistics system into a measured one
+- P003a × P001b, P002a: none beyond the general rule that the aircraft's products reach Vietnamese hands only sanitised, because the Joint General Staff and the police are penetrated; the anti-corruption and police reforms reduce that penetration only at the margin (INTEL.penetration ledger)
+
+**F003-1** **In the Delta, the radar is worth having only if a policeman, not a gun, answers its tracks.** At night the canals of Long An, Dinh Tuong and Kien Hoa carry tens of thousands of sampans, and the Global Hawk sees every one that moves². It cannot tell the Front's tax courier from a rice merchant, and under the historical rules a moving boat after curfew in a free-fire area is a target. Fed to the artillery, the radar is an instrument for killing farmers at an industrial rate. Fed to the police, it is something new. The police reform has already put resource-control checkpoints on the Delta's main canals and given the Special Branch a file on every village committee⁴. A track that leaves a hamlet the census says should be asleep, moves along the Bao Dinh canal at 0200 and stops at a hamlet the Special Branch rates as a liaison point is a pattern a district operations room can act on: a Police Field Force section waits at the next lock at dawn, or the constable's night check notes who was not at home. Movement from the radar, identity from the police. The province chief chosen on merit holds the clearance for fire in his province, and it is his decision whether a track is a target or a question. A chief who will be in the province for two years learns what his canals look like at night and is less likely to clear fire on them than one who expects to be gone at the next coup. The weight of this pairing is moderate. It does not touch the main force; it makes the infrastructure's waterborne logistics in the held belt somewhat more visible, and above all it is the arrangement that keeps the most dangerous use of this radar from becoming its routine use.
+
+**F003-2** **Together the two aircraft turn the enemy's rear from a guessed system into a measured one.** The U-2S finds the new things: the road cut through the forest west of the Ban Karai pass, the truck park at a ford, the beach in Phu Yen where a trawler's cargo was carried inland, the SA-2 site in its first week². The Global Hawk then watches the traffic on what the U-2 found. Neither does this alone: the U-2 looks once a day and goes away, and the Global Hawk sees movement without knowing what the road is for. Together they give this headquarters counts it has never had — trucks per night through a pass in the dry season, trawler arrivals per month, vehicle traffic on the road from Sihanoukville to the border base areas — and they give them as counts of the enemy's own activity, not as reports from units rated on what they report. That is the single most important thing these aircraft add to the war, and it is a thing about knowledge, not about destruction. A truck counted is not a truck destroyed, and a ton seen moving is not a ton denied.
+
+### The find-to-fix chain against the main force
+
+The chain is strengthened at its first link and nowhere else, and the weakness has moved to the second. A PAVN or main-force VC regiment in a base area in War Zone D, the Do Xa or the Kontum highlands lives under canopy and moves on foot. So will the regiments of the PAVN 325th Division when they begin to come south at the end of 1964. The Global Hawk does not see it there. The U-2S's signals payload locates its headquarters when the headquarters transmits, to a few kilometres, and its radar finds the clearings, the new trails and the river crossings that a base area cannot hide². What this gives me is a better answer to the question "where is the 9th VC Division's headquarters this week?" and no answer at all to "where are its battalions tonight?"
+
+The regiment is seen when it leaves the trees. A column crossing open paddy at night, a battalion moving by sampan across the Plain of Reeds, a regiment's supply carried on the canals from the Delta to War Zone C: those the radar sees, if they move together and fast enough². That is where the chain now breaks. A track is true for perhaps twenty to forty minutes⁵. In 1964 this command can put an airmobile company on the ground in UH-1B and CH-34 helicopters in about two to three hours from a standing start, and only in daylight. It can put an A-1H over the track in thirty to sixty minutes if one is on alert, and its pilot cannot see the target at night without flares. The find has outrun the fix by an order of magnitude. That gap — between a picture refreshed every few seconds and a force that answers in hours — is the most useful thing this memorandum says about the main-force war, and it is the reason the gain in finding the main force is one band and not two.
+
+The deeper limit is the one the Theater Needs Assessment set: the enemy decides whether to accept battle, and these aircraft do not change that. A regiment that knows it is watched in the open stays out of the open, and its battle remains its choice. What changes is the cost of that choice, which is analysed under anticipation.
+
+### The identify-to-neutralise chain against the VCI
+
+Untouched, except through the police. The infrastructure does not move in columns or transmit on regimental nets. Its members stand in the village by day, and at night they move on foot along paths between hamlets a few hundred metres apart, in ones and twos, among farmers doing the same thing⁴. The Global Hawk cannot see a man walking slowly in a group of two². The U-2S's signals payload cannot hear a courier. The only contact these aircraft make with the infrastructure is the waterborne pattern described in F003-1, and there the identification is entirely the police's work. I say this plainly because a radar picture of the Delta at night, full of moving dots, will look to visitors like a picture of the insurgency. It is a picture of the Delta.
+
+### Dependence on SECURE
+
+The aircraft themselves depend on hamlet security only at their bases, but their product depends on it everywhere it is used in the populated countryside. Bien Hoa, where the U-2S detachment lives, sits in a province where the Viet Cong can bring 81mm mortars within range of the ramp, and on 1 November 1964 they did. A U-2S on an open ramp is the most expensive target in the theater. This is a hamlet-security problem in the ordinary sense: whoever holds the hamlets of Bien Hoa and Bien Long districts after dark decides whether the mortar teams can reach their firing points. The Global Hawks escape it by basing at Clark; the U-2S cannot, because its pilots, its exploitation station and its signals cell belong beside MACV.
+
+The second dependence is through the clearance for fire. In the populated Delta and the coastal plain, every radar track that is acted on is acted on inside a province whose population is the object of the war. A province that holds its hamlets at night has a police checkpoint to send to a track. A province that does not has only artillery and aircraft, and the radar then becomes a source of civilian harm. The aircraft are only as humane as the hamlet security they are used beside.
+
+### The ADVISE cluster
+
+The aircraft starve the advisory effort slightly and feed it in one unexpected way. They starve it because their product cannot be shared with the Joint General Staff except in sanitised form — a grid, a time, a description — because the Joint General Staff is penetrated. The Vietnamese commander therefore acts on American information whose source and quality he cannot judge, and his staff learns nothing about collection or analysis from it. Nothing transfers under Vietnamization: the aircraft leave with the Americans, and the Republic keeps only what its commanders learned about acting quickly on a report².
+
+They feed it because information is currency. An American adviser who can tell a Vietnamese regimental commander that a VC battalion's supply boats crossed the Vam Co Dong last night at a named place has something the commander wants. In 1964 the adviser's leverage rests on his access to American fire support and helicopters; this adds a third good to trade, and it makes the adviser more welcome at the operations table. The effect is small, and it carries the risk POSTNA-6 names: every operation launched on an American cue the Vietnamese cannot verify is an operation the Republic did not plan for itself.
+
+### Employment concepts
+
+What follows is what these aircraft actually do on a given week. With satellite control there are more choices than Part 1 allowed, and the most important decision is where the single Global Hawk orbit sits.
+
+#### EC003-1 · The daily deep look (U-2S)
+
+One U-2S sortie a day from Bien Hoa, alternating among three tracks. *North:* out over the Gulf of Tonkin, a radar and camera run down the coastal railway and Route 1A from Thanh Hoa to Dong Hoi, a signals track along the Laotian border, home; about nine hours². *Panhandle:* Mu Gia, Ban Karai, Tchepone and the Route 9 valley, then south along the Cambodian border base areas from the Fishhook to the Parrot's Beak; about seven hours. *South and sea:* the II Corps coast to 100 miles out, the Kontum and Pleiku border, the Delta's base areas in the U Minh and the Plain of Reeds; about seven hours.
+
+The engagement sequence is collection, not attack. The radar's take goes by line of sight to the ground station at Bien Hoa when within about 220 miles and by satellite from beyond it²⁶; the station produces a first-phase readout within about an hour of collection and a formatted report to MACV J-2 and the 2nd Air Division the same evening⁷. The second aircraft is in maintenance or on alert for a short-notice task. Recovery is at Bien Hoa, with Da Nang as alternate and Takhli as the northern alternate while the Thai government allows it².
+
+Cycle: about one sortie a day, about 25 a month, each covering on the order of 100,000 square nautical miles of radar search². Minimum viable package: one aircraft, one pilot, a mobile officer in the chase car, and the exploitation station. Without the satellite link, the northern track's product arrives after landing rather than during the flight; with it, a target folder for a strike in the North can be in Saigon and Honolulu before the U-2 is back over Bien Hoa.
+
+#### EC003-2 · Listening to the fronts (U-2S signals)
+
+The U-2S's signals payload flown on long tracks along the borders, to locate the transmitters of the enemy's higher headquarters: COSVN's stations near the Cambodian border north of Tay Ninh, the Military Region 5 headquarters in the mountains of Quang Ngai and Quang Tin, the trail stations of the North's logistics command in the panhandle, and the B-3 Front's stations in the western highlands. The track is flown at the time the enemy's nets are known to come up, which the Army's 3rd Radio Research Unit at Tan Son Nhut has studied since 1961.
+
+The engagement sequence: the payload fixes a transmitter to kilometres²; the fix goes to MACV J-2 and to the radio research units, which task their own ground direction-finding and, from 1966, the EC-47 airborne direction-finding aircraft for a tighter fix; the fix goes into the target list for Arc Light or a Special Forces reconnaissance team, or into the order-of-battle file. Cycle: two to three of the daily sorties a week carry a dedicated signals track⁸. What it degrades to without the radio research units: fixes that nobody refines and therefore nobody can strike, because a few kilometres of jungle is not a target.
+
+#### EC003-3 · The coastal picket (RQ-4B)
+
+The Global Hawk's first orbit, from January 1964 until the panhandle orbit takes priority in the dry seasons from 1965. Station off the II Corps coast, between Qui Nhon and Cam Ranh, out to about 100 nautical miles at sea; the radar's maritime mode tracks every steel-hulled contact moving south along the coast or turning in toward it². Launch from Clark, about three hours' transit each way, about twenty-four hours on station, recovery at Clark.
+
+The engagement sequence: a contact that behaves like a trawler — steel hull, steady course, a track from the north that does not fish — is flagged by the exploitation cell at Tan Son Nhut, passed by voice and teletype to the Navy and the Vietnamese Navy's coastal command, and handed to whatever can reach it: in 1964 a Vietnamese Navy patrol craft or a Junk Force division, and the US Navy destroyers of the Seventh Fleet when they are on the coast; from March 1965 the Market Time patrol of destroyer escorts, Coast Guard 82-foot cutters and from late 1965 the PCF Swift boats. The Global Hawk holds the track for hours, so the interceptor need not find the trawler, only reach it.
+
+Cycle: one orbit continuous; the second, when available, a third of the time². Minimum viable package: one aircraft on station, the exploitation cell, and one surface vessel within about six hours' steaming of the likely landing beach. Without a surface vessel the picket is a log of what landed where.
+
+#### EC003-4 · Out of mortar range: Clark basing and satellite control (RQ-4B)
+
+Not an engagement but the decision that makes the others sustainable, and only possible because of the satellite condition. The launch and recovery element and the four aircraft sit at Clark Air Base, about 900 nautical miles from Saigon; the mission control element and the exploitation cell sit at Tan Son Nhut beside MACV J-2, controlling the aircraft by satellite²⁹. Bien Hoa and Da Nang are divert fields, with a small launch and recovery kit at Bien Hoa for a damaged aircraft that cannot reach Clark¹⁰.
+
+What this buys: the Global Hawks are out of reach of every mortar in Vietnam, on a base with mature maintenance and no shortage of ramp space; about 140 maintainers and contractor technicians live outside the Republic. What it costs: about six hours of each thirty-hour sortie in transit, so each sortie gives about twenty-four hours on station rather than twenty-eight; the single continuous orbit still holds, with a thinner margin for the second¹¹. A satellite outage would leave the aircraft flying its pre-programmed route home², which over water is no danger.
+
+#### EC003-5 · The panhandle watch (RQ-4B)
+
+From the dry season of late 1965, when trucks begin to carry a meaningful share of the Trail's load, the continuous orbit moves to the Laotian panhandle in the dry months (roughly November to April) and back to the coast in the wet. Station over the Mekong side of the panhandle, standing off from the North; the radar watches the roads from the Mu Gia and Ban Karai passes south to Tchepone and the Route 9 valley².
+
+The engagement sequence: a column moving through a ford or a cleared stretch at night is tracked; the track goes to the airborne command post and from 1966 to the MSQ-77 radar bombing controllers of Combat Skyspot, and to any armed reconnaissance flight of F-100D, F-105D or A-1E aircraft in the area; strikes in Laos are flown under the rules the American Ambassador in Vientiane approves. The time from track to ordnance is the time it takes an aircraft already airborne to reach the point and find it in the dark, which in 1965–66 is thirty to sixty minutes and often never¹². Cycle: one orbit, twenty-four hours a day, through the dry season; the U-2S panhandle track twice a week to find new roads. Minimum viable package: the orbit, an airborne command post, and two strike aircraft on station or on alert at Da Nang or in Thailand.
+
+#### EC003-6 · The canal watch with the police (RQ-4B with P002a and P002b)
+
+In the wet months, and whenever the second orbit is available, a Global Hawk over the upper Delta between the Vam Co Dong and the Bassac. The exploitation cell passes not tracks but patterns: the canal that carries traffic every night after curfew between two named hamlets, the sampan convoy that crosses into the Plain of Reeds on the nights after the harvest¹³. The patterns go, sanitised, to the province chief's operations room and the Special Branch, which compare them with the census and the village files; the answer is a checkpoint at a lock at dawn, a night check, or a Field Force ambush on a canal bank.
+
+Cycle: one product a night per province served, two to four provinces per orbit¹⁴. Minimum viable package: the orbit, a district operations room with a Special Branch officer, and a Field Force section with boats. Without the police, this degrades to EC003-9, which is the reason I forbid it.
+
+#### EC003-7 · The Gulf watch (RQ-4B)
+
+A standoff orbit over the Gulf of Tonkin, outside the range of the North's SA-2s once they arrive, about 40–60 nautical miles off the coast¹⁵. From there the radar watches the coastal road and railway from Vinh to Thanh Hoa, the ferries at Quang Khe and the river mouths, and the traffic out of Haiphong toward the south¹⁶. Before the SA-2, it can fly closer; the MiG-17 cannot reach it at any time².
+
+The engagement sequence: tracks of truck convoys and coastal shipping go to the Seventh Fleet's carrier task force on Yankee Station and to the Air Force's armed reconnaissance in the southern route packages, whose pilots then hunt what is moving rather than where traffic used to be¹⁷. It also watches the sea around any US Navy ship working in the Gulf — which, in August 1964, makes it the only sensor in the theater able to say whether patrol boats are present on a dark night. Cycle: the Gulf watch shares the single continuous orbit with the coast and the panhandle; in practice a third of the time in 1964, more during Rolling Thunder's campaigns against the southern route packages¹⁸.
+
+#### EC003-8 · The damage assessment run (U-2S)
+
+From March 1965, a U-2S radar and camera pass over every major Rolling Thunder target within a day of the strike, by radar when the North's cloud hides it from the camera². The product goes to CINCPAC and the Joint Chiefs: what was hit, what was not, and what has been repaired. Cycle: two to three of the weekly northern tracks¹⁹. It degrades, without the U-2S, to the RF-101C and RF-8A aircraft that photographed targets at low level through the guns, losing aircraft to do it.
+
+#### EC003-9 · Night fire on Delta tracks (abandoned)
+
+Tried in the first weeks of 1964 by a corps artillery adviser who saw the picture and asked the obvious question: why not fire on the boats that move after curfew in the free-fire areas? Three nights of harassment fire on tracks in Dinh Tuong produced a hospital list in My Tho and no evidence that a single VC was among it²⁰. Abandoned by my order: no radar track in a populated province is fired on unless the province chief clears it and a second source confirms it. The constraint it names is the one the dossier stated and the employment proved: the radar sees movement, not identity, and in the Delta most movement is innocent².
+
+#### EC003-10 · Hunting the regiment in the open (abandoned)
+
+Tried in 1964 in III Corps: keep the Global Hawk over War Zone D and the approaches to Binh Gia and hold an airmobile reaction force for the moment a main-force column was tracked crossing open ground. The radar produced plenty of tracks — farmers, woodcutters, ox-carts, ARVN patrols — and almost never a column, because the main force moved at night in files on foot under the trees and crossed open ground in small groups faster than the radar's slow-mover filter could separate them from clutter². The reaction force sat idle and the orbit was taken from the coast to do it. Abandoned by mid-1964. The constraint it names is the slow-mover problem of moving-target radar against dismounted infantry, and behind it the deeper one: the enemy chooses when to be in the open.
+
+#### EC003-11 · Overland orbit of the North (abandoned)
+
+Flown in the months before the SA-2 sites: a Global Hawk over the North's panhandle above Route 15 and the Mu Gia approaches, with the whole of the southern route packages in radar view. Abandoned when the first SA-2 site was photographed near Hanoi in April 1965 and finally once sites appeared south of the Red River delta. A slow, unmanoeuvrable aircraft at 60,000 feet is the missile's ideal target², and a quarter of the force is not worth a month of overland coverage when the Gulf watch sees most of the same roads from the sea. What it names is the same thing the U-2 learned over Sverdlovsk: altitude is protection only until the other side has the missile.
+
+## §2 Part B — Channels
+
+### Displacement
+
+**F003-3** **The sea route does not close; it moves to Sihanoukville, a year early.** The North's maritime group ran steel-hulled trawlers of about 100 tons to the II Corps and Delta coasts from the early 1960s, and on 16 February 1965 one was caught unloading in Vung Ro Bay by an Army helicopter pilot who happened to see it. Under a continuous coastal orbit the trawlers are seen every time, and a trawler that is tracked for six hours is intercepted or turns back²¹. Hanoi's answer is the one it made historically after Market Time: ship to Sihanoukville under the Chinese and East European flags that Sihanouk's neutrality protects, and truck the cargo to the border base areas through Cambodian contractors. Here the shift comes in 1964–65 rather than 1966²². The capability is displaced, not denied: across a border, into a neutral port, onto roads the radar can watch from South Vietnamese airspace and no one may strike. What the command loses by pushing it there is the chance to seize it. A trawler intercepted off Phu Yen is a cargo captured and a crew interrogated; a freighter at Sihanoukville is a manifest we can read about and do nothing about. The weight is major, because the sea was the route that fed the coastal provinces and the Delta most directly, and because the displacement makes the Cambodian sanctuary the enemy's principal external line in the South two to three years earlier than it was.
+
+**F003-4** **On the Trail and in the South, the enemy moves under the trees, in the rain and in the orbit's gaps.** Where the radar watches, the enemy stops showing himself in the open. Truck movement on the panhandle's roads concentrates under trellised canopy, at fords crossed in rain, and in the hours when the orbit is over the coast or the Gulf²; the Delta's main-force supply moves from large sampan convoys on the main canals to small boats on the minor ones. He accepts slower movement and more porters to protect his trucks, as he later did against the Igloo White sensors and their EC-121R relay aircraft²³. What our intelligence loses by pushing him there is the picture itself. A truck column crossing an open ford at Ban Phanop told us how much was moving; the same tonnage moved under canopy in porters' loads tells us nothing until it arrives. The weight is moderate: the enemy pays in time, not in tonnage, and what he moves under the trees he would largely have moved there anyway in 1964–65.
+
+### Bottleneck migration
+
+**F003-5** **The binding constraint moves from finding the enemy in the open to acting before he leaves it.** Before these provisions, the binding constraint on every line of effort against the enemy's movement was that we did not see it: the coast was unwatched, the Trail was photographed when weather allowed, and the Delta's waterways at night were dark [M-TNA]. After them, we see it, and the constraint migrates to four things the provisions do not supply. *Response time:* a track lasts minutes to an hour; in 1964 nothing reaches it that fast, and at sea a surface vessel needs hours. *Night attack:* the period's strike aircraft hit what they can see, and at night they see what a flare shows them. *Clearance:* a strike in Laos needs Vientiane's rules, a strike in the South needs the province chief, a strike in Cambodia is forbidden under the present constraints. *Coordinates:* the aircraft produce satellite-accurate positions, and the force that must use them navigates by map, LORAN and TACAN; the period's 1:50,000 maps are drawn on an older datum and can differ from satellite positions by hundreds of metres²⁴. Of the four, the first two bind hardest. A new constraint has a further property: it is a demand. A headquarters that can see trucks at night will want aircraft that can kill them at night, and the AC-47 and, later, the AC-130 gunships will be asked for sooner and harder than history asked²⁵. The weight is major. Naming it is the most useful thing this memorandum does for the main-force war.
+
+On the sea, the bottleneck migrates from detection to interception and then to jurisdiction: once the trawler is seen and the Market Time patrols can reach it, the remaining constraint is Sihanoukville, which is a political constraint. Over the North, it migrates from target intelligence to target approval: the U-2S's folders are better than anything Rolling Thunder had, and the White House still chooses the targets.
+
+### Own-force opportunity cost
+
+**F003-6** **The scarce thing these aircraft consume is the theater's small supply of imagery analysts and Vietnamese-speaking signals men.** About 600 spaces in all², and the number is not the cost. The cost is that the exploitation cells need imagery analysts who understand radar, and signals analysts and linguists who can work the enemy's traffic, and in 1964 the US armed forces have few of either who know Vietnam²⁶. Some of them are taken from the radio research units and the photo interpreters who would otherwise serve the corps and the Special Forces²⁷. The provisions bring their own 2026 analysts, but they need Vietnamese linguists and order-of-battle men to make sense of what they see, and those come from the 1964 pool. The second cost is in strike sorties. Every armed reconnaissance flight sent to a track is a flight not sent to the close air support of a post under attack at night, which is where the Theater Needs Assessment said air power in the South mattered most. In 1964 there are not enough strike aircraft to do both, and the picture will pull them toward the tracks²⁸. The weight is moderate: no lives are spent, but a scarce kind of attention and a scarce kind of man are, and some of them are taken from the half of the war the aircraft cannot see.
+
+### Counterfactual erasure
+
+**F003-7** **The surprises the enemy's rear used to spring stop happening.** Three historical surprises no longer happen as they did. The trawler at Vung Ro Bay in February 1965, found by luck after an unknown number of earlier landings, is found by design, and the 1964 landings on the II Corps coast are tracked. The first SA-2 site, photographed near Hanoi on 5 April 1965 and then left unstruck until the first American aircraft was lost to a missile on 24 July, is found by its radar emissions and its construction in its first weeks, and its fellows as they are built; whether they are struck before they are ready is Washington's decision, not this command's, and historically Washington declined. The rate at which trucks replaced porters on the Trail in 1965 is measured as it happens rather than reconstructed from prisoners a year later. What becomes of the attention those surprises consumed is mostly good: an order of battle argued from evidence, and a Market Time that starts with a picture of what it is looking for. The weight is moderate. The surprises still happen; they happen visibly.
+
+**F003-8** **The phantom attack of 4 August 1964 may not survive the radar.** On the night of 4 August 1964, two US destroyers in the Gulf of Tonkin, Maddox and Turner Joy, reported themselves under torpedo attack in bad weather; the second attack almost certainly never happened, and the reports of it carried the retaliatory strikes of 5 August and the Gulf of Tonkin Resolution of 7 August. After the real attack on Maddox on 2 August, the Gulf watch is where I would put the orbit, and a maritime radar at 60,000 feet is the instrument best placed to see whether patrol boats were there²⁹. My judgment is that the record of that night would show no boats with fair confidence — the sea state and the thunderstorms cost some sensitivity against small craft, but P-4 torpedo boats making attack runs at speed are good radar targets³⁰. What follows is not mine to decide. The 2 August attack was real, the President wanted a resolution, and the doubts that existed historically were overridden within hours. A radar record raises the price of overriding them, and puts in the files a fact that, when it surfaces, will be read as proof that the government knew. I state this at its true weight: possibly war-shaping, and uncertain in every step after the radar.
+
+### Perverse effect
+
+**F003-9** **A radar that shows every moving boat makes it easier to kill farmers.** This is the danger I named in the first part², and in the second I find it is worse than a risk of error: it is an incentive. A free-fire area at night has always been defined by the absence of anyone to see what moved in it. Now someone sees everything that moves, and the commander who has a picture of fifty moving dots and an artillery battery will be asked every night why he does not fire. EC003-9 is abandoned by order, and the order will be tested by every corps and division commander who sees the picture. Where it fails, the result is civilian harm in exactly the provinces the land and police programmes are trying to win, and a refugee flow from the canals to the towns (POP.civilian_harm). The weight is moderate, and it is the one finding in this section whose control depends entirely on discipline.
+
+**F003-10** **Better pictures make Washington's control of the air war tighter, not looser.** The U-2S's folders go to Honolulu and Washington within hours³¹. The Rolling Thunder target lists were chosen at the President's Tuesday lunches from photographs and summaries; better photographs, faster, make that system work better on its own terms. The perverse result is that the satellite link brings Washington closer to the target, not the theater commander, and that the air war's graduated pressure — a theory of signals to Hanoi's leaders — is supported by a better picture of the targets that its theory chose³². The weight is minor to moderate. It does not make the air war worse. It makes its central flaw more efficient.
+
+### Anticipation
+
+**F003-11** **The enemy stops moving in the open, and the counts these aircraft give will fall while nothing has changed.** The aircraft's existence prevents much of what would demonstrate it. Once the enemy knows that a column in the open at night is seen — and he will learn it within months — main-force movement in the open falls, sea infiltration moves to Sihanoukville, and trucks on the panhandle move in rain and under trees². The track counts rise in the first months of each orbit and then fall. A headquarters that reads the fall as success will report that infiltration is down when it has only moved where the radar cannot see. A headquarters that reads the falling truck kills on the Trail as failure will ask for more strike sorties when the enemy has simply re-routed. Both are A13 errors. The real effect is the one the counts cannot show: an enemy who moves only under trees and at the radar's edges moves more slowly, and a regiment that must avoid open ground cannot concentrate as fast or as far. That is a genuine improvement in the war that no metric records, and I state it at its weight: moderate in 1964, larger when the main force is larger and more dependent on trucks and boats. The anticipation also applies at sea with full force: a trawler route that is abandoned produces no interceptions, and the success there is invisible except as cargo that never lands on the II Corps coast.
+
+### Enemy detection and learning
+
+**F003-12** **Hanoi reads the U-2 at once, the Global Hawk within months, and draws one wrong conclusion that helps us.** The North's P-12 early-warning radars track the U-2S from its first sortie, and its leaders know what a U-2 is; China has shot down Nationalist U-2s since 1962. They conclude correctly that the Americans can photograph and map everything above the canopy, and they ask Moscow for missiles, which they would have done anyway after the bombing began. The Global Hawk is slower to understand: a large aircraft at 60,000 feet that circles for a day at a time over the sea or the panhandle is seen on radar, but what it does is learned from experience — a trawler intercepted without warning off Binh Dinh, a truck column bombed at night at a ford, a sampan convoy met at a lock³³. By the end of 1964 the Party's logistics cadres conclude, correctly, that movement in the open is seen at night and in rain when the aircraft is up. The doctrine propagates through the logistics command and Military Region 5 within one season, and to COSVN's units in the Delta within a year³⁴. They also conclude wrongly that the Americans hear their radio traffic better than they do, and tighten radio discipline beyond what the U-2S's signals payload actually requires; that slows their own command, and it is the one place their learning helps us. What they get right and hurts us: that the radar is a single orbit, that its absence is visible on their own radar, and that the hours when it is over the Gulf are the hours to move on the Trail.
+
+### Enemy adaptation cost
+
+**F003-13** **Most of the enemy's counters are cheap; the sea is the exception.** Moving under the trees and in rain costs him time and porters, not tonnage; the Trail's capacity is elastic with labour, and its requirement in 1964–65 is small. The cost to us is about 600 specialists and two expensive fleets; the cost to him is a slower Trail. That exchange is in his favour. At sea it is different. The trawler route was cheap, direct and delivered to the coast of the provinces where the main force fought; Sihanoukville is longer, depends on a neutral prince's tolerance and on Cambodian contractors' bribes, and can be closed by a change of government in Phnom Penh. The enemy pays for that route in dependence: the Cambodian supply line is exactly as secure as Sihanouk's neutrality. Radio discipline costs him in command and control at regiment and above, which is the one adaptation that costs him something he values. Overall, the provisions make the enemy busy more than they make him poor, and that judgment should be read beside the strongest positive effect, which is about knowledge, not cost.
+
+### Cross-boundary feedback
+
+**F003-14** **The loop out of theater runs through losses, the Gulf of Tonkin and honest damage reports.** Three loops matter. *A lost U-2* is a public event, with the Powers trial in every Congressman's memory²; over the North after the SA-2, a loss produces a prisoner and a show trial, and a political cost far beyond the aircraft. The Global Hawk's loss produces no prisoner, and its political cost is a headline. *The Gulf of Tonkin*: if the radar record of 4 August shortens or weakens the resolution, the American war begins on a narrower legal and political base, and the later discovery that the 4 August attack did not happen — which historically fed the credibility gap from 1968 — either happens earlier or becomes impossible to hide. Either way the clock is affected at its root, in which direction Part 3 must decide. *Honest damage assessment*: the U-2S's daily picture of Rolling Thunder targets tells Washington the truth about the bombing's effects sooner, which reduces the gap between what this command reports and what the press later learns, and also tells Washington sooner that the North repairs faster than it bombs. That is bad news delivered early, which is the kind that buys time. The weight is moderate overall, potentially major through the Gulf of Tonkin.
+
+### Open channel
+
+**F003-15** **The aircraft watch China too, and an honest picture of the Chinese in the North lowers the risk of misjudging them.** From June 1965 China sent engineering, railway and anti-aircraft troops into the North, eventually in large numbers. A U-2S signals and radar track along the northern border, and the Gulf watch near Hainan, see their deployments, their camps and their railway work³⁵. That is a channel the nine above do not name: these aircraft give Washington evidence of what China is and is not doing, and so reduce the risk of the misjudgment that every American planner feared after Korea. It also opens a risk: an aircraft lost near Hainan or the Chinese border is an incident with Peking, and I do not fly the Global Hawk within radar sight of Hainan's fighters without CINCPAC's approval. The weight is moderate.
+
+## §2 Part C — Counter-directional finding and strongest positive effect
+
+**F003-16 · Counter-directional** **The war we can see will draw the command away from the war we cannot.** These aircraft show the enemy's rear in detail no headquarters has had: the trucks, the trawlers, the roads, the transmitters. They show nothing of the infrastructure in the hamlets, which the Theater Needs Assessment and the first two memoranda placed at the centre of the war. A commander with a live picture of the Trail and the coast will spend his attention, his strike sorties and his staff's best officers on what the picture shows, and Washington, which sees the same picture, will judge him on it. The risk is that the main-force and interdiction war — the half A6 says must never be conflated with the other — becomes still more the war that this command fights, because it is the war it can see. I state the weight at moderate: it does not undo the land, police and chief reforms, but it competes with them for the command's attention in the year they most need it, and the counts these aircraft produce are exactly the kind of numbers that drive a headquarters' priorities.
+
+**F003-17 · Strongest positive** **For the first time, this command can measure the enemy's external supply rather than guess it, and the sea route that fed the coastal provinces is shut.** Two effects, both large. The first is measurement. Historically, MACV and the CIA argued for years over how much reached the South through Sihanoukville, and the argument was settled only by captured records after Lon Nol's coup in 1970. Here the coastal picket, the panhandle watch and a radar standing off the Cambodian border count trawlers, trucks and the road traffic from Sihanoukville as the enemy generates them. That is the kind of metric A13 asks for and the theater has never had: a measure of the enemy's activity, not of our units' claims. It does not reduce the tonnage, but it makes every argument about interdiction, sanctuary and the cost of the war honest from 1964 rather than from 1970, and it makes the case for or against relief of the Cambodian constraint on evidence. The second is the sea. The steel trawlers that historically delivered arms directly to the II Corps and Delta coasts are seen every time, and the route is abandoned for Sihanoukville within about a year. The weapons that came by sea in 1964 — the AK-47 rifles, the RPG-2 launchers and the ammunition that re-armed the main force before the 1964–65 offensive — reach the South more slowly and by a longer road³⁶. I put the weight at major, not transformative: the enemy's requirement is small and his other routes are elastic. If F003-8 plays out as it might, the strongest effect of this memorandum will be on the Gulf of Tonkin, and it will be political, not military.
+
+## §2 Findings register
+| ID | Channel | System | Summary | Weight |
+|---|---|---|---|---|
+| F003-1 | Integration | FIND, SECURE | In the Delta, radar tracks go to the police and Field Force checkpoints, not to guns; the merit-selected province chief holds the clearance | moderate |
+| F003-2 | Integration | FIND, INTERDICT | The U-2S finds the new roads, parks and beaches and the Global Hawk watches the traffic; the enemy's rear becomes measured, not guessed | major |
+| F003-3 | Displacement | INTERDICT | The trawler route shuts and sea supply moves to Sihanoukville a year or two early, beyond reach and beyond seizure | major |
+| F003-4 | Displacement | FIND, INTERDICT | Movement goes under canopy, into rain and into the orbit's gaps; the picture is lost where it is pushed | moderate |
+| F003-5 | Bottleneck migration | STRIKE, FIX | The constraint moves from seeing the enemy in the open to acting within the hour: response time, night attack, clearance and coordinates | major |
+| F003-6 | Own-force opportunity cost | SUSTAIN, FIND | About 600 specialists, including scarce analysts and linguists, and strike sorties pulled from night close air support to tracks | moderate |
+| F003-7 | Counterfactual erasure | INTERDICT, STRIKE | Vung Ro, the first SA-2 site and the Trail's truck build-up are seen as they happen; the surprises become visible | moderate |
+| F003-8 | Counterfactual erasure | STRIKE, SUBVERT | The Gulf watch can show there were no boats on 4 August 1964; the Tonkin resolution may rest on a narrower base | major |
+| F003-9 | Perverse effect | STRIKE, SECURE | A radar that shows every moving boat creates nightly pressure to fire on unidentified movement in the Delta | moderate |
+| F003-10 | Perverse effect | STRIKE | Faster, better pictures tighten Washington's control of target selection and make graduated pressure more efficient | minor |
+| F003-11 | Anticipation | FIND, FIX | The enemy leaves the open; track and truck counts fall while nothing has changed, and the slower enemy is an unrecorded gain | moderate |
+| F003-12 | Enemy detection and learning | FIND, STRIKE | Hanoi reads the U-2 at once and the Global Hawk within a season; it overestimates our SIGINT and learns to move in the orbit's gaps | moderate |
+| F003-13 | Enemy adaptation cost | INTERDICT | Moving under trees and in rain is cheap; the switch to Sihanoukville costs dependence on a neutral prince; the provisions make him busy more than poor | moderate |
+| F003-14 | Cross-boundary feedback | STRIKE, SUSTAIN | A lost U-2 is a show trial; the Tonkin record and honest damage reports act on the clock at its root | moderate |
+| F003-15 | Open channel | FIND | Coverage of Chinese deployments in the North lowers the risk of misjudging China; flights near Hainan raise the risk of an incident | moderate |
+| F003-16 | CD | FIND, STRIKE, SECURE | The visible war draws attention, sorties and staff from the invisible one in the hamlets | moderate |
+| F003-17 | SPE | FIND, INTERDICT | The enemy's external supply is measured for the first time and the trawler route to the coast is shut | major |
+
+**Employment concepts**
+
+EC003-1 the daily deep look (U-2S) · EC003-2 listening to the fronts (U-2S signals) · EC003-3 the coastal picket (RQ-4B) · EC003-4 Clark basing and satellite control (RQ-4B) · EC003-5 the panhandle watch (RQ-4B) · EC003-6 the canal watch with the police (RQ-4B with P002a, P002b) · EC003-7 the Gulf watch (RQ-4B) · EC003-8 the damage assessment run (U-2S). Abandoned: EC003-9 night fire on Delta tracks (movement without identity kills farmers) · EC003-10 hunting the regiment in the open (slow movers under canopy; the enemy chooses when to be seen) · EC003-11 overland orbit of the North (the SA-2)
+
+## §3 Changes to existing forces
+
+### The advisory effort and MACV staff
+
+MACV J-2 changes most. It acquires an exploitation cell of about 250 people beside the headquarters at Tan Son Nhut, a live radar picture, and a daily strategic take², and it must build in months what it historically built over years: a combined intelligence centre able to fuse the aircraft's product with the radio research units' signals, prisoner interrogation and captured documents. The order-of-battle branch, historically a few officers arguing from prisoners and documents, now argues from counts. The advisers in the field change modestly: a province or regimental adviser receives sanitised reports — a grid, a time, a description — and must pass them to his counterpart without revealing their source (§2 Part A, the ADVISE cluster).
+
+### US conventional forces
+
+Unchanged in 1964, when there are none in combat. From 1965 the US divisions receive the same sanitised cues as ARVN and, more usefully, the U-2S's radar maps of their areas of operations, which show trails, clearings and river crossings that the period's maps do not². The 1st Cavalry Division's reconnaissance squadron and the brigades' long-range patrols get better places to look. The divisions' search-and-destroy operations do not change in kind: the main force still chooses whether to fight.
+
+### US Special Forces and CIDG
+
+The border camps and the reconnaissance projects gain most among the ground forces. A Special Forces reconnaissance team inserted on a U-2S signals fix or a radar map of new trails starts from a better guess²; the team still has to find the enemy on foot. The CIDG camps along the Cambodian and Laotian borders get warning of movement in the open near them at night, from the panhandle watch and the border track, which is warning they have historically lacked³⁷.
+
+### ARVN divisions and the JGS
+
+The Joint General Staff receives nothing it can verify and much it can use: weekly sanitised summaries of movement near the corps' borders, and specific cues through the advisory chain. Its penetration by the enemy limits what it can be told². The divisions do not change: they cannot act on a track faster than they could act on a rumour, and the find-to-fix gap applies to them with greater force than to US units.
+
+### RF/PF and territorial security
+
+Unchanged in substance. The Regional and Popular Forces in the Delta gain an occasional dawn ambush on a canal from the canal watch, working with the police. Their real business — sleeping in the hamlets and answering a call at night — is untouched by any aircraft.
+
+### Rolling Thunder
+
+Changed in its intelligence, not its politics. From March 1965 its targets are selected from U-2S imagery and its damage assessed by the daily deep look, its route planning starts from an electronic order of battle of the North's radars and SA-2 sites², and the armed reconnaissance missions in the southern route packages hunt traffic the Gulf watch shows them. Fewer sorties are wasted on targets already down, and fewer aircraft are lost learning where the guns are. The targets are still chosen in Washington.
+
+### Trail interdiction
+
+Barrel Roll from December 1964 and Steel Tiger from April 1965 fly against a measured Trail: new roads found by the U-2S's radar change detection, trucks in the open tracked by the panhandle watch, from the dry season of 1965–66. Strikes cued by a live track kill more trucks per sortie where aircraft are already airborne³⁸. They do not change the judgment that interdiction is measured by tonnage arriving below requirement, and the enemy's answer, under the trees and in the rain, is cheap.
+
+### Arc Light
+
+From June 1965 the B-52 strikes in the South gain better target boxes: base areas located by signals fixes and radar maps rather than by agent reports alone². The bombing still falls on jungle where the enemy was, and the aircraft do not tell us whether he was still there. Damage assessment of a B-52 box under canopy remains guesswork; the U-2S's radar sees the craters, not the dead.
+
+### Airmobile formations
+
+Unchanged in tempo; changed in tasking at the margin. An airmobile reaction force held for a radar track was tried and abandoned. From 1965 the 1st Cavalry Division uses the radar maps for landing-zone selection and the movement picture for warning, not for triggering assaults.
+
+### Riverine and coastal forces
+
+Changed most of all. The Junk Force and the Vietnamese Navy's coastal patrols in 1964, and Market Time from March 1965, operate against a tracked sea: the coastal picket tells them where a trawler is and where it is going, so the patrol's task becomes interception rather than search³⁹. Market Time's destroyer escorts, Coast Guard cutters and Swift boats are fewer for the same effect, or the same number for a much denser screen. The Vietnamese Navy's river assault groups in their LCM-6 craft, and Game Warden on the Delta's rivers from late 1965, receive the canal watch's patterns through the police and the Vietnamese Navy's river groups. The trawler route closes.
+
+### Phoenix / Phung Hoang
+
+Unchanged. The aircraft give the attack on the infrastructure nothing but the occasional waterborne pattern in the Delta, which goes to the Special Branch through EC003-6. The infrastructure's half of the war is the police's.
+
+### Third-country forces
+
+The Australian task force in Phuoc Tuy from 1966 and the Korean divisions on the II Corps coast receive sanitised cues through MACV like ARVN. The Korean divisions' coastal provinces benefit indirectly from the closed trawler route.
+
+### Prior provisions
+
+- **P002a** (National Police Reform): its resource-control checkpoints on the Delta canals and its Special Branch gain a source of movement patterns at night; its district operations rooms are the means by which a radar track becomes an arrest or nothing, rather than a fire mission.
+- **P002b** (merit-selected province and district chiefs): the province chief's clearance of fire becomes a nightly decision about radar tracks; a chief who stays two years learns to refuse fire on unidentified movement.
+- Unchanged: P001a (the land programme; its survey photography is not affected by these aircraft, and its satellite-navigation correction is in E02), P001b (the anti-corruption programme).
+
+---
+
+*Audit — Memo 003, Part 2/3 · v1.0.3 · cards loaded: 002,001 · channels: 10/10 (floor 9) · findings numbered: 17 · employment concepts: 8 + 3 abandoned (floor 4) · counter-directional: yes · strongest positive: yes · designations: ~32 · structural deviation: none*
+
+## Notes
+
+1. Stipulated in the provision.
+2. From memorandum 003's record.
+3. Estimate — the maritime mode's design and the trawlers' historical profile
+4. From memorandum 002's record.
+5. Estimate — the time an infantry column or a boat convoy takes to cross open ground and reach cover
+6. Source: "If not classified, what is the designation, purpose and capability of the huge pod mounted on the pylon above the U-2S fuselage?" — RallyPoint, 25 Nov 2016, https://www.rallypoint.com/answers/if-not-classified-what-is-the-designation-purpose-and-capability-of-the-huge-pod-mounted-on-the-pylon-above-the-u-2s-fuselage — Senior Span and Senior Spur satellite datalinks in a dorsal pod; SIGINT beyond line of sight; SYERS and ASARS data by Ku-band satellite when out of datalink range (secondary source; consistent with S14)
+7. Estimate — the 2026 exploitation chain, slowed by a 1964 headquarters that receives by teletype and courier
+8. Estimate — competition with imagery tasks
+9. Estimate — transit distance
+10. Estimate — the RQ-4's need only for a runway and its own recovery element under satellite navigation
+11. Estimate — four aircraft at about 75% availability, per M003
+12. Estimate — the period's night attack capability
+13. Estimate — pattern-of-life from a month of tracks
+14. Estimate — the area one orbit watches against the provinces of the upper Delta
+15. Estimate — SA-2 slant range of about 25–30 nm from coastal sites, with margin
+16. Estimate — radar reach of 100–150 nm from 60,000 ft
+17. Estimate — the integration of a live picture into armed reconnaissance
+18. Estimate — the competition among orbits
+19. Estimate — the strike tempo of 1965–66
+20. Estimate — projected; the historical pattern of harassment and interdiction fire on unobserved movement
+21. Estimate — the coastal picket, EC003-3
+22. Estimate — one to two years earlier than the historical diversion
+23. Estimate — the historical adaptation to Igloo White and the gunships
+24. Estimate — the period's map series and datum offsets in Indochina
+25. Estimate — the institutional pull of a sensor without a shooter
+26. Estimate — the period's linguist shortage
+27. Estimate — the period's manning
+28. Estimate — the institutional pull of a live picture
+29. Estimate — the maritime mode against small fast craft
+30. Estimate — small fast craft against sea clutter
+31. Source: "New satellite terminal provides real-time intelligence" — US Air Force, https://www.af.mil/News/Article-Display/Article/135475/new-satellite-terminal-provides-real-time-intelligence — near-real-time U-2 data relayed through secure satellite channels from a forward location to ground stations at Beale and elsewhere
+32. Estimate — the period's target-selection process
+33. Estimate — the enemy's learning from consequence
+34. Estimate — the historical propagation of countermeasures to Igloo White and the gunships
+35. Estimate — the aircraft's coverage
+36. Estimate — the historical role of the sea route in re-arming the VC main force
+37. Estimate — the camps' exposure
+38. Estimate — the response-time arithmetic in F003-5
+39. Estimate — the picket's design
