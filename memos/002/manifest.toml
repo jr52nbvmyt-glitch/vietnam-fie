@@ -4,9 +4,9 @@
 memo = "002"
 title = "National Police reform with a rural constabulary, and merit-based selection of province and district chiefs"
 received = "2026-11-23"
-status = "part2"
+status = "complete"
 version = "1.0.2"
-phases_changed = []              # set by `fie.py chapters 002 P2 P3 …`
+phases_changed = ["P1", "P2", "P3", "P4"]
 links = ["001"]                  # the land programme and the Commission Against Corruption both depend on the police and the province chief
 
 [deviation]                      # G6: "none", or describe the structural deviation in that part
