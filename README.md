@@ -1,4 +1,4 @@
-<!-- fie v1.0.2 -->
+<!-- fie v1.0.3 -->
 # Vietnam Force-Injection Exercise
 
 A long-running counterfactual: modern forces and capabilities are injected into the Vietnam War from 1 January 1964, one provision at a time, and COMUSMACV reports in numbered memoranda on how each one changes the war. This repository is the whole record — the rules, the procedures, the war as it now stands, every memorandum, and the scripts that keep the books.
@@ -13,11 +13,11 @@ Why it is built this way: [DESIGN.md](DESIGN.md).
 | `CONTINUE` | **Part 2:** §2 integration and second-order effects, §3 changes to existing forces |
 | `CONTINUE` | **Part 3:** §4 the course of the war and the revised phases, §5, §6 — plus the updated **War History** and **Trajectory Log** |
 
-One thread per memorandum. If a thread grows long, send `CONTINUE` in a new thread; the next part resumes from the repository.
+**Send each `CONTINUE` in a new thread.** Every part reads what it needs from the repository, so a fresh thread costs far less than carrying the earlier parts along. Effort: medium for Part 1 (research), high for Parts 2 and 3.
 
 ## In a new-style project
 
-Attach the repository to the project, put the workers on Opus 5.5 (high, or xhigh for Parts 2 and 3) and the coordinator on whatever is cheapest, and paste the instructions text. Send a provision in the main chat; the coordinator opens a thread for the memorandum. Open that thread to read each part and send `CONTINUE` there. The coordinator runs one piece of work at a time, and every thread pushes straight to `main`. Project memory may hold your preferences, never the war: figures, findings, events and positions come only from this repository.
+Attach the repository to the project, put the workers on Opus 5.5 (high, or xhigh for Parts 2 and 3) and the coordinator on whatever is cheapest, and paste the instructions text. Send a provision in the main chat; the coordinator opens a thread for the memorandum. Read each part from its thread; for `CONTINUE`, the coordinator starts a fresh thread for the next part. The coordinator runs one piece of work at a time, and every thread pushes straight to `main`. Project memory may hold your preferences, never the war: figures, findings, events and positions come only from this repository.
 
 ## Other commands
 

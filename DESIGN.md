@@ -1,5 +1,5 @@
-<!-- fie v1.0.2 -->
-# Design — Vietnam Force-Injection Exercise, v1.0.2
+<!-- fie v1.0.3 -->
+# Design — Vietnam Force-Injection Exercise, v1.0.3
 
 *Replaces the V2 project architecture. Written 21 November 2026 from the V2 problems briefing. Target model: Opus 5.5. Storage: this Git repository.*
 
@@ -120,7 +120,17 @@ In a redesigned project a coordinator in the main chat splits work into parallel
 
 What the new design adds is used as it is: the repository attached to every thread, threads that keep running when the app is closed, the Library collecting the files sent, and separate model and effort settings for coordinator and workers. `fie.py status` warns if a thread is not on `main`.
 
-## 8. Starting up
+## 8. Usage (v1.0.3)
+
+The cost of a part is roughly its context multiplied by its tool calls, because every call re-sends the thread. v1.0.0–1.0.2 ran a memorandum's three parts in one thread, so Part 3 carried Part 1's web research and both earlier parts through dozens of small chapter edits. v1.0.3 cuts both factors:
+
+- **A fresh thread per part.** Parts 2 and 3 read the memorandum's own card from the pack instead of the earlier parts.
+- **Digest-first reading.** Part 3 reads exact digests of every chapter and the full text only of the chapters it changes.
+- **One amend file.** All of a memorandum's changes to the war go in one file applied by `fie.py amend`, instead of an edit call per change.
+- **Capped research.** About six searches or fetches per provision in Part 1.
+- **Effort by part.** Medium for research parts, high for reasoning parts.
+
+## 9. Starting up
 
 1. Push this repository to GitHub (private). Connect GitHub to Claude and give the Claude app access to it.
 2. Create a new claude.ai project for v1.0 so V2's documents cannot be mistaken for the record. Paste `instructions/PROJECT-INSTRUCTIONS.md` (below its line) into the instructions field.

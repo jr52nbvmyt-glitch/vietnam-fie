@@ -3,7 +3,7 @@
 # scripts/fie.py reads this file: the floors below are the floors the checker enforces.
 # A value of "UNSET" blocks new memoranda until it is set (fie.py status reports it).
 
-version = "1.0.2"
+version = "1.0.3"
 
 era_default = "2026"              # provisions are 2026 configurations unless the provision names another era
 campaign_opens = "1964-01-01"     # COMUSMACV's opening date; no provision acts before its arrival date
@@ -64,5 +64,5 @@ course_of_war_words = [1500, 3500]   # §4.0
 null_words = [40, 160]               # a stated null for an unrevised phase
 log_words = [80, 220]                # one Trajectory Log entry
 log_entries_in_pack = 5              # recent Trajectory Log entries loaded for Part 3
-chapters_full_read_chars = 320000     # about 80,000 tokens: above this, Part 3 reads staged chapters in full and digests of the rest
+chapters_full_read_chars = 40000      # about 10,000 tokens: above this (from the baseline on), Part 3 reads digests of every chapter and the full text only of those it changes
 chapter_words_warn = 15000           # a chapter this long is flagged for consolidation at the next checkpoint

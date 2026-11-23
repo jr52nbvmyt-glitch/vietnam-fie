@@ -1,4 +1,4 @@
-<!-- fie v1.0.2 -->
+<!-- fie v1.0.3 -->
 # Part 3 — §4 The course of the war · §5 Delta ledger · §6 Changed / not changed
 
 **Trigger:** `CONTINUE` when the open memorandum's status is `part2`.
@@ -8,20 +8,29 @@
 
 ## Steps
 
-1. If Parts 1 and 2 are not visible in the conversation, read them from `memos/NNN/`.
+1. This is a fresh thread. Do not read the part files: the pack carries this memorandum's own card, with its findings. Read `memos/NNN/manifest.toml`.
 2. `python3 scripts/fie.py pack NNN --part 3`, then read `build/packs/PACK-NNN-part3.md`.
-3. **Read every chapter** in `history/chapters/`, in phase order. This is the war as it now stands, with every earlier provision in it. Write nothing about the war until you have read it. Once the war outgrows the full-read limit, the pack says so and switches to digest mode: read in full the chapters you will change (and the one before each), and the pack's exact digests for the rest.
-4. **Decide which phases this provision materially changes** (materiality rule below), and stage them: `python3 scripts/fie.py chapters NNN P2 P3 …` (add more later the same way; `--drop Pk` unstages).
-5. **Edit the staged chapters** in `memos/NNN/chapters/` with the Edit tool — see *Editing the war*.
+3. **Read the war.** The pack holds exact digests of every chapter — overview, every event's header, how the phase ends, end vector. From them decide which phases this provision materially changes (materiality rule below), then read those chapters in full, and the one before each for its ending. Small histories are read whole; the pack says which mode applies.
+4. **Write the changes to the war** into `memos/NNN/amend.md` in one Write call and apply them with `python3 scripts/fie.py amend NNN memos/NNN/amend.md`, which stages the chapters it touches — see *Changing the war*.
+5. For a small fix afterwards, edit the staged chapter in `memos/NNN/chapters/` directly; for anything larger, a second amend file.
 6. **Write `part3.md`** — see *The analysis*. Write §4.0 last of the §4 sections, after the chapters are edited, from the chapters.
 7. **End state.** If the war's end changes, edit `history/endstate.toml`: the fields, `last_changed = "NNN"`, and a new `[[history]]` entry (`by`, `rung`, `reason`).
 8. `python3 scripts/fie.py finish NNN --part 3`. It stamps the events you touched, promotes your chapters into `history/`, appends the log, positions and persons, and rebuilds the War History. Then commit, push, and send `build/memos/NNN/Part-3.md`, `build/WAR-HISTORY.md` and `history/TRAJECTORY-LOG.md`, and close.
 
-## Editing the war
+## Changing the war
+
+**The amend file.** One file, written once, holding every change this memorandum makes to the war as whole blocks:
+- `## EV000-14 · <title> · <date> · <place> · <origin> · NNN` and its full text — replaces that event wherever it is. Write the whole event as it now stands.
+- `## EVNNN-k · …` with a new ID — a new event, inserted by its date into the phase that date falls in.
+- `## P2 · Overview`, `## P2 · How the phase ends` — replace those passages of chapter P2.
+- `## P2 · end_vector`, then lines like `"ARVN.effectiveness" = 2` — set those bands.
+
+Only what changes goes in the file; every other word of the chapters stays as it is. The file stays in `memos/NNN/` as the record of what this memorandum did to the war.
+
 
 The chapters are the only copy of the war. You change them; you never retell them.
 
-- **Edit in place. Never rewrite a passage that does not change.** Unchanged text is carried forward word for word, which is what keeps the hundredth memorandum's Phase II the same war as the tenth's. If divergence has made a chapter unworkable as an edit, rewrite it and declare the deviation in the manifest (G6).
+- **Change only what changes. Never rewrite a passage that does not change.** Unchanged text is carried forward word for word, which is what keeps the hundredth memorandum's Phase II the same war as the tenth's. If divergence has made a chapter unworkable as an edit, rewrite it and declare the deviation in the manifest (G6).
 - **A historical event that plays out differently:** edit its text; change its origin from `HIST` to `HIST-ALT`; say in the text what changed and which provision or finding changed it.
 - **A historical event that no longer happens:** origin `CANCELLED`; replace its text with what happens instead and why it does not occur. Never delete an event.
 - **A new event:** insert it at its date, ID `EVNNN-k` (k counts from 1 across all chapters in this memorandum), origin `NEW` (a provision caused it) or `FREE` (free play, G4), works field `NNN`. New operations take operation names: `Operation SILVER LANCE`.

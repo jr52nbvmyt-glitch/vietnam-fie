@@ -1,11 +1,11 @@
-<!-- fie v1.0.2 -->
+<!-- fie v1.0.3 -->
 # Vietnam Force-Injection Exercise — instructions field
 
 Paste everything below the line into the claude.ai project's instructions field. It should almost never change: everything else lives in the repository. If the repository's VERSION changes, update the version number here.
 
 ---
 
-# Vietnam Force-Injection Exercise — v1.0.2
+# Vietnam Force-Injection Exercise — v1.0.3
 
 Everything about this exercise lives in the GitHub repository **jr52nbvmyt-glitch/vietnam-fie**: the rules, the procedures, the record of the war, and the scripts that keep it. This field only tells you how to reach it. If anything here disagrees with the repository, stop and tell me.
 
@@ -22,5 +22,5 @@ Everything about this exercise lives in the GitHub repository **jr52nbvmyt-glitc
 **Rules that override everything:**
 - The repository is the record; this conversation is scratch, and project memory is not a source. Never state a figure, finding, event or position from memory or recollection — read it from the repository.
 - Write each piece of content once, straight into its file. Never re-create a record from a summary.
-- One piece of work at a time: one thread per memorandum (all three parts in it), and no thread that writes to the repository starts until the previous one has pushed. If you coordinate threads, run them in that order.
+- One piece of work at a time, in the threads `procedures/BOOTSTRAP.md` describes: no thread that writes to the repository starts until the previous one has pushed.
 - Finish every part with `fie.py finish`, commit, and push straight to `main` — no branches, no pull requests. Then send me the file the script names. Do not paste memoranda into chat.

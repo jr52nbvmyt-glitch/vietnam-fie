@@ -1,4 +1,4 @@
-<!-- fie v1.0.2 -->
+<!-- fie v1.0.3 -->
 # Part 2 — §2 Integration and second-order effects · §3 Changes to existing forces
 
 **Trigger:** `CONTINUE` when the open memorandum's status is `part1`.
@@ -6,12 +6,12 @@
 
 ## Steps
 
-1. If Part 1 is not visible in the conversation, read `memos/NNN/part1.md` and `manifest.toml`.
+1. This is a fresh thread. Do not read `part1.md` in full: the pack carries this memorandum's own card (figures, negative specification, what it denies, verdict). Read `memos/NNN/manifest.toml`.
 2. **Refine the manifest** now that you know the provision: its pushes and depends are what routing uses. Add every variable the §2 analysis will plainly touch.
 3. `python3 scripts/fie.py pack NNN --part 2`, then read `build/packs/PACK-NNN-part2.md` in full. It holds: the routing table, the standing directives, errata, the cards of the earlier memoranda that share the most world variables with this one, a ledger for every variable this provision touches, the settled positions on those variables, the full provision index, and the gap register.
 4. **Second net.** Run `fie.py grep` on two to four terms that this provision's effects travel through — terms from its negative specification and its depends, not its name (e.g. `refugee`, `helicopter hours`, `district chief`). Read the hits that bear on it. This is how interactions that routing missed get found.
 5. If a card lacks a figure, finding or concept you need, find the line with `fie.py grep` and read that part of `memos/MMM/`. Tag what you take `[M…]` (A3b).
-6. **Write `part2.md`** to the standard below.
+6. **Write `part2.md`** to the standard below, in one Write call.
 7. `python3 scripts/fie.py finish NNN --part 2`, then commit, push, send `build/memos/NNN/Part-2.md`, and close.
 
 ## §2 — what it must do

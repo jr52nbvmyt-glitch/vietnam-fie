@@ -1,4 +1,4 @@
-<!-- fie v1.0.2 -->
+<!-- fie v1.0.3 -->
 # CHECKPOINT — calibration of the analysis against the war it describes
 
 **Trigger:** `CHECKPOINT`, due every `checkpoint_every` complete memoranda (`fie.py status` says when). Its own thread, two parts on `CONTINUE`. No new provision is introduced.
@@ -17,6 +17,8 @@ A checkpoint costs the same every time: it reviews the memoranda since the last 
 7. **Experience of the war.** Four to six short passages from positions the memoranda rarely occupy — an RF/PF platoon leader, a hamlet chief, a VC district cadre, a PAVN porter on the Trail, an American district advisor, a Saigon ministry official. Each dated and located, and each testing one claim the analysis has made: is the change visible from where this person stands? Where it is not, say what that implies for the claim.
 
 ## Part 2 — Trajectory and limits
+
+*A fresh thread: read `reviews/CPnn/part1.md` (your Part 1) and the pack, not the chapters again unless a step needs one.*
 
 8. **Revised trajectory.** Where the war goes from here with the force currently held, phase by phase, ending in the A9 call and the reason the next rung is not reached. If the end state changes, edit `history/endstate.toml` and log it (`by = "CPnn"`).
 9. **Limiting factors.** The binding constraint on each line of effort, ranked by how directly it blocks the next rung.

@@ -13,6 +13,7 @@ Commands
   pack NNN --part 2|3                 build the context pack for Part 2 or Part 3
   pack CPnn|MTnn                      build the context pack for a checkpoint or meta-checkpoint
   chapters WORK P2 P3 ... [--drop Pk] stage copies of current chapters for editing in this work
+  amend WORK FILE                     apply whole event blocks and phase sections to the chapters in one step
   check NNN --part 1|2|3              validate a part: errors, warnings, and the audit line
   finish NNN --part 1|2|3             check, stamp, promote, append registers, rebuild views
   baseline --init | --finish          create empty chapters / validate and stamp the baseline
@@ -703,6 +704,8 @@ def cmd_pack(a):
         er = errata_for(set(loaded))
         if er:
             parts.append("## Errata affecting loaded memoranda\n\n" + "\n\n".join(er))
+        own = read(BUILD / "cards" / f"CARD-{tok}.md")
+        parts.append("## This memorandum's own card (from Part 1 — read this, not part1.md)\n\n" + (own or "Not built yet: run fie.py build."))
         parts.append("## Cards\n\n" + ("\n\n---\n\n".join(cards) if cards else "None."))
         parts.append("## Variable ledgers\n\n" + "\n\n".join(
             f"### {v}\n" + ("\n".join(ledger_lines(v)) or "No earlier contributions.") for v in sorted(touched)))
@@ -733,9 +736,10 @@ def cmd_pack(a):
                          f"ending); for the rest, the digests below are exact extracts. Read any other chapter in full before you "
                          f"stage it.")
             parts.append("## Chapter digests\n\n" + "\n\n".join(chapter_digest(p["id"]) for p in phases()))
+            parts.append("Read in full: only the chapters you will change. Stage and change them with one amend file (procedures/PART3.md).")
         parts.append("## Phases\n\n| Phase | Title | Dates | Last revised | Events | Words |\n|---|---|---|---|---|---|\n" + "\n".join(rows))
         parts.append("## End state now (history/endstate.toml)\n\n```toml\n" + es.strip() + "\n```")
-        parts.append("## This memorandum's findings register\n\n" + (fr[0] if fr else "Part 2 has no findings register yet."))
+        parts.append("## This memorandum's own card (Parts 1–2 — read this, not the part files)\n\n" + (read(BUILD / "cards" / f"CARD-{tok}.md") or "Not built yet: run fie.py build."))
         parts.append("## Standing directives\n\n" + ("\n".join(register_lines("directives.md")) or "None."))
         parts.append("## Settled positions on this memorandum's variables\n\n" + ("\n".join(positions_for(touched)) or "None."))
         parts.append("## Recurring persons\n\n" + ("\n".join(latest_by_key(register_lines("persons.md"))) or "None yet."))
@@ -826,6 +830,119 @@ def cmd_chapters(a):
     if (work_dir(tok) / "manifest.toml").exists():
         set_manifest_field(tok, "phases_changed", "[" + ", ".join(f'"{p}"' for p in staged) + "]")
     print(f"Phases staged for {tok}: {', '.join(staged) or 'none'}")
+
+
+def phase_for_date(d: str) -> str | None:
+    k = date_key(d)
+    if not k:
+        return None
+    ym = f"{k[0]:04d}-{k[1] or 1:02d}"
+    for p in phases():
+        if p["start"] <= ym <= p["end"]:
+            return p["id"]
+    return None
+
+
+def cmd_amend(a):
+    """Apply a file of whole event blocks and phase sections to the staged chapters in one step.
+    Existing event IDs are replaced in place; new IDs are inserted in date order in the phase their date falls in;
+    '## Pk · Overview', '## Pk · How the phase ends' and '## Pk · end_vector' replace those parts of chapter Pk."""
+    tok = a.work
+    d = work_dir(tok)
+    src = read(Path(a.file) if Path(a.file).is_absolute() else ROOT / a.file)
+    if not src.strip():
+        die(f"{a.file} is empty or missing")
+    blocks = []
+    ms = list(re.finditer(r"^## (.+)$", src, re.M))
+    for i, m in enumerate(ms):
+        end = ms[i + 1].start() if i + 1 < len(ms) else len(src)
+        blocks.append((m.group(1).strip(), src[m.end():end].strip("\n")))
+    existing = all_events(staged_chapters(tok))
+    texts = {}
+
+    def chapter(pid):
+        if pid not in texts:
+            dst = d / "chapters" / f"{pid}.md"
+            if not dst.exists():
+                if not (CHAP / f"{pid}.md").exists():
+                    die(f"chapter {pid} does not exist")
+                dst.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(CHAP / f"{pid}.md", dst)
+                print(f"Staged {rel(dst)}")
+            texts[pid] = read(dst)
+        return texts[pid]
+
+    done = []
+    for head, body in blocks:
+        em = re.match(r"(EV" + WORK_RE + r"-\d+) · (.+)$", head)
+        pm = re.match(r"(P\d+) · (Overview|How the phase ends|end_vector)\s*$", head)
+        if em:
+            eid = em.group(1)
+            block = f"## {head}\n{body}\n\n"
+            if eid in existing:
+                pid = existing[eid][0]
+                t = chapter(pid)
+                fm, raw, b = parse_chapter(t)
+                ev = next(e for e in parse_events(b) if e["id"] == eid)
+                b = b[:ev["start"]] + block + b[ev["end"]:].lstrip("\n")
+                texts[pid] = f"+++\n{raw}\n+++\n{b}"
+                done.append(f"replaced {eid} in {pid}")
+            else:
+                fields = em.group(2).split(" · ")
+                pid = phase_for_date(fields[-4]) if len(fields) >= 5 else None
+                if not pid:
+                    die(f"cannot place new event {eid}: its date '{fields[-4] if len(fields) >= 5 else '?'}' falls in no phase")
+                t = chapter(pid)
+                fm, raw, b = parse_chapter(t)
+                k = date_key(fields[-4])
+                at = None
+                for e in parse_events(b):
+                    ek = date_key(e.get("date", ""))
+                    if ek and ek > k:
+                        at = e["start"]
+                        break
+                if at is None:
+                    end_sec = re.search(r"^## How the phase ends", b, re.M)
+                    at = end_sec.start() if end_sec else len(b)
+                b = b[:at] + block + b[at:]
+                texts[pid] = f"+++\n{raw}\n+++\n{b}"
+                existing[eid] = (pid, {})
+                done.append(f"inserted {eid} in {pid}")
+        elif pm:
+            pid, what = pm.group(1), pm.group(2)
+            t = chapter(pid)
+            fm, raw, b = parse_chapter(t)
+            if what == "end_vector":
+                for line in body.splitlines():
+                    mv = re.match(r'\s*"?([A-Z]+\.[a-z_]+)"?\s*=\s*(-?\d+)\s*$', line)
+                    if not mv:
+                        continue
+                    var, val = mv.group(1), mv.group(2)
+                    pat = re.compile(r'^"' + re.escape(var) + r'"\s*=.*$', re.M)
+                    if not pat.search(raw):
+                        die(f"{pid} end_vector has no variable {var}")
+                    raw = pat.sub(f'"{var}" = {val}', raw)
+            elif what == "Overview":
+                title = re.search(r"^# .+$", b, re.M)
+                first = re.search(r"^## ", b[title.end():], re.M)
+                cut = title.end() + first.start() if first else len(b)
+                b = b[:title.end()] + "\n\n" + body + "\n\n" + b[cut:]
+            else:
+                sec = re.search(r"^## How the phase ends\n", b, re.M)
+                nxt = re.search(r"^#{1,2} ", b[sec.end():], re.M) if sec else None
+                endp = sec.end() + nxt.start() if nxt else len(b)
+                b = (b[:sec.start()] if sec else b.rstrip() + "\n\n") + f"## How the phase ends\n{body}\n" + (b[endp:] if sec else "")
+            texts[pid] = f"+++\n{raw}\n+++\n{b}"
+            done.append(f"replaced {what} of {pid}")
+        else:
+            die(f"amend: heading '## {head[:60]}' is neither an event header nor '## Pk · Overview | How the phase ends | end_vector'")
+    for pid, t in texts.items():
+        write(d / "chapters" / f"{pid}.md", re.sub(r"\n{3,}", "\n\n", t))
+    staged = sorted(p.stem for p in (d / "chapters").glob("P*.md"))
+    if (d / "manifest.toml").exists():
+        set_manifest_field(tok, "phases_changed", "[" + ", ".join(f'"{p}"' for p in staged) + "]")
+    print("\n".join(done))
+    print(f"Phases staged for {tok}: {', '.join(staged)}")
 
 
 def staged_chapters(tok: str) -> dict[str, str]:
@@ -1571,7 +1688,7 @@ def build_all(quiet: bool = False):
     idx = ["# Provision index", "*Generated by fie.py from the manifests. Do not edit.*", ""] + (provision_index_lines() or ["None yet."])
     write(BUILD / "INDEX.md", "\n".join(idx) + "\n")
     # cards
-    for t, m in manifests(("part2", "complete")):
+    for t, m in manifests(("part1", "part2", "complete")):
         write(BUILD / "cards" / f"CARD-{t}.md", build_card(t, m))
     # ledgers
     led = ["# Variable ledgers", "*Generated by fie.py from the manifests. Do not edit.*"]
@@ -1686,6 +1803,10 @@ def main():
     g.add_argument("--finish", action="store_true")
     p.set_defaults(f=cmd_review)
     sp.add_parser("build").set_defaults(f=cmd_build)
+    p = sp.add_parser("amend")
+    p.add_argument("work")
+    p.add_argument("file")
+    p.set_defaults(f=cmd_amend)
     p = sp.add_parser("grep")
     p.add_argument("words", nargs="+")
     p.add_argument("--max", type=int, default=60)

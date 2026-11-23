@@ -1,4 +1,4 @@
-<!-- fie v1.0.2 -->
+<!-- fie v1.0.3 -->
 # META — Meta-checkpoint (B3)
 
 **Trigger:** `META` or `META-CHECKPOINT`, due after every `meta_every_checkpoints` checkpoints. Its own thread, two parts on `CONTINUE`. No new provision is introduced. This procedure carries the same authority as `rules/RULES.md`. **It is theater-specific** — its exploration dimensions are keyed to Vietnam.
@@ -27,6 +27,8 @@ Every finding is numbered **M-1, M-2, …** and carries a **disposition**:
 - *remediate* — a standing correction to the analysis's method: a `DIRMTnn-k` line in a `<!-- directives -->` block, applied in every later memorandum.
 
 ## Part 2 — Unexplored terrain
+
+*A fresh thread: read `reviews/MTnn/part1.md` (your Part 1) and the pack; read a chapter only where an item needs it.*
 
 Return to the analytical voice. A systematic search for aspects of the conflict the analysis has neglected — not because they were excluded but because the memorandum structure, the provisions received, or the analyst's habits of attention let them fall below the threshold of treatment. The dimensions below are search headings, not a checklist to walk perfunctorily. For each, the question is: has the analysis treated this as an active force that shapes outcomes, or as scenery? Where it has been scenery, provide the analysis the memoranda should have contained — specific, dated, consequential, at the chronicle standard — and edit the chapters where the war itself changes.
 
