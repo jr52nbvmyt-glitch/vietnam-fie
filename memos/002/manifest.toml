@@ -1,0 +1,250 @@
+# Manifest for memorandum 002. Fill every field; `fie.py check` rejects blanks.
+# status and phases_changed are set by fie.py; leave them alone.
+
+memo = "002"
+title = "National Police reform with a rural constabulary, and merit-based selection of province and district chiefs"
+received = "2026-11-23"
+status = "part1"
+version = "1.0.2"
+phases_changed = []              # set by `fie.py chapters 002 P2 P3 …`
+links = ["001"]                  # the land programme and the Commission Against Corruption both depend on the police and the province chief
+
+[deviation]                      # G6: "none", or describe the structural deviation in that part
+part1 = "none"
+part2 = "none"
+part3 = "none"
+
+[[provision]]
+id = "P002a"
+designation = "National Police Reform Programme, 1964: a resident rural constabulary with a police post in every village, a rebuilt Police Special Branch with sole charge of intelligence on the VC infrastructure, a Police Field Force raised two years early, a national identity and family census, a police pay and career statute, and judicial safeguards on arrest and detention"
+category = "institutional"
+quantity = "One national programme: the National Police grown from about 19,000–22,000 in January 1964 to about 70,000 by the end of 1966 and about 95,000 by the end of 1968, of whom about 24,000 rural police resident in villages and about 7,500 Special Branch [E: village and district counts of the period, the historical growth to 88,000 by 1970, and training throughput]"
+ceiling_spaces = "~520 US personnel, of whom ~150 military spaces [E: about 300 USAID Public Safety advisers against the historical 144 of December 1965, about 150 Army military police and CID training-team spaces, about 70 contractor technicians for the identity system]; about 40 British, Malaysian and Australian police advisers outside US spaces"
+arrival = "1964-01-01"
+in_service = "No direct analogue in the RVN; the historical National Police (decree of June 1962), its Field Force (January 1966) and the rural police extension of 1969 are the baselines, with the Malayan Police and Special Branch of 1948–60, Georgia's patrol police of 2004 and the Patten reform of Northern Ireland policing (1999–2001) as design references"
+systems = ["SECURE", "FIND", "SUBVERT"]
+status = "active"
+
+[[provision]]
+id = "P002b"
+designation = "Provincial Administration Reform, 1964: merit-based selection of province and district chiefs by an independent Provincial Administration Selection Board, by competitive examination, assessment and vetting, with appointment from a ranked list, a guaranteed two-year tenure removable only for cause, an independent Inspectorate of Provincial Administration, a pay and allowance reform, and a mandatory course before posting"
+category = "institutional"
+quantity = "About 290 chief posts (44–45 province chiefs and 239–243 district chiefs) and about 330 deputy posts, filled by competition over 1964–65 [E: the province and district counts of the period, one deputy for administration in each province and district]"
+ceiling_spaces = "~90 US personnel, of whom ~30 military spaces [E: a small advisory staff to the Selection Board and the Inspectorate, assessment-centre specialists, and province senior advisers' share of the inspection work]"
+arrival = "1964-01-01"
+in_service = "No direct analogue in the RVN; the historical system of province and district chiefs appointed by the junta, the corps commanders and later the President is the baseline, with the Indian Administrative Service's district collector, the French prefectoral corps and the Malayan Civil Service's district officer as design references"
+systems = ["SECURE", "ADVISE"]
+status = "active"
+
+# ---------------------------------------------------------------- P002a pushes
+[[push]]
+provision = "P002a"
+var = "GVN.police"
+band = 3
+note = "A resident constable in each village that the government holds, a district station in every district, and a police force paid enough not to live on the population: the National Police becomes a rural institution five years before it did historically"
+
+[[push]]
+provision = "P002a"
+var = "FIND.vci"
+band = 2
+note = "A single Special Branch holding the files, a resident constable who knows the hamlet, and a family census that makes a stranger visible; the VCI half of find-and-fix, not the main-force half"
+
+[[push]]
+provision = "P002a"
+var = "POP.night_control"
+band = 1
+note = "A police post that sleeps in the village adds a resident presence and a radio; it holds only where Popular Forces stand with it and a reaction arrives in the dark (POSTNA-2)"
+
+[[push]]
+provision = "P002a"
+var = "VCI.strength"
+band = -1
+note = "Village cadre identified and arrested on evidence, legal cadre forced underground; slow, cumulative and confined to villages the state holds"
+
+[[push]]
+provision = "P002a"
+var = "VCI.tax_take"
+band = -1
+note = "Resource control on roads and waterways and a constable in the market town raise the cost of moving tax rice and cash"
+
+[[push]]
+provision = "P002a"
+var = "ECON.rice_denial"
+band = 1
+note = "Checkpoints, family census and market controls on the Malayan pattern reduce rice moving to the enemy from held areas"
+
+[[push]]
+provision = "P002a"
+var = "INTEL.penetration"
+band = -1
+note = "Special Branch counter-intelligence and vetting against an enemy that has had agents in the police and the RVNAF for a decade; partial, and itself a target"
+
+[[push]]
+provision = "P002a"
+var = "POP.gvn_legitimacy"
+band = 1
+note = "A policeman who settles disputes, records crime and arrests on evidence is the government's most frequent face in the village; the gain reverses where the police extort or torture"
+
+[[push]]
+provision = "P002a"
+var = "GVN.political_stability"
+band = 1
+note = "A Special Branch that watches the generals as well as the VC, and a police that is not one faction's instrument, slightly raises the cost of a coup; the reform is itself a prize for the faction that captures it"
+
+[[push]]
+provision = "P002a"
+var = "US.personnel_demand"
+band = 1
+note = "About 520 Americans, of whom about 150 in uniform, mostly in the provinces"
+
+[[push]]
+provision = "P002a"
+var = "POP.civilian_harm"
+band = -1
+note = "Arrest on evidence and detention under review replace part of the military's sweep-and-detain; offset in part by enemy terror against resident constables"
+
+# ---------------------------------------------------------------- P002b pushes
+[[push]]
+provision = "P002b"
+var = "GVN.admin_capacity"
+band = 2
+note = "Chiefs chosen for ability, kept long enough to learn a province, and inspected by a body they do not command: the single largest lever on provincial administration"
+
+[[push]]
+provision = "P002b"
+var = "GVN.corruption"
+band = -1
+note = "A post that cannot be bought cannot be farmed to repay the price; vetting and asset declarations close the front door, while the side doors of contracts, rice and the draft stay open"
+
+[[push]]
+provision = "P002b"
+var = "RFPF.effectiveness"
+band = 1
+note = "The province and district chief commands the Regional and Popular Forces; a competent chief who stays two years is the largest single improvement territorial forces can receive without new equipment"
+
+[[push]]
+provision = "P002b"
+var = "POP.gvn_legitimacy"
+band = 1
+note = "The district chief is the government in the countryside; one who is resident, competent and not for sale changes what the government means in his district"
+
+[[push]]
+provision = "P002b"
+var = "GVN.political_stability"
+band = -1
+note = "Takes from the generals their most valuable patronage; a coup grievance in 1964, and a coup-maker's first target is the selection board"
+
+[[push]]
+provision = "P002b"
+var = "ARVN.leadership"
+band = 1
+note = "Selection for a province or district becomes a reward for merit in the field, and the examination creates a record of officers' ability that promotion boards can use"
+
+[[push]]
+provision = "P002b"
+var = "POP.night_control"
+band = 1
+note = "A district chief who knows his villages and keeps his Popular Forces in them at night, rather than in the district town, is the mechanism of night control"
+
+[[push]]
+provision = "P002b"
+var = "ADVISE.leverage"
+band = 1
+note = "Province and district advisers get a counterpart who stays and an Inspectorate to which their evidence can go; the leverage is institutional rather than American, which is why it costs little legitimacy"
+
+[[push]]
+provision = "P002b"
+var = "US.credibility_gap"
+band = -1
+note = "An Inspectorate that verifies province reporting gives MACV a check on figures produced by the men rated on them (A13)"
+
+# ---------------------------------------------------------------- dependencies
+[[depend]]
+provision = "P002a"
+var = "POP.night_control"
+note = "A resident constable in a village held by the VC at night is a target, not a policeman; posts follow security"
+
+[[depend]]
+provision = "P002a"
+var = "RFPF.effectiveness"
+note = "Popular Forces hold the village with the constable at night; the police post is not a fort"
+
+[[depend]]
+provision = "P002a"
+var = "GVN.admin_capacity"
+note = "Courts, prosecutors and the province and district chief direct and protect the police"
+
+[[depend]]
+provision = "P002a"
+var = "GVN.corruption"
+note = "Police posts are bought and sold, checkpoints become toll gates, and Special Branch files can be sold; the Commission Against Corruption (P001b) polices the police"
+
+[[depend]]
+provision = "P002a"
+var = "GVN.political_stability"
+note = "Every junta since 1955 has used the police as a political instrument; the Director General's fixed term survives only while a coup does not sweep it away"
+
+[[depend]]
+provision = "P002a"
+var = "INTEL.penetration"
+note = "A Special Branch penetrated by the enemy hands him its informants"
+
+[[depend]]
+provision = "P002a"
+var = "ARVN.leadership"
+note = "Military Security Service and ARVN intelligence must accept Special Branch primacy on the VCI"
+
+[[depend]]
+provision = "P002a"
+var = "ADVISE.leverage"
+note = "Americans keep the identity, pay and review provisions moving through governments that would prefer a political police"
+
+[[depend]]
+provision = "P002a"
+var = "LOG.helicopter_hours"
+note = "Field Force companies and identity teams reach villages off the roads by air"
+
+[[depend]]
+provision = "P002a"
+var = "US.political_tolerance"
+note = "Congress funds a police programme that its critics will call a secret police"
+
+[[depend]]
+provision = "P002a"
+var = "POP.land_tenure"
+note = "A titled peasant has a reason to tell the constable who threatens his title (P001a)"
+
+[[depend]]
+provision = "P002b"
+var = "GVN.political_stability"
+note = "The Board and the two-year tenure survive only as long as the government that decreed them, and the next coup may sweep both"
+
+[[depend]]
+provision = "P002b"
+var = "ARVN.leadership"
+note = "The candidate pool is the officer corps and a thin civil service; merit selection cannot select merit that does not exist"
+
+[[depend]]
+provision = "P002b"
+var = "GVN.corruption"
+note = "Examinations can be leaked and boards bought; the Commission Against Corruption (P001b) vets candidates and audits the Board"
+
+[[depend]]
+provision = "P002b"
+var = "ADVISE.leverage"
+note = "The Aid Compliance Board's power to suspend a province's counterpart funds (P001b) enforces appointment through the list"
+
+[[depend]]
+provision = "P002b"
+var = "GVN.police"
+note = "A district chief governs through the police as well as the Popular Forces (P002a)"
+
+[[depend]]
+provision = "P002b"
+var = "POP.night_control"
+note = "A competent chief in a district the enemy holds by night is a competent chief in a besieged town"
+
+[[depend]]
+provision = "P002b"
+var = "US.political_tolerance"
+note = "Washington must accept that a chief who will not falsify returns reports bad news"
