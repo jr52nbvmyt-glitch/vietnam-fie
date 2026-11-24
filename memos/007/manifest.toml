@@ -3,7 +3,7 @@
 memo = "007"
 title = "Officer education to the 2026 standard for new US and ARVN officers from 1957, gating promotion; ARVN officer selection and promotion reform"
 received = "2026-11-24"
-status = "part1"
+status = "part2"
 version = "1.0.5"
 phases_changed = []
 links = ["001", "002", "006"]
@@ -178,3 +178,19 @@ note = "Board files and command lists are a target for enemy agents in the JGS"
 provision = "P007c"
 var = "GVN.corruption"
 note = "The Commission of P001b is the board's enforcement arm against sold promotions"
+
+[[push]]
+provision = "P007b"
+var = "ADVISE.leverage"
+band = 1
+note = "A counterpart educated on the adviser's own curriculum shares his vocabulary and his standards; influence rises, authority does not (POSTNA-6)"
+
+[[depend]]
+provision = "P007c"
+var = "US.political_tolerance"
+note = "The aid condition behind the board is only as strong as Washington's willingness to suspend aid to an ally at war over a general"
+
+[[depend]]
+provision = "P007a"
+var = "US.personnel_demand"
+note = "Captains in school, the advisory corps and the rotating battalions draw on one pool of company-grade officers"

@@ -22,6 +22,7 @@
 - P005b (memo 005) pushes -1 — Point targets no longer need area boxes; offset by more targets struck
 - P005c (memo 005) pushes -1 — Smaller bombs on single aimpoints instead of a carpet of 108
 - P006a (memo 006) pushes -1 — Warrants, capture-first rules and no quotas against the historical Phoenix of feud and quota; the PRUs remain the risk
+- P007a (memo 007) pushes -1 — Law of war, the Army profession and escalation-of-force training reach every new platoon leader, including the wartime OCS classes
 
 ## POP.gvn_legitimacy — Legitimacy of the Saigon government in the countryside
 *Higher means more rural acceptance of the GVN.*
@@ -63,6 +64,7 @@
 - P002b (memo 002) pushes +2 — Chiefs chosen for ability, kept long enough to learn a province, and inspected by a body they do not command: the single largest lever on provincial administration
 - P002a (memo 002) depends — Courts, prosecutors and the province and district chief direct and protect the police
 - P006a (memo 006) depends — The district chief runs the DIOCC; the magistrates decide the cases
+- P007c (memo 007) depends — Province and district chiefs are drawn from the same officer pool
 
 ## GVN.corruption — Corruption and diversion
 *Higher means more corruption.*
@@ -75,6 +77,9 @@
 - P004a (memo 004) depends — Rifles, optics, batteries and ammunition are saleable; leakage to the market and to the Front is set by command honesty
 - P006a (memo 006) depends — Bribes for release and false denunciations for feud undo the evidence standard
 - P006c (memo 006) depends — An adviser who reports corruption needs a lever that acts on the report
+- P007c (memo 007) pushes -1 — Promotions and commands no longer for sale; ratings carry integrity
+- P007b (memo 007) depends — Seats in the courses and course results can be sold
+- P007c (memo 007) depends — The Commission of P001b is the board's enforcement arm against sold promotions
 
 ## GVN.political_stability — Political stability in Saigon
 *Higher means more stable government and junta cohesion.*
@@ -89,6 +94,9 @@
 - P002b (memo 002) depends — The Board and the two-year tenure survive only as long as the government that decreed them, and the next coup may sweep both
 - P006a (memo 006) depends — Each coup changes the committee's chairman and tempts its use against the opposition
 - P006c (memo 006) depends — Counterparts appointed and removed by coup outlast no adviser
+- P007c (memo 007) pushes -1 — The reform takes the junta's main currency, which raises the coup risk while it beds in
+- P007b (memo 007) depends — Coups make the promotion list and override the gate
+- P007c (memo 007) depends — A junta can suspend the board; a coup is a promotion list
 
 ## GVN.police — National Police in the countryside
 *Higher means more capable and present rural police.*
@@ -207,6 +215,7 @@
 - P003a (memo 003) depends — Anything shared with the Joint General Staff can reach the enemy; the product is only as secret as the least secure office that reads it
 - P005a (memo 005) depends — B-52 strikes in the South need GVN clearance; a penetrated clearance chain warns the target whatever the bomb
 - P006a (memo 006) depends — A fused file in a penetrated centre is the enemy's list of our informants
+- P007c (memo 007) depends — Board files and command lists are a target for enemy agents in the JGS
 
 ## FIX.capability — Fixing an enemy who chooses whether to fight
 *Higher means better ability to hold an enemy in place once found.*
@@ -260,6 +269,8 @@
 - P004b (memo 004) pushes +1 — Small but real: a trained marksman in each squad in the open delta and plains country where ARVN does most of its fighting
 - P004c (memo 004) pushes +1 — Squad firepower matching the RPD-armed PAVN infantry from 1964
 - P006c (memo 006) pushes +1 — Battalion and subsector advice by men selected and trained for it
+- P007b (memo 007) pushes +1 — Company and battalion leadership able to plan, coordinate fires and run training
+- P007c (memo 007) pushes +1 — Battalions commanded by officers selected for it, kept in command, and removed when they fail
 
 ## ARVN.leadership — RVNAF officer selection and quality
 *Higher means better officers, selected on merit.*
@@ -272,6 +283,9 @@
 - P004a (memo 004) depends — A better rifle does not make a unit go out at night or accept contact; leaders decide that
 - P004b (memo 004) depends — Marksmen must be selected on skill, not on favour, and employed by squad leaders who understand them
 - P006c (memo 006) depends — Advice changes a commander who will listen; it does not replace one who will not
+- P007b (memo 007) pushes +2 — Seven educated classes in the company grades by 1964 and the gate on every promotion after
+- P007c (memo 007) pushes +2 — Selection and command on merit below the general officers; relief for cause
+- P007b (memo 007) depends — Education helps only where the selection system puts the educated officer in command
 
 ## ARVN.desertion — RVNAF desertion
 *Higher means more desertion.*
@@ -279,6 +293,7 @@
 - P001b (memo 001) pushes -1 — Pay delivered to the soldier by an independent paymaster rather than through his commander removes one cause of desertion
 - P002a (memo 002) pushes -1 — Identity cards and the family census make a deserter at home findable; the deterrent is modest and the police are reluctant to arrest the sons of the village
 - P004a (memo 004) depends — Deserters take their carbines; the weapon must stay with the force to matter
+- P007c (memo 007) pushes -1 — Soldiers desert leaders, not armies; modest
 
 ## ARVN.self_sufficiency — RVNAF self-sufficiency
 *Higher means more able to fight, maintain and supply itself without US combat support.*
@@ -286,6 +301,7 @@
 - P004a (memo 004) depends — M855A1, optics, batteries and URG-I parts all come from the United States; the RVNAF cannot make or repair them at depth, so the rearmament deepens the supply dependence that 1973–75 punished
 - P005c (memo 005) pushes -1 — Defence of besieged positions is built around an American bomber and American coordinates the RVNAF can never own
 - P006c (memo 006) pushes -1 — An adviser qualified and trusted to call American air and artillery becomes the advised unit's means of fire; better advising of fire deepens the dependence the withdrawal punishes, unless the adviser is directed to train Vietnamese observers to replace him
+- P007b (memo 007) pushes +1 — Staff, logistics and fire-support officers educated to run their own systems
 
 ## RFPF.effectiveness — Regional and Popular Forces
 *Higher means more effective territorial forces.*
@@ -297,6 +313,7 @@
 - P004a (memo 004) pushes +1 — The outpost platoon holds its wall against a VC local-force company with 30-round magazines and a red dot instead of carbines and Garands; the territorial forces are rearmed five years before 1969
 - P004a (memo 004) depends — The rifle's value in the hamlet depends on whether the platoon is present and awake after dark
 - P006c (memo 006) pushes +1 — Subsector advisers and mobile teams who know the posts and the district chief
+- P007b (memo 007) pushes +1 — Sector and subsector officers and the RF company commanders drawn from the educated classes
 
 ## ADVISE.leverage — Advisory leverage
 *Higher means advisors can change more RVNAF decisions.*
@@ -311,6 +328,9 @@
 - P004c (memo 004) depends — Machine-gun fire discipline, barrel changes and ammunition management are trained or the guns burn out and run dry
 - P006c (memo 006) pushes +1 — An adviser who speaks the language and stays 18 months knows the counterpart and is listened to longer; authority is unchanged
 - P006a (memo 006) depends — The rules on quotas, capture and the PRUs hold only with an American lever behind the committee
+- P007b (memo 007) pushes +1 — A counterpart educated on the adviser's own curriculum shares his vocabulary and his standards; influence rises, authority does not (POSTNA-6)
+- P007b (memo 007) depends — The gates hold only while the Americans will refuse to fund an exception
+- P007c (memo 007) depends — The board survives coups only behind an American aid condition, as the Selection Board of P002b does
 
 ## US.personnel_demand — Demand on US personnel spaces
 *Higher means more spaces consumed.*
@@ -322,6 +342,8 @@
 - P006b (memo 006) pushes +1 — Overlap at each relief in place and a larger rotation base of formed units without the reserves
 - P006b (memo 006) depends — The size of the force in theater sets the size of the rotation base
 - P006c (memo 006) depends — The selected pool is the same pool of good captains and NCOs that American units need
+- P007a (memo 007) pushes +1 — Officers in school are not in units; the training base grows
+- P007a (memo 007) depends — Captains in school, the advisory corps and the rotating battalions draw on one pool of company-grade officers
 
 ## US.casualties — US casualty rate
 *Higher means more US killed and wounded.*
@@ -331,6 +353,7 @@
 - P005c (memo 005) pushes -1 — Closer, faster heavy fire in defence of besieged positions
 - P006b (memo 006) pushes -1 — Collective training and stable leaders cut the losses of the new man; the unit's first month in a new area offsets part of it
 - P006b (memo 006) depends — Losses within a tour are refilled by individuals; heavy losses return the unit to individual replacement in practice
+- P007a (memo 007) pushes -1 — Better-trained platoon and company leaders lose fewer men to ambush, mines and errors of fire support; modest
 
 ## US.unit_quality — US unit quality
 *Higher means better US units.*
@@ -338,6 +361,8 @@
 - P004a (memo 004) pushes +1 — No 1967 M16 jamming crisis, a red-dot sight in every rifleman's hands, and M855A1 through brush and light cover
 - P006b (memo 006) pushes +2 — Squads, platoons and commanders who trained together and stay together for the tour; no six-month command
 - P006c (memo 006) pushes -1 — The selected captains, majors and senior NCOs are taken from the American units
+- P007a (memo 007) pushes +1 — Lieutenants and captains of 1964–68 arrive trained to a common, demanding standard and are gated on it
+- P007a (memo 007) depends — The educated lieutenant still serves in a unit shaped by the replacement or rotation system
 
 ## LOG.ports — Port throughput
 *Higher means more port capacity and clearance.*
@@ -376,6 +401,8 @@
 - P005a (memo 005) depends — Every expansion of B-52 targeting is a Washington decision
 - P006a (memo 006) depends — A programme described as assassination can be ended by Congress
 - P006b (memo 006) depends — No reserve mobilization; the rotation base comes from the active forces and the draft
+- P007a (memo 007) depends — The training base and the officers' time in school are paid for in a war Congress funds by year
+- P007c (memo 007) depends — The aid condition behind the board is only as strong as Washington's willingness to suspend aid to an ally at war over a general
 
 ## US.credibility_gap — The credibility gap
 *Higher means wider gap between what MACV reports and what the press reports.*
