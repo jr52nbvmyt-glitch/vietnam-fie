@@ -1,0 +1,141 @@
+# Manifest for memorandum 009.
+
+memo = "009"
+title = "Basic training to the 2026 standard for every US and RVNAF enlisted entrant from 1957, with an abridged course for the Regional and Popular Forces"
+received = "2026-11-24"
+status = "part1"
+version = "1.0.5"
+phases_changed = []
+links = ["004", "006", "007"]
+
+[deviation]
+part1 = "none"
+part2 = "none"
+part3 = "none"
+
+[[provision]]
+id = "P009a"
+designation = "US entry-level training to the 2026 standard for every enlisted entrant from 1957: the Army's 10-week Basic Combat Training (Yellow, Red, White and Blue phases, the Hammer, the Anvil and the Forge field exercises, Forge 2.5 collective-event design, the 2018 discipline and first-aid redesign), the Marine Corps' 13-week recruit training with the Crucible, the Navy's 10-week recruit training and the Air Force's 7.5-week Basic Military Training, each with its 2026 tactical combat casualty care and fitness content; basic training only, no advanced individual training, OSUT, School of Infantry or Marine Combat Training"
+category = "institutional"
+quantity = "Every US enlisted entrant from 1957 [U]: about 450,000–550,000 a year in 1957–64 and about 800,000–1,000,000 a year at the 1966–68 peak across the four services [E: Selective Service inductions of 82,060–142,246 a year in 1957–64 and 382,010 in 1966 per S8, with volunteers two to three times the inductees]; the 1957–63 entrants completed it before the campaign opened [U: standing condition enlisted_bct_1957]"
+ceiling_spaces = "~0 in RVN [E: every course is taught in the United States]; about 3,000–5,000 added drill sergeants, drill instructors and support cadre in the United States at the 1966–68 peak, and about 20,000–25,000 more trainee man-years in the Army pipeline at any time from the two added weeks, all outside the ceiling [E: D2]; no troop ceiling is set (CONFIG)"
+arrival = "1964-01-01"
+in_service = "2026 configuration of courses redesigned 2018–24 (BCT redesign 2018, Forge 2.5 from March 2024); the 1957–63 entrants are a standing condition"
+systems = ["FIX", "SECURE", "SUSTAIN"]
+status = "active"
+
+[[provision]]
+id = "P009b"
+designation = "RVNAF regular basic training to the 2026 US Army standard for every enlisted entrant from 1957: a 10-week Basic Combat Training on the 2026 programme of instruction in Vietnamese, taught at Quang Trung and the other national and division training centres by Vietnamese drill sergeants at 2026 cadre ratios, with MAAG and MACV advisers, for every ARVN, Airborne, Ranger and Vietnamese Marine recruit and the enlisted recruits of the VNAF and VNN; basic training only, no further training"
+category = "institutional"
+quantity = "Every RVNAF regular enlisted entrant from 1957 [U]: about 30,000–45,000 a year in 1957–63, about 60,000–100,000 a year in 1964–67 and about 130,000–170,000 a year at the 1968–69 peak [E: Quang Trung's 24,000 a year in the mid-1950s and the 1964 plan for 30,000 per S13, and 168,335 Army and RF recruits through the training centres in 1968 per S9, less the RF share]; the 1957–63 entrants completed it before the campaign opened [U: standing condition enlisted_bct_1957]"
+ceiling_spaces = "~250–400 US personnel in RVN, of whom ~220–360 military spaces [E: advisory detachments of six to twelve at each of about 15–25 national and division training centres, a drill-sergeant academy team and a curriculum cell at the Central Training Command]; no troop ceiling is set (CONFIG)"
+arrival = "1964-01-01"
+in_service = "2026 US Army BCT programme of instruction adapted; the 1957–63 entrants are a standing condition"
+systems = ["FIX", "SECURE", "ADVISE", "SUSTAIN"]
+status = "active"
+
+[[provision]]
+id = "P009c"
+designation = "Abridged basic training on the 2026 US Army model for every Regional Forces and Popular Forces recruit (and every Civil Guard and Self-Defense Corps recruit from 1957): a six-week course of the 2026 Basic Combat Training's individual soldier skills in Vietnamese, without drill and ceremony, the Army-specific institutional blocks or the large-unit collective exercises, taught at the RF/PF training centres by Vietnamese drill sergeants with US advisers; basic training only, no further training"
+category = "institutional"
+quantity = "Every RF and PF recruit from 1957 [U]: about 20,000–35,000 a year in 1957–63, about 40,000–70,000 a year in 1964–67 and about 60,000–90,000 a year at the 1968–69 expansion [E: a Civil Guard and Self-Defense Corps of about 86,000 in 1959 per S10, desertion of 11,957–49,224 a year in 1962–65 per S12 that had to be replaced, and 22,483 PF recruits plus the RF share of 168,335 through the centres in 1968 per S9 and S12]; course length six weeks [U: abridged; E: length chosen in D1]"
+ceiling_spaces = "~200–350 US personnel in RVN, of whom ~180–320 military spaces [E: advisory teams of three to six at about 19–37 RF/PF training centres and a share of the drill-sergeant academy team]; no troop ceiling is set (CONFIG)"
+arrival = "1964-01-01"
+in_service = "Abridgement of the 2026 US Army BCT programme of instruction; no real-world equivalent; the 1957–63 recruits are a standing condition"
+systems = ["SECURE", "ADVISE"]
+status = "active"
+
+[[push]]
+provision = "P009a"
+var = "US.unit_quality"
+band = 1
+note = "Every soldier and Marine arrives with a longer, collective, standards-based basic course and the 1957–63 entrants are the junior NCOs of 1964–66"
+
+[[push]]
+provision = "P009a"
+var = "MED.survival"
+band = 1
+note = "Every American taught tactical combat casualty care in basic training: the tourniquet on the extremity bleed, the leading preventable cause of death in Vietnam"
+
+[[push]]
+provision = "P009a"
+var = "US.casualties"
+band = -1
+note = "Fewer American dead from extremity hemorrhage and from individual-skill failures; modest in total, real in lives"
+
+[[push]]
+provision = "P009a"
+var = "US.personnel_demand"
+band = 1
+note = "Two more weeks in the Army pipeline for every soldier and a larger drill-sergeant cadre"
+
+[[push]]
+provision = "P009b"
+var = "ARVN.effectiveness"
+band = 1
+note = "Every regular recruit trained to a common, demanding standard, and none sent to a unit untrained; marksmanship with P004a and P004c"
+
+[[push]]
+provision = "P009b"
+var = "MED.survival"
+band = 1
+note = "Tactical combat casualty care for every RVNAF soldier, in an army whose evacuation was slower than the American"
+
+[[push]]
+provision = "P009b"
+var = "ARVN.desertion"
+band = -1
+note = "A longer, cohesive first course with a buddy team and a drill sergeant who knows the recruit's name; modest against the pay, family and posting causes of desertion"
+
+[[push]]
+provision = "P009c"
+var = "RFPF.effectiveness"
+band = 1
+note = "Every territorial recruit trained, on the rifle he carries, with first aid and night discipline; the historical training lag of up to 60% in 1964 closed"
+
+[[push]]
+provision = "P009c"
+var = "POP.civilian_harm"
+band = -1
+note = "Fire discipline and the conduct block reach the hamlet militia, whose conduct toward the population was the GVN's face in the countryside; small"
+
+[[depend]]
+provision = "P009a"
+var = "US.unit_quality"
+note = "The basic course is only as good as the unit that receives the man; P006b unit rotation keeps him with the men he trained beside"
+
+[[depend]]
+provision = "P009a"
+var = "US.political_tolerance"
+note = "Two more weeks in the pipeline for every soldier during the 1965–66 build-up"
+
+[[depend]]
+provision = "P009b"
+var = "ARVN.leadership"
+note = "The drill sergeant is an NCO and the training centre commander an officer; P007b and P007c decide whether they are good ones"
+
+[[depend]]
+provision = "P009b"
+var = "ADVISE.leverage"
+note = "Advisers at the centres must be able to stop the diversion of recruits to units before the course ends"
+
+[[depend]]
+provision = "P009b"
+var = "GVN.corruption"
+note = "Training centres were dumping grounds and sources of graft; the course is only taught if the commandant is not selling the rations"
+
+[[depend]]
+provision = "P009c"
+var = "RFPF.effectiveness"
+note = "Six weeks gives the individual skills; the platoon's competence still rests on its leader and its support"
+
+[[depend]]
+provision = "P009c"
+var = "POP.night_control"
+note = "A trained PF platoon matters only in a hamlet it is posted to and stays in after dark"
+
+[[depend]]
+provision = "P009c"
+var = "GVN.admin_capacity"
+note = "District and province chiefs control RF/PF recruiting and release men to the centres"
