@@ -4,9 +4,9 @@
 memo = "005"
 title = "B-52J Stratofortress replacing every B-52, with GBU-31 and GBU-38 JDAM and Quickstrike mines"
 received = "2026-11-24"
-status = "part2"
+status = "complete"
 version = "1.0.5"
-phases_changed = []
+phases_changed = ["P1", "P2", "P3", "P4", "P5", "P6"]
 links = ["003"]
 
 [deviation]
