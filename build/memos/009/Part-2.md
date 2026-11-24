@@ -1,0 +1,371 @@
+# Memorandum 009 — Part 2 of 3 · §2 Integration and second-order effects · §3 Changes to existing forces
+
+
+## §2 Part A — Integration
+
+Basic training joins no new system and builds no new instrument. It changes the material that every other system is made of: the man who carries the carbine, sits in the outpost, walks the dike, stops his friend's bleeding and decides whether to stay with his unit. That makes it the most diffuse provision this headquarters has received, and diffuse provisions are the easiest to oversell, because a little of their effect can be claimed in every fight. I intend to claim it in few. Its effects are real in four places: the first minute of a contact, the first ten minutes of a night attack on a post, the first hour after a man is hit, and the first year of a Vietnamese non-commissioned officer corps that the Republic owns. Elsewhere it is a margin, and I will call it one.
+
+### Functional systems
+
+**It joins FIX, SECURE, ADVISE and SUSTAIN, and touches SUBVERT only through the conduct block.** It does not join FIND, STRIKE or INTERDICT. A trained soldier reports what he sees more accurately and patrols more quietly, and that is the whole of its contribution to finding anyone.
+
+**FIX** is strengthened at its lowest level. The ARVN battalion that historically broke under the first volley of an ambush did so partly because its men had never been taught to move under fire, to return aimed fire, or to keep their heads when their sergeant went down. Every regular soldier who joins a battalion from 1964 has been taught all three, and, because the course began in 1957, so have half to two-thirds of the men already in the ranks on 1 January 1964¹. The battalion does not become harder to break by much; it becomes harder to break in the first minute, which is when most ARVN units in ambushes were broken.
+
+**SECURE** is strengthened in the territorial post, where it matters most and where the historical training was worst. In 1964 the territorial training programme ran up to 60% behind its target¹, which means that many Popular Forces soldiers had no course at all. Under P009c none of them joins his platoon without one.
+
+**ADVISE** gains an institution: a Vietnamese drill-sergeant corps of about 1,300–3,600 non-commissioned officers¹, and a training base whose product, unlike every institution this exercise has built behind the American lever, is held in the soldiers themselves and cannot be captured by a palace decree.
+
+**SUSTAIN** pays the cost and gains the medical saving. It pays in American drill sergeants and pipeline weeks, in Vietnamese NCOs, and in range ammunition; it gains the first link of the casualty chain, which in this war was the most neglected.
+
+**The standing condition changes the accounting, and I set the rule now.** Because the course has run since 1957, the soldiers at Binh Gia and Ba Gia were in large part already 2026-trained men. Memoranda 004 and 007 credited the 4th Marine Battalion's two perimeters in the rubber and the 1st Battalion, 51st Regiment's ridge north of the road to the squad gun and to the company officers. Some part of what they did belongs to the men who carried the guns. Part 3 will apportion that credit, not add to it: the losses those events record stand, and this memorandum does not count the same companies a third time.
+
+**F009-1** **The course, the carbine and the educated lieutenant are one standard from private to captain, and the three provisions are worth more together than apart.** The recruit learns marksmanship on the M4A1 with the CompM5 and machine-gun drill on the M249 under a programme written for exactly those weapons²; the lieutenant who receives him was taught the same doctrine of movement and fire at Thu Duc or Dalat³. For the first time in this war an ARVN platoon has a common language of bounds, sectors and fire control running from the private to the company commander. I judge that the course adds less to an ARVN battalion than the officer education did and more than the marksman's rifle did, and that alone it would be a modest gain; joined to the weapon and the lieutenant, it is what lets a company actually execute the drill its officer orders, which neither of the others could make it do⁴. The band consequence is constrained: ARVN effectiveness already sits at the top of the bands in 1966–68, so there the gain can appear only as battalions not lost; in 1964–65 and from 1969 it has room to appear in the band itself.
+
+### Compound pairings
+
+The compound effects are few and specific. Most pairings with earlier provisions are additive, and I name only those where the combination does something neither part does alone.
+
+**Interactions with earlier provisions**
+
+- P009b × P004a, P004c: the recruit qualifies on the carbine and squad gun he will carry, under a programme written for them; IRON GATE's five-day zeroing course becomes a refresher for men already trained, and the battalion's squad gun has a gunner who learned the gun in basic
+- P009b × P007b, P007c: the trained private under an educated lieutenant; the drill the officer orders is the drill the private learned, and the board's field commission draws its strongest candidates from returning drill sergeants
+- P009c × P004a, P008b, P002b: the post's first ten minutes: a trained Popular Forces platoon with a carbine it can shoot, a radio it knows how to report on, and a chief who keeps it in the hamlet at night
+- P009b, P009c × P001b: the course number on the muster roll; the Muster Service is the enforcement arm of the rule that nobody joins a unit untrained
+- P009a × P006b: the trained recruit joins a battalion that trains collectively for six to seven months before it deploys; the Forge's collective events are the first rung of that training, and the battalion's training starts higher
+- P009a, P009b, P009c × P006c: the selected adviser, trained in combat medicine, advises units whose soldiers already know the tourniquet; the mobile advisory teams are freed from teaching the territorials basic skills
+- P009b, P009c × P008a: the national ranges fire about 30–80 million rounds of 5.56mm a year, the first steady domestic customer for the arsenal's cartridge-case line and a reason for the domestic share that is not a war emergency
+
+**The post's first ten minutes.** The territorial compound deserves its own finding, because it is where the provision most plainly does what the others could not.
+
+**F009-2** **A trained platoon, a carbine it can shoot and a radio it can use make the first ten minutes of a night attack on a post a fight rather than a panic.** Memorandum 004 gave the post a weapon that was not outgunned, and memorandum 008 gave it a radio and a battery²⁵. Neither could teach the platoon not to fire its whole basic load into the dark in the first minutes, to put aimed fire on the gap in the wire under a flare, or to send a report the district could act on. The 2026 course teaches all three as individual skills: fire discipline, marksmanship under illumination, and the short report the Forge requires of every recruit¹. The result is a post that still has ammunition when the reaction force arrives, and a call that says where the enemy is rather than that he is everywhere. I judge this worth more than any of the three parts alone and less than a reaction force within range, which none of them supplies⁴.
+
+**F009-3** **The course number on the muster roll is what makes the rule that nobody joins untrained enforceable.** The grant's force is the rule, and historically the rule that recruits complete their course was broken by short battalions that took men early¹. Memorandum 001's Muster Service counts every soldier at a dawn muster against the roll and the pay list⁶. Adding the man's course number and graduation date to the roll costs a column; it turns a training-centre record that the battalion could ignore into a muster discrepancy that the Commission can follow. A man on a battalion's roll without a course number is either an untrained draftee pulled early or a ghost, and both are offences the Commission already pursues. This is the cheapest compound in the memorandum and, for the regular army, the one that decides whether the rule holds.
+
+**F009-4** **The drill-sergeant corps costs the battalions their best NCOs for two years and then returns them, from 1966, as platoon sergeants who have taught the standard four times over.** The RVNAF's weakest rank was the sergeant; it had nothing like the American NCO corps and no institution that made one. A Vietnamese drill sergeant selected from the battalions, trained at the drill-sergeant academy and kept two years at a centre teaches about eight cycles of recruits, and goes back to a battalion knowing the standard better than any NCO in it⁷. At 1,300–3,600 drill sergeants on two-year tours, about 650–1,800 of them return to the line each year from 1966. In 1964–65 the cost is real and falls in the worst years. From 1966 the return is the first steady source of trained senior NCOs the army has had, and it is Vietnamese, and it does not leave with the Americans.
+
+### The find-to-fix chain against the main force
+
+**On the find half, nothing. On the fix half, a company that holds for the first minute.** A PAVN regiment under canopy in War Zone D or a VC main-force battalion lying up in the rubber of Binh Duong is exactly as hard to find as it was. The course teaches the patrol's noise discipline and the short report, and a reconnaissance patrol of trained men is a little quieter and a little more accurate about what it saw, but the enemy still decides whether he is found.
+
+The fix half is where the course works, and only at the bottom of it. Fixing an enemy who chooses whether to fight means holding contact long enough for fire and reinforcement to arrive, and in 1964–65 the ARVN's weakness was that its companies did not hold. A company of the 7th Division walking a dike in Dinh Tuong is hit from a tree line at 50 metres. Under the historical course, a large share of its men had been trained badly or not at all, and the company went to ground where it stood, fired high, and waited for its sergeant to tell it what to do while the enemy's second element closed on its flank. Under this course every man has been taught, until it is reflex, to return fire at what he can see, to move with his buddy to cover, and to listen for the fire-team leader's command, and the sergeant has taught the same drill to a dozen classes. The company returns aimed fire in the first seconds and manoeuvres in the first minutes. It is then a company that can be fixed in place by the enemy only at a cost, and that can hold until its officer brings the artillery onto the tree line.
+
+That is the whole of the find-to-fix effect: the fix holds a little longer in the contacts the enemy accepts. The enemy's answer is the one this war has recorded for every improvement to the ARVN's fighting power: he declines the company that holds and ambushes the one that does not. The main-force war's binding constraint stays where memorandum 004 left it, at finding and at the enemy's choice of battle.
+
+### The identify-to-neutralise chain against the VCI
+
+**The course identifies no one and neutralises no one.** The VCI cadre in a hamlet of Long An is not hiding in the jungle, and a better-trained soldier walking past him does not know him. The infrastructure half of find-and-fix belongs to the Special Branch and Phung Hoang, and nothing here touches them.
+
+There are two small contacts with that chain, and I state them at their size. First, the trained Popular Forces platoon makes the hamlet slightly harder to enter at night, which protects the constable and the informant the infrastructure war depends on; that is a SECURE effect that the identify chain draws on, not an identify effect. Second, the conduct block.
+
+**F009-5** **The conduct block takes away a little of the Front's best propaganda in the held belt, and nothing outside it.** The 2026 course teaches every recruit the law of war and the soldier's obligations toward civilians; in Vietnamese, rewritten as the soldier's duty to the people, it is the first time the ARVN and territorial recruit hears from his own army that the villager's chickens are not his¹. The Front recruited on the government soldier's predation as much as on land, and a soldier who has been told otherwise, by a sergeant he respects, robs somewhat less. In the held belt of the Delta, where the posts and the constabulary already make the government's conduct visible, this is a small, real reduction in the grievances that fed the local guerrilla. Outside it, where the government soldier arrives on an operation and leaves at dusk, his conduct is set by his officer and his hunger, and a lecture ten weeks long in his past is not what decides it. The weight is minor, and it depends on pay.
+
+### Dependence on SECURE
+
+**P009c is worth exactly what the night security around its soldiers is worth, and P009b only a little less.** A trained Popular Forces platoon in a hamlet it sleeps in, with a radio and a reaction force behind it, holds better than an untrained one. A trained platoon kept in the district town to guard the chief's house holds nothing, however well it shoots. The course changes the quality of the security, not its presence, and presence is the variable that decides the hamlets.
+
+The effect is not the same in every part of the country.
+
+**In the Delta it is largest.** Here the held belt exists, the posts have their platoons and their radios, and the night attacks are by local-force companies and guerrilla platoons, not by regiments. At Can Duoc in Long An, the Popular Forces platoon that put most of its carbine rounds into the target on the third morning of IRON GATE was, in this war, a platoon about half of whose men had already taken the abridged course since 1957 and the rest of whom take it in 1964¹. Its ammunition lasts into the second half-hour of an attack, its men put tourniquets on each other's legs in the dark, and its wounded are alive when the boat from the district comes at first light. That is where the provision is at full value.
+
+**In the coastal lowlands of I and II Corps it is smallest where it is most needed.** In northern Binh Dinh, on the Bong Son plain, the threat from 1965 is the PAVN 3rd Division, and a trained Popular Forces platoon facing a battalion of a PAVN regiment is a well-trained platoon that loses its post. In Quang Ngai, after Ba Gia, the posts the ARVN abandoned were abandoned because the corps pulled its battalions back, not because their garrisons could not shoot. Where a PAVN division sits among the population, the gains of the territorial course are taken back with the posts, as the gains of every countryside provision were.
+
+**In the Highlands it reaches the Montagnard Regional and Popular Forces imperfectly and the CIDG not at all.** The course is taught in Vietnamese by Kinh drill sergeants; a Rhade or Jarai recruit in Darlac or Pleiku who speaks little Vietnamese learns the drill by imitation and the conduct block hardly at all. The Montagnard strikers of the Civilian Irregular Defense Group, who held the border camps, are not RVNAF and are outside the grant; the September 1964 rising of the strikers around Ban Me Thuot came from the CIDG camps, which this provision never touched. The Highlands gain is small, and it carries a friction I record in the open channel.
+
+**In the Saigon belt it is the training base itself.** Quang Trung sits at Hoc Mon in Gia Dinh, a district where the Front had been strong enough for this headquarters to run Operation STILL WATER there in 1965. The centre is the largest government institution in the district, its ranges are heard in the hamlets, and about 30,000 young men a year pass through it¹. For the people of Hoc Mon it is the most visible thing the government does; whether it is a good neighbour or a source of thefts and requisitions is decided by the commandant, and the commandant is a graft risk the record names (D11)¹.
+
+**The soldier's family.** The course does not touch where the soldier's family lives, what his pay buys, or what happens to his wife and children when his unit moves. The Popular Forces soldier serves in his own village and his family lives behind the wall he guards, which is why the PF fought for their posts and why they are the best place for this course to be spent. The Regional Forces soldier serves within his province, usually within a day's walk of home. The ARVN regular serves where his division is, and his family lives in the dependants' quarters beside the base or in the town behind it. The ten weeks at Quang Trung are, for the Delta recruit, his first separation from his family, and desertion during the course was a known loss¹. The 2026 course's buddy team and the drill sergeant who knows the recruit's name reduce it somewhat; they cannot change the fact that in March 1975 the regiments of I Corps dissolved toward their families, and nothing in this provision reaches that mechanism.
+
+**Rice, the piaster and the soldier's pay.** The provision does not raise the soldier's pay or protect it from inflation, and a trained private whose pay no longer feeds his family is as likely to desert as an untrained one. It takes no more young men from the paddies than history did: the regular course is ten weeks against a historical nine to twelve, the Popular Forces course six weeks against six, and the Regional Forces recruit goes home three weeks sooner than the historical one¹. Its piaster cost is the drill sergeants' allowances, the centres' construction and the recruits' rations, all small against the aid-funded budget. Its one contact with rice is the ration at the centres: a centre that feeds 6,000 recruits a day is a rice contract, and the commandant who sells the ration and feeds the recruits short is the oldest failure mode of the Vietnamese training centres¹. On the Front's rice take it has no effect that I can distinguish from the posts' and the police's.
+
+### The ADVISE cluster
+
+**This is the first ADVISE provision whose product lives in the soldiers rather than in an institution, and that changes how it fares when the American lever lapses.** Every institution this exercise has built behind the American aid condition, the Commission, the Selection Board, the officer board, Phung Hoang and the Directorate of Defence Industry, fell to the palace when the lever lapsed in 1970–71. The training centres can fall too: a President can appoint a political commandant, the course can be cut in 1972 as the historical course was cut in 1968, the rule can be waived. What cannot be captured is the training already in the men. A soldier trained in 1966 is a trained soldier in 1972 whatever the palace does to the centre that trained him, subject only to the decay of perishable skills.
+
+**What it feeds.** It feeds the counterpart relationship at the lowest level: the adviser to an ARVN battalion no longer spends his first months teaching zeroing and fire discipline to men who never had a course, and the mobile advisory teams of 1967–70 no longer spend most of their time teaching territorials to load and clean their weapons. It feeds the officer education by giving the educated lieutenant soldiers who can execute what he learned. It feeds the Republic's ownership of its own army: the drill sergeants are Vietnamese, the course is taught in Vietnamese, and the standard is enforced by Vietnamese NCOs whom the American adviser watches but does not replace.
+
+**What it starves.** In 1964–66 it takes about 1,300–3,600 of the best Vietnamese sergeants out of the battalions¹, in the years of the coups and of the countryside's worst losses, and it adds about 450–750 American advisers to the training centres. It also concentrates the enforcement of the rule in the hands of the corps commanders, who historically pulled recruits early when their units were short¹; the adviser can report it and the Muster Service can find it, but only the American lever can stop a corps commander who insists.
+
+**What it does not reach.** It does not reach an air arm the Republic owns, sustainment that survives the 1974 appropriation, or the choice of the corps commanders, which are the three things on which the rung has turned since the meta-checkpoint. A better-trained army, privates and sergeants, is still an army whose corps commanders were chosen by the palace and whose fire came from the Americans. I say that here so that nothing later in this memorandum is read as a claim that the course moves the war's end.
+
+### Employment concepts
+
+What follows is what the course does on a given Tuesday: at the centre, in the battalion, and on the ground where a man is hit.
+
+#### EC009-1 · The ten-week cycle at Quang Trung
+
+**Profile.** A company of about 200 recruits, in four platoons of about 50, each platoon with three drill sergeants, so a ratio of about one to seventeen⁸. At the 1964 plan of 30,000 a year¹, Quang Trung takes in about 600 recruits, three companies, each week, holds about 5,800 in the course at any time, and needs about 350 drill sergeants on its ranges and in its barracks.
+
+**Departure and transit.** The recruit arrives from the province induction centre by truck. He is issued his kit and his carbine on his first day and signs for the carbine by its serial number against the muster roll he will join; from then on the weapon is his.
+
+**The sequence.** Weeks one to three, the Red phase: the soldier's duty to the people, discipline, drill, physical training and the first block of casualty care, with the tourniquet taught on the second day and drilled every day after¹. Weeks four to six, the White phase: rifle marksmanship on the M4A1 and CompM5 from grouping through zeroing to qualification, grenades, and combatives. Weeks seven to nine, the Blue phase: movement under fire by buddy team and fire team, the M249 and the M60, land navigation, the protective mask. Week ten, the Forge: about 81 hours in the field, ending with the four-day patrol base of Forge 2.5, in which the recruit must patrol, report, treat a casualty and hold a perimeter at night while short of sleep¹¹.
+
+**Recovery and turnaround.** About 85–90% of starters graduate¹; the rest are recycled to a later company or discharged. A company graduates roughly every two days. Graduates go by truck on Route 1 and Route 4 to the divisions of III and IV Corps, and by VNAF C-47 to I and II Corps⁹. The drill sergeants rest a week and take the next company.
+
+**Ammunition and ranges.** About 500–800 rounds of 5.56mm per recruit, from the 25-metre zero to the qualification table¹⁰: about 15–24 million rounds a year at Quang Trung and about 30–80 million across the national and division centres at the 1964–67 intake.
+
+**Minimum viable package.** A drill sergeant for every fifteen to twenty recruits, a known-distance range, the carbine the recruit will carry, and a Forge site with a patrol base. Without the carbine of P004a, the recruit learns the 2026 marksmanship course on an M1 Garand and must relearn on the weapon he is issued in his unit; the course degrades to a better 1964 course. Without the drill sergeants, it degrades to the historical crowded classes with a 2026 syllabus.
+
+#### EC009-2 · The territorial cycle at the province centre
+
+**Profile.** Six weeks at one of the 19–37 Regional and Popular Forces training centres¹, such as the Regional Forces centre at Van Kiep near Ba Ria. At 40,000–70,000 territorial recruits a year in 1964–67¹, about 4,600–8,100 are in the course at any time, or about 150–400 at each centre.
+
+**The platoon intake.** The territorial forces recruit by place. A new Popular Forces platoon of about 35 men¹, raised from the hamlets it will guard, goes to the centre together and comes back together; its leader, if one has been chosen, trains with it. A replacement for a man killed or deserted goes as an individual and joins his platoon afterwards. In the 1968 expansion, with 588 new PF platoons raised in a year¹, the centres take about fifty new platoons a month.
+
+**The sequence.** Week one, the duty to one's neighbours, discipline and casualty care; weeks two and three, marksmanship on the M4A1 and qualification; week four, grenades, the light machine gun and movement under fire; week five, the patrol base and night discipline, with the short report on the AN/PRC-25 class radio memorandum 008 put in the posts⁵; week six, a three-day field exercise ending in a night defence of a mock post under illumination¹¹.
+
+**Turnaround.** About 80–90% of starters graduate¹. The platoon returns to its hamlet by truck or boat, and the district chief posts it.
+
+**Minimum viable package.** A drill-sergeant team of about six to ten per centre for each 100 recruits, a range, and the district chief's willingness to release the men. Without the last, the centre trains whoever the chief chooses to send.
+
+#### EC009-3 · The first minute and the long night
+
+**Profile.** The casualty sequence the course teaches every man, and what it becomes in each force.
+
+**Under fire.** The man next to the wounded soldier returns fire first, then, when he can, drags him to cover and puts a tourniquet high and tight on the limb that is bleeding, in under a minute. The tourniquet is improvised from the cravat bandage in the first-aid packet and a stick, or the period strap tourniquet; the grant teaches the method and does not supply the 2026 device¹. Most soldiers in practised units carry a cravat and a stick taped to their harness within months, because the course taught them to and because they have seen it work.
+
+**American.** The medic arrives within minutes, the Dustoff within about an hour¹², and the man is in surgery with the limb still viable, because a tourniquet left on for less than about two hours seldom costs it¹³. This is the profile in which the saving of about 900–1,900 American lives over 1965–72 is earned¹.
+
+**ARVN.** Fewer medics, and an evacuation that came by American or VNAF helicopter less reliably and more slowly, often two to four hours¹⁴. The tourniquet holds the man alive; some of the limbs are lost.
+
+**Territorial.** A Popular Forces post hit at midnight has no medic and no helicopter until first light, eight to twelve hours later¹⁵. The tourniquet keeps the man alive till morning, and he loses the leg. That is still a man alive who would historically have bled out at the wall.
+
+**Minimum viable package.** One trained man beside the wounded one, and a band and a stick. Nothing else is needed for the first minute, which is the provision's whole point.
+
+#### EC009-4 · The drill sergeant's circle
+
+**Profile.** A sergeant is nominated by his battalion, screened by the training centre, and trained at the drill-sergeant academy in about nine weeks¹⁶. He serves about two years at a centre, teaching about eight cycles¹⁷, and returns to a battalion as a platoon sergeant, or is considered for a field commission under memorandum 007's open path from the ranks³.
+
+**Cycle rate.** At 1,300–3,600 Vietnamese drill sergeants across both courses¹, about 650–1,800 are selected a year and about as many return to the line each year from 1966.
+
+**The constraint.** The battalion must nominate a good sergeant, and battalions did not give up their good sergeants. The circle works only if the centre can refuse a nominee and the battalion is compelled to send another, which is an adviser's and a board's business; where it fails, the centres get the men the battalions did not want (D11)¹.
+
+#### EC009-5 · The course number on the muster roll
+
+**Profile.** With memorandum 001's Muster Service⁶. Every graduate's course number and date are entered against his name on the unit roll when he arrives. At the dawn muster the team checks each man against the roll; a man with no course number is listed. The Commission follows the list: a man pulled early from Quang Trung is a training offence by his corps; a man with no record at all is a ghost on the pay list.
+
+**Cycle rate.** As the musters: each unit roughly twice a year⁶.
+
+**What it degrades to without P001b.** A training-centre record that the battalion can ignore, and the historical practice of pulling recruits early under pressure, with nothing to show that it happened.
+
+#### EC009-6 · The course in the village (abandoned)
+
+Tried in 1964 for the Popular Forces of the Delta: mobile drill-sergeant teams trained new platoons in their own hamlets, so that the hamlet was never left without its guard. It was abandoned within the year. The hamlets had no ranges, so marksmanship became dry practice and a few rounds at a dike; the night exercises were watched by the people the platoon would be fighting; and two teams were ambushed on the canal roads between hamlets. The abandoned concept names the constraint the dossier left implicit: the standard needs a range and a closed field, and those exist only at a centre. The answer was the staggered release, one platoon of a village's two at a time.
+
+#### EC009-7 · The surge course (abandoned)
+
+Tried in the 1965 American build-up and proposed again by the Joint General Staff in the 1968 mobilisation: an eight-week course for the duration, without the Forge, to put men into units faster. It was abandoned on the evidence of the first battalions that received the short-course men, whose platoon sergeants reported that the Forge was the part of the course the new soldier most needed, because it was the only part in which he had to do everything at once while tired, in the dark, with his buddy. The abandoned concept names what the course is for: its collective field exercise, not its classroom content, is what separates it from the historical course of the same length.
+
+#### EC009-8 · The American drill sergeant (abandoned)
+
+Proposed by MACV in early 1964 to speed the start: American drill sergeants on the ranges at Quang Trung, teaching through interpreters, until enough Vietnamese were trained. It was tried for one cycle and abandoned. The recruits learned to obey a foreigner through an interpreter, the Vietnamese cadre lost face before the men they would lead, and the Front's propaganda had its picture of American sergeants drilling Vietnamese conscripts within the month. The abandoned concept confirms the rule memorandum 006 learned with the adviser in command: the American teaches the teacher and watches; the Vietnamese sergeant teaches the soldier.
+
+## §2 Part B — Channels
+
+### Displacement
+
+**The enemy's ambush and assault move from the trained regular to what the course does not reach, and from the firefight the trained man wins to the mine he was never taught to find.** Neither displacement is new; both repeat what memorandum 004 found for the rifle, at a smaller increment.
+
+**F009-6** **Attacks move to the forces outside the grant: the CIDG camps, the police posts without their platoon, the hamlet militia, and from 1968 the People's Self-Defense Force.** The grant covers the RVNAF regulars and the RF and PF. It does not cover the Civilian Irregular Defense Group, which is an American Special Forces programme; the National Police and its Field Force, which have their own courses; the Combat Youth and hamlet militia; or the People's Self-Defense Force of the 1968 mobilisation, whose members took a few days of weapons instruction historically. A VC district company looking for a post to overrun in 1964–65 finds the PF post harder and the militia post as easy as before; in the Highlands it finds the CIDG camp as it was. This is the same displacement F004-1 recorded, and it compounds it: the posts outside both grants are now further below the posts inside them. The magnitude is moderate in the sense that it decides which posts fall; it does not raise the number that fall.
+
+**F009-7** **The enemy moves further from the firefight to the mine, the booby trap and the stand-off attack, and the course teaches nothing about any of them.** A trained infantry squad that returns aimed fire in the first seconds is a worse target for an ambush and no better a target for a mine on a trail or a grenade wired to a hedgerow. The course's scenarios are large-scale combat against a peer¹. Where the enemy has already moved from the rifle assault to mortars, sappers and mines in answer to memorandum 004, the trained soldier makes that move a little more worthwhile for him. For the Americans the consequence is that a larger share of the deaths that remain come from mines and booby traps, which no basic course touches; in a Marine company in the Quang Nam lowlands south of Da Nang, where the mine was the principal killer, the course changes almost nothing except the tourniquet after the blast. What the enemy loses here he does not lose: he relocates it to a weapon this provision does not address.
+
+### Bottleneck migration
+
+**For the ARVN, the binding constraint moves up one level: from the private to the squad leader and the battalion's collective training, which the grant does not touch.** For the territorial forces it moves to the platoon leader and the district chief. For the Americans it moves to what the soldier learns after basic.
+
+**F009-8** **ARVN: from the private's skills to the battalion that was never trained as a unit.** Historically, unit training in the RVNAF was described as virtually nonexistent¹. Before this provision, an ARVN battalion's weakness at the bottom was that its men did not know the individual skills; after it, they do, and the weakness is that the squads, platoons and companies have never trained together, the squad leaders were promoted from privates who knew no more than they did, and the battalion cannot run its own training. A trained private in an untrained squad is better than an untrained private in an untrained squad, and he is not a trained squad. This is the constraint the next provision would have to address, and it is named, at the top of the army, by F007-7: at the bottom the constraint is now the collective, at the top it remains the divisions and corps. The weight is major, because it names what the course cannot do and what the army most needs next.
+
+**F009-9** **Territorial forces: from the soldier's skills to the platoon leader, the reaction and the district chief's release of men.** A trained PF platoon is now a platoon of trained men, and its binding constraints are the ones POSTNA-2 and memorandum 008 named: whether its leader keeps it awake, whether a reaction or fire comes when it calls, and whether the district chief puts it in the hamlet at all. One new constraint appears: the chief's willingness to release men for six weeks. Historically in 1964 the Regional Forces trained about 2,000 recruits against a goal of 14,000¹; under this grant the content and the rule are fixed, not the recruiting, and a chief who will not send his men to Van Kiep can keep them untrained in his district town. Merit-selected chiefs release them; the others delay. The weight is moderate.
+
+**F009-10** **Americans: from basic skills to the theatre's own skills and to the first weeks in the unit; for casualty care, from the first minute to the evacuation.** The American soldier's basic skills were not the binding constraint on American units, whose weaknesses lay in theatre knowledge, the replacement system and the command climate. After the course, the American soldier's remaining individual weakness is what he did not learn in basic and must learn in Vietnam: the mine, the trail, the village. For the wounded, the constraint moves from the first minute, which the tourniquet now covers, to the evacuation and the surgeon, which in the American force were already good. The weight is minor.
+
+### Own-force opportunity cost
+
+**The course consumes sergeants, weeks and rounds; of the three, only the sergeants are scarce.**
+
+**F009-11** **About 1,300–3,600 Vietnamese sergeants out of the battalions in 1964–66, in the years the countryside was being lost.** The drill sergeants are exactly the men the battalions most lacked: experienced, literate NCOs who could lead a squad¹. In 1964–65 their absence is felt in the squads that most needed them, in the year of Khanh's coup and the year of Binh Gia, Ba Gia and Dong Xoai. The battalions that send their best sergeants to Quang Trung have weaker squad leaders for two years; the battalions that send their worst produce a weaker course. I judge that the net in 1964–65 is still positive, because the 1957–63 classes already in the ranks cover part of the loss, and because a sergeant teaching 200 recruits in each of eight cycles raises more men than he would have led in one squad⁴. But the cost falls in the worst years and the return comes from 1966, which is the wrong order. The weight is moderate.
+
+**F009-12** **American: 3,000–5,000 drill sergeants at the peak from the same pool of NCOs the rotating battalions and the advisory corps draw on, and two more weeks for every soldier during the build-up.** Memorandum 006's unit rotation needs a larger formed rotation base of trained battalions without the reserves, and its selected advisory corps takes good captains and NCOs out of American units¹⁸. Memorandum 007's career course takes captains³. This provision takes 3,000–5,000 sergeants as drill sergeants and drill instructors. The four draws fall on the same mid-career NCOs in 1965–67. The two weeks per soldier, with the drill-sergeant shortage, slow the build-up by about two to three months¹, and they fall on the same expansion battalions of 1966 that unit rotation already delays by two to three months. I judge the combined slippage of the 1966 expansion at about three to five months, not the simple sum, because both delays are set by the same NCO shortage and resolve together as the training base grows⁴. In this war, with no troop ceiling and the clock not yet running in 1966, that delay costs little at the operational level; it is an exposure, not a loss. The weight is moderate.
+
+**F009-13** **Rounds and ranges are not scarce.** About 30–80 million rounds of 5.56mm a year on the Vietnamese ranges [D: EC009-1] against about 300–400 million in the RVNAF's first year of the rearmament²: a tenth to a fifth more, on a supply line that can bear it. The ranges at the 33 centres exist¹. The weight is minor.
+
+### Counterfactual erasure
+
+**F009-14** **Erased: the untrained draftee sent straight to his battalion, the territorial training that ran 60% behind programme, the American who qualified on the M14 and met his rifle in Vietnam, the doctrine that a tourniquet was a last resort, and most of the basic instruction the mobile advisory teams gave the territorials.** Historically units were often filled with hastily drafted men who had no formal training at all¹. That man does not exist in this war, except where the rule is broken and the muster catches it. The territorial soldier who historically went to his post without any course, because the programme was 60% behind¹, goes with six weeks of the 2026 course. The American recruit who historically qualified on the M14 and was issued an M16A1 in Vietnam¹ never fires the M14. The teaching that a tourniquet costs the limb and is a last resort, which survived in American doctrine until about 2001¹, is replaced in 1957.
+
+The largest erasure in its consequences is the least visible. Historically the 354 mobile advisory teams authorised from late 1967¹⁸ spent much of their time teaching Regional and Popular Forces soldiers to load, clean and fire their weapons, to set a perimeter and to give first aid. In this war those soldiers already know the individual skills, and the teams, five men each, can teach what the course does not: the platoon's night ambush, the post's fire plan, the call for the district's guns, the leader's job. The attention freed is the advisers', and it goes to the collective level where the territorial forces' constraint now sits. The weight is moderate, rising toward major in 1967–70 when the teams are in the field.
+
+### Perverse effect
+
+**Four perverse effects, each real and each smaller than the gain it shadows.** I state the net of each in both directions.
+
+**F009-15** **The better territorial soldier is taken away from his hamlet: by the regular army that wants trained men, and by the corps that pulls trained Regional Forces companies into its operations.** Memorandum 004 recorded the rearmed RF companies being pulled into corps operations. A trained RF company is a better candidate still, and the corps commander who needs a battalion's worth of men for a sweep takes the companies he knows can fight. A second, quieter drain: a PF soldier with the course and a good record is a ready recruit for an ARVN battalion short of men, and recruiters and district chiefs trade in them. The net: the territorial forces as a whole are better, and the best of them are drawn off toward the war of the main force, where their hamlet's security does not go with them. The weight is minor, because the trained PF platoon's value is in its village, and most stay there.
+
+**F009-16** **The tourniquet saves the life and, in the territorial and ARVN forces, often costs the leg; the Republic gets thousands more crippled veterans it cannot keep.** A tourniquet left on eight to twelve hours at a Popular Forces post keeps a man alive whose limb is then lost. Of the 4,000–12,000 RVNAF lives the tourniquet saves over the war¹, I judge perhaps a third to a half are amputees, most of them territorial and ARVN soldiers wounded far from a surgeon⁴. The Republic's war invalids already lived on pensions inflation ate, and their grievance was visible in the cities¹⁹. The net: several thousand men alive who would have died, against several thousand more disabled men the state cannot keep well. The life is worth more than the grievance; the grievance is real and lands in the cities in 1970–74.
+
+**F009-17** **The graduation and qualification rates become a scoring instrument, and the men rated on them inflate them.** A centre commandant is judged by how many recruits he graduates and how many qualify on the range. That is the Hamlet Evaluation System's failure in a new place: a figure produced by the organisation being measured by it. Where the commandant is honest the figure is true; where he is rated on it and is not, recruits who did not qualify are recorded as qualified and the Forge becomes a camping trip with a certificate at the end¹. The Muster Service checks that a man has a course number, not that he can shoot. The net: the provision's gain is real where the cadre is good and the scores are false where it is not, and MACV's reports will overstate the course's reach by the share of bad centres, perhaps a fifth to a third in 1964–66⁴. The honest measure is the battalion's live-fire results and its losses in the first minute of contact, which the adviser sees and the centre does not report. The weight is moderate.
+
+**F009-18** **The conduct block teaches the soldier a standard his pay may not let him keep, and where pay fails the broken standard teaches contempt for the army's word.** A recruit told that the villager's chickens are not his, and then posted to a battalion whose pay, after the inflation of 1966–68, no longer feeds his wife and children, takes the chickens and knows that he was lied to about something. The conduct block's value rests on the soldier being fed. The net: in the Delta's held belt, where the provinces are better run and the soldier is near home, the block reduces predation; in the battalions far from home in the inflation years, its effect fades and its credibility with it. The weight is minor.
+
+### Anticipation
+
+**F009-19** **The enemy declines the fight the trained unit would win, so the fighting gain is invisible; the casualty-care gain is the one effect of this provision that shows plainly in a metric.** This war has recorded the anticipation effect for every improvement to the ARVN's fighting power: the enemy declines the educated battalion and ambushes the unreformed one, declines the rearmed post and attacks the militia's. The trained company is one more thing he declines, and its gain appears as ambushes not laid, which no report records. The tourniquet is different. A man who would have bled to death from a leg wound and is instead evacuated alive appears in the died-of-wounds and killed-in-action returns as a living casualty instead of a dead one. The enemy cannot decline that effect, because it acts after his own fire has done its work. In this provision, the fighting gain is invisible and the medical gain is visible, and the commander who reads only the returns will credit the medical saving and miss the fighting one.
+
+### Enemy detection and learning
+
+**F009-20** **There is no moment of detection: the enemy's tactics of 1964 were formed against men already trained since 1957, and what he learns over 1964–65 is that the ARVN private is better while its command is not.** Because the course began in 1957, the Front's local-force companies of 1959–63 fought Civil Guard and Self-Defense Corps soldiers who had taken the abridged course, and ARVN regulars about half of whom had taken the full one¹. COSVN's Military Affairs Committee wrote its doctrine of 1963–64 against that army, not against the historical one. The lessons it drew were the ones the record already gives the B-2 Front from the rifle and the officers: attack what is not trained or rearmed, ambush the column the general sends, and avoid the fight at the wall of a post that holds. What it adds is a view of the private himself. The Front's military proselytizing sections, which worked on government soldiers through their families and their villages, read the conduct block within a season and called it American indoctrination of the puppet soldier⁴. They were partly right about its origin and wrong about its effect: a soldier told by his own sergeant that he owes the people something was not more American for it. What the enemy gets right, and what hurts, is that the course teaches nothing about the mine: Military Region 5's command in Quang Ngai and Quang Nam, and the B-2 Front around Saigon, both conclude in 1965 that the better-trained soldier is no better on a trail laced with mines, and their sapper and mine units are expanded accordingly.
+
+### Enemy adaptation cost
+
+**F009-21** **The enemy's adaptations are cheap, but the casualty-care saving is proof against all of them.** Switching targets to the posts outside the grant costs the enemy nothing but the choice. Mines and booby traps cost a little tonnage and some trained sappers; the Front made most of its mines from duds and captured explosive²⁰. Avoiding the trained company costs him some of the ambushes he would have won. The expensive adaptation, raising the quality of his own soldiers to match, is one Hanoi was already making for its own reasons: the PAVN trained its infiltrators for some months before they went south, and the Front trained its local forces in its base areas²¹. I judge that the exchange in the fighting war is roughly even: the Republic pays 1,300–3,600 sergeants for a margin the enemy can largely sidestep at small cost⁴. But the tourniquet saving is not subject to any adaptation. The enemy can choose where and whom he wounds; he cannot choose whether the man beside the wounded soldier knows how to stop the bleeding. That is the part of the provision whose exchange rate is infinitely in our favour, and it is the part I am surest of.
+
+### Cross-boundary feedback
+
+**F009-22** **The American lives saved reach home one family at a time and do not move the clock; the draft calls rise a little to replace the men the course fails.** The saving of about 900–1,900 American lives over 1965–72 is a judgment resting on a rate: a quarter to a half of the 7.9% of killed in action who died of extremity hemorrhage. The meta-checkpoint's running sum of American lives saved by all provisions was about 2,500–5,000, below a band²². Adding this provision's 900–1,900 raises the sum to about 3,400–6,900⁴. Whether that crosses a band is a question for Part 3 under the standing directive; I note here that the tolerance of 1965–68 was spent on casualties of a scale and on Tet, and that a sum of this size is still six to twelve percent of the historical dead. On the other side, the 2026 standard fails more of the Project 100,000 intake, about 12–18% of those men against the force's 10%, out of about 354,000 such men accepted over 1966–71. Perhaps 5,000–15,000 more men a year are inducted to replace those discharged at the peak²³. That is a small addition to the draft calls that were the domestic clock's engine, and it roughly offsets, in the politics of the draft, part of what the lives saved add to it. The loop returns to the theater as nothing a band can record. For the Republic, its 4,000–12,000 lives saved¹ return through morale and the families of the army, not through Washington.
+
+### Open channel
+
+**F009-23** **Ten weeks at a national centre is the first place where the Republic's young men of every region and religion live under one standard, and it carries the Kinh–Montagnard friction into the territorial centres of the Highlands.** The recruit from the Hoa Hao country of An Giang, the Catholic refugee from Ho Nai, the Buddhist from Hue and the Cao Dai son from Tay Ninh sleep in the same barracks at Quang Trung, fail and pass by the same standard, and are taught by a sergeant who may be from any of those places. The 2026 course's design of shared hardship and buddy teams is built to make soldiers of strangers. I judge that this has a small, real effect on the army's cohesion across its regional and religious factions, though not on the generals' factions, which were not made in basic training⁴. In the Highlands the same mechanism runs the other way: Montagnard recruits taught in Vietnamese by Kinh drill sergeants, in a centre that does not speak their language, learn that the army is a Vietnamese institution, and the grievances that FULRO organised find one more example. The weight is minor.
+
+## §2 Part C — Counter-directional finding and strongest positive effect
+
+**F009-24 · Counter-directional** **The course trains the Front's guerrillas too: every trained man who deserts or is released into a contested village carries the 2026 soldier's skills home, and some of them carry them to the local force.** The Popular Forces lost 36,608 men to desertion in 1964 and 49,224 in 1965¹, and the regular army lost tens of thousands more each year. In this war desertion is lower, because several provisions push it down⁶³, and P009b pushes it lower again¹; but in every year of 1964–75 tens of thousands of trained men leave the RVNAF, by desertion and by the end of their service, for villages that are not all held. The Front recruited deserters and released soldiers, who were valuable to it because they knew weapons and the government's habits. I judge that perhaps a few thousand trained men a year reach the Front's guerrilla and local-force units in 1964–67, either recruited or pressed, and that each of them brings marksmanship on the carbine the Front was already capturing, fire discipline, the patrol base, and the tourniquet⁴. The guerrilla platoon that historically fired wildly and left its wounded now has, here and there, a former PF soldier who teaches it to do neither. The weight is moderate and below the provision's primary effect: a few thousand trained men among the Front's tens of thousands of guerrillas against hundreds of thousands trained in the government's forces. It does not reverse the gain. It means that in the contested villages of 1965–67 the enemy's local force is a little better than history's, partly because of this provision, and that some of the posts the course defends are attacked by men it trained.
+
+**F009-25 · Strongest positive** **In the years the ARVN was broken in ambushes and the territorial posts were falling at night, every regular and territorial soldier has been trained, on the weapon he carries, to fight for the first minute and to keep his wounded friend alive; with the carbine and the educated lieutenant, it is the first government army in this war that the Front cannot reliably break with its opening volley, and it keeps about 5,000–14,000 American and Vietnamese soldiers alive over the war.** Three things here are worth stating at full weight.
+
+The first is the end of the untrained soldier. Historically the ARVN filled its battalions with men who had no formal training¹ and the territorial forces sent men to their posts without a course because their programme was 60% behind¹. In this war, from 1957, those men do not exist where the rule holds. In 1964–65, the years the countryside was lost historically, half to two-thirds of the regulars and a third to a half of the territorials are already trained on 1 January 1964, and almost all of them by the end of 1966¹. I judge that in 1964–65, beyond what memoranda 004 and 007 gave, the course reduces the ARVN's losses in ambushes and meeting engagements by about a tenth to a sixth, and the territorial posts lost in night attacks in the held belt by about a tenth⁴. Those are judgments resting on a rate, not counts, and Part 3 must show them at work in dated events before a later memorandum repeats them.
+
+The second is the lives. About 900–1,900 Americans over 1965–72 and about 4,000–12,000 Vietnamese soldiers over 1964–75 are saved by the tourniquet reflex alone¹: in all about 5,000–14,000 soldiers' lives, each a judgment resting on the rate of a quarter to a half of the deaths from extremity hemorrhage. Unlike every other gain in this memorandum, this one cannot be sidestepped by the enemy, and it shows in the returns.
+
+The third is ownership. The trained soldiers and the drill-sergeant corps are the Republic's, and they are the one product of this exercise's institutional provisions that the palace's capture of 1970–71 cannot take back. A trained private in 1974 is still a trained private.
+
+What it does not do I state with the same directness. It does not find the enemy, does not choose the battle, does not reach the corps commanders or the families, and does not move the rung. This is a major improvement inside the rung, concentrated in the first minute of the fight and the first hour after the wound, and I would not trade it for any piece of equipment this headquarters has received except the radio at the post.
+
+## §2 Findings register
+| ID | Channel | System | Summary | Weight |
+|---|---|---|---|---|
+| F009-1 | Integration | FIX, ADVISE | Course, carbine and educated lieutenant form one standard from private to captain; the gain shows as battalions not lost in 1966–68, in the band in 1964–65 and from 1969 | major |
+| F009-2 | Integration | SECURE | A trained PF platoon, a carbine and a radio make the post's first ten minutes a fight: ammunition kept, aimed fire at the wire, a usable report | moderate |
+| F009-3 | Integration | ADVISE | The course number on the muster roll lets the Muster Service and the Commission enforce the rule that nobody joins untrained | moderate |
+| F009-4 | Integration | ADVISE, SUSTAIN | The drill-sergeant corps costs the battalions NCOs in 1964–65 and returns 650–1,800 platoon sergeants a year from 1966; Vietnamese-owned | moderate |
+| F009-5 | Integration | SUBVERT, SECURE | The conduct block takes a little of the Front's propaganda in the held belt and nothing outside it | minor |
+| F009-6 | Displacement | FIX, SECURE | Attacks move to forces outside the grant: CIDG, police posts, hamlet militia, the 1968 People's Self-Defense Force | moderate |
+| F009-7 | Displacement | FIX, SECURE | The enemy moves further to mines, booby traps and stand-off attack, which the course does not teach | moderate |
+| F009-8 | Bottleneck migration | FIX, ADVISE | ARVN constraint moves from the private to the squad leader and the battalion's nonexistent collective training | major |
+| F009-9 | Bottleneck migration | SECURE | Territorial constraint moves to the platoon leader, the reaction and the district chief's release of men | moderate |
+| F009-10 | Bottleneck migration | FIX, SUSTAIN | American constraint moves to theatre skills after basic; casualty care's to the evacuation | minor |
+| F009-11 | Own-force opportunity cost | ADVISE, FIX | 1,300–3,600 Vietnamese sergeants out of the battalions in 1964–66, the worst years; net still positive | moderate |
+| F009-12 | Own-force opportunity cost | SUSTAIN | 3,000–5,000 US drill sergeants from the NCO pool rotation and advisers draw on; 1966 expansion slips three to five months with P006b | moderate |
+| F009-13 | Own-force opportunity cost | SUSTAIN | 30–80 million rounds a year on the ranges, a tenth to a fifth of the rearmament's first year; not scarce | minor |
+| F009-14 | Counterfactual erasure | ADVISE, SECURE | Untrained draftee, 60% territorial training lag, M14 qualification and last-resort tourniquet erased; mobile advisory teams freed for collective training | moderate |
+| F009-15 | Perverse effect | SECURE | Trained territorials drawn off by the corps and by ARVN recruiters, away from their hamlets | minor |
+| F009-16 | Perverse effect | SUSTAIN, SECURE | Tourniquets on all night save the life and cost the leg; a third to a half of RVNAF survivors amputees, a veterans' grievance in the cities | minor |
+| F009-17 | Perverse effect | ADVISE | Graduation and qualification rates become a scoring instrument; a fifth to a third of centres' figures false in 1964–66 | moderate |
+| F009-18 | Perverse effect | ADVISE, SUBVERT | The conduct block teaches a standard the soldier's pay may not let him keep; where pay fails it breeds contempt | minor |
+| F009-19 | Anticipation | FIX, SECURE | The enemy declines the trained unit, so the fighting gain is invisible; the casualty-care gain shows in the returns | moderate |
+| F009-20 | Enemy detection and learning | SUBVERT, FIX | No detection moment; COSVN's doctrine formed against trained men; proselytizing sections call the conduct block indoctrination; MR5 and B-2 rightly expand mines | moderate |
+| F009-21 | Enemy adaptation cost | FIX, SECURE | Target switching and mines are cheap; the fighting exchange is about even; the tourniquet saving is proof against any adaptation | moderate |
+| F009-22 | Cross-boundary feedback | SUSTAIN | 900–1,900 US lives raise the running sum to 3,400–6,900; Project 100,000 failures add 5,000–15,000 inductions a year; no band | minor |
+| F009-23 | Open channel | SECURE, ADVISE | The national centre mixes regions and religions under one standard; Montagnards taught in Vietnamese learn the army is Kinh | minor |
+| F009-24 | CD | SECURE, FIX | Trained deserters and released men carry the course to the Front's guerrillas; a few thousand a year in 1964–67 | moderate |
+| F009-25 | SPE | FIX, SECURE, SUSTAIN | The untrained soldier ends in the years the war was lost; ambush losses down a tenth to a sixth beyond 004 and 007; 5,000–14,000 soldiers' lives; held in the men, not capturable | major |
+
+**Employment concepts**
+
+EC009-1 the ten-week cycle at Quang Trung · EC009-2 the territorial cycle at the province centre (platoon intake) · EC009-3 the first minute and the long night (casualty care) · EC009-4 the drill sergeant's circle (with P007c) · EC009-5 the course number on the muster roll (with P001b). Abandoned: EC009-6 the course in the village (no ranges, watched by the enemy, teams ambushed) · EC009-7 the surge course (the Forge is what the new soldier most needed) · EC009-8 the American drill sergeant (obedience to a foreigner, cadre lose face, propaganda)
+
+## §3 Changes to existing forces
+
+### The advisory effort and MACV staff
+
+The advisory effort gains a training-centre structure and loses a burden. About 450–750 Americans are added at the national, division and territorial centres and at the drill-sergeant academy; in exchange, the battalion and subsector advisers no longer begin their tours by teaching the individual skills to men who never had a course. MACV's training directorate takes on a new reporting problem: the centres' graduation and qualification figures, which it should treat with the scepticism it owes to every figure produced by the organisation measured by it, and check against the battalions' live-fire results and the first-minute losses the advisers report.
+
+### US conventional forces
+
+Every American soldier and Marine who arrives in Vietnam has had the 2026 course, and so have most of the junior NCOs of 1964–66, the 1957–63 entrants¹. A battalion of the 1st Infantry Division or a Marine battalion of III Marine Amphibious Force is somewhat better at the individual skills, much better for its cooks, clerks and drivers whose basic course was all the combat training they had, and markedly better at the first minute after a man is hit. Its losses from mines and booby traps are unchanged. Its build-up in 1965–66 is about two to three months slower from this provision, and three to five with unit rotation.
+
+### US Special Forces and CIDG
+
+The Special Forces A-teams' NCOs were long-service men, mostly enlisted before 1957, and are untouched by the course. The CIDG strikers are not RVNAF and are outside the grant, and their camps become a relatively softer target. The Vietnamese Special Forces, the LLDB, are RVNAF regulars and their enlisted men have the course.
+
+### ARVN divisions and the JGS
+
+Every regular battalion fills with trained men, and from 1966 receives returning drill sergeants as platoon sergeants. The Central Training Command runs a larger and better cadre and must enforce the rule against the corps commanders who want recruits early, with the Muster Service as its witness. The binding constraint in the battalions moves to collective training and the squad leader. The divisions and corps are as they were; nothing here touches their command.
+
+### RF/PF and territorial security
+
+Every territorial recruit takes the six-week course at a province or regional centre; the Popular Forces gain a better course in the same time and the Regional Forces a better course in three weeks less¹. The post's first ten minutes change, and the territorial wounded survive the night more often, at the cost of limbs. The district chief's willingness to release men becomes a constraint, and the best trained territorials are drawn toward the corps. Presence after dark, which decides the hamlets, is unchanged by this provision.
+
+### Rolling Thunder
+
+Unchanged. The aircrews are officers; the airmen who maintain and arm the aircraft take the Air Force's 7.5-week Basic Military Training¹, which makes no difference to the bombing of the North.
+
+### Trail interdiction
+
+Unchanged. Nothing in a basic course touches the Trail or its throughput.
+
+### Arc Light
+
+Unchanged. The bomber force's enlisted maintainers and loaders have the Air Force course; the effect on Arc Light is nil.
+
+### Airmobile formations
+
+The infantry of the 1st Cavalry Division (Airmobile) and the 173rd Airborne Brigade has the course, with the same effects as other American infantry. The Dustoff detachments, such as the 57th Medical Detachment (Helicopter Ambulance), carry men who arrive alive with a tourniquet on, and a little more often¹; the added demand on helicopter hours is a few hundred evacuations a year at most, against the thousands flown, and is negligible.
+
+### Riverine and coastal forces
+
+The sailors of the Mobile Riverine Force's river assault divisions, the River Patrol Force's PBR crews and the Coastal Surveillance Force took the Navy's 10-week recruit training¹, which in its 2026 form includes small arms and casualty care. On a PBR hit from a canal bank at 50 metres, a crew that can put a tourniquet on its gunner is the gain; the boat handling and the river war are learned after basic. The Vietnamese Navy's enlisted recruits take the ARVN-model course and gain marksmanship and casualty care; their seamanship is untouched.
+
+### Phoenix / Phung Hoang
+
+Unchanged in its employment. The Provincial Reconnaissance Units are raised under the police statute, not as RVNAF, and are outside the grant; the Special Branch and the centres are police. The territorial platoons that protect the district centres and escort the warrant raids are better trained, which is a SECURE effect, not a Phung Hoang one.
+
+### Third-country forces
+
+Unchanged. The Korean, Australian, New Zealand and Thai contingents trained their own soldiers and are outside the grant. In Binh Dinh and Phu Yen, where the ROK Capital Division operates beside ARVN and territorial units, the Vietnamese partners are better trained, which eases the combined operation a little and changes nothing in the Korean way of fighting.
+
+### Prior provisions
+
+- **P001b · the Anti-Corruption Programme**: the Muster Service adds the course number to the roll and becomes the enforcement arm of the rule that nobody joins untrained; the Commission follows recruits pulled early and centres that sell rations.
+- **P002b · Provincial Administration Reform**: the merit-selected district chief releases his territorial recruits to the centres; a chief from the list sends them, an incumbent of the old kind keeps them.
+- **P004a · M4A1 with URG-I and CompM5**: the recruit qualifies on the carbine he will carry; IRON GATE's zeroing course becomes a refresher, and the carbine's value in the hamlet rises with the platoon's marksmanship.
+- **P004b · M110A2 squad marksman rifle**: the marksman's course draws on men who already shot well in basic, so the marksmen are chosen from a better field; the rifle's employment is otherwise unchanged.
+- **P004c · M249 light machine gun**: every recruit has fired the squad gun in the Blue phase; gunners are trained faster, and fire discipline with linked ammunition is a habit before the man reaches his squad.
+- **P006b · US unit rotation**: the battalion that trains collectively for six to seven months starts from soldiers who have already done the Forge; its training reaches further in the same time, and the delay of the 1966 expansion compounds with this provision's.
+- **P006c · Selected US Advisory Corps**: advisers are freed from teaching basic skills, and the mobile advisory teams from 1967 teach collective tasks to territorials who already know the individual ones; the advisers' combat-medicine training is matched by their counterparts' soldiers.
+- **P007a · US officer education**: the educated lieutenant leads trained privates; the compound is small and is counted once, in American casualties.
+- **P007b · RVNAF officer education**: the educated company officer commands men who can execute the drill he was taught.
+- **P007c · Officer Selection and Promotion Reform**: the open path from the ranks draws on returning drill sergeants, the best-tested NCOs in the army.
+- **P008a · metallurgical and machining base**: the national ranges are a steady domestic customer for the arsenal's 5.56mm cartridge cases, about 30–80 million rounds a year, which supports the domestic share.
+- **P008b · electronics base**: the territorial recruit learns the short report on the radio memorandum 008 put in his post, so the post's call is usable when it comes.
+- Unchanged in employment: P001a, P002a, P003a, P003b, P005a, P005b, P005c, P005d, P006a.
+
+---
+
+*Audit — Memo 009, Part 2/3 · v1.0.5 · cards loaded: 007,006,004,002 · channels: 10/10 (floor 9) · findings numbered: 25 · employment concepts: 5 + 3 abandoned (floor 6) · counter-directional: yes · strongest positive: yes · designations: ~19 · structural deviation: none*
+
+## Notes
+
+1. From memorandum 009's record.
+2. From memorandum 004's record.
+3. From memorandum 007's record.
+4. The exercise's own judgment (memo 009), not a measured figure.
+5. From memorandum 008's record.
+6. From memorandum 001's record.
+7. Estimate — two-year tours of ten-week cycles with breaks
+8. Estimate — the 2026 cadre ratios applied in Part 1
+9. Estimate — the period's movement of replacements
+10. Estimate — the 2026 basic rifle marksmanship course of fire
+11. Estimate — the abridgement chosen in Part 1 D1
+12. Estimate — the period's evacuation times for American units
+13. Estimate — the TCCC guidance on tourniquet time
+14. Estimate — the period's RVNAF medical support
+15. Estimate — Part 1 D3 and the period's territorial medical support
+16. Estimate — the 2026 US drill-sergeant course length
+17. Estimate — F009-4
+18. From memorandum 006's record.
+19. Estimate — the period's veterans' benefits
+20. Estimate — the period's VC mine production
+21. Estimate — the period's PAVN and VC training
+22. The exercise's own judgment (MT01), not a measured figure.
+23. Estimate — the failure rate against Project 100,000's annual intake, less those recycled

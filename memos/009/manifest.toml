@@ -3,7 +3,7 @@
 memo = "009"
 title = "Basic training to the 2026 standard for every US and RVNAF enlisted entrant from 1957, with an abridged course for the Regional and Popular Forces"
 received = "2026-11-24"
-status = "part1"
+status = "part2"
 version = "1.0.5"
 phases_changed = []
 links = ["004", "006", "007"]
@@ -139,3 +139,28 @@ note = "A trained PF platoon matters only in a hamlet it is posted to and stays 
 provision = "P009c"
 var = "GVN.admin_capacity"
 note = "District and province chiefs control RF/PF recruiting and release men to the centres"
+
+[[depend]]
+provision = "P009b"
+var = "ENEMY.engagement_control"
+note = "The trained private acts only in the fights the enemy accepts; the enemy declines the battalion that does not break and ambushes what the course does not reach"
+
+[[depend]]
+provision = "P009b"
+var = "ECON.inflation"
+note = "Desertion follows pay and the family; a trained soldier whose pay no longer feeds his family deserts with his training (DIRMT01-9)"
+
+[[depend]]
+provision = "P009c"
+var = "ECON.inflation"
+note = "The territorial soldier's pay and his family's safety decide whether the trained man stays in his platoon"
+
+[[depend]]
+provision = "P009a"
+var = "LOG.helicopter_hours"
+note = "The tourniquet buys the wounded man an hour or two; the Dustoff and the surgical bed decide whether he uses it"
+
+[[depend]]
+provision = "P009b"
+var = "LOG.helicopter_hours"
+note = "The RVNAF's wounded waited longer for evacuation than the American; the tourniquet's value rises with the wait and its cost in limbs rises with it"

@@ -15,6 +15,7 @@
 - P008b (memo 008) pushes +1 — Hamlets and outposts that can summon fire and reaction forces after dark are harder to overrun or intimidate
 - P008a (memo 008) depends — Power lines from Da Nhim, rail and roads to the plants run through contested country
 - P008b (memo 008) depends — A radio in a hamlet the Front holds at night is the Front's radio
+- P009c (memo 009) depends — A trained PF platoon matters only in a hamlet it is posted to and stays in after dark
 
 ## POP.civilian_harm — Civilian harm from all sides' operations
 *Higher means more civilian deaths and injuries.*
@@ -26,6 +27,7 @@
 - P005c (memo 005) pushes -1 — Smaller bombs on single aimpoints instead of a carpet of 108
 - P006a (memo 006) pushes -1 — Warrants, capture-first rules and no quotas against the historical Phoenix of feud and quota; the PRUs remain the risk
 - P007a (memo 007) pushes -1 — Law of war, the Army profession and escalation-of-force training reach every new platoon leader, including the wartime OCS classes
+- P009c (memo 009) pushes -1 — Fire discipline and the conduct block reach the hamlet militia, whose conduct toward the population was the GVN's face in the countryside; small
 
 ## POP.gvn_legitimacy — Legitimacy of the Saigon government in the countryside
 *Higher means more rural acceptance of the GVN.*
@@ -55,6 +57,8 @@
 - P002b (memo 002) depends — The pay and allowance reform that makes an honest chief possible loses its value as prices rise
 - P008a (memo 008) pushes -1 — Domestic production absorbs piasters and replaces some imports; modest against the war's spending
 - P008a (memo 008) depends — Piaster wages of 35,000-50,000 workers and domestic prices against free American stocks; the 1973-74 oil shock raises the thermal station's fuel bill
+- P009b (memo 009) depends — Desertion follows pay and the family; a trained soldier whose pay no longer feeds his family deserts with his training (DIRMT01-9)
+- P009c (memo 009) depends — The territorial soldier's pay and his family's safety decide whether the trained man stays in his platoon
 
 ## ECON.rice_denial — Rice denial to the enemy
 *Higher means less rice reaching the VC and PAVN in the South.*
@@ -72,6 +76,7 @@
 - P006a (memo 006) depends — The district chief runs the DIOCC; the magistrates decide the cases
 - P007c (memo 007) depends — Province and district chiefs are drawn from the same officer pool
 - P008a (memo 008) depends — Contracting, quality acceptance and allocation run through ministries
+- P009c (memo 009) depends — District and province chiefs control RF/PF recruiting and release men to the centres
 
 ## GVN.corruption — Corruption and diversion
 *Higher means more corruption.*
@@ -90,6 +95,7 @@
 - P008a (memo 008) pushes +1 — State contracts, scrap and import licences are new prizes for the officials who allot them
 - P008a (memo 008) depends — Diversion of steel, scrap and parts to the black market and the enemy
 - P008b (memo 008) depends — Radios and batteries are prized black-market goods and reach the VC
+- P009b (memo 009) depends — Training centres were dumping grounds and sources of graft; the course is only taught if the commandant is not selling the rations
 
 ## GVN.political_stability — Political stability in Saigon
 *Higher means more stable government and junta cohesion.*
@@ -162,6 +168,7 @@
 - P005c (memo 005) depends — Hugging tactics and the enemy's choice of battle set where close bombing can apply
 - P006b (memo 006) depends — The enemy chooses when to fight and can time attacks to the relief in place
 - P008b (memo 008) depends — The enemy chooses which posts to attack and can wait out a battery or ambush the relief the call summons
+- P009b (memo 009) depends — The trained private acts only in the fights the enemy accepts; the enemy declines the battalion that does not break and ambushes what the course does not reach
 
 ## HANOI.will — Hanoi's commitment to armed reunification
 *Higher means more commitment.*
@@ -287,6 +294,7 @@
 - P007b (memo 007) pushes +1 — Company and battalion leadership able to plan, coordinate fires and run training
 - P007c (memo 007) pushes +1 — Battalions commanded by officers selected for it, kept in command, and removed when they fail
 - P008b (memo 008) pushes +1 — Communications down to squad and outpost, and repair turnaround measured in days
+- P009b (memo 009) pushes +1 — Every regular recruit trained to a common, demanding standard, and none sent to a unit untrained; marksmanship with P004a and P004c
 
 ## ARVN.leadership — RVNAF officer selection and quality
 *Higher means better officers, selected on merit.*
@@ -303,6 +311,7 @@
 - P007c (memo 007) pushes +2 — Selection and command on merit below the general officers; relief for cause
 - P007b (memo 007) depends — Education helps only where the selection system puts the educated officer in command
 - P008a (memo 008) depends — Technical-service officers who run depots and accept output
+- P009b (memo 009) depends — The drill sergeant is an NCO and the training centre commander an officer; P007b and P007c decide whether they are good ones
 
 ## ARVN.desertion — RVNAF desertion
 *Higher means more desertion.*
@@ -311,6 +320,7 @@
 - P002a (memo 002) pushes -1 — Identity cards and the family census make a deserter at home findable; the deterrent is modest and the police are reluctant to arrest the sons of the village
 - P004a (memo 004) depends — Deserters take their carbines; the weapon must stay with the force to matter
 - P007c (memo 007) pushes -1 — Soldiers desert leaders, not armies; modest
+- P009b (memo 009) pushes -1 — A longer, cohesive first course with a buddy team and a drill sergeant who knows the recruit's name; modest against the pay, family and posting causes of desertion
 
 ## ARVN.self_sufficiency — RVNAF self-sufficiency
 *Higher means more able to fight, maintain and supply itself without US combat support.*
@@ -336,6 +346,8 @@
 - P008a (memo 008) pushes +1 — Wire, pickets, rebar and roofing for outposts and hamlet defences, and weapons repaired in country
 - P008b (memo 008) pushes +2 — A radio in every PF platoon and outpost and a battery to run it: the outpost can call for help at night
 - P008b (memo 008) depends — A radio at the post is worth the platoon that keeps watch on it and the reaction it summons
+- P009c (memo 009) pushes +1 — Every territorial recruit trained, on the rifle he carries, with first aid and night discipline; the historical training lag of up to 60% in 1964 closed
+- P009c (memo 009) depends — Six weeks gives the individual skills; the platoon's competence still rests on its leader and its support
 
 ## ADVISE.leverage — Advisory leverage
 *Higher means advisors can change more RVNAF decisions.*
@@ -355,6 +367,7 @@
 - P007c (memo 007) depends — The board survives coups only behind an American aid condition, as the Selection Board of P002b does
 - P008a (memo 008) depends — Whether RVNAF logistics actually orders from the arsenal and depots rather than waiting for US supply
 - P008b (memo 008) depends — Issue of radios to the territorial forces and the hamlets is an RVNAF allocation decision
+- P009b (memo 009) depends — Advisers at the centres must be able to stop the diversion of recruits to units before the course ends
 
 ## US.personnel_demand — Demand on US personnel spaces
 *Higher means more spaces consumed.*
@@ -368,6 +381,7 @@
 - P006c (memo 006) depends — The selected pool is the same pool of good captains and NCOs that American units need
 - P007a (memo 007) pushes +1 — Officers in school are not in units; the training base grows
 - P007a (memo 007) depends — Captains in school, the advisory corps and the rotating battalions draw on one pool of company-grade officers
+- P009a (memo 009) pushes +1 — Two more weeks in the Army pipeline for every soldier and a larger drill-sergeant cadre
 
 ## US.casualties — US casualty rate
 *Higher means more US killed and wounded.*
@@ -378,6 +392,7 @@
 - P006b (memo 006) pushes -1 — Collective training and stable leaders cut the losses of the new man; the unit's first month in a new area offsets part of it
 - P006b (memo 006) depends — Losses within a tour are refilled by individuals; heavy losses return the unit to individual replacement in practice
 - P007a (memo 007) pushes -1 — Better-trained platoon and company leaders lose fewer men to ambush, mines and errors of fire support; modest
+- P009a (memo 009) pushes -1 — Fewer American dead from extremity hemorrhage and from individual-skill failures; modest in total, real in lives
 
 ## US.unit_quality — US unit quality
 *Higher means better US units.*
@@ -387,6 +402,14 @@
 - P006c (memo 006) pushes -1 — The selected captains, majors and senior NCOs are taken from the American units
 - P007a (memo 007) pushes +1 — Lieutenants and captains of 1964–68 arrive trained to a common, demanding standard and are gated on it
 - P007a (memo 007) depends — The educated lieutenant still serves in a unit shaped by the replacement or rotation system
+- P009a (memo 009) pushes +1 — Every soldier and Marine arrives with a longer, collective, standards-based basic course and the 1957–63 entrants are the junior NCOs of 1964–66
+- P009a (memo 009) depends — The basic course is only as good as the unit that receives the man; P006b unit rotation keeps him with the men he trained beside
+
+## MED.survival — Casualty survival
+*Higher means more wounded survive (US and RVNAF).*
+
+- P009a (memo 009) pushes +1 — Every American taught tactical combat casualty care in basic training: the tourniquet on the extremity bleed, the leading preventable cause of death in Vietnam
+- P009b (memo 009) pushes +1 — Tactical combat casualty care for every RVNAF soldier, in an army whose evacuation was slower than the American
 
 ## LOG.ports — Port throughput
 *Higher means more port capacity and clearance.*
@@ -415,6 +438,8 @@
 - P002a (memo 002) depends — Field Force companies and identity teams reach villages off the roads by air
 - P003b (memo 003) depends — The reaction to a radar track in the South is an airmobile force; in 1964 there are few helicopter hours to spend on it
 - P006c (memo 006) depends — Medevac and resupply for the advised unit come through the adviser
+- P009a (memo 009) depends — The tourniquet buys the wounded man an hour or two; the Dustoff and the surgical bed decide whether he uses it
+- P009b (memo 009) depends — The RVNAF's wounded waited longer for evacuation than the American; the tourniquet's value rises with the wait and its cost in limbs rises with it
 
 ## LOG.engineers — Engineer capacity
 *Higher means more engineer effort available.*
@@ -438,6 +463,7 @@
 - P007c (memo 007) depends — The aid condition behind the board is only as strong as Washington's willingness to suspend aid to an ally at war over a general
 - P008a (memo 008) depends — The aid appropriation pays for propellant, explosive, electrodes and alloys; the arsenal's value after 1973 is set by what Congress votes
 - P008b (memo 008) depends — Semiconductors, crystals and licences after 1973 are bought with appropriated dollars
+- P009a (memo 009) depends — Two more weeks in the pipeline for every soldier during the 1965–66 build-up
 
 ## US.credibility_gap — The credibility gap
 *Higher means wider gap between what MACV reports and what the press reports.*
