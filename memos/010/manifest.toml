@@ -1,11 +1,11 @@
 # Manifest for memorandum 010.
 
 memo = "010"
-title = "NCO education to the 2026 US standard for every US and RVNAF regular NCO from 1957, each course a gate for the next promotion"
+title = "NCO education to the 2026 US standard for every US NCO and every RVNAF regular and territorial NCO from 1957, each course a gate for the next promotion"
 received = "2026-11-24"
-status = "part2"
+status = "complete"
 version = "1.0.5"
-phases_changed = []
+phases_changed = ["P1", "P2", "P3", "P4"]
 links = ["006", "007", "009"]
 
 [deviation]
