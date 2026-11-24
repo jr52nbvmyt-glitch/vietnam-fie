@@ -1,0 +1,4 @@
+work = "CP01"
+kind = "CP"
+status = "complete"
+after_memo = "005"
