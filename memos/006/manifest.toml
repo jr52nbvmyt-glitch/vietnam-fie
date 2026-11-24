@@ -1,0 +1,234 @@
+# Manifest for memorandum 006. Fill every field; `fie.py check` rejects blanks.
+# status and phases_changed are set by fie.py; leave them alone.
+
+memo = "006"
+title = "Phung Hoang (Phoenix) formalized and modernized from 1964; US unit rotation in place of individual replacement; a selected advisory corps on 18-month tours with 2026 training"
+received = "2026-11-24"
+status = "part1"
+version = "1.0.5"
+phases_changed = []
+links = ["002", "001"]           # 002 built the Special Branch, the census and the district chiefs that Phung Hoang sits on; 001's Aid Compliance Board is the lever the advisers carry
+
+[deviation]
+part1 = "none"
+part2 = "none"
+part3 = "none"
+
+[[provision]]
+id = "P006a"
+designation = "Phung Hoang (Phoenix) Programme, formalized 1 January 1964 and built to 2026 practice: a national Phung Hoang Committee, Province and District Intelligence and Operations Coordinating Centres (PIOCC and DIOCC) in every province and district, an F3EAD targeting cycle with network analysis and document exploitation, SEEK II-class biometric enrolment of detainees and ralliers, warrant-based targeting under the 1964 police statute, the Provincial Reconnaissance Units raised under that statute, capture-first rules, no quotas, and an independent audit of neutralization claims"
+category = "institutional"
+quantity = "One national programme [U]: a national committee and centre, 44 PIOCCs and about 240 DIOCCs at full coverage [E: the period's province and district count], of which about 20 PIOCCs and 100 DIOCCs by end 1964 and all by end 1965 [E: the security-limited occupation of P002a's posts]; about 4,000–5,000 Vietnamese staff in the centres [E: 10–15 per DIOCC, 25–40 per PIOCC, about 150 nationally]; about 1,500 biometric kits [E: one per district station and centre plus field teams]"
+ceiling_spaces = "~600 US personnel, of whom ~450 military spaces [E: one or two advisers per DIOCC in contested districts, three per PIOCC, a national cell of about 60, an exploitation and analysis detachment of about 80, about 40 biometrics contractors]"
+arrival = "1964-01-01"
+in_service = "Historical ICEX July 1967, Phung Hoang decree December 1967, presidential decree July 1968, ended December 1972 [S1]; F3EA practice from Iraq and Afghanistan, 2003 onward [S2]; SEEK II fielded 2013 [S3]"
+systems = ["FIND", "FIX", "SUBVERT", "SECURE", "ADVISE"]
+status = "active"
+
+[[provision]]
+id = "P006b"
+designation = "US unit rotation for Southeast Asia: Army and Marine Corps battalions and brigades manned together, stabilised, trained collectively and deployed as units for 12-month tours in place of the individual replacement system, with commanders serving the unit's whole tour, relief in place by whole units with an overlap, battle-loss replacement in trained packets, and the 2026 Army's unit-manning and pre-deployment collective training practice"
+category = "institutional"
+quantity = "Applied to every US Army and Marine Corps maneuver battalion and its supporting brigade units deployed to the Republic from 1965 [U]: about 30 battalions in 1965 rising to about 105–110 at the 1968–69 peak [E: the historical deployment of Army and Marine maneuver battalions]; combat support and service units rotate by company and detachment [E: the scale at which they are organised]"
+ceiling_spaces = "~3–5% above the historical in-country strength on average [E: relief in place with a two- to three-week overlap, about 6% of the year, for each unit once a year]; no new spaces otherwise, and the rotation base in the United States is outside the ceiling"
+arrival = "1964-01-01"
+in_service = "Historical Vietnam practice: individual 12-month (Army) and 13-month (Marine) tours [S5]; US Army unit manning under COHORT 1979–83 [S5] and 9-month BCT unit deployments from 1 January 2012 [S6]"
+systems = ["FIX", "SECURE", "SUSTAIN"]
+status = "active"
+
+[[provision]]
+id = "P006c"
+designation = "Selected US Advisory Corps: field advisers to the RVNAF and the territorial forces (battalion, regiment, division, sector and subsector, and mobile advisory teams) chosen by board and assessment from volunteers, serving 18-month tours, trained to the 2026 Security Force Assistance Brigade standard (Military Advisor Training Academy course, Vietnamese language to working level, culture and rapport, foreign weapons, combat medicine, and fire-support and air-request qualification), with career protection and promotion priority"
+category = "institutional"
+quantity = "Every US field advisory post below corps [U]: about 3,500 in 1964 rising to about 8,000–9,000 in 1968–69 [E: MACV field advisory strength of the period, including the mobile advisory teams from 1967 per S9]; about 2,300 new advisers a year in 1964 and about 5,500–6,000 a year at the peak [E: posts divided by 1.5 years, plus about 10% losses]"
+ceiling_spaces = "~0 net in RVN [E: the posts exist historically; the 18-month tour fills them with fewer men a year]; outside RVN about 1,500–3,000 officers and NCOs in the pipeline at any time [E: about 32–36 weeks of language and adviser training for each year's entrants]"
+arrival = "1964-01-01"
+in_service = "MATA course at Fort Bragg from 1969 [S9]; 1st Security Force Assistance Brigade activated 2017, MATA course from August 2017 [S11]; SFAB of about 800 in 36 teams [S10]"
+systems = ["ADVISE", "FIX", "SECURE"]
+status = "active"
+
+# ---------------------------------------------------------------- pushes
+[[push]]
+provision = "P006a"
+var = "FIND.vci"
+band = 1
+note = "Fused files, network analysis and exploitation of every arrest and rallier add the district-and-above cadre to what P002a's Special Branch already finds in the hamlet"
+
+[[push]]
+provision = "P006a"
+var = "VCI.strength"
+band = -1
+note = "Cadres above the hamlet named, arrested and tried from 1965 rather than 1968, where night security exists"
+
+[[push]]
+provision = "P006a"
+var = "SUBVERT.defection"
+band = 1
+note = "Targeted offers to named cadres and exploitation of each rallier's knowledge"
+
+[[push]]
+provision = "P006a"
+var = "POP.civilian_harm"
+band = -1
+note = "Warrants, capture-first rules and no quotas against the historical Phoenix of feud and quota; the PRUs remain the risk"
+
+[[push]]
+provision = "P006a"
+var = "US.credibility_gap"
+band = 1
+note = "An American-designed targeting programme is a press story from 1965, whatever its rules"
+
+[[push]]
+provision = "P006a"
+var = "US.personnel_demand"
+band = 1
+note = "About 600 Americans in the centres and the exploitation cell"
+
+[[push]]
+provision = "P006b"
+var = "US.unit_quality"
+band = 2
+note = "Squads, platoons and commanders who trained together and stay together for the tour; no six-month command"
+
+[[push]]
+provision = "P006b"
+var = "US.casualties"
+band = -1
+note = "Collective training and stable leaders cut the losses of the new man; the unit's first month in a new area offsets part of it"
+
+[[push]]
+provision = "P006b"
+var = "US.personnel_demand"
+band = 1
+note = "Overlap at each relief in place and a larger rotation base of formed units without the reserves"
+
+[[push]]
+provision = "P006c"
+var = "ADVISE.leverage"
+band = 1
+note = "An adviser who speaks the language and stays 18 months knows the counterpart and is listened to longer; authority is unchanged"
+
+[[push]]
+provision = "P006c"
+var = "ARVN.effectiveness"
+band = 1
+note = "Battalion and subsector advice by men selected and trained for it"
+
+[[push]]
+provision = "P006c"
+var = "RFPF.effectiveness"
+band = 1
+note = "Subsector advisers and mobile teams who know the posts and the district chief"
+
+[[push]]
+provision = "P006c"
+var = "US.credibility_gap"
+band = -1
+note = "Advisers with protected careers and language report what they see"
+
+[[push]]
+provision = "P006c"
+var = "US.unit_quality"
+band = -1
+note = "The selected captains, majors and senior NCOs are taken from the American units"
+
+# ---------------------------------------------------------------- depends
+[[depend]]
+provision = "P006a"
+var = "GVN.police"
+note = "Phung Hoang is a coordinating layer over P002a's Special Branch; without it there is nothing to coordinate"
+
+[[depend]]
+provision = "P006a"
+var = "POP.night_control"
+note = "An arrest in a village the enemy holds at night is a raid, and its informant is dead the next week"
+
+[[depend]]
+provision = "P006a"
+var = "INTEL.penetration"
+note = "A fused file in a penetrated centre is the enemy's list of our informants"
+
+[[depend]]
+provision = "P006a"
+var = "GVN.political_stability"
+note = "Each coup changes the committee's chairman and tempts its use against the opposition"
+
+[[depend]]
+provision = "P006a"
+var = "GVN.corruption"
+note = "Bribes for release and false denunciations for feud undo the evidence standard"
+
+[[depend]]
+provision = "P006a"
+var = "GVN.admin_capacity"
+note = "The district chief runs the DIOCC; the magistrates decide the cases"
+
+[[depend]]
+provision = "P006a"
+var = "ADVISE.leverage"
+note = "The rules on quotas, capture and the PRUs hold only with an American lever behind the committee"
+
+[[depend]]
+provision = "P006a"
+var = "SUBVERT.defection"
+note = "Ralliers are the richest source of the network map"
+
+[[depend]]
+provision = "P006a"
+var = "US.political_tolerance"
+note = "A programme described as assassination can be ended by Congress"
+
+[[depend]]
+provision = "P006b"
+var = "US.political_tolerance"
+note = "No reserve mobilization; the rotation base comes from the active forces and the draft"
+
+[[depend]]
+provision = "P006b"
+var = "US.casualties"
+note = "Losses within a tour are refilled by individuals; heavy losses return the unit to individual replacement in practice"
+
+[[depend]]
+provision = "P006b"
+var = "LOG.ports"
+note = "Whole units and their equipment move at each relief"
+
+[[depend]]
+provision = "P006b"
+var = "ENEMY.engagement_control"
+note = "The enemy chooses when to fight and can time attacks to the relief in place"
+
+[[depend]]
+provision = "P006b"
+var = "US.personnel_demand"
+note = "The size of the force in theater sets the size of the rotation base"
+
+[[depend]]
+provision = "P006c"
+var = "ARVN.leadership"
+note = "Advice changes a commander who will listen; it does not replace one who will not"
+
+[[depend]]
+provision = "P006c"
+var = "GVN.political_stability"
+note = "Counterparts appointed and removed by coup outlast no adviser"
+
+[[depend]]
+provision = "P006c"
+var = "STRIKE.responsiveness"
+note = "Much of the adviser's standing comes from the American fire and lift he can call"
+
+[[depend]]
+provision = "P006c"
+var = "LOG.helicopter_hours"
+note = "Medevac and resupply for the advised unit come through the adviser"
+
+[[depend]]
+provision = "P006c"
+var = "GVN.corruption"
+note = "An adviser who reports corruption needs a lever that acts on the report"
+
+[[depend]]
+provision = "P006c"
+var = "US.personnel_demand"
+note = "The selected pool is the same pool of good captains and NCOs that American units need"
