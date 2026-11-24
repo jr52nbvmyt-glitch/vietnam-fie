@@ -1,4 +1,4 @@
-<!-- fie v1.0.6 -->
+<!-- fie v1.0.7 -->
 # Part 3 — §4 The course of the war · §5 Delta ledger · §6 Changed / not changed
 
 **Trigger:** `CONTINUE` when the open memorandum's status is `part2`.
@@ -15,7 +15,7 @@
 5. For a small fix afterwards, edit the staged chapter in `memos/NNN/chapters/` directly; for anything larger, a second amend file.
 6. **Write `part3.md`** — see *The analysis*. Write §4.0 last of the §4 sections, after the chapters are edited, from the chapters.
 7. **End state.** If the war's end changes, edit `history/endstate.toml`: the fields, `last_changed = "NNN"`, and a new `[[history]]` entry (`by`, `rung`, `reason`).
-8. `python3 scripts/fie.py finish NNN --part 3 --push`. It stamps the events you touched, promotes your chapters into `history/`, appends the log, positions and persons, and rebuilds the War History, then commits and pushes. Then send `build/memos/NNN/Part-3.md`, `build/memos/NNN/CHANGES.md` (every event and passage this memorandum changed, before and after), `build/WAR-HISTORY.md` and `history/TRAJECTORY-LOG.md`, and close.
+8. `python3 scripts/fie.py finish NNN --part 3 --push`. It stamps the events you touched, promotes your chapters into `history/`, appends the log, positions and persons, appends the study entries, and rebuilds the War History, then commits and pushes. Then send `build/memos/NNN/Part-3.md`, `build/memos/NNN/CHANGES.md` (every event and passage this memorandum changed, before and after), `build/WAR-HISTORY.md` and `history/TRAJECTORY-LOG.md`, and close.
 
 ## Changing the war
 
@@ -98,3 +98,4 @@ Two bullet lists, `### What has changed` and `### What has not changed`, at leas
 - `<!-- log -->` — the Trajectory Log entry, 80–220 words: how this provision shifted the war's course and where the end state moved, written for a reader following the whole arc provision by provision. Not a summary of the memorandum.
 - `<!-- positions -->` — any judgment this memorandum commits to that later ones must not silently contradict, and any reversal (E3), in the register format.
 - `<!-- persons -->` — anyone, historical or invented, who now recurs.
+- `<!-- study <slug> -->` … `<!-- /study -->` — **one for each study the pack lists under *Studies to update*** (every study whose tags share a variable with this memorandum). A short dated account, for a reader of that study, of what this memorandum changed in the area: the events by ID, the findings by ID, the margin. If nothing in the area changed, say why in a sentence. For each value **the study holds** (not a headline variable, whose one copy is the chapter's end vector) that this memorandum moves, a line `- value · <key> · <Pk> · <low>..<high> · <low|medium|high> · <note>`. Cite this memorandum's sources as `[MNNN·S#]`. `fie.py finish` appends each block to its study as an entry under *Since this study*, with the chapter values this memorandum moved on the study's variables; a checkpoint folds the entries in.

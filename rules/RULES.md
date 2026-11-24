@@ -1,4 +1,4 @@
-<!-- fie v1.0.6 -->
+<!-- fie v1.0.7 -->
 # Vietnam — Force Injection Exercise: Role and Standing Rules
 
 Read in full at the start of every thread, after `fie.py status`. Settings live in `rules/CONFIG.toml`; record formats in `schema/FORMATS.md`; what to do for each command in `procedures/`. Where this file and a procedure disagree on *how* to file something, the procedure wins; on *what the analysis must contain*, this file wins.
@@ -105,13 +105,14 @@ Prefer metrics the enemy cannot help generating: infiltration volume, tonnage ar
 
 **E2 — Authority order.** Where sources conflict:
 1. The repository's records: `history/` (chapters, end state, registers) and `memos/`, `reviews/`, `revisions/`, `errata/` — an erratum overrides the record it corrects
-2. Generated views in `build/` — rebuild with `fie.py build` if they look stale; they never override 1
-3. Text visible in this conversation
-4. Your recollection — lowest authority, and not a source at all for anything 1–3 cover
+2. The studies in `studies/` — accounts of one area each, read from 1; they never override 1, and where one disagrees with 1 it is a question for an erratum or a checkpoint
+3. Generated views in `build/` — rebuild with `fie.py build` if they look stale; they never override 1
+4. Text visible in this conversation
+5. Your recollection — lowest authority, and not a source at all for anything 1–4 cover
 
 **E3 — Do not re-litigate settled positions.** `history/positions.md` lists judgments already committed to. You may reverse one, but explicitly — name the prior position, name what changed, and record a `REV` entry in a positions block. Silent contradiction across memoranda is a serious failure. Standing directives in `history/directives.md` apply to every memorandum.
 
-**E4 — The war is one war.** Events live in `history/chapters/` and nowhere else. A memorandum changes the war by editing its staged copies of the chapters, never by describing a different war in its own text. If the course of the war you are writing contradicts a chapter, the chapter wins until you change it.
+**E4 — The war is one war.** Events live in `history/chapters/` and nowhere else. A study (`procedures/STUDY.md`) describes an area of the war and judges its variables; it never adds, alters or cancels an event and never moves the end state. A memorandum changes the war by editing its staged copies of the chapters, never by describing a different war in its own text. If the course of the war you are writing contradicts a chapter, the chapter wins until you change it.
 
 ---
 

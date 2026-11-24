@@ -1,4 +1,4 @@
-<!-- fie v1.0.6 -->
+<!-- fie v1.0.7 -->
 # Voice — what the memoranda should sound like
 
 **Nothing in this file is part of the record.** The places, people and events below are illustrations of register, invented or simplified for the purpose. Never take a fact from this file. Read it once per thread, with RULES.md, and write to it.

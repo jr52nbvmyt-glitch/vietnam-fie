@@ -21,6 +21,11 @@ Commands
   review WORK --init | --finish       WORK = TNA, CPnn, MTnn or Rnn
   build                               rebuild every generated view in build/
   grep WORD [WORD ...]                search the record for lines containing all the words
+  study --init AREA [AREA ...]        open the next study run STnn: one part per area (procedures/STUDY.md)
+  study STnn --finish --part k        check, promote and publish the study of the run's k-th area
+  study fold CPnn|Rnn SLUG [...]      stage studies for a checkpoint (or revision) to fold and re-judge
+  pack NNN --part 1                   the studies on a new memorandum's variables, after triage
+  pack STnn                           the context pack for the next part of a study run
 """
 from __future__ import annotations
 
@@ -47,7 +52,7 @@ CHANNELS = ["Displacement", "Bottleneck migration", "Own-force opportunity cost"
             "Cross-boundary feedback", "Open channel"]
 LAGS = ["immediate", "weeks", "months", "war-shaping"]
 CONSTRAINT_VALUES = ["MODELLED", "SUSPENDED"]
-WORK_RE = r"(?:\d{3}|CP\d{2}|MT\d{2}|R\d{2}|TNA)"
+WORK_RE = r"(?:\d{3}|CP\d{2}|MT\d{2}|ST\d{2}|R\d{2}|TNA)"
 EVENT_HDR = re.compile(r"^## (EV" + WORK_RE + r"-\d+) · (.+)$", re.M)
 TAG_RE = re.compile(r"\[(U|S\d+|H\d*|E:[^\]\n]+|D|X-" + WORK_RE + r"|M\d{3}(?:·S\d+)?)\]")
 QTY_UNITS = (r"(?:km|kilometres?|kilometers?|m|metres?|meters?|mm|cm|nm|nmi|ft|feet|kg|t|tonnes?|tons?|lb|lbs|"
@@ -341,11 +346,11 @@ def git(*args: str) -> str:
 def work_dir(token: str) -> Path:
     if re.fullmatch(r"\d{3}", token):
         return ROOT / "memos" / token
-    if re.fullmatch(r"(?:CP|MT)\d{2}|TNA", token):
+    if re.fullmatch(r"(?:CP|MT|ST)\d{2}|TNA", token):
         return ROOT / "reviews" / token
     if re.fullmatch(r"R\d{2}", token):
         return ROOT / "revisions" / token
-    die(f"'{token}' is not a work token (NNN, CPnn, MTnn, Rnn or TNA)")
+    die(f"'{token}' is not a work token (NNN, CPnn, MTnn, STnn, Rnn or TNA)")
 
 
 def memo_tokens() -> list[str]:
@@ -598,6 +603,596 @@ def sources_defined(token: str) -> set[int]:
     return {int(n) for n in re.findall(r"^\[S(\d+)\]\s+\S", read(work_dir(token) / "sources.md"), flags=re.M)}
 
 
+# ----------------------------------------------------------------------------- studies (v1.0.7)
+#
+# A study is a deep account of one area of the war (the air war, CIDG, the Delta …) as the record stands,
+# phase by phase. It lives in studies/<slug>.md and is never part of the chapters. It describes: it adds no
+# event and moves no end state. Its judgments go where the record keeps judgments: a headline variable or
+# facet into the chapters' end vectors (only entries still unjudged or converted), anything else into the
+# study's own [values]. Memoranda append dated "since this study" entries through the script; checkpoints
+# fold them into the text.
+
+STUDIES = ROOT / "studies"
+STUDY_REQUIRED = ["Summary", "Judgments", "Questions for the record", "Sources", "Since this study"]
+VALUE_LINE = re.compile(r"^-\s*value\s*·\s*(\S+)\s*·\s*(P\d+)\s*·\s*([+-]?\d+)\s*\.\.\s*([+-]?\d+)\s*·\s*(low|medium|high)\s*·\s*(.+)$")
+QUESTION_LINE = re.compile(r"^- \*\*Q-\d+\*\* · (?:ERRATUM|CHECKPOINT|RESOLVED|STANDS)\b[^·]* · \S")
+STUDY_BLOCK = re.compile(r"<!--\s*study\s+([a-z0-9-]+)\s*-->(.*?)<!--\s*/study\s*-->", re.S)
+AGAINST_RE = re.compile(r"<!--\s*against\s+([a-z0-9-]+)\s*:\s*(consistent|contradicts)\s*-->")
+SINCE_RE = re.compile(r"<!--\s*since\s+(\S+)\s*-->(.*?)<!--\s*/since\s*-->", re.S)
+
+
+def slugify(s: str) -> str:
+    out = re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
+    return re.sub(r"^(?:the|a|an)-", "", out)[:48] or "area"
+
+
+def study_slugs() -> list[str]:
+    return sorted(p.stem for p in STUDIES.glob("*.md")) if STUDIES.exists() else []
+
+
+def study_text(slug: str) -> str:
+    return read(STUDIES / f"{slug}.md")
+
+
+def tag_keys(tags) -> list[str]:
+    """Every key a study's tags cover: a variable tag covers the variable and its facets; a facet tag, itself."""
+    fm_ = facet_map()
+    out = []
+    for t in tags or []:
+        for k in [t] + fm_.get(t, []):
+            if k not in out:
+                out.append(k)
+    return out
+
+
+def study_parents(fm: dict) -> set[str]:
+    return {parent(t) for t in fm.get("tags", []) or []}
+
+
+def matching_studies(vars_: set[str]) -> list[str]:
+    """Studies sharing a variable (by parent) with the given set — the routing a memorandum uses."""
+    want = {parent(v) for v in vars_}
+    out = []
+    for slug in study_slugs():
+        fm = parse_chapter(study_text(slug))[0]
+        if study_parents(fm) & want:
+            out.append(slug)
+    return out
+
+
+def since_entries(body: str) -> list[tuple[str, str]]:
+    return [(t, b) for t, b in SINCE_RE.findall(body)]
+
+
+def value_lines(text: str) -> list[tuple[str, str, dict]]:
+    out = []
+    for line in text.splitlines():
+        m = VALUE_LINE.match(line.strip())
+        if m:
+            out.append((m.group(1), m.group(2), {"low": int(m.group(3)), "high": int(m.group(4)), "conf": m.group(5),
+                                                   "note": m.group(6).strip()}))
+    return out
+
+
+def study_values(fm: dict, body: str) -> dict[tuple[str, str], tuple[dict, str]]:
+    """(key, phase) -> (value, where it was set): the study's own [values], overridden by later since-entries."""
+    vals = {}
+    for pid, tbl in (fm.get("values") or {}).items():
+        if isinstance(tbl, dict):
+            for k, v in tbl.items():
+                vals[(k, pid)] = (v, fm.get("folded") or fm.get("written") or "study")
+    for tok, txt in since_entries(body):
+        for k, pid, v in value_lines(txt):
+            vals[(k, pid)] = (v, f"since {tok}")
+    return vals
+
+
+def values_table(fm: dict, body: str, only: set[str] | None = None) -> str:
+    """The study's current values, one row per key it covers: headline keys read from the chapters, the rest
+    from the study. Generated; never written by hand."""
+    vk = set(vector_keys())
+    vals = study_values(fm, body)
+    ph = phase_ids()
+    snap_pid = next((p["id"] for p in phases() if p.get("snapshot")), None)
+    chap = {p: parse_chapter(read(CHAP / f"{p}.md"))[0] for p in ph}
+    rows = []
+    for k in tag_keys(fm.get("tags", [])):
+        if only is not None and parent(k) not in only:
+            continue
+        if k in vk:
+            cells = [fmt_val((chap[p].get("end_vector") or {}).get(k)) for p in ph]
+            snap = fmt_val((chap[snap_pid].get("snapshot") or {}).get(k)) if snap_pid else ""
+            where = "chapters"
+        else:
+            cells = [fmt_val(vals[(k, p)][0]) if (k, p) in vals else "—" for p in ph]
+            snap = ""
+            srcs = sorted({vals[(k, p)][1] for p in ph if (k, p) in vals})
+            where = "study" + (f" ({', '.join(srcs)})" if srcs else ", not yet judged")
+        rows.append(f"| {k} | " + " | ".join(cells) + f" | {snap} | {where} |")
+    if not rows:
+        return "No tagged variables."
+    return ("| Variable | " + " | ".join(ph) + " | 1974 snapshot | Held in |\n|---|" + "---|" * (len(ph) + 2) + "\n"
+            + "\n".join(rows) + "\n\n*Ranges against the historical state at each phase's end (−10..+10; low, medium, high = "
+            "confidence; unjudged = not yet judged). Headline variables and their facets live in the chapters' end vectors; "
+            "the rest in the study.*")
+
+
+def study_sources(body: str) -> dict[int, str]:
+    sec = section(body, 2, "Sources") or ""
+    return {int(m.group(1)): m.group(2).strip() for m in re.finditer(r"^\[S(\d+)\]\s+(.+)$", sec, re.M)}
+
+
+def study_render(slug: str, text: str | None = None, short: bool = False, only: set[str] | None = None) -> str:
+    """A study as a pack or a reading copy shows it: its text with the current values table after the summary.
+    short: summary, values, questions and the since-entries only."""
+    text = text if text is not None else study_text(slug)
+    fm, _, body = parse_chapter(text)
+    title = re.search(r"^# (.+)$", body, re.M)
+    head = (f"## Study: {fm.get('area', slug)} (`studies/{slug}.md`)\n*Written {fm.get('written', '?')} · reflects the record "
+            f"after memo {fm.get('as_of', '?')} · last folded {fm.get('folded') or '—'} · tags: {', '.join(fm.get('tags', []))}"
+            f"{' · RE-RUN ADVISED: ' + str(fm.get('rerun_reason', '')) if fm.get('rerun') else ''}*")
+    table = "### Current values\n\n" + values_table(fm, body, only)
+    if short:
+        parts = [head, "### Summary\n" + (section(body, 2, "Summary") or "").strip(), table,
+                 "### Questions for the record\n" + (section(body, 2, "Questions for the record") or "").strip(),
+                 "### Since this study\n" + (section(body, 2, "Since this study") or "").strip()]
+        return "\n\n".join(parts)
+    b = demote(body[title.end():] if title else body, 1)
+    b = re.sub(r"(^### Summary[^\n]*\n.*?)(?=^### )", lambda m: m.group(1).rstrip() + "\n\n" + table + "\n\n", b, count=1, flags=re.S | re.M)
+    return head + "\n\n" + b.strip()
+
+
+def study_index_lines() -> list[str]:
+    out = []
+    for slug in study_slugs():
+        fm, _, body = parse_chapter(study_text(slug))
+        n = len(since_entries(body))
+        out.append(f"- **{slug}** · {fm.get('area', '')} · tags: {', '.join(fm.get('tags', []))} · written {fm.get('written', '?')} "
+                   f"as of memo {fm.get('as_of', '?')} · since-entries waiting to fold: {n}"
+                   + (f" · RE-RUN ADVISED ({fm.get('rerun_reason', '')})" if fm.get("rerun") else ""))
+    return out
+
+
+def study_drift(slug: str) -> dict:
+    """What has accumulated against a study since it was written or last folded."""
+    fm, _, body = parse_chapter(study_text(slug))
+    entries = since_entries(body)
+    base = {(k, p): v for p, tbl in (fm.get("values") or {}).items() if isinstance(tbl, dict) for k, v in tbl.items()}
+    drift = 0.0
+    for _, txt in entries:
+        for k, p, v in value_lines(txt):
+            if (k, p) in base:
+                drift = max(drift, abs(mid(rng(v)) - mid(rng(base[(k, p)]))))
+    moved = sum(len(re.findall(r"→", txt)) for _, txt in entries)
+    since = str(fm.get("as_of", "000"))
+    contra = []
+    for t, _ in manifests(("part2", "complete")):
+        if t > since:
+            for s_, verdict in AGAINST_RE.findall(read(work_dir(t) / "part2.md")):
+                if s_ == slug and verdict == "contradicts":
+                    contra.append(t)
+    sc = config().get("studies", {})
+    advise = (len(entries) >= sc.get("rerun_after_entries", 6) or drift >= sc.get("rerun_drift", 4)
+              or len(contra) >= sc.get("rerun_contradictions", 2))
+    return {"entries": len(entries), "drift": drift, "chapter_moves": moved, "contradicted_by": contra, "advise": advise}
+
+
+def check_study(text: str, slug: str, label: str, errors: list, warnings: list, tok: str | None = None, folding: bool = False):
+    sc = config().get("studies", {})
+    fm, _, body = parse_chapter(text)
+    if not fm:
+        errors.append(f"{label}: no +++ front matter")
+        return
+    if "_error" in fm:
+        errors.append(f"{label}: front matter is not valid TOML: {fm['_error']}")
+        return
+    for k in ["area", "slug", "written", "as_of"]:
+        if not str(fm.get(k, "")).strip():
+            errors.append(f"{label}: front matter '{k}' is blank")
+    if fm.get("slug") and fm["slug"] != slug:
+        errors.append(f"{label}: slug '{fm['slug']}' should be '{slug}' (the file name)")
+    tags = fm.get("tags", [])
+    vids = var_ids()
+    if not tags:
+        errors.append(f"{label}: tags is empty — name the variables and facets this area covers (schema/VARIABLES.toml)")
+    for t in tags:
+        if t not in vids:
+            errors.append(f"{label}: tag '{t}' is not a variable or facet in schema/VARIABLES.toml")
+    keys, vk = set(tag_keys(tags)), set(vector_keys())
+    ph = phase_ids()
+    for pid, tbl in (fm.get("values") or {}).items():
+        if pid not in ph:
+            errors.append(f"{label}: [values.{pid}] is not a current phase ({', '.join(ph)})")
+            continue
+        if not isinstance(tbl, dict):
+            errors.append(f"{label}: [values.{pid}] must be a table of keys")
+            continue
+        for k, v in tbl.items():
+            if k in vk:
+                errors.append(f"{label}: [values.{pid}] {k} is a headline variable or facet — its one copy is the chapter's end vector; judge it there with an amend file")
+                continue
+            if k not in keys:
+                errors.append(f"{label}: [values.{pid}] {k} is not covered by the study's tags")
+            if isinstance(v, dict):
+                ind = v.get("ind")
+                vv = {x: y for x, y in v.items() if x != "ind"}
+                if vv.get("conf") not in ("low", "medium", "high"):
+                    errors.append(f"{label}: [values.{pid}] {k} conf must be low, medium or high (leave an unjudged key out)")
+                check_value(f"{label} [values.{pid}]", k, vv, errors, warnings)
+                if ind is not None and not TAG_RE.search(str(ind)):
+                    errors.append(f"{label}: [values.{pid}] {k} ind (indicator) needs a provenance tag")
+            else:
+                check_value(f"{label} [values.{pid}]", k, v, errors, warnings)
+    title = re.search(r"^# .+$", body, re.M)
+    if not title:
+        errors.append(f"{label}: no '# <area>' title line")
+    heads = [h for h, _ in sections(body, 2)]
+    for h in STUDY_REQUIRED:
+        if not any(x.startswith(h) for x in heads):
+            errors.append(f"{label}: '## {h}' is missing")
+    if heads and not heads[-1].startswith("Since this study"):
+        errors.append(f"{label}: '## Since this study' must be the last section (entries are appended there)")
+    lo_p = sc.get("phase_words_min", 400)
+    for p in phases():
+        sec = section(body, 2, f"{p['id']} ")
+        if sec is None:
+            errors.append(f"{label}: '## {p['id']} · {p['title']}' is missing — a study runs across every phase")
+        elif words(sec) < lo_p:
+            warnings.append(f"{label}: {p['id']} is {words(sec)} words (guide at least {lo_p}); say why if the area is quiet in that phase")
+    main = body.split("## Since this study")[0]
+    w = words(main)
+    lo, hi = sc.get("study_words", [5000, 14000])
+    if not lo <= w <= hi:
+        warnings.append(f"{label}: {w:,} words (guide {lo:,}–{hi:,})")
+    q = section(body, 2, "Questions for the record") or ""
+    for l in [x for x in q.splitlines() if x.strip().startswith("- ")]:
+        if not QUESTION_LINE.match(l.strip()):
+            errors.append(f"{label}: question line does not match '- **Q-n** · ERRATUM | CHECKPOINT | RESOLVED | STANDS · <text>': “{l.strip()[:80]}”")
+    if words(q) < 8:
+        warnings.append(f"{label}: 'Questions for the record' is empty — list each inconsistency found, or say plainly that none was found and what was checked")
+    srcs = set(study_sources(body))
+    check_tags(main, errors, label, sources=srcs, x_required=True)
+    if re.search(r"<!--\s*(?:event|EV)", body) or EVENT_HDR.search(body):
+        errors.append(f"{label}: a study holds no event headers — events live only in the chapters")
+    entries = since_entries(body)
+    if folding and entries:
+        errors.append(f"{label}: {len(entries)} since-entr{'y' if len(entries) == 1 else 'ies'} still under '## Since this study' — fold them into the text and values, then remove them")
+    j = section(body, 2, "Judgments") or ""
+    chap = {p: parse_chapter(read(CHAP / f"{p}.md"))[0] for p in ph}
+    if tok:
+        staged = staged_chapters(tok)
+        chap.update({p: parse_chapter(t)[0] for p, t in staged.items()})
+    unj = [k for k in keys & vk if all(((chap[p].get("end_vector") or {}).get(k) or {}).get("conf") == "unjudged" for p in ph)]
+    unj_named = [k for k in unj if k not in j]
+    if unj_named:
+        warnings.append(f"{label}: {len(unj_named)} tagged facet(s) unjudged in every phase and not named in '## Judgments' "
+                        f"({', '.join(unj_named[:5])}{'…' if len(unj_named) > 5 else ''}) — judge them where the record holds evidence, or say why not")
+    conv = [k for k in keys & vk if any(((chap[p].get("end_vector") or {}).get(k) or {}).get("conf") == "converted" for p in ph)]
+    if conv:
+        warnings.append(f"{label}: {len(conv)} tagged headline value(s) still 'converted' in some phase ({', '.join(conv[:5])}) — re-judge them if the study's evidence bears on them (DIRR01-2)")
+
+
+def check_study_chapters(tok: str, errors: list, warnings: list, keys: set[str] | None = None):
+    """A study run changes end-vector judgments only: no event, no prose, no entry a memorandum already judged."""
+    for pid, txt in staged_chapters(tok).items():
+        nfm, _, nbody = parse_chapter(txt)
+        ofm, _, obody = parse_chapter(read(CHAP / f"{pid}.md"))
+        if re.sub(r"\s+", " ", nbody).strip() != re.sub(r"\s+", " ", obody).strip():
+            errors.append(f"chapter {pid} (staged): a study changes no event and no prose — only end-vector entries that are unjudged or converted")
+        for k in set(nfm) | set(ofm):
+            if k not in ("end_vector", "snapshot") and nfm.get(k) != ofm.get(k):
+                errors.append(f"chapter {pid} (staged): front matter '{k}' changed — a study changes only end-vector entries")
+        for sec in ("end_vector", "snapshot"):
+            nv, ov = nfm.get(sec) or {}, ofm.get(sec) or {}
+            for k, v in nv.items():
+                o = ov.get(k)
+                if v == o:
+                    continue
+                oc = o.get("conf") if isinstance(o, dict) else None
+                if oc in ("unjudged", "converted"):
+                    pass
+                elif isinstance(o, dict) and isinstance(v, dict) and {x: y for x, y in v.items() if x != "binding"} == {x: y for x, y in o.items() if x != "binding"}:
+                    pass
+                else:
+                    errors.append(f"chapter {pid} {sec}: {k} was already judged ({fmt_val(o)}) — a study does not re-judge it; "
+                                  f"put the disagreement in 'Questions for the record' for a checkpoint or an erratum")
+                if keys is not None and k not in keys and parent(k) not in {parent(x) for x in keys}:
+                    warnings.append(f"chapter {pid} {sec}: {k} is outside this study's tags")
+    es = load_toml(HIST / "endstate.toml")
+    if es.get("last_changed") == tok:
+        errors.append(f"endstate.toml: last_changed is {tok} — a study never moves the end state")
+
+
+def check_study_blocks(text: str, tok: str, label: str, errors: list, required: list[str]):
+    """Part 3 (or a review): one '<!-- study slug -->' block per affected study, value lines well formed."""
+    blocks = STUDY_BLOCK.findall(text)
+    have = [s_ for s_, _ in blocks]
+    for slug in required:
+        if slug not in have:
+            errors.append(f"{label}: no '<!-- study {slug} -->' … '<!-- /study -->' block — this work touches the study's variables; "
+                          f"say what changed in the area (or why nothing did) and give any new values")
+    vk = set(vector_keys())
+    ph = phase_ids()
+    for slug, body in blocks:
+        if slug not in study_slugs():
+            errors.append(f"{label}: '<!-- study {slug} -->' names no study in studies/")
+            continue
+        if words(body) < 15:
+            errors.append(f"{label}: the study {slug} block is under 15 words")
+        if re.search(r"\[S\d+\]", body):
+            errors.append(f"{label}: the study {slug} block cites [S#] — in a study entry write [M{tok}·S#], since the study has its own sources")
+        keys = set(tag_keys(parse_chapter(study_text(slug))[0].get("tags", [])))
+        for l in [x for x in body.splitlines() if re.match(r"\s*-\s*value\b", x)]:
+            m = VALUE_LINE.match(l.strip())
+            if not m:
+                errors.append(f"{label}: study {slug} value line should read '- value · <key> · <Pk> · <low>..<high> · <low|medium|high> · <note>': “{l.strip()[:80]}”")
+                continue
+            k, pid, lo, hi = m.group(1), m.group(2), int(m.group(3)), int(m.group(4))
+            if k in vk:
+                errors.append(f"{label}: study {slug} value line for {k}: a headline variable or facet is judged in the chapter's end vector, not in a study entry (the script records the chapter's move in the entry itself)")
+            elif k not in keys:
+                errors.append(f"{label}: study {slug} value line for {k}: not covered by the study's tags")
+            if pid not in ph:
+                errors.append(f"{label}: study {slug} value line for {k}: {pid} is not a current phase")
+            if not -SCALE <= lo <= hi <= SCALE:
+                errors.append(f"{label}: study {slug} value line for {k}: {lo}..{hi} must satisfy -{SCALE} ≤ low ≤ high ≤ {SCALE}")
+
+
+def append_study_entries(text: str, tok: str, title: str):
+    """Append each study block as a dated since-entry at the end of its study, with the chapter moves on its variables."""
+    import datetime
+    for slug, body in STUDY_BLOCK.findall(text):
+        p = STUDIES / f"{slug}.md"
+        cur = read(p)
+        if not cur:
+            continue
+        fm = parse_chapter(cur)[0]
+        keys = set(tag_keys(fm.get("tags", [])))
+        moves = []
+        d = work_dir(tok)
+        for bp in sorted((d / "before").glob("P*.md")) if (d / "before").exists() else []:
+            bfm = parse_chapter(read(bp))[0]
+            afm = parse_chapter(read(CHAP / bp.name))[0]
+            for sec in ("end_vector", "snapshot"):
+                for k in sorted(keys & set((afm.get(sec) or {}))):
+                    o, n = (bfm.get(sec) or {}).get(k), (afm.get(sec) or {}).get(k)
+                    if o != n:
+                        moves.append(f"{bp.stem}{' snapshot' if sec == 'snapshot' else ''} {k} {fmt_val(o)} → {fmt_val(n)}")
+        label = f"Memo {tok}" if re.fullmatch(r"\d{3}", tok) else tok
+        entry = (f"### {label} — {title} · {datetime.date.today().isoformat()}\n<!-- since {tok} -->\n{body.strip()}\n"
+                 + (f"\n*Chapter values {label} moved on this study's variables: {'; '.join(moves)}.*\n" if moves else "")
+                 + "<!-- /since -->\n")
+        pat = re.compile(r"### [^\n]*\n<!--\s*since " + re.escape(tok) + r"\s*-->.*?<!--\s*/since\s*-->\n?", re.S)
+        cur = pat.sub(lambda _: entry, cur) if pat.search(cur) else cur.rstrip("\n") + "\n\n" + entry
+        write(p, cur)
+        print(f"Appended a since-entry to studies/{slug}.md")
+
+
+def promote_studies(tok: str):
+    d = work_dir(tok) / "studies"
+    for sp_ in sorted(d.glob("*.md")) if d.exists() else []:
+        dst = STUDIES / sp_.name
+        before = work_dir(tok) / "before-studies" / sp_.name
+        if dst.exists() and not before.exists() and read(dst) != read(sp_):
+            write(before, read(dst))
+        write(dst, read(sp_))
+        print(f"Promoted studies/{sp_.name}")
+
+
+def review_meta(tok: str) -> dict:
+    p = work_dir(tok) / "review.toml"
+    return load_toml(p) if p.exists() else {}
+
+
+def study_next_part(tok: str) -> tuple[int, dict] | None:
+    rv = review_meta(tok)
+    done = rv.get("done", [])
+    for i, ar in enumerate(rv.get("area", []), 1):
+        if i not in done:
+            return i, ar
+    return None
+
+
+def cmd_study(a):
+    sc = config().get("studies", {})
+    if a.init:
+        if a.target:
+            a.args = [a.target] + list(a.args)
+        areas = [x.strip() for x in a.args if x.strip()]
+        lo, hi = sc.get("areas_per_run", [2, 3])
+        if not areas:
+            die("name the areas: fie.py study --init \"The air war\" \"CIDG\" …")
+        if len(areas) > hi:
+            die(f"{len(areas)} areas: a study run takes at most {hi} (rules/CONFIG.toml [studies]); run the rest as a second STUDY")
+        ow = open_work()
+        if ow:
+            die(f"{ow[1]} is open ({ow[0]}): one piece of work at a time — finish it first")
+        n = len(review_tokens("ST")) + 1
+        tok = f"ST{n:02d}"
+        d = work_dir(tok)
+        done = [t for t, _ in manifests(("complete",))]
+        as_of = done[-1] if done else "000"
+        rows = []
+        slugs = []
+        for ar in areas:
+            slug = slugify(ar)
+            if slug in slugs:
+                die(f"two areas share the slug '{slug}'")
+            slugs.append(slug)
+            rows.append(f'\n[[area]]\nslug = "{slug}"\nname = {json.dumps(ar, ensure_ascii=False)}\nrerun = {"true" if (STUDIES / f"{slug}.md").exists() else "false"}\n')
+        write(d / "review.toml", f'work = "{tok}"\nkind = "ST"\nstatus = "open"\nafter_memo = "{as_of}"\ndone = []\n' + "".join(rows))
+        for ar, slug in zip(areas, slugs):
+            dst = d / "studies" / f"{slug}.md"
+            if (STUDIES / f"{slug}.md").exists():
+                write(dst, read(STUDIES / f"{slug}.md"))
+                print(f"Staged {rel(dst)} — a re-run: the existing study, to be rewritten from the record as it now stands")
+            else:
+                secs = "\n\n".join(f"## {p['id']} · {phase_heading(p)}" for p in phases())
+                t = (read(ROOT / "templates" / "study.md").replace("AREA", ar).replace("SLUG", slug).replace("STNN", tok)
+                     .replace("ASOF", as_of).replace("PHASE_SECTIONS", secs))
+                write(dst, t)
+                print(f"Created {rel(dst)} from the template")
+        if len(areas) < lo:
+            print(f"NOTE: {len(areas)} area(s); a run is meant to take {lo}–{hi}.")
+        print(f"Opened study run {tok} after memo {as_of}: " + "; ".join(f"Part {i} = {ar} ({s})" for i, (ar, s) in enumerate(zip(areas, slugs), 1)))
+        print(f"Next: set the tags in {rel(d)}/studies/{slugs[0]}.md, then `python3 scripts/fie.py pack {tok}` and read it.")
+        return
+    if a.target == "fold":
+        if len(a.args) < 2:
+            die("fie.py study fold CPnn|Rnn SLUG [SLUG …]")
+        tok, slugs = a.args[0], a.args[1:]
+        if not re.fullmatch(r"CP\d{2}|R\d{2}", tok):
+            die("only a checkpoint (CPnn) or a revision (Rnn) folds studies")
+        for slug in slugs:
+            src = STUDIES / f"{slug}.md"
+            if not src.exists():
+                die(f"studies/{slug}.md does not exist")
+            dst = work_dir(tok) / "studies" / f"{slug}.md"
+            if dst.exists():
+                print(f"{rel(dst)} already staged (kept)")
+            else:
+                write(dst, read(src))
+                print(f"Staged {rel(dst)} — fold its since-entries into the text and [values], re-judge, set as_of and folded = \"{tok}\"")
+        return
+    tok = a.target
+    if not tok or not re.fullmatch(r"ST\d{2}", tok):
+        die("fie.py study --init AREA … | study STnn --finish --part k | study fold CPnn SLUG …")
+    if not a.finish:
+        die("say --finish --part k")
+    rv = review_meta(tok)
+    areas = rv.get("area", [])
+    k = a.part or (study_next_part(tok) or (0, {}))[0]
+    if not 1 <= k <= len(areas):
+        die(f"{tok} has parts 1–{len(areas)}")
+    done = rv.get("done", [])
+    if k in done:
+        die(f"{tok} part {k} is already finished")
+    if any(i not in done for i in range(1, k)):
+        die(f"{tok}: finish part {min(i for i in range(1, k) if i not in done)} first — the parts run in order")
+    slug = areas[k - 1]["slug"]
+    sp_ = work_dir(tok) / "studies" / f"{slug}.md"
+    errors, warnings = [], []
+    txt = read(sp_)
+    check_study(txt, slug, f"study {slug}", errors, warnings, tok=tok, folding=True)
+    fm = parse_chapter(txt)[0]
+    if fm.get("written") != tok:
+        errors.append(f"study {slug}: written = '{fm.get('written')}', expected '{tok}'")
+    if fm.get("as_of") != rv.get("after_memo"):
+        errors.append(f"study {slug}: as_of = '{fm.get('as_of')}', expected '{rv.get('after_memo')}' (the last complete memorandum)")
+    if fm.get("rerun"):
+        errors.append(f"study {slug}: rerun is still true — a fresh study answers the re-run; set rerun = false")
+    keys = set(tag_keys(fm.get("tags", [])))
+    staged = staged_chapters(tok)
+    ids = all_events(staged)
+    for pid, t in staged.items():
+        check_chapter(t, pid, errors, warnings, f"chapter {pid} (staged)", ids)
+    check_study_chapters(tok, errors, warnings, keys)
+    nchanged = 0
+    for pid, t in staged.items():
+        nv, ov = parse_chapter(t)[0], parse_chapter(read(CHAP / f"{pid}.md"))[0]
+        nchanged += sum(1 for sec in ("end_vector", "snapshot") for kk, v in (nv.get(sec) or {}).items() if v != (ov.get(sec) or {}).get(kk))
+    nvals = sum(len(t_) for t_ in (fm.get("values") or {}).values() if isinstance(t_, dict))
+    _, _, body = parse_chapter(txt)
+    nq = len(re.findall(r"^- \*\*Q-\d+\*\*", section(body, 2, "Questions for the record") or "", re.M))
+    audit = (f"Audit — Study {tok}, Part {k}/{len(areas)} ({slug}) · v{read(ROOT / 'VERSION').strip()} · words: {words(body.split('## Since this study')[0]):,} · "
+             f"tags: {len(fm.get('tags', []))} · chapter entries judged: {nchanged} · study values: {nvals} · questions for the record: {nq}")
+    report(errors, warnings, audit)
+    if errors:
+        print("\nNot finished: fix the errors and run finish again.")
+        sys.exit(1)
+    write(sp_, re.sub(r'^audit\s*=.*\n?', "", txt, flags=re.M).replace("+++\n", f'+++\naudit = {json.dumps(audit, ensure_ascii=False)}\n', 1))
+    promote(tok)
+    dst = STUDIES / f"{slug}.md"
+    before = work_dir(tok) / "before-studies" / f"{slug}.md"
+    if dst.exists() and not before.exists():
+        write(before, read(dst))
+    write(dst, read(sp_))
+    done.append(k)
+    rt = read(work_dir(tok) / "review.toml")
+    rt = re.sub(r"^done\s*=.*$", "done = [" + ", ".join(map(str, sorted(done))) + "]", rt, flags=re.M)
+    if len(done) == len(areas):
+        rt = re.sub(r'^status\s*=.*$', 'status = "complete"', rt, flags=re.M)
+    write(work_dir(tok) / "review.toml", rt)
+    build_all(quiet=True)
+    print(f"\nFinished {tok} part {k}: studies/{slug}.md")
+    if a.push:
+        git_commit_push(f"Study {tok} Part {k}: {areas[k - 1].get('name', slug)}")
+    print(f"Send the user: build/studies/{slug}.md" + (" · build/reviews/" + tok + "/CHANGES.md" if staged else ""))
+    nxt = study_next_part(tok)
+    print(f"Next: CONTINUE in a new thread for Part {nxt[0]} ({nxt[1].get('name')})." if nxt else f"{tok} is complete.")
+
+
+def pack_study(tok: str):
+    lim = config()["limits"]
+    nxt = study_next_part(tok)
+    if not nxt:
+        die(f"{tok} has no part left")
+    k, ar = nxt
+    slug = ar["slug"]
+    staged = read(work_dir(tok) / "studies" / f"{slug}.md")
+    fm, _, body = parse_chapter(staged)
+    tags = fm.get("tags", []) or []
+    pars = {parent(t) for t in tags}
+    rv = review_meta(tok)
+    parts = [f"<!-- study pack {tok} part {k} -->\n# Context pack — study run {tok}, Part {k} of {len(rv.get('area', []))}: {ar.get('name')} (`{slug}`)\n\n"
+             f"*Generated by fie.py. Do not edit. The record as it stands after memo {rv.get('after_memo')}.*"]
+    if not tags:
+        parts.append(f"## Tags not set yet\n\nSet `tags` in `reviews/{tok}/studies/{slug}.md` (variables and facets from schema/VARIABLES.toml, "
+                     f"below), then run `python3 scripts/fie.py pack {tok}` again: the ledgers, positions and values for those variables load then.\n\n"
+                     + "\n".join(f"- `{v['id']}` — {v['name']}; higher means {v['higher']}"
+                                 + (f"; facets: {', '.join(f['id'] for f in v.get('facets', []))}" if v.get("facets") else "")
+                                 + (" · headline" if v.get("vector") else "") for v in variables()))
+    if ar.get("rerun") or fm.get("written", tok) != tok:
+        parts.append("## The study as it stands (a re-run: rewrite it from the record, folding its since-entries)\n\n" + study_render(slug, read(STUDIES / f"{slug}.md")))
+    parts.append("## Other studies\n\n" + ("\n".join(l for l in study_index_lines() if not l.startswith(f"- **{slug}**")) or "None."))
+    if tags:
+        parts.append("## Current values on this study's variables\n\n" + values_table(fm, body))
+        parts.append("## Variable ledgers\n\n" + "\n\n".join(f"### {v}\n" + ("\n".join(ledger_lines(v)) or "No provision pushes or depends on it.") for v in sorted(pars)))
+        parts.append("## Settled positions on these variables\n\n" + ("\n".join(positions_for(pars)) or "None."))
+        hits = []
+        for t, m in manifests(("complete",)):
+            pv, dv = memo_vars(m)
+            if (set(pv) | dv) & pars:
+                hits.append(t)
+        parts.append("## Memoranda that touch these variables\n\n" + (", ".join(hits) or "None.") +
+                     "\n\nTheir cards are in `build/cards/`; read only the ones the area turns on, and grep for the rest.")
+        parts.append("## Provisions in those memoranda\n\n" + ("\n".join(l for l in provision_index_lines() if any(l.endswith(f"memo {t}") for t in hits)) or "None.")
+                     + "\n\nEvery provision in theater: `build/INDEX.md`.")
+        er = errata_for(set(hits))
+        if er:
+            parts.append("## Errata affecting those memoranda\n\n" + "\n\n".join(er))
+    parts.append("## Standing directives\n\n" + ("\n".join(register_lines("directives.md")) or "None."))
+    parts.append("## Gap register (latest status)\n\n" + ("\n".join(latest_by_key(register_lines("gaps.md"))) or "None."))
+    parts.append("## Chapter digests (exact extracts; read in full the events the area turns on, found with `fie.py grep`)\n\n"
+                 + "\n\n".join(chapter_digest(p["id"]) for p in phases()))
+    text = "\n\n".join(parts) + "\n"
+    cap = config().get("studies", {}).get("pack_chars", lim["pack_chars"])
+    if len(text) > cap:
+        print(f"WARNING: pack is {len(text):,} characters, over the {cap:,} limit — read it in two passes")
+    out = BUILD / "packs" / f"PACK-{tok}.md"
+    write(out, text)
+    print(f"Wrote {rel(out)} ({len(text):,} characters, ~{len(text)//4:,} tokens) for part {k}: {ar.get('name')}")
+
+
+def studies_pack_section(vars_: set[str], part: int) -> tuple[list[str], str]:
+    """(slugs, text) of the studies section a memorandum's pack carries."""
+    slugs = matching_studies(vars_)
+    if not slugs:
+        return [], ""
+    pars = {parent(v) for v in vars_}
+    if part == 2:
+        intro = ("## Studies on these variables\n\nJudge this provision's pushes against each study's values in `### Against the studies` "
+                 "(§2 Part A), and mark each study `<!-- against <slug>: consistent -->` or `<!-- against <slug>: contradicts -->`. "
+                 "Where the provision's effect contradicts a study, say so in plain words and say which should give way.")
+        body = "\n\n---\n\n".join(study_render(s_, short=True, only=pars) for s_ in slugs)
+    else:
+        intro = ("## Studies to update\n\nPart 3 closes with a `<!-- study <slug> -->` … `<!-- /study -->` block for each study below: "
+                 "what changed in the area and which events show it, and a value line for any value the study holds that moves "
+                 "(`- value · <key> · <Pk> · <low>..<high> · <conf> · <note>`). The script adds the chapter moves itself.")
+        body = "\n\n".join(f"### {s_}\n\n" + values_table(*(lambda t: (t[0], t[2]))(parse_chapter(study_text(s_))), only=pars) for s_ in slugs)
+    return slugs, f"<!-- studies: {','.join(slugs)} -->\n" + intro + "\n\n" + body
+
+
 # ----------------------------------------------------------------------------- status
 
 def version_report() -> tuple[str, list[str]]:
@@ -719,33 +1314,41 @@ def cmd_boot(a):
             proc = ["BASELINE.md"]
         else:
             tok = ow[1]
-            proc = [{"CP": "CHECKPOINT.md", "MT": "META.md", "TN": "TNA.md"}.get(tok[:2], "REVISIONS.md")]
-            if tok[:2] in ("CP", "MT"):
+            proc = [{"CP": "CHECKPOINT.md", "MT": "META.md", "TN": "TNA.md", "ST": "STUDY.md"}.get(tok[:2], "REVISIONS.md")]
+            if tok[:2] in ("CP", "MT", "ST"):
                 pack = (tok, 0)
         if ow:
             print(f"\nCONTINUE resumes {ow[1]} at {ow[0]}.")
     else:
         proc = [{"baseline": "BASELINE.md", "tna": "TNA.md", "checkpoint": "CHECKPOINT.md", "meta": "META.md",
-                 "veto": "REVISIONS.md", "erratum": "REVISIONS.md"}.get(cmd, "")]
+                 "veto": "REVISIONS.md", "erratum": "REVISIONS.md", "study": "STUDY.md"}.get(cmd, "")]
         if not proc[0]:
-            die(f"unknown command '{a.command}' (provision, continue, baseline, tna, checkpoint, meta, veto, erratum)")
+            die(f"unknown command '{a.command}' (provision, continue, baseline, tna, checkpoint, meta, veto, erratum, study)")
+        if cmd == "study" and ow:
+            print(f"\nNOTE: {ow[1]} is open ({ow[0]}). One piece of work at a time: ask the user whether to finish it first.")
     files = ["procedures/BOOTSTRAP.md", "rules/RULES.md", "rules/VOICE.md", "rules/CONFIG.toml", "schema/FORMATS.md"]
     if proc and proc[0] == "PART1.md":
         files.append("schema/VARIABLES.toml")
     files += [f"procedures/{p}" for p in proc or []]
     for f in files:
         print("\n" + "=" * 30 + f" {f}\n" + read(ROOT / f))
+    if proc and proc[0] in ("PART1.md", "STUDY.md"):
+        print("\n" + "=" * 30 + " Studies on file (studies/)\n" + ("\n".join(study_index_lines()) or "None yet."))
     if pack:
         tok, part = pack
+        pth = None
         if part:
             if (work_dir(tok) / "manifest.toml").exists():
                 build_all(quiet=True)
                 cmd_pack(argparse.Namespace(work=tok, part=part))
                 pth = BUILD / "packs" / f"PACK-{tok}-part{part}.md"
         else:
+            if tok.startswith("ST") and (work_dir(tok) / "review.toml").exists():
+                build_all(quiet=True)
             cmd_pack(argparse.Namespace(work=tok, part=0))
             pth = BUILD / "packs" / f"PACK-{tok}.md"
-        print("\n" + "=" * 30 + f" {rel(pth)}\n" + read(pth))
+        if pth:
+            print("\n" + "=" * 30 + f" {rel(pth)}\n" + read(pth))
     print("\n" + "=" * 30 + " END OF BOOT. Everything above is loaded: do not read these files again in this thread.")
 
 
@@ -788,6 +1391,19 @@ def cmd_status(_):
         facets_all += len(fks)
         facets_j += sum(1 for k in fks if isinstance(vec.get(k), dict) and vec[k].get("conf") not in ("unjudged", None))
     print(f"Scale v1.0.6: hard anchors researched {got}/{len(hard) * len(have)} · headline values still 'converted' {conv} · facets judged {facets_j}/{facets_all}")
+    sl = study_slugs()
+    if sl:
+        waiting = sum(len(since_entries(parse_chapter(study_text(x))[2])) for x in sl)
+        rerun = [x for x in sl if parse_chapter(study_text(x))[0].get("rerun")]
+        print(f"Studies: {len(sl)} ({', '.join(sl)}) · since-entries waiting for a checkpoint to fold: {waiting}"
+              + (f" · RE-RUN ADVISED: {', '.join(rerun)}" if rerun else ""))
+    else:
+        print("Studies: none yet")
+    for t in review_tokens("ST"):
+        if not review_done(t):
+            nx = study_next_part(t)
+            if nx:
+                print(f"IN PROGRESS: study run {t}, part {nx[0]} of {len(review_meta(t).get('area', []))} ({nx[1].get('name')}) — next is CONTINUE")
     es = load_toml(HIST / "endstate.toml")
     print(f"End state: rung ({es.get('rung')}) {es.get('rung_label')} — {es.get('summary')}")
     branch = git("rev-parse", "--abbrev-ref", "HEAD")
@@ -942,12 +1558,31 @@ def cmd_pack(a):
     lim = c["limits"]
     if re.fullmatch(r"(?:CP|MT)\d{2}", tok):
         return pack_review(tok)
+    if re.fullmatch(r"ST\d{2}", tok):
+        return pack_study(tok)
     m = manifest(tok)
     npush, ndep = memo_vars(m)
     touched = set(npush) | ndep
     out_path = BUILD / "packs" / f"PACK-{tok}-part{a.part}.md"
     parts = []
-    if a.part == 2:
+    if a.part == 1:
+        slugs = matching_studies(touched)
+        parts.append(f"<!-- studies: {','.join(slugs)} -->\n# Context pack — memorandum {tok}, Part 1: the studies\n\n*Generated by fie.py from "
+                     f"studies/ and this memorandum's manifest. Do not edit. Routing: the variables the manifest pushes and depends on.*")
+        parts.append("## Studies on file\n\n" + ("\n".join(study_index_lines()) or "None yet."))
+        if not slugs:
+            parts.append("## Studies on this provision's variables\n\nNone shares a variable with the manifest. Nothing to load.")
+        else:
+            parts.append("## Studies on this provision's variables\n\nRead them before the research: they are the record's account of "
+                         "the areas this provision enters, as it stands. Write the dossier against them — D7, D10, D13 and D16 especially "
+                         "— and cite them as `studies/<slug>`; their figures keep their own tags.")
+            size = sum(len(x) for x in parts)
+            for s_ in slugs:
+                full = study_render(s_)
+                parts.append(full if size + len(full) <= lim["pack_chars"] else study_render(s_, short=True) +
+                             f"\n\n*Loaded short (pack limit): read `studies/{s_}.md` for the phase sections you need.*")
+                size += len(parts[-1])
+    elif a.part == 2:
         r = route(tok)
         loaded, size = [], 0
         cards = []
@@ -985,6 +1620,9 @@ def cmd_pack(a):
         parts.append("## Settled positions on these variables\n\n" + ("\n".join(positions_for(touched)) or "None."))
         parts.append("## Provision index (every provision in theater)\n\n" + ("\n".join(provision_index_lines()) or "None yet."))
         parts.append("## Gap register (latest status)\n\n" + ("\n".join(latest_by_key(register_lines("gaps.md"))) or "None."))
+        _, st_txt = studies_pack_section(touched, 2)
+        if st_txt:
+            parts.append(st_txt)
     elif a.part == 3:
         es = read(HIST / "endstate.toml")
         rows = []
@@ -1018,8 +1656,11 @@ def cmd_pack(a):
         parts.append("## Recurring persons\n\n" + ("\n".join(latest_by_key(register_lines("persons.md"))) or "None yet."))
         parts.append(f"## Trajectory Log — last {lim['log_entries_in_pack']} entries\n\n" +
                      ("".join(entries[-lim['log_entries_in_pack']:]).strip() or "No entries yet."))
+        _, st_txt = studies_pack_section(touched, 3)
+        if st_txt:
+            parts.append(st_txt)
     else:
-        die("--part must be 2 or 3")
+        die("--part must be 1, 2 or 3")
     text = "\n\n".join(parts) + "\n"
     if len(text) > lim["pack_chars"]:
         print(f"WARNING: pack is {len(text):,} characters, over the {lim['pack_chars']:,} limit")
@@ -1067,6 +1708,22 @@ def pack_review(tok: str):
     parts.append("## Standing directives\n\n" + ("\n".join(register_lines("directives.md")) or "None."))
     parts.append("## Gap register (latest status)\n\n" + ("\n".join(latest_by_key(register_lines("gaps.md"))) or "None."))
     parts.append("## Provision index\n\n" + ("\n".join(provision_index_lines()) or "None."))
+    if kind == "CP" and study_slugs():
+        rows, qs = [], []
+        for s_ in study_slugs():
+            fm_s, _, b_s = parse_chapter(study_text(s_))
+            dr = study_drift(s_)
+            rows.append(f"| {s_} | {fm_s.get('as_of', '?')} | {dr['entries']} | {dr['drift']:.1f} | {dr['chapter_moves']} | "
+                        f"{', '.join(dr['contradicted_by']) or '—'} | {'RE-RUN ADVISED' if dr['advise'] else 'fold'} |")
+            q = (section(b_s, 2, "Questions for the record") or "").strip()
+            if q:
+                qs.append(f"### {s_}\n{q}")
+        parts.append("## Studies\n\nFold every study with since-entries (step 8a): `fie.py study fold CPnn <slug>`. Advice is the script's, "
+                     "from rules/CONFIG.toml [studies]; the checkpoint decides.\n\n| Study | As of memo | Since-entries | Largest drift "
+                     "(midpoint) | Chapter moves recorded | Contradicted by | Advice |\n|---|---|---|---|---|---|---|\n" + "\n".join(rows)
+                     + ("\n\n### Questions the studies raised\n\n" + "\n\n".join(qs) if qs else ""))
+    elif kind == "MT" and study_slugs():
+        parts.append("## Studies on file\n\n" + "\n".join(study_index_lines()))
     parts.append(build_enemy().replace("# The enemy's war", "## The enemy's war", 1).replace("\n## ", "\n### "))
     text = "\n\n".join(parts) + "\n"
     if len(text) > lim["pack_chars"]:
@@ -1433,6 +2090,20 @@ def check_part(tok: str, part: int, stamping: bool = False) -> tuple[list, list,
             warnings.append("part2: §3 names no earlier provision — the checklist includes every prior injected unit by name")
         if len(desig) < fl["designations_per_part"]:
             warnings.append(f"part2: ~{len(desig)} distinct designations, below the floor of {fl['designations_per_part']} (A11)")
+        npush_, ndep_ = memo_vars(m)
+        st_req = matching_studies(set(npush_) | ndep_)
+        verdicts = {s_: v_ for s_, v_ in AGAINST_RE.findall(text)}
+        if st_req:
+            pa_heads = [h for h, _ in sections(section(text, 2, "§2 Part A") or "", 3)]
+            if "Against the studies" not in pa_heads:
+                errors.append(f"part2: '### Against the studies' is missing from §2 Part A — this provision touches the variables of {', '.join(st_req)}")
+            for s_ in st_req:
+                if s_ not in verdicts:
+                    errors.append(f"part2: no '<!-- against {s_}: consistent -->' or '<!-- against {s_}: contradicts -->' — judge the pushes against that study and say which")
+        for s_ in verdicts:
+            if s_ not in study_slugs():
+                errors.append(f"part2: '<!-- against {s_}: … -->' names no study in studies/")
+        st_audit = ", ".join(f"{s_} {verdicts.get(s_, 'NOT JUDGED')}" for s_ in st_req) or "none on these variables"
         pack = read(BUILD / "packs" / f"PACK-{tok}-part2.md")
         loaded = re.search(r"<!-- loaded: (.*?) -->", pack)
         if not pack:
@@ -1442,7 +2113,7 @@ def check_part(tok: str, part: int, stamping: bool = False) -> tuple[list, list,
                  f"{f' + {len(aband)} abandoned' if aband else ''} (floor {need}) · counter-directional: "
                  f"{'yes' if re.search(r'· Counter-directional', text) else 'searched, none found'} · strongest positive: "
                  f"{'yes' if re.search(r'· Strongest positive', text) else 'searched, genuine assessment is modest'} · "
-                 f"designations: ~{len(desig)} · structural deviation: {dev}")
+                 f"designations: ~{len(desig)} · studies: {st_audit} · structural deviation: {dev}")
 
     elif part == 3:
         if not status_at_least(m, "part2"):
@@ -1569,6 +2240,9 @@ def check_part(tok: str, part: int, stamping: bool = False) -> tuple[list, list,
             if not lo <= words(logs[0]) <= hi:
                 warnings.append(f"part3: log entry is {words(logs[0])} words (guide {lo}–{hi})")
         check_register_blocks(text, tok, errors)
+        npush_, ndep_ = memo_vars(m)
+        st_req = matching_studies(set(npush_) | ndep_)
+        check_study_blocks(text, tok, "part3", errors, st_req)
         es = load_toml(HIST / "endstate.toml")
         if es.get("rung") not in list("abcde") + ["off"]:
             errors.append(f"endstate.toml: rung '{es.get('rung')}' must be a–e or 'off'")
@@ -1595,7 +2269,8 @@ def check_part(tok: str, part: int, stamping: bool = False) -> tuple[list, list,
                  f"phases carrying a §2 finding: {carried_ok}/{len(staged)} · strongest positive grounded: {spe_grounded} · "
                  f"clock stated: {clocks} phase(s) · enemy initiative: {init} · free play: {free} · ripple flags: {len(ripple)}"
                  f"{' (' + ', '.join(ripple) + ')' if ripple else ''} · end state: {'CHANGED' if es_changed else 'unchanged'} "
-                 f"(rung {es.get('rung')}; rung test supports {sup}) · structural deviation: {dev}")
+                 f"(rung {es.get('rung')}; rung test supports {sup}) · studies updated: {', '.join(s_ for s_, _ in STUDY_BLOCK.findall(text)) or 'none'} · "
+                 f"structural deviation: {dev}")
     else:
         die("--part must be 1, 2 or 3")
     return errors, warnings, audit, info
@@ -1764,6 +2439,7 @@ def cmd_finish(a):
     if part == 3:
         promote(tok)
         append_registers(read(d / "part3.md"), tok, m.get("title", ""))
+        append_study_entries(read(d / "part3.md"), tok, m.get("title", ""))
     elif part == 2:
         append_registers(read(d / "part2.md"), tok, m.get("title", ""))
     else:
@@ -1780,6 +2456,8 @@ def cmd_finish(a):
     if getattr(a, "push", False):
         git_commit_push(f"Memo {tok} Part {part}: {m.get('title', '')}")
     print(f"Send the user: build/memos/{tok}/Part-{part}.md" + (f" · build/memos/{tok}/CHANGES.md · build/WAR-HISTORY.md · history/TRAJECTORY-LOG.md" if part == 3 else ""))
+    if part == 1 and matching_studies(set(memo_vars(m)[0]) | memo_vars(m)[1]):
+        print("Studies on this memorandum's variables: " + ", ".join(matching_studies(set(memo_vars(m)[0]) | memo_vars(m)[1])) + " — Part 2 judges against them")
     if not getattr(a, "push", False):
         print(f"Then: git add -A && git commit -m \"Memo {tok} Part {part}\" && git push origin main")
 
@@ -1872,6 +2550,19 @@ def cmd_review(a):
     for n, t in texts.items():
         check_tags(t, errors, f"{tok}/{n}")
         check_register_blocks(t, tok, errors)
+        check_study_blocks(t, tok, f"{tok}/{n}", errors, [])
+    sdir = d / "studies"
+    for sp_ in sorted(sdir.glob("*.md")) if sdir.exists() else []:
+        check_study(read(sp_), sp_.stem, f"study {sp_.stem} (staged)", errors, warnings, folding=True)
+        fm_s = parse_chapter(read(sp_))[0]
+        if fm_s.get("folded") != tok:
+            errors.append(f"study {sp_.stem} (staged): folded = '{fm_s.get('folded')}', expected '{tok}'")
+        old_fm, _, old_b = parse_chapter(study_text(sp_.stem))
+        kept = {(k_, p_) for p_, t_ in (fm_s.get("values") or {}).items() if isinstance(t_, dict) for k_ in t_}
+        for _, txt_ in since_entries(old_b):
+            for k_, p_, _v in value_lines(txt_):
+                if (k_, p_) not in kept:
+                    warnings.append(f"study {sp_.stem} (staged): the since-entry value for {k_} in {p_} is not in the folded [values] — carry it or say in '## Judgments' why it was dropped")
     es = load_toml(HIST / "endstate.toml")
     if es.get("last_changed") == tok and not any(h.get("by") == tok for h in es.get("history", [])):
         errors.append(f"endstate.toml: last_changed is {tok} but no [[history]] entry for it")
@@ -1881,9 +2572,11 @@ def cmd_review(a):
     if errors:
         sys.exit(1)
     promote(tok)
+    promote_studies(tok)
     title = {"TNA": "Theater Needs Assessment", "CP": "Checkpoint", "MT": "Meta-checkpoint"}.get(kind, "Revision")
     for n, t in texts.items():
         append_registers(t, tok, title)
+        append_study_entries(t, tok, title)
     rt = read(d / "review.toml") if (d / "review.toml").exists() else f'work = "{tok}"\nkind = "{kind}"\nstatus = "open"\nafter_memo = "000"\n'
     write(d / "review.toml", re.sub(r'^status\s*=.*$', 'status = "complete"', rt, flags=re.M))
     build_all(quiet=True)
@@ -2227,6 +2920,17 @@ def build_all(quiet: bool = False):
             for p in sorted(d.glob("part*.md")):
                 write(BUILD / "reviews" / d.name / p.name, for_reader(strip_comments(read(p)).strip() + "\n", source_lines(d / "sources.md")))
     write(BUILD / "ENEMY.md", for_reader(build_enemy()))
+    idx_s = ["# Studies", "*Generated by fie.py from studies/. Each study is a deep account of one area of the war as the record stands; "
+             "memoranda append dated since-entries and checkpoints fold them in. Do not edit.*", ""] + (study_index_lines() or ["None yet."])
+    write(BUILD / "STUDIES.md", "\n".join(idx_s) + "\n")
+    for s_ in study_slugs():
+        txt_s = study_text(s_)
+        fm_s, _, b_s = parse_chapter(txt_s)
+        rc = study_render(s_, txt_s).replace("## Study: ", "# Study: ", 1)
+        rc = re.sub(r"^### ", "## ", rc, flags=re.M)
+        if fm_s.get("audit"):
+            rc = rc.rstrip() + "\n\n---\n\n*" + str(fm_s["audit"]) + "*\n"
+        write(BUILD / "studies" / f"{s_}.md", for_reader(rc, study_sources(b_s)))
     menus = read(HIST / "menus.md")
     if menus:
         last = re.split(r"(?=^## )", menus, flags=re.M)[-1]
@@ -2248,7 +2952,7 @@ def cmd_build(_):
 def cmd_grep(a):
     terms = [t.lower() for t in a.words]
     files = sorted(list((ROOT / "memos").rglob("*.md")) + list(HIST.rglob("*.md")) + list((ROOT / "reviews").rglob("*.md"))
-                   + list((ROOT / "revisions").rglob("*.md")) + list((ROOT / "errata").glob("*.md")))
+                   + list((ROOT / "revisions").rglob("*.md")) + list((ROOT / "errata").glob("*.md")) + list(STUDIES.glob("*.md")))
     hits = 0
     for f in files:
         for i, line in enumerate(read(f).splitlines(), 1):
@@ -2287,7 +2991,7 @@ def main():
         p.add_argument("--push", action="store_true", help="after a clean finish, commit and push to main")
         p.set_defaults(f=fn)
     p = sp.add_parser("boot")
-    p.add_argument("command", help="provision | continue | baseline | tna | checkpoint | meta | veto | erratum")
+    p.add_argument("command", help="provision | continue | baseline | tna | checkpoint | meta | veto | erratum | study")
     p.set_defaults(f=cmd_boot)
     p = sp.add_parser("baseline")
     p.add_argument("--push", action="store_true")
@@ -2307,6 +3011,14 @@ def main():
     p.add_argument("work")
     p.add_argument("file")
     p.set_defaults(f=cmd_amend)
+    p = sp.add_parser("study")
+    p.add_argument("target", nargs="?", default="", help="STnn, or 'fold'")
+    p.add_argument("args", nargs="*")
+    p.add_argument("--init", action="store_true")
+    p.add_argument("--finish", action="store_true")
+    p.add_argument("--part", type=int, default=0)
+    p.add_argument("--push", action="store_true")
+    p.set_defaults(f=cmd_study)
     p = sp.add_parser("grep")
     p.add_argument("words", nargs="+")
     p.add_argument("--max", type=int, default=60)

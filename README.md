@@ -1,4 +1,4 @@
-<!-- fie v1.0.6 -->
+<!-- fie v1.0.7 -->
 # Vietnam Force-Injection Exercise
 
 A long-running counterfactual: modern forces and capabilities are injected into the Vietnam War from 1 January 1964, one provision at a time, and COMUSMACV reports in numbered memoranda on how each one changes the war. This repository is the whole record — the rules, the procedures, the war as it now stands, every memorandum, and the scripts that keep the books.
@@ -29,6 +29,7 @@ Attach the repository to the project, put the workers on Opus 5.5 (high, or xhig
 | `META` | Every third checkpoint: an audit of the analysis itself, then unexplored terrain (two parts) |
 | `VETO <event ID>` | Removes a free-play event and reruns its consequences |
 | `ERRATUM <what is wrong>` | Records a correction to a finished memorandum |
+| `STUDY <two or three areas>` | Instead of a memorandum: a deep account of each area — the air war, CIDG, the anti-VCI campaign, the Delta, the maritime war — as the record now stands, phase by phase, with its variables judged. One part per area. It describes the war and never changes it; later memoranda are written against it and add dated entries to it, and checkpoints fold them in |
 | `STATUS` | Where things stand |
 
 ## What to read
@@ -39,6 +40,7 @@ Attach the repository to the project, put the workers on Opus 5.5 (high, or xhig
 - `history/TRAJECTORY-LOG.md` — one paragraph per memorandum: the arc of the war across all provisions
 - `build/ENEMY.md` — the enemy's war: every event where Hanoi held the initiative, in order
 - `build/MENU.md` — the latest review's menu of provisions that would bite hardest
+- `build/studies/<slug>.md` — each study, with its current values and the entries memoranda have added since · `build/STUDIES.md` — the index
 - `build/INDEX.md` — every provision in theater · `build/EVENTS.md` — every event · `build/LEDGERS.md` — what pushes each world variable
 
 ## Layout
@@ -52,6 +54,7 @@ Attach the repository to the project, put the workers on Opus 5.5 (high, or xhig
 | `templates/` | Starting files for manifests, parts and chapters |
 | `history/` | The war: chapters, phases, end state, and the registers |
 | `memos/`, `reviews/`, `revisions/`, `errata/` | The record of each piece of work |
+| `studies/` | The studies: one file per area of the war |
 | `build/` | Generated views. Never edited by hand |
 | `scripts/fie.py` | The bookkeeping script |
 

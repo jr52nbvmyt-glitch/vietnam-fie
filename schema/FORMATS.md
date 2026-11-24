@@ -1,4 +1,4 @@
-<!-- fie v1.0.6 -->
+<!-- fie v1.0.7 -->
 # Record formats
 
 Everything `scripts/fie.py` reads is defined here. The script checks these formats; if a file breaks one, `fie.py check` says where. Read this before writing any part.
@@ -17,6 +17,8 @@ Everything `scripts/fie.py` reads is defined here. The script checks these forma
 | `history/endstate.toml` | The end state of the war | You, when a part changes it |
 | `history/TRAJECTORY-LOG.md`, `positions.md`, `persons.md`, `directives.md`, `gaps.md` | Registers | `fie.py` only, from blocks in your text |
 | `reviews/CPnn`, `reviews/MTnn`, `reviews/TNA` | Checkpoints, meta-checkpoints, the Theater Needs Assessment | You |
+| `studies/<slug>.md` | A study: one area of the war, phase by phase, with its tags and its own values (§8) | A study run (`reviews/STnn/`); entries appended by `fie.py` from Part 3 and revision blocks; folded by checkpoints |
+| `reviews/STnn/` | A study run: `review.toml` (its areas), the staged studies, any chapters whose end vectors it judged | `fie.py study`, and you |
 | `revisions/Rnn` | Chapter revisions without a provision (VETO) | You |
 | `errata/Enn.md` | Corrections to finished records | You |
 | `build/` | Generated views: index, cards, ledgers, events, War History, reading copies, packs | `fie.py` only. Never edit; rebuild |
@@ -25,7 +27,7 @@ Everything `scripts/fie.py` reads is defined here. The script checks these forma
 
 ## 2. Work tokens and IDs
 
-A **work token** names a piece of work: `005` (memorandum), `000` (baseline), `CP01` (checkpoint), `MT01` (meta-checkpoint), `R01` (revision), `TNA`.
+A **work token** names a piece of work: `005` (memorandum), `000` (baseline), `CP01` (checkpoint), `MT01` (meta-checkpoint), `ST01` (study run), `R01` (revision), `TNA`.
 
 | ID | Form | Example |
 |---|---|---|
@@ -38,6 +40,7 @@ A **work token** names a piece of work: `005` (memorandum), `000` (baseline), `C
 | Directive | `DIR` + work + `-` + n | `DIRMT01-3` |
 | Gap | `G-` + n | `G-12` |
 | Erratum | `E` + nn | `E03` |
+| Study question | `Q-` + n, within one study | `Q-2` |
 
 Numbers within a memo start at 1 and run in order of first appearance. An ID is never reused.
 
@@ -85,6 +88,9 @@ HTML comments are invisible in the reading copies.
 | `<!-- gaps -->` … `<!-- /gaps -->` | TNA, reviews | Lines appended to `history/gaps.md` |
 | `<!-- swept -->` … `<!-- /swept -->` | Checkpoints | Variable IDs swept in the interaction sweep |
 | `<!-- menu -->` … `<!-- /menu -->` | TNA, checkpoints | Candidate provisions: `- **<provision>** · gaps: G-n, … · pushes: … · <why>`; the latest becomes `build/MENU.md` |
+| `<!-- against <slug>: consistent -->` / `… contradicts -->` | Part 2 §2 Part A, `### Against the studies` | This provision's pushes judged against a study; one per study the pack loads |
+| `<!-- study <slug> -->` … `<!-- /study -->` | Part 3; a revision | An entry for that study: what changed in its area; `- value · <key> · <Pk> · <low>..<high> · <conf> · <note>` lines for study-held values |
+| `<!-- since NNN -->` … `<!-- /since -->` | A study's *Since this study* | Written by `fie.py` from a study block. Never by hand |
 
 Register lines are bullets in the register's own format (see the head of each register file).
 
@@ -92,7 +98,7 @@ Register lines are bullets in the register's own format (see the head of each re
 
 **Part 1** — per provision: `## §1.<n> <Designation> — P005a`, then `### D1 · …` through `### D16 · …` (field names in `procedures/PART1.md`).
 
-**Part 2** — `## §2 Part A — Integration` · `### Employment concepts` with `#### EC005-1 · <name>` (add `(abandoned)` to the name of an abandoned concept) · `## §2 Part B — Channels` with one `### <channel>` per channel, named exactly: Displacement · Bottleneck migration · Own-force opportunity cost · Counterfactual erasure · Perverse effect · Anticipation · Enemy detection and learning · Enemy adaptation cost · Cross-boundary feedback · Open channel · `## §2 Part C — Counter-directional finding and strongest positive effect` · `## §2 Findings register` · `## §3 Changes to existing forces`.
+**Part 2** — `## §2 Part A — Integration` · `### Against the studies` when the pack loads a study (one `<!-- against <slug>: … -->` per study) · `### Employment concepts` with `#### EC005-1 · <name>` (add `(abandoned)` to the name of an abandoned concept) · `## §2 Part B — Channels` with one `### <channel>` per channel, named exactly: Displacement · Bottleneck migration · Own-force opportunity cost · Counterfactual erasure · Perverse effect · Anticipation · Enemy detection and learning · Enemy adaptation cost · Cross-boundary feedback · Open channel · `## §2 Part C — Counter-directional finding and strongest positive effect` · `## §2 Findings register` · `## §3 Changes to existing forces`.
 
 A finding is a paragraph that opens with its bold ID: `**F005-7** (SECURE) …`. The counter-directional finding opens `**F005-12 · Counter-directional** …`; the strongest positive `**F005-13 · Strongest positive** …`.
 
@@ -157,3 +163,46 @@ An event header has five fields after the ID, separated by ` · `: title · date
 The first line of an event's text says who held the initiative: `*Initiative: enemy*`, `*Initiative: allied*`, `*Initiative: both*` or `*Initiative: neither*`. Required for every event a memorandum creates or changes.
 
 A historical accident is `HIST`, not `FREE`. Events stay in date order. An event is never deleted: mark it `CANCELLED`. You set the origin; the script maintains the works field, adding the current work to every event you create or change.
+
+## 8. Studies (`studies/<slug>.md`, v1.0.7)
+
+See `templates/study.md` and `procedures/STUDY.md`.
+
+```
++++
+area = "The war in the Delta"
+slug = "war-in-the-delta"
+tags = ["POP.night_control.IV_corps", "POP.gvn_legitimacy.IV_corps", "RFPF.effectiveness", "INFIL.sea"]
+written = "ST01"        # the run that wrote the text
+as_of = "011"           # the last memorandum the text reflects
+folded = ""             # the last checkpoint or revision that folded entries in
+rerun = false           # a checkpoint sets it, with rerun_reason, when a fresh STUDY is due
+rerun_reason = ""
+audit = "…"             # written by fie.py
+
+[values]
+[values.P4]
+"RFPF.effectiveness.outpost_defence" = { low = 2, high = 4, conf = "medium", note = "…", ind = "outposts overrun a month, … [H] against … [X-ST01]" }
++++
+# The war in the Delta — the war as it stands after memorandum 011
+
+## Summary — the state of the area now
+## P1 · Phase I — … (one section per phase, every phase)
+## Judgments
+## Questions for the record
+- **Q-1** · ERRATUM · <what conflicts with what>
+- **Q-2** · CHECKPOINT · <…>        (a checkpoint marks them RESOLVED · <how> or STANDS · <why>)
+## Sources
+[S1] …
+## Since this study
+### Memo 012 — <title> · <date>       (appended by fie.py; never written by hand)
+<!-- since 012 -->
+…
+- value · RFPF.effectiveness.reaction · P4 · +1..+3 · low · relief arrives inside the hour
+*Chapter values Memo 012 moved on this study's variables: P4 POP.night_control.IV_corps … → ….*
+<!-- /since -->
+```
+
+**One copy of every value.** A headline variable or facet (a key every end vector carries) is judged in the chapters' end vectors, never in a study's `[values]` or value lines; a study run may judge such an entry only while it is `unjudged` or `converted` (or add the parent's `binding`). Every other variable or facet a study covers is held in its `[values]`, updated by the value lines of later entries until a checkpoint folds them. The script draws both into the *Current values* table of every pack and reading copy.
+
+**Routing.** A study's tags are matched to a memorandum by parent variable, like the Part 2 routing: a study tagged `RFPF.effectiveness` meets a provision that pushes `RFPF.effectiveness.reaction`, and the reverse.

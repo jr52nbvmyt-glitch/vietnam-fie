@@ -1,10 +1,10 @@
-<!-- fie v1.0.6 -->
+<!-- fie v1.0.7 -->
 # META — Meta-checkpoint (B3)
 
 **Trigger:** `META` or `META-CHECKPOINT`, due after every `meta_every_checkpoints` checkpoints. Its own thread, two parts on `CONTINUE`. No new provision is introduced. This procedure carries the same authority as `rules/RULES.md`. **It is theater-specific** — its exploration dimensions are keyed to Vietnam.
 **Output:** `reviews/MTnn/part1.md`, `part2.md`. Reading copies in `build/reviews/MTnn/`.
 
-**Reading.** `python3 scripts/fie.py review MTnn --init`, then `python3 scripts/fie.py pack MTnn`. The pack holds the full Trajectory Log, every settled position and directive, the end state and its history, the gap register, and the cards since the last meta-checkpoint. Read it, then every chapter. For anything older, search with `fie.py grep` and read the lines it finds. **Say in Part 1 what you could not read** — an audit that claims to have read a record it only sampled is the failure it exists to catch.
+**Reading.** `python3 scripts/fie.py review MTnn --init`, then `python3 scripts/fie.py pack MTnn`. The pack holds the full Trajectory Log, every settled position and directive, the end state and its history, the gap register, and the cards since the last meta-checkpoint. Read it, then every chapter, and the studies in `studies/` (listed in the pack): a study is the record's account of one area, and a contradiction between a study and the chapters or memoranda is a Part 1 finding. For anything older, search with `fie.py grep` and read the lines it finds. **Say in Part 1 what you could not read** — an audit that claims to have read a record it only sampled is the failure it exists to catch.
 
 A checkpoint audits the war. A meta-checkpoint audits the analysis, then uses what it finds to force the analysis into territory it has been avoiding. Two parts, distinct in purpose and voice.
 

@@ -1,4 +1,4 @@
-<!-- fie v1.0.6 -->
+<!-- fie v1.0.7 -->
 # Design — Vietnam Force-Injection Exercise, v1.0.5
 
 *Replaces the V2 project architecture. Written 21 November 2026 from the V2 problems briefing. Target model: Opus 5.5. Storage: this Git repository.*
@@ -138,3 +138,18 @@ The cost of a part is roughly its context multiplied by its tool calls, because 
 3. Political constraints: set 21 November 2026 — every constraint as historical (MODELLED), no troop ceiling.
 4. `BASELINE` (one thread, three parts), then `TNA` (one thread).
 5. **Pilot:** re-run V2's four provisions as memoranda 001–004 — land reform with the NACC; police reform with merit selection; the CIA PAG with general officer reform; 2026 BCT/OSUT with TCCC. Three of the four V2 records are unverified, and re-running them is cheaper than carrying them. Fix whatever the pilot exposes, then freeze v1.0.
+
+## 10. Studies (v1.0.7)
+
+A memorandum sees the war through one provision. Some questions are about an area instead — the air war, CIDG, the anti-VCI campaign, the Delta, the maritime war — and the record holds the answer only in pieces: events in six chapters, findings in a dozen memoranda, judgments in end vectors, most facets still unjudged since R01. `STUDY` (revisions/R02) gathers one area into one account.
+
+| Rule | Why |
+|---|---|
+| A study is its own file, `studies/<slug>.md`, never written into the chapters | The chapters are the war and are already long; a study is a reading of the war, kept beside it |
+| It describes: no event added, altered or cancelled; the end state untouched | The war changes only through provisions, revisions and checkpoints. A study that found the record inconsistent writes a question for an erratum or a checkpoint instead of a third version |
+| Its judgments go where the record keeps judgments | A headline facet into the chapters' end vectors, and only while it is unjudged or converted; anything else into the study's own values. One copy of every value |
+| Tags route it | A study's tags are variables. Part 1 loads the studies a provision touches; Part 2 judges the pushes against them and must say when a provision contradicts one; Part 3 adds a dated entry through the script |
+| Checkpoints fold | Entries accumulate between checkpoints; a checkpoint folds them into the text and values, answers the study's questions, and flags a study that has drifted too far to fold for a fresh run |
+
+Two or three areas a run, one area a thread: a study reads widely across the whole record, so its cost is its pack (chapter digests, ledgers, positions) plus the reading the area needs, and it should not carry another area's reading with it.
+

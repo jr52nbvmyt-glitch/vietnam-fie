@@ -28,3 +28,5 @@ PHASE_SECTIONS
 
 <!-- persons -->
 <!-- /persons -->
+
+<!-- One block per study the Part 3 pack lists under 'Studies to update': an HTML comment "study SLUG", the entry, then "/study" (procedures/PART3.md). -->

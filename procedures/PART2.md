@@ -1,4 +1,4 @@
-<!-- fie v1.0.6 -->
+<!-- fie v1.0.7 -->
 # Part 2 — §2 Integration and second-order effects · §3 Changes to existing forces
 
 **Trigger:** `CONTINUE` when the open memorandum's status is `part1`.
@@ -8,7 +8,7 @@
 
 1. This is a fresh thread. Do not read `part1.md` in full: the pack carries this memorandum's own card (figures, negative specification, what it denies, verdict). Read `memos/NNN/manifest.toml`.
 2. **Refine the manifest** now that you know the provision: its pushes and depends are what routing uses. Add every variable the §2 analysis will plainly touch.
-3. The pack (`build/packs/PACK-NNN-part2.md`) was printed by `boot`; it is already read. If step 2 added variables, rebuild it (`fie.py pack NNN --part 2`) and read the new routing and ledgers. It holds: the routing table, the standing directives, errata, the cards of the earlier memoranda that share the most world variables with this one, a ledger for every variable this provision touches, the settled positions on those variables, the full provision index, and the gap register.
+3. The pack (`build/packs/PACK-NNN-part2.md`) was printed by `boot`; it is already read. If step 2 added variables, rebuild it (`fie.py pack NNN --part 2`) and read the new routing and ledgers. It holds: the routing table, the standing directives, errata, the cards of the earlier memoranda that share the most world variables with this one, a ledger for every variable this provision touches, the settled positions on those variables, the full provision index, the gap register, and — under *Studies on these variables* — the summary, current values, questions and since-entries of every study the provision touches.
 4. **Second net.** Run `fie.py grep` on two to four terms that this provision's effects travel through — terms from its negative specification and its depends, not its name (e.g. `refugee`, `helicopter hours`, `district chief`). Read the hits that bear on it. This is how interactions that routing missed get found.
 5. If a card lacks a figure, finding or concept you need, find the line with `fie.py grep` and read that part of `memos/MMM/`. Tag what you take `[M…]` (A3b).
 6. **Write `part2.md`** to the standard below, in one Write call.
@@ -29,6 +29,8 @@ Do **not** enumerate pairwise interactions. Organise the cumulative force into t
 - `### Functional systems` — which systems the provision joins, strengthens, and makes newly viable.
 - `### Compound pairings` — **only** the specific pairings producing compound effects, named explicitly, with earlier provisions by ID. Put one line per pairing in the `card:interactions` block.
 - Always address, under their own headings: `### The find-to-fix chain against the main force` · `### The identify-to-neutralise chain against the VCI` · `### Dependence on SECURE` (everything in the countryside depends on it) · `### The ADVISE cluster` (which has no analogue in a conventional theater and which every provision either feeds or starves).
+
+`### Against the studies` — required when the pack loads any study (`procedures/STUDY.md`). For each, judge this provision's pushes against the study's values for the same variables and facets, phase by phase where it matters: does the provision's effect fit the area as the study describes it, add to it, or contradict it? Mark each study once, `<!-- against <slug>: consistent -->` or `<!-- against <slug>: contradicts -->`. **A contradiction is said in plain words**: which value or finding of the study the provision's effect cannot be reconciled with, why, and which should give way — the push (refine the manifest), or the study (Part 3 records the change in its entry, and the next checkpoint re-judges it). A push that the study shows the area cannot absorb — a facet already at the edge of what the record supports, a bottleneck the study names — is the commonest finding here, and belongs in the channels as well.
 
 `### Employment concepts` — how it is actually used. Distinct from integration and not satisfied by it: integration says which systems it joins; this says what it does on a given Tuesday. Each concept is a `#### ECNNN-k · <name>` heading. Give its profile concretely: launch or departure, transit, time on station, the engagement sequence, recovery, turnaround, and the resulting cycle rate per day and per week. Where a concept has a minimum viable package — two airframes and a tanker, a section and its ISR feed — state the package. Where a concept depends on another provision, say which, and what it degrades to without it.
 

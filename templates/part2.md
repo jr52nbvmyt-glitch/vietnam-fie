@@ -17,6 +17,9 @@
 
 ### The ADVISE cluster
 
+### Against the studies
+<!-- Required when the Part 2 pack loads a study: one verdict marker per study, "against SLUG: consistent" or "against SLUG: contradicts", each in its own HTML comment (procedures/PART2.md). -->
+
 ### Employment concepts
 
 #### ECNNN-1 · NAME

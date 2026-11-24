@@ -1,4 +1,4 @@
-<!-- fie v1.0.6 -->
+<!-- fie v1.0.7 -->
 # Revisions — VETO and ERRATUM
 
 Finished parts are never edited. The war is changed only through its chapters; a finished record is corrected only by an erratum that points at it.
@@ -9,12 +9,12 @@ Finished parts are never edited. The war is changed only through its chapters; a
 2. Find its consequences: `fie.py grep <event ID>` across the chapters and memoranda, and read the events that follow from it.
 3. Stage every chapter that must change: `python3 scripts/fie.py chapters Rnn Pk …`.
 4. Edit: the vetoed event becomes `CANCELLED`, its text saying it was vetoed. Rerun its consequences without it — every event that depended on it is altered or cancelled, and anything that now happens instead is a new event `EVRnn-k`. Update end vectors.
-5. Write `revisions/Rnn/part1.md`: what was vetoed, what changed in consequence (event by event), and the effect on the end state. If a settled position no longer holds, reverse it in a `<!-- positions -->` block. If the end state changes, edit `history/endstate.toml` (`by = "Rnn"`).
+5. Write `revisions/Rnn/part1.md`: what was vetoed, what changed in consequence (event by event), and the effect on the end state. If the change reaches an area a study covers (`studies/`; `fie.py grep` the event ID there too), add a `<!-- study <slug> -->` … `<!-- /study -->` block for it, as Part 3 does (`procedures/PART3.md`); the script appends it to the study. If a settled position no longer holds, reverse it in a `<!-- positions -->` block. If the end state changes, edit `history/endstate.toml` (`by = "Rnn"`).
 6. `python3 scripts/fie.py review Rnn --finish --push`, send the reading copy and `build/WAR-HISTORY.md`.
 
 ## ERRATUM `<what is wrong>` — correct a finished record
 
-1. Find the error: `fie.py grep`. Read the record around it.
+1. Find the error: `fie.py grep`. Read the record around it. An erratum may come from a study's *Questions for the record* (`- **Q-n** · ERRATUM · …`); cite the study and the question in `source`.
 2. Write `errata/Enn.md` (nn = the next number):
    ```
    # Enn — <one-line title>
