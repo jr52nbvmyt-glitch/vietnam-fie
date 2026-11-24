@@ -2,17 +2,22 @@
 # A memo or review that changes it sets last_changed and appends a [[history]] entry.
 # rung: a | b | c | d | e (A9), or "off" with off_ladder naming the outcome (G5).
 
-rung = "a"
-rung_label = "Collapse"
+rung = "b"
+rung_label = "Dependent survival"
 off_ladder = ""
-summary = "The Republic of Vietnam falls on the historical timeline: the Ho Chi Minh Campaign takes Saigon on 30 April 1975."
-saigon_falls = "yes"             # yes | no | open
-saigon_falls_date = "1975-04-30"
-us_combat_forces = "Withdrawn by March 1973 under the Paris Peace Accords"
-hanoi_posture = "Committed to armed reunification throughout"
-last_changed = "000"
+summary = "A reprieve of about a year. The Republic of Vietnam loses the Highlands, northern I Corps and the central coast in the spring offensive of 1975 but is not attacked at Saigon: the collapse of I and II Corps comes three to five weeks later than history's, and Hanoi puts the offensive on the capital back to the dry season of 1975–76. On 31 December 1975 the Republic holds III and IV Corps and the coast from Nha Trang south under Thieu, with no American air power; its fall is expected between February and May 1976."
+saigon_falls = "open"             # yes | no | open
+saigon_falls_date = ""
+us_combat_forces = "Withdrawn by March 1973 under the Paris Peace Accords; American combat in Indochina ended by law on 15 August 1973"
+hanoi_posture = "Committed to armed reunification throughout; in March 1975 it put the offensive on Saigon back to the dry season of 1975–76"
+last_changed = "011"
 
 [[history]]
 by = "000"
 rung = "a"
 reason = "Historical baseline before any provision"
+
+[[history]]
+by = "011"
+rung = "b"
+reason = "No Watergate: Nixon in office, FY1975 aid about $950M, Thieu refuses the withdrawal of 14 March; I and II Corps collapse three to five weeks late, the assault on Saigon falls into the rains and is put back to 1976 (EVMT01-4). Saigon stands past 30 April 1975 (b2)."

@@ -98,7 +98,7 @@
 | EV000-43 | P3 | 31 Jan – 7 Mar 1968 | The battle for Saigon and the attack on the US embassy | Saigon, Cholon and Tan Son Nhut | HIST | 000 |
 | EV000-44 | P3 | 31 Jan – 2 Mar 1968 | The battle of Hue | Hue, Thua Thien Province | HIST-ALT | 000,002,004,006 |
 | EV000-45 | P3 | 20 Feb – 31 Mar 1968 | The reinforcement request and the decision of 31 March | Saigon and Washington | HIST | 000 |
-| EV000-46 | P3 | 16 Mar 1968 | The My Lai massacre | Son My village (My Lai 4 and My Khe), Son Tinh District, Quang Ngai Province | HIST | 000 |
+| EV000-46 | P3 | 16 Mar 1968 | The My Lai massacre | Son My village (My Lai 4 and My Khe), Son Tinh District, Quang Ngai Province | CANCELLED | 011 |
 | EV000-47 | P3 | 30 Apr – 3 May 1968 | The battle of Dai Do | Dai Do and the hamlets north of Dong Ha on the Cua Viet, Quang Tri Province | HIST | 000 |
 | EV000-48 | P3 | May 1968 | The Paris talks open | Paris | HIST | 000 |
 | EV000-49 | P3 | 5 May – 15 Jun 1968 | The May offensive in Saigon | Saigon and its outskirts, and towns throughout the South | HIST | 000 |
@@ -110,16 +110,16 @@
 | EV000-54 | P3 | 1 Nov 1968 – Jan 1969 | The Accelerated Pacification Campaign and Phoenix | The countryside of South Vietnam | HIST-ALT | 000,001,002,006 |
 | EV003-5 | P3 | 1 Nov – 31 Dec 1968 | The halt measured | The coastal road and railway from Thanh Hoa to Vinh and Dong Hoi, Route 15 to the Mu Gia pass, and the ferries at Quang Khe, North Vietnam | NEW | 003 |
 | EV000-55 | P3 | 15 Nov 1968 | Commando Hunt begins | The Laotian panhandle | HIST-ALT | 000,003,005 |
-| EV010-5 | P4 | 1 Jan 1969 – 31 Dec 1971 | The sergeants of the drawdown | US Army and Marine Corps units in I, II and III Corps, especially the 23rd (Americal) Infantry Division at Chu Lai and LZ Baldy, Quang Tin and Quang Nam Provinces; the NCO academies in the United States | NEW | 010 |
+| EV010-5 | P4 | 1 Jan 1969 – 31 Dec 1971 | The sergeants of the drawdown | US Army and Marine Corps units in I, II and III Corps, especially the 23rd (Americal) Infantry Division at Chu Lai and LZ Baldy, Quang Tin and Quang Nam Provinces; the NCO academies in the United States | NEW | 010,011 |
 | EV000-56 | P4 | 20 Jan – Mar 1969 | Nixon takes office; Vietnamization | Washington and Saigon | HIST | 000 |
 | EV000-57 | P4 | 23 Feb – Mar 1969 | The post-Tet offensive | Saigon, Da Nang and installations throughout the South | HIST | 000 |
-| EV000-58 | P4 | 18 Mar 1969 – 26 May 1970 | Operation Menu | Base Areas 350, 351, 352, 353, 609 and 740, eastern Cambodia | HIST-ALT | 000,005 |
+| EV000-58 | P4 | 18 Mar 1969 – 26 May 1970 | Operation Menu | Base Areas 350, 351, 352, 353, 609 and 740, eastern Cambodia | HIST-ALT | 000,005,011 |
 | EV000-59 | P4 | 13–20 May 1969 | Hamburger Hill | Ap Bia Mountain (Hill 937), A Shau valley, Thua Thien Province | HIST | 000 |
 | EV000-60 | P4 | 8 Jun – Dec 1969 | Midway, the first withdrawals and the Nixon Doctrine | Midway Island; Guam; South Vietnam | HIST-ALT | 000,006 |
 | EV000-61 | P4 | Jul – 2 Sep 1969 | COSVN Resolution 9 and the death of Ho Chi Minh | COSVN headquarters and Hanoi | HIST-ALT | 000,001,002 |
 | EV008-6 | P4 | 1 Jul 1969 – 31 Dec 1971 | The closed loop | The Bien Hoa rebuild works and the Go Vap signal depot; the ARVN depots at Long Binh and Da Nang; the 1st and 3rd Area Logistics Commands | NEW | 008 |
 | EV000-62 | P4 | 4 Aug 1969 – Feb 1970 | The secret Paris channel opens | Paris | HIST | 000 |
-| EV000-63 | P4 | 15 Oct – 24 Nov 1969 | My Lai revealed; the Moratorium | Washington and the United States | HIST | 000 |
+| EV000-63 | P4 | 15 Oct – 24 Nov 1969 | The Moratorium; no My Lai to reveal | Washington and the United States | HIST-ALT | 000,011 |
 | EV002-6 | P4 | Jan 1970 – Sep 1971 | The Board and the Directorate in the palace | Saigon and the provinces | NEW | 002,006,008 |
 | EV007-5 | P4 | 12 Jan 1970 – 20 Jan 1971 | The list in the palace and the colonels' petition | The Presidential Palace and the Joint General Staff, Saigon; the corps and division headquarters | NEW | 007 |
 | EV008-7 | P4 | 1 Feb 1970 – 30 Jun 1971 | The handover of the call at Long My | Long My District, Chuong Thien Province; the Vi Thanh sector operations centre; the district's territorial artillery platoon | NEW | 008,010 |
@@ -132,7 +132,7 @@
 | EV000-69 | P4 | 21 Nov 1970 | The Son Tay raid | Son Tay prison camp, about 37 km west of Hanoi | HIST | 000 |
 | EV000-70 | P4 | 29 Dec 1970 | The Cooper–Church amendment | Washington | HIST | 000 |
 | EV000-71 | P4 | 8 Feb – 25 Mar 1971 | Lam Son 719 | Route 9 from Khe Sanh to Tchepone, the Laotian panhandle (Base Areas 604 and 611) | HIST-ALT | 000,003,005,007 |
-| EV000-72 | P4 | 29 Mar – 30 Jun 1971 | The war on trial at home | Fort Benning, Washington and New York | HIST-ALT | 000,002,006 |
+| EV000-72 | P4 | 29 Mar – 30 Jun 1971 | The war on trial at home | Washington and New York | HIST-ALT | 000,002,006,011 |
 | EV001-8 | P4 | 14 May – 9 Jul 1971 | The Commission placed under the Inspectorate | Saigon | NEW | 001 |
 | EV000-73 | P4 | Oct 1971 | Thieu's unopposed re-election | Republic of Vietnam | HIST | 000,001,007 |
 | EV000-74 | P5 | 30 Mar – 2 Apr 1972 | The Easter Offensive opens: the DMZ front | Quang Tri Province, from the DMZ to the Cua Viet and Camp Carroll | HIST-ALT | 000,003,007 |
@@ -150,17 +150,20 @@
 | EV000-83 | P6 | 27 Jan 1973 | The Paris Agreement | Paris | HIST | 000 |
 | EV000-84 | P6 | 28 Jan – Dec 1973 | The ceasefire that never held | The countryside of South Vietnam | HIST-ALT | 000,006 |
 | EV000-85 | P6 | 12 Feb – 29 Mar 1973 | Operation Homecoming and the last American troops | Hanoi, Clark Air Base and Saigon | HIST | 000 |
-| EV000-86 | P6 | Jun – 7 Nov 1973 | Case–Church and the end of American combat in Indochina | Washington; Cambodia | HIST-ALT | 000,005 |
+| EV000-86 | P6 | Jun – 7 Nov 1973 | Case–Church and the end of American combat in Indochina | Washington; Cambodia | HIST-ALT | 000,005,011 |
 | EV000-87 | P6 | Oct 1973 – 1974 | Resolution 21 and the North's rebuilding | Hanoi; the Laotian panhandle and the western Highlands | HIST-ALT | 000,MT01 |
 | EV000-88 | P6 | Jan 1974 | Saigon declares the war resumed; the Paracels | Saigon; the Paracel Islands | HIST | 000 |
-| EV000-89 | P6 | 25 Jan – 9 Aug 1974 | The aid cuts and the shortages | South Vietnam and Washington | HIST-ALT | 000,004,008 |
+| EV000-89 | P6 | 25 Jan – 9 Aug 1974 | The aid cuts and the shortages | South Vietnam and Washington | HIST-ALT | 000,004,008,011 |
 | EV000-90 | P6 | 12 Feb – 2 May 1974 | The ARVN's last offensives | Tri Phap, Dinh Tuong Province; Svay Rieng, Cambodia | HIST | 000 |
-| EV000-91 | P6 | 16 May – 10 Dec 1974 | The war of attrition of 1974 | The Iron Triangle; Thuong Duc, Duc Duc and Phu Loc in I Corps | HIST-ALT | 000,004,005,007,008 |
-| EV000-92 | P6 | 12 Dec 1974 – 6 Jan 1975 | The fall of Phuoc Long | Phuoc Long Province (Phuoc Binh and Song Be), III Corps | HIST-ALT | 000,005,008 |
+| EV000-91 | P6 | 16 May – 10 Dec 1974 | The war of attrition of 1974 | The Iron Triangle; Thuong Duc, Duc Duc and Phu Loc in I Corps | HIST-ALT | 000,004,005,007,008,011 |
+| EV011-1 | P6 | 5 Nov 1974 | The midterm of 1974 | Washington and the United States | NEW | 011 |
+| EV000-92 | P6 | 12 Dec 1974 – 6 Jan 1975 | The fall of Phuoc Long | Phuoc Long Province (Phuoc Binh and Song Be), III Corps | HIST-ALT | 000,005,008,011 |
+| EV011-2 | P6 | 7 Jan – 13 Mar 1975 | The message on Phuoc Long | Washington, Hanoi and Saigon | NEW | 011 |
 | EV000-93 | P6 | 10–12 Mar 1975 | The fall of Ban Me Thuot | Ban Me Thuot, Darlac Province | HIST | 000 |
-| EV000-94 | P6 | 13–30 Mar 1975 | The collapse of I Corps | Quang Tri, Hue and Da Nang | HIST-ALT | 000,006,MT01 |
-| EV000-95 | P6 | 14–25 Mar 1975 | The retreat from the Highlands | Pleiku and Kontum to the coast along Route 7, through Cheo Reo | HIST-ALT | 000,007 |
-| EVMT01-4 | P6 | 25 Mar – 14 Apr 1975 | The Politburo's calendar: Saigon before the rains | Hanoi and the roads south | HIST-ALT | MT01,008 |
-| EV000-96 | P6 | 9–21 Apr 1975 | Xuan Loc | Xuan Loc, Long Khanh Province, northeast of Saigon | HIST-ALT | 000,004,007,MT01 |
-| EV000-97 | P6 | 10–28 Apr 1975 | Thieu resigns; the last governments of the Republic | Saigon and Washington | HIST | 000 |
-| EV000-98 | P6 | 29–30 Apr 1975 | The fall of Saigon | Saigon | HIST-ALT | 000,006,008 |
+| EV000-94 | P6 | 13 Mar – 18 Apr 1975 | The defence of I Corps | Quang Tri, Hue, Quang Ngai, Quang Tin and Da Nang | HIST-ALT | 000,006,MT01,011 |
+| EV000-95 | P6 | 14 Mar – 19 Apr 1975 | The battle for the Highlands | Pleiku and Kontum; Phuoc An on Route 21; Route 19 through the Mang Yang pass to An Khe | HIST-ALT | 000,007,011 |
+| EVMT01-4 | P6 | 25 Mar – 14 Apr 1975 | The Politburo's calendar: Saigon after the rains | Hanoi and the roads south | HIST-ALT | MT01,008,011 |
+| EV000-96 | P6 | 9–21 Apr 1975 | Xuan Loc | Xuan Loc, Long Khanh Province, northeast of Saigon | CANCELLED | 000,004,007,MT01,011 |
+| EV000-97 | P6 | 10–30 Apr 1975 | The President's request; Thieu stays | Saigon and Washington | HIST-ALT | 000,011 |
+| EV000-98 | P6 | 29–30 Apr 1975 | The fall of Saigon | Saigon | CANCELLED | 000,006,008,011 |
+| EV011-3 | P6 | 1 May – 31 Dec 1975 | Operation SOUTHERN WALL and the rains | Da Nang, Qui Nhon and the central coast; Saigon; Hanoi and the strategic road | NEW | 011 |

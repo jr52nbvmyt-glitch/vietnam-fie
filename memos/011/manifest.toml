@@ -4,9 +4,9 @@
 memo = "011"
 title = "American Political Tolerance Package: the Watergate break-in never happens, a quarter of the historical draftees serve as volunteers, and the My Lai massacre does not happen"
 received = "2026-11-24"
-status = "part2"
+status = "complete"
 version = "1.0.6"
-phases_changed = []
+phases_changed = ["P3", "P4", "P6"]
 links = ["005", "010"]
 
 [deviation]

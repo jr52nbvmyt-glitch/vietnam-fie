@@ -8,10 +8,10 @@
 |---|---|---|---|---|---|
 | P1 | 7 | 15 | 4 | 3 | 15 |
 | P2 | 6 | 10 | 4 | 3 | 22 |
-| P3 | 6 | 3 | 0 | 0 | 9 |
-| P4 | 0 | 8 | 1 | 3 | 13 |
+| P3 | 6 | 4 | 0 | 0 | 8 |
+| P4 | 0 | 8 | 1 | 4 | 12 |
 | P5 | 6 | 3 | 0 | 0 | 3 |
-| P6 | 7 | 2 | 0 | 2 | 6 |
+| P6 | 8 | 3 | 1 | 3 | 5 |
 
 ## The enemy's decisions
 
@@ -200,25 +200,25 @@ From May 1974 the PAVN took the initiative with a series of "strategic raids" de
 
 On 12 December 1974 the PAVN 4th Corps under Hoang Cam, with the 7th Division, the new 3rd Division and independent regiments including the 141st, 165th, 201st and 271st, and two armoured companies with 14 T-54s, attacked Phuoc Long Province on the Cambodian border. It was defended mainly by Regional Force battalions, reinforced by the 1st and 2nd Battalions, 7th Regiment and the 1st Battalion, 9th Regiment of the 5th Division and the 81st Airborne Ranger Battalion²⁷.
 
-### The collapse of I Corps
-*13–30 Mar 1975 · Quang Tri, Hue and Da Nang · P6 · changed from history · EV000-94*
+### The defence of I Corps
+*13 Mar – 18 Apr 1975 · Quang Tri, Hue, Quang Ngai, Quang Tin and Da Nang · P6 · changed from history · EV000-94*
 
-On 13 March Thieu ordered Truong to give up most of I Corps and withdrew the Airborne Division towards Saigon as a reserve. On 20 March he ordered Truong to hold only Da Nang; on 29 March he ordered him to turn back and retake it, which Truong refused²⁸.
+Historically, on 13 March Thieu ordered Truong to give up most of I Corps and withdrew the Airborne Division towards Saigon as a reserve; on 20 March he ordered him to hold only Da Nang; on 29 March he ordered him to turn back and retake it, which Truong refused²⁸. The contradictory orders, given as the PAVN 2nd Corps with the 304th, 324th and 325th Divisions attacked from the north and west and the 2nd Division and 52nd Brigade struck in Quang Ngai and Quang Tin, broke I Corps; Hue was abandoned on 25 March, about 6,000 soldiers of the 2nd Division deserted on 28 March, and the PAVN enter
 
-### The Politburo's calendar: Saigon before the rains
+### The battle for the Highlands
+*14 Mar – 19 Apr 1975 · Pleiku and Kontum; Phuoc An on Route 21; Route 19 through the Mang Yang pass to An Khe · P6 · changed from history · EV000-95*
+
+Historically, on 14 March at Cam Ranh, Thieu ordered Phu to abandon Pleiku and Kontum and pull II Corps back to the coast; the chief of the Joint General Staff, General Cao Van Vien, warned against Route 19 because of the French disaster at the Mang Yang Pass in 1954, and Thieu chose Route 7, a disused road in poor condition²⁹. The retreat was ordered verbally and kept secret; some 400,000 civilians joined the columns, the PAVN ambushed them near Cheo Reo, and only the 6th Ranger Battalion and the 19th Armoured Cavalry Squadron arrived in good order; an estimated 155,000 civilians were kil
+
+### The Politburo's calendar: Saigon after the rains
 *25 Mar – 14 Apr 1975 · Hanoi and the roads south · P6 · changed from history · EVMT01-4*
 
-The date of the fall of Saigon was set in Hanoi between 25 March and 14 April, and it was set by the rains and by the road. On 25 March, with Hue abandoned and the Highlands column destroyed, the Politburo resolved to take Saigon before the rainy season, which in the southern provinces begins in May and turns the lowlands around the capital to mud; on 31 March, with Da Nang taken, it decided to do it in April; and on 14 April it named the operation the Ho Chi Minh Campaign.
+Historically the date of the fall of Saigon was set in Hanoi between 25 March and 14 April, and it was set by the rains and by the road. On 25 March, with Hue abandoned and the Highlands column destroyed, the Politburo resolved to take Saigon before the rainy season, which in the southern provinces begins in May and turns the lowlands around the capital to mud; on 31 March, with Da Nang taken, it decided to do it in April; and on 14 April it named the operation the Ho Chi Minh Campaign.
 
-### Xuan Loc
-*9–21 Apr 1975 · Xuan Loc, Long Khanh Province, northeast of Saigon · P6 · changed from history · EV000-96*
+### Operation SOUTHERN WALL and the rains
+*1 May – 31 Dec 1975 · Da Nang, Qui Nhon and the central coast; Saigon; Hanoi and the strategic road · P6 · new · EV011-3*
 
-On 9 April the PAVN 4th Corps under Major General Hoang Cam, with the 6th, 7th and 341st Divisions and tanks and artillery, attacked Xuan Loc, the road junction northeast of Saigon on Route 1. The town was held by the ARVN 18th Division under Brigadier General Le Minh Dao, with the 1st Airborne Brigade, armoured units, Rangers and Regional Forces, and air support from Bien Hoa and Tan Son Nhut²⁹.
-
-### The fall of Saigon
-*29–30 Apr 1975 · Saigon · P6 · changed from history · EV000-98*
-
-By late April five PAVN corps, Group 232 and the 1st, 2nd, 3rd and 4th Corps, with 15 infantry divisions and three tank regiments, encircled Saigon in the Ho Chi Minh Campaign³⁰. Rockets and artillery hit Tan Son Nhut on the morning of 29 April; two US Marine guards, Corporal Charles McMahon and Lance Corporal Darwin Judge, were killed, the last American servicemen killed in action in Vietnam.
+The Republic that entered the rains of 1975 had lost the Highlands, Quang Tri, Thua Thien, Quang Ngai, Quang Tin and Phuoc Long, about a third of its army's infantry and most of the heavy equipment of II Corps and the 1st and 2nd Divisions; it held III and IV Corps whole, Da Nang and the Quang Nam lowlands, and the coast from Qui Nhon south³⁰. Its general reserve, the Airborne and Marine Divisions, was at Da Nang, five hundred kilometres from the capital the next offensive would aim at.
 
 ## Settled positions about the enemy
 
@@ -242,6 +242,7 @@ By late April five PAVN corps, Group 232 and the 1st, 2nd, 3rd and 4th Corps, wi
 - **POSCP02-1** · vars: ARVN.effectiveness, ENEMY.engagement_control · In this war the ARVN battalion of 1966–68 stands at the cap of the bands through four memoranda (007, 009, 010 and 004 before them), and the battalions broken in 1966–67 are about two-fifths to a half fewer than history's, a judgment whose factors overlap and whose upper bound is the "about half" of 010; any further provision on the battalion is measured in that running sum and not in the band, and none of it changes which fights the enemy accepts (CP02 §3, §5)
 - **POSCP02-2** · vars: ENEMY.engagement_control, POP.civilian_harm, VCI.strength · Every provision since 004 that improved the RVNAF below the company was answered by the enemy moving his war to what the provision did not reach: the relief, the borrowed district, the mine in the hamlet, the untrained self-defence group; the provisions' gain in the army is paid for in part by the unprotected population, and every later provision touching the army or the posts names the target the enemy moves to and estimates the cost there (CP02 §1, §6; EV008-4, EV009-2, EV009-4, EV010-4)
 - **REVR01-1** · reverses POSCP02-1 · vars: ARVN.effectiveness, ENEMY.engagement_control · The judgment of POSCP02-1 on the war stands: the ARVN battalions broken in 1966–67 are about two-fifths to a half fewer than history's, a judgment whose factors overlap and whose upper bound is the "about half" of 010, and none of it changes which fights the enemy accepts. What is reversed is its method: further provisions on the ARVN battalion are no longer measured outside the variable because the variable is capped. They are measured on the v1.0.6 scale, in the range of ARVN effectiveness and the facet they act on, and the running sum feeds that range (R01)
+- **REV011-1** · reverses POSMT01-3 · vars: HANOI.will, PAVN.strength_south, ARVN.effectiveness, ENEMY.engagement_control · The method of POSMT01-3 stands: the date of the fall is derived from Hanoi's calendar, and only a delay of about three weeks or more in the collapse of I and II Corps moves it. What is reversed is the date. In this war the collapse came three to five weeks late, because Thieu gave no withdrawal order on 13–14 March 1975; the Politburo put the assault on Saigon back to the dry season of 1975–76, and the fall is expected between February and May 1976 (011; EVMT01-4, EV000-94, EV000-95)
 
 ## Notes
 
@@ -273,5 +274,5 @@ By late April five PAVN corps, Group 232 and the 1st, 2nd, 3rd and 4th Corps, wi
 26. Source: "1974 in the Vietnam War" — Wikipedia, https://en.wikipedia.org/wiki/1974_in_the_Vietnam_War — Paracels, ammunition and fuel cuts, Svay Rieng, Iron Triangle, aid levels, Murray's warnings, I Corps battles, Nixon's resignation, Hanoi's strategy conference, 1974 casualties
 27. Source: "Battle of Phuoc Long" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Phuoc_Long — dates, PAVN 4th Corps, ARVN defenders, losses, absence of US response
 28. Source: "Hue–Da Nang Campaign" — Wikipedia, https://en.wikipedia.org/wiki/Hue%E2%80%93Da_Nang_Campaign — Thieu's orders to Truong, fall of Quang Tri, Hue and Da Nang, PAVN 2nd Corps, ARVN losses
-29. Source: "Battle of Xuan Loc" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Xu%C3%A2n_L%E1%BB%99c — 18th Division, PAVN 4th Corps, BLU-82, withdrawal, casualties by source
-30. Source: "Fall of Saigon" — Wikipedia, https://en.wikipedia.org/wiki/Fall_of_Saigon — PAVN corps around Saigon, Thieu's resignation, Huong and Minh, Tan Son Nhut, Frequent Wind, Martin's departure, the palace gates, surrender
+29. Source: "Battle of Ban Me Thuot" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Ban_Me_Thuot — Campaign 275, PAVN divisions, deception, ARVN defenders, losses, Thieu's decision at Cam Ranh, the Route 7 retreat
+30. The exercise's own judgment (memo 011), not a measured figure.
