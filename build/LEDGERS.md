@@ -18,6 +18,8 @@
 - P001a (memo 001) pushes +1 — Titled families and land committee members in contested hamlets become targets of the enemy's security sections (F001-8)
 - P002a (memo 002) pushes -1 — Arrest on evidence and detention under review replace part of the military's sweep-and-detain; offset in part by enemy terror against resident constables
 - P003b (memo 003) pushes +1 — Night movement tracks in the Delta and the coastal plain are fired on under the historical rules; a radar cannot tell a farmer's sampan from a VC supply sampan
+- P005b (memo 005) pushes -1 — Point targets no longer need area boxes; offset by more targets struck
+- P005c (memo 005) pushes -1 — Smaller bombs on single aimpoints instead of a carpet of 108
 
 ## POP.gvn_legitimacy — Legitimacy of the Saigon government in the countryside
 *Higher means more rural acceptance of the GVN.*
@@ -128,6 +130,8 @@
 - P003b (memo 003) depends — An enemy that learns moving-target radar exists moves under canopy, in small groups and in rain, and stops when the aircraft is overhead
 - P004a (memo 004) depends — The rifle acts only in a contact; the enemy still chooses most contacts
 - P004c (memo 004) depends — A base of fire fixes only an enemy who has accepted the fight
+- P005c (memo 005) pushes -1 — The siege of a measured position becomes the enemy's worst battle; he loses one way of choosing the field, not the choice
+- P005c (memo 005) depends — Hugging tactics and the enemy's choice of battle set where close bombing can apply
 
 ## HANOI.will — Hanoi's commitment to armed reunification
 *Higher means more commitment.*
@@ -138,6 +142,14 @@
 *Higher means more throughput capacity on the Trail.*
 
 - P003b (memo 003) depends — Moving-target radar sees trucks only where the Trail has trucks and open road; the 1964 Trail is mostly porters under canopy
+- P005b (memo 005) pushes -1 — Chokepoints and fords cut reliably in all weather; repair capacity and redundancy blunt it
+- P005b (memo 005) depends — The Trail's redundancy decides whether a cut chokepoint matters
+- P005d (memo 005) depends — A closed waterway matters only as far as the road net cannot carry what the boats did
+
+## TRAIL.tonnage_arriving — Tonnage arriving in the South
+*Higher means more tonnage reaching RVN and the border base areas.*
+
+- P005d (memo 005) pushes -1 — Rivers and coastal lighterage of the North's panhandle and Laotian waterways closed to boats
 
 ## INFIL.sea — Seaborne and Sihanoukville infiltration
 *Higher means more supply arriving by sea or through Cambodian ports.*
@@ -149,11 +161,13 @@
 *Higher means more useful to the enemy.*
 
 - P003b (memo 003) depends — From South Vietnamese airspace the radar looks 150–200 km into Cambodia and sees the road traffic from Sihanoukville to the border base areas; what it sees there cannot be attacked under the present constraints, but the argument over how the sanctuary is supplied is settled by evidence (F003-3, F003-17)
+- P005d (memo 005) depends — Sihanoukville and the Mekong into Cambodia are neutral waters
 
 ## SANCT.laos — Value of the Laotian sanctuary to the enemy
 *Higher means more useful to the enemy.*
 
 - P003b (memo 003) depends — Tracks in Laos can be struck only within the Laotian rules; standoff radar can see into the sanctuary but cannot authorise action there
+- P005d (memo 005) depends — Laotian waterways may be mined from the air; the ground sanctuary stays
 
 ## FIND.main_force — Finding the main force
 *Higher means better ability to locate PAVN and VC main-force units.*
@@ -162,6 +176,9 @@
 - P003b (memo 003) pushes +1 — Persistent moving-target radar over open ground, roads, rivers and canals: shows vehicle and boat movement, and column movement in the open, around the clock and in any weather; blind to whatever moves under canopy
 - P004a (memo 004) depends — Firepower in the squad is wasted on empty jungle; it needs the enemy found
 - P004b (memo 004) depends — Long-range precision fire needs a target seen at range: open ground, not canopy
+- P005a (memo 005) depends — A precise bomb needs a located target; the bomber finds nothing under canopy
+- P005b (memo 005) depends — Coordinates of the target are the binding input
+- P005c (memo 005) depends — Close support needs a coordinate the 1965 infantryman cannot generate
 
 ## FIND.vci — Identifying the VCI
 *Higher means better ability to identify VCI members inside the population.*
@@ -177,6 +194,7 @@
 - P002a (memo 002) pushes -1 — Special Branch counter-intelligence and vetting against an enemy that has had agents in the police and the RVNAF for a decade; partial, and itself a target
 - P002a (memo 002) depends — A Special Branch penetrated by the enemy hands him its informants
 - P003a (memo 003) depends — Anything shared with the Joint General Staff can reach the enemy; the product is only as secret as the least secure office that reads it
+- P005a (memo 005) depends — B-52 strikes in the South need GVN clearance; a penetrated clearance chain warns the target whatever the bomb
 
 ## FIX.capability — Fixing an enemy who chooses whether to fight
 *Higher means better ability to hold an enemy in place once found.*
@@ -185,6 +203,7 @@
 - P003b (memo 003) depends — A moving column on a road is a target for minutes; without a force able to reach it, the track is history
 - P004b (memo 004) pushes +1 — Precise fire at 300–800 m in paddy, on the coastal plain, from hilltop and firebase perimeters; kills the enemy's own snipers, machine gunners and leaders at ranges the AK cannot answer
 - P004c (memo 004) pushes +1 — Belt-fed base of fire inside the squad: the ARVN squad can hold an enemy in contact with 200-round belts instead of a 20-round BAR
+- P005c (memo 005) pushes +1 — Heavy bombs placed hundreds rather than thousands of metres from friendly troops, when the coordinate is good
 
 ## STRIKE.responsiveness — Speed from detection to effect
 *Higher means faster fires on located targets.*
@@ -192,23 +211,31 @@
 - P003b (memo 003) pushes +1 — A live track passed to a strike controller by line-of-sight or satellite link (E01) cuts the time from detection to ordnance where an aircraft is already airborne; it does nothing where the strike asset is an hour away
 - P003a (memo 003) depends — A location from the U-2 is worth what can be done with it in the hours it stays true
 - P003b (memo 003) depends — A track is worth a strike aircraft within twenty to forty minutes of it; the historical force must be airborne or on strip alert to use it
+- P005a (memo 005) pushes +1 — Unrefuelled reach from Guam and fewer tankers shorten the planning chain; still hours, not minutes
+- P005c (memo 005) depends — The bomb is fast; the B-52 mission planning chain is not
 
 ## AIR.north_effect — Effect of the air campaign against the North
 *Higher means more effect on the North's capacity and will.*
 
 - P003a (memo 003) pushes +1 — Target folders, radar and EO imagery of rail, bridges and ports in the North, and same-day damage assessment, so fewer sorties are wasted on targets already down or never there
 - P003b (memo 003) pushes +1 — Under the standing condition (E01) an orbit over the Gulf of Tonkin, outside the SA-2 belt, watches the coastal road and rail net from Vinh to Thanh Hoa and the lighter traffic out of Haiphong in any weather; armed reconnaissance is sent to what is moving rather than to where traffic used to be
+- P005a (memo 005) pushes +1 — Twenty independently aimed 2,000 lb weapons a sortie in any weather against fixed targets, where Washington allows
+- P005b (memo 005) pushes +1 — Bridges, ferries, depots and power plants struck in monsoon cloud with few sorties
+- P005d (memo 005) pushes +1 — Inland waterways and coastal shipping south of the 20th parallel mined persistently
 
 ## AIR.north_defences — Air defence density over the North
 *Higher means denser and more lethal air defence.*
 
 - P003a (memo 003) depends — The U-2 is safe from guns and MiG-17s at 70,000 ft; it is not safe from the SA-2 once the SA-2 arrives
 - P003b (memo 003) depends — At 60,000 ft the RQ-4 is inside the SA-2 envelope; once the North has SA-2s it can look into the North only from outside their range
+- P005a (memo 005) depends — SA-2 and MiG-21 density sets loss rates over the North
+- P005b (memo 005) depends — The 15-mile glide falls inside the SA-2's reach; standoff protects against guns, not missiles
 
 ## AIR.losses — US aircraft losses
 *Higher means more aircraft lost.*
 
 - P003a (memo 003) pushes -1 — An electronic order of battle of the North's radars, and later of its SA-2 sites, built before the strike forces need it; routes planned around what is known rather than learned by losses
+- P005a (memo 005) pushes -1 — Modern defensive suite and release outside the light AAA envelope; SA-2 still lethal
 
 ## ARVN.effectiveness — ARVN combat effectiveness
 *Higher means more effective ARVN units in combat.*
@@ -241,6 +268,7 @@
 *Higher means more able to fight, maintain and supply itself without US combat support.*
 
 - P004a (memo 004) depends — M855A1, optics, batteries and URG-I parts all come from the United States; the RVNAF cannot make or repair them at depth, so the rearmament deepens the supply dependence that 1973–75 punished
+- P005c (memo 005) pushes -1 — Defence of besieged positions is built around an American bomber and American coordinates the RVNAF can never own
 
 ## RFPF.effectiveness — Regional and Popular Forces
 *Higher means more effective territorial forces.*
@@ -276,6 +304,7 @@
 
 - P004a (memo 004) pushes -1 — Fewer men lost in the first seconds of the meeting engagement; the rifle that does not jam in the Hill 881 sense
 - P004a (memo 004) depends — The fraction of US deaths taken from small arms in the first seconds of contact, against the much larger fraction from mines, booby traps, mortars and RPGs that no rifle touches
+- P005c (memo 005) pushes -1 — Closer, faster heavy fire in defence of besieged positions
 
 ## US.unit_quality — US unit quality
 *Higher means better US units.*
@@ -314,6 +343,7 @@
 - P002b (memo 002) depends — Washington must accept that a chief who will not falsify returns reports bad news
 - P003a (memo 003) depends — A lost U-2 is a public event; the 1960 and 1962 losses are in every politician's memory
 - P004a (memo 004) pushes +1 — Small: no 1967 rifle scandal, no Ichord subcommittee hearings, no letters home about a rifle that jams; fewer dead in the first seconds of contact
+- P005a (memo 005) depends — Every expansion of B-52 targeting is a Washington decision
 
 ## US.credibility_gap — The credibility gap
 *Higher means wider gap between what MACV reports and what the press reports.*
@@ -321,11 +351,19 @@
 - P001b (memo 001) pushes -1 — Independent musters and audits give MACV strength and expenditure figures that do not pass through the reporting chain (G-10)
 - P002b (memo 002) pushes -1 — An Inspectorate that verifies province reporting gives MACV a check on figures produced by the men rated on them (A13)
 
+## INTL.communist_aid — Soviet and Chinese aid to the North
+*Higher means more aid.*
+
+- P005b (memo 005) pushes +1 — Fixed infrastructure that dies in one strike is replaced by Soviet and Chinese pontoon bridging, trucks, AAA and engineer troops
+- P005d (memo 005) depends — Haiphong mining prohibited until 1972 under the modelled constraint
+
 ## INTL.chinese_intervention_risk — Risk of Chinese intervention
 *Higher means greater risk.*
 
 - P003a (memo 003) depends — SIGINT tracks along the Chinese border and any loss over or near China carry a political cost
 - P003b (memo 003) depends — A Gulf of Tonkin orbit, reachable only by satellite control (E01), runs within radar sight of Hainan; a loss there is an incident with China as well as with Hanoi
+- P005b (memo 005) depends — Strikes near the Chinese border and on Hanoi remain constrained
+- P005d (memo 005) depends — Mining near the Chinese coast and of Soviet-flag shipping is politically bounded
 
 ## SUBVERT.defection — Genuine enemy defection
 *Higher means more real defectors from the VC and PAVN.*

@@ -4,7 +4,7 @@
 memo = "005"
 title = "B-52J Stratofortress replacing every B-52, with GBU-31 and GBU-38 JDAM and Quickstrike mines"
 received = "2026-11-24"
-status = "part1"
+status = "part2"
 version = "1.0.5"
 phases_changed = []
 links = ["003"]
@@ -189,3 +189,37 @@ note = "Laotian waterways may be mined from the air; the ground sanctuary stays"
 provision = "P005d"
 var = "SANCT.cambodia"
 note = "Sihanoukville and the Mekong into Cambodia are neutral waters"
+
+# ---------------------------------------------------------------- added in Part 2
+[[push]]
+provision = "P005b"
+var = "INTL.communist_aid"
+band = 1
+note = "Fixed infrastructure that dies in one strike is replaced by Soviet and Chinese pontoon bridging, trucks, AAA and engineer troops"
+
+[[push]]
+provision = "P005c"
+var = "ENEMY.engagement_control"
+band = -1
+note = "The siege of a measured position becomes the enemy's worst battle; he loses one way of choosing the field, not the choice"
+
+[[push]]
+provision = "P005c"
+var = "ARVN.self_sufficiency"
+band = -1
+note = "Defence of besieged positions is built around an American bomber and American coordinates the RVNAF can never own"
+
+[[depend]]
+provision = "P005a"
+var = "INTEL.penetration"
+note = "B-52 strikes in the South need GVN clearance; a penetrated clearance chain warns the target whatever the bomb"
+
+[[depend]]
+provision = "P005b"
+var = "AIR.north_defences"
+note = "The 15-mile glide falls inside the SA-2's reach; standoff protects against guns, not missiles"
+
+[[depend]]
+provision = "P005d"
+var = "TRAIL.capacity"
+note = "A closed waterway matters only as far as the road net cannot carry what the boats did"

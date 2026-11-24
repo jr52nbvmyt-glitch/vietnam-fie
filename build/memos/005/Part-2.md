@@ -1,0 +1,361 @@
+# Memorandum 005 — Part 2 of 3 · §2 Integration and second-order effects · §3 Changes to existing forces
+
+
+## §2 Part A — Integration
+
+The short version is this. The B-52J and its weapons turn the picture Memorandum 003 gave this command into destruction, wherever the thing in the picture holds still and Washington lets the bomber fly to it. Everything that follows is a qualification of one of those three conditions: that the target can be measured, that it will not move, and that the aircraft may go there. Where all three hold, at a bridge in the panhandle in the monsoon or a trench line 600 metres from a Marine perimeter, the change is very large. Where any one fails, in a regiment's camp under the canopy, in a hamlet, over Hanoi before 1972, the J is a more economical B-52D and nothing more.
+
+### Functional systems
+
+**STRIKE — joined and transformed in one class of target.** The J is a strike platform, and the GBU-31 and GBU-38 are what make it new. The historical Arc Light cell dropped a carpet on a box drawn from intelligence hours or days old, aimed by a navigator's radar or by an MSQ-77 Combat Skyspot site on the ground. The J's cell can drop that carpet, at about half the old density, or it can put twenty 2,000 lb bombs on twenty separate measured points, or thirty to forty 500 lb bombs on as many points, in any weather and from above the light flak¹. That second capability did not exist anywhere in the 1964–72 force. The laser-guided bombs of 1972 needed clear air and a designator over the target; the J needs neither.
+
+**INTERDICT — strengthened at the fixed points, untouched in between.** The Trail and the North's southern transport net are long ribbons of road, river and track with a small number of points where everything must cross: the passes at Mu Gia and Ban Karai, the ferries at Quang Khe and Ben Thuy, the bridges on Route 1A and Route 15, the fords on the Xe Bang Fai. The GBU-31 makes every one of those points that can be measured a point that can be cut in one night in any weather. The Quickstrike fields close the rivers and estuaries to steel hulls¹. Neither touches the ribbon between the points, where porters, bicycles, trucks under trees and bamboo rafts carry the load.
+
+**FIX — made newly viable in one kind of battle, the siege.** In the open war the enemy chooses whether to fight and the J changes nothing about that choice. In the siege he has made the choice already: he has closed on a fixed position, dug, and stayed. The GBU-38 lets the bomber work a few hundred metres from the defenders instead of the one to three kilometres the historical safety rules required¹. That is the only place where this provision touches FIX, and it is a large one.
+
+**SUSTAIN — lightened outside the country, slightly loaded inside it.** The F130 engines and the unrefuelled reach from Guam take the B-52 off the tanker fleet for missions to the South. About a hundred new spaces in the country, for the coordinate cell and the enlarged liaison element, are trivial against no ceiling¹. The real sustainment load is a new one, coordinate production, and it falls on the imagery and analysis people who were already the scarcest specialists in the command.
+
+**FIND — not joined, but made worth more.** The J finds nothing under canopy¹. Its radar and pod see bridges, roads and open ground. What it does is raise the value of every measured coordinate that FIND produces, and above all of the radar and electro-optical imagery of the U-2S and the Global Hawk, which under the standing condition carries GPS-accurate positions². FIND's product was a picture; now part of it is a target list.
+
+**SECURE, ADVISE, SUBVERT — not joined.** The bomber has no role in the hamlets. Its effects on them are indirect and run through two channels only: fewer area strikes near the populated country, and the deepening of the Republic's dependence on American air power. Both are taken up below.
+
+**F005-1** The hinge of this memorandum is not the bomber but the coordinate, and the coordinate comes from Memorandum 003. Under the standing condition the U-2S's ASARS-2A radar and SYERS-2C camera, and the Global Hawk's MP-RTIP radar in its imaging mode, produce pictures whose positions are true to the GPS datum². A mensuration analyst at Tan Son Nhut can take a radar image of the Quang Khe ferry slips or the approaches to the Ban Karai pass and read off coordinates good to a few metres³. Those coordinates go by satellite to a J that is already airborne from Andersen, and the bombs fall through cloud on the slips. Without Memorandum 003 the J would be bombing coordinates read from 1:50,000 maps that are 100–300 metres wrong in the mountains¹, and the GBU-31's 5-metre accuracy would be wasted on the map's error. With it, the two provisions together are a precision strike system against fixed targets that the United States did not possess until the late 1990s. Neither half is worth much without the other: imagery without a weapon that can use its accuracy was a better damage-assessment service; a GPS weapon without measured coordinates is a well-navigated unguided bomb.
+
+**F005-2** At a besieged base the GBU-38 and the squad weapons of Memorandum 004 divide the ground between them. Inside about 400 metres, the danger-close distance for a 500 lb bomb in the open, the fight belongs to the infantry: the M249s on the perimeter, the M110A2 marksmen working the approach trenches under flares, the M4A1s at the wire⁴. Beyond 400 metres, every trench, gun pit, mortar position and bunker that the radar or the camera has measured is a target for a single bomb, by day or night, in cloud. The historical siege had a gap between the infantry's reach and the bombers' safe distance: at Khe Sanh the B-52 boxes were first held three kilometres out and only later brought in to about one¹, and the PAVN dug its approaches in the band between. That band now shrinks to the ground between 400 metres and the wire, where the squad's fire is at its best.
+
+**F005-3** Every B-52 strike in the South needs clearance from the Vietnamese authorities as well as the American, because the province chief must certify that no friendly population or forces are in the box⁵. Two earlier provisions act on this chain. The merit-selected province chief of Memorandum 002 holds the clearance and is more likely to know what is in his province and to give an honest answer⁶. But the clearance chain is a known leak: prisoners and documents of the historical war show strike warnings reaching the target hours before the bombers⁷, and nothing in this memorandum closes the leak. The J's weapons kill what is at the coordinate when they arrive. If the regiment was warned, the coordinate is empty. That is true of the carpet and of the precision bomb alike, and it bounds the J's value against main-force camps in the South more tightly than any technical limit.
+
+### Compound pairings
+
+The pairings that produce compound effects are few and strong. The J and its munitions pair with the reconnaissance aircraft of Memorandum 003, which provide the coordinates, and at the siege with the squad weapons of Memorandum 004 and the province chief of Memorandum 002. With the land reform, the anti-corruption programme and the police they do not pair; their only contact with the countryside is through fewer area strikes in it.
+
+**Interactions with earlier provisions**
+
+- P005b, P005c × P003a: U-2S radar and camera imagery, GPS-true under the standing condition, is measured into coordinates for bridges, ferries, depots, AAA sites and siege works; the JDAM turns 003's picture into a target list
+- P005c × P003b: the Global Hawk's SAR spot mode images a siege every night and shows the new trenches; its moving-target radar shows the supply traffic to them; the measured positions go to the J by satellite
+- P005d × P003b: the Gulf watch and the panhandle watch count the traffic on the mined rivers and estuaries, see sweeping begin, and cue reseeding; the mine's effect is measured, not claimed
+- P005c × P004b, P004c: at the siege the squad holds the wire to 400 m and the GBU-38 works beyond; the gap the historical siege left between rifle and bomb shrinks
+- P005a, P005c × P002b: the merit-selected province chief clears B-52 strikes in his province; a better answer about what is in the box, but the clearance chain still leaks
+
+### The find-to-fix chain against the main force
+
+**The J sits at the far end of the chain and does not shorten its weakest link.** The chain runs from finding a regiment, to holding it where it was found, to bringing fire on it. In this war the first two links decide, and the enemy controls both: he lives under triple canopy, moves at night, and accepts battle when he chooses². The settled position stands that airborne reconnaissance finds his movement in the open and his headquarters' transmitters, never his regiments under canopy. The J adds nothing to finding. It adds nothing to fixing except at the siege.
+
+Consider what the PAVN 304th Division's base camp in the Chu Pong massif looks like to this provision in the autumn of 1965. The U-2S can photograph the massif, and its radar can map the trails at the canopy's edge². The camp itself, its bunkers, cooking fires and stores, is under the trees. A J can put twenty GBU-31s on twenty coordinates in the massif in the time it takes a historical B-52 cell to lay its box, but nobody can say which twenty coordinates. The historical answer was to carpet the area where the intelligence placed the camp, and the J can still do that, with half the bombs a D could carry per aircraft¹. A carpet laid with GPS navigation falls where it was aimed, which is a modest improvement on a box laid by radar offset from a known point⁸. It is not a change in what the enemy loses.
+
+The chain changes in two places. The first is the main force's fixed infrastructure in the sanctuaries and the border areas: depots, hospitals, headquarters bunkers and truck parks that are fixed long enough for a camera, a direction-finding fix or a prisoner to place them. A prisoner who says the B-3 Front's forward headquarters is in a particular valley gives the command an area. A U-2S radar image showing new roofing and spoil in that valley under broken canopy gives it a coordinate. The GBU-31 then does what the historical carpet did not reliably do, which is to hit the bunker rather than the ground around it. The second place is the siege, where the enemy has fixed himself. Everywhere else, finding remains the war's acute problem and the J waits on it.
+
+### The identify-to-neutralise chain against the VCI
+
+**There is no effect, and I want that stated without decoration.** The Viet Cong infrastructure is a parallel government made of people who live in hamlets, pay taxes to the Front and attend its meetings, and are distinguishable from their neighbours only by what they know and do. A 2,000 lb bomb that lands within five metres of its coordinate is exactly as useless against them as one that lands within five hundred. Nothing in this memorandum identifies a cadre, and nothing in it should ever be pointed at a hamlet to neutralise one.
+
+The only path from this provision to the infrastructure is indirect, through refugees. Historical Arc Light boxes in the populated fringes of War Zones C and D and in the coastal provinces of II Corps drove families off land that the enemy then no longer needed to tax, and into camps and towns where his cadres followed them⁹. Precision weapons on point targets displace fewer people than carpets on areas. But the J's precision force is small (about 800–1,400 guided sorties a year against Arc Light's 800–1,800 a month¹), its targets are mostly in the mountains and the sanctuaries, and the carpet goes on in the South. The change to the refugee flow is real and small, and it does not touch the identify-to-neutralise chain at all. The police, the Special Branch and the census of Memorandum 002 remain the only instruments this command has against the infrastructure⁶.
+
+### Dependence on SECURE
+
+**The J's effect on the countryside is a function of who holds it, and it does not change who holds it.** B-52 strikes in the South fall in three kinds of country. In the empty mountains and the base areas, security does not enter into it. In the contested fringes, where people still farm under the Front's administration, the clearance depends on the province chief's knowledge of who is in the box, which depends on whether his police and territorials know the ground at night. In the populated lowlands, B-52s should not strike at all, and the historical rules kept them away from most of it¹⁰.
+
+The provision's contribution to hamlet security is negative or nil in each case. The bombs do not hold a hamlet. They remove the enemy's fixed assets in the mountains, which makes his life harder, but the main force regenerates in Laos and Cambodia and his local forces need nothing the J can find. A district chief in Hau Nghia in 1966, watching his Popular Forces platoon at the Duc Hoa post, will see no difference at all from this memorandum, unless a J strike near his district has made his villagers refugees or saved them from becoming refugees. Everything in this provision that matters in the South happens at the border and at the bases, not in the hamlets.
+
+### The ADVISE cluster
+
+**This provision feeds the ARVN's ability to hold a position and starves its ability to hold one alone.** Nothing in the J transfers to the Vietnamese Air Force: the J itself, the GBU-31 and the GBU-38 cannot be released from any VNAF aircraft, none of which has a 1760 interface. Every request for a J strike from an ARVN commander goes through his American adviser¹. The coordinate cell is American, the imagery is American, the satellite link is American, the bombers fly from Guam and Thailand.
+
+What the provision does for the ARVN is make its besieged positions far harder to take, as long as the Americans are there. An ARVN Ranger battalion at a border camp like Plei Me or Ben Het, or a division at An Loc in 1972, holds its trenches against a PAVN division whose siege works are struck one by one at night in cloud. Its soldiers learn that a position can be held against odds if the bombers come. That lesson is true, and under the modelled constraints it stops being true on the day the Case–Church amendment ends American combat air operations in Indochina in August 1973. The ADVISE cluster is starved in the most dangerous way: by success that builds a defensive doctrine around a capability the Republic cannot own. That is the counter-directional finding of this memorandum, and it is the sharpest case yet of the dependence that Memorandum 004 found in the small-arms ammunition.
+
+### Employment concepts
+
+The provisions are used in nine ways that endure and four that were tried and stopped. The concepts below describe a working week of the J force; their tempo is limited by three things in turn: coordinates first, kits second, and airframes on the ramps at Andersen and U-Tapao last.
+
+#### EC005-1 · The precision cell inside Arc Light
+
+**The standard Arc Light mission becomes a mixed cell.** Historically a cell was three B-52s flying in trail, dropping together on a single box. From 1965 the J force flies cells in which one aircraft carries GBU-31s or GBU-38s against measured points and two carry unguided Mk 82s against the area around them¹¹. The guided aircraft takes the bunkers, the gun pits and the stores that imagery has placed; the carpet takes what nobody could place.
+
+**Profile.** From Andersen the cell flies about 2,600 miles to targets in the South without a tanker¹², about five hours each way at cruise, for a mission of eleven to twelve hours¹³. Coordinates are loaded before take-off and can be updated by satellite up to about an hour before release. The cell drops from about 30,000–35,000 feet. From U-Tapao, when it opens, missions to the South run three to four hours¹⁴. **Cycle rate.** About one sortie every two days per aircraft from Guam, about one a day from U-Tapao¹⁵. On a force of about 50–70 Js in 1966–67¹, that is about 25–35 cells a week with one guided aircraft each. **Minimum package.** One J with kits and a measured target list of at least ten points; without measured points the guided aircraft flies with Mk 82s and the cell is an ordinary, half-density Arc Light cell.
+
+#### EC005-2 · The bridge night
+
+**The J goes to a chokepoint the imagery has measured and cuts it in one pass.** Targets are the crossings of the North's southern transport net and the panhandle roads in Laos, where the B-52 was historically authorised to fly: the passes and the road approaches in Laos under the Steel Tiger authorities, and the southern edge of the North above the DMZ where B-52s historically struck. A typical target set is the Quang Khe ferry slips and the bridges on Route 15 toward the Mu Gia pass.
+
+**Profile.** One J, twenty GBU-31s, five to eight crossings struck on one pass, two to four weapons a crossing¹⁶. Release from 35,000–40,000 feet and up to fifteen miles from the target, outside the 37mm and 57mm guns of the crossings. The U-2S or the Global Hawk images the crossings within 24 hours for damage assessment². **Cycle rate.** In the dry season, two to four Js a night on this task, roughly 60–120 crossings attacked a week. In the monsoon, when the historical fighter-bombers were grounded for weeks, the J keeps flying at the same rate. **Depends on** P003a or P003b for the coordinates. Without them it degrades to map coordinates 100–300 metres off and to the effect of an unguided bomb¹.
+
+#### EC005-3 · The siege box
+
+**At a besieged position, the J strikes the enemy's measured siege works one by one, every night.** The Global Hawk's radar images the ground around the base in its spot mode each night and shows the trenches, gun pits and bunkers dug since the last look; the U-2S camera does the same by day in clear weather². The coordinate cell at Tan Son Nhut measures the new works and sends a list to the cells already airborne. Each J carries 30–40 GBU-38s and strikes 30–40 separate points¹, the nearest at about 400–500 metres from the wire.
+
+**Profile.** At Khe Sanh's historical intensity of about 60 B-52s a day the J force could fly the same number, with perhaps a third carrying GBU-38s¹⁷. That is twenty guided aircraft and 600–800 bombs a day, but the cell can measure only about 100–300 good coordinates a day¹, and it is that figure, not the bombers, that sets the rate. **Minimum package.** A night radar image, a cell of about fifteen analysts on the siege, and two Js a night. **Depends on** P003b; without it, aimpoints come from daylight photography and air observers and the rate falls by half or more¹⁸.
+
+#### EC005-4 · The high orbit
+
+**A pair of Js holds an orbit at 35,000 feet over a threatened region with GBU-38s, on call to a ground commander's coordinate.** This is the B-52 as an airborne battery. When a US or ARVN unit has a measured target, or an air observer in an O-1 Bird Dog reads a grid off his map, the coordinate goes to the aircraft by voice or satellite and the bombs are released within ten to twenty minutes¹⁹.
+
+**Profile.** Four to six hours on station, two aircraft, refuelled once by a KC-135 for longer stations²⁰. **Cycle rate.** One orbit a day sustained in a corps area during an offensive, two at a surge²¹. **The limit.** The ground commander's coordinate is good to about 100 metres if he reads his map well¹, so the bombs fall at least 500–1,000 metres from friendly troops and only on targets an observer can identify. The orbit's real targets are guns, mortar positions and assembly areas seen from the air in the open; it does not serve the meeting engagement under canopy.
+
+#### EC005-5 · The navigated carpet
+
+**The J flies the old Arc Light mission with unguided Mk 82s, navigated by GPS.** This is most of what the J force does by sortie count, because kits support only a fraction of the sorties¹. Three Js lay a box about one mile by two²² against a base area, an infiltration corridor or a suspected headquarters.
+
+**Profile.** As EC005-1, without kits. Each J carries about 51 Mk 82s against the D's 108, so each box is half as dense, or six Js do what three Ds did. **Cycle rate.** Up to the historical 1,800 sorties a month from 1968¹. GPS navigation removes the radar-offset error of the historical bombing, so the box falls where it was drawn²³. Where it was drawn is still the intelligence officer's guess.
+
+#### EC005-6 · The estuary field
+
+**The J lays Quickstrike fields in the rivers, estuaries and coastal lighterage routes of the North's southern provinces.** Targets are the mouths of the Song Ca at Ben Thuy, the Song Gianh at Quang Khe, the coastal lighter routes between Thanh Hoa and Dong Hoi, and the Ben Hai estuary²⁴. The fields are laid from altitude with Quickstrike kits on JDAM tails, or from standoff with Quickstrike-ER¹.
+
+**Profile.** One J lays about twenty Mk 64s or Mk 65s, or about 51 Mk 62s in shallow water. A river mouth takes 20–40 mines²⁵. Fields are set to magnetic and pressure triggers with ship-count delays so that the first steel lighter does not reveal the field. The Global Hawk's maritime mode watches traffic on the mined waters². **Cycle rate.** Reseeding every three to six weeks per field¹, about two to four J sorties a week to keep eight to twelve fields live.
+
+#### EC005-7 · The Laotian river crossings
+
+**The J lays mines at the river crossings of the Laotian panhandle where barges and ferries carry trucks over the Xe Bang Fai, the Xe Banghiang and the Se Kong.** The aim is to deny steel ferries and pontoon segments at the crossings, not to mine the roads.
+
+**Profile.** One J, a mix of Mk 62s and Mk 63s, laid at four to six crossings a sortie²⁶. **Cycle rate.** One or two sorties a week in the dry season. **Limits.** The enemy's crossings in Laos were mostly fords, bamboo rafts and wooden ferries that the mines' magnetic triggers ignore¹. The concept survives because steel pontoon sections and the occasional steel ferry are what let trucks cross in the wet, and denying them matters most then.
+
+#### EC005-8 · The Haiphong plan in the drawer
+
+**From 1965 the plan for mining Haiphong and the northern ports with Quickstrike is drawn, kept current, and argued to CINCPAC; it is executed only when Washington lifts the prohibition.** Under the modelled constraint that is May 1972. The plan uses Quickstrike-ER from standoff for the inner channel, Mk 65s for the deep approaches, and Mk 62s and Mk 63s for the secondary harbours at Hon Gai, Cam Pha and Thanh Hoa¹.
+
+**Profile, when executed.** Eight to twelve J sorties on the first night lay the main approaches; another twenty to thirty over the following week lay the secondary ports²⁷. The historical Pocket Money mining by Navy A-6As and A-7s did the same job with Mk 52 and Mk 36 mines¹. **Value before 1972.** None, except as a standing case to Washington, whose political cost of asking I set out under cross-boundary feedback.
+
+#### EC005-9 · The fixed-target strike in the North
+
+**Where Washington authorises B-52s against the North, the J strikes power plants, rail yards, depots and bridges with GBU-31s.** Before 1972 that means the southern edge of the North. From April 1972, under Freedom Train and Linebacker, the authority extends north of the 20th parallel, and in December 1972 to Hanoi and Haiphong.
+
+**Profile.** One J, twenty GBU-31s, three to six aimpoints on a rail yard or power plant²⁸. Against the SA-2 belt the J releases fifteen miles out, which keeps it outside the guns but not outside a missile with a range of about 25 miles. It depends on the period's support jamming, the EB-66s and the Navy's EA-6As, and on its own electronic-warfare suite²⁹. **Cycle rate.** In a Linebacker II-type campaign, 100–120 J sorties a night are possible from Guam and U-Tapao³⁰. The J's loss rate over Hanoi I estimate at a third to a half of the historical fifteen lost in 729 sorties¹.
+
+#### EC005-10 · Hunting trucks by radar (abandoned)
+
+**The idea was to send a J's GBU-38s against trucks the Global Hawk tracked on the panhandle roads at night.** It was flown in the dry season of 1965–66 and stopped. The track was good; the time was not. From the moment the radar showed a convoy on Route 23 to the moment a J's bomb arrived was twenty to forty minutes even with a J already in orbit³¹, and a JDAM goes to where the truck was. A truck park found at dawn, where vehicles stop under trees for the day, remains a target and is struck under EC005-2. A moving convoy does not. The concept named a constraint the dossier only implied: the J's precision is precision in space, not in time.
+
+#### EC005-11 · Close support by voice grid (abandoned)
+
+**The idea was to let a company commander in contact call GBU-38s on a grid read from his map, within a few hundred metres of his men.** It was tried and stopped in the first months. A grid read to six figures on a 1:50,000 sheet is good to about 100 metres if the officer knows exactly where he is, and under canopy he often does not. The map itself sits on a different datum from the GPS, and the shift between them runs to hundreds of metres. A JDAM obeys the coordinate perfectly. The closer the target to friendly troops, the more an error in the coordinate becomes a precise fratricide¹. Close support stays with the artillery, the gunships and the fighter-bombers whose pilots can see the smoke.
+
+#### EC005-12 · Low-level mine laying by B-52J (abandoned)
+
+**The idea was to lay standard Quickstrikes from 500–1,000 feet across the defended crossings, as the Destructor layers did.** I refused it in Part 1 and it was not flown. A B-52J at 1,000 feet over a ferry on the Song Gianh is inside the 37mm and 57mm and every rifle in the crossing's defence. A lost J costs five men¹ and an aircraft that cannot be replaced at the rate the war consumes them. The mines are laid from altitude with tail kits or from standoff with the ER, or they are laid by Navy A-6As and A-7s at low level, as historically.
+
+#### EC005-13 · Bunker-busting in the tunnels (abandoned)
+
+**The idea was to use the BLU-109 GBU-31 against the tunnel complexes of Cu Chi and the Iron Triangle.** It was tried against entrances and known chambers in 1966 and dropped. The BLU-109 penetrates about 1.8–2.4 metres of reinforced concrete, which in laterite reaches the upper level of a tunnel system and not the deep levels three to ten metres down¹. Nobody could give a coordinate for a chamber that had not been entered, and the entrances, which could be found, were cheap to replace. The tunnels remained a job for engineers, tunnel rats and time.
+
+## §2 Part B — Channels
+
+### Displacement
+
+**F005-4** **Fixed crossings die, and the transport net turns into one that has no fixed crossings.** The historical North answered the bridge campaigns of Rolling Thunder by building around every important bridge a set of fords, ferry points, pontoon sites and underwater causeways, so that a bridge down cost a few hours. The GBU-31 makes that answer necessary at every crossing, not only at the famous ones, and from the first year. By the dry season of 1966 I expect Group 559 and the North's road troops to have stopped repairing bridges that the imagery can measure and to be building instead what the imagery cannot measure: underwater causeways a few inches below the surface, pontoon sections assembled at dusk and dragged under trees at dawn, and multiple fords at every river³². The net becomes more redundant and less legible. What our reconnaissance loses by this is the clean target: a bridge photographed once has a coordinate for life, while a pontoon site has one for a night. The sanctuary arithmetic does not change. The Trail's capacity is elastic with labour, and its requirement in the South is small against its capacity; bypasses consume labour, which the North has, not tonnage, which is what reaches the South.
+
+**F005-5** **Steel hulls give way to wooden ones, the waterways give way to the road, and the road gives way in part to Cambodia.** In the mined estuaries and rivers of the southern North, the steel lighters, tugs and barges stop moving. Their loads move to wooden junks and sampans that a magnetic trigger ignores, to bamboo rafts and floating drums that no trigger sees, and to trucks on Route 1A and Route 15. Each step down is slower and costs more labour, and the first months, before the enemy knows where the fields are, cost him boats and cargo. What the mining does not do is touch the supply that matters most to III and IV Corps, which in this war has run through Sihanoukville since 1965. If anything it adds a reason for Hanoi to value the Cambodian route, which no Quickstrike may touch under the modelled constraints¹. Pushing the enemy's coastal traffic onto the road also pushes it, in part, under the canopy, where the Global Hawk loses it.
+
+**F005-6** **The siege goes short, close or underground.** A PAVN division that has learned what the GBU-38 does to measured siege works has three choices, and I expect it to use all of them. It can come inside the 400-metre ring and hug the wire, where the bomb cannot follow and the fight is the infantry's. It can make the siege brief: a night assault from unregistered ground and withdrawal before dawn, which gives the cameras nothing to measure. Or it can dig deeper and cover its works, so that the radar sees the spoil and not the trench. The siege by fire, the PAVN's slow strangling of a fixed position with artillery and trenchwork that the historical war saw at Con Thien and Khe Sanh, is displaced towards the raid and the assault³³. The enemy loses a tool and keeps his choice of fights.
+
+### Bottleneck migration
+
+**F005-7** **On every line of effort the J touches, the binding constraint moves from the bomb to the coordinate, the authority and the kit.** Before the provision, the constraint on striking a fixed target was accuracy and weather: the Thanh Hoa bridge stood through years of attacks by fighter-bombers who could not hit it hard enough, and the monsoon grounded them over the panhandle for weeks¹. After it, accuracy and weather are solved for anything measured. The new constraints, in order, are these.
+
+The first is the coordinate. The cell of about 60 men measures perhaps 100–300 good coordinates a day, and it draws on the same imagery the U-2S and the Global Hawk collect for search. Against a war of thousands of fixed points across Laos and the southern North, that is the narrow pipe. The second is authority. The JDAM kits are on the B-52 alone, because no other aircraft in 1965 has the interface to release them, so the most valuable targets in the North are struck only where Washington sends B-52s, and before 1972 it sends them only to the North's southern edge. A target list for the J over the Red River delta is a list of things this command can see and measure and may not touch. The third is the kit: about 800–1,400 guided sorties a year¹ against a target set that would absorb ten times that.
+
+In the South the constraint was never the bomb. It is, as before, finding the enemy under the canopy and his choice of whether to fight. At the siege it moves from the safety distance to the 400-metre ring and the infantry's ability to hold it. In the mining campaign it moves from closing the waterways to the capacity of the roads that replace them, and the roads have capacity to spare.
+
+**F005-8** **For the carpet, the constraint moves from airframes to ramp space and sorties.** Replacing every B-52 means the Big Belly B-52D that historically carried 108 Mk 82s never exists. A J carries about 51, so an Arc Light box of the historical density takes six Js where it took three Ds. The force committed to Southeast Asia follows history in airframes, so unguided tonnage per day falls by roughly half against the historical record unless more Js are sent, and there are Js to send: SAC has about 600¹. What limits sending them is ramp space at Andersen and U-Tapao and the political visibility of a larger bomber force in Thailand. I judge the J force will deliver about two-thirds of the historical unguided tonnage over the war³⁴, with the guided third doing more than the missing third would have. The enemy's base areas are therefore bombed less heavily and more precisely. I do not regret the exchange, but the commanders who believed that the carpet's terror was its main effect on the main force will feel the loss and say so.
+
+### Own-force opportunity cost
+
+**F005-9** **The scarce thing this provision consumes is the imagery analyst's day and the U-2S's hours.** The personnel cost in the country is small: about 40 spaces for the liaison and target-coordinate cell and about 60 for the mensuration cell¹, a hundred men in a force that will grow past half a million. Their training is not small. A mensuration analyst who can take a radar image and produce a coordinate good to a few metres is a specialist of the 1990s, trained for months³⁵; there are none in the 1965 Air Force, and the first must come from the same pool as the 600 or so specialists that Memorandum 003 already draws on. More important, every U-2S sortie and every Global Hawk hour spent imaging a known bridge for mensuration or damage assessment is not spent searching for something new. I expect the J to take a quarter to a third of the U-2S's time from 1966³⁴. The thing not done is the deep look at the base areas and the North that finds the next road and the next SA-2 site.
+
+**F005-10** **The tankers come back to the fighters.** Historically every Arc Light mission from Guam needed KC-135 support, and the Young Tiger tanker force was a theater-wide constraint on the fighter-bombers' range over the North and Laos³⁶. The J flies to the South unrefuelled. The KC-135As that would have supported Arc Light are free to refuel F-105Ds and F-4Cs over Laos and the North, which extends their time on target and allows strikes from Thai bases deeper into the panhandle. This is a real gain, of a few dozen tankers' daily sorties, and it is the provision's main benefit to the force it does not belong to³⁷. On the other side of the ledger, the F130's lower maintenance load frees about 10–20% of the B-52 maintenance manpower¹, outside the country and of no use in it.
+
+### Counterfactual erasure
+
+**F005-11** **The first Arc Light mission does not lose two bombers before reaching its target.** On 18 June 1965 two B-52Fs collided while manoeuvring for the tanker rendezvous over the sea and eight crewmen died, on a strike near Ben Cat that hit little. The J needs no tanker for that mission, so that rendezvous does not take place and the collision does not happen. The mission itself, a carpet on a suspected base area on a few days' intelligence, hits as little as it did. The tanker rendezvous was also a signature: a fleet of KC-135s on station over the South China Sea announced that bombers were coming. Without it, one warning the enemy relied on is gone. The Soviet trawler off Guam that watched the bombers take off¹ stays, and so does the clearance chain. The erasure is small and humane, and worth a sentence: eight men come home.
+
+**F005-12** **Long campaigns against single bridges end, where the B-52 may go.** Historically some bridges in the North absorbed years of attacks: the Ham Rong bridge at Thanh Hoa stood from April 1965 until laser-guided bombs dropped its span in 1972, and every attack cost sorties and sometimes pilots. Wherever the J is authorised, campaigns like that end on their first night: the bridge falls, the enemy moves to its bypasses, and the strike sorties and the losses they would have absorbed go to other targets. In the panhandle of Laos and the southern edge of the North that is a real erasure of attrition, of fighter-bombers lost to the flak around crossings that were struck again and again. North of the B-52's authority it erases nothing, because the J cannot go and nothing else can carry the kit. The Ham Rong bridge itself sits at about 19.8 degrees north³⁸, inside the band of the North where Rolling Thunder struck but B-52s historically did not until 1972. Whether it falls in 1965 or 1972 is a Washington decision about the bomber, not the bridge.
+
+### Perverse effect
+
+**F005-13** **A precise instrument makes graduated pressure cheaper, and so makes it last longer.** The theory of Rolling Thunder was that measured, controlled pain would bring Hanoi to the table, and the theory's chief cost was that it did not work and cost aircraft and pilots finding out. Memorandum 003 found that better pictures tighten Washington's control of target selection. This provision goes further: a weapon that destroys exactly the target chosen and nothing beside it is the ideal instrument of a policy that wants to send signals. A Secretary of Defense who can choose to drop one span of one bridge in one night, without the losses that made the historical campaign politically expensive, has less reason to change the theory. I judge the effect is to make the gradual campaign more efficient and somewhat more durable, not more successful³⁴. Success at the instrument level postpones the admission of failure at the strategic level.
+
+**F005-14** **Success at the siege pulls the war towards the border.** Historically General Westmoreland sought battles at the border, at Khe Sanh, Dak To and Con Thien, because there his firepower could work away from the population; his critics held that the bases tied down American battalions far from the hamlets. This provision makes those battles much better for us, which strengthens the argument for seeking them. A base that the enemy besieges is now a place where he loses heavily, so a command that wants to kill the main force will want more such bases and will put battalions in them. The battalions sit on the frontier, where they do nothing for the hamlets of the coastal plain and the Delta. I count this a moderate perverse effect: the provision wins the battles it makes attractive, and the battles it makes attractive are not where the war is decided.
+
+### Anticipation
+
+**F005-15** **The capability's best results will be the battles that do not happen and the boats that do not sail, and none of them will show in a report.** Once the PAVN has learned what the GBU-38 does to a measured siege, it will besiege fewer positions and for shorter periods. The Marines at a Con Thien that is not besieged in September 1967 do not take 3,000 rounds in eight days; nobody counts the rounds that were not fired. Once the mines are known, the steel lighters stay in port and the fields sit quiet, detonating nothing; the honest measure is the traffic count on the estuary, which the Global Hawk can give², not the mine kills, which fall to zero as the fields succeed. Once a bridge has fallen twice in a night, it is not rebuilt, and the bridges-destroyed figure falls because there are no bridges to destroy.
+
+This is the anticipation effect the rules warn of in its clearest form. The metrics this provision generates, bridges dropped, mines detonated, siege positions destroyed, rise sharply in the first months and then fall, because the enemy stops presenting the targets. A staff that reads the fall as the enemy recovering will be wrong; a staff that reads the early rise as the enemy losing will be wrong too, because the enemy's response, a less legible net and a war of raids rather than sieges, costs him labour and time rather than the tonnage he needs in the South. The real gain, fewer American and ARVN dead at the bases and a slower, costlier water route, is invisible by construction, and I want it recorded now so that it is not forgotten when the figures fall.
+
+### Enemy detection and learning
+
+**F005-16** **Hanoi will detect the weapon within days, understand its geometry within a season, and misread its cause for longer.** The first J strike on the panhandle's crossings in cloud, with bombs falling one by one on each slip of a ferry from aircraft no one heard over the clouds, will be reported to the General Staff within days³⁹. The military conclusion is easy and correct: the bombs go to a fixed point with great accuracy in any weather, so nothing that matters may be fixed and known. That doctrine reaches the road troops and Group 559 by the dry season of 1965–66 and the B-3 Front's siege planners after their first siege⁴⁰. Hanoi will also be right that the weapon needs to know where its target is, and it will invest in denying that: camouflage, dummy bridges, night work and decoy pontoons.
+
+What it will get wrong, for a year or more, is how the bombs are guided. A security service that historically hunted for spies placing radio beacons for American bombers⁴¹ will see beacons behind every precise strike. That error has a cost for Hanoi: arrests, suspicion in the transport units, and security cadres sent to watch crossings instead of building them. It has a cost for the people of the panhandle, who will suffer it. It does not stop the bombs. What the enemy gets right that hurts us most is the conclusion that the J is useless against anything that moves and anything under the canopy, and that he can therefore leave the war in the South exactly as it is.
+
+### Enemy adaptation cost
+
+**F005-17** **Most of the enemy's counter-moves are cheap, and one is expensive.** The bypass net costs labour, from the youth volunteer brigades and the road troops, and Hanoi has labour; I estimate the bypasses and night pontoons add some thousands of workers to the panhandle road effort and no tonnage to the Trail's requirement⁴². The move from steel to wooden craft and from water to the road costs time and trucks, both supplied by his allies. Hiding fixed facilities costs effort, not materiel. Against that, each J sortie with twenty kits costs us about $440,000 in kits alone at the FY2007 price of about $22,000 a kit, plus the aircraft, the analysts and the reconnaissance, against targets that he rebuilds with bamboo. On the interdiction line the exchange rate favours him, as the rules warned.
+
+The expensive adaptation is giving up the siege. The siege by fire and trench was the PAVN's way of fixing American forces at the border and drawing them from the populated country, and of fighting on ground it had prepared. To give it up, or to compress it into a raid, costs him a method of operation and a political weapon, the spectacle of a besieged American base. I count that real: the provision imposes on the enemy a cost in doctrine that no amount of labour repays.
+
+### Cross-boundary feedback
+
+**F005-18** **The loop runs out through the POW camps, the Bach Mai sort of headline and Moscow, and the net return to the theater is small and favourable.** First, losses. A J force that loses a third to a half as many aircraft over Hanoi as the historical B-52 force, with five men a crew instead of six¹, gives Hanoi fewer B-52 crewmen to parade and hold. In a Linebacker II-type campaign that is perhaps twenty to forty fewer airmen killed or captured, and fewer prisoners on the table in Paris³⁴. Second, precision. The historical December 1972 bombing produced headlines about civilian deaths in Hanoi and the damage to Bach Mai hospital. A campaign of GPS weapons on aimpoints does less of that, and Hanoi's propaganda case is weaker for it, though not absent; a 2,000 lb bomb in a city still kills its neighbours. Third, Moscow and Beijing. An interdiction campaign that destroys fixed infrastructure faster than the historical one draws more Soviet and Chinese bridging, trucks, engineers and anti-aircraft guns into the North⁴³, and denser defences cost the fighter-bombers more, though not the J at its altitude. Fourth, the case to Washington. The command that asks for Haiphong to be mined from 1965 under EC005-8 spends credit with a President and a Secretary who have said no for reasons of their own: fear of Soviet ships sunk, of Chinese intervention and of the war's widening. The asking costs credit every time it is repeated, and I will ask once a year, not more.
+
+Taken together, the loop returns through slightly fewer American losses over the North, a slightly better record in the international press, and a slightly larger Soviet commitment. It does not move the clock by more than weeks.
+
+### Open channel
+
+**F005-19** **The war's maps are on the wrong datum, and the coordinate cell will find out first.** The 1:50,000 sheets that every US and ARVN unit carries are drawn on a local datum; the GPS works on its own world datum, and the difference between them runs to hundreds of metres on the ground⁴⁴. A grid read off a map and entered into a JDAM without conversion sends the bomb to a point hundreds of metres from the one intended. That is the most likely route by which a GBU-38 kills Americans or South Vietnamese, and it is why EC005-11 was given up. The same discovery has a positive side. The coordinate cell, working from GPS-true imagery, will in its first year establish the true positions of every firebase, bridge, road junction and hilltop it measures. Given to the Army's survey units as control points, that work lets the artillery's survey correct its own maps around the bases where the guns sit⁴⁵. The M107 175mm and M114 155mm batteries at the bases fire more accurately as a by-product, which is a small, real and unplanned gain.
+
+## §2 Part C — Counter-directional finding and strongest positive effect
+
+**F005-20 · Counter-directional** **The better the J defends a besieged position, the more the Republic's defence comes to rest on an American bomber that the Republic can never own and that the Congress will take away.** This is the most important finding in the memorandum and it runs against everything good in it. The ARVN units that hold Ben Het, Kontum or An Loc with GBU-38s falling on the enemy's trenches every night learn, correctly, that a position can be held against a PAVN division if the bombers come. Their corps commanders build their plans on it; the Joint General Staff builds its doctrine on it; the 1972 victory at An Loc, which in this war becomes larger and cheaper, becomes the model. Then, in August 1973, the Case–Church amendment ends American combat air operations in Indochina, and the J and its coordinate cell disappear in a day.
+
+Nothing in the J transfers: the aircraft, the weapons, the imagery and the satellite links are American (§2 The ADVISE cluster). A Vietnamese Air Force of A-37Bs and F-5As cannot substitute for a weapon that put thirty bombs on thirty trenches in cloud⁴⁶. The historical ARVN in 1975 lost its positions in the Central Highlands partly because it had learned to depend on American air power that no longer came. This provision deepens that dependence, makes the gap between rung (c) and rung (d) wider, and makes the fall, when the bombers go, steeper. Its weight against the provision's primary effect is large but not dominant: the provision saves many lives and positions between 1965 and 1972, and those are real; the dependence is a debt that falls due only if the bombers leave, which under the modelled constraints they do.
+
+**F005-21 · Strongest positive** **The siege of a measured position becomes the enemy's worst battle, and every fixed crossing a measured target dies in one night in any weather.** Taken together, these are the most significant thing the provision changes about the war.
+
+At the siege the change is a change in kind. Historically the B-52's work at Khe Sanh was immense, about 60 B-52s on an average day and more than 100,000 tons of bombs by mid-April, but it fell in boxes held first three kilometres and later about one from the perimeter, and the PAVN 304th and 325C Divisions dug their approach trenches in the ground between. With the J, the coordinate cell measures each new trench overnight from the Global Hawk's radar image, and the next night's J cells put a 500 lb bomb on each of 100–300 points¹, the nearest about 400–500 metres from the wire. The enemy's siege engineering is undone every night. I judge that at a Khe Sanh, a Con Thien or an An Loc the besieger's losses roughly double and the defenders' fall by a quarter to a third, and that most such sieges are broken off weeks earlier than historically or are never begun. In the Easter Offensive of 1972 this means An Loc and Kontum held with a wider margin, and Quang Tri's defenders with a measured target list on the PAVN artillery north of the river³⁴.
+
+On the interdiction line the change is a change in degree, but a large one. Every bridge, ferry slip, pass approach and depot that can be measured, in Laos and the southern North, is cut on the night it is attacked, in the monsoon as in the dry season. The enemy's answer is bypasses, which are cheap in materiel. The provision does not reduce tonnage arriving in the South below the requirement, but it slows the whole flow and makes it costlier in labour and time, and in the monsoon, when the historical interdiction stopped, it does not. I state the siege effect at its full weight: it will save thousands of American and ARVN lives at the bases over the war³⁴, and it is the first time in this exercise that a provision has taken a whole kind of battle away from the enemy.
+
+### Positions recorded
+
+- **POS005-1** · vars: STRIKE.responsiveness, FIND.main_force, FIX.capability · GPS weapons change what dies at a measured coordinate, never what can be located; in this war the J's precision is decisive where the enemy holds still long enough to be measured, at the siege and the fixed crossing, and adds nothing against the main force under canopy or the infrastructure in the hamlets (005 §2 F005-1, F005-7, F005-21)
+- **POS005-2** · vars: ARVN.self_sufficiency, FIX.capability, US.political_tolerance · In this war the defence of besieged positions from 1965 rests on the B-52J and an American coordinate cell; it is far stronger while American air power is present and leaves the RVNAF more dependent on it when it goes (005 §2 F005-20)
+
+## §2 Findings register
+| ID | Channel | System | Summary | Weight |
+|---|---|---|---|---|
+| F005-1 | Integration | FIND, STRIKE | 003's GPS-true imagery measured into coordinates makes the JDAM a precision system against fixed targets; neither half is worth much alone | major |
+| F005-2 | Integration | FIX, STRIKE, SECURE | At the siege the squad holds the wire to 400 m and the GBU-38 works beyond; the gap between rifle and bomb shrinks | major |
+| F005-3 | Integration | STRIKE, SECURE, FIND | GVN clearance runs through the province chief; the merit chief answers better, but the chain still warns the target | moderate |
+| F005-4 | Displacement | INTERDICT | Bridges give way to fords, underwater causeways and night pontoons; the net becomes redundant and illegible | major |
+| F005-5 | Displacement | INTERDICT | Steel craft give way to wooden ones and the road; Sihanoukville's value to Hanoi rises | moderate |
+| F005-6 | Displacement | FIX, SECURE | The siege goes short, close (inside 400 m) or underground | moderate |
+| F005-7 | Bottleneck migration | STRIKE, FIND, INTERDICT | The constraint moves from bomb and weather to coordinates, Washington's authority over the B-52, and kits | major |
+| F005-8 | Bottleneck migration | STRIKE, SUSTAIN | No Big Belly: the carpet is half as dense; about two-thirds of historical unguided tonnage, ramp space the limit | moderate |
+| F005-9 | Own-force opportunity cost | FIND, SUSTAIN | Mensuration analysts are new specialists from the same scarce pool; a quarter to a third of U-2S time goes to known targets | moderate |
+| F005-10 | Own-force opportunity cost | SUSTAIN, STRIKE | Tankers freed from Arc Light refuel fighter-bombers over Laos and the North | moderate |
+| F005-11 | Counterfactual erasure | STRIKE | The first Arc Light collision does not happen; the tanker signature is gone, the trawler off Guam stays | minor |
+| F005-12 | Counterfactual erasure | STRIKE, INTERDICT | Years-long bridge campaigns end in a night where the B-52 may fly; Thanh Hoa waits on Washington | moderate |
+| F005-13 | Perverse effect | STRIKE | A precise instrument makes graduated pressure cheaper and more durable, not more successful | moderate |
+| F005-14 | Perverse effect | FIX, SECURE | Winning sieges strengthens the case for border bases and pulls battalions from the populated country | moderate |
+| F005-15 | Anticipation | FIX, INTERDICT, STRIKE | Sieges not begun, boats not sailing, bridges not rebuilt; metrics rise then fall while the real gain is invisible | major |
+| F005-16 | Enemy detection and learning | STRIKE, SUBVERT | Hanoi reads the geometry in a season, blames spies and beacons for a year, and rightly leaves the war in the South as it was | moderate |
+| F005-17 | Enemy adaptation cost | INTERDICT, FIX | Bypasses and wooden craft are cheap and favour him; giving up the siege is expensive | moderate |
+| F005-18 | Cross-boundary feedback | STRIKE, SUSTAIN | Fewer B-52 crews lost and captured, fewer civilian headlines, more Soviet aid; asking for Haiphong costs credit | moderate |
+| F005-19 | Open channel | FIX, STRIKE, SUSTAIN | Map datum differs from GPS by hundreds of metres: fratricide risk, and true survey control for the artillery | moderate |
+| F005-20 | CD | ADVISE, FIX, SECURE | Siege defence built around an American bomber deepens the dependence that Case–Church and 1975 punish | major |
+| F005-21 | SPE | FIX, STRIKE, INTERDICT | The measured siege becomes the enemy's worst battle and every measured crossing dies in a night in any weather | major |
+
+**Employment concepts**
+
+EC005-1 the precision cell inside Arc Light · EC005-2 the bridge night · EC005-3 the siege box (with P003b) · EC005-4 the high orbit · EC005-5 the navigated carpet · EC005-6 the estuary field (with P003b) · EC005-7 the Laotian river crossings · EC005-8 the Haiphong plan in the drawer (May 1972) · EC005-9 the fixed-target strike in the North. Abandoned: EC005-10 hunting trucks by radar (precision in space, not time) · EC005-11 close support by voice grid (map error and datum; precise fratricide) · EC005-12 low-level mine laying by B-52J (flak) · EC005-13 bunker-busting in the tunnels (too shallow; no coordinates)
+
+## §3 Changes to existing forces
+
+### The advisory effort and MACV staff
+
+MACV J-2 gains a new function and Seventh Air Force a new cell. The coordinate-mensuration cell of about 60 and the enlarged Arc Light liaison element of about 40 sit at Tan Son Nhut¹, beside the Memorandum 003 exploitation cells whose imagery they measure. The J-2's targeting process changes from nominating boxes to producing aimpoint lists, and the weekly Arc Light target conference becomes a contest for the cell's time between the corps commanders, Seventh Air Force and CINCPAC's interdiction planners. The field advisers gain one task: their requests for J strikes in support of ARVN positions go up with measured coordinates where possible, which means teaching ARVN staffs to pass the positions of the enemy's works in a form the cell can use. That is an advisory burden and it builds nothing the ARVN will keep.
+
+### US conventional forces
+
+The Army and Marine units at fixed bases are the main beneficiaries. A battalion at a border base or a firebase under siege has the J's GBU-38s working down to about 400 metres from its wire¹, measured nightly. In the mobile war, in the search-and-destroy operations of 1966–67, the change is small: the J's carpet still precedes the sweep into a base area, half as dense, and its guided aircraft hit the bunkers that imagery placed. The 3rd Marine Division along the DMZ gains most, because its war of fixed positions under artillery fire is the war this provision was made for; the 1st Cavalry Division in the Highlands, whose war was movement, gains least.
+
+### US Special Forces and CIDG
+
+The CIDG camps on the border are sieges waiting to happen, and at Plei Me in 1965, Dak To in 1967 and Ben Het in 1969 they happened. A camp under siege now has the J. Its value depends on whether the camp's US Special Forces team can get the enemy's works measured, which needs a Global Hawk image and the coordinate cell's priority. The Special Forces' reconnaissance teams across the border in Laos gain a target type: a bunker or depot they have seen and placed can be struck the next night with a GBU-31, but their own position fixes are by map and compass, and the datum problem applies.
+
+### ARVN divisions and the JGS
+
+The ARVN divisions gain the J's protection at their fixed positions through the American advisory chain, and nothing else. No Vietnamese commander can call it, and no Vietnamese aircraft can drop its weapons¹. In the short run this improves the ARVN's performance in the battles of position, most of all in 1972. In the long run it shapes the Joint General Staff's doctrine around a weapon it does not control, and that is the counter-directional finding.
+
+### RF/PF and territorial security
+
+Unchanged in substance. The Regional and Popular Forces fight at outposts and in hamlets that the J does not serve; their fights are short, at night, close, and in populated country where B-52 strikes are not cleared. A Regional Forces company at a district town under attack might in principle be supported by the high orbit, but only if an American adviser can produce a coordinate outside 500–1,000 metres from friendly troops, which in a night attack he usually cannot.
+
+### Rolling Thunder
+
+Rolling Thunder's fighter-bombers keep the North north of the B-52's authority, which before 1972 is most of it. Their war changes in two ways. First, the J takes the crossings and depots of the southern edge of the North, so the F-105Ds and F-4Cs that historically struck them again and again are released to targets further north or to Laos. Second, the tankers freed from Arc Light extend their reach. The great prohibited targets, Haiphong's port, the Hanoi power plants and the Red River bridges, stay prohibited until Washington changes its mind; the J does not change it.
+
+### Trail interdiction
+
+Steel Tiger, Tiger Hound and later Commando Hunt gain an all-weather fixed-target force. The J cuts the passes and crossings in the monsoon when the historical fighter-bombers could not fly, and the Global Hawk counts the result. The trucks between the crossings remain the business of the AC-130A and AC-130E gunships, the B-57s and the fighter-bombers, because the JDAM cannot follow a moving truck. The interdiction ledger is still kept in tonnage arriving, not in bridges dropped or trucks claimed, and by that ledger I expect the provision to raise the toll on the transit without reducing what arrives below what the South needs.
+
+### Arc Light
+
+Arc Light changes most. Its aircraft are Js; its cells are mixed, one guided aircraft in three; its carpets are half as dense per aircraft; it flies from Guam without tankers; its first mission loses no bombers to a collision; and from 1965 it has a target set it never had, the measured siege works around a fixed base. In tonnage it does less than historically, about two-thirds³⁴; in effect, at the bases and the crossings, it does far more.
+
+### Airmobile formations
+
+Little change. The airmobile divisions fight a war of movement in which the J's precision has no coordinate to work on; the carpet ahead of an air assault into a base area is still the carpet. The one change is at the landing zones that become sieges, as LZ X-Ray did in November 1965: if the battle lasts a second night, the Global Hawk can image the enemy's positions around the zone, and the J can strike those beyond the danger-close ring.
+
+### Riverine and coastal forces
+
+The Navy's war in the South does not change; Market Time and Game Warden have no use for Quickstrike, because mining the Republic's own coast would sink its fishermen¹. In the North, the Navy's mining with Mk 36 Destructors and Mk 52s from A-6As and A-7s continues at low level against the near-shore and river targets, and the J's Quickstrike fields join them from altitude in the estuaries. From May 1972 the mining of Haiphong combines both.
+
+### Phoenix / Phung Hoang
+
+Unchanged. The provision has no role in the identification or neutralisation of the infrastructure, and none should be invented for it (§2 The identify-to-neutralise chain).
+
+### Third-country forces
+
+The Australian, Korean and Thai forces fight in the South largely in populated or mobile operations, and gain little. Thailand's political exposure grows a little, because U-Tapao's B-52 base becomes the home of a larger bomber force once the J's lower density per sortie has to be made up. The Royal Australian Regiment's battalions at Nui Dat and the Korean divisions on the coast gain nothing of weight.
+
+### Prior provisions
+
+- **P003a** (U-2S): its imagery becomes the source of the coordinate cell's work, and a quarter to a third of its sorties shift from search to the mensuration and damage assessment of known targets.
+- **P003b** (RQ-4B Global Hawk): its SAR spot mode is tasked nightly over any besieged base, and its maritime mode watches the mined estuaries; its time on the panhandle watch falls accordingly.
+- **P004b** (M110A2) and **P004c** (M249): at the siege they hold the 400-metre ring inside which the J cannot work, and the two together close the gap the historical siege left.
+- **P002b** (provincial administration reform): the merit-selected province chief is the clearance authority for B-52 strikes in his province, and his honesty about what is in the box matters more now that the box is smaller.
+- Unchanged: P001a, P001b, P002a, P004a.
+
+---
+
+*Audit — Memo 005, Part 2/3 · v1.0.5 · cards loaded: 003,004,001,002 · channels: 10/10 (floor 9) · findings numbered: 21 · employment concepts: 9 + 4 abandoned (floor 8) · counter-directional: yes · strongest positive: yes · designations: ~26 · structural deviation: none*
+
+## Notes
+
+1. From memorandum 005's record.
+2. From memorandum 003's record.
+3. Estimate — point mensuration from geolocated SAR and EO imagery
+4. From memorandum 004's record.
+5. Estimate — the GVN clearance procedure for air strikes in the South
+6. From memorandum 002's record.
+7. Estimate — captured-document and prisoner reporting on Arc Light warnings
+8. Estimate — GPS-navigated release against radar-offset release
+9. Estimate — the displacement effects of area bombing in contested provinces
+10. Estimate — Arc Light restrictions near populated areas
+11. Estimate — kit supply supports roughly one guided aircraft in three
+12. Estimate — great-circle distance Guam–central South Vietnam; unrefuelled range per §1.1 D5
+13. Estimate — cruise of about 500–520 mph
+14. Estimate — distance U-Tapao–III Corps
+15. Estimate — historical B-52 turn rates adjusted for F130 maintenance
+16. Estimate — weaponeering of a 2,000 lb bomb against a medium road bridge or ferry slip
+17. Estimate — kit stocks built up in quieter months
+18. Estimate — dependence on the Global Hawk's night and all-weather imaging
+19. Estimate — in-flight retargeting with a 1760 bus and JDAM
+20. Estimate — endurance of the J on a combat radius from Guam
+21. Estimate — aircraft required for a continuous station
+22. Estimate — historical Arc Light box dimensions
+23. Estimate — GPS-aided navigation
+24. Estimate — the panhandle's waterways south of the 20th parallel
+25. Estimate — field density for a narrow channel
+26. Estimate — crossing count on the panhandle rivers
+27. Estimate — field sizes for Haiphong's channel and the secondary harbours
+28. Estimate — weaponeering against a thermal plant or yard
+29. Estimate — the period's support jamming
+30. Estimate — the historical December 1972 rate
+31. Estimate — track-to-release timeline
+32. Estimate — the North's historical bypass engineering, applied from 1965
+33. Estimate — PAVN siege practice
+34. The exercise's own judgment (memo 005), not a measured figure.
+35. Estimate — point-mensuration training
+36. Estimate — KC-135 support of Arc Light from Guam
+37. Estimate — the historical tanker commitment to Arc Light
+38. Estimate — geography
+39. Estimate — the North's air-defence reporting chain
+40. Estimate — the historical propagation of air-defence and engineering lessons
+41. Estimate — North Vietnamese counter-intelligence campaigns against supposed beacon-planters
+42. Estimate — the scale of the historical road-repair force
+43. Estimate — the historical pattern of allied aid following American escalation
+44. Estimate — the shift between the Indian datum of the regional mapping and the GPS datum
+45. Estimate — survey control from mensurated imagery
+46. Estimate — VNAF strike types of 1973–75
