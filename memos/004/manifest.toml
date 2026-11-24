@@ -4,9 +4,9 @@
 memo = "004"
 title = "Modern infantry small arms for US, ARVN and RF/PF: M4A1 URG-I with Aimpoint CompM5, M110A2 squad marksman rifle, M249 squad automatic weapon"
 received = "2026-11-23"
-status = "part2"
+status = "complete"
 version = "1.0.3"
-phases_changed = []
+phases_changed = ["P1", "P2", "P3", "P6"]
 links = ["001", "002"]           # the RF/PF who escort the titling teams and hold the hamlets behind the police posts are the men this rifle rearms; the National Police and its Police Field Force are not covered by the provision and keep their carbines
 
 [deviation]
