@@ -1,0 +1,180 @@
+# Manifest for memorandum 007.
+
+memo = "007"
+title = "Officer education to the 2026 standard for new US and ARVN officers from 1957, gating promotion; ARVN officer selection and promotion reform"
+received = "2026-11-24"
+status = "part1"
+version = "1.0.5"
+phases_changed = []
+links = ["001", "002", "006"]
+
+[deviation]
+part1 = "none"
+part2 = "none"
+part3 = "none"
+
+[[provision]]
+id = "P007a"
+designation = "US officer education to the 2026 standard for new officers of the Army and Marine Corps (and the Air Force and Navy continua), commissioned from 1957: the Army's Basic Officer Leader Course (BOLC A and B), Captains Career Course with its distributed-learning phase, and Command and General Staff Officer Course (Intermediate Level Education); the Marine Corps' Basic School, Expeditionary Warfare School and Command and Staff College; each course a gate for the next promotion"
+category = "institutional"
+quantity = "Every new US officer commissioned from 1957 [U]: about 15,000–20,000 Army and Marine officers a year in 1957–64, rising to about 40,000–50,000 a year at the 1967–69 peak [E: active Army and Marine officer accessions of the period, with the wartime OCS expansion]; the 1957–63 classes completed it before the campaign opened [U: standing condition officer_cohorts_1957]"
+ceiling_spaces = "~0 in RVN [E: every course is taught in the United States]; about 1,500–2,500 instructor and staff spaces added to the training base in the United States by 1967, outside the ceiling [E: student load at 2026 small-group ratios]; in effect about 4–6% of the company- and field-grade officer strength in school at any time instead of in units [E: course lengths against career length]; no troop ceiling is set (CONFIG)"
+arrival = "1964-01-01"
+in_service = "2026 configuration of a continuum built 2006–2022 (BOLC from 2006–10, CCC modernization 2022); the 1957–63 classes are a standing condition"
+systems = ["ADVISE", "FIX", "SECURE", "SUSTAIN"]
+status = "active"
+
+[[provision]]
+id = "P007b"
+designation = "RVNAF officer education to the 2026 standard for new ARVN officers commissioned from 1957: a branch basic course after commissioning at Thu Duc or Dalat, a Captains Career Course and a resident Command and General Staff course at Dalat built on the US 2026 curricula in Vietnamese, with MAAG and MACV faculty advisers, each course a gate for the next promotion"
+category = "institutional"
+quantity = "Every new ARVN officer commissioned from 1957 [U]: about 2,000–3,000 a year in 1957–63, about 4,000–6,000 a year in 1964–67 and about 8,000–12,000 a year at the 1968–71 peak [E: Thu Duc's 40,900 graduates 1952–Nov 1969 per S2, Dalat's fewer than 200 a year per S3, and the mobilization of 1968]; seven classes of about 13,000–18,000 officers completed the basic course before 1964 [E: same basis; U: standing condition officer_cohorts_1957]"
+ceiling_spaces = "~350–500 US personnel in RVN, of whom ~300–450 military spaces [E: faculty advisers and translators at three schools and a curriculum cell at the JGS Central Training Command, against the historical school advisory detachments]; no troop ceiling is set (CONFIG)"
+arrival = "1964-01-01"
+in_service = "2026 US curricula adapted; the 1957–63 classes are a standing condition"
+systems = ["ADVISE", "FIX", "SECURE", "SUSTAIN"]
+status = "active"
+
+[[provision]]
+id = "P007c"
+designation = "RVNAF Officer Selection and Promotion Reform, 1964: an independent Officer Selection and Promotion Board under the Joint General Staff with written criteria, a two-tier rater and senior-rater evaluation report on the 2026 US model with a capped top block, centrally selected battalion and regimental command lists, relief for cause, an open path to commission for proven NCOs, removal of the diploma bar to promotion, and general-officer promotion and division command filled from a ranked board list, protected by an American aid condition"
+category = "institutional"
+quantity = "One national board system [U]: about 12,000–16,000 officer promotions and about 150–250 battalion and regimental command selections a year in 1964–67 [E: an officer corps of about 18,000–24,000 regular officers in 1964 growing toward 50,000–60,000 by 1972, with the 1969 increment of 2,653 senior officers per S1]"
+ceiling_spaces = "~60–90 US personnel, of whom ~40–60 military spaces [E: an advisory cell to the board and the JGS personnel directorate, evaluation-system trainers, and a share of the senior advisers' time]; no troop ceiling is set (CONFIG)"
+arrival = "1964-01-01"
+in_service = "Design on the 2026 US Army officer evaluation and centralized selection systems; no real-world RVNAF equivalent"
+systems = ["ADVISE", "SECURE"]
+status = "active"
+
+[[push]]
+provision = "P007a"
+var = "US.unit_quality"
+band = 1
+note = "Lieutenants and captains of 1964–68 arrive trained to a common, demanding standard and are gated on it"
+
+[[push]]
+provision = "P007a"
+var = "US.casualties"
+band = -1
+note = "Better-trained platoon and company leaders lose fewer men to ambush, mines and errors of fire support; modest"
+
+[[push]]
+provision = "P007a"
+var = "POP.civilian_harm"
+band = -1
+note = "Law of war, the Army profession and escalation-of-force training reach every new platoon leader, including the wartime OCS classes"
+
+[[push]]
+provision = "P007a"
+var = "US.personnel_demand"
+band = 1
+note = "Officers in school are not in units; the training base grows"
+
+[[push]]
+provision = "P007b"
+var = "ARVN.leadership"
+band = 2
+note = "Seven educated classes in the company grades by 1964 and the gate on every promotion after"
+
+[[push]]
+provision = "P007b"
+var = "ARVN.effectiveness"
+band = 1
+note = "Company and battalion leadership able to plan, coordinate fires and run training"
+
+[[push]]
+provision = "P007b"
+var = "ARVN.self_sufficiency"
+band = 1
+note = "Staff, logistics and fire-support officers educated to run their own systems"
+
+[[push]]
+provision = "P007b"
+var = "RFPF.effectiveness"
+band = 1
+note = "Sector and subsector officers and the RF company commanders drawn from the educated classes"
+
+[[push]]
+provision = "P007c"
+var = "ARVN.leadership"
+band = 2
+note = "Selection and command on merit below the general officers; relief for cause"
+
+[[push]]
+provision = "P007c"
+var = "ARVN.effectiveness"
+band = 1
+note = "Battalions commanded by officers selected for it, kept in command, and removed when they fail"
+
+[[push]]
+provision = "P007c"
+var = "GVN.corruption"
+band = -1
+note = "Promotions and commands no longer for sale; ratings carry integrity"
+
+[[push]]
+provision = "P007c"
+var = "ARVN.desertion"
+band = -1
+note = "Soldiers desert leaders, not armies; modest"
+
+[[push]]
+provision = "P007c"
+var = "GVN.political_stability"
+band = -1
+note = "The reform takes the junta's main currency, which raises the coup risk while it beds in"
+
+[[depend]]
+provision = "P007a"
+var = "US.political_tolerance"
+note = "The training base and the officers' time in school are paid for in a war Congress funds by year"
+
+[[depend]]
+provision = "P007a"
+var = "US.unit_quality"
+note = "The educated lieutenant still serves in a unit shaped by the replacement or rotation system"
+
+[[depend]]
+provision = "P007b"
+var = "ARVN.leadership"
+note = "Education helps only where the selection system puts the educated officer in command"
+
+[[depend]]
+provision = "P007b"
+var = "ADVISE.leverage"
+note = "The gates hold only while the Americans will refuse to fund an exception"
+
+[[depend]]
+provision = "P007b"
+var = "GVN.political_stability"
+note = "Coups make the promotion list and override the gate"
+
+[[depend]]
+provision = "P007b"
+var = "GVN.corruption"
+note = "Seats in the courses and course results can be sold"
+
+[[depend]]
+provision = "P007c"
+var = "ADVISE.leverage"
+note = "The board survives coups only behind an American aid condition, as the Selection Board of P002b does"
+
+[[depend]]
+provision = "P007c"
+var = "GVN.political_stability"
+note = "A junta can suspend the board; a coup is a promotion list"
+
+[[depend]]
+provision = "P007c"
+var = "GVN.admin_capacity"
+note = "Province and district chiefs are drawn from the same officer pool"
+
+[[depend]]
+provision = "P007c"
+var = "INTEL.penetration"
+note = "Board files and command lists are a target for enemy agents in the JGS"
+
+[[depend]]
+provision = "P007c"
+var = "GVN.corruption"
+note = "The Commission of P001b is the board's enforcement arm against sold promotions"
