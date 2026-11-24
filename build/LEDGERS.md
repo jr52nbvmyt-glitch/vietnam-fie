@@ -10,6 +10,7 @@
 - P002b (memo 002) pushes +1 — A district chief who knows his villages and keeps his Popular Forces in them at night, rather than in the district town, is the mechanism of night control
 - P002a (memo 002) depends — A resident constable in a village held by the VC at night is a target, not a policeman; posts follow security
 - P002b (memo 002) depends — A competent chief in a district the enemy holds by night is a competent chief in a besieged town
+- P004a (memo 004) pushes +1 — Hamlet outposts that hold a night longer because their garrisons are not outgunned; small, real, and dependent on whether the platoon is awake and present
 
 ## POP.civilian_harm — Civilian harm from all sides' operations
 *Higher means more civilian deaths and injuries.*
@@ -66,6 +67,7 @@
 - P002b (memo 002) pushes -1 — A post that cannot be bought cannot be farmed to repay the price; vetting and asset declarations close the front door, while the side doors of contracts, rice and the draft stay open
 - P002a (memo 002) depends — Police posts are bought and sold, checkpoints become toll gates, and Special Branch files can be sold; the Commission Against Corruption (P001b) polices the police
 - P002b (memo 002) depends — Examinations can be leaked and boards bought; the Commission Against Corruption (P001b) vets candidates and audits the Board
+- P004a (memo 004) depends — Rifles, optics, batteries and ammunition are saleable; leakage to the market and to the Front is set by command honesty
 
 ## GVN.political_stability — Political stability in Saigon
 *Higher means more stable government and junta cohesion.*
@@ -104,11 +106,28 @@
 - P001a (memo 001) pushes -1 — Removes the land argument that tied a family's sons to the revolution's victory; slow and partial, because conscription by the VCI does not depend on persuasion
 - P002a (memo 002) pushes -1 — The family census shows which sons have gone to the forest and makes VC conscription in held villages visible and costly; confined to held villages, and partly offset by youths who leave before the census reaches them
 
+## VC.local_force — VC local force and guerrillas
+*Higher means stronger local force and guerrilla units.*
+
+- P004a (memo 004) pushes +1 — Counter-direction: every outpost overrun gives the Front modern carbines and 5.56mm, so the local force rearms from our stocks rather than from the Trail
+
+## VC.main_force — VC main force
+*Higher means stronger southern main-force units.*
+
+- P004a (memo 004) depends — The main force's own small arms and its decision whether to fight a better-armed ARVN at close range
+
+## PAVN.strength_south — PAVN combat strength in the South
+*Higher means more PAVN combat power in RVN.*
+
+- P004c (memo 004) depends — PAVN infantry with RPD and PK is the enemy the belt-fed squad gun must match in the meeting engagement
+
 ## ENEMY.engagement_control — Enemy control of engagements
 *Higher means the enemy decides more often whether, when and where battle happens.*
 
 - P003a (memo 003) depends — A regiment that knows it is seen moves at night and under canopy; the U-2's value falls as the enemy learns it
 - P003b (memo 003) depends — An enemy that learns moving-target radar exists moves under canopy, in small groups and in rain, and stops when the aircraft is overhead
+- P004a (memo 004) depends — The rifle acts only in a contact; the enemy still chooses most contacts
+- P004c (memo 004) depends — A base of fire fixes only an enemy who has accepted the fight
 
 ## HANOI.will — Hanoi's commitment to armed reunification
 *Higher means more commitment.*
@@ -141,6 +160,8 @@
 
 - P003a (memo 003) pushes +1 — Radio direction-finding on regimental and front nets from 70,000 ft, radar imagery of base camps, trails and river crossings outside the canopy; finds where a regiment has been and roughly where its headquarters is, not where its companies are tonight
 - P003b (memo 003) pushes +1 — Persistent moving-target radar over open ground, roads, rivers and canals: shows vehicle and boat movement, and column movement in the open, around the clock and in any weather; blind to whatever moves under canopy
+- P004a (memo 004) depends — Firepower in the squad is wasted on empty jungle; it needs the enemy found
+- P004b (memo 004) depends — Long-range precision fire needs a target seen at range: open ground, not canopy
 
 ## FIND.vci — Identifying the VCI
 *Higher means better ability to identify VCI members inside the population.*
@@ -162,6 +183,8 @@
 
 - P003a (memo 003) depends — Finding a regiment's base area does not hold the regiment there
 - P003b (memo 003) depends — A moving column on a road is a target for minutes; without a force able to reach it, the track is history
+- P004b (memo 004) pushes +1 — Precise fire at 300–800 m in paddy, on the coastal plain, from hilltop and firebase perimeters; kills the enemy's own snipers, machine gunners and leaders at ranges the AK cannot answer
+- P004c (memo 004) pushes +1 — Belt-fed base of fire inside the squad: the ARVN squad can hold an enemy in contact with 200-round belts instead of a 20-round BAR
 
 ## STRIKE.responsiveness — Speed from detection to effect
 *Higher means faster fires on located targets.*
@@ -192,6 +215,9 @@
 
 - P001b (memo 001) pushes +1 — Ghost soldiers removed from the rolls: battalions known to be their real strength, rice and pay reaching the men present
 - P002b (memo 002) depends — Competent officers drawn to province and district posts leave battalions and regiments; the selection competes with the line for the same few hundred able officers
+- P004a (memo 004) pushes +1 — ARVN infantry matches and outshoots the AK-47 from 1964 instead of mid-1968; faster hits in the first seconds of a contact at 10–50 m, more volume per man, a lighter weapon for smaller soldiers
+- P004b (memo 004) pushes +1 — Small but real: a trained marksman in each squad in the open delta and plains country where ARVN does most of its fighting
+- P004c (memo 004) pushes +1 — Squad firepower matching the RPD-armed PAVN infantry from 1964
 
 ## ARVN.leadership — RVNAF officer selection and quality
 *Higher means better officers, selected on merit.*
@@ -201,12 +227,20 @@
 - P002b (memo 002) pushes +1 — Selection for a province or district becomes a reward for merit in the field, and the examination creates a record of officers' ability that promotion boards can use
 - P002a (memo 002) depends — Military Security Service and ARVN intelligence must accept Special Branch primacy on the VCI
 - P002b (memo 002) depends — The candidate pool is the officer corps and a thin civil service; merit selection cannot select merit that does not exist
+- P004a (memo 004) depends — A better rifle does not make a unit go out at night or accept contact; leaders decide that
+- P004b (memo 004) depends — Marksmen must be selected on skill, not on favour, and employed by squad leaders who understand them
 
 ## ARVN.desertion — RVNAF desertion
 *Higher means more desertion.*
 
 - P001b (memo 001) pushes -1 — Pay delivered to the soldier by an independent paymaster rather than through his commander removes one cause of desertion
 - P002a (memo 002) pushes -1 — Identity cards and the family census make a deserter at home findable; the deterrent is modest and the police are reluctant to arrest the sons of the village
+- P004a (memo 004) depends — Deserters take their carbines; the weapon must stay with the force to matter
+
+## ARVN.self_sufficiency — RVNAF self-sufficiency
+*Higher means more able to fight, maintain and supply itself without US combat support.*
+
+- P004a (memo 004) depends — M855A1, optics, batteries and URG-I parts all come from the United States; the RVNAF cannot make or repair them at depth, so the rearmament deepens the supply dependence that 1973–75 punished
 
 ## RFPF.effectiveness — Regional and Popular Forces
 *Higher means more effective territorial forces.*
@@ -215,6 +249,8 @@
 - P001a (memo 001) depends — Territorial forces hold titled hamlets after the land teams leave
 - P002b (memo 002) pushes +1 — The province and district chief commands the Regional and Popular Forces; a competent chief who stays two years is the largest single improvement territorial forces can receive without new equipment
 - P002a (memo 002) depends — Popular Forces hold the village with the constable at night; the police post is not a fort
+- P004a (memo 004) pushes +1 — The outpost platoon holds its wall against a VC local-force company with 30-round magazines and a red dot instead of carbines and Garands; the territorial forces are rearmed five years before 1969
+- P004a (memo 004) depends — The rifle's value in the hamlet depends on whether the platoon is present and awake after dark
 
 ## ADVISE.leverage — Advisory leverage
 *Higher means advisors can change more RVNAF decisions.*
@@ -225,6 +261,8 @@
 - P002b (memo 002) pushes +1 — Province and district advisers get a counterpart who stays and an Inspectorate to which their evidence can go; the leverage is institutional rather than American, which is why it costs little legitimacy
 - P002a (memo 002) depends — Americans keep the identity, pay and review provisions moving through governments that would prefer a political police
 - P002b (memo 002) depends — The Aid Compliance Board's power to suspend a province's counterpart funds (P001b) enforces appointment through the list
+- P004a (memo 004) depends — Zeroing, marksmanship and maintenance training is only as good as the advisers' ability to make ARVN and RF/PF commanders hold it
+- P004c (memo 004) depends — Machine-gun fire discipline, barrel changes and ammunition management are trained or the guns burn out and run dry
 
 ## US.personnel_demand — Demand on US personnel spaces
 *Higher means more spaces consumed.*
@@ -233,10 +271,30 @@
 - P003a (memo 003) pushes +1 — About 220 spaces of scarce specialists: U-2 pilots, sensor technicians, imagery analysts and Vietnamese-language SIGINT linguists
 - P003b (memo 003) pushes +1 — About 380 spaces: pilots and sensor operators for a 24-hour orbit, maintainers, contractor engineers and an exploitation cell
 
+## US.casualties — US casualty rate
+*Higher means more US killed and wounded.*
+
+- P004a (memo 004) pushes -1 — Fewer men lost in the first seconds of the meeting engagement; the rifle that does not jam in the Hill 881 sense
+- P004a (memo 004) depends — The fraction of US deaths taken from small arms in the first seconds of contact, against the much larger fraction from mines, booby traps, mortars and RPGs that no rifle touches
+
+## US.unit_quality — US unit quality
+*Higher means better US units.*
+
+- P004a (memo 004) pushes +1 — No 1967 M16 jamming crisis, a red-dot sight in every rifleman's hands, and M855A1 through brush and light cover
+
+## LOG.ports — Port throughput
+*Higher means more port capacity and clearance.*
+
+- P004a (memo 004) depends — About 600,000 weapons and hundreds of millions of rounds in the first year through five ports
+
 ## LOG.distribution — In-country distribution
 *Higher means better road, rail and air distribution.*
 
 - P003b (memo 003) depends — Air base security and fuel at Bien Hoa and Da Nang; an aircraft on the ramp is exposed to mortars
+- P004c (memo 004) pushes -1 — Linked 5.56mm and spare barrels in quantity down a road net the enemy cuts; small per gun, large across 6,000 squads
+- P004a (memo 004) depends — Ammunition, batteries, optics spares and replacement carbines must reach districts and outposts over interdicted roads
+- P004b (memo 004) depends — Match 7.62mm ammunition and scope spares in a second calibre at squad level
+- P004c (memo 004) depends — Linked ammunition, spare barrels, links and feed parts
 
 ## LOG.helicopter_hours — Helicopter hours available
 *Higher means more lift hours available.*
@@ -255,6 +313,7 @@
 - P002a (memo 002) depends — Congress funds a police programme that its critics will call a secret police
 - P002b (memo 002) depends — Washington must accept that a chief who will not falsify returns reports bad news
 - P003a (memo 003) depends — A lost U-2 is a public event; the 1960 and 1962 losses are in every politician's memory
+- P004a (memo 004) pushes +1 — Small: no 1967 rifle scandal, no Ichord subcommittee hearings, no letters home about a rifle that jams; fewer dead in the first seconds of contact
 
 ## US.credibility_gap — The credibility gap
 *Higher means wider gap between what MACV reports and what the press reports.*
@@ -273,3 +332,4 @@
 
 - P001a (memo 001) pushes +1 — Southern-born guerrillas and their families can now keep land the Front gave them without the Front; slow and confined to areas the government can reach
 - P002a (memo 002) pushes +1 — A resident constable and a Special Branch officer are a door a frightened cadre can walk through at night; Special Branch, not the Army, debriefs and turns ralliers
+- P004a (memo 004) depends — Weapons-for-money and Chieu Hoi rewards meet a market in which a modern carbine is the most valuable thing a man can carry

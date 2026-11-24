@@ -4,7 +4,7 @@
 memo = "004"
 title = "Modern infantry small arms for US, ARVN and RF/PF: M4A1 URG-I with Aimpoint CompM5, M110A2 squad marksman rifle, M249 squad automatic weapon"
 received = "2026-11-23"
-status = "part1"
+status = "part2"
 version = "1.0.3"
 phases_changed = []
 links = ["001", "002"]           # the RF/PF who escort the titling teams and hold the hamlets behind the police posts are the men this rifle rearms; the National Police and its Police Field Force are not covered by the provision and keep their carbines
@@ -191,3 +191,35 @@ note = "A base of fire fixes only an enemy who has accepted the fight"
 provision = "P004c"
 var = "ADVISE.leverage"
 note = "Machine-gun fire discipline, barrel changes and ammunition management are trained or the guns burn out and run dry"
+
+# ---------------------------------------------------------------- Part 2 refinements
+[[push]]
+provision = "P004a"
+var = "US.political_tolerance"
+band = 1
+note = "Small: no 1967 rifle scandal, no Ichord subcommittee hearings, no letters home about a rifle that jams; fewer dead in the first seconds of contact"
+
+[[depend]]
+provision = "P004a"
+var = "ARVN.self_sufficiency"
+note = "M855A1, optics, batteries and URG-I parts all come from the United States; the RVNAF cannot make or repair them at depth, so the rearmament deepens the supply dependence that 1973–75 punished"
+
+[[depend]]
+provision = "P004a"
+var = "SUBVERT.defection"
+note = "Weapons-for-money and Chieu Hoi rewards meet a market in which a modern carbine is the most valuable thing a man can carry"
+
+[[depend]]
+provision = "P004a"
+var = "VC.main_force"
+note = "The main force's own small arms and its decision whether to fight a better-armed ARVN at close range"
+
+[[depend]]
+provision = "P004c"
+var = "PAVN.strength_south"
+note = "PAVN infantry with RPD and PK is the enemy the belt-fed squad gun must match in the meeting engagement"
+
+[[depend]]
+provision = "P004a"
+var = "US.casualties"
+note = "The fraction of US deaths taken from small arms in the first seconds of contact, against the much larger fraction from mines, booby traps, mortars and RPGs that no rifle touches"
