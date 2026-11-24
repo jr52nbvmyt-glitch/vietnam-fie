@@ -3,9 +3,9 @@
 memo = "007"
 title = "Officer education to the 2026 standard for new US and ARVN officers from 1957, gating promotion; ARVN officer selection and promotion reform"
 received = "2026-11-24"
-status = "part2"
+status = "complete"
 version = "1.0.5"
-phases_changed = []
+phases_changed = ["P1", "P2", "P3", "P4", "P5", "P6"]
 links = ["001", "002", "006"]
 
 [deviation]
