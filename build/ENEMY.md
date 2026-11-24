@@ -6,8 +6,8 @@
 
 | Phase | Enemy | Allied | Both | Neither | Untagged |
 |---|---|---|---|---|---|
-| P1 | 0 | 0 | 0 | 0 | 30 |
-| P2 | 0 | 0 | 0 | 0 | 26 |
+| P1 | 0 | 0 | 0 | 0 | 31 |
+| P2 | 0 | 0 | 0 | 0 | 28 |
 | P3 | 0 | 0 | 0 | 0 | 16 |
 | P4 | 0 | 0 | 0 | 0 | 20 |
 | P5 | 0 | 0 | 0 | 0 | 9 |
@@ -22,3 +22,4 @@ No events tagged yet.
 - **POSTNA-3** · vars: ENEMY.engagement_control, ENEMY.regeneration, SANCT.laos, SANCT.cambodia · While the enemy controls whether to accept battle and regenerates in sanctuary, attrition has no crossover point; a strategy that waits for one waits for something the geometry does not permit (TNA G-8)
 - **POS001-3** · vars: HANOI.will · Reform that erodes the Front's base raises Hanoi's urgency and shifts the arguments inside the Politburo; it does not change Hanoi's commitment to armed reunification or the timing of its decisions to invade (001 §2 F001-12; §4.P2)
 - **POS001-4** · vars: POP.gvn_legitimacy, VCI.strength · A one-band gain in the countryside's allegiance does not carry into the conventional battles of 1972 and 1975; the end state turns on the military balance after the American withdrawal, and political gains are necessary but not sufficient to move it (001 §4.N)
+- **POS004-1** · vars: RFPF.effectiveness, POP.night_control, ENEMY.engagement_control · Infantry small arms change how the fights the enemy accepts go, never which fights he accepts; at the outpost their value equals the platoon's presence after dark and the reaction behind it, and the enemy's answer to a better-armed post is to attack what is not rearmed (004 F004-1, F004-3, F004-16; §4.P1)
