@@ -1,0 +1,134 @@
+# Manifest for memorandum 010.
+
+memo = "010"
+title = "NCO education to the 2026 US standard for every US and RVNAF regular NCO from 1957, each course a gate for the next promotion"
+received = "2026-11-24"
+status = "part1"
+version = "1.0.5"
+phases_changed = []
+links = ["006", "007", "009"]
+
+[deviation]
+part1 = "none"
+part2 = "none"
+part3 = "none"
+
+[[provision]]
+id = "P010a"
+designation = "US enlisted professional military education to the 2026 standard for every NCO of the four services from 1957: the Army's NCO Professional Development System (the 29-day Basic Leader Course, the Advanced and Senior Leader Courses, the Master Leader Course and the 10-month Sergeants Major Course) under Select, Train, Educate, Promote; the Marine Corps' Corporals Course, Sergeants School, Career and Advanced School programmes, SNCO Leadership School and First Sergeants School; the Navy and Air Force enlisted leadership continua; each course a gate for the next promotion"
+category = "institutional"
+quantity = "Every US NCO from 1957 [U]: the NCOs serving in 1957 put through the course for their grade in 1957–60 and every man promoted since through his course before promotion; about 120,000–180,000 Army and Marine course completions a year in 1957–64 and about 250,000–350,000 at the 1967–69 peak, with about as many again in the Navy and Air Force [E: D1 and D5, from NCO strengths of the period and promotion rates]; by 1 Jan 1964 every serving NCO holds the course for his grade [U: standing condition nco_education_1957]"
+ceiling_spaces = "~250–450 US personnel in RVN [E: a MACV NCO academy at about 150–250 cadre teaching the Basic Leader Course in theater to men promoted there, and NCO course cells at the field force and Marine amphibious force headquarters]; about 4,000–7,000 added instructor and staff spaces in the United States at the peak and about 2–3% of the NCO corps in school at any time, outside the ceiling [E: D2]; no troop ceiling is set (CONFIG)"
+arrival = "1964-01-01"
+in_service = "2026 configuration: Army STEP from 2016, the 29-day BLC fielded from mid-2026, the 2025 shortening of ALC and SLC to three weeks resident; Marine EPME by grade per MARADMIN 630/24; the 1957–63 cohorts are a standing condition"
+systems = ["FIX", "SECURE", "SUSTAIN"]
+status = "active"
+
+[[provision]]
+id = "P010b"
+designation = "RVNAF regular NCO education on the 2026 US Army NCO Professional Development System for every NCO of the ARVN, Airborne, Rangers, Vietnamese Marines, VNAF and VNN from 1957: a Basic Leader Course for corporals and sergeants, an Advanced Leader Course for squad and section leaders, a Senior Leader Course for platoon sergeants, a Master Leader Course for first sergeants and battalion senior NCOs and a senior NCO course, in Vietnamese at the National NCO Academy at Nha Trang (Dong De) and division and service NCO schools, with MAAG and MACV advisers, each course a gate for the next promotion"
+category = "institutional"
+quantity = "Every RVNAF regular NCO from 1957 [U]: about 18,000–28,000 NCOs serving in 1957, about 35,000–50,000 in 1964 and about 90,000–130,000 at the 1970 peak; about 8,000–14,000 course completions a year in 1957–63, 15,000–25,000 in 1964–67 and 30,000–45,000 at the 1968–70 peak [E: D1, against S8's 16,522 students at the Nha Trang academy in 1970]; by 1 Jan 1964 every serving regular NCO holds the course for his grade [U: standing condition nco_education_1957]"
+ceiling_spaces = "~150–300 US personnel in RVN, of whom ~130–270 military spaces [E: an advisory detachment of 40–70 at the Nha Trang academy, teams of four to eight at 10–15 division and service NCO schools and a curriculum and translation cell at the Central Training Command]; no troop ceiling is set (CONFIG)"
+arrival = "1964-01-01"
+in_service = "2026 US Army NCO Professional Development System adapted in Vietnamese; no real-world equivalent; the 1957–63 cohorts are a standing condition"
+systems = ["FIX", "SECURE", "ADVISE", "SUSTAIN"]
+status = "active"
+
+[[push]]
+provision = "P010a"
+var = "US.unit_quality"
+band = 1
+note = "Every sergeant, staff sergeant and platoon sergeant schooled for his grade before he holds it; the instant NCOs of 1967–71 get the Basic Leader Course before their sixth stripe; the gain is largest exactly when the NCO corps thinned"
+
+[[push]]
+provision = "P010a"
+var = "US.casualties"
+band = -1
+note = "Squad and platoon fights are NCOs' fights; better land navigation, fire control, patrol-base discipline and leader-stakes medical drill; modest in total"
+
+[[push]]
+provision = "P010a"
+var = "US.personnel_demand"
+band = 1
+note = "Men in school instead of in squads, a larger instructor base and a ten-month course for sergeants major; promotions gated during the 1966–68 NCO shortage"
+
+[[push]]
+provision = "P010a"
+var = "POP.civilian_harm"
+band = -1
+note = "The squad leader is the man who controls fire in the hamlet and the detainee at the trail; small"
+
+[[push]]
+provision = "P010b"
+var = "ARVN.effectiveness"
+band = 1
+note = "Every regular squad and platoon led by an NCO schooled for his job, in an army whose NCO corps was its thinnest layer; with P009b the trained private now has a trained corporal"
+
+[[push]]
+provision = "P010b"
+var = "ARVN.self_sufficiency"
+band = 1
+note = "Senior and master courses teach maintenance, supply, training management and readiness reporting at company and battalion; the sergeants who keep trucks and radios running"
+
+[[push]]
+provision = "P010b"
+var = "ARVN.desertion"
+band = -1
+note = "The NCO who counsels his men, knows their families and runs the leave roster; modest against pay and posting"
+
+[[push]]
+provision = "P010b"
+var = "US.personnel_demand"
+band = 1
+note = "Advisers at the NCO academy and schools; small"
+
+[[depend]]
+provision = "P010a"
+var = "US.unit_quality"
+note = "The educated sergeant is only as useful as the squad he keeps; P006b unit rotation decides whether he stays with it"
+
+[[depend]]
+provision = "P010a"
+var = "US.political_tolerance"
+note = "Men in school and gated promotions during a build-up without reserve mobilisation"
+
+[[depend]]
+provision = "P010a"
+var = "US.personnel_demand"
+note = "The gate holds promotions in the years the NCO corps was shortest"
+
+[[depend]]
+provision = "P010b"
+var = "ARVN.leadership"
+note = "The 2026 NCO model presumes officers who delegate; P007b and P007c decide whether the lieutenant lets the sergeant lead"
+
+[[depend]]
+provision = "P010b"
+var = "ADVISE.leverage"
+note = "Advisers must keep the course gates from being waived for the commander's favourites and stop units withholding men from school"
+
+[[depend]]
+provision = "P010b"
+var = "GVN.corruption"
+note = "Promotion by purchase and by across-the-board decree defeats a gate; the course is worth what the promotion board respects"
+
+[[depend]]
+provision = "P010b"
+var = "ECON.inflation"
+note = "An educated sergeant whose pay no longer feeds his family deserts or moonlights with his education (DIRMT01-9)"
+
+[[depend]]
+provision = "P010b"
+var = "ARVN.desertion"
+note = "The NCO corps is drawn from the men who stay; desertion drains the pool the courses draw on"
+
+[[depend]]
+provision = "P010b"
+var = "ENEMY.engagement_control"
+note = "The schooled squad leader acts only in the fights the enemy accepts"
+
+[[depend]]
+provision = "P010b"
+var = "RFPF.effectiveness"
+note = "RF and PF NCOs are outside the grant; the territorial war's sergeants are unchanged"
