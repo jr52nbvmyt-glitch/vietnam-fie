@@ -26,10 +26,10 @@ status = "active"
 
 [[provision]]
 id = "P010b"
-designation = "RVNAF regular NCO education on the 2026 US Army NCO Professional Development System for every NCO of the ARVN, Airborne, Rangers, Vietnamese Marines, VNAF and VNN from 1957: a Basic Leader Course for corporals and sergeants, an Advanced Leader Course for squad and section leaders, a Senior Leader Course for platoon sergeants, a Master Leader Course for first sergeants and battalion senior NCOs and a senior NCO course, in Vietnamese at the National NCO Academy at Nha Trang (Dong De) and division and service NCO schools, with MAAG and MACV advisers, each course a gate for the next promotion"
+designation = "RVNAF NCO education on the 2026 US Army NCO Professional Development System for every NCO of the ARVN, Airborne, Rangers, Vietnamese Marines, VNAF and VNN and of the Regional and Popular Forces (Civil Guard and Self-Defense Corps before 1964) from 1957 (RF and PF by erratum E03): a Basic Leader Course for corporals and sergeants, an Advanced Leader Course for squad and section leaders, a Senior Leader Course for platoon sergeants, a Master Leader Course for first sergeants and battalion senior NCOs and a senior NCO course, in Vietnamese at the National NCO Academy at Nha Trang (Dong De), division and service NCO schools and the RF/PF training centres, with MAAG and MACV advisers, each course a gate for the next promotion"
 category = "institutional"
-quantity = "Every RVNAF regular NCO from 1957 [U]: about 18,000–28,000 NCOs serving in 1957, about 35,000–50,000 in 1964 and about 90,000–130,000 at the 1970 peak; about 8,000–14,000 course completions a year in 1957–63, 15,000–25,000 in 1964–67 and 30,000–45,000 at the 1968–70 peak [E: D1, against S8's 16,522 students at the Nha Trang academy in 1970]; by 1 Jan 1964 every serving regular NCO holds the course for his grade [U: standing condition nco_education_1957]"
-ceiling_spaces = "~150–300 US personnel in RVN, of whom ~130–270 military spaces [E: an advisory detachment of 40–70 at the Nha Trang academy, teams of four to eight at 10–15 division and service NCO schools and a curriculum and translation cell at the Central Training Command]; no troop ceiling is set (CONFIG)"
+quantity = "Every RVNAF regular and RF/PF NCO from 1957 [U]: regular NCOs about 18,000–28,000 in 1957, 35,000–50,000 in 1964 and 90,000–130,000 at the 1970 peak, RF/PF NCOs about 10,000–15,000, 25,000–40,000 and 55,000–80,000 [E: D1 and E03]; about 14,000–24,000 course completions a year in 1957–63, 27,000–45,000 in 1964–67 and 50,000–80,000 at the 1968–70 peak [E: D1 and E03, against S8's 16,522 students at the Nha Trang academy in 1970]; by 1 Jan 1964 every serving regular and territorial NCO holds the course for his grade [U: standing condition nco_education_1957]"
+ceiling_spaces = "~210–420 US personnel in RVN, of whom ~180–380 military spaces [E: an advisory detachment of 40–70 at the Nha Trang academy, teams of four to eight at 10–15 division and service NCO schools, teams of two to five at 19–37 RF/PF centres and a curriculum and translation cell at the Central Training Command; E03]; no troop ceiling is set (CONFIG)"
 arrival = "1964-01-01"
 in_service = "2026 US Army NCO Professional Development System adapted in Vietnamese; no real-world equivalent; the 1957–63 cohorts are a standing condition"
 systems = ["FIX", "SECURE", "ADVISE", "SUSTAIN"]
@@ -76,6 +76,12 @@ provision = "P010b"
 var = "ARVN.desertion"
 band = -1
 note = "The NCO who counsels his men, knows their families and runs the leave roster; modest against pay and posting"
+
+[[push]]
+provision = "P010b"
+var = "RFPF.effectiveness"
+band = 1
+note = "Every RF and PF squad and platoon leader schooled for his grade (E03); the 1964 PF leadership training that ran 60% behind is filled by the gate"
 
 [[push]]
 provision = "P010b"
@@ -130,5 +136,10 @@ note = "The schooled squad leader acts only in the fights the enemy accepts"
 
 [[depend]]
 provision = "P010b"
-var = "RFPF.effectiveness"
-note = "RF and PF NCOs are outside the grant; the territorial war's sergeants are unchanged"
+var = "POP.night_control"
+note = "The schooled PF platoon leader matters only in a hamlet his platoon holds after dark and a reaction force that comes when he calls"
+
+[[depend]]
+provision = "P010b"
+var = "GVN.admin_capacity"
+note = "Province and district chiefs control RF/PF manning and must release territorial NCOs to the courses (E03)"
