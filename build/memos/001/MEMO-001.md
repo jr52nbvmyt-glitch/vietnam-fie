@@ -669,7 +669,7 @@ The Commission did not last as well. The American lever that had protected it wa
 
 ### Chronicle
 
-*End of phase against the historical state: POP.gvn_legitimacy +1.*
+*End of phase against the historical state: POP.gvn_legitimacy +2..+4.*
 
 The war that COMUSMACV inherits on 1 January 1964 is an advisory war that is being lost. Two months earlier the coup of 1 November 1963 had killed Ngo Dinh Diem and his brother Nhu, and with them went the province chiefs, the Strategic Hamlet Program and most of the administrative continuity the Republic of Vietnam possessed. The Military Assistance Command, Vietnam, under General Paul D. Harkins, is a headquarters of advisers, helicopter companies and support troops; the United States has about 23,300 military personnel in the country by the end of 1964, none of them formed into combat units, and 147 die by hostile action that year¹³³. The fighting is done by the Army of the Republic of Vietnam, the Regional and Popular Forces, and the Civilian Irregular Defense Group camps of the US Special Forces, against a Viet Cong movement that has rebuilt itself since 1959 on the political infrastructure left from the war against France and on cadres regrouped to the North in 1954 and now returning down the Trail.
 
@@ -876,7 +876,7 @@ Phase II inherits a land programme that has found its rate and its limit, about 
 
 ### Chronicle
 
-*End of phase against the historical state: POP.gvn_legitimacy +1 · VCI.strength -1.*
+*End of phase against the historical state: POP.gvn_legitimacy +2..+4 · VCI.strength -4..-2.*
 
 Phase II is the American war at full stride. US military strength in Vietnam rises from about 184,000 at the end of 1965 to 385,000 at the end of 1966 and 486,000 at the end of 1967, and American deaths by hostile action from 1,369 in 1965 to 5,008 in 1966 and 9,378 in 1967¹³³. The strategy is Westmoreland's: US divisions and brigades, with airmobility and almost unlimited firepower, seek out and destroy the enemy's main-force regiments and base areas, while the ARVN is turned increasingly to territorial security and pacification. The measure of success becomes attrition, the "crossover point" at which the enemy loses men faster than he can replace them through recruitment in the South and infiltration from the North. The instrument of measurement becomes the body count, which inflates at every level of reporting and never once establishes that the crossover has been reached.
 
@@ -1061,7 +1061,7 @@ Phase III inherits about 820,000 titled hectares, a Front in the Delta with a sm
 
 ### Chronicle
 
-*End of phase against the historical state: POP.night_control +1 · POP.gvn_legitimacy +1 · VCI.strength -1 · FIND.vci +1.*
+*End of phase against the historical state: POP.night_control +2..+4 · POP.gvn_legitimacy +2..+4 · VCI.strength -4..-2 · FIND.vci +2..+4.*
 
 1968 is the year the war turns, and it turns on a battle the enemy lost. In the first hours of 31 January PAVN and VC forces attack Saigon, Hue and most of the provincial capitals of the South at once, breaking the Tet truce and every assumption of the American progress campaign. By the measures of the battlefield the General Offensive fails: there is no general uprising, the cities are retaken, Hue after a month, and the Viet Cong lose the larger part of the cadres and local forces they had built over a decade. By the measures of politics it succeeds beyond Hanoi's hopes. Within two months the President has refused Westmoreland's request for 206,000 more men, halted most of the bombing of the North, offered negotiations and withdrawn from the presidential race. US deaths by hostile action reach 14,592 in the year, the highest of the war, and US strength in Vietnam stands at about 537,000 at its end¹³³.
 
@@ -1194,7 +1194,7 @@ The provisions do not move the American clock in 1968. US deaths by hostile acti
 
 ### Chronicle
 
-*End of phase against the historical state: POP.night_control +1 · POP.gvn_legitimacy +1 · VCI.strength -1 · FIND.vci +1.*
+*End of phase against the historical state: POP.night_control +2..+4 · POP.gvn_legitimacy +2..+4 · VCI.strength -4..-2 · FIND.vci +2..+4.*
 
 Phase IV is the war of the American withdrawal. US strength peaks at about 539,000 in the first half of 1969 and falls to 474,000 at the end of that year, 336,000 at the end of 1970 and 158,000 at the end of 1971. American deaths by hostile action fall with it, from about 9,414 in 1969 to 4,221 in 1970 and 1,380 in 1971¹³³. The Republic of Vietnam's armed forces grow to replace them: from about 897,000 in 1969 to 968,000 in 1970 and about 1,048,000 in 1971–72, the territorial Regional and Popular Forces growing fastest¹⁸⁸. The policy has a name, Vietnamization, and a premise: that the South, given equipment, time and American air power, can hold what the Americans leave.
 

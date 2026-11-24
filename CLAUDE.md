@@ -1,5 +1,5 @@
-<!-- fie v1.0.5 -->
-# Vietnam Force-Injection Exercise — repository v1.0.5
+<!-- fie v1.0.6 -->
+# Vietnam Force-Injection Exercise — repository v1.0.6
 
 This repository is the exercise's whole record. On any turn where you are unsure what to do, run `python3 scripts/fie.py status` and read `procedures/BOOTSTRAP.md`.
 

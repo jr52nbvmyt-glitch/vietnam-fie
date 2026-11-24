@@ -6,12 +6,12 @@
 
 | Phase | Variable | Before → after |
 |---|---|---|
-| P1 | FIND.vci | +0 → +1 |
-| P2 | POP.night_control | +0 → +1 |
-| P2 | VCI.strength | -1 → -2 |
-| P2 | FIND.vci | +0 → +2 |
-| P3 | VCI.strength | -1 → -2 |
-| P3 | FIND.vci | +1 → +2 |
+| P1 | FIND.vci | +0 (old band ≈ +0) → +1 (old band ≈ +2..+4) |
+| P2 | POP.night_control | +0 (old band ≈ +0) → +1 (old band ≈ +2..+4) |
+| P2 | VCI.strength | -1 (old band ≈ -4..-2) → -2 (old band ≈ -7..-5) |
+| P2 | FIND.vci | +0 (old band ≈ +0) → +2 (old band ≈ +5..+7) |
+| P3 | VCI.strength | -1 (old band ≈ -4..-2) → -2 (old band ≈ -7..-5) |
+| P3 | FIND.vci | +1 (old band ≈ +2..+4) → +2 (old band ≈ +5..+7) |
 
 ## Phase I — The advisory war and escalation (Jan 1964 – Jul 1965)
 

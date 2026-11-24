@@ -25,6 +25,7 @@ Commands
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import signal
 import shutil
@@ -156,12 +157,167 @@ def variables() -> list[dict]:
     return load_toml(ROOT / "schema" / "VARIABLES.toml")["var"]
 
 
+def facet_map() -> dict[str, list[str]]:
+    """Parent variable ID -> its facet IDs ("<variable>.<facet>")."""
+    return {v["id"]: [f"{v['id']}.{f['id']}" for f in v.get("facets", [])] for v in variables()}
+
+
 def var_ids() -> set[str]:
-    return {v["id"] for v in variables()}
+    """Every variable and every facet."""
+    out = set()
+    for v, fs in facet_map().items():
+        out.add(v)
+        out.update(fs)
+    return out
 
 
 def vector_ids() -> list[str]:
     return [v["id"] for v in variables() if v.get("vector")]
+
+
+def vector_keys() -> list[str]:
+    """The keys every end vector (and snapshot) carries: each headline variable, then its facets."""
+    fm = facet_map()
+    return [k for v in vector_ids() for k in [v] + fm[v]]
+
+
+def parent(v: str) -> str:
+    return ".".join(str(v).split(".")[:2])
+
+
+def var_tier(v: str) -> str:
+    return next((x.get("tier", "") for x in variables() if x["id"] == v), "")
+
+
+# The scale (v1.0.6): ranges on -10..+10 with a confidence and a note. Old whole-number bands
+# (-3..+3, memoranda 001-010) are history and are read through LEGACY.
+SCALE = 10
+LEGACY = {0: (0, 0), 1: (2, 4), 2: (5, 7), 3: (8, 10)}
+LEGACY_LAST_MEMO = 10
+CONFS = ("low", "medium", "high", "converted", "unjudged")
+PUSH_CONFS = ("low", "medium", "high")
+VAL_ORDER = ("low", "high", "conf", "binding", "hist", "est", "note")
+
+
+def legacy_range(b: int) -> tuple[int, int]:
+    lo, hi = LEGACY[min(3, abs(b))]
+    return (lo, hi) if b >= 0 else (-hi, -lo)
+
+
+def rng(v) -> tuple[int, int] | None:
+    """(low, high) of a value in either form — a v1.0.6 table or an old band — or None if unjudged."""
+    if isinstance(v, bool):
+        return None
+    if isinstance(v, int):
+        return legacy_range(v)
+    if isinstance(v, dict) and isinstance(v.get("low"), int) and isinstance(v.get("high"), int):
+        return (v["low"], v["high"])
+    return None
+
+
+def push_range(x: dict) -> tuple[int, int] | None:
+    return rng(x["band"]) if "band" in x else rng(x)
+
+
+def mid(r: tuple[int, int] | None) -> float:
+    return 0.0 if r is None else (r[0] + r[1]) / 2
+
+
+def fmt_rng(r: tuple[int, int] | None) -> str:
+    if r is None:
+        return "unjudged"
+    return f"{r[0]:+d}" if r[0] == r[1] else f"{r[0]:+d}..{r[1]:+d}"
+
+
+def fmt_val(v) -> str:
+    if v is None:
+        return "—"
+    if isinstance(v, int) and not isinstance(v, bool):
+        return f"{v:+d} (old band ≈ {fmt_rng(legacy_range(v))})"
+    conf = v.get("conf", "") if isinstance(v, dict) else ""
+    return fmt_rng(rng(v)) + (f" ({conf})" if conf and conf != "unjudged" else "")
+
+
+def fmt_push(x: dict) -> str:
+    if "band" in x:
+        return f"{int(x['band']):+d} [old band ≈ {fmt_rng(legacy_range(int(x['band'])))}]"
+    return fmt_rng(push_range(x)) + (f" ({x['conf']})" if x.get("conf") else "")
+
+
+def toml_value(x) -> str:
+    if isinstance(x, bool):
+        return "true" if x else "false"
+    if isinstance(x, (int, float)):
+        return str(x)
+    if isinstance(x, dict):
+        keys = [k for k in VAL_ORDER if k in x] + [k for k in x if k not in VAL_ORDER]
+        return "{ " + ", ".join(f"{k} = {toml_value(x[k])}" for k in keys) + " }"
+    if isinstance(x, list):
+        return "[" + ", ".join(toml_value(i) for i in x) + "]"
+    return json.dumps(str(x), ensure_ascii=False)
+
+
+def dump_front_matter(fm: dict) -> str:
+    """Serialise a chapter's front matter: scalars, then [end_vector], then [snapshot] if any."""
+    out = [f"{k} = {toml_value(v)}" for k, v in fm.items() if not isinstance(v, dict)]
+    for sec in [k for k, v in fm.items() if isinstance(v, dict)]:
+        out.append(f"\n[{sec}]")
+        for k, v in fm[sec].items():
+            out.append(f'"{k}" = {toml_value(v)}' if "." in k else f"{k} = {toml_value(v)}")
+    return "\n".join(out)
+
+
+def check_value(label: str, k: str, v, errors: list, warnings: list):
+    """Validate one end-vector or snapshot entry on the v1.0.6 scale."""
+    if isinstance(v, int) and not isinstance(v, bool):
+        errors.append(f"{label}: {k} = {v} is an old band; from v1.0.6 write {{ low = …, high = …, conf = …, note = … }}")
+        return
+    if not isinstance(v, dict):
+        errors.append(f"{label}: {k} must be an inline table {{ low, high, conf, note }}")
+        return
+    unknown = [x for x in v if x not in VAL_ORDER]
+    if unknown:
+        errors.append(f"{label}: {k} has unknown field(s) {', '.join(unknown)}")
+    conf = v.get("conf")
+    if conf not in CONFS:
+        errors.append(f"{label}: {k} conf {conf!r} must be one of {', '.join(CONFS)}")
+    if conf == "unjudged":
+        if "low" in v or "high" in v:
+            errors.append(f"{label}: {k} is unjudged but carries low/high")
+    else:
+        lo, hi = v.get("low"), v.get("high")
+        if not (isinstance(lo, int) and isinstance(hi, int)) or isinstance(lo, bool) or isinstance(hi, bool):
+            errors.append(f"{label}: {k} needs whole-number low and high")
+        elif not (-SCALE <= lo <= hi <= SCALE):
+            errors.append(f"{label}: {k} range {lo}..{hi} must satisfy -{SCALE} ≤ low ≤ high ≤ {SCALE}")
+        if conf in ("low", "medium", "high") and not str(v.get("note", "")).strip():
+            warnings.append(f"{label}: {k} is judged but has no note saying what the range means")
+    if ("hist" in v) != ("est" in v) and conf != "unjudged":
+        errors.append(f"{label}: {k} carries one of hist/est without the other — the anchor and this war's figure go together")
+    if "hist" in v and not re.search(r"\[(?:H\d*|S\d+|M\d{3}(?:·S\d+)?)\]", str(v["hist"])):
+        errors.append(f"{label}: {k} hist needs a historical provenance tag ([H], [H3], [M005·S2])")
+    if "est" in v and not re.search(r"\[X-" + WORK_RE + r"\]", str(v["est"])):
+        errors.append(f"{label}: {k} est is an exercise judgment and needs an [X-NNN] tag (A13a)")
+
+
+def check_vector(label: str, vec: dict, errors: list, warnings: list):
+    keys = vector_keys()
+    fm_ = facet_map()
+    for k in keys:
+        if k not in vec:
+            errors.append(f"{label} lacks {k}")
+    for k, v in vec.items():
+        if k not in keys:
+            errors.append(f"{label} has '{k}', which is not a headline variable or one of its facets")
+            continue
+        check_value(label, k, v, errors, warnings)
+    for pv in vector_ids():
+        judged = [f for f in fm_[pv] if isinstance(vec.get(f), dict) and vec[f].get("conf") not in (None, "unjudged")]
+        b = vec.get(pv, {}).get("binding") if isinstance(vec.get(pv), dict) else None
+        if judged and not b:
+            errors.append(f"{label}: {pv} has judged facets but names no binding facet (binding = \"<facet>\")")
+        if b and f"{pv}.{b}" not in fm_[pv]:
+            errors.append(f"{label}: {pv} binding '{b}' is not one of its facets ({', '.join(f.split('.')[-1] for f in fm_[pv]) or 'none'})")
 
 
 def phases(include_retired: bool = False) -> list[dict]:
@@ -347,16 +503,14 @@ def check_chapter(text: str, pid: str, errors: list, warnings: list, label: str,
         return
     if fm.get("phase") != pid:
         errors.append(f"{label}: front matter phase is '{fm.get('phase')}', expected '{pid}'")
-    vec = fm.get("end_vector", {})
-    vids = vector_ids()
-    for v in vids:
-        if v not in vec:
-            errors.append(f"{label}: end_vector lacks {v}")
-    for k, val in vec.items():
-        if k not in vids:
-            errors.append(f"{label}: end_vector has '{k}', which is not a vector variable")
-        elif not isinstance(val, int) or not -3 <= val <= 3:
-            errors.append(f"{label}: end_vector {k} = {val!r}; bands are whole numbers from -3 to 3")
+    check_vector(f"{label}: end_vector", fm.get("end_vector", {}), errors, warnings)
+    ph = next((p for p in phases() if p["id"] == pid), {})
+    if ph.get("snapshot"):
+        snap = fm.get("snapshot")
+        if not isinstance(snap, dict):
+            errors.append(f"{label}: phase {pid} has a snapshot date ({ph['snapshot']}) but the chapter has no [snapshot] table")
+        else:
+            check_vector(f"{label}: snapshot", snap, errors, warnings)
     last = None
     for ev in parse_events(body):
         if not ev["ok"]:
@@ -624,6 +778,16 @@ def cmd_status(_):
     me = config()["meta_every_checkpoints"]
     if len(cps) - me * len(mts) >= me:
         print("META-CHECKPOINT DUE")
+    hard = [v for v in vector_ids() if var_tier(v) == "hard"]
+    got = conv = facets_j = facets_all = 0
+    for p_ in have:
+        vec = parse_chapter(read(CHAP / f"{p_}.md"))[0].get("end_vector", {})
+        got += sum(1 for v in hard if isinstance(vec.get(v), dict) and "hist" in vec[v])
+        conv += sum(1 for v in vector_ids() if isinstance(vec.get(v), dict) and vec[v].get("conf") == "converted")
+        fks = [k for k in vec if k not in vector_ids()]
+        facets_all += len(fks)
+        facets_j += sum(1 for k in fks if isinstance(vec.get(k), dict) and vec[k].get("conf") not in ("unjudged", None))
+    print(f"Scale v1.0.6: hard anchors researched {got}/{len(hard) * len(have)} · headline values still 'converted' {conv} · facets judged {facets_j}/{facets_all}")
     es = load_toml(HIST / "endstate.toml")
     print(f"End state: rung ({es.get('rung')}) {es.get('rung_label')} — {es.get('summary')}")
     branch = git("rev-parse", "--abbrev-ref", "HEAD")
@@ -663,8 +827,9 @@ def memo_vars(m: dict) -> tuple[dict, set]:
     push = {}
     for p in m.get("push", []):
         if p.get("var"):
-            push[p["var"]] = max(push.get(p["var"], 0), abs(int(p.get("band", 0))))
-    dep = {d["var"] for d in m.get("depend", []) if d.get("var")}
+            # routing weight: the push's midpoint on the old band's footing (a v1.0.6 midpoint of 3 weighs as a band of 1)
+            push[parent(p["var"])] = max(push.get(parent(p["var"]), 0), abs(mid(push_range(p))) / 3)
+    dep = {parent(d["var"]) for d in m.get("depend", []) if d.get("var")}
     return push, dep
 
 
@@ -702,11 +867,12 @@ def ledger_lines(var: str) -> list[str]:
     lines = []
     for t, m in manifests():
         for p in m.get("push", []):
-            if p.get("var") == var:
-                lines.append(f"- {p.get('provision')} (memo {t}) pushes {int(p.get('band', 0)):+d} — {p.get('note', '')}")
+            if p.get("var") == var or parent(p.get("var", "")) == var:
+                facet = f" on {p['var']}" if p.get("var") != var else ""
+                lines.append(f"- {p.get('provision')} (memo {t}) pushes {fmt_push(p)}{facet} — {p.get('note', '')}")
         for d in m.get("depend", []):
-            if d.get("var") == var:
-                lines.append(f"- {d.get('provision')} (memo {t}) depends — {d.get('note', '')}")
+            if d.get("var") == var or parent(d.get("var", "")) == var:
+                lines.append(f"- {d.get('provision')} (memo {t}) depends{' on ' + d['var'] if d.get('var') != var else ''} — {d.get('note', '')}")
     return lines
 
 
@@ -792,7 +958,9 @@ def cmd_pack(a):
             if not card:
                 continue
             if size + len(card) > lim["pack_chars"] * 0.6:
-                break
+                card = build_card(t, manifest(t), short=True)
+                if size + len(card) > lim["pack_chars"] * 0.6:
+                    break
             loaded.append(t)
             size += len(card)
             cards.append(card)
@@ -981,7 +1149,7 @@ def cmd_amend(a):
     done = []
     for head, body in blocks:
         em = re.match(r"(EV" + WORK_RE + r"-\d+) · (.+)$", head)
-        pm = re.match(r"(P\d+) · (Overview|How the phase ends|end_vector)\s*$", head)
+        pm = re.match(r"(P\d+) · (Overview|How the phase ends|end_vector|snapshot)\s*$", head)
         if em:
             eid = em.group(1)
             block = f"## {head}\n{body}\n\n"
@@ -1018,16 +1186,28 @@ def cmd_amend(a):
             pid, what = pm.group(1), pm.group(2)
             t = chapter(pid)
             fm, raw, b = parse_chapter(t)
-            if what == "end_vector":
+            if what in ("end_vector", "snapshot"):
+                keys = vector_keys()
+                if what == "snapshot" and not isinstance(fm.get("snapshot"), dict):
+                    die(f"{pid} has no [snapshot] table: only a phase with a snapshot date in history/phases.toml carries one")
                 for line in body.splitlines():
-                    mv = re.match(r'\s*"?([A-Z]+\.[a-z_]+)"?\s*=\s*(-?\d+)\s*$', line)
-                    if not mv:
+                    if not line.strip() or line.strip().startswith("#"):
                         continue
-                    var, val = mv.group(1), mv.group(2)
-                    pat = re.compile(r'^"' + re.escape(var) + r'"\s*=.*$', re.M)
-                    if not pat.search(raw):
-                        die(f"{pid} end_vector has no variable {var}")
-                    raw = pat.sub(f'"{var}" = {val}', raw)
+                    try:
+                        kv = tomllib.loads(line)
+                    except tomllib.TOMLDecodeError as e:
+                        die(f"amend {pid} {what}: cannot read '{line[:70]}': {e}")
+                    flat = {}
+                    for k1, v1 in kv.items():
+                        if isinstance(v1, dict) and not ({"low", "high", "conf"} & set(v1)):
+                            flat.update({f"{k1}.{k2}": v2 for k2, v2 in v1.items()})
+                        else:
+                            flat[k1] = v1
+                    for var, val in flat.items():
+                        if var not in keys:
+                            die(f"amend {pid} {what}: '{var}' is not a headline variable or one of its facets")
+                        fm[what][var] = val
+                raw = dump_front_matter(fm)
             elif what == "Overview":
                 title = re.search(r"^# .+$", b, re.M)
                 first = re.search(r"^## ", b[title.end():], re.M)
@@ -1041,7 +1221,7 @@ def cmd_amend(a):
             texts[pid] = f"+++\n{raw}\n+++\n{b}"
             done.append(f"replaced {what} of {pid}")
         else:
-            die(f"amend: heading '## {head[:60]}' is neither an event header nor '## Pk · Overview | How the phase ends | end_vector'")
+            die(f"amend: heading '## {head[:60]}' is neither an event header nor '## Pk · Overview | How the phase ends | end_vector | snapshot'")
     for pid, t in texts.items():
         write(d / "chapters" / f"{pid}.md", re.sub(r"\n{3,}", "\n\n", t))
     staged = sorted(p.stem for p in (d / "chapters").glob("P*.md"))
@@ -1098,9 +1278,22 @@ def check_manifest(tok: str, m: dict, errors: list, warnings: list):
     for j, x in enumerate(m.get("push", [])):
         if x.get("var") not in vids:
             errors.append(f"manifest push {j + 1}: var '{x.get('var')}' is not in schema/VARIABLES.toml")
-        b = x.get("band")
-        if not isinstance(b, int) or not -3 <= b <= 3 or b == 0:
-            errors.append(f"manifest push {j + 1} ({x.get('var')}): band {b!r} must be a whole number from -3 to 3, not 0")
+        if "band" in x:
+            b = x.get("band")
+            if int(tok) > LEGACY_LAST_MEMO:
+                errors.append(f"manifest push {j + 1} ({x.get('var')}): 'band' is the old −3..+3 scale; from v1.0.6 write low, high and conf (schema/VARIABLES.toml)")
+            elif not isinstance(b, int) or not -3 <= b <= 3 or b == 0:
+                errors.append(f"manifest push {j + 1} ({x.get('var')}): band {b!r} must be a whole number from -3 to 3, not 0")
+        else:
+            lo, hi = x.get("low"), x.get("high")
+            if not (isinstance(lo, int) and isinstance(hi, int)) or not -SCALE <= lo <= hi <= SCALE:
+                errors.append(f"manifest push {j + 1} ({x.get('var')}): low {lo!r} and high {hi!r} must be whole numbers with -{SCALE} ≤ low ≤ high ≤ {SCALE}")
+            elif lo == hi == 0:
+                errors.append(f"manifest push {j + 1} ({x.get('var')}): a push of 0..0 moves nothing — drop it or make it a depend")
+            if x.get("conf") not in PUSH_CONFS:
+                errors.append(f"manifest push {j + 1} ({x.get('var')}): conf {x.get('conf')!r} must be one of {', '.join(PUSH_CONFS)}")
+            if facet_map().get(x.get("var")):
+                warnings.append(f"manifest push {j + 1} ({x.get('var')}): this variable has facets — push the facet(s) the provision acts on, or say in the note why it acts on all of them equally")
         if x.get("provision") not in pids:
             errors.append(f"manifest push {j + 1}: provision '{x.get('provision')}' is not in this manifest")
         if not str(x.get("note", "")).strip():
@@ -1319,7 +1512,8 @@ def check_part(tok: str, part: int, stamping: bool = False) -> tuple[list, list,
                         errors.append(f"chapter {pid}: new event {e['id']} should be numbered EV{tok}-n")
                 oldv = parse_chapter(read(CHAP / f"{pid}.md"))[0].get("end_vector", {})
                 newv = parse_chapter(staged[pid])[0].get("end_vector", {})
-                moved = [f"{k} {oldv.get(k, 0):+d}→{newv.get(k, 0):+d}" for k in newv if isinstance(newv.get(k), int) and abs(newv.get(k, 0) - oldv.get(k, 0)) >= 1]
+                moved = [f"{k} {fmt_rng(rng(oldv.get(k)))}→{fmt_rng(rng(newv.get(k)))}" for k in newv
+                         if rng(newv.get(k)) is not None and rng(newv.get(k)) != rng(oldv.get(k))]
                 if moved and i + 1 < len(phs) and phs[i + 1] not in staged:
                     nsec = section(text, 2, f"§4.{phs[i + 1]} ") or ""
                     ripple.append(f"{pid}→{phs[i + 1]}")
@@ -1383,6 +1577,14 @@ def check_part(tok: str, part: int, stamping: bool = False) -> tuple[list, list,
         es_changed = es.get("last_changed") == tok
         if es_changed and not any(h.get("by") == tok for h in es.get("history", [])):
             errors.append(f"endstate.toml: last_changed is {tok} but no [[history]] entry has by = \"{tok}\"")
+        sup = check_rung(section(text, 2, "§4.N") or "", "part3 §4.N", errors)
+        for pid_, st_ in staged.items():
+            snap = parse_chapter(st_)[0].get("snapshot")
+            if isinstance(snap, dict):
+                unj = [k for k, v in snap.items() if isinstance(v, dict) and v.get("conf") == "unjudged" and "." not in k[len(parent(k)):]]
+                if unj:
+                    warnings.append(f"chapter {pid_}: the snapshot still has {len(unj)} unjudged headline variable(s) ({', '.join(unj[:4])}{'…' if len(unj) > 4 else ''}) — "
+                                    f"a memorandum that revises this phase judges the Republic's state at the snapshot date (DIRMT01-3)")
         if not staged:
             warnings.append("part3: no phase revised — say in §4.N why the provision changes no phase")
         tot_ev = sum(per_phase_events.values())
@@ -1393,10 +1595,49 @@ def check_part(tok: str, part: int, stamping: bool = False) -> tuple[list, list,
                  f"phases carrying a §2 finding: {carried_ok}/{len(staged)} · strongest positive grounded: {spe_grounded} · "
                  f"clock stated: {clocks} phase(s) · enemy initiative: {init} · free play: {free} · ripple flags: {len(ripple)}"
                  f"{' (' + ', '.join(ripple) + ')' if ripple else ''} · end state: {'CHANGED' if es_changed else 'unchanged'} "
-                 f"(rung {es.get('rung')}) · structural deviation: {dev}")
+                 f"(rung {es.get('rung')}; rung test supports {sup}) · structural deviation: {dev}")
     else:
         die("--part must be 1, 2 or 3")
     return errors, warnings, audit, info
+
+
+def rung_conditions() -> list[dict]:
+    return load_toml(ROOT / "rules" / "RUNGS.toml").get("condition", [])
+
+
+def rung_test(text: str, label: str, errors: list) -> str:
+    """Read the <!-- rungtest --> block: one line per condition in rules/RUNGS.toml,
+    '- c2 · PASS · <evidence>'. Return the highest rung whose conditions all pass ('a' if none)."""
+    conds = rung_conditions()
+    blocks = block_bodies(text, "rungtest")
+    if not blocks:
+        errors.append(f"{label}: the <!-- rungtest --> … <!-- /rungtest --> block is missing (A9, rules/RUNGS.toml)")
+        return "?"
+    verdict = {}
+    for l in [x.strip() for x in blocks[0].splitlines() if x.strip()]:
+        mm = re.match(r"[-*]\s*\**([b-e]\d)\**\s*·\s*(PASS|FAIL|OPEN)\s*·\s*(\S.*)$", l)
+        if not mm:
+            errors.append(f"{label}: rung test line does not read '- c2 · PASS|FAIL|OPEN · evidence': “{l[:80]}”")
+            continue
+        verdict[mm.group(1)] = mm.group(2)
+    for c in conds:
+        if c["id"] not in verdict:
+            errors.append(f"{label}: rung test has no verdict for {c['id']} ({c['text'][:60]}…)")
+    supported = "a"
+    for r in "bcde":
+        ids = [c["id"] for c in conds if c["rung"] == r]
+        if ids and all(verdict.get(i) == "PASS" for i in ids):
+            supported = r
+    return supported
+
+
+def check_rung(text: str, label: str, errors: list) -> str:
+    sup = rung_test(text, label, errors)
+    es = load_toml(HIST / "endstate.toml")
+    if sup != "?" and es.get("rung") not in ("off", sup):
+        errors.append(f"endstate.toml: rung ({es.get('rung')}) is not the rung the test in {label} supports ({sup}) — "
+                      f"change the end state, or the verdicts if the evidence says otherwise")
+    return sup
 
 
 def check_register_blocks(text: str, tok: str, errors: list):
@@ -1547,7 +1788,7 @@ def cmd_finish(a):
 
 def cmd_baseline(a):
     if a.init:
-        vec = "\n".join(f'"{v}" = 0' for v in vector_ids())
+        vec = "\n".join(f'"{v}" = {{ low = 0, high = 0, conf = "high", note = "the historical state" }}' for v in vector_keys())
         for p in phases():
             path = CHAP / f"{p['id']}.md"
             if path.exists():
@@ -1555,7 +1796,8 @@ def cmd_baseline(a):
                 continue
             dates = f"{fmt_ym(p['start'])} – {fmt_ym(p['end'])}"
             t = read(ROOT / "templates" / "chapter.md")
-            t = (t.replace("PID", p["id"]).replace("PTITLE", p["title"]).replace("PDATES", dates).replace("VECTOR", vec)
+            t = (t.replace("PID", p["id"]).replace("PTITLE", p["title"]).replace("PDATES", dates)
+                 .replace("VECTOR", vec + (f"\n\n[snapshot]\n{vec}" if p.get("snapshot") else ""))
                  .replace("PHEADING", phase_heading(p)))
             write(path, t)
             print(f"Created {rel(path)}")
@@ -1576,7 +1818,7 @@ def cmd_baseline(a):
         for e in evs:
             if e.get("ok") and (e["origin"] != "HIST" or not e["id"].startswith("EV000-")):
                 errors.append(f"{rel(path)}: baseline event {e['id']} must be EV000-n with origin HIST")
-        if any(v != 0 for v in fm.get("end_vector", {}).values()):
+        if any(rng(v) not in (None, (0, 0)) for v in fm.get("end_vector", {}).values()):
             errors.append(f"{rel(path)}: baseline end_vector must be all zeros (it is the historical state)")
         if words(body) < 600:
             warnings.append(f"{rel(path)}: {words(body)} words — thin for a baseline chapter")
@@ -1633,6 +1875,8 @@ def cmd_review(a):
     es = load_toml(HIST / "endstate.toml")
     if es.get("last_changed") == tok and not any(h.get("by") == tok for h in es.get("history", [])):
         errors.append(f"endstate.toml: last_changed is {tok} but no [[history]] entry for it")
+    if es.get("last_changed") == tok:
+        check_rung("\n".join(texts.values()), f"{tok} (it changes the end state)", errors)
     report(errors, warnings, "")
     if errors:
         sys.exit(1)
@@ -1664,11 +1908,12 @@ def mark_events(body: str, token: str) -> str:
 
 def vector_line(fm: dict) -> str:
     v = fm.get("end_vector", {})
-    moved = [f"{k} {val:+d}" for k, val in v.items() if isinstance(val, int) and val != 0]
+    moved = [f"{k} {fmt_rng(rng(val))}" for k, val in v.items() if rng(val) not in (None, (0, 0))]
     return "*End of phase against the historical state: " + (" · ".join(moved) if moved else "as historical on every headline variable") + ".*"
 
 
-def build_card(tok: str, m: dict) -> str:
+def build_card(tok: str, m: dict, short: bool = False) -> str:
+    """short: the pack's fallback when the full card will not fit — denies, verdict, pushes, findings, concepts."""
     p1, p2 = read(work_dir(tok) / "part1.md"), read(work_dir(tok) / "part2.md")
     cb1, cb2 = card_blocks(p1), card_blocks(p2)
     out = [f"# Card {tok} — {m.get('title')}",
@@ -1677,11 +1922,12 @@ def build_card(tok: str, m: dict) -> str:
         pid = p.get("id")
         out.append(f"## {pid} · {p.get('designation')}\n{p.get('quantity')} · spaces {p.get('ceiling_spaces')} · "
                    f"arrives {p.get('arrival')} · {', '.join(p.get('systems', []))} · {p.get('category')}")
-        for k, lab in [("figures", "Key figures"), ("negative", "Negative specification"), ("denies", "Denies the enemy"), ("verdict", "Verdict")]:
+        for k, lab in [x for x in [("figures", "Key figures"), ("negative", "Negative specification"), ("denies", "Denies the enemy"), ("verdict", "Verdict")]
+                       if not (short and x[0] in ("figures", "negative"))]:
             b = [x for kk, pp, x in cb1 if kk == k and pp == pid]
             if b and b[0]:
                 out.append(f"**{lab}.** {b[0]}" if k != "figures" else f"**{lab}.**\n{b[0]}")
-        pushes = [f"{x['var']} {int(x['band']):+d}" for x in m.get("push", []) if x.get("provision") == pid]
+        pushes = [f"{x['var']} {fmt_push(x)}" for x in m.get("push", []) if x.get("provision") == pid]
         deps = [x["var"] for x in m.get("depend", []) if x.get("provision") == pid]
         out.append(f"**Pushes:** {', '.join(pushes) or '-'} · **Depends on:** {', '.join(deps) or '-'}")
     for k, lab in [("findings", "Findings"), ("concepts", "Employment concepts"), ("interactions", "Interactions")]:
@@ -1689,7 +1935,10 @@ def build_card(tok: str, m: dict) -> str:
         if b:
             out.append(f"## {lab}\n{b[0]}")
     s = re.sub(r"\[S(\d+)\]", lambda mm: f"[M{tok}·S{mm.group(1)}]", "\n\n".join(out) + "\n")
-    lim = config()["limits"]["card_chars"]
+    if short:
+        return s.replace(f"# Card {tok} —", f"# Card {tok} (short: key figures and negative specifications omitted; full card in build/cards/) —", 1)
+    lims = config()["limits"]
+    lim = lims["card_chars_base"] + lims["card_chars_per_provision"] * len(m.get("provision", []))
     if len(s) > lim:
         print(f"WARNING: card {tok} is {len(s):,} characters, over the {lim:,} limit — tighten the card blocks in memo {tok}")
     return s
@@ -1870,10 +2119,11 @@ def build_changes(tok: str) -> str | None:
             continue
         bfm, _, bb = parse_chapter(bt)
         afm, _, ab = parse_chapter(read(pa))
-        for k, v in afm.get("end_vector", {}).items():
-            ov = bfm.get("end_vector", {}).get(k, 0)
-            if v != ov:
-                vrows.append(f"| {pid} | {k} | {ov:+d} → {v:+d} |")
+        for sec in ("end_vector", "snapshot"):
+            for k, v in (afm.get(sec) or {}).items():
+                ov = (bfm.get(sec) or {}).get(k)
+                if v != ov:
+                    vrows.append(f"| {pid}{' (snapshot)' if sec == 'snapshot' else ''} | {k} | {fmt_val(ov)} → {fmt_val(v)} |")
     if vrows:
         out.append("## Headline variables at each phase's end\n\n| Phase | Variable | Before → after |\n|---|---|---|\n" + "\n".join(vrows))
     for pa in sorted(after_dir.glob("P*.md")):

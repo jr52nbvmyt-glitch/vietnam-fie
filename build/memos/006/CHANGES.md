@@ -6,14 +6,14 @@
 
 | Phase | Variable | Before → after |
 |---|---|---|
-| P1 | VCI.strength | +0 → -1 |
-| P1 | FIND.vci | +1 → +2 |
-| P2 | FIND.vci | +2 → +3 |
-| P2 | ARVN.effectiveness | +1 → +2 |
-| P3 | FIND.vci | +2 → +3 |
-| P3 | ARVN.effectiveness | +1 → +2 |
-| P4 | FIND.vci | +1 → +2 |
-| P4 | ARVN.effectiveness | +0 → +1 |
+| P1 | VCI.strength | +0 (old band ≈ +0) → -1 (old band ≈ -4..-2) |
+| P1 | FIND.vci | +1 (old band ≈ +2..+4) → +2 (old band ≈ +5..+7) |
+| P2 | FIND.vci | +2 (old band ≈ +5..+7) → +3 (old band ≈ +8..+10) |
+| P2 | ARVN.effectiveness | +1 (old band ≈ +2..+4) → +2 (old band ≈ +5..+7) |
+| P3 | FIND.vci | +2 (old band ≈ +5..+7) → +3 (old band ≈ +8..+10) |
+| P3 | ARVN.effectiveness | +1 (old band ≈ +2..+4) → +2 (old band ≈ +5..+7) |
+| P4 | FIND.vci | +1 (old band ≈ +2..+4) → +2 (old band ≈ +5..+7) |
+| P4 | ARVN.effectiveness | +0 (old band ≈ +0) → +1 (old band ≈ +2..+4) |
 
 ## Phase I — The advisory war and escalation (Jan 1964 – Jul 1965)
 

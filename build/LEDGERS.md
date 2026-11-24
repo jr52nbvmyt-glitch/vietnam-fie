@@ -6,13 +6,13 @@
 *Higher means more hamlets held by the GVN after dark.*
 
 - P001a (memo 001) depends — A title delivered by day to a hamlet the VC hold by night is a death warrant; delivery follows security
-- P002a (memo 002) pushes +1 — A police post that sleeps in the village adds a resident presence and a radio; it holds only where Popular Forces stand with it and a reaction arrives in the dark (POSTNA-2)
-- P002b (memo 002) pushes +1 — A district chief who knows his villages and keeps his Popular Forces in them at night, rather than in the district town, is the mechanism of night control
+- P002a (memo 002) pushes +1 [old band ≈ +2..+4] — A police post that sleeps in the village adds a resident presence and a radio; it holds only where Popular Forces stand with it and a reaction arrives in the dark (POSTNA-2)
+- P002b (memo 002) pushes +1 [old band ≈ +2..+4] — A district chief who knows his villages and keeps his Popular Forces in them at night, rather than in the district town, is the mechanism of night control
 - P002a (memo 002) depends — A resident constable in a village held by the VC at night is a target, not a policeman; posts follow security
 - P002b (memo 002) depends — A competent chief in a district the enemy holds by night is a competent chief in a besieged town
-- P004a (memo 004) pushes +1 — Hamlet outposts that hold a night longer because their garrisons are not outgunned; small, real, and dependent on whether the platoon is awake and present
+- P004a (memo 004) pushes +1 [old band ≈ +2..+4] — Hamlet outposts that hold a night longer because their garrisons are not outgunned; small, real, and dependent on whether the platoon is awake and present
 - P006a (memo 006) depends — An arrest in a village the enemy holds at night is a raid, and its informant is dead the next week
-- P008b (memo 008) pushes +1 — Hamlets and outposts that can summon fire and reaction forces after dark are harder to overrun or intimidate
+- P008b (memo 008) pushes +1 [old band ≈ +2..+4] — Hamlets and outposts that can summon fire and reaction forces after dark are harder to overrun or intimidate
 - P008a (memo 008) depends — Power lines from Da Nhim, rail and roads to the plants run through contested country
 - P008b (memo 008) depends — A radio in a hamlet the Front holds at night is the Front's radio
 - P009c (memo 009) depends — A trained PF platoon matters only in a hamlet it is posted to and stays in after dark
@@ -21,43 +21,43 @@
 ## POP.civilian_harm — Civilian harm from all sides' operations
 *Higher means more civilian deaths and injuries.*
 
-- P001a (memo 001) pushes +1 — Titled families and land committee members in contested hamlets become targets of the enemy's security sections (F001-8)
-- P002a (memo 002) pushes -1 — Arrest on evidence and detention under review replace part of the military's sweep-and-detain; offset in part by enemy terror against resident constables
-- P003b (memo 003) pushes +1 — Night movement tracks in the Delta and the coastal plain are fired on under the historical rules; a radar cannot tell a farmer's sampan from a VC supply sampan
-- P005b (memo 005) pushes -1 — Point targets no longer need area boxes; offset by more targets struck
-- P005c (memo 005) pushes -1 — Smaller bombs on single aimpoints instead of a carpet of 108
-- P006a (memo 006) pushes -1 — Warrants, capture-first rules and no quotas against the historical Phoenix of feud and quota; the PRUs remain the risk
-- P007a (memo 007) pushes -1 — Law of war, the Army profession and escalation-of-force training reach every new platoon leader, including the wartime OCS classes
-- P009c (memo 009) pushes -1 — Fire discipline and the conduct block reach the hamlet militia, whose conduct toward the population was the GVN's face in the countryside; small
-- P010a (memo 010) pushes -1 — The squad leader is the man who controls fire in the hamlet and the detainee at the trail; small
+- P001a (memo 001) pushes +1 [old band ≈ +2..+4] — Titled families and land committee members in contested hamlets become targets of the enemy's security sections (F001-8)
+- P002a (memo 002) pushes -1 [old band ≈ -4..-2] — Arrest on evidence and detention under review replace part of the military's sweep-and-detain; offset in part by enemy terror against resident constables
+- P003b (memo 003) pushes +1 [old band ≈ +2..+4] — Night movement tracks in the Delta and the coastal plain are fired on under the historical rules; a radar cannot tell a farmer's sampan from a VC supply sampan
+- P005b (memo 005) pushes -1 [old band ≈ -4..-2] — Point targets no longer need area boxes; offset by more targets struck
+- P005c (memo 005) pushes -1 [old band ≈ -4..-2] — Smaller bombs on single aimpoints instead of a carpet of 108
+- P006a (memo 006) pushes -1 [old band ≈ -4..-2] — Warrants, capture-first rules and no quotas against the historical Phoenix of feud and quota; the PRUs remain the risk
+- P007a (memo 007) pushes -1 [old band ≈ -4..-2] — Law of war, the Army profession and escalation-of-force training reach every new platoon leader, including the wartime OCS classes
+- P009c (memo 009) pushes -1 [old band ≈ -4..-2] — Fire discipline and the conduct block reach the hamlet militia, whose conduct toward the population was the GVN's face in the countryside; small
+- P010a (memo 010) pushes -1 [old band ≈ -4..-2] — The squad leader is the man who controls fire in the hamlet and the detainee at the trail; small
 
 ## POP.gvn_legitimacy — Legitimacy of the Saigon government in the countryside
 *Higher means more rural acceptance of the GVN.*
 
-- P001a (memo 001) pushes +2 — The government's return to a hamlet no longer means the landlord's return; for the first time it gives the peasant something the Viet Cong cannot take away by winning
-- P001b (memo 001) pushes +1 — Visible prosecution of officials who prey on the population, if it reaches above the district level
-- P002a (memo 002) pushes +1 — A policeman who settles disputes, records crime and arrests on evidence is the government's most frequent face in the village; the gain reverses where the police extort or torture
-- P002b (memo 002) pushes +1 — The district chief is the government in the countryside; one who is resident, competent and not for sale changes what the government means in his district
+- P001a (memo 001) pushes +2 [old band ≈ +5..+7] — The government's return to a hamlet no longer means the landlord's return; for the first time it gives the peasant something the Viet Cong cannot take away by winning
+- P001b (memo 001) pushes +1 [old band ≈ +2..+4] — Visible prosecution of officials who prey on the population, if it reaches above the district level
+- P002a (memo 002) pushes +1 [old band ≈ +2..+4] — A policeman who settles disputes, records crime and arrests on evidence is the government's most frequent face in the village; the gain reverses where the police extort or torture
+- P002b (memo 002) pushes +1 [old band ≈ +2..+4] — The district chief is the government in the countryside; one who is resident, competent and not for sale changes what the government means in his district
 
 ## POP.land_tenure — Land tenure
 *Higher means more owner-cultivators with secure title.*
 
-- P001a (memo 001) pushes +3 — Zero retention of tenanted land and free title to the present tiller end tenancy on most tenanted rice land where the state can reach it
+- P001a (memo 001) pushes +3 [old band ≈ +8..+10] — Zero retention of tenanted land and free title to the present tiller end tenancy on most tenanted rice land where the state can reach it
 - P002a (memo 002) depends — A titled peasant has a reason to tell the constable who threatens his title (P001a)
 
 ## POP.rural_economy — Rural economy
 *Higher means more rice production and market access.*
 
-- P001a (memo 001) pushes +1 — End of 34–50% rents raises the tiller's surplus and his incentive to invest; production response lags a season or two
-- P008a (memo 008) pushes +1 — Pumps, small engines and hand tools made locally; works where the countryside is secure
+- P001a (memo 001) pushes +1 [old band ≈ +2..+4] — End of 34–50% rents raises the tiller's surplus and his incentive to invest; production response lags a season or two
+- P008a (memo 008) pushes +1 [old band ≈ +2..+4] — Pumps, small engines and hand tools made locally; works where the countryside is secure
 
 ## ECON.inflation — Inflation and the piaster
 *Higher means more inflation.*
 
-- P001a (memo 001) pushes +1 — Cash share of landlord compensation enters a war economy; small against aid flows, but positive
+- P001a (memo 001) pushes +1 [old band ≈ +2..+4] — Cash share of landlord compensation enters a war economy; small against aid flows, but positive
 - P002a (memo 002) depends — A police pay statute fixed in piasters is eroded by the inflation of 1966-68; a constable paid less than a labourer begins to live on the village again
 - P002b (memo 002) depends — The pay and allowance reform that makes an honest chief possible loses its value as prices rise
-- P008a (memo 008) pushes -1 — Domestic production absorbs piasters and replaces some imports; modest against the war's spending
+- P008a (memo 008) pushes -1 [old band ≈ -4..-2] — Domestic production absorbs piasters and replaces some imports; modest against the war's spending
 - P008a (memo 008) depends — Piaster wages of 35,000-50,000 workers and domestic prices against free American stocks; the 1973-74 oil shock raises the thermal station's fuel bill
 - P009b (memo 009) depends — Desertion follows pay and the family; a trained soldier whose pay no longer feeds his family deserts with his training (DIRMT01-9)
 - P009c (memo 009) depends — The territorial soldier's pay and his family's safety decide whether the trained man stays in his platoon
@@ -66,15 +66,15 @@
 ## ECON.rice_denial — Rice denial to the enemy
 *Higher means less rice reaching the VC and PAVN in the South.*
 
-- P001a (memo 001) pushes -1 — Rent no longer paid stays in the hamlet, within the enemy's tax reach where it is contested or held; reverses as hamlets are secured (F001-8)
-- P002a (memo 002) pushes +1 — Checkpoints, family census and market controls on the Malayan pattern reduce rice moving to the enemy from held areas
+- P001a (memo 001) pushes -1 [old band ≈ -4..-2] — Rent no longer paid stays in the hamlet, within the enemy's tax reach where it is contested or held; reverses as hamlets are secured (F001-8)
+- P002a (memo 002) pushes +1 [old band ≈ +2..+4] — Checkpoints, family census and market controls on the Malayan pattern reduce rice moving to the enemy from held areas
 
 ## GVN.admin_capacity — Province and district administration
 *Higher means more functioning administration.*
 
-- P001b (memo 001) pushes +1 — Budgets executed as voted; province and district funds reaching their purpose
+- P001b (memo 001) pushes +1 [old band ≈ +2..+4] — Budgets executed as voted; province and district funds reaching their purpose
 - P001a (memo 001) depends — Province land services and village committees must exist and work
-- P002b (memo 002) pushes +2 — Chiefs chosen for ability, kept long enough to learn a province, and inspected by a body they do not command: the single largest lever on provincial administration
+- P002b (memo 002) pushes +2 [old band ≈ +5..+7] — Chiefs chosen for ability, kept long enough to learn a province, and inspected by a body they do not command: the single largest lever on provincial administration
 - P002a (memo 002) depends — Courts, prosecutors and the province and district chief direct and protect the police
 - P006a (memo 006) depends — The district chief runs the DIOCC; the magistrates decide the cases
 - P007c (memo 007) depends — Province and district chiefs are drawn from the same officer pool
@@ -85,18 +85,18 @@
 ## GVN.corruption — Corruption and diversion
 *Higher means more corruption.*
 
-- P001b (memo 001) pushes -2 — Investigation, prosecution and an aid-suspension lever against ghost payrolls, sale of offices and diversion; substantial, not transformative, because the enforcer's reach stops where the junta's protection begins
+- P001b (memo 001) pushes -2 [old band ≈ -7..-5] — Investigation, prosecution and an aid-suspension lever against ghost payrolls, sale of offices and diversion; substantial, not transformative, because the enforcer's reach stops where the junta's protection begins
 - P001a (memo 001) depends — Fees to accept applications, collusion with landlords and false worship-land claims hollow out the programme (P001b)
-- P002b (memo 002) pushes -1 — A post that cannot be bought cannot be farmed to repay the price; vetting and asset declarations close the front door, while the side doors of contracts, rice and the draft stay open
+- P002b (memo 002) pushes -1 [old band ≈ -4..-2] — A post that cannot be bought cannot be farmed to repay the price; vetting and asset declarations close the front door, while the side doors of contracts, rice and the draft stay open
 - P002a (memo 002) depends — Police posts are bought and sold, checkpoints become toll gates, and Special Branch files can be sold; the Commission Against Corruption (P001b) polices the police
 - P002b (memo 002) depends — Examinations can be leaked and boards bought; the Commission Against Corruption (P001b) vets candidates and audits the Board
 - P004a (memo 004) depends — Rifles, optics, batteries and ammunition are saleable; leakage to the market and to the Front is set by command honesty
 - P006a (memo 006) depends — Bribes for release and false denunciations for feud undo the evidence standard
 - P006c (memo 006) depends — An adviser who reports corruption needs a lever that acts on the report
-- P007c (memo 007) pushes -1 — Promotions and commands no longer for sale; ratings carry integrity
+- P007c (memo 007) pushes -1 [old band ≈ -4..-2] — Promotions and commands no longer for sale; ratings carry integrity
 - P007b (memo 007) depends — Seats in the courses and course results can be sold
 - P007c (memo 007) depends — The Commission of P001b is the board's enforcement arm against sold promotions
-- P008a (memo 008) pushes +1 — State contracts, scrap and import licences are new prizes for the officials who allot them
+- P008a (memo 008) pushes +1 [old band ≈ +2..+4] — State contracts, scrap and import licences are new prizes for the officials who allot them
 - P008a (memo 008) depends — Diversion of steel, scrap and parts to the black market and the enemy
 - P008b (memo 008) depends — Radios and batteries are prized black-market goods and reach the VC
 - P009b (memo 009) depends — Training centres were dumping grounds and sources of graft; the course is only taught if the commandant is not selling the rations
@@ -105,17 +105,17 @@
 ## GVN.political_stability — Political stability in Saigon
 *Higher means more stable government and junta cohesion.*
 
-- P001a (memo 001) pushes -1 — Expropriates the landed class from which much of the officer corps and the civil service come; a coup grievance in a junta already prone to coups
-- P001b (memo 001) pushes -1 — Threatens the incomes of the generals who make and unmake governments; prosecutions become coup grievances and coup weapons
+- P001a (memo 001) pushes -1 [old band ≈ -4..-2] — Expropriates the landed class from which much of the officer corps and the civil service come; a coup grievance in a junta already prone to coups
+- P001b (memo 001) pushes -1 [old band ≈ -4..-2] — Threatens the incomes of the generals who make and unmake governments; prosecutions become coup grievances and coup weapons
 - P001a (memo 001) depends — The decree must survive the next coup; each new junta may reopen it
 - P001b (memo 001) depends — The commission lives only while some faction in Saigon protects it
-- P002a (memo 002) pushes +1 — A Special Branch that watches the generals as well as the VC, and a police that is not one faction's instrument, slightly raises the cost of a coup; the reform is itself a prize for the faction that captures it
-- P002b (memo 002) pushes -1 — Takes from the generals their most valuable patronage; a coup grievance in 1964, and a coup-maker's first target is the selection board
+- P002a (memo 002) pushes +1 [old band ≈ +2..+4] — A Special Branch that watches the generals as well as the VC, and a police that is not one faction's instrument, slightly raises the cost of a coup; the reform is itself a prize for the faction that captures it
+- P002b (memo 002) pushes -1 [old band ≈ -4..-2] — Takes from the generals their most valuable patronage; a coup grievance in 1964, and a coup-maker's first target is the selection board
 - P002a (memo 002) depends — Every junta since 1955 has used the police as a political instrument; the Director General's fixed term survives only while a coup does not sweep it away
 - P002b (memo 002) depends — The Board and the two-year tenure survive only as long as the government that decreed them, and the next coup may sweep both
 - P006a (memo 006) depends — Each coup changes the committee's chairman and tempts its use against the opposition
 - P006c (memo 006) depends — Counterparts appointed and removed by coup outlast no adviser
-- P007c (memo 007) pushes -1 — The reform takes the junta's main currency, which raises the coup risk while it beds in
+- P007c (memo 007) pushes -1 [old band ≈ -4..-2] — The reform takes the junta's main currency, which raises the coup risk while it beds in
 - P007b (memo 007) depends — Coups make the promotion list and override the gate
 - P007c (memo 007) depends — A junta can suspend the board; a coup is a promotion list
 - P008a (memo 008) depends — State enterprises and licences change hands with each government
@@ -125,32 +125,32 @@
 
 - P001a (memo 001) depends — Protection of new owners against landlords' agents and against VC retaliation
 - P001b (memo 001) depends — Arrests need a police that will execute warrants against the powerful
-- P002a (memo 002) pushes +3 — A resident constable in each village that the government holds, a district station in every district, and a police force paid enough not to live on the population: the National Police becomes a rural institution five years before it did historically
+- P002a (memo 002) pushes +3 [old band ≈ +8..+10] — A resident constable in each village that the government holds, a district station in every district, and a police force paid enough not to live on the population: the National Police becomes a rural institution five years before it did historically
 - P002b (memo 002) depends — A district chief governs through the police as well as the Popular Forces (P002a)
 - P006a (memo 006) depends — Phung Hoang is a coordinating layer over P002a's Special Branch; without it there is nothing to coordinate
 
 ## VCI.strength — The VC infrastructure
 *Higher means a stronger, better-functioning VCI.*
 
-- P002a (memo 002) pushes -1 — Village cadre identified and arrested on evidence, legal cadre forced underground; slow, cumulative and confined to villages the state holds
-- P006a (memo 006) pushes -1 — Cadres above the hamlet named, arrested and tried from 1965 rather than 1968, where night security exists
+- P002a (memo 002) pushes -1 [old band ≈ -4..-2] — Village cadre identified and arrested on evidence, legal cadre forced underground; slow, cumulative and confined to villages the state holds
+- P006a (memo 006) pushes -1 [old band ≈ -4..-2] — Cadres above the hamlet named, arrested and tried from 1965 rather than 1968, where night security exists
 
 ## VCI.tax_take — VC taxation
 *Higher means more revenue to the VC.*
 
-- P001a (memo 001) pushes -1 — Owner-cultivators with a title to defend are harder to tax by consent; coercive taxation in VC-held hamlets is untouched
-- P002a (memo 002) pushes -1 — Resource control on roads and waterways and a constable in the market town raise the cost of moving tax rice and cash
+- P001a (memo 001) pushes -1 [old band ≈ -4..-2] — Owner-cultivators with a title to defend are harder to tax by consent; coercive taxation in VC-held hamlets is untouched
+- P002a (memo 002) pushes -1 [old band ≈ -4..-2] — Resource control on roads and waterways and a constable in the market town raise the cost of moving tax rice and cash
 
 ## VC.recruitment — VC recruitment and conscription in the South
 *Higher means more recruits.*
 
-- P001a (memo 001) pushes -1 — Removes the land argument that tied a family's sons to the revolution's victory; slow and partial, because conscription by the VCI does not depend on persuasion
-- P002a (memo 002) pushes -1 — The family census shows which sons have gone to the forest and makes VC conscription in held villages visible and costly; confined to held villages, and partly offset by youths who leave before the census reaches them
+- P001a (memo 001) pushes -1 [old band ≈ -4..-2] — Removes the land argument that tied a family's sons to the revolution's victory; slow and partial, because conscription by the VCI does not depend on persuasion
+- P002a (memo 002) pushes -1 [old band ≈ -4..-2] — The family census shows which sons have gone to the forest and makes VC conscription in held villages visible and costly; confined to held villages, and partly offset by youths who leave before the census reaches them
 
 ## VC.local_force — VC local force and guerrillas
 *Higher means stronger local force and guerrilla units.*
 
-- P004a (memo 004) pushes +1 — Counter-direction: every outpost overrun gives the Front modern carbines and 5.56mm, so the local force rearms from our stocks rather than from the Trail
+- P004a (memo 004) pushes +1 [old band ≈ +2..+4] — Counter-direction: every outpost overrun gives the Front modern carbines and 5.56mm, so the local force rearms from our stocks rather than from the Trail
 
 ## VC.main_force — VC main force
 *Higher means stronger southern main-force units.*
@@ -169,7 +169,7 @@
 - P003b (memo 003) depends — An enemy that learns moving-target radar exists moves under canopy, in small groups and in rain, and stops when the aircraft is overhead
 - P004a (memo 004) depends — The rifle acts only in a contact; the enemy still chooses most contacts
 - P004c (memo 004) depends — A base of fire fixes only an enemy who has accepted the fight
-- P005c (memo 005) pushes -1 — The siege of a measured position becomes the enemy's worst battle; he loses one way of choosing the field, not the choice
+- P005c (memo 005) pushes -1 [old band ≈ -4..-2] — The siege of a measured position becomes the enemy's worst battle; he loses one way of choosing the field, not the choice
 - P005c (memo 005) depends — Hugging tactics and the enemy's choice of battle set where close bombing can apply
 - P006b (memo 006) depends — The enemy chooses when to fight and can time attacks to the relief in place
 - P008b (memo 008) depends — The enemy chooses which posts to attack and can wait out a battery or ambush the relief the call summons
@@ -179,25 +179,25 @@
 ## HANOI.will — Hanoi's commitment to armed reunification
 *Higher means more commitment.*
 
-- P001a (memo 001) pushes +1 — Hanoi reads the reform as eroding its southern base and hurries its decision for military victory (F001-12)
+- P001a (memo 001) pushes +1 [old band ≈ +2..+4] — Hanoi reads the reform as eroding its southern base and hurries its decision for military victory (F001-12)
 
 ## TRAIL.capacity — Trail system capacity
 *Higher means more throughput capacity on the Trail.*
 
 - P003b (memo 003) depends — Moving-target radar sees trucks only where the Trail has trucks and open road; the 1964 Trail is mostly porters under canopy
-- P005b (memo 005) pushes -1 — Chokepoints and fords cut reliably in all weather; repair capacity and redundancy blunt it
+- P005b (memo 005) pushes -1 [old band ≈ -4..-2] — Chokepoints and fords cut reliably in all weather; repair capacity and redundancy blunt it
 - P005b (memo 005) depends — The Trail's redundancy decides whether a cut chokepoint matters
 - P005d (memo 005) depends — A closed waterway matters only as far as the road net cannot carry what the boats did
 
 ## TRAIL.tonnage_arriving — Tonnage arriving in the South
 *Higher means more tonnage reaching RVN and the border base areas.*
 
-- P005d (memo 005) pushes -1 — Rivers and coastal lighterage of the North's panhandle and Laotian waterways closed to boats
+- P005d (memo 005) pushes -1 [old band ≈ -4..-2] — Rivers and coastal lighterage of the North's panhandle and Laotian waterways closed to boats
 
 ## INFIL.sea — Seaborne and Sihanoukville infiltration
 *Higher means more supply arriving by sea or through Cambodian ports.*
 
-- P003b (memo 003) pushes -1 — Wide-area maritime radar picks steel-hulled trawlers out of the coastal traffic day and night; it reduces sea infiltration only where a patrol vessel can be sent to the track
+- P003b (memo 003) pushes -1 [old band ≈ -4..-2] — Wide-area maritime radar picks steel-hulled trawlers out of the coastal traffic day and night; it reduces sea infiltration only where a patrol vessel can be sent to the track
 - P003b (memo 003) depends — Maritime detection is worth what the patrol forces can intercept
 
 ## SANCT.cambodia — Value of the Cambodian sanctuary to the enemy
@@ -215,8 +215,8 @@
 ## FIND.main_force — Finding the main force
 *Higher means better ability to locate PAVN and VC main-force units.*
 
-- P003a (memo 003) pushes +1 — Radio direction-finding on regimental and front nets from 70,000 ft, radar imagery of base camps, trails and river crossings outside the canopy; finds where a regiment has been and roughly where its headquarters is, not where its companies are tonight
-- P003b (memo 003) pushes +1 — Persistent moving-target radar over open ground, roads, rivers and canals: shows vehicle and boat movement, and column movement in the open, around the clock and in any weather; blind to whatever moves under canopy
+- P003a (memo 003) pushes +1 [old band ≈ +2..+4] — Radio direction-finding on regimental and front nets from 70,000 ft, radar imagery of base camps, trails and river crossings outside the canopy; finds where a regiment has been and roughly where its headquarters is, not where its companies are tonight
+- P003b (memo 003) pushes +1 [old band ≈ +2..+4] — Persistent moving-target radar over open ground, roads, rivers and canals: shows vehicle and boat movement, and column movement in the open, around the clock and in any weather; blind to whatever moves under canopy
 - P004a (memo 004) depends — Firepower in the squad is wasted on empty jungle; it needs the enemy found
 - P004b (memo 004) depends — Long-range precision fire needs a target seen at range: open ground, not canopy
 - P005a (memo 005) depends — A precise bomb needs a located target; the bomber finds nothing under canopy
@@ -226,16 +226,16 @@
 ## FIND.vci — Identifying the VCI
 *Higher means better ability to identify VCI members inside the population.*
 
-- P001a (memo 001) pushes +1 — Village land committees, a parcel map and a register of who tills what give the state its first census of the hamlet; volunteered information rises where titles are delivered and defended
-- P002a (memo 002) pushes +2 — A single Special Branch holding the files, a resident constable who knows the hamlet, and a family census that makes a stranger visible; the VCI half of find-and-fix, not the main-force half
-- P006a (memo 006) pushes +1 — Fused files, network analysis and exploitation of every arrest and rallier add the district-and-above cadre to what P002a's Special Branch already finds in the hamlet
+- P001a (memo 001) pushes +1 [old band ≈ +2..+4] — Village land committees, a parcel map and a register of who tills what give the state its first census of the hamlet; volunteered information rises where titles are delivered and defended
+- P002a (memo 002) pushes +2 [old band ≈ +5..+7] — A single Special Branch holding the files, a resident constable who knows the hamlet, and a family census that makes a stranger visible; the VCI half of find-and-fix, not the main-force half
+- P006a (memo 006) pushes +1 [old band ≈ +2..+4] — Fused files, network analysis and exploitation of every arrest and rallier add the district-and-above cadre to what P002a's Special Branch already finds in the hamlet
 
 ## INTEL.penetration — Enemy penetration of the GVN and RVNAF
 *Higher means more enemy agents inside the GVN and RVNAF.*
 
-- P001b (memo 001) pushes -1 — Investigations of officials who sell documents, passes and posts uncover some of the enemy's purchased agents
+- P001b (memo 001) pushes -1 [old band ≈ -4..-2] — Investigations of officials who sell documents, passes and posts uncover some of the enemy's purchased agents
 - P001b (memo 001) depends — A commission holding the regime's secrets is a target for the enemy's agents as well as the generals'
-- P002a (memo 002) pushes -1 — Special Branch counter-intelligence and vetting against an enemy that has had agents in the police and the RVNAF for a decade; partial, and itself a target
+- P002a (memo 002) pushes -1 [old band ≈ -4..-2] — Special Branch counter-intelligence and vetting against an enemy that has had agents in the police and the RVNAF for a decade; partial, and itself a target
 - P002a (memo 002) depends — A Special Branch penetrated by the enemy hands him its informants
 - P003a (memo 003) depends — Anything shared with the Joint General Staff can reach the enemy; the product is only as secret as the least secure office that reads it
 - P005a (memo 005) depends — B-52 strikes in the South need GVN clearance; a penetrated clearance chain warns the target whatever the bomb
@@ -248,32 +248,32 @@
 
 - P003a (memo 003) depends — Finding a regiment's base area does not hold the regiment there
 - P003b (memo 003) depends — A moving column on a road is a target for minutes; without a force able to reach it, the track is history
-- P004b (memo 004) pushes +1 — Precise fire at 300–800 m in paddy, on the coastal plain, from hilltop and firebase perimeters; kills the enemy's own snipers, machine gunners and leaders at ranges the AK cannot answer
-- P004c (memo 004) pushes +1 — Belt-fed base of fire inside the squad: the ARVN squad can hold an enemy in contact with 200-round belts instead of a 20-round BAR
-- P005c (memo 005) pushes +1 — Heavy bombs placed hundreds rather than thousands of metres from friendly troops, when the coordinate is good
-- P006b (memo 006) pushes +1 — A battalion whose men and leaders trained together holds the contact it gets, at night and in the ambush; it does not get more contacts
+- P004b (memo 004) pushes +1 [old band ≈ +2..+4] — Precise fire at 300–800 m in paddy, on the coastal plain, from hilltop and firebase perimeters; kills the enemy's own snipers, machine gunners and leaders at ranges the AK cannot answer
+- P004c (memo 004) pushes +1 [old band ≈ +2..+4] — Belt-fed base of fire inside the squad: the ARVN squad can hold an enemy in contact with 200-round belts instead of a 20-round BAR
+- P005c (memo 005) pushes +1 [old band ≈ +2..+4] — Heavy bombs placed hundreds rather than thousands of metres from friendly troops, when the coordinate is good
+- P006b (memo 006) pushes +1 [old band ≈ +2..+4] — A battalion whose men and leaders trained together holds the contact it gets, at night and in the ambush; it does not get more contacts
 
 ## STRIKE.responsiveness — Speed from detection to effect
 *Higher means faster fires on located targets.*
 
-- P003b (memo 003) pushes +1 — A live track passed to a strike controller by line-of-sight or satellite link (E01) cuts the time from detection to ordnance where an aircraft is already airborne; it does nothing where the strike asset is an hour away
+- P003b (memo 003) pushes +1 [old band ≈ +2..+4] — A live track passed to a strike controller by line-of-sight or satellite link (E01) cuts the time from detection to ordnance where an aircraft is already airborne; it does nothing where the strike asset is an hour away
 - P003a (memo 003) depends — A location from the U-2 is worth what can be done with it in the hours it stays true
 - P003b (memo 003) depends — A track is worth a strike aircraft within twenty to forty minutes of it; the historical force must be airborne or on strip alert to use it
-- P005a (memo 005) pushes +1 — Unrefuelled reach from Guam and fewer tankers shorten the planning chain; still hours, not minutes
+- P005a (memo 005) pushes +1 [old band ≈ +2..+4] — Unrefuelled reach from Guam and fewer tankers shorten the planning chain; still hours, not minutes
 - P005c (memo 005) depends — The bomb is fast; the B-52 mission planning chain is not
 - P006c (memo 006) depends — Much of the adviser's standing comes from the American fire and lift he can call
-- P008b (memo 008) pushes +1 — More territorial and ARVN stations on the fire-support nets, kept working by local repair
+- P008b (memo 008) pushes +1 [old band ≈ +2..+4] — More territorial and ARVN stations on the fire-support nets, kept working by local repair
 - P008b (memo 008) depends — A call for help is worth what the artillery and reaction force behind it can do
 - P010b (memo 010) depends — The American course teaches the squad leader to fix and call fire; his competence depends on fire the RVNAF does not own (F010-24)
 
 ## AIR.north_effect — Effect of the air campaign against the North
 *Higher means more effect on the North's capacity and will.*
 
-- P003a (memo 003) pushes +1 — Target folders, radar and EO imagery of rail, bridges and ports in the North, and same-day damage assessment, so fewer sorties are wasted on targets already down or never there
-- P003b (memo 003) pushes +1 — Under the standing condition (E01) an orbit over the Gulf of Tonkin, outside the SA-2 belt, watches the coastal road and rail net from Vinh to Thanh Hoa and the lighter traffic out of Haiphong in any weather; armed reconnaissance is sent to what is moving rather than to where traffic used to be
-- P005a (memo 005) pushes +1 — Twenty independently aimed 2,000 lb weapons a sortie in any weather against fixed targets, where Washington allows
-- P005b (memo 005) pushes +1 — Bridges, ferries, depots and power plants struck in monsoon cloud with few sorties
-- P005d (memo 005) pushes +1 — Inland waterways and coastal shipping south of the 20th parallel mined persistently
+- P003a (memo 003) pushes +1 [old band ≈ +2..+4] — Target folders, radar and EO imagery of rail, bridges and ports in the North, and same-day damage assessment, so fewer sorties are wasted on targets already down or never there
+- P003b (memo 003) pushes +1 [old band ≈ +2..+4] — Under the standing condition (E01) an orbit over the Gulf of Tonkin, outside the SA-2 belt, watches the coastal road and rail net from Vinh to Thanh Hoa and the lighter traffic out of Haiphong in any weather; armed reconnaissance is sent to what is moving rather than to where traffic used to be
+- P005a (memo 005) pushes +1 [old band ≈ +2..+4] — Twenty independently aimed 2,000 lb weapons a sortie in any weather against fixed targets, where Washington allows
+- P005b (memo 005) pushes +1 [old band ≈ +2..+4] — Bridges, ferries, depots and power plants struck in monsoon cloud with few sorties
+- P005d (memo 005) pushes +1 [old band ≈ +2..+4] — Inland waterways and coastal shipping south of the 20th parallel mined persistently
 
 ## AIR.north_defences — Air defence density over the North
 *Higher means denser and more lethal air defence.*
@@ -286,37 +286,37 @@
 ## AIR.losses — US aircraft losses
 *Higher means more aircraft lost.*
 
-- P003a (memo 003) pushes -1 — An electronic order of battle of the North's radars, and later of its SA-2 sites, built before the strike forces need it; routes planned around what is known rather than learned by losses
-- P005a (memo 005) pushes -1 — Modern defensive suite and release outside the light AAA envelope; SA-2 still lethal
+- P003a (memo 003) pushes -1 [old band ≈ -4..-2] — An electronic order of battle of the North's radars, and later of its SA-2 sites, built before the strike forces need it; routes planned around what is known rather than learned by losses
+- P005a (memo 005) pushes -1 [old band ≈ -4..-2] — Modern defensive suite and release outside the light AAA envelope; SA-2 still lethal
 
 ## ARVN.effectiveness — ARVN combat effectiveness
 *Higher means more effective ARVN units in combat.*
 
-- P001b (memo 001) pushes +1 — Ghost soldiers removed from the rolls: battalions known to be their real strength, rice and pay reaching the men present
+- P001b (memo 001) pushes +1 [old band ≈ +2..+4] — Ghost soldiers removed from the rolls: battalions known to be their real strength, rice and pay reaching the men present
 - P002b (memo 002) depends — Competent officers drawn to province and district posts leave battalions and regiments; the selection competes with the line for the same few hundred able officers
-- P004a (memo 004) pushes +1 — ARVN infantry matches and outshoots the AK-47 from 1964 instead of mid-1968; faster hits in the first seconds of a contact at 10–50 m, more volume per man, a lighter weapon for smaller soldiers
-- P004b (memo 004) pushes +1 — Small but real: a trained marksman in each squad in the open delta and plains country where ARVN does most of its fighting
-- P004c (memo 004) pushes +1 — Squad firepower matching the RPD-armed PAVN infantry from 1964
-- P006c (memo 006) pushes +1 — Battalion and subsector advice by men selected and trained for it
-- P007b (memo 007) pushes +1 — Company and battalion leadership able to plan, coordinate fires and run training
-- P007c (memo 007) pushes +1 — Battalions commanded by officers selected for it, kept in command, and removed when they fail
-- P008b (memo 008) pushes +1 — Communications down to squad and outpost, and repair turnaround measured in days
-- P009b (memo 009) pushes +1 — Every regular recruit trained to a common, demanding standard, and none sent to a unit untrained; marksmanship with P004a and P004c
-- P010b (memo 010) pushes +1 — Every regular squad and platoon led by an NCO schooled for his job, in an army whose NCO corps was its thinnest layer; with P009b the trained private now has a trained corporal
+- P004a (memo 004) pushes +1 [old band ≈ +2..+4] — ARVN infantry matches and outshoots the AK-47 from 1964 instead of mid-1968; faster hits in the first seconds of a contact at 10–50 m, more volume per man, a lighter weapon for smaller soldiers
+- P004b (memo 004) pushes +1 [old band ≈ +2..+4] — Small but real: a trained marksman in each squad in the open delta and plains country where ARVN does most of its fighting
+- P004c (memo 004) pushes +1 [old band ≈ +2..+4] — Squad firepower matching the RPD-armed PAVN infantry from 1964
+- P006c (memo 006) pushes +1 [old band ≈ +2..+4] — Battalion and subsector advice by men selected and trained for it
+- P007b (memo 007) pushes +1 [old band ≈ +2..+4] — Company and battalion leadership able to plan, coordinate fires and run training
+- P007c (memo 007) pushes +1 [old band ≈ +2..+4] — Battalions commanded by officers selected for it, kept in command, and removed when they fail
+- P008b (memo 008) pushes +1 [old band ≈ +2..+4] — Communications down to squad and outpost, and repair turnaround measured in days
+- P009b (memo 009) pushes +1 [old band ≈ +2..+4] — Every regular recruit trained to a common, demanding standard, and none sent to a unit untrained; marksmanship with P004a and P004c
+- P010b (memo 010) pushes +1 [old band ≈ +2..+4] — Every regular squad and platoon led by an NCO schooled for his job, in an army whose NCO corps was its thinnest layer; with P009b the trained private now has a trained corporal
 
 ## ARVN.leadership — RVNAF officer selection and quality
 *Higher means better officers, selected on merit.*
 
-- P001b (memo 001) pushes +1 — Office-buying and transfers for cash become prosecutable; commanders relieved for cause with evidence an adviser could never produce
+- P001b (memo 001) pushes +1 [old band ≈ +2..+4] — Office-buying and transfers for cash become prosecutable; commanders relieved for cause with evidence an adviser could never produce
 - P001b (memo 001) depends — Relief for cause needs replacements; without a pool of honest officers, removal leaves vacancies
-- P002b (memo 002) pushes +1 — Selection for a province or district becomes a reward for merit in the field, and the examination creates a record of officers' ability that promotion boards can use
+- P002b (memo 002) pushes +1 [old band ≈ +2..+4] — Selection for a province or district becomes a reward for merit in the field, and the examination creates a record of officers' ability that promotion boards can use
 - P002a (memo 002) depends — Military Security Service and ARVN intelligence must accept Special Branch primacy on the VCI
 - P002b (memo 002) depends — The candidate pool is the officer corps and a thin civil service; merit selection cannot select merit that does not exist
 - P004a (memo 004) depends — A better rifle does not make a unit go out at night or accept contact; leaders decide that
 - P004b (memo 004) depends — Marksmen must be selected on skill, not on favour, and employed by squad leaders who understand them
 - P006c (memo 006) depends — Advice changes a commander who will listen; it does not replace one who will not
-- P007b (memo 007) pushes +2 — Seven educated classes in the company grades by 1964 and the gate on every promotion after
-- P007c (memo 007) pushes +2 — Selection and command on merit below the general officers; relief for cause
+- P007b (memo 007) pushes +2 [old band ≈ +5..+7] — Seven educated classes in the company grades by 1964 and the gate on every promotion after
+- P007c (memo 007) pushes +2 [old band ≈ +5..+7] — Selection and command on merit below the general officers; relief for cause
 - P007b (memo 007) depends — Education helps only where the selection system puts the educated officer in command
 - P008a (memo 008) depends — Technical-service officers who run depots and accept output
 - P009b (memo 009) depends — The drill sergeant is an NCO and the training centre commander an officer; P007b and P007c decide whether they are good ones
@@ -325,58 +325,58 @@
 ## ARVN.desertion — RVNAF desertion
 *Higher means more desertion.*
 
-- P001b (memo 001) pushes -1 — Pay delivered to the soldier by an independent paymaster rather than through his commander removes one cause of desertion
-- P002a (memo 002) pushes -1 — Identity cards and the family census make a deserter at home findable; the deterrent is modest and the police are reluctant to arrest the sons of the village
+- P001b (memo 001) pushes -1 [old band ≈ -4..-2] — Pay delivered to the soldier by an independent paymaster rather than through his commander removes one cause of desertion
+- P002a (memo 002) pushes -1 [old band ≈ -4..-2] — Identity cards and the family census make a deserter at home findable; the deterrent is modest and the police are reluctant to arrest the sons of the village
 - P004a (memo 004) depends — Deserters take their carbines; the weapon must stay with the force to matter
-- P007c (memo 007) pushes -1 — Soldiers desert leaders, not armies; modest
-- P009b (memo 009) pushes -1 — A longer, cohesive first course with a buddy team and a drill sergeant who knows the recruit's name; modest against the pay, family and posting causes of desertion
-- P010b (memo 010) pushes -1 — The NCO who counsels his men, knows their families and runs the leave roster; modest against pay and posting
+- P007c (memo 007) pushes -1 [old band ≈ -4..-2] — Soldiers desert leaders, not armies; modest
+- P009b (memo 009) pushes -1 [old band ≈ -4..-2] — A longer, cohesive first course with a buddy team and a drill sergeant who knows the recruit's name; modest against the pay, family and posting causes of desertion
+- P010b (memo 010) pushes -1 [old band ≈ -4..-2] — The NCO who counsels his men, knows their families and runs the leave roster; modest against pay and posting
 - P010b (memo 010) depends — The NCO corps is drawn from the men who stay; desertion drains the pool the courses draw on
 
 ## ARVN.self_sufficiency — RVNAF self-sufficiency
 *Higher means more able to fight, maintain and supply itself without US combat support.*
 
 - P004a (memo 004) depends — M855A1, optics, batteries and URG-I parts all come from the United States; the RVNAF cannot make or repair them at depth, so the rearmament deepens the supply dependence that 1973–75 punished
-- P005c (memo 005) pushes -1 — Defence of besieged positions is built around an American bomber and American coordinates the RVNAF can never own
-- P006c (memo 006) pushes -1 — An adviser qualified and trusted to call American air and artillery becomes the advised unit's means of fire; better advising of fire deepens the dependence the withdrawal punishes, unless the adviser is directed to train Vietnamese observers to replace him
-- P007b (memo 007) pushes +1 — Staff, logistics and fire-support officers educated to run their own systems
-- P008a (memo 008) pushes +2 — Spares, rebuild, cartridge cases and shell bodies made and turned around in country; filling, fuel and major systems still imported
-- P008b (memo 008) pushes +2 — Radios, batteries, wire and signal repair made and done in country; the 1974–75 battery and parts famine eased
-- P010b (memo 010) pushes +1 — Senior and master courses teach maintenance, supply, training management and readiness reporting at company and battalion; the sergeants who keep trucks and radios running
+- P005c (memo 005) pushes -1 [old band ≈ -4..-2] — Defence of besieged positions is built around an American bomber and American coordinates the RVNAF can never own
+- P006c (memo 006) pushes -1 [old band ≈ -4..-2] — An adviser qualified and trusted to call American air and artillery becomes the advised unit's means of fire; better advising of fire deepens the dependence the withdrawal punishes, unless the adviser is directed to train Vietnamese observers to replace him
+- P007b (memo 007) pushes +1 [old band ≈ +2..+4] — Staff, logistics and fire-support officers educated to run their own systems
+- P008a (memo 008) pushes +2 [old band ≈ +5..+7] — Spares, rebuild, cartridge cases and shell bodies made and turned around in country; filling, fuel and major systems still imported
+- P008b (memo 008) pushes +2 [old band ≈ +5..+7] — Radios, batteries, wire and signal repair made and done in country; the 1974–75 battery and parts famine eased
+- P010b (memo 010) pushes +1 [old band ≈ +2..+4] — Senior and master courses teach maintenance, supply, training management and readiness reporting at company and battalion; the sergeants who keep trucks and radios running
 - P010b (memo 010) depends — The schooled squad fights best with American fire and helicopters behind it; in 1974–75 it has been taught a way of war its army cannot supply (F010-24)
 
 ## RFPF.effectiveness — Regional and Popular Forces
 *Higher means more effective territorial forces.*
 
-- P001a (memo 001) pushes +1 — A Popular Forces militiaman who owns the field he guards has a reason to fight at night that pay alone does not give
+- P001a (memo 001) pushes +1 [old band ≈ +2..+4] — A Popular Forces militiaman who owns the field he guards has a reason to fight at night that pay alone does not give
 - P001a (memo 001) depends — Territorial forces hold titled hamlets after the land teams leave
-- P002b (memo 002) pushes +1 — The province and district chief commands the Regional and Popular Forces; a competent chief who stays two years is the largest single improvement territorial forces can receive without new equipment
+- P002b (memo 002) pushes +1 [old band ≈ +2..+4] — The province and district chief commands the Regional and Popular Forces; a competent chief who stays two years is the largest single improvement territorial forces can receive without new equipment
 - P002a (memo 002) depends — Popular Forces hold the village with the constable at night; the police post is not a fort
-- P004a (memo 004) pushes +1 — The outpost platoon holds its wall against a VC local-force company with 30-round magazines and a red dot instead of carbines and Garands; the territorial forces are rearmed five years before 1969
+- P004a (memo 004) pushes +1 [old band ≈ +2..+4] — The outpost platoon holds its wall against a VC local-force company with 30-round magazines and a red dot instead of carbines and Garands; the territorial forces are rearmed five years before 1969
 - P004a (memo 004) depends — The rifle's value in the hamlet depends on whether the platoon is present and awake after dark
-- P006c (memo 006) pushes +1 — Subsector advisers and mobile teams who know the posts and the district chief
-- P007b (memo 007) pushes +1 — Sector and subsector officers and the RF company commanders drawn from the educated classes
-- P008a (memo 008) pushes +1 — Wire, pickets, rebar and roofing for outposts and hamlet defences, and weapons repaired in country
-- P008b (memo 008) pushes +2 — A radio in every PF platoon and outpost and a battery to run it: the outpost can call for help at night
+- P006c (memo 006) pushes +1 [old band ≈ +2..+4] — Subsector advisers and mobile teams who know the posts and the district chief
+- P007b (memo 007) pushes +1 [old band ≈ +2..+4] — Sector and subsector officers and the RF company commanders drawn from the educated classes
+- P008a (memo 008) pushes +1 [old band ≈ +2..+4] — Wire, pickets, rebar and roofing for outposts and hamlet defences, and weapons repaired in country
+- P008b (memo 008) pushes +2 [old band ≈ +5..+7] — A radio in every PF platoon and outpost and a battery to run it: the outpost can call for help at night
 - P008b (memo 008) depends — A radio at the post is worth the platoon that keeps watch on it and the reaction it summons
-- P009c (memo 009) pushes +1 — Every territorial recruit trained, on the rifle he carries, with first aid and night discipline; the historical training lag of up to 60% in 1964 closed
+- P009c (memo 009) pushes +1 [old band ≈ +2..+4] — Every territorial recruit trained, on the rifle he carries, with first aid and night discipline; the historical training lag of up to 60% in 1964 closed
 - P009c (memo 009) depends — Six weeks gives the individual skills; the platoon's competence still rests on its leader and its support
-- P010b (memo 010) pushes +1 — Every RF and PF squad and platoon leader schooled for his grade (E03); the 1964 PF leadership training that ran 60% behind is filled by the gate
+- P010b (memo 010) pushes +1 [old band ≈ +2..+4] — Every RF and PF squad and platoon leader schooled for his grade (E03); the 1964 PF leadership training that ran 60% behind is filled by the gate
 
 ## ADVISE.leverage — Advisory leverage
 *Higher means advisors can change more RVNAF decisions.*
 
-- P001b (memo 001) pushes +1 — The Aid Compliance Board gives the US Mission a lever it can pull short of withholding all aid, at a legitimacy cost (POSTNA-6)
+- P001b (memo 001) pushes +1 [old band ≈ +2..+4] — The Aid Compliance Board gives the US Mission a lever it can pull short of withholding all aid, at a legitimacy cost (POSTNA-6)
 - P001a (memo 001) depends — American pressure keeps the programme moving through juntas that would rather not
 - P001b (memo 001) depends — The Aid Compliance Board is only as strong as Washington's willingness to suspend aid to a command at war
-- P002b (memo 002) pushes +1 — Province and district advisers get a counterpart who stays and an Inspectorate to which their evidence can go; the leverage is institutional rather than American, which is why it costs little legitimacy
+- P002b (memo 002) pushes +1 [old band ≈ +2..+4] — Province and district advisers get a counterpart who stays and an Inspectorate to which their evidence can go; the leverage is institutional rather than American, which is why it costs little legitimacy
 - P002a (memo 002) depends — Americans keep the identity, pay and review provisions moving through governments that would prefer a political police
 - P002b (memo 002) depends — The Aid Compliance Board's power to suspend a province's counterpart funds (P001b) enforces appointment through the list
 - P004a (memo 004) depends — Zeroing, marksmanship and maintenance training is only as good as the advisers' ability to make ARVN and RF/PF commanders hold it
 - P004c (memo 004) depends — Machine-gun fire discipline, barrel changes and ammunition management are trained or the guns burn out and run dry
-- P006c (memo 006) pushes +1 — An adviser who speaks the language and stays 18 months knows the counterpart and is listened to longer; authority is unchanged
+- P006c (memo 006) pushes +1 [old band ≈ +2..+4] — An adviser who speaks the language and stays 18 months knows the counterpart and is listened to longer; authority is unchanged
 - P006a (memo 006) depends — The rules on quotas, capture and the PRUs hold only with an American lever behind the committee
-- P007b (memo 007) pushes +1 — A counterpart educated on the adviser's own curriculum shares his vocabulary and his standards; influence rises, authority does not (POSTNA-6)
+- P007b (memo 007) pushes +1 [old band ≈ +2..+4] — A counterpart educated on the adviser's own curriculum shares his vocabulary and his standards; influence rises, authority does not (POSTNA-6)
 - P007b (memo 007) depends — The gates hold only while the Americans will refuse to fund an exception
 - P007c (memo 007) depends — The board survives coups only behind an American aid condition, as the Selection Board of P002b does
 - P008a (memo 008) depends — Whether RVNAF logistics actually orders from the arsenal and depots rather than waiting for US supply
@@ -387,50 +387,50 @@
 ## US.personnel_demand — Demand on US personnel spaces
 *Higher means more spaces consumed.*
 
-- P002a (memo 002) pushes +1 — About 520 Americans, of whom about 150 in uniform, mostly in the provinces
-- P003a (memo 003) pushes +1 — About 220 spaces of scarce specialists: U-2 pilots, sensor technicians, imagery analysts and Vietnamese-language SIGINT linguists
-- P003b (memo 003) pushes +1 — About 380 spaces: pilots and sensor operators for a 24-hour orbit, maintainers, contractor engineers and an exploitation cell
-- P006a (memo 006) pushes +1 — About 600 Americans in the centres and the exploitation cell
-- P006b (memo 006) pushes +1 — Overlap at each relief in place and a larger rotation base of formed units without the reserves
+- P002a (memo 002) pushes +1 [old band ≈ +2..+4] — About 520 Americans, of whom about 150 in uniform, mostly in the provinces
+- P003a (memo 003) pushes +1 [old band ≈ +2..+4] — About 220 spaces of scarce specialists: U-2 pilots, sensor technicians, imagery analysts and Vietnamese-language SIGINT linguists
+- P003b (memo 003) pushes +1 [old band ≈ +2..+4] — About 380 spaces: pilots and sensor operators for a 24-hour orbit, maintainers, contractor engineers and an exploitation cell
+- P006a (memo 006) pushes +1 [old band ≈ +2..+4] — About 600 Americans in the centres and the exploitation cell
+- P006b (memo 006) pushes +1 [old band ≈ +2..+4] — Overlap at each relief in place and a larger rotation base of formed units without the reserves
 - P006b (memo 006) depends — The size of the force in theater sets the size of the rotation base
 - P006c (memo 006) depends — The selected pool is the same pool of good captains and NCOs that American units need
-- P007a (memo 007) pushes +1 — Officers in school are not in units; the training base grows
+- P007a (memo 007) pushes +1 [old band ≈ +2..+4] — Officers in school are not in units; the training base grows
 - P007a (memo 007) depends — Captains in school, the advisory corps and the rotating battalions draw on one pool of company-grade officers
-- P009a (memo 009) pushes +1 — Two more weeks in the Army pipeline for every soldier and a larger drill-sergeant cadre
-- P010a (memo 010) pushes +1 — Men in school instead of in squads, a larger instructor base and a ten-month course for sergeants major; promotions gated during the 1966–68 NCO shortage
-- P010b (memo 010) pushes +1 — Advisers at the NCO academy and schools; small
+- P009a (memo 009) pushes +1 [old band ≈ +2..+4] — Two more weeks in the Army pipeline for every soldier and a larger drill-sergeant cadre
+- P010a (memo 010) pushes +1 [old band ≈ +2..+4] — Men in school instead of in squads, a larger instructor base and a ten-month course for sergeants major; promotions gated during the 1966–68 NCO shortage
+- P010b (memo 010) pushes +1 [old band ≈ +2..+4] — Advisers at the NCO academy and schools; small
 - P010a (memo 010) depends — The gate holds promotions in the years the NCO corps was shortest
 
 ## US.casualties — US casualty rate
 *Higher means more US killed and wounded.*
 
-- P004a (memo 004) pushes -1 — Fewer men lost in the first seconds of the meeting engagement; the rifle that does not jam in the Hill 881 sense
+- P004a (memo 004) pushes -1 [old band ≈ -4..-2] — Fewer men lost in the first seconds of the meeting engagement; the rifle that does not jam in the Hill 881 sense
 - P004a (memo 004) depends — The fraction of US deaths taken from small arms in the first seconds of contact, against the much larger fraction from mines, booby traps, mortars and RPGs that no rifle touches
-- P005c (memo 005) pushes -1 — Closer, faster heavy fire in defence of besieged positions
-- P006b (memo 006) pushes -1 — Collective training and stable leaders cut the losses of the new man; the unit's first month in a new area offsets part of it
+- P005c (memo 005) pushes -1 [old band ≈ -4..-2] — Closer, faster heavy fire in defence of besieged positions
+- P006b (memo 006) pushes -1 [old band ≈ -4..-2] — Collective training and stable leaders cut the losses of the new man; the unit's first month in a new area offsets part of it
 - P006b (memo 006) depends — Losses within a tour are refilled by individuals; heavy losses return the unit to individual replacement in practice
-- P007a (memo 007) pushes -1 — Better-trained platoon and company leaders lose fewer men to ambush, mines and errors of fire support; modest
-- P009a (memo 009) pushes -1 — Fewer American dead from extremity hemorrhage and from individual-skill failures; modest in total, real in lives
-- P010a (memo 010) pushes -1 — Squad and platoon fights are NCOs' fights; better land navigation, fire control, patrol-base discipline and leader-stakes medical drill; modest in total
+- P007a (memo 007) pushes -1 [old band ≈ -4..-2] — Better-trained platoon and company leaders lose fewer men to ambush, mines and errors of fire support; modest
+- P009a (memo 009) pushes -1 [old band ≈ -4..-2] — Fewer American dead from extremity hemorrhage and from individual-skill failures; modest in total, real in lives
+- P010a (memo 010) pushes -1 [old band ≈ -4..-2] — Squad and platoon fights are NCOs' fights; better land navigation, fire control, patrol-base discipline and leader-stakes medical drill; modest in total
 
 ## US.unit_quality — US unit quality
 *Higher means better US units.*
 
-- P004a (memo 004) pushes +1 — No 1967 M16 jamming crisis, a red-dot sight in every rifleman's hands, and M855A1 through brush and light cover
-- P006b (memo 006) pushes +2 — Squads, platoons and commanders who trained together and stay together for the tour; no six-month command
-- P006c (memo 006) pushes -1 — The selected captains, majors and senior NCOs are taken from the American units
-- P007a (memo 007) pushes +1 — Lieutenants and captains of 1964–68 arrive trained to a common, demanding standard and are gated on it
+- P004a (memo 004) pushes +1 [old band ≈ +2..+4] — No 1967 M16 jamming crisis, a red-dot sight in every rifleman's hands, and M855A1 through brush and light cover
+- P006b (memo 006) pushes +2 [old band ≈ +5..+7] — Squads, platoons and commanders who trained together and stay together for the tour; no six-month command
+- P006c (memo 006) pushes -1 [old band ≈ -4..-2] — The selected captains, majors and senior NCOs are taken from the American units
+- P007a (memo 007) pushes +1 [old band ≈ +2..+4] — Lieutenants and captains of 1964–68 arrive trained to a common, demanding standard and are gated on it
 - P007a (memo 007) depends — The educated lieutenant still serves in a unit shaped by the replacement or rotation system
-- P009a (memo 009) pushes +1 — Every soldier and Marine arrives with a longer, collective, standards-based basic course and the 1957–63 entrants are the junior NCOs of 1964–66
+- P009a (memo 009) pushes +1 [old band ≈ +2..+4] — Every soldier and Marine arrives with a longer, collective, standards-based basic course and the 1957–63 entrants are the junior NCOs of 1964–66
 - P009a (memo 009) depends — The basic course is only as good as the unit that receives the man; P006b unit rotation keeps him with the men he trained beside
-- P010a (memo 010) pushes +1 — Every sergeant, staff sergeant and platoon sergeant schooled for his grade before he holds it; the instant NCOs of 1967–71 get the Basic Leader Course before their sixth stripe; the gain is largest exactly when the NCO corps thinned
+- P010a (memo 010) pushes +1 [old band ≈ +2..+4] — Every sergeant, staff sergeant and platoon sergeant schooled for his grade before he holds it; the instant NCOs of 1967–71 get the Basic Leader Course before their sixth stripe; the gain is largest exactly when the NCO corps thinned
 - P010a (memo 010) depends — The educated sergeant is only as useful as the squad he keeps; P006b unit rotation decides whether he stays with it
 
 ## MED.survival — Casualty survival
 *Higher means more wounded survive (US and RVNAF).*
 
-- P009a (memo 009) pushes +1 — Every American taught tactical combat casualty care in basic training: the tourniquet on the extremity bleed, the leading preventable cause of death in Vietnam
-- P009b (memo 009) pushes +1 — Tactical combat casualty care for every RVNAF soldier, in an army whose evacuation was slower than the American
+- P009a (memo 009) pushes +1 [old band ≈ +2..+4] — Every American taught tactical combat casualty care in basic training: the tourniquet on the extremity bleed, the leading preventable cause of death in Vietnam
+- P009b (memo 009) pushes +1 [old band ≈ +2..+4] — Tactical combat casualty care for every RVNAF soldier, in an army whose evacuation was slower than the American
 
 ## LOG.ports — Port throughput
 *Higher means more port capacity and clearance.*
@@ -444,11 +444,11 @@
 *Higher means better road, rail and air distribution.*
 
 - P003b (memo 003) depends — Air base security and fuel at Bien Hoa and Da Nang; an aircraft on the ramp is exposed to mortars
-- P004c (memo 004) pushes -1 — Linked 5.56mm and spare barrels in quantity down a road net the enemy cuts; small per gun, large across 6,000 squads
+- P004c (memo 004) pushes -1 [old band ≈ -4..-2] — Linked 5.56mm and spare barrels in quantity down a road net the enemy cuts; small per gun, large across 6,000 squads
 - P004a (memo 004) depends — Ammunition, batteries, optics spares and replacement carbines must reach districts and outposts over interdicted roads
 - P004b (memo 004) depends — Match 7.62mm ammunition and scope spares in a second calibre at squad level
 - P004c (memo 004) depends — Linked ammunition, spare barrels, links and feed parts
-- P008a (memo 008) pushes +1 — Vehicle and engine rebuild, bridge girders and culverts, rail repair steel made in country; faster return of the network after sabotage
+- P008a (memo 008) pushes +1 [old band ≈ +2..+4] — Vehicle and engine rebuild, bridge girders and culverts, rail repair steel made in country; faster return of the network after sabotage
 - P008a (memo 008) depends — Bridging, wire and rebuilt vehicles are worth what reaches the districts over interdicted roads
 
 ## LOG.helicopter_hours — Helicopter hours available
@@ -465,18 +465,18 @@
 ## LOG.engineers — Engineer capacity
 *Higher means more engineer effort available.*
 
-- P008a (memo 008) pushes +1 — Construction steel, prefabricated bridging and fortification material free engineer effort from waiting on shipping
+- P008a (memo 008) pushes +1 [old band ≈ +2..+4] — Construction steel, prefabricated bridging and fortification material free engineer effort from waiting on shipping
 
 ## US.political_tolerance — American political tolerance
 *Higher means more time and money Washington will grant.*
 
-- P001b (memo 001) pushes +1 — Visible reform and true strength returns modestly lengthen tolerance, with negative spikes from corruption headlines (F001-14)
+- P001b (memo 001) pushes +1 [old band ≈ +2..+4] — Visible reform and true strength returns modestly lengthen tolerance, with negative spikes from corruption headlines (F001-14)
 - P001a (memo 001) depends — Congress funds the compensation bonds over eight years
 - P001b (memo 001) depends — Washington must accept slower military operations while commands are purged
 - P002a (memo 002) depends — Congress funds a police programme that its critics will call a secret police
 - P002b (memo 002) depends — Washington must accept that a chief who will not falsify returns reports bad news
 - P003a (memo 003) depends — A lost U-2 is a public event; the 1960 and 1962 losses are in every politician's memory
-- P004a (memo 004) pushes +1 — Small: no 1967 rifle scandal, no Ichord subcommittee hearings, no letters home about a rifle that jams; fewer dead in the first seconds of contact
+- P004a (memo 004) pushes +1 [old band ≈ +2..+4] — Small: no 1967 rifle scandal, no Ichord subcommittee hearings, no letters home about a rifle that jams; fewer dead in the first seconds of contact
 - P005a (memo 005) depends — Every expansion of B-52 targeting is a Washington decision
 - P006a (memo 006) depends — A programme described as assassination can be ended by Congress
 - P006b (memo 006) depends — No reserve mobilization; the rotation base comes from the active forces and the draft
@@ -490,15 +490,15 @@
 ## US.credibility_gap — The credibility gap
 *Higher means wider gap between what MACV reports and what the press reports.*
 
-- P001b (memo 001) pushes -1 — Independent musters and audits give MACV strength and expenditure figures that do not pass through the reporting chain (G-10)
-- P002b (memo 002) pushes -1 — An Inspectorate that verifies province reporting gives MACV a check on figures produced by the men rated on them (A13)
-- P006a (memo 006) pushes +1 — An American-designed targeting programme is a press story from 1965, whatever its rules
-- P006c (memo 006) pushes -1 — Advisers with protected careers and language report what they see
+- P001b (memo 001) pushes -1 [old band ≈ -4..-2] — Independent musters and audits give MACV strength and expenditure figures that do not pass through the reporting chain (G-10)
+- P002b (memo 002) pushes -1 [old band ≈ -4..-2] — An Inspectorate that verifies province reporting gives MACV a check on figures produced by the men rated on them (A13)
+- P006a (memo 006) pushes +1 [old band ≈ +2..+4] — An American-designed targeting programme is a press story from 1965, whatever its rules
+- P006c (memo 006) pushes -1 [old band ≈ -4..-2] — Advisers with protected careers and language report what they see
 
 ## INTL.communist_aid — Soviet and Chinese aid to the North
 *Higher means more aid.*
 
-- P005b (memo 005) pushes +1 — Fixed infrastructure that dies in one strike is replaced by Soviet and Chinese pontoon bridging, trucks, AAA and engineer troops
+- P005b (memo 005) pushes +1 [old band ≈ +2..+4] — Fixed infrastructure that dies in one strike is replaced by Soviet and Chinese pontoon bridging, trucks, AAA and engineer troops
 - P005d (memo 005) depends — Haiphong mining prohibited until 1972 under the modelled constraint
 
 ## INTL.chinese_intervention_risk — Risk of Chinese intervention
@@ -512,8 +512,8 @@
 ## SUBVERT.defection — Genuine enemy defection
 *Higher means more real defectors from the VC and PAVN.*
 
-- P001a (memo 001) pushes +1 — Southern-born guerrillas and their families can now keep land the Front gave them without the Front; slow and confined to areas the government can reach
-- P002a (memo 002) pushes +1 — A resident constable and a Special Branch officer are a door a frightened cadre can walk through at night; Special Branch, not the Army, debriefs and turns ralliers
+- P001a (memo 001) pushes +1 [old band ≈ +2..+4] — Southern-born guerrillas and their families can now keep land the Front gave them without the Front; slow and confined to areas the government can reach
+- P002a (memo 002) pushes +1 [old band ≈ +2..+4] — A resident constable and a Special Branch officer are a door a frightened cadre can walk through at night; Special Branch, not the Army, debriefs and turns ralliers
 - P004a (memo 004) depends — Weapons-for-money and Chieu Hoi rewards meet a market in which a modern carbine is the most valuable thing a man can carry
-- P006a (memo 006) pushes +1 — Targeted offers to named cadres and exploitation of each rallier's knowledge
+- P006a (memo 006) pushes +1 [old band ≈ +2..+4] — Targeted offers to named cadres and exploitation of each rallier's knowledge
 - P006a (memo 006) depends — Ralliers are the richest source of the network map

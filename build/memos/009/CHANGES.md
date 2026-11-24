@@ -6,7 +6,7 @@
 
 | Phase | Variable | Before → after |
 |---|---|---|
-| P1 | ARVN.effectiveness | +1 → +2 |
+| P1 | ARVN.effectiveness | +1 (old band ≈ +2..+4) → +2 (old band ≈ +5..+7) |
 
 ## Phase I — The advisory war and escalation (Jan 1964 – Jul 1965)
 

@@ -6,11 +6,11 @@
 
 | Phase | Variable | Before → after |
 |---|---|---|
-| P1 | FIND.main_force | +0 → +1 |
-| P2 | FIND.main_force | +0 → +1 |
-| P3 | FIND.main_force | +0 → +1 |
-| P4 | FIND.main_force | +0 → +1 |
-| P5 | FIND.main_force | +0 → +1 |
+| P1 | FIND.main_force | +0 (old band ≈ +0) → +1 (old band ≈ +2..+4) |
+| P2 | FIND.main_force | +0 (old band ≈ +0) → +1 (old band ≈ +2..+4) |
+| P3 | FIND.main_force | +0 (old band ≈ +0) → +1 (old band ≈ +2..+4) |
+| P4 | FIND.main_force | +0 (old band ≈ +0) → +1 (old band ≈ +2..+4) |
+| P5 | FIND.main_force | +0 (old band ≈ +0) → +1 (old band ≈ +2..+4) |
 
 ## Phase I — The advisory war and escalation (Jan 1964 – Jul 1965)
 

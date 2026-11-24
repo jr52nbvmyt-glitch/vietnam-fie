@@ -6,9 +6,9 @@
 
 | Phase | Variable | Before → after |
 |---|---|---|
-| P5 | POP.night_control | +0 → +1 |
-| P5 | VCI.strength | +0 → -1 |
-| P5 | FIND.vci | +0 → +1 |
+| P5 | POP.night_control | +0 (old band ≈ +0) → +1 (old band ≈ +2..+4) |
+| P5 | VCI.strength | +0 (old band ≈ +0) → -1 (old band ≈ -4..-2) |
+| P5 | FIND.vci | +0 (old band ≈ +0) → +1 (old band ≈ +2..+4) |
 
 ## Phase V — The Easter Offensive and Linebacker (Jan 1972 – Dec 1972)
 

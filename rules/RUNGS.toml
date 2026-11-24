@@ -1,0 +1,68 @@
+# The rung test (A9, from v1.0.6). The rung is still a judgment, but it is a judgment against
+# stated conditions. Every §4.N, and every checkpoint or review that changes the end state,
+# carries a block:
+#
+#   <!-- rungtest -->
+#   - b1 · PASS · <evidence: the dated events and end-vector or snapshot values that show it>
+#   - b2 · FAIL · <evidence>
+#   …one line for every condition below…
+#   <!-- /rungtest -->
+#
+# Verdicts: PASS, FAIL, or OPEN (the record cannot yet say). The rung the test supports is the
+# highest rung whose conditions all PASS; (a) if none does. history/endstate.toml must hold that
+# rung, or "off" with off_ladder naming the outcome (G5). The values named below are guides to the
+# evidence, not thresholds that decide by themselves: a condition passes on the war, not on a number.
+# Rungs are not cumulative: each rung's conditions describe that rung in full.
+# Changing these conditions is a change to the rules: the user's to make.
+
+version = "1.0.6"
+
+[[condition]]
+id = "b1"
+rung = "b"
+text = "The Republic survives every offensive fought while US combat forces are in the country"
+
+[[condition]]
+id = "b2"
+rung = "b"
+text = "Saigon stands past 30 April 1975, or US combat forces stay in the country beyond their historical withdrawal (March 1973) and the Republic stands while they do"
+
+[[condition]]
+id = "c1"
+rung = "c"
+text = "The RVNAF defeat a conventional PAVN offensive with US air power and materiel but no US ground combat units, shown by a dated event (guide: ARVN effectiveness and its binding facet in the phase of the offensive)"
+
+[[condition]]
+id = "c2"
+rung = "c"
+text = "The GVN and RVNAF hold the countryside without US ground combat units: the insurgency is contained in every corps region (guide: night control by corps region and VCI strength in the snapshot)"
+
+[[condition]]
+id = "c3"
+rung = "c"
+text = "Saigon stands at the end of the record's last phase, with US air power and materiel support available to it"
+
+[[condition]]
+id = "d1"
+rung = "d"
+text = "The RVNAF defeat a conventional PAVN offensive with materiel aid and no US combat participation of any kind, air included, shown by a dated event"
+
+[[condition]]
+id = "d2"
+rung = "d"
+text = "The insurgency is reduced to manageable banditry: the VCI no longer runs a parallel administration in any province (guide: VCI strength in the snapshot about −7 or lower, night control about +7 or higher in every corps region)"
+
+[[condition]]
+id = "d3"
+rung = "d"
+text = "Saigon stands at the end of the record with no US combat forces in or over the country (guide: ARVN self-sufficiency and its binding facet)"
+
+[[condition]]
+id = "e1"
+rung = "e"
+text = "Hanoi abandons armed reunification as achievable, by a dated Politburo decision or a settlement that holds to the end of the record"
+
+[[condition]]
+id = "e2"
+rung = "e"
+text = "The North's capacity or will is exhausted, not paused for regeneration in sanctuary (guide: Hanoi's will about −8 or lower in the last phase)"

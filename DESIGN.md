@@ -1,4 +1,4 @@
-<!-- fie v1.0.5 -->
+<!-- fie v1.0.6 -->
 # Design — Vietnam Force-Injection Exercise, v1.0.5
 
 *Replaces the V2 project architecture. Written 21 November 2026 from the V2 problems briefing. Target model: Opus 5.5. Storage: this Git repository.*
@@ -57,7 +57,7 @@ Each phase is a chapter of prose with events as headed entries: `## EV005-3 · O
 
 ### Interactions through world variables
 
-`schema/VARIABLES.toml` defines 57 world variables (night control of hamlets, displacement, VCI strength, Trail tonnage arriving, ARVN self-sufficiency, US political tolerance…). Each provision declares which it pushes, with a band of −3 to +3, and which it depends on. The Part 2 pack routes earlier memoranda by shared variables, weighting cross-dependencies (one provision pushes what another relies on) above parallel pushes. That is how artillery that displaces the population meets a pacification programme that depends on it staying put — which routing by functional system could not see. `fie.py grep` is the second net.
+`schema/VARIABLES.toml` defines 57 world variables (night control of hamlets, displacement, VCI strength, Trail tonnage arriving, ARVN self-sufficiency, US political tolerance…). Each provision declares which it pushes, as a range on −10..+10 with a confidence (v1.0.6; the old −3..+3 bands of memoranda 001–010 are read through a fixed mapping); variables whose parts fail separately (ARVN effectiveness, the territorial forces, the VNAF, self-sufficiency, American tolerance, and night control and legitimacy by corps region) have facets; and which it depends on. The Part 2 pack routes earlier memoranda by shared variables, weighting cross-dependencies (one provision pushes what another relies on) above parallel pushes. That is how artillery that displaces the population meets a pacification programme that depends on it staying put — which routing by functional system could not see. `fie.py grep` is the second net.
 
 ### Provenance
 
@@ -65,7 +65,7 @@ Each phase is a chapter of prose with events as headed entries: `## EV005-3 · O
 
 ### The checker
 
-`fie.py finish` refuses a part with structural errors — a missing dossier field, a misnumbered finding, a malformed tag, an undefined source, a deleted event, a bad origin, an out-of-range band, a chain with no lag, a revised phase without its chronicle — and warns on shortfalls against the floors in `rules/CONFIG.toml`. It computes the audit line itself.
+`fie.py finish` refuses a part with structural errors — a missing dossier field, a misnumbered finding, a malformed tag, an undefined source, a deleted event, a bad origin, an out-of-range or malformed value, an unnamed binding facet, a missing rung test, a chain with no lag, a revised phase without its chronicle — and warns on shortfalls against the floors in `rules/CONFIG.toml`. It computes the audit line itself.
 
 ## 4. The briefing's problems, and what answers each
 
@@ -83,7 +83,7 @@ Each phase is a chapter of prose with events as headed entries: `## EV005-3 · O
 | §7 Budget contradiction (39% vs "larger than §1 and §2") | Percentages dropped; floors and the rule that §4 is the largest section |
 | §7 Undefined CONFIG values | One switch per political constraint, each MODELLED or SUSPENDED; `troop_ceiling` HISTORICAL, NONE or a number; UNSET blocks new memoranda |
 | §7 Dates: Phase I from 1961; a 1960 in-service date | Phase I redated January 1964–July 1965; arrival dates separate from in-service dates and never before the campaign opens (A1a) |
-| §7 Estimates hardening into metrics | `[X-NNN]` tags; end vectors in bands; no metrics register |
+| §7 Estimates hardening into metrics | `[X-NNN]` tags; end vectors as ranges with confidence, hard units only beside history's figure and always `[X-NNN]`; no metrics register |
 | §7 Historical events tagged as free play | Event origin field: a historical accident is HIST, never FREE (G4) |
 | §8 Redesigning during the run | Version 1.0 freezes after the pilot; changes only at checkpoints, with a version bump everywhere |
 

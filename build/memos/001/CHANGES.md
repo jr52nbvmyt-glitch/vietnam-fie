@@ -6,17 +6,17 @@
 
 | Phase | Variable | Before → after |
 |---|---|---|
-| P1 | POP.gvn_legitimacy | +0 → +1 |
-| P2 | POP.gvn_legitimacy | +0 → +1 |
-| P2 | VCI.strength | +0 → -1 |
-| P3 | POP.night_control | +0 → +1 |
-| P3 | POP.gvn_legitimacy | +0 → +1 |
-| P3 | VCI.strength | +0 → -1 |
-| P3 | FIND.vci | +0 → +1 |
-| P4 | POP.night_control | +0 → +1 |
-| P4 | POP.gvn_legitimacy | +0 → +1 |
-| P4 | VCI.strength | +0 → -1 |
-| P4 | FIND.vci | +0 → +1 |
+| P1 | POP.gvn_legitimacy | +0 (old band ≈ +0) → +1 (old band ≈ +2..+4) |
+| P2 | POP.gvn_legitimacy | +0 (old band ≈ +0) → +1 (old band ≈ +2..+4) |
+| P2 | VCI.strength | +0 (old band ≈ +0) → -1 (old band ≈ -4..-2) |
+| P3 | POP.night_control | +0 (old band ≈ +0) → +1 (old band ≈ +2..+4) |
+| P3 | POP.gvn_legitimacy | +0 (old band ≈ +0) → +1 (old band ≈ +2..+4) |
+| P3 | VCI.strength | +0 (old band ≈ +0) → -1 (old band ≈ -4..-2) |
+| P3 | FIND.vci | +0 (old band ≈ +0) → +1 (old band ≈ +2..+4) |
+| P4 | POP.night_control | +0 (old band ≈ +0) → +1 (old band ≈ +2..+4) |
+| P4 | POP.gvn_legitimacy | +0 (old band ≈ +0) → +1 (old band ≈ +2..+4) |
+| P4 | VCI.strength | +0 (old band ≈ +0) → -1 (old band ≈ -4..-2) |
+| P4 | FIND.vci | +0 (old band ≈ +0) → +1 (old band ≈ +2..+4) |
 
 ## Phase I — The advisory war and escalation (Jan 1964 – Jul 1965)
 

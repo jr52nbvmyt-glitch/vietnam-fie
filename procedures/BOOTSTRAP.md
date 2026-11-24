@@ -1,4 +1,4 @@
-<!-- fie v1.0.5 -->
+<!-- fie v1.0.6 -->
 # Bootstrap — printed by `fie.py boot` on the first turn of every thread
 
 The repository is the record. The conversation is scratch. Nothing you need may exist only in the conversation, and nothing in the record may come from memory.

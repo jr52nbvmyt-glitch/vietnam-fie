@@ -1,4 +1,4 @@
-<!-- fie v1.0.5 -->
+<!-- fie v1.0.6 -->
 # Part 3 — §4 The course of the war · §5 Delta ledger · §6 Changed / not changed
 
 **Trigger:** `CONTINUE` when the open memorandum's status is `part2`.
@@ -24,7 +24,7 @@
 - `## EVNNN-k · …` with a new ID — a new event, inserted by its date into the phase that date falls in.
 - **The first line of every event you create or change** is `*Initiative: enemy*`, `*Initiative: allied*`, `*Initiative: both*` or `*Initiative: neither*` — who chose that this event would happen, when and where. The script builds the enemy's war in sequence from these (`build/ENEMY.md`), so the enemy can be read as one campaign.
 - `## P2 · Overview`, `## P2 · How the phase ends` — replace those passages of chapter P2.
-- `## P2 · end_vector`, then lines like `"ARVN.effectiveness" = 2` — set those bands.
+- `## P2 · end_vector`, then whole entries like `"ARVN.effectiveness" = { low = 5, high = 7, conf = "medium", binding = "anti_armor", note = "holds and counter-attacks in the lowlands; still breaks before massed armor" }` or `"ARVN.effectiveness.anti_armor" = { low = -1, high = 2, conf = "low", note = "…" }` — each line replaces that entry. `## P6 · snapshot` does the same for the end-of-1974 snapshot.
 
 Only what changes goes in the file; every other word of the chapters stays as it is. The file stays in `memos/NNN/` as the record of what this memorandum did to the war.
 
@@ -38,7 +38,8 @@ The chapters are the only copy of the war. You change them; you never retell the
 - **An event that moves into another phase:** `CANCELLED` where it was, with a pointer; `NEW` where it now falls, citing the old ID.
 - **Prefer changing the war to adding to it.** The war has only so many battles. Where a provision changes how an existing event goes, alter that event rather than adding a parallel one; the floor counts events created *or* changed.
 - **Keep events in date order**, and keep the overview and `## How the phase ends` consistent with them.
-- **Update the phase's `end_vector`**: bands for each headline variable at the phase's end against the historical state at the same date. If a band moves, the next phase must answer it (ripple rule).
+- **Update the phase's `end_vector`**: for each headline variable you change, its range at the phase's end against the historical state at the same date, on the −10..+10 scale (`schema/VARIABLES.toml`), with its confidence and a note that says what the range means on the ground. An entry still marked `converted` that this memorandum's evidence bears on is re-judged, not left. Where the provision acts on a facet, judge the facet (from `unjudged`) and have the parent name its binding facet. For a hard-tier variable whose entry carries `hist` (history's figure for that date), give `est`, this war's figure, tagged `[X-NNN]`. If a range moves, the next phase must answer it (ripple rule).
+- **The snapshot.** A phase with a snapshot date (Phase VI: end of 1974) carries a second vector, `[snapshot]`, before its last offensive. A memorandum that revises that phase judges the snapshot's headline variables: the end vector is taken after the fall and cannot show what the fall erased (DIRMT01-3).
 - Figures the exercise generates carry `[X-NNN]`; historical ones `[H]`; earlier memoranda's `[M…]`.
 
 **The chronicle standard.** Every phase is written as a chronicle, not a trend report. A trend report says the interdiction campaign degraded throughput and the offensive culminated early. A chronicle says which formations, on which dates, at which places, with what, against whom, and with what result. Every event you create or change carries:
@@ -82,11 +83,11 @@ Across all phases, what the cumulative force has changed from history, stated co
 
 ### `## §4.N Net assessment and end state`
 
-The A9 call: which rung the cumulative force now makes reachable, and why the next is not; or, per G5, the outcome in its own terms first. If the war's shape has outgrown its phases, propose a redraw here (G2); the next checkpoint carries it out.
+The A9 call: which rung the cumulative force now makes reachable, and why the next is not; or, per G5, the outcome in its own terms first. **The rung test:** close §4.N with a `<!-- rungtest -->` … `<!-- /rungtest -->` block, one line per condition in `rules/RUNGS.toml` — `- c1 · PASS · <evidence>`, verdict PASS, FAIL or OPEN, the evidence a dated event or a chapter's range. The script finds the highest rung whose conditions all pass and refuses a part whose `history/endstate.toml` rung differs (unless it is `off`, G5). Under DIRMT01-2, the running sums of sub-scale estimates now say which part of the range they support, not whether they cross a band. If the war's shape has outgrown its phases, propose a redraw here (G2); the next checkpoint carries it out.
 
 ### `## §5 Delta ledger`
 
-Changes only: forces gained or lost, variables moved and by how many bands, new categories. The inventory lives in `build/INDEX.md`.
+Changes only: forces gained or lost, variables and facets moved, from which range to which, new categories. The inventory lives in `build/INDEX.md`.
 
 ### `## §6 Changed / not changed`
 

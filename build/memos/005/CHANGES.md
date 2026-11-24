@@ -6,10 +6,10 @@
 
 | Phase | Variable | Before → after |
 |---|---|---|
-| P3 | ENEMY.engagement_control | +0 → -1 |
-| P4 | ENEMY.engagement_control | +0 → -1 |
-| P5 | ENEMY.engagement_control | +0 → -1 |
-| P5 | ARVN.self_sufficiency | +0 → -1 |
+| P3 | ENEMY.engagement_control | +0 (old band ≈ +0) → -1 (old band ≈ -4..-2) |
+| P4 | ENEMY.engagement_control | +0 (old band ≈ +0) → -1 (old band ≈ -4..-2) |
+| P5 | ENEMY.engagement_control | +0 (old band ≈ +0) → -1 (old band ≈ -4..-2) |
+| P5 | ARVN.self_sufficiency | +0 (old band ≈ +0) → -1 (old band ≈ -4..-2) |
 
 ## Phase I — The advisory war and escalation (Jan 1964 – Jul 1965)
 

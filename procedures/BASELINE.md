@@ -1,4 +1,4 @@
-<!-- fie v1.0.5 -->
+<!-- fie v1.0.6 -->
 # BASELINE — the historical war as the starting record
 
 **Trigger:** `BASELINE`. Runs once, before the first memorandum, in its own thread, in three parts on `CONTINUE`.
@@ -8,7 +8,7 @@ The baseline chapters are the historical war from the campaign's opening to the 
 
 ## Steps
 
-1. `python3 scripts/fie.py baseline --init` creates the six empty chapters with their front matter (all end-vector bands 0: by definition the baseline is the historical state).
+1. `python3 scripts/fie.py baseline --init` creates the six empty chapters with their front matter (every end-vector range 0..0: by definition the baseline is the historical state).
 2. **Part 1 of 3:** write P1 and P2. **Part 2:** P3 and P4. **Part 3:** P5 and P6, then finish. Each part ends with a commit and push.
 3. For each chapter, replace the empty body with: an overview of the phase's shape; then the events in date order; then `## How the phase ends`. Keep the front matter exactly as created.
 4. **Events:** `## EV000-n · <title> · <date> · <place> · HIST · 000`, numbered continuously across the whole war (P1 starts at EV000-1; P2 continues from where P1 ended). Eight to twenty per phase, chosen for what later provisions are likely to bend: the main-force battles, the air campaigns, the pacification programmes, the political crises in Saigon and Washington, the infiltration and the Trail, the offensives. Each event to the chronicle standard in `procedures/PART3.md`: dates, formations on both sides by designation, place, deciding systems, outcome, casualties with their reliability.

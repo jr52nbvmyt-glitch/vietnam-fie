@@ -1,4 +1,4 @@
-<!-- fie v1.0.5 -->
+<!-- fie v1.0.6 -->
 # Record formats
 
 Everything `scripts/fie.py` reads is defined here. The script checks these formats; if a file breaks one, `fie.py check` says where. Read this before writing any part.
@@ -75,6 +75,7 @@ HTML comments are invisible in the reading copies.
 | `<!-- spe:modest -->` | Part 2 §2 Part C | Searched; the honest assessment is modest |
 | `<!-- chapter P2 -->` | Part 3, a revised phase | The script inlines this memo's edited chapter here in the reading copy |
 | `<!-- null P4 -->` | Part 3, an unrevised phase | The stated null follows |
+| `<!-- rungtest -->` … `<!-- /rungtest -->` | Part 3 §4.N; a review that changes the end state | One line per condition in `rules/RUNGS.toml`: `- c1 · PASS · <evidence>` |
 | `<!-- ripple-addressed -->` | Inside a null | The null addresses the moved end vector of the phase before it |
 | `<!-- initiative -->` | Part 3 | Marks the enemy's unprovoked decision (G3) |
 | `<!-- log -->` … `<!-- /log -->` | Part 3 | This memo's Trajectory Log entry |
@@ -105,7 +106,7 @@ A causal chain is a paragraph that opens `**C005-1** [lag]`, where lag is `immed
 
 See `templates/manifest.toml`. Fields the script reads: `memo`, `title`, `received`, `status` (script-owned), `phases_changed` (script-owned, via `fie.py chapters`), `links`, `[deviation]`, `[[provision]]` (`id`, `designation`, `category`, `quantity`, `ceiling_spaces`, `arrival`, `in_service`, `systems`, `status`), `[[push]]` (`provision`, `var`, `band`, `note`), `[[depend]]` (`provision`, `var`, `note`), and optional `[[status_change]]` (`provision`, `status`, `date`, `note`).
 
-Variables come from `schema/VARIABLES.toml`; bands run −3 to +3.
+Variables and facets come from `schema/VARIABLES.toml`. From v1.0.6 a push is a range: `low`, `high` (whole numbers, −10 ≤ low ≤ high ≤ +10), `conf` (low · medium · high) and `note`. Memoranda 001–010 wrote `band` on the old −3..+3 scale; those stay as written and the script reads them as ±1 → ±2..±4, ±2 → ±5..±7, ±3 → ±8..±10. A new memorandum may not write `band`.
 
 ## 7. Chapters (`history/chapters/Pk.md`)
 
@@ -117,9 +118,17 @@ dates = "Aug 1965 – Dec 1967"
 last_revised = "005"
 
 [end_vector]
-"POP.night_control" = 1
-"ARVN.effectiveness" = 2
-# … every variable marked vector = true, in bands against the historical state at the phase's end
+"POP.night_control" = { low = 2, high = 4, conf = "medium", hist = "about 45–50% of the rural population [H]", est = "about 55–60% [X-005]", note = "the PF hold the Delta hamlets at night; I Corps unchanged" }
+"POP.night_control.IV_corps" = { low = 4, high = 6, conf = "medium", note = "…" }
+"ARVN.effectiveness" = { low = 5, high = 7, conf = "medium", binding = "anti_armor", note = "…" }
+"ARVN.effectiveness.anti_armor" = { conf = "unjudged" }
+# … every headline variable (vector = true) and each of its facets, as ranges against the historical state at the phase's end.
+# conf: low | medium | high | converted (from the old bands, not yet re-judged) | unjudged (no low/high).
+# binding: the facet that decides outcomes; required once any facet is judged. hist/est: hard-tier variables, together.
+
+# Phase VI only (its snapshot date in history/phases.toml): the same keys at the end of 1974.
+[snapshot]
+# …
 +++
 # Phase II — The main force war (Aug 1965 – Dec 1967)
 

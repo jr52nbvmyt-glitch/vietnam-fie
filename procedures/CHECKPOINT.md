@@ -1,4 +1,4 @@
-<!-- fie v1.0.5 -->
+<!-- fie v1.0.6 -->
 # CHECKPOINT — calibration of the analysis against the war it describes
 
 **Trigger:** `CHECKPOINT`, due every `checkpoint_every` complete memoranda (`fie.py status` says when). Its own thread, two parts on `CONTINUE`. No new provision is introduced.
@@ -20,7 +20,7 @@ A checkpoint costs the same every time: it reviews the memoranda since the last 
 
 *A fresh thread: read `reviews/CPnn/part1.md` (your Part 1) and the pack, not the chapters again unless a step needs one.*
 
-8. **Revised trajectory.** Where the war goes from here with the force currently held, phase by phase, ending in the A9 call and the reason the next rung is not reached. If the end state changes, edit `history/endstate.toml` and log it (`by = "CPnn"`).
+8. **Revised trajectory.** Where the war goes from here with the force currently held, phase by phase, ending in the A9 call and the reason the next rung is not reached. Re-judge every end-vector entry still marked `converted` that the phases reviewed bear on, and every one at the old cap; judge facets where the record holds evidence (v1.0.6, R01). If the end state changes, it carries the rung test of `procedures/PART3.md` §4.N; edit `history/endstate.toml` and log it (`by = "CPnn"`).
 9. **Limiting factors.** The binding constraint on each line of effort, ranked by how directly it blocks the next rung.
 10. **Gap register review.** Every gap: its status, what moved it, what would close it. Updated lines go in a `<!-- gaps -->` block.
 11. **The bill.** What the force still lacks, ranked. Then turn it into a menu for me: five to eight real, 2026-era provisions that would bite hardest on the bill's top items, in a `<!-- menu -->` block, one line each — `- **<designation and quantity>** · gaps: G-3, G-7 · pushes: <VAR +n>, <VAR +n> · <one line: why this, why now>`. The script publishes the latest menu as `build/MENU.md`.

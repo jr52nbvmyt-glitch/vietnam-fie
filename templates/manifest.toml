@@ -5,7 +5,7 @@ memo = "NNN"
 title = ""                       # short title for indexes, e.g. "AH-64E attack helicopter battalion"
 received = ""                    # date the provision was received, YYYY-MM-DD
 status = "open"                  # open → part1 → part2 → complete (set by fie.py)
-version = "1.0.5"
+version = "1.0.6"
 phases_changed = []              # set by `fie.py chapters NNN P2 P3 …`
 links = []                       # earlier memos you explicitly want routed, e.g. ["003"]
 
@@ -26,11 +26,14 @@ in_service = ""                  # real-world in-service date, information only
 systems = []                     # any of FIND FIX STRIKE INTERDICT SECURE ADVISE SUBVERT SUSTAIN
 status = "active"                # active | lost | withdrawn | transferred
 
-# What each provision pushes, with a band of −3 to +3 (schema/VARIABLES.toml says what "higher" means).
+# What each provision pushes: a range on −10..+10 (schema/VARIABLES.toml gives the anchors and what "higher" means).
+# Push the facet a provision acts on, not its parent, where the variable has facets.
 [[push]]
 provision = "PNNNa"
 var = ""
-band = 0
+low = 0
+high = 0
+conf = ""                        # low | medium | high
 note = ""                        # one line: the mechanism
 
 # What each provision depends on.

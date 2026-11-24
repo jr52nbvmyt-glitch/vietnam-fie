@@ -3,7 +3,7 @@
 # scripts/fie.py reads this file: the floors below are the floors the checker enforces.
 # A value of "UNSET" blocks new memoranda until it is set (fie.py status reports it).
 
-version = "1.0.5"
+version = "1.0.6"
 
 era_default = "2026"              # provisions are 2026 configurations unless the provision names another era
 campaign_opens = "1964-01-01"     # COMUSMACV's opening date; no provision acts before its arrival date
@@ -68,9 +68,10 @@ not_changed_items = 3                # §6
 # Size limits — enforced by the script so always-loaded material cannot creep.
 # ---------------------------------------------------------------------------
 [limits]
-card_chars = 16000                   # about 4,000 tokens per card (a two-provision memo with ~17 findings runs ~15,000)
+card_chars_base = 5500              # a card's fixed part: title, findings, concepts, interactions
+card_chars_per_provision = 7000      # added per provision (key figures, negative specification, denies, verdict, pushes); C3 forbids compressing a provision to fit
 pack_cards = 8                       # most earlier cards loaded into a Part 2 pack
-pack_chars = 140000                  # about 35,000 tokens per pack
+pack_chars = 140000                  # about 35,000 tokens per pack; a card that will not fit is loaded short (no key figures or negative specification) before routing stops
 course_of_war_words = [1500, 3500]   # §4.0
 null_words = [40, 160]               # a stated null for an unrevised phase
 log_words = [80, 220]                # one Trajectory Log entry

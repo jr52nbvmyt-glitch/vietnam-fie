@@ -9,6 +9,9 @@ PHASE_SECTIONS
 
 ## §4.N Net assessment and end state
 
+<!-- rungtest -->
+<!-- /rungtest -->
+
 ## §5 Delta ledger
 
 ## §6 Changed / not changed

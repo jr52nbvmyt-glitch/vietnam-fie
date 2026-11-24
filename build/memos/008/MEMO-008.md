@@ -669,7 +669,7 @@ Dung's plan changed in one line. After Phuoc Long the General Staff counted the 
 
 ### Chronicle
 
-*End of phase against the historical state: POP.night_control +1 · POP.gvn_legitimacy +1 · VCI.strength -1 · FIND.main_force +1 · FIND.vci +2 · ARVN.effectiveness +1.*
+*End of phase against the historical state: POP.night_control +2..+4 · POP.gvn_legitimacy +2..+4 · VCI.strength -4..-2 · FIND.main_force +2..+4 · FIND.vci +5..+7 · ARVN.effectiveness +2..+4.*
 
 The war that COMUSMACV inherits on 1 January 1964 is an advisory war that is being lost. Two months earlier the coup of 1 November 1963 had killed Ngo Dinh Diem and his brother Nhu, and with them went the province chiefs, the Strategic Hamlet Program and most of the administrative continuity the Republic of Vietnam possessed. The Military Assistance Command, Vietnam, under General Paul D. Harkins, is a headquarters of advisers, helicopter companies and support troops; the United States has about 23,300 military personnel in the country by the end of 1964, none of them formed into combat units, and 147 die by hostile action that year¹⁵¹. The fighting is done by the Army of the Republic of Vietnam, the Regional and Popular Forces, and the Civilian Irregular Defense Group camps of the US Special Forces, against a Viet Cong movement that has rebuilt itself since 1959 on the political infrastructure left from the war against France and on cadres regrouped to the North in 1954 and now returning down the Trail.
 
@@ -1094,7 +1094,7 @@ Phase II inherits a held belt whose posts can call, an enemy who has begun to at
 
 ### Chronicle
 
-*End of phase against the historical state: POP.night_control +1 · POP.gvn_legitimacy +1 · VCI.strength -2 · FIND.main_force +1 · FIND.vci +3 · ARVN.effectiveness +3.*
+*End of phase against the historical state: POP.night_control +2..+4 · POP.gvn_legitimacy +2..+4 · VCI.strength -7..-5 · FIND.main_force +2..+4 · FIND.vci +8..+10 · ARVN.effectiveness +8..+10.*
 
 Phase II is the American war at full stride. US military strength in Vietnam rises from about 184,000 at the end of 1965 to 385,000 at the end of 1966 and 486,000 at the end of 1967, and American deaths by hostile action from 1,369 in 1965 to 5,008 in 1966 and 9,378 in 1967¹⁵¹. The strategy is Westmoreland's: US divisions and brigades, with airmobility and almost unlimited firepower, seek out and destroy the enemy's main-force regiments and base areas, while the ARVN is turned increasingly to territorial security and pacification. The measure of success becomes attrition, the "crossover point" at which the enemy loses men faster than he can replace them through recruitment in the South and infiltration from the North. The instrument of measurement becomes the body count, which inflates at every level of reporting and never once establishes that the crossover has been reached.
 
@@ -1516,7 +1516,7 @@ The provision does not change 1968's events, for three reasons. Tet was fought i
 
 ### Chronicle
 
-*End of phase against the historical state: POP.night_control +1 · POP.gvn_legitimacy +1 · VCI.strength -1 · ENEMY.engagement_control -1 · FIND.main_force +1 · FIND.vci +2 · ARVN.effectiveness +2.*
+*End of phase against the historical state: POP.night_control +2..+4 · POP.gvn_legitimacy +2..+4 · VCI.strength -4..-2 · ENEMY.engagement_control -4..-2 · FIND.main_force +2..+4 · FIND.vci +5..+7 · ARVN.effectiveness +5..+7.*
 
 Phase IV is the war of the American withdrawal. US strength peaks at about 539,000 in the first half of 1969 and falls to 474,000 at the end of that year, 336,000 at the end of 1970 and 158,000 at the end of 1971. American deaths by hostile action fall with it, from about 9,414 in 1969 to 4,221 in 1970 and 1,380 in 1971¹⁵¹. The Republic of Vietnam's armed forces grow to replace them: from about 897,000 in 1969 to 968,000 in 1970 and about 1,048,000 in 1971–72, the territorial Regional and Popular Forces growing fastest²¹³. The policy has a name, Vietnamization, and a premise: that the South, given equipment, time and American air power, can hold what the Americans leave.
 
