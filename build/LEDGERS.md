@@ -12,6 +12,9 @@
 - P002b (memo 002) depends — A competent chief in a district the enemy holds by night is a competent chief in a besieged town
 - P004a (memo 004) pushes +1 — Hamlet outposts that hold a night longer because their garrisons are not outgunned; small, real, and dependent on whether the platoon is awake and present
 - P006a (memo 006) depends — An arrest in a village the enemy holds at night is a raid, and its informant is dead the next week
+- P008b (memo 008) pushes +1 — Hamlets and outposts that can summon fire and reaction forces after dark are harder to overrun or intimidate
+- P008a (memo 008) depends — Power lines from Da Nhim, rail and roads to the plants run through contested country
+- P008b (memo 008) depends — A radio in a hamlet the Front holds at night is the Front's radio
 
 ## POP.civilian_harm — Civilian harm from all sides' operations
 *Higher means more civilian deaths and injuries.*
@@ -42,6 +45,7 @@
 *Higher means more rice production and market access.*
 
 - P001a (memo 001) pushes +1 — End of 34–50% rents raises the tiller's surplus and his incentive to invest; production response lags a season or two
+- P008a (memo 008) pushes +1 — Pumps, small engines and hand tools made locally; works where the countryside is secure
 
 ## ECON.inflation — Inflation and the piaster
 *Higher means more inflation.*
@@ -49,6 +53,8 @@
 - P001a (memo 001) pushes +1 — Cash share of landlord compensation enters a war economy; small against aid flows, but positive
 - P002a (memo 002) depends — A police pay statute fixed in piasters is eroded by the inflation of 1966-68; a constable paid less than a labourer begins to live on the village again
 - P002b (memo 002) depends — The pay and allowance reform that makes an honest chief possible loses its value as prices rise
+- P008a (memo 008) pushes -1 — Domestic production absorbs piasters and replaces some imports; modest against the war's spending
+- P008a (memo 008) depends — Piaster wages of 35,000-50,000 workers and domestic prices against free American stocks; the 1973-74 oil shock raises the thermal station's fuel bill
 
 ## ECON.rice_denial — Rice denial to the enemy
 *Higher means less rice reaching the VC and PAVN in the South.*
@@ -65,6 +71,7 @@
 - P002a (memo 002) depends — Courts, prosecutors and the province and district chief direct and protect the police
 - P006a (memo 006) depends — The district chief runs the DIOCC; the magistrates decide the cases
 - P007c (memo 007) depends — Province and district chiefs are drawn from the same officer pool
+- P008a (memo 008) depends — Contracting, quality acceptance and allocation run through ministries
 
 ## GVN.corruption — Corruption and diversion
 *Higher means more corruption.*
@@ -80,6 +87,9 @@
 - P007c (memo 007) pushes -1 — Promotions and commands no longer for sale; ratings carry integrity
 - P007b (memo 007) depends — Seats in the courses and course results can be sold
 - P007c (memo 007) depends — The Commission of P001b is the board's enforcement arm against sold promotions
+- P008a (memo 008) pushes +1 — State contracts, scrap and import licences are new prizes for the officials who allot them
+- P008a (memo 008) depends — Diversion of steel, scrap and parts to the black market and the enemy
+- P008b (memo 008) depends — Radios and batteries are prized black-market goods and reach the VC
 
 ## GVN.political_stability — Political stability in Saigon
 *Higher means more stable government and junta cohesion.*
@@ -97,6 +107,7 @@
 - P007c (memo 007) pushes -1 — The reform takes the junta's main currency, which raises the coup risk while it beds in
 - P007b (memo 007) depends — Coups make the promotion list and override the gate
 - P007c (memo 007) depends — A junta can suspend the board; a coup is a promotion list
+- P008a (memo 008) depends — State enterprises and licences change hands with each government
 
 ## GVN.police — National Police in the countryside
 *Higher means more capable and present rural police.*
@@ -150,6 +161,7 @@
 - P005c (memo 005) pushes -1 — The siege of a measured position becomes the enemy's worst battle; he loses one way of choosing the field, not the choice
 - P005c (memo 005) depends — Hugging tactics and the enemy's choice of battle set where close bombing can apply
 - P006b (memo 006) depends — The enemy chooses when to fight and can time attacks to the relief in place
+- P008b (memo 008) depends — The enemy chooses which posts to attack and can wait out a battery or ambush the relief the call summons
 
 ## HANOI.will — Hanoi's commitment to armed reunification
 *Higher means more commitment.*
@@ -216,6 +228,7 @@
 - P005a (memo 005) depends — B-52 strikes in the South need GVN clearance; a penetrated clearance chain warns the target whatever the bomb
 - P006a (memo 006) depends — A fused file in a penetrated centre is the enemy's list of our informants
 - P007c (memo 007) depends — Board files and command lists are a target for enemy agents in the JGS
+- P008b (memo 008) depends — Plant workforces and signal depots are open to agents
 
 ## FIX.capability — Fixing an enemy who chooses whether to fight
 *Higher means better ability to hold an enemy in place once found.*
@@ -236,6 +249,8 @@
 - P005a (memo 005) pushes +1 — Unrefuelled reach from Guam and fewer tankers shorten the planning chain; still hours, not minutes
 - P005c (memo 005) depends — The bomb is fast; the B-52 mission planning chain is not
 - P006c (memo 006) depends — Much of the adviser's standing comes from the American fire and lift he can call
+- P008b (memo 008) pushes +1 — More territorial and ARVN stations on the fire-support nets, kept working by local repair
+- P008b (memo 008) depends — A call for help is worth what the artillery and reaction force behind it can do
 
 ## AIR.north_effect — Effect of the air campaign against the North
 *Higher means more effect on the North's capacity and will.*
@@ -271,6 +286,7 @@
 - P006c (memo 006) pushes +1 — Battalion and subsector advice by men selected and trained for it
 - P007b (memo 007) pushes +1 — Company and battalion leadership able to plan, coordinate fires and run training
 - P007c (memo 007) pushes +1 — Battalions commanded by officers selected for it, kept in command, and removed when they fail
+- P008b (memo 008) pushes +1 — Communications down to squad and outpost, and repair turnaround measured in days
 
 ## ARVN.leadership — RVNAF officer selection and quality
 *Higher means better officers, selected on merit.*
@@ -286,6 +302,7 @@
 - P007b (memo 007) pushes +2 — Seven educated classes in the company grades by 1964 and the gate on every promotion after
 - P007c (memo 007) pushes +2 — Selection and command on merit below the general officers; relief for cause
 - P007b (memo 007) depends — Education helps only where the selection system puts the educated officer in command
+- P008a (memo 008) depends — Technical-service officers who run depots and accept output
 
 ## ARVN.desertion — RVNAF desertion
 *Higher means more desertion.*
@@ -302,6 +319,8 @@
 - P005c (memo 005) pushes -1 — Defence of besieged positions is built around an American bomber and American coordinates the RVNAF can never own
 - P006c (memo 006) pushes -1 — An adviser qualified and trusted to call American air and artillery becomes the advised unit's means of fire; better advising of fire deepens the dependence the withdrawal punishes, unless the adviser is directed to train Vietnamese observers to replace him
 - P007b (memo 007) pushes +1 — Staff, logistics and fire-support officers educated to run their own systems
+- P008a (memo 008) pushes +2 — Spares, rebuild, cartridge cases and shell bodies made and turned around in country; filling, fuel and major systems still imported
+- P008b (memo 008) pushes +2 — Radios, batteries, wire and signal repair made and done in country; the 1974–75 battery and parts famine eased
 
 ## RFPF.effectiveness — Regional and Popular Forces
 *Higher means more effective territorial forces.*
@@ -314,6 +333,9 @@
 - P004a (memo 004) depends — The rifle's value in the hamlet depends on whether the platoon is present and awake after dark
 - P006c (memo 006) pushes +1 — Subsector advisers and mobile teams who know the posts and the district chief
 - P007b (memo 007) pushes +1 — Sector and subsector officers and the RF company commanders drawn from the educated classes
+- P008a (memo 008) pushes +1 — Wire, pickets, rebar and roofing for outposts and hamlet defences, and weapons repaired in country
+- P008b (memo 008) pushes +2 — A radio in every PF platoon and outpost and a battery to run it: the outpost can call for help at night
+- P008b (memo 008) depends — A radio at the post is worth the platoon that keeps watch on it and the reaction it summons
 
 ## ADVISE.leverage — Advisory leverage
 *Higher means advisors can change more RVNAF decisions.*
@@ -331,6 +353,8 @@
 - P007b (memo 007) pushes +1 — A counterpart educated on the adviser's own curriculum shares his vocabulary and his standards; influence rises, authority does not (POSTNA-6)
 - P007b (memo 007) depends — The gates hold only while the Americans will refuse to fund an exception
 - P007c (memo 007) depends — The board survives coups only behind an American aid condition, as the Selection Board of P002b does
+- P008a (memo 008) depends — Whether RVNAF logistics actually orders from the arsenal and depots rather than waiting for US supply
+- P008b (memo 008) depends — Issue of radios to the territorial forces and the hamlets is an RVNAF allocation decision
 
 ## US.personnel_demand — Demand on US personnel spaces
 *Higher means more spaces consumed.*
@@ -369,6 +393,8 @@
 
 - P004a (memo 004) depends — About 600,000 weapons and hundreds of millions of rounds in the first year through five ports
 - P006b (memo 006) depends — Whole units and their equipment move at each relief
+- P008a (memo 008) depends — Scrap, alloying metals, coke, electrodes, explosives for filling and machine tools all arrive by sea
+- P008b (memo 008) depends — Transistors, crystals, zinc, manganese dioxide and copper arrive by sea
 
 ## LOG.distribution — In-country distribution
 *Higher means better road, rail and air distribution.*
@@ -378,6 +404,8 @@
 - P004a (memo 004) depends — Ammunition, batteries, optics spares and replacement carbines must reach districts and outposts over interdicted roads
 - P004b (memo 004) depends — Match 7.62mm ammunition and scope spares in a second calibre at squad level
 - P004c (memo 004) depends — Linked ammunition, spare barrels, links and feed parts
+- P008a (memo 008) pushes +1 — Vehicle and engine rebuild, bridge girders and culverts, rail repair steel made in country; faster return of the network after sabotage
+- P008a (memo 008) depends — Bridging, wire and rebuilt vehicles are worth what reaches the districts over interdicted roads
 
 ## LOG.helicopter_hours — Helicopter hours available
 *Higher means more lift hours available.*
@@ -387,6 +415,11 @@
 - P002a (memo 002) depends — Field Force companies and identity teams reach villages off the roads by air
 - P003b (memo 003) depends — The reaction to a radar track in the South is an airmobile force; in 1964 there are few helicopter hours to spend on it
 - P006c (memo 006) depends — Medevac and resupply for the advised unit come through the adviser
+
+## LOG.engineers — Engineer capacity
+*Higher means more engineer effort available.*
+
+- P008a (memo 008) pushes +1 — Construction steel, prefabricated bridging and fortification material free engineer effort from waiting on shipping
 
 ## US.political_tolerance — American political tolerance
 *Higher means more time and money Washington will grant.*
@@ -403,6 +436,8 @@
 - P006b (memo 006) depends — No reserve mobilization; the rotation base comes from the active forces and the draft
 - P007a (memo 007) depends — The training base and the officers' time in school are paid for in a war Congress funds by year
 - P007c (memo 007) depends — The aid condition behind the board is only as strong as Washington's willingness to suspend aid to an ally at war over a general
+- P008a (memo 008) depends — The aid appropriation pays for propellant, explosive, electrodes and alloys; the arsenal's value after 1973 is set by what Congress votes
+- P008b (memo 008) depends — Semiconductors, crystals and licences after 1973 are bought with appropriated dollars
 
 ## US.credibility_gap — The credibility gap
 *Higher means wider gap between what MACV reports and what the press reports.*

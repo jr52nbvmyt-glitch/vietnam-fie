@@ -3,7 +3,7 @@
 memo = "008"
 title = "A South Vietnamese industrial base one generation above 1964, standing from 1 January 1964: metallurgy and machining; electronics manufacturing"
 received = "2026-11-24"
-status = "part1"
+status = "part2"
 version = "1.0.5"
 phases_changed = []
 links = ["004", "002", "006"]
@@ -174,3 +174,34 @@ note = "A call for help is worth what the artillery and reaction force behind it
 provision = "P008b"
 var = "ADVISE.leverage"
 note = "Issue of radios to the territorial forces and the hamlets is an RVNAF allocation decision"
+
+# --- depends added in Part 2
+[[depend]]
+provision = "P008a"
+var = "US.political_tolerance"
+note = "The aid appropriation pays for propellant, explosive, electrodes and alloys; the arsenal's value after 1973 is set by what Congress votes"
+
+[[depend]]
+provision = "P008a"
+var = "ECON.inflation"
+note = "Piaster wages of 35,000-50,000 workers and domestic prices against free American stocks; the 1973-74 oil shock raises the thermal station's fuel bill"
+
+[[depend]]
+provision = "P008a"
+var = "LOG.distribution"
+note = "Bridging, wire and rebuilt vehicles are worth what reaches the districts over interdicted roads"
+
+[[depend]]
+provision = "P008b"
+var = "RFPF.effectiveness"
+note = "A radio at the post is worth the platoon that keeps watch on it and the reaction it summons"
+
+[[depend]]
+provision = "P008b"
+var = "ENEMY.engagement_control"
+note = "The enemy chooses which posts to attack and can wait out a battery or ambush the relief the call summons"
+
+[[depend]]
+provision = "P008b"
+var = "US.political_tolerance"
+note = "Semiconductors, crystals and licences after 1973 are bought with appropriated dollars"
