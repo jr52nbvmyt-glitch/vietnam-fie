@@ -1,0 +1,176 @@
+# Manifest for memorandum 008.
+
+memo = "008"
+title = "A South Vietnamese industrial base one generation above 1964, standing from 1 January 1964: metallurgy and machining; electronics manufacturing"
+received = "2026-11-24"
+status = "part1"
+version = "1.0.5"
+phases_changed = []
+links = ["004", "002", "006"]
+
+[deviation]
+part1 = "none"
+part2 = "none"
+part3 = "none"
+
+[[provision]]
+id = "P008a"
+designation = "Republic of Vietnam metallurgical and machining industrial base, one generation above the RVN's actual 1964 state, standing on 1 January 1964: an electric-arc-furnace steelworks with billet casting and bar, rod, light-section and light-plate rolling at Bien Hoa; a special-steel melt, forge and heat-treatment shop; a national arsenal for small-arms components, cartridge cases and projectile bodies; engine, vehicle and weapons rebuild works; a steel boatyard; structural fabrication for bridges and fortifications; and agricultural machinery shops, with their workforce, engineers and capital"
+category = "infrastructure"
+quantity = "One national industrial base [U: one generation leap, South Vietnam only, standing from 1 Jan 1964]: about 200,000–300,000 t/yr of electric-arc crude steel, about 35,000–50,000 Vietnamese workers and about 1,200–1,800 engineers [E: a mini-mill and arsenal complex at the scale South Korea built 1971–76 per S3 and S4, scaled to a country of about 16 million]"
+ceiling_spaces = "~0 US military spaces [E: no uniformed staff; ordnance and engineer advisers already in the advisory structure]; about 150–300 American, Japanese and European contract engineers and licensor technicians, civilian and outside the ceiling [E: licensor teams of the period]; no troop ceiling is set (CONFIG)"
+arrival = "1964-01-01"
+in_service = "No real-world equivalent; modelled on South Korean and Taiwanese capability of about 1972–76 (S2, S3, S4); a standing condition (CONFIG rvn_industry_1964)"
+systems = ["SUSTAIN", "SECURE", "ADVISE"]
+status = "active"
+
+[[provision]]
+id = "P008b"
+designation = "Republic of Vietnam electronics manufacturing base, one generation above the RVN's actual 1964 state, standing on 1 January 1964: a communications plant for licensed VHF-FM manpack and vehicle radios (AN/PRC-10, then AN/PRC-25 and AN/PRC-77 class) and hamlet and village radios; a dry-cell and storage-battery works; a wire and cable mill including WD-1/TT field wire; passive-component, transformer and printed-circuit shops; a foreign-owned discrete-transistor assembly and test plant; consumer radio assembly; and a signal and electronics rebuild depot, with their workforce, engineers and capital"
+category = "infrastructure"
+quantity = "One national electronics base [U: one generation leap, South Vietnam only, standing from 1 Jan 1964]: about 15,000–25,000 military manpack and vehicle radios, 20,000–30,000 hamlet and village radios, 1.5–3 million radio dry cells and 60,000–100,000 km of field wire a year at full rate, about 20,000–35,000 workers and 600–1,000 engineers [E: South Korea's electronics sector of about 1971–74 per S5, scaled]"
+ceiling_spaces = "~0 US military spaces [E: signal advisers already in the advisory structure]; about 100–200 contract engineers and licensor technicians, civilian and outside the ceiling [E: licensor teams of the period]; no troop ceiling is set (CONFIG)"
+arrival = "1964-01-01"
+in_service = "No real-world equivalent; modelled on South Korea's electronics sector of about 1971–74 (S5); the PRC-25 entered Vietnam service in 1965 (S7) and the PRC-77 in 1968 (S6); a standing condition (CONFIG rvn_industry_1964)"
+systems = ["SUSTAIN", "SECURE", "STRIKE", "ADVISE"]
+status = "active"
+
+# --- P008a pushes
+[[push]]
+provision = "P008a"
+var = "ARVN.self_sufficiency"
+band = 2
+note = "Spares, rebuild, cartridge cases and shell bodies made and turned around in country; filling, fuel and major systems still imported"
+
+[[push]]
+provision = "P008a"
+var = "LOG.distribution"
+band = 1
+note = "Vehicle and engine rebuild, bridge girders and culverts, rail repair steel made in country; faster return of the network after sabotage"
+
+[[push]]
+provision = "P008a"
+var = "LOG.engineers"
+band = 1
+note = "Construction steel, prefabricated bridging and fortification material free engineer effort from waiting on shipping"
+
+[[push]]
+provision = "P008a"
+var = "RFPF.effectiveness"
+band = 1
+note = "Wire, pickets, rebar and roofing for outposts and hamlet defences, and weapons repaired in country"
+
+[[push]]
+provision = "P008a"
+var = "POP.rural_economy"
+band = 1
+note = "Pumps, small engines and hand tools made locally; works where the countryside is secure"
+
+[[push]]
+provision = "P008a"
+var = "GVN.corruption"
+band = 1
+note = "State contracts, scrap and import licences are new prizes for the officials who allot them"
+
+[[push]]
+provision = "P008a"
+var = "ECON.inflation"
+band = -1
+note = "Domestic production absorbs piasters and replaces some imports; modest against the war's spending"
+
+# --- P008b pushes
+[[push]]
+provision = "P008b"
+var = "RFPF.effectiveness"
+band = 2
+note = "A radio in every PF platoon and outpost and a battery to run it: the outpost can call for help at night"
+
+[[push]]
+provision = "P008b"
+var = "POP.night_control"
+band = 1
+note = "Hamlets and outposts that can summon fire and reaction forces after dark are harder to overrun or intimidate"
+
+[[push]]
+provision = "P008b"
+var = "ARVN.self_sufficiency"
+band = 2
+note = "Radios, batteries, wire and signal repair made and done in country; the 1974–75 battery and parts famine eased"
+
+[[push]]
+provision = "P008b"
+var = "STRIKE.responsiveness"
+band = 1
+note = "More territorial and ARVN stations on the fire-support nets, kept working by local repair"
+
+[[push]]
+provision = "P008b"
+var = "ARVN.effectiveness"
+band = 1
+note = "Communications down to squad and outpost, and repair turnaround measured in days"
+
+# --- depends
+[[depend]]
+provision = "P008a"
+var = "LOG.ports"
+note = "Scrap, alloying metals, coke, electrodes, explosives for filling and machine tools all arrive by sea"
+
+[[depend]]
+provision = "P008a"
+var = "POP.night_control"
+note = "Power lines from Da Nhim, rail and roads to the plants run through contested country"
+
+[[depend]]
+provision = "P008a"
+var = "GVN.political_stability"
+note = "State enterprises and licences change hands with each government"
+
+[[depend]]
+provision = "P008a"
+var = "GVN.admin_capacity"
+note = "Contracting, quality acceptance and allocation run through ministries"
+
+[[depend]]
+provision = "P008a"
+var = "GVN.corruption"
+note = "Diversion of steel, scrap and parts to the black market and the enemy"
+
+[[depend]]
+provision = "P008a"
+var = "ADVISE.leverage"
+note = "Whether RVNAF logistics actually orders from the arsenal and depots rather than waiting for US supply"
+
+[[depend]]
+provision = "P008a"
+var = "ARVN.leadership"
+note = "Technical-service officers who run depots and accept output"
+
+[[depend]]
+provision = "P008b"
+var = "LOG.ports"
+note = "Transistors, crystals, zinc, manganese dioxide and copper arrive by sea"
+
+[[depend]]
+provision = "P008b"
+var = "POP.night_control"
+note = "A radio in a hamlet the Front holds at night is the Front's radio"
+
+[[depend]]
+provision = "P008b"
+var = "GVN.corruption"
+note = "Radios and batteries are prized black-market goods and reach the VC"
+
+[[depend]]
+provision = "P008b"
+var = "INTEL.penetration"
+note = "Plant workforces and signal depots are open to agents"
+
+[[depend]]
+provision = "P008b"
+var = "STRIKE.responsiveness"
+note = "A call for help is worth what the artillery and reaction force behind it can do"
+
+[[depend]]
+provision = "P008b"
+var = "ADVISE.leverage"
+note = "Issue of radios to the territorial forces and the hamlets is an RVNAF allocation decision"
