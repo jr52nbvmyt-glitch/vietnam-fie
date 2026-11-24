@@ -1,0 +1,191 @@
+# Manifest for memorandum 005. Fill every field; `fie.py check` rejects blanks.
+# status and phases_changed are set by fie.py; leave them alone.
+
+memo = "005"
+title = "B-52J Stratofortress replacing every B-52, with GBU-31 and GBU-38 JDAM and Quickstrike mines"
+received = "2026-11-24"
+status = "part1"
+version = "1.0.5"
+phases_changed = []
+links = ["003"]
+
+[deviation]
+part1 = "none"
+part2 = "none"
+part3 = "none"
+
+[[provision]]
+id = "P005a"
+designation = "Boeing B-52J Stratofortress, programme-of-record configuration: B-52H airframe re-engined with eight Rolls-Royce F130 turbofans (Commercial Engine Replacement Program), Raytheon AN/APQ-188 AESA radar (Radar Modernization Program), digital cockpit displays, 1760 Internal Weapons Bay Upgrade, GPS-aided navigation and the H's electronic-warfare suite, replacing every B-52 one for one"
+category = "air"
+quantity = "Every B-52 in the USAF inventory replaced one for one [U]: about 600 airframes in 1964 across SAC [E: 744 B-52s built, less attrition and retirements of early B and C models], of which the force committed to Southeast Asia follows the historical deployment: 30 in mid-1965 [H], about 50–70 through 1966–67 [E: sortie rates of about 800 a month by mid-1967 per S9], about 90–100 from early 1968 [E: 1,800 sorties a month from February 1968 per S9], 210 at the 1972 peak [S9]"
+ceiling_spaces = "0 in RVN for the bomber force itself [E: Arc Light flew from Guam, U-Tapao and Okinawa]; about 40 in RVN for an enlarged Arc Light liaison and target-coordinate cell at MACV and Seventh Air Force [E: the historical ARC LIGHT liaison element plus a coordinate-mensuration team]; outside RVN, maintenance manpower about 10–20% below the historical B-52 force [E: F130 needs no off-wing overhaul per S4, five-man crew per S2 against the D's six]"
+arrival = "1964-01-01"
+in_service = "Not yet in service: CERP Milestone B June 2026, initial operational capability mid-FY2033 [S1] [S3]; the B-52H airframe entered service in 1961 [E: Boeing delivery history]"
+systems = ["STRIKE", "INTERDICT", "FIX", "SUSTAIN"]
+status = "active"
+
+[[provision]]
+id = "P005b"
+designation = "GBU-31 Joint Direct Attack Munition, 2,000 lb class: GBU-31(V)1/B on the Mk 84 general-purpose bomb and GBU-31(V)3/B on the BLU-109 penetrator, Boeing GPS-aided INS tail kit, with FMU-152 or equivalent programmable fuze, 2026 configuration"
+category = "air"
+quantity = "Supplied with the B-52J force at realistic production rates [U]: about 8,000–12,000 kits a year from 1964 for the bomber force [E: about a third of a JDAM production line of 25,000–40,000 kits a year, the rest going to the GBU-38 and to stocks]"
+ceiling_spaces = "~60 in RVN [E: a coordinate-mensuration and weaponeering cell at MACV J-2 and Seventh Air Force working in shifts]; kit build-up and loading crews of about 150–250 at Andersen and U-Tapao outside RVN [E: munitions maintenance squadron increments]"
+arrival = "1964-01-01"
+in_service = "1999 (Operation Allied Force) [S7]"
+systems = ["STRIKE", "INTERDICT"]
+status = "active"
+
+[[provision]]
+id = "P005c"
+designation = "GBU-38 Joint Direct Attack Munition, 500 lb class: Boeing GPS-aided INS tail kit on the Mk 82 or BLU-111 bomb body, with FMU-152 or equivalent programmable fuze, 2026 configuration"
+category = "air"
+quantity = "Supplied with the B-52J force at realistic production rates [U]: about 15,000–25,000 kits a year from 1964 [E: the larger share of a JDAM production line of 25,000–40,000 kits a year]"
+ceiling_spaces = "~0 additional in RVN [E: shares the P005b coordinate cell]; about 100 loaders and kit builders outside RVN [E: the 500 lb kit's higher count per sortie]"
+arrival = "1964-01-01"
+in_service = "Second quarter FY2005 for the Navy [S8]; Air Force fielding from about 2004 [E: reporting of the period]"
+systems = ["STRIKE", "FIX"]
+status = "active"
+
+[[provision]]
+id = "P005d"
+designation = "Quickstrike family of aircraft-laid bottom influence mines: Mk 62 (500 lb), Mk 63 (1,000 lb) and Mk 64 (2,000 lb) on Mk 80-series bomb bodies, Mk 65 (2,000 lb class thin-walled case), and Mk 64 Mod 5 Quickstrike-ER with the JDAM-ER wing kit, with Mk 57 and Mk 71 target detecting devices (magnetic, seismic, pressure and acoustic), 2026 configuration"
+category = "naval"
+quantity = "Supplied with the B-52J force at realistic production rates [U]: about 3,000–6,000 mines a year from 1964, of which a few hundred Quickstrike-ER [E: conversion kits on existing bomb bodies, with target detecting devices the rate limit; QS-ER still in demonstration per S15]"
+ceiling_spaces = "~0 in RVN [E: assembly and preset at Guam and U-Tapao]; about 40–60 Navy mine assembly and preset specialists outside RVN [E: a Mobile Mine Assembly Group detachment]"
+arrival = "1964-01-01"
+in_service = "1983 for Mk 62, Mk 63 and Mk 65 [S11]; Quickstrike-ER in operational demonstration from 2016, not yet at initial operational capability [S14] [S15]"
+systems = ["INTERDICT", "STRIKE"]
+status = "active"
+
+# ---------------------------------------------------------------- pushes
+[[push]]
+provision = "P005a"
+var = "STRIKE.responsiveness"
+band = 1
+note = "Unrefuelled reach from Guam and fewer tankers shorten the planning chain; still hours, not minutes"
+
+[[push]]
+provision = "P005a"
+var = "AIR.losses"
+band = -1
+note = "Modern defensive suite and release outside the light AAA envelope; SA-2 still lethal"
+
+[[push]]
+provision = "P005a"
+var = "AIR.north_effect"
+band = 1
+note = "Twenty independently aimed 2,000 lb weapons a sortie in any weather against fixed targets, where Washington allows"
+
+[[push]]
+provision = "P005b"
+var = "AIR.north_effect"
+band = 1
+note = "Bridges, ferries, depots and power plants struck in monsoon cloud with few sorties"
+
+[[push]]
+provision = "P005b"
+var = "TRAIL.capacity"
+band = -1
+note = "Chokepoints and fords cut reliably in all weather; repair capacity and redundancy blunt it"
+
+[[push]]
+provision = "P005b"
+var = "POP.civilian_harm"
+band = -1
+note = "Point targets no longer need area boxes; offset by more targets struck"
+
+[[push]]
+provision = "P005c"
+var = "FIX.capability"
+band = 1
+note = "Heavy bombs placed hundreds rather than thousands of metres from friendly troops, when the coordinate is good"
+
+[[push]]
+provision = "P005c"
+var = "US.casualties"
+band = -1
+note = "Closer, faster heavy fire in defence of besieged positions"
+
+[[push]]
+provision = "P005c"
+var = "POP.civilian_harm"
+band = -1
+note = "Smaller bombs on single aimpoints instead of a carpet of 108"
+
+[[push]]
+provision = "P005d"
+var = "TRAIL.tonnage_arriving"
+band = -1
+note = "Rivers and coastal lighterage of the North's panhandle and Laotian waterways closed to boats"
+
+[[push]]
+provision = "P005d"
+var = "AIR.north_effect"
+band = 1
+note = "Inland waterways and coastal shipping south of the 20th parallel mined persistently"
+
+[[depend]]
+provision = "P005a"
+var = "FIND.main_force"
+note = "A precise bomb needs a located target; the bomber finds nothing under canopy"
+
+[[depend]]
+provision = "P005a"
+var = "AIR.north_defences"
+note = "SA-2 and MiG-21 density sets loss rates over the North"
+
+[[depend]]
+provision = "P005a"
+var = "US.political_tolerance"
+note = "Every expansion of B-52 targeting is a Washington decision"
+
+[[depend]]
+provision = "P005b"
+var = "FIND.main_force"
+note = "Coordinates of the target are the binding input"
+
+[[depend]]
+provision = "P005b"
+var = "TRAIL.capacity"
+note = "The Trail's redundancy decides whether a cut chokepoint matters"
+
+[[depend]]
+provision = "P005b"
+var = "INTL.chinese_intervention_risk"
+note = "Strikes near the Chinese border and on Hanoi remain constrained"
+
+[[depend]]
+provision = "P005c"
+var = "FIND.main_force"
+note = "Close support needs a coordinate the 1965 infantryman cannot generate"
+
+[[depend]]
+provision = "P005c"
+var = "STRIKE.responsiveness"
+note = "The bomb is fast; the B-52 mission planning chain is not"
+
+[[depend]]
+provision = "P005c"
+var = "ENEMY.engagement_control"
+note = "Hugging tactics and the enemy's choice of battle set where close bombing can apply"
+
+[[depend]]
+provision = "P005d"
+var = "INTL.communist_aid"
+note = "Haiphong mining prohibited until 1972 under the modelled constraint"
+
+[[depend]]
+provision = "P005d"
+var = "INTL.chinese_intervention_risk"
+note = "Mining near the Chinese coast and of Soviet-flag shipping is politically bounded"
+
+[[depend]]
+provision = "P005d"
+var = "SANCT.laos"
+note = "Laotian waterways may be mined from the air; the ground sanctuary stays"
+
+[[depend]]
+provision = "P005d"
+var = "SANCT.cambodia"
+note = "Sihanoukville and the Mekong into Cambodia are neutral waters"
