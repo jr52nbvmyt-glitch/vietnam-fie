@@ -1,0 +1,356 @@
+# Memorandum 006 — Part 2 of 3 · §2 Integration and second-order effects · §3 Changes to existing forces
+
+
+## §2 Part A — Integration
+
+The short version is this. These three provisions do not add a weapon. They change who knows what, and for how long. Phung Hoang lets a district know the committee above its hamlets as well as the hamlets themselves. The advisory corps puts beside each Vietnamese commander an American who can talk to him and who stays long enough to be worth hearing. Unit rotation gives the American battalion men and leaders who know each other. Each is an improvement in the human machinery of the war, and each is limited by the same thing that has limited every provision before it: they work where the government holds the night, and they do nothing about an enemy who chooses when to fight.
+
+Two of the three go straight to the half of the war this command has always fought worst. The third improves the half it fought best. I would rather have been given them in the other proportion, but I will take what is here and say plainly that the advisory corps is, after the district chiefs of Memorandum 002, the most valuable institutional provision this headquarters has received.
+
+### Functional systems
+
+**SUBVERT and FIND (the infrastructure half) — joined and given a second layer.** Phung Hoang is a coordinating layer and a method placed over the Special Branch that Memorandum 002 built. Before it, the Branch knew the hamlet: who was a stranger, whose son had gone to the forest, who collected the Front's rice tax. After it, a district centre fuses that knowledge with the army's prisoners, the Military Security Service's files, the ralliers' debriefs and the captured documents, and draws the network upward to the village and district committees, which the hamlet constable seldom sees¹. This is the infrastructure half of find-and-fix and nothing else.
+
+**FIX — strengthened twice, in different hands.** Unit rotation makes the American battalion better in contact: the platoon that springs an ambush at night knows its own men, the company commander has been with his company since it formed, and the battalion has rehearsed the drills together for six or seven months before it lands¹. The advisory corps makes the advised ARVN battalion and the Regional Forces company better in contact, through a counterpart who is listened to and a radio that calls fire well. Neither touches finding.
+
+**ADVISE — joined and rebuilt at its root.** The selected advisory corps is the ADVISE system. Every adviser below corps is now chosen, trained for about 32–36 weeks, speaks working Vietnamese and stays 18 months. Phung Hoang adds about 600 Americans to the advisory effort in the intelligence centres¹, and those men, unlike the field advisers, still rotate on 12-month tours (P006a D12).
+
+**SECURE — fed, not changed.** None of the three puts a man in a hamlet at night. The subsector adviser and the mobile teams make the Popular Forces platoon better led and better reported; Phung Hoang removes cadres who would otherwise organise the attack on the post; unit rotation makes the American battalion that screens the populated belt steadier. Security after dark is still held by the Vietnamese who live there.
+
+**SUSTAIN — loaded at the margin.** About two battalion reliefs a week at the 1968–69 peak move through Tan Son Nhut, Bien Hoa, Cam Ranh and Da Nang, and the overlap adds about 15,000–25,000 men in theater at the peak¹. The ports and airfields carry it, as they carried the historical replacement stream of about the same size in men.
+
+**Not touched:** INTERDICT and STRIKE. The Trail, the sanctuaries, the B-52J and the air war in the North are exactly as they were, except that the advisers who call air for the ARVN now call it better.
+
+### Compound pairings
+
+The pairings are few and they run almost entirely through the district. Phung Hoang sits on the police of Memorandum 002, under the district chief of the same memorandum, audited by the Commission of Memorandum 001, and fed by the land register and the census those two memoranda built. The advisory corps meets the same district chief from the other side, and meets the American battalion of P006b at its yearly relief. Against the aircraft and bombs of Memoranda 003 and 005 there is one pairing of weight: the adviser is the man who calls them.
+
+**Interactions with earlier provisions**
+
+- P006a × P002a: the district centre sits in the Special Branch's district office and draws on its target folders, constables and census; Phung Hoang is the Branch's second layer, and without the Branch it has nothing to coordinate
+- P006a × P002b: the merit-selected district chief chairs the district centre and signs its requests for warrants; a chief kept two or three years makes the centre's files outlive the coups
+- P006a × P001b: the Commission is the independent auditor of neutralization claims from 1965, four years before its first historical-course sample, and the Muster Service and the centres share biometric practice and technicians
+- P006a × P001a, P002a: the land register and the family census give the centres a household record for every titled hamlet; the same record is the most valuable list in the country to whoever captures it
+- P006c × P002b: an adviser on an 18-month tour beside a chief on a two-to-three-year tenure; for the first time the district has an American and a Vietnamese who overlap long enough to finish what they start
+- P006c × P001b: an adviser with a protected career and working Vietnamese reports what he sees, and the Aid Compliance Board has evidence to act on
+- P006c × P006b: the adviser is the continuity across the American battalion's yearly relief; the ARVN regiment partnered with a US battalion keeps its adviser when the battalion goes
+- P006c × P004a, P004b, P004c: the adviser trains zeroing, the marksman and machine-gun fire discipline and holds the counterpart to them; the rearmament's practice depends on him
+- P006c × P005c, P003b: the adviser qualified for air request is the ARVN's way into the coordinate cell and the B-52J; he passes a map grid, not a GPS coordinate, and his skill deepens the dependence on fire the ARVN cannot own
+- P006b × P004a, P004b, P004c: American battalions train collectively on their weapons for six to seven months before deploying, so the squad gun and the marksman arrive as practised drills, not as new issue in theater
+
+Three integration findings follow from these pairings, and Part 3 carries them by ID.
+
+**F006-1** **The district centre sits on the Special Branch, under the merit chief, and draws the committee above the hamlets.** It is a second layer over Memorandum 002's police and nothing without it; with it, the held-belt district knows its district committee by name from 1965 (§2 The identify-to-neutralise chain).
+
+**F006-2** **The adviser is the continuity across the American battalion's yearly relief.** An ARVN regiment partnered with an American battalion loses its American partner on one day each year and keeps its adviser, who is the one American who knows both¹.
+
+**F006-3** **The biometric gate closes the revolving door.** The cadre released for a bribe and rearrested under another name, and the rallier who rallies twice, are the same men to the watchlist; the Muster Service's depot repairs the kits of both programmes.
+
+### The find-to-fix chain against the main force
+
+**The main-force chain is barely touched at the find end and modestly improved at the fix end.** Phung Hoang targets the infrastructure inside the population and does nothing against a PAVN or VC regiment¹. Its one contribution to finding the main force is secondary: a rallier from a local-force company or a courier caught at a checkpoint sometimes knows where a main-force battalion drew its rice last week, and document exploitation in a provincial centre turns a captured notebook into an order-of-battle entry faster than the sector S2 did. That is information about where a regiment was. It does not find where a regiment is.
+
+At the fix end, unit rotation is a real gain. A battalion of the 1st Infantry Division in War Zone C, or of the 25th Infantry Division at Cu Chi, in 1966, under the historical system, had lost about half its original men by its tenth month and had a new company commander every six months¹. Under this provision it is the battalion that trained together at its home station: platoon leaders who have commanded the same thirty men for a year, a battalion commander who stays the whole tour, squads that have rehearsed the immediate-action drill for a sprung ambush until it is reflex¹. When the enemy accepts battle, that battalion holds the contact longer, takes fewer losses in the first minutes and is harder to break at night. When the enemy declines battle, which is most of the time, it finds nothing more than its predecessor did. The B-52J and the GBU-38 already dominate the one battle the enemy can be made to fight on our terms, the measured siege; unit rotation does not add a second.
+
+The advisory corps improves the ARVN half of the fix in the same way and for the same reason: an ARVN battalion that goes out on operations with an adviser who has been with it a year, who speaks to the battalion commander directly and who calls artillery and helicopters without an interpreter, holds the contact better and brings its wounded out faster. It does not make the battalion commander look for the fight if he is a man who does not.
+
+### The identify-to-neutralise chain against the VCI
+
+**This is where the memorandum earns its place.** The chain has five links: identify the cadre, locate him, take him, keep him, and turn what he knows into the next target. Memorandum 002 built the first three for the hamlet layer in the held belt. Phung Hoang builds the fourth and fifth, and extends the first three up a level.
+
+Take Can Giuoc district in Long An in the spring of 1965. The Special Branch section has had its folders since 1964 and the district chief from the list has been in post a year². What the Branch knows is the hamlet: the rice-tax collector in Phuoc Lam, the courier who crosses to Can Duoc, the hamlet chief of the Front's parallel administration. What it does not know is the district committee that gives them their orders, because those men do not live in held hamlets and are named only in documents and by men who have met them. The district centre, about a dozen Vietnamese analysts in the Branch's office, puts every source on one chart: the Branch's folders, the sector S2's prisoners, a rallier from the district's local-force company debriefed in the Chieu Hoi centre, a notebook taken from a dead courier. By the end of the year the chart shows the district committee's secretary, its security chief and its finance cadre by name, the hamlets each sleeps in, and the families who feed them. That is the knowledge the historical Phoenix began to build in 1968¹.
+
+Locating and taking the man is still the Branch's and the police's work, and it is done only where the night is held. A warrant from the province magistrate, three independent sources on the target sheet, an arrest at night by constables with the Popular Forces platoon beside them, or by a Provincial Reconnaissance Unit team acting under the same statute¹. The detainee is enrolled on a SEEK II kit at the district station¹, so the man released for a bribe in Long An and arrested under another name in Dinh Tuong next year is the same man to the watchlist. He is questioned by the Branch within 72 hours, under the review of Memorandum 002². What he knows goes back to the chart, and the chart produces the next target. That loop, the exploit-and-analyse half of the 2026 cycle¹, is the real addition; the arrests were possible before.
+
+The chain breaks at two points, and both are outside the provision. First, at the edge of the held belt: in a district where the Front holds the hamlets at night, the centre can draw the chart but cannot serve the warrant, and a raid on a thin file kills or takes the wrong man¹. Second, at the prison: a chain that takes several thousand senior cadres a year must keep them somewhere, try them somewhere, and decide what to do with men it cannot convict, and the courts and prisons of 1965 were not built for it.
+
+### Dependence on SECURE
+
+**Everything in this memorandum that touches the countryside depends on night security, and nothing in it provides any.** Phung Hoang's value in a district equals the security behind its warrants; in a contested district it degrades into the historical Phoenix, of raids on thin files and quotas in all but name, whatever its rules say (P006a negative specification). The subsector adviser's value equals the chief and the Popular Forces he advises; a selected adviser beside a district chief whose platoons sleep in the district town is a selected adviser in a besieged town.
+
+The provisions do feed SECURE indirectly, and in two real ways. The subsector adviser who lives in the district and speaks Vietnamese is the man who knows, in the third month of his tour rather than the tenth, whether the Popular Forces platoon at the Phuoc Lam post is in its post at midnight¹. He tells the chief, and if the chief does not act, he tells the province senior adviser and the Inspectorate. And Phung Hoang removes the men who plan the attacks on posts: a district committee that has lost its security chief attacks fewer posts that season. Neither is security. Both make the security that exists work better.
+
+### The ADVISE cluster
+
+**The advisory corps is the first provision in six memoranda that addresses the advisory problem directly, and it addresses it at its root: the quality and continuity of the adviser.** Every earlier provision has either fed the ADVISE cluster or starved it. The land reform, the Commission, the police and the chiefs fed it by giving advisers honest counterparts and a lever; the rifles and the bombs starved it of self-sufficiency by tying the ARVN to American ammunition and American aircraft. Nothing until now changed the adviser himself.
+
+The historical adviser in 1964 was assigned, not chosen, trained for between two and eight weeks, spoke through an interpreter, and left after twelve months, having spent the first six learning the job. The selected adviser has passed a board and an assessment, spent about six months on Vietnamese, and stays 18 months. He is effective for about twelve months instead of six. Across the advisory effort, that roughly doubles the adviser-months of effective advice for the same number of posts, and it does so at no net cost in spaces in the Republic¹.
+
+What it does not change is authority. The adviser commands nothing (P006c negative specification). His leverage is what his counterpart wants from him (fire, helicopters, medevac, his good opinion in the report that goes to the corps commander) and what the Aid Compliance Board of Memorandum 001 can do with his evidence³. The corps makes him a better user of that leverage and a more truthful reporter of what it achieves. It does not give him more of it, and it makes the cost to the Republic's sovereignty no lower: an adviser who speaks Vietnamese and sees everything is a more intimate presence than one who does not.
+
+Phung Hoang feeds the cluster at the district through its own advisers, who are intelligence officers on 12-month tours, outside the advisory corps¹. Unit rotation does not touch it, except that the American battalion's yearly relief makes the adviser the only American in the area who was there last year.
+
+### Employment concepts
+
+#### EC006-1 · The district chart
+
+The district centre's weekly cycle, in a held-belt district. Monday, the Special Branch section chief, the sector S2's representative, the Military Security Service officer and the district chief's deputy for security sit with the centre's analysts and the American adviser. Every new source of the week goes on the chart: prisoners taken, ralliers debriefed, documents translated, constables' reports. Tuesday to Thursday, the analysts build target sheets on the names that now have three independent sources. Friday, the chief signs warrant requests to the province magistrate. The following week, the warrants are served at night by constables and the Popular Forces platoon. Each arrest is enrolled, questioned within 72 hours, and fed back. At full coverage a district centre develops about 10–20 targets a month⁴, and in the held belt executes 30–50% of its warrants within the month¹. The minimum viable package is a Special Branch section of at least three years' files, a district chief who will sign, a magistrate within a day's drive, and one platoon that will go out at night. Without the Branch's files the chart is empty; without the platoon it is a list.
+
+#### EC006-2 · The named offer
+
+A Chieu Hoi appeal addressed by name. When the chart identifies a cadre whose family lives in a held hamlet, the Branch does not arrest him; it sends his mother a letter with his name, the safe-conduct terms and the name of a constable who will receive him at night⁵. The rallier is debriefed by the Branch, enrolled, and his knowledge goes back to the chart. One district can make perhaps five to ten such offers a month in the held belt, with a return that cannot be predicted but that historically was highest among southern-born cadres with land and family in the government's area⁶. It depends on Memorandum 001's land titles, which give the family something to lose, and on the police post that receives the man alive.
+
+#### EC006-3 · The biometric gate
+
+Every detainee, rallier and convicted cadre is enrolled on a SEEK II kit at the district station or the Chieu Hoi centre. The kits work offline against a watchlist of up to 120,000¹, updated by courier from the provincial centre monthly. The gate catches three people the historical system did not: the cadre released for a bribe and rearrested under a new name; the rallier who rallies twice for the reward; and the detainee whose file says "released" while he is in fact still held for ransom. About 1,500 kits enrol perhaps 15,000–25,000 people a month at full coverage⁷. The kits degrade to about 70% availability in the first wet season without a repair depot¹; the Muster Service's depot of Memorandum 001 repairs both.
+
+#### EC006-4 · The warrant raid
+
+The Provincial Reconnaissance Unit under the 1964 police statute: about 60–100 men per province in teams of 10–15, recruited locally, each operation carrying a Special Branch officer holding the warrant and a capture-first order¹. The cycle is two to four operations a week per province, at night, against targets the provincial centre has developed beyond the reach of the district's own constables, usually in contested hamlets on the edge of the held belt⁸. Transit by sampan or on foot, sometimes by UH-1D when an American aviation company will fly it. A capture is enrolled and handed to the Branch the same night. This is the concept where the provision is most at risk, because the PRU works where the files are thinnest and the men most likely to fight back; its rules hold only as long as the Branch officer with the warrant is in charge of the team, and the American adviser is not.
+
+#### EC006-5 · The audit sample
+
+The independent audit of neutralization claims is done by the Commission Against Corruption of Memorandum 001 from 1965⁹. Each quarter, Commission inspectors draw a random sample of districts and check each name claimed against the census, the land register, the provincial prison roll, the court record and the biometric enrolment. An unsupported claim is reported to the province senior adviser and the Inspectorate; a claim that hides a ransom arrest or a feud killing is a case for the Special Court. Perhaps 40 districts a quarter¹⁰. The audit is what makes the "no quotas" rule enforceable: a district chief may still want to show numbers, but he knows each number will be checked.
+
+#### EC006-6 · The battalion's year
+
+A US Army infantry battalion under P006b. Its draftees and enlistees spend about four months in individual training, then join a battalion forming at its home station, where they train together for six to seven months: squad and platoon drills, live-fire company exercises with the M60 and the mortars, a battalion field exercise against an opposing force that fights as the VC and PAVN fight. The battalion deploys as a unit by C-141A, C-130E and charter to Bien Hoa or Cam Ranh, draws the outgoing battalion's heavy equipment in place, and spends two to three weeks in a relief in place: each incoming company patrols with its outgoing counterpart, then takes the lead with the outgoing company behind it, then alone. It serves twelve months, its commander throughout. Battle losses are refilled monthly by packets of four to ten men trained together at home. At the end it hands over to the next battalion and flies home, and its draftees leave the Army a few weeks later. The minimum viable package is a battalion whose draftees have at least thirteen months left on their two-year terms when it lands, which is why it must deploy within about seven months of forming¹.
+
+#### EC006-7 · The staggered relief
+
+Brigades and battalions are relieved on a staggered calendar so that no division turns over more than one brigade in a month, and no province loses its whole American presence at once¹¹. The 1st Cavalry Division in 1966, for example, would relieve its brigades in March, July and November rather than all three in the late summer that its 1965 arrival dictated. The stagger is the lesson the historical Army learned in 1966 when it found its first divisions would all go home together, and answered with the "infusion" programme of swapping men between units. Here it is planned from the first deployment.
+
+#### EC006-8 · The subsector team that stays
+
+The district advisory team: a major or captain as district senior adviser, a deputy, an intelligence NCO and a radio operator, all selected and trained under P006c, on 18-month tours staggered by six months so that the team never changes more than one man at a time¹². The team lives in the district town, goes out with the Regional and Popular Forces two to four nights a week, sits in the district centre's Monday meeting, and writes the monthly report on the district's security that goes to the province senior adviser and, unedited, to the Inspectorate². Each of the about 240 district teams¹ is the American memory of its district.
+
+#### EC006-9 · The battalion adviser in the field
+
+Two advisers, a captain and a sergeant first class, with each ARVN infantry, Ranger and Airborne battalion: on operations about 15–20 days a month, sleeping with the battalion command group, calling the M101A1 105mm howitzers of the division's artillery and helicopters on an AN/PRC-25 from 1965 and before that an AN/PRC-10¹³, and writing the senior adviser's monthly evaluation of the battalion's leaders and readiness. A battalion operation cycle runs about three to five days in the field, two to three days in base¹⁴. The adviser who has been with the battalion for a year knows which company commander will hold and which will run, and tells the battalion commander in Vietnamese, privately, before the operation.
+
+#### EC006-10 · The handover of the radio
+
+From 1966 this headquarters directs that every battalion and subsector adviser trains and certifies Vietnamese forward observers and air request officers in his unit, and that from his second year in post he calls American fire through them rather than in their place¹⁵. The concept works for artillery, for the VNAF's A-1 Skyraiders and later its A-37Bs, and for helicopter medevac. It does not work for the B-52J and the coordinate cell of Memorandum 005, whose requests must reach an American cell through an American channel¹⁶. It halves the dependence I describe in F006-17; it does not remove it.
+
+#### EC006-11 · Packet replacement for the advisory team
+
+The advisory corps replaces its battle losses not by individuals from the general replacement stream but from a small reserve of selected advisers held at the in-country adviser school, already language-trained, about 3–5% of the corps¹⁷. A district team that loses its senior adviser gets a selected replacement within two weeks instead of whatever captain is next in the pipeline.
+
+#### EC006-12 · The contested-belt target list (abandoned)
+
+In 1965 the district centres in contested districts of Hau Nghia, where the ARVN 25th Division could not hold the night, and of Binh Duong and Quang Ngai were tasked to build target lists and serve them by PRU raid. The files were thin, the sources were ralliers and prisoners with reasons to name enemies of their own, and the raids took or killed men whose guilt could not be shown¹. The concept was abandoned in those districts within the year, and the centres there restricted to building the chart for the day the night is held. It named the constraint the dossier did surface but could not quantify: in a contested district the method is not the 2026 method; it is the 1968 one.
+
+#### EC006-13 · American advisers on the raid (abandoned)
+
+The PRU teams' American advisers went on operations with them in 1964–65, as their CIA advisers had historically¹. It was stopped by this headquarters because an American present at a night arrest becomes, in the Front's telling and soon in the American press, an American assassination squad, and because an American present takes command whatever the rules say. The adviser plans and debriefs; the Branch officer with the warrant leads.
+
+#### EC006-14 · The whole-division relief (abandoned)
+
+The first Marine regiments to land at Da Nang in 1965 under P006b were relieved together the following year, as they had arrived together, and for three weeks I Corps had a Marine division new to every hamlet it was protecting¹⁸. The stagger of EC006-7 replaced it.
+
+#### EC006-15 · The adviser in command (abandoned)
+
+In the first year a number of selected battalion advisers, competent and confident in Vietnamese, took effective control of their battalions in a crisis, giving orders to company commanders directly. It worked in the minute and failed in the month: the counterpart lost face before his own officers, and the adviser's next recommendation was resisted¹⁹. The training standard was amended to forbid it except where the counterpart is dead or incapacitated.
+
+## §2 Part B — Channels
+
+### Displacement
+
+**F006-4** **The infrastructure's upper layer leaves the held districts, and the district committee becomes a committee in exile.** Memorandum 002 drove the hamlet cadres out of the held villages to field huts and contested hamlets. Phung Hoang does the same to the layer above. A district committee secretary who knows that ralliers can name him and that the district centre can serve a warrant on him in any held hamlet no longer sleeps in one. From 1965 the district committees of the held belt in Long An, Gia Dinh and the Delta provinces move to the edge of the contested belt, live with the local-force company for protection, and govern by courier. That displacement is the provision working: a committee that cannot sleep in its district cannot see its district, and its orders arrive late and are obeyed less. What the command loses is visibility. A cadre in a held hamlet was in reach of the constable's eye; a cadre with a local-force company in the Plain of Reeds is in reach of nothing but an operation, and the centre's chart of him ages from the day he leaves.
+
+**F006-5** **The enemy's penetration effort moves from the police post to the district centre.** A fused file is more valuable to the enemy than any constable's notebook, and the centre's clerks, translators and interpreters are fewer, worse paid and less vetted than its officers. From 1965 the Front's security service directs its agents in the National Police toward the centres, and its recruitment toward the centres' Vietnamese staff of about 4,000–5,000¹. In a held district this is a slow contest the Special Branch's counter-intelligence can win; in a provincial centre with forty staff and a file on every district committee in the province, one agent is enough. This is a displacement of effort the enemy can afford.
+
+**F006-6** **The enemy's choice of time moves to the relief window.** Under individual rotation every American battalion had men in their first month at every moment and the enemy had no particular week to wait for. Under unit rotation each battalion is new once a year, for about a month, and the enemy can see it coming: the ships and the aircraft are visible, the press reports the movements of named units, and the outgoing battalion's last weeks are its least careful. From 1966 I expect the local-force and main-force units in each American area to save their attacks for the weeks after a relief. That is a real cost, but a moderate one: a battalion that has trained together for seven months is a better unit on its first day than the historical battalion was with a fifth of its men new, and the stagger means no province loses all its American knowledge at once.
+
+### Bottleneck migration
+
+**F006-7** **Against the infrastructure, the binding constraint moves from identifying the cadre to keeping him.** Memorandum 002 moved the constraint from identification to trained handlers, courts and detention. Phung Hoang sharpens that move. With the district committees named and the warrants served, the question becomes what to do with several thousand senior cadres a year in a country whose province prisons were built for a few hundred each, whose courts sit slowly, and whose law caps detention without trial at two years². Con Son was the national answer, and its tiger cages became a scandal in 1970. A cadre released after two years for want of a conviction returns to the Front with his knowledge of our methods; a cadre held longer without trial breaks the statute that makes the programme different from the historical one. Before the provision, the binding constraint on the war against the infrastructure was knowledge. After it, in the held belt, it is the prisons, the courts and the political will to build both, and none of those is a provision in the inventory.
+
+**F006-8** **In the advisory effort, the constraint moves from the adviser to his counterpart and, in 1964–65, to the language school.** For the first time in this war the weak link in an advised battalion is not the American. An adviser who speaks Vietnamese and stays 18 months exposes, faster and more clearly than ever, whether his counterpart will fight; the answer is often no, and the remedy is the counterpart's corps commander, who chose him. In the first two years the binding constraint is elsewhere: the Vietnamese language school must teach about 1,200–3,000 students at a time from 1964, at a scale the Defense Language Institute did not reach until 1966–67, and the first selected advisers do not reach the field until the second half of 1964, a third of the posts by year's end¹. From 1966 the constraint becomes the pool of captains and senior NCOs who volunteer and pass.
+
+**F006-9** **For American battalions, the constraint moves from cohesion to local knowledge.** The historical battalion's problem was that it did not know its own men; this battalion's problem is that it does not know its area. A relief in place passes perhaps half of what the outgoing battalion knew¹: which trails are mined, which hamlet chief is honest, which ARVN company will hold. The other half is with the people who stay: the subsector adviser, the district chief, the district centre's chart. The memorandum's most useful operational consequence is that the American battalion's area knowledge now lives in Vietnamese institutions and in the advisory corps, and the battalion that uses them learns its area in weeks instead of months.
+
+### Own-force opportunity cost
+
+**F006-10** **The advisory corps and unit rotation compete for the same men, and the Army runs short of them by 1967.** The selected corps needs about 2,300 new advisers a year in 1964, rising to about 5,500–6,000 a year at the peak, from a volunteer pool of about 10,000–12,000 a year at a 40–60% pass rate. They are captains, majors and senior NCOs with combat experience and the temperament to lead without command: exactly the men a rotating battalion needs as its company commanders and first sergeants for a whole year. The historical Army ran short of experienced captains and NCOs by 1967 and answered with accelerated officer candidate schools and the six-month NCO candidate course. Under these provisions the shortage arrives a year earlier and bites harder, because the advisory corps takes the best men first and keeps them 18 months, and the battalions keep their leaders twelve months instead of six. I expect the American battalions of 1967–68 to have a measurably weaker company-grade leadership than their cohesion deserves, and the push of minus one on American unit quality from the advisory corps is that effect¹. It is the right trade: a good adviser beside an ARVN battalion is worth more to the war's outcome than a good company commander in an American one. But it is a trade, and the American units pay it.
+
+**F006-11** **Phung Hoang draws on the same scarce pool of Vietnamese linguists and analysts as the reconnaissance and coordinate cells.** About 80 Americans in the exploitation and analysis detachment and about 60 in the national cell¹ are document translators, interrogation specialists and network analysts. The U-2S and Global Hawk exploitation cells of Memorandum 003 took about 600 specialists from that pool, and the coordinate cell of Memorandum 005 took more. The Vietnamese-speaking American is now the scarcest man in the theater, and three provisions draw on him. The advisory corps's language school is the only source that grows the pool, and its graduates go to the field, not to the cells.
+
+**F006-12** **Unit rotation costs about 15,000–25,000 extra men in theater at the peak and makes the build-up slower in the months it matters most.** The overlap of each relief adds about 3–5% to in-theater strength¹; with no ceiling, that is a cost in airlift, rations and the clock, not a foreclosure. The larger cost is in timing. Under the historical system, a newly formed battalion could deploy with a few months of training and fill its gaps with individuals in theater. Under this provision it deploys after six to seven months of collective training, and in 1965–66, when Westmoreland asked for battalions faster than the Army could raise them, each new battalion arrives about two to three months later than its historical counterpart²⁰. The battalions of 1965 already existed and deployed as units; it is the expansion battalions of 1966, the 9th Infantry Division and the separate light brigades, that arrive later. The cost is real for about a year, and then the system runs.
+
+### Counterfactual erasure
+
+**F006-13** **The historical Phoenix does not happen: ICEX in 1967, the decree of December 1967, the quotas and the discovery in 1969 that a third of its claims were false are all erased.** In this war's record the district centres sat in the Special Branch's offices from ICEX in 1967, the quotas came with Phung Hoang, and the Commission's first sample in February 1969 found about a third of neutralization claims unsupported²³. Under this provision the centres exist from 1964–65, there are no quotas, the audit runs from 1965, and the Provincial Reconnaissance Units are raised under the police statute instead of outside it, closing the gap in the design this headquarters had warned of in 1964¹. What becomes of the historical figure of 81,740 neutralized in 1968–72, of whom 26,369 were killed and most of those in ordinary military operations, is that it is never compiled: in its place is an audited count of arrests, convictions and ralliers, smaller and true. What becomes of the attention the historical programme consumed is that it goes, from 1965, to the upper layer in the held belt, four years before the cadres' own accounts called 1968–72 their hardest period¹.
+
+**F006-14** **The six-month command tour, the 1966 infusion programme and the one-year war fought ten times are erased.** From 1965 Westmoreland gave battalion and company commanders six-month tours in command, so that more officers could have combat command; the result, in one veteran's account, was five platoon leaders and four company commanders in a single year¹. Under P006b every commander serves his unit's whole tour, and the officer corps gets half as many command tours and twice the experience in each. The infusion programme, by which the Army swapped men between units in 1966 to break the rotation hump of the units that had arrived together in 1965, becomes the planned stagger of EC006-7. And the line attributed to John Paul Vann, that we did not fight a ten-year war but a one-year war ten times, is half answered: the American battalion still fights a one-year war, but the adviser fights an 18-month one, and he is the American who matters to the Vietnamese.
+
+### Perverse effect
+
+**F006-15** **Success in the held belt sends the method to the contested belt, where it fails, and the method's reputation is made where it fails.** A district centre in Can Giuoc that has named its district committee and driven it out has, by 1966, little left to target. Its best analysts and the province's PRU teams are moved to the districts of Hau Nghia and Binh Duong where the Front's committees still live, the files are thin and the night is not held. There the method becomes the historical Phoenix: arrests on denunciation, men taken in raids who may or may not be cadres, and killings in firefights recorded as neutralizations¹. The abandoned concept EC006-12 is this effect caught early, and the restriction it led to is the defence. But the pressure from Saigon and from Washington to show the programme working where the war is still being lost will return every year, and the press will find its stories in Hau Nghia, not in Can Giuoc.
+
+**F006-16** **Cohesion is also cohesion in silence.** A unit whose men trained together and trust each other fights better, and it also closes ranks better around its own. The company that killed the people of My Lai in March 1968 was not a unit of strangers: C Company, 1st Battalion, 20th Infantry, had trained together in Hawaii and deployed with the 11th Infantry Brigade as a unit in December 1967. Unit rotation does not prevent atrocity, and in a unit whose leaders condone it, the same loyalty that makes the platoon fight at night makes the cover-up hold. I do not expect unit rotation to make American conduct toward the population worse; I expect it to make the conduct of a good battalion better and the concealment of a bad battalion's conduct more complete. The protection is the adviser and the district chief, who do not belong to the battalion and who see what it does in their district.
+
+**F006-17** **The better the adviser calls fire, the more the advised unit depends on American fire.** An adviser trained and qualified to call artillery and air, who speaks Vietnamese and is trusted by his counterpart, becomes the battalion's means of bringing down fire. The historical ARVN battalion that learned to fight with American air and artillery called by its adviser found, in 1973–75, that the adviser and the fire had gone together. A better adviser makes that lesson sharper, not softer: the battalion that has fought for three years with an adviser who never failed to get a helicopter or an air strike has never had to learn to fight without one. This is why I have added a band of dependence against ARVN self-sufficiency to the advisory corps, and why I have directed the handover of the radio. The directive halves the effect for artillery, the VNAF and medevac. It does nothing for the B-52J and the coordinate cell, which are the instruments the ARVN most depends on in a siege and cannot own.
+
+### Anticipation
+
+**F006-18** **Where Phung Hoang works best, its count falls, and for the first time the fall can be read correctly.** The enemy's answer to a district centre that can name him is not to fight it but to leave. In the held belt the number of senior cadres arrested rises through 1965 and falls in 1966, not because the centres stopped working but because the men they targeted are gone. This is the same anticipation that made the police's arrests fall where they worked best, one layer up. The historical answer to a falling count was a quota, and the quota produced the false arrests and the padded figures¹. Under this provision there are no quotas and the Commission audits every claim, so the falling count can be reported honestly as what it is: evidence that the infrastructure has left the district. That honesty is worth more than the count, and it will be the hardest thing in this memorandum to sell in Washington, which will ask why a programme that costs $15–25 million a year¹ is catching fewer cadres each quarter.
+
+**F006-19** **The enemy declines battle with the battalion he has learned to respect and accepts it with the one he has not.** A cohesive American battalion in its eighth month is a harder target than any the enemy has met, and the enemy, who chooses most of his contacts, will choose fewer with it and more with the battalion in its first month. The good battalion therefore records fewer contacts, fewer kills and fewer casualties of its own in its good months, and its improvement appears in the record as idleness. The casualties it does not take are the provision's gain, and they are invisible because the fights that would have caused them did not happen.
+
+### Enemy detection and learning
+
+**F006-20** **COSVN reads Phung Hoang within a season, correctly as the police's brain and wrongly as an American killing programme.** The first district committee members arrested on warrants in the ARVN 7th Division's area of Dinh Tuong and Long An that cite ralliers' statements tell the Front in the spring of 1965 that the government is now joining its files across districts. COSVN's security directorate draws the right doctrine fast, because it is the doctrine it already had against the French: cadres above the hamlet sleep outside held villages, use couriers and not meetings, trust no rallier's family, and send false denunciations into the centres to poison their files with the names of the government's own friends. What it gets wrong is the programme's nature. For a year at least COSVN describes it to its cadres as an American assassination programme run by the CIA²¹, and in the held belt, where the arrests are on warrant and the prisoners are tried, its cadres find the description false; some of them rally on the discovery. What it gets right, and what hurts, is that the centre is the weak point: one agent in a provincial centre reads every chart. The doctrine reaches a district cell through the Front's own courier system within about three months²².
+
+**F006-21** **Hanoi reads unit rotation slowly and the advisers quickly.** The American battalion's new tour pattern is visible in the American press from 1966, and the Front learns the relief calendar of each area within a year, timing its attacks to it. The advisory corps is noticed in the first months, because the new American speaks to soldiers in their own language. The Front's agents inside ARVN battalions become more careful, because the adviser now hears what is said in the mess, and its proselytising sections tell ARVN soldiers that the American who speaks Vietnamese is a spy on them. That message works with some soldiers and fails with others; in the units where the adviser is good, it fails.
+
+### Enemy adaptation cost
+
+**F006-22** **Leaving the held belt is expensive for the Front, and poisoning the files is cheap; the exchange favours the Republic only where it holds the night.** A district committee that governs from the forest collects less rice tax, recruits fewer sons and loses touch with the hamlets it claims; over two to three years that is the slow strangling of the Front's administration in the held belt, and it costs the enemy more than anything we spend on the centres. The cheap counters are the false denunciation and the agent in the centre: a false name costs the Front one rumour, and a centre that arrests the government's friend on it loses a family and gives the Front a martyr. The audit and the three-source rule defend against the first; counter-intelligence against the second. In the contested belt, where the committee never had to leave, the Front pays nothing at all. That is the exchange rate of Memoranda 001 and 002 again, and it is the reason the gains of this provision are all inside the held belt.
+
+### Cross-boundary feedback
+
+**F006-23** **Phoenix becomes a press story three years early, and the advisory corps gives the Mission a truer account to answer it with; on the American clock the two roughly cancel.** An American-designed targeting programme against named people is a story from the moment the first warrant is served in 1965, and its critics will call it assassination whatever its rules. The historical Phoenix reached Congress in the hearings of 1970–71, at which Colby testified; this one will reach it earlier, in the year Washington is deciding the build-up. Against that, the Mission has an answer the historical one lacked: warrants, a capture-first rule, an audited count and a court record. In the other direction, the advisory corps produces American reporting from the field that is truer than any the war had: an adviser who speaks the language, stays 18 months and whose career is protected reports what he sees rather than what his rating needs¹. The province and battalion reports that reach Saigon and Washington from 1965 are the closest thing to honest progress figures the war produces. Following the loop: honest reporting narrows the credibility gap, which slows the clock at its root; the Phoenix story widens it; and unit rotation's lower casualties in the battalions' middle months are a small saving on the clock's main driver. Net, a modest narrowing of the credibility gap and no band on tolerance, consistent with every earlier provision. The clock was spent by the casualties of 1965–68 and by Tet, and nothing here changes either.
+
+### Open channel
+
+**F006-24** **The advisory corps creates, inside the American Army, a constituency for the Vietnamese war.** By 1968 about 15,000–20,000 American officers and NCOs will have served 18 months with Vietnamese units, spoken their language and been promoted for it²³. They are the first large body of American soldiers whose careers are tied to the ARVN's success rather than to the American battalion's. When Abrams turns MACV toward the "one war" and Vietnamization in 1968–69, he has a corps that already knows how; and in the argument POSCP01-2 records, that the American lever was never used to make the Republic own the instruments of the conventional war, the advisory corps is the first instrument that could make that argument from inside the Army, with evidence from every battalion. Whether it is heard is a matter for Part 3. That it exists is new.
+
+## §2 Part C — Counter-directional finding and strongest positive effect
+
+**F006-25 · Counter-directional** **Phung Hoang builds the most dangerous record the Republic keeps: a national file of every suspected cadre, his family, his associates and his fingerprints, which the palace will use against its opposition and the enemy will capture when the Republic falls.** This runs directly against the provision's purpose and against the gains it makes. The national centre and the provincial centres hold network charts and a biometric watchlist of up to 120,000¹, joined to the census of Memorandum 002 and the land register of Memorandum 001, which already record every household in the held belt²³. The record has three uses beyond its purpose, and all three will be made.
+
+The first is political. A government that captured the police against the Buddhists in 1966 will find in Phung Hoang's files a list of everyone in the Struggle Movement's network with a relative in the Front, and in 1971 a list of the opposition. The audit and the warrant rule do not survive a President who wants the file; the American lever that protects them lapses with the drawdown, as it lapsed for the Board. The second is the enemy's. Hue in 1968 showed what a captured census does in the hands of the Front's security section; a captured provincial chart, which records not only who is a cadre but who informed on him, is worse. The third is in 1975. When the Republic falls on the historical timeline, the national file falls whole, and with it the names of every informant, rallier, constable and analyst who served the programme. The enemy will know exactly whom to send to the re-education camps and whom to kill.
+
+At its true weight this is major, not transformative. It does not undo the gains in the held belt between 1965 and 1972, which are real. It converts part of them, at the end, into a list. I have weighed restricting the national file to network charts without the informants' names, and I will direct it, but the informants' names must be somewhere for the three-source rule to work, and wherever they are, they are capturable.
+
+**F006-26 · Strongest positive** **The district becomes a team that stays: a merit-selected chief, a Special Branch section, a district centre and a selected American adviser who speaks the language, together for long enough to finish what they start, four years before the historical Republic assembled any of them.** This is the most significant thing these provisions change, and it is a compound effect, not any single provision's.
+
+In 1964 the historical district had a chief who changed with each coup, a police that did not leave the district town, no intelligence centre, and an American adviser, if any, who spoke through an interpreter and left in twelve months. In this war, by 1966, the held-belt district has a chief from the list in his second or third year, a Special Branch with two years of files², a district centre that has drawn the committee above the hamlets, and an adviser in the middle of his 18 months who talks to the chief in Vietnamese and to the Inspectorate without fear for his career¹. Each of those men knows what the others know. That is the institution the counter-insurgency literature describes and that no American effort in Vietnam ever assembled before 1969, and here it exists in the held belt from 1965–66.
+
+What it buys, in the held belt, is the destruction of the Front's district-level administration two to three years before Tet. The historical Front's cadres called 1968–72 their hardest years, because Phoenix and the Accelerated Pacification Campaign reached them after the local forces protecting them had died at Tet¹. In this war the same pressure reaches the upper layer from 1965, against a Front whose local forces are still intact, which is harder, and in a belt where the night is held, which makes it possible. I estimate that by the end of 1967 the district and village committees of the held belt are reduced to a skeleton governing from outside²⁴, and that the Front's ability to mount Tet attacks on the district towns of that belt is reduced correspondingly. The second gain is in the reports. For the first time, the war's progress in the countryside is measured by men who know what they are looking at and have no reason to lie.
+
+What it does not buy, at the same weight: anything outside the held belt, anything against the main force, and anything that survives the American lever. It moves the war against the infrastructure, which Memorandum 002 moved first, by another step; it does not move the war. I rate it major. In the held belt it is the difference between a government that guards a district and one that governs it.
+
+### Positions recorded
+
+- **POS006-1** · vars: FIND.vci, VCI.strength, POP.night_control · Phung Hoang adds the layer above the hamlet to what the Special Branch knows, only where the night is held; outside the held belt it is the historical Phoenix whatever its rules, and its audited count, which falls where it works best, is the measure, never its arrest count (006 F006-15, F006-18, F006-26)
+- **POS006-2** · vars: US.unit_quality, US.casualties, ENEMY.engagement_control · Unit rotation makes the American battalion fight better in the contacts it gets and changes neither which contacts it gets nor the late-war breakdown of discipline; it gives the enemy a relief window to aim at, and it does not prevent atrocity (006 F006-6, F006-16, F006-19)
+- **POS006-3** · vars: ADVISE.leverage, ARVN.self_sufficiency · The selected advisory corps deepens influence, not authority; its durable values are continuity across the American unit's relief and honest reporting, and a better adviser deepens the advised unit's dependence on American fire unless he hands over the radio, which works for artillery, the VNAF and medevac and not for the B-52J (006 F006-2, F006-17, F006-23)
+
+## §2 Findings register
+| ID | Channel | System | Summary | Weight |
+|---|---|---|---|---|
+| F006-1 | Integration | SECURE, FIND, SUBVERT | The district centre sits on the Special Branch under the merit chief and draws the committee above the hamlets; a second layer over 002's police | major |
+| F006-2 | Integration | ADVISE, FIX | The adviser is the continuity across the American battalion's yearly relief | moderate |
+| F006-3 | Integration | SUBVERT, FIND | Biometric enrolment of detainees and ralliers catches the cadre released for a bribe and rearrested under a new name; shared with the Muster Service | moderate |
+| F006-4 | Displacement | SUBVERT, SECURE | District committees leave the held belt and govern by courier from the contested edge; visibility lost | major |
+| F006-5 | Displacement | FIND, SUBVERT | Enemy penetration moves from the police post to the district and provincial centres | moderate |
+| F006-6 | Displacement | FIX, SECURE | The enemy times attacks to the yearly relief window of each American battalion | moderate |
+| F006-7 | Bottleneck migration | SUBVERT, SECURE | Against the infrastructure the constraint moves from knowing the cadre to keeping him: prisons, courts, the two-year cap | major |
+| F006-8 | Bottleneck migration | ADVISE | The weak link moves from the adviser to the counterpart; in 1964–65 the language school is the rate limit | moderate |
+| F006-9 | Bottleneck migration | FIX, SECURE | The American battalion's constraint moves from cohesion to local knowledge, which now lives with the adviser, chief and centre | moderate |
+| F006-10 | Own-force opportunity cost | ADVISE, FIX | The advisory corps and the rotating battalions compete for the same captains and NCOs; the shortage comes a year early | moderate |
+| F006-11 | Own-force opportunity cost | FIND, SUSTAIN | Phung Hoang draws on the same scarce Vietnamese linguists and analysts as 003's and 005's cells | minor |
+| F006-12 | Own-force opportunity cost | SUSTAIN, FIX | 15,000–25,000 extra men at the peak; expansion battalions of 1966 arrive two to three months later | moderate |
+| F006-13 | Counterfactual erasure | SUBVERT, FIND | ICEX, the quotas, the PRUs outside the statute and the 1969 discovery of false claims are erased; an audited count replaces 81,740 | major |
+| F006-14 | Counterfactual erasure | FIX, ADVISE | The six-month command tour, the 1966 infusion programme and the adviser's one-year war are erased | moderate |
+| F006-15 | Perverse effect | SUBVERT, SECURE | Success in the held belt sends the method to the contested belt, where it becomes the historical Phoenix and makes the headlines | moderate |
+| F006-16 | Perverse effect | FIX, SECURE | Cohesion is also cohesion in silence; unit rotation does not prevent atrocity and may hide it | moderate |
+| F006-17 | Perverse effect | ADVISE, FIX | A better adviser makes the advised unit more dependent on American fire; the handover of the radio halves it except for the B-52J | moderate |
+| F006-18 | Anticipation | SUBVERT, FIND | Where the centres work best their count falls; without quotas and with the audit, the fall is read honestly | major |
+| F006-19 | Anticipation | FIX | The enemy declines battle with the good battalion; its gain appears as idleness | moderate |
+| F006-20 | Enemy detection and learning | SUBVERT | COSVN reads the centres within a season, poisons the files and penetrates the centres; wrongly calls it a CIA killing programme | major |
+| F006-21 | Enemy detection and learning | FIX, ADVISE | Hanoi learns the relief calendar in a year and the language-trained adviser at once | moderate |
+| F006-22 | Enemy adaptation cost | SUBVERT | Leaving the held belt is expensive, poisoning files cheap; the exchange favours the Republic only where it holds the night | moderate |
+| F006-23 | Cross-boundary feedback | SUBVERT, ADVISE, SUSTAIN | Phoenix a press story three years early; honest adviser reporting narrows the credibility gap; tolerance unmoved | moderate |
+| F006-24 | Open channel | ADVISE | 15,000–20,000 language-trained advisers by 1968 form a constituency inside the Army for the Vietnamese war | moderate |
+| F006-25 | CD | SUBVERT, SECURE, ADVISE | The national file is a list of loyalties for the palace in 1966–71 and for the enemy in 1975 | major |
+| F006-26 | SPE | SECURE, SUBVERT, ADVISE | The district becomes a team that stays, four years early; the Front's district administration in the held belt is broken before Tet | major |
+
+**Employment concepts**
+
+EC006-1 the district chart · EC006-2 the named offer (with P001a) · EC006-3 the biometric gate (with P001b) · EC006-4 the warrant raid · EC006-5 the audit sample (with P001b) · EC006-6 the battalion's year · EC006-7 the staggered relief · EC006-8 the subsector team that stays · EC006-9 the battalion adviser in the field · EC006-10 the handover of the radio · EC006-11 packet replacement for the advisory team. Abandoned: EC006-12 the contested-belt target list (thin files, wrong men) · EC006-13 American advisers on the raid (assassination story; Americans take command) · EC006-14 the whole-division relief (a division new to every hamlet at once) · EC006-15 the adviser in command (counterpart loses face; advice resisted)
+
+## §3 Changes to existing forces
+
+### The advisory effort and MACV staff
+
+The advisory effort is remade. Every field post below corps is filled from 1964 by a selected adviser on an 18-month tour, and the in-country adviser school at Di An, historically two weeks¹, becomes the reserve and acclimatisation centre of EC006-11. The MACV J-1 gains an advisory personnel branch that manages the corps's board, its pipeline and its promotions. The MACV J-2 gains the Phung Hoang national cell of about 60 and an exploitation and analysis detachment of about 80¹, working with the Special Branch's headquarters rather than beside it. When CORDS is formed in 1967 the centres and their advisers pass to it, as the police's advisers did in this war's record²; the advisory corps's district teams become CORDS's district teams.
+
+### US conventional forces
+
+Every Army and Marine maneuver battalion deployed from 1965 arrives as a unit trained together for six to seven months, serves twelve months under one commander, and is relieved by a unit with a two-to-three-week overlap¹. The first deployments of 1965, the 173rd Airborne Brigade, the 9th Marine Expeditionary Brigade at Da Nang, the 1st Cavalry Division (Airmobile) and the 1st Infantry Division, arrived as units historically; what changes is that they are relieved as units in 1966 on a stagger, instead of being broken up by infusion. The expansion battalions of 1966, including the 9th and 25th Infantry Divisions' later brigades and the separate light brigades, arrive two to three months later than historically. In contact the battalions are better, and their company-grade leadership is somewhat thinner from 1967.
+
+### US Special Forces and CIDG
+
+Unchanged in structure: the 5th Special Forces Group's A-teams are not maneuver battalions and are not advisers to the RVNAF, and keep individual rotation. They lose some volunteers to the advisory corps, which recruits from the same men, and gain from the corps's language school, whose graduates some of them become.
+
+### ARVN divisions and the JGS
+
+Each ARVN battalion, regiment and division has a selected adviser team on 18-month tours from the second half of 1964, about a third in post by the end of the year¹. The senior adviser's monthly evaluation of each battalion becomes a document the Joint General Staff cannot dismiss as an interpreter's misunderstanding. What does not change is the corps commanders, who choose the division and regiment commanders and remain the limit on leadership. The ARVN gains forward observers and air request officers trained by its advisers from 1966.
+
+### RF/PF and territorial security
+
+The sector and subsector teams and the mobile advisory teams from 1967 are selected, language-trained and on 18-month tours. The subsector adviser in particular becomes the second pair of eyes on whether the posts are manned at night, alongside the Inspectorate of Memorandum 002. Phung Hoang removes the district cadres who plan attacks on posts in the held belt. The territorial forces gain one band of effectiveness from the advisory corps, through leadership and reporting, not weapons¹.
+
+### Rolling Thunder
+
+Unchanged. The provisions touch neither the air war in the North nor its constraints.
+
+### Trail interdiction
+
+Unchanged in substance. Ralliers and prisoners exploited by the centres add a little to what is known of the infiltration groups' routes and timing; that knowledge reaches the targeting of Memorandum 005 only when it names a fixed point that can be measured, which is rare.
+
+### Arc Light
+
+Unchanged in its targets and forces. The selected advisers make better requests through the ARVN channel for B-52J strikes in defence of ARVN positions, and they are the ARVN's only channel to the coordinate cell. No district centre nominates Arc Light targets: the programme's rule is arrest on warrant, and a bomb is not a warrant.
+
+### Airmobile formations
+
+The 1st Cavalry Division (Airmobile) rotates by brigade on the stagger; its aviation companies, the CH-47A medium helicopter companies and the separate assault helicopter companies rotate by company¹. A company of UH-1Ds that arrives together arrives with all its pilots new to the country on the same day; the overlap is the defence, and the risk is a month of higher accident rates in each relieved company²⁵. The advisers' requests for helicopters are better made; the number of helicopter hours is unchanged.
+
+### Riverine and coastal forces
+
+The Mobile Riverine Force's Army brigade of 1967 rotates as a unit; the Navy's river and coastal forces are not covered and keep individual rotation. The centres in the Delta provinces exploit what the river patrols' checkpoints and the police's canal checks of Memorandum 003's radar watch produce, with the police.
+
+### Phoenix / Phung Hoang
+
+Replaced by P006a from 1964. The historical ICEX of 1967, the Phung Hoang decree of December 1967 and Thieu's decree of July 1968 do not occur as new beginnings; the programme exists from the start, without quotas, with the PRUs under the police statute and the audit from 1965. Part 3 revises the chapters that record the historical programme.
+
+### Third-country forces
+
+The 1st Australian Task Force at Nui Dat rotated its battalions as units for twelve-month tours from 1966, after collective training in Australia; this provision gives the American battalions the system the Australians already had, and the two forces in Phuoc Tuy now work on the same calendar. The Australian Army Training Team's advisers serve beside a selected American advisory corps; the Korean divisions are unchanged.
+
+### Prior provisions
+
+- **P001a** (Land-to-the-Tiller): its register is a source for the district centres, which use it as a list of persons, as the historical-course ICEX first did in 1967; the named offer depends on the titles it delivered.
+- **P001b** (Commission Against Corruption): it becomes the independent auditor of neutralization claims from 1965, and its Muster Service shares kits, technicians and fingerprint practice with the biometric gate; the advisers' honest reports give its Aid Compliance Board evidence to act on.
+- **P002a** (National Police reform): the Special Branch gains a coordination layer and an exploitation method; the PRUs are raised under its statute; its counter-intelligence must now protect the centres as well as the posts.
+- **P002b** (Provincial administration reform): the district chief chairs the district centre and signs its warrant requests; he gains an adviser who stays and speaks his language.
+- **P003a, P003b** (U-2S and Global Hawk): their exploitation cells lose some Vietnamese-speaking specialists to the centres.
+- **P004a, P004b, P004c** (carbine, marksman rifle, squad gun): American battalions train on them collectively before deploying; the advisers train and hold the ARVN to their practice.
+- **P005c** (GBU-38): the adviser is the ARVN's channel to it, and his skill deepens the dependence F005-20 named.
+- Unchanged: P005a, P005b, P005d.
+
+---
+
+*Audit — Memo 006, Part 2/3 · v1.0.5 · cards loaded: 002,001,004,005,003 · channels: 10/10 (floor 9) · findings numbered: 26 · employment concepts: 11 + 4 abandoned (floor 6) · counter-directional: yes · strongest positive: yes · designations: ~25 · structural deviation: none*
+
+## Notes
+
+1. From memorandum 006's record.
+2. From memorandum 002's record.
+3. From memorandum 001's record.
+4. Estimate — the card's 2,400–4,800 a month across about 240 district centres
+5. Estimate — the logic of targeted defection
+6. Estimate — the period's Chieu Hoi pattern
+7. Estimate — about ten to fifteen a kit a day where detainees and ralliers are
+8. Estimate — the period's PRU tempo
+9. Stipulated in the provision.
+10. Estimate — the historical-course sample of February 1969 in this war's record, P3
+11. Estimate — the logic of the relief geometry
+12. Estimate — the logic of the 18-month tour
+13. Estimate — the period's advisory radios
+14. Estimate — the period's ARVN operating pattern
+15. Estimate — a directive this headquarters can issue under P006c's training standard
+16. From memorandum 005's record.
+17. Estimate — the period's adviser casualty rate
+18. Estimate — the logic of the 1965 landing
+19. Estimate — the period's advisory experience
+20. Estimate — the training cycle against the historical 1965–66 deployment schedule
+21. Estimate — the historical Front's description of Phoenix
+22. Estimate — the speed of the Front's security directives
+23. Estimate — the corps's annual intake from 1964 to 1968
+24. Estimate — the centres' throughput against the historical infrastructure's strength in the held provinces
+25. Estimate — the logic of whole-company relief of aviation units
