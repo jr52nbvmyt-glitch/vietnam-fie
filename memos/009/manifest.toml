@@ -3,9 +3,9 @@
 memo = "009"
 title = "Basic training to the 2026 standard for every US and RVNAF enlisted entrant from 1957, with an abridged course for the Regional and Popular Forces"
 received = "2026-11-24"
-status = "part2"
+status = "complete"
 version = "1.0.5"
-phases_changed = []
+phases_changed = ["P1", "P2", "P3"]
 links = ["004", "006", "007"]
 
 [deviation]
