@@ -30,6 +30,8 @@
 - P007a (memo 007) pushes -1 [old band ≈ -4..-2] — Law of war, the Army profession and escalation-of-force training reach every new platoon leader, including the wartime OCS classes
 - P009c (memo 009) pushes -1 [old band ≈ -4..-2] — Fire discipline and the conduct block reach the hamlet militia, whose conduct toward the population was the GVN's face in the countryside; small
 - P010a (memo 010) pushes -1 [old band ≈ -4..-2] — The squad leader is the man who controls fire in the hamlet and the detainee at the trail; small
+- P011c (memo 011) pushes -1 (high) — 347–504 villagers of Son My live; a trace against the civilian dead of the whole war, which is the honest weight
+- P011c (memo 011) depends — Removing one massacre changes nothing about the conditions that produce others; the effect depends on how isolated it really is
 
 ## POP.gvn_legitimacy — Legitimacy of the Saigon government in the countryside
 *Higher means more rural acceptance of the GVN.*
@@ -38,6 +40,7 @@
 - P001b (memo 001) pushes +1 [old band ≈ +2..+4] — Visible prosecution of officials who prey on the population, if it reaches above the district level
 - P002a (memo 002) pushes +1 [old band ≈ +2..+4] — A policeman who settles disputes, records crime and arrests on evidence is the government's most frequent face in the village; the gain reverses where the police extort or torture
 - P002b (memo 002) pushes +1 [old band ≈ +2..+4] — The district chief is the government in the countryside; one who is resident, competent and not for sale changes what the government means in his district
+- P011c (memo 011) pushes +0..+1 (low) on POP.gvn_legitimacy.I_corps — One village in Quang Ngai not emptied by its allies; a trace in a province the Front had held for a generation
 
 ## POP.land_tenure — Land tenure
 *Higher means more owner-cultivators with secure title.*
@@ -119,6 +122,7 @@
 - P007b (memo 007) depends — Coups make the promotion list and override the gate
 - P007c (memo 007) depends — A junta can suspend the board; a coup is a promotion list
 - P008a (memo 008) depends — State enterprises and licences change hands with each government
+- P011a (memo 011) pushes +0..+2 (low) — Thieu's government keeps faith longer in the assurances it was given; the panic of 1975 starts from a firmer belief that Washington will act
 
 ## GVN.police — National Police in the countryside
 *Higher means more capable and present rural police.*
@@ -180,6 +184,7 @@
 *Higher means more commitment.*
 
 - P001a (memo 001) pushes +1 [old band ≈ +2..+4] — Hanoi reads the reform as eroding its southern base and hurries its decision for military victory (F001-12)
+- P011a (memo 011) depends — The enforcement threat works only if the Politburo believes it; Resolution 21 and the 1975 calendar are the test
 
 ## TRAIL.capacity — Trail system capacity
 *Higher means more throughput capacity on the Trail.*
@@ -344,6 +349,8 @@
 - P008b (memo 008) pushes +2 [old band ≈ +5..+7] — Radios, batteries, wire and signal repair made and done in country; the 1974–75 battery and parts famine eased
 - P010b (memo 010) pushes +1 [old band ≈ +2..+4] — Senior and master courses teach maintenance, supply, training management and readiness reporting at company and battalion; the sergeants who keep trucks and radios running
 - P010b (memo 010) depends — The schooled squad fights best with American fire and helicopters behind it; in 1974–75 it has been taught a way of war its army cannot supply (F010-24)
+- P011a (memo 011) pushes +0..+2 (low) on ARVN.self_sufficiency.logistics — Not self-sufficiency but its precondition in 1974: fuel for trucks and rounds for depots that the ration emptied; the dependence on Congress is unchanged
+- P011a (memo 011) depends — Aid money matters only as far as the RVNAF can turn it into fire, fuel and spares; the 1974 ration is where the provision bites
 
 ## RFPF.effectiveness — Regional and Popular Forces
 *Higher means more effective territorial forces.*
@@ -362,6 +369,11 @@
 - P009c (memo 009) pushes +1 [old band ≈ +2..+4] — Every territorial recruit trained, on the rifle he carries, with first aid and night discipline; the historical training lag of up to 60% in 1964 closed
 - P009c (memo 009) depends — Six weeks gives the individual skills; the platoon's competence still rests on its leader and its support
 - P010b (memo 010) pushes +1 [old band ≈ +2..+4] — Every RF and PF squad and platoon leader schooled for his grade (E03); the 1964 PF leadership training that ran 60% behind is filled by the gate
+
+## VNAF.capability — South Vietnamese Air Force
+*Higher means more capable VNAF.*
+
+- P011a (memo 011) pushes +1..+3 (low) on VNAF.capability.maintenance — A larger FY1975 appropriation buys fuel and imported parts, the two things the domestic base could not stretch; fewer aircraft and helicopters grounded in the second half of 1974
 
 ## ADVISE.leverage — Advisory leverage
 *Higher means advisors can change more RVNAF decisions.*
@@ -400,6 +412,7 @@
 - P010a (memo 010) pushes +1 [old band ≈ +2..+4] — Men in school instead of in squads, a larger instructor base and a ten-month course for sergeants major; promotions gated during the 1966–68 NCO shortage
 - P010b (memo 010) pushes +1 [old band ≈ +2..+4] — Advisers at the NCO academy and schools; small
 - P010a (memo 010) depends — The gate holds promotions in the years the NCO corps was shortest
+- P011b (memo 011) depends — The size of the draft calls follows the size of the force; under no troop ceiling the calls are as large as history's, less a quarter
 
 ## US.casualties — US casualty rate
 *Higher means more US killed and wounded.*
@@ -412,6 +425,7 @@
 - P007a (memo 007) pushes -1 [old band ≈ -4..-2] — Better-trained platoon and company leaders lose fewer men to ambush, mines and errors of fire support; modest
 - P009a (memo 009) pushes -1 [old band ≈ -4..-2] — Fewer American dead from extremity hemorrhage and from individual-skill failures; modest in total, real in lives
 - P010a (memo 010) pushes -1 [old band ≈ -4..-2] — Squad and platoon fights are NCOs' fights; better land navigation, fire control, patrol-base discipline and leader-stakes medical drill; modest in total
+- P011b (memo 011) depends — The draftee dead are what made the draft a political wound; its effect scales with the casualty lists
 
 ## US.unit_quality — US unit quality
 *Higher means better US units.*
@@ -425,6 +439,9 @@
 - P009a (memo 009) depends — The basic course is only as good as the unit that receives the man; P006b unit rotation keeps him with the men he trained beside
 - P010a (memo 010) pushes +1 [old band ≈ +2..+4] — Every sergeant, staff sergeant and platoon sergeant schooled for his grade before he holds it; the instant NCOs of 1967–71 get the Basic Leader Course before their sixth stripe; the gain is largest exactly when the NCO corps thinned
 - P010a (memo 010) depends — The educated sergeant is only as useful as the squad he keeps; P006b unit rotation decides whether he stays with it
+- P011b (memo 011) pushes +1..+3 (medium) — The same men in the same rifle squads, but a quarter of the Army's draftees now chose to be there; fewer reluctant men in the companies of 1969–71, when indiscipline peaked
+- P011c (memo 011) pushes -1..+1 (low) — No massacre and no stain, but also no Peers inquiry and no reckoning with the command climate that produced it; direction uncertain
+- P011c (memo 011) depends — The NCO and officer reforms of memoranda 007, 009 and 010 already act on the Americal Division's companies; this removal sits on top of them
 
 ## MED.survival — Casualty survival
 *Higher means more wounded survive (US and RVNAF).*
@@ -486,6 +503,13 @@
 - P008b (memo 008) depends — Semiconductors, crystals and licences after 1973 are bought with appropriated dollars
 - P009a (memo 009) depends — Two more weeks in the pipeline for every soldier during the 1965–66 build-up
 - P010a (memo 010) depends — Men in school and gated promotions during a build-up without reserve mobilisation
+- P011a (memo 011) pushes +4..+7 (medium) on US.political_tolerance.administration — From mid-1973 the President keeps his authority, his staff and his attention; the man who wrote Thieu his assurances is still in office to keep them, as far as Congress lets him
+- P011a (memo 011) pushes +2..+4 (low) on US.political_tolerance.congress — A smaller 1974 midterm swing and no Republican collapse in 1973–74; Case–Church probably still passes, the War Powers override and the depth of the 1974–75 aid cuts are what is at stake
+- P011a (memo 011) pushes +0..+1 (medium) on US.political_tolerance.public — The 'mistake' share stood at about 60% in 1971 and in 1973 before Watergate peaked; the scandal moved trust in the President, not opinion of the war
+- P011b (memo 011) pushes +1..+3 (medium) on US.political_tolerance.public — A quarter fewer induction notices in every town every month; fewer families whose son was taken against his will, fewer draftee dead; the draft was the war's sharpest domestic grievance
+- P011b (memo 011) pushes +0..+2 (low) on US.political_tolerance.congress — Smaller draft calls take some heat out of the extension fights of 1967 and 1971 and of the constituency mail; Congress votes on the war for reasons the draft only sharpens
+- P011c (memo 011) pushes +0..+2 (low) on US.political_tolerance.public — Mass opinion sided with Calley in 1971; the damage My Lai did was to elite, press and congressional opinion and to the moral case against the war, which loses its emblem
+- P011a (memo 011) depends — Everything it buys is a change in what Washington will grant in 1973–75
 
 ## US.credibility_gap — The credibility gap
 *Higher means wider gap between what MACV reports and what the press reports.*
@@ -494,6 +518,8 @@
 - P002b (memo 002) pushes -1 [old band ≈ -4..-2] — An Inspectorate that verifies province reporting gives MACV a check on figures produced by the men rated on them (A13)
 - P006a (memo 006) pushes +1 [old band ≈ +2..+4] — An American-designed targeting programme is a press story from 1965, whatever its rules
 - P006c (memo 006) pushes -1 [old band ≈ -4..-2] — Advisers with protected careers and language report what they see
+- P011c (memo 011) pushes -3..-1 (medium) — No cover-up to come apart in November 1969: the starkest single proof that MACV's reports could hide a massacre never reaches the press
+- P011a (memo 011) depends — A president whose word is believed at home can spend that credit on Saigon's behalf
 
 ## INTL.communist_aid — Soviet and Chinese aid to the North
 *Higher means more aid.*
@@ -517,3 +543,8 @@
 - P004a (memo 004) depends — Weapons-for-money and Chieu Hoi rewards meet a market in which a modern carbine is the most valuable thing a man can carry
 - P006a (memo 006) pushes +1 [old band ≈ +2..+4] — Targeted offers to named cadres and exploitation of each rallier's knowledge
 - P006a (memo 006) depends — Ralliers are the richest source of the network map
+
+## NEGOT.position — US and GVN negotiating position
+*Higher means stronger position against Hanoi.*
+
+- P011a (memo 011) pushes +1..+3 (low) — Hanoi reads American paralysis in 1973–74 from Watergate; without it the threat of the B-52s returning is less obviously empty, though Case–Church still binds

@@ -4,7 +4,7 @@
 memo = "011"
 title = "American Political Tolerance Package: the Watergate break-in never happens, a quarter of the historical draftees serve as volunteers, and the My Lai massacre does not happen"
 received = "2026-11-24"
-status = "part1"
+status = "part2"
 version = "1.0.6"
 phases_changed = []
 links = ["005", "010"]
@@ -157,6 +157,23 @@ low = 0
 high = 1
 conf = "low"
 note = "One village in Quang Ngai not emptied by its allies; a trace in a province the Front had held for a generation"
+
+
+[[push]]
+provision = "P011a"
+var = "VNAF.capability.maintenance"
+low = 1
+high = 3
+conf = "low"
+note = "A larger FY1975 appropriation buys fuel and imported parts, the two things the domestic base could not stretch; fewer aircraft and helicopters grounded in the second half of 1974"
+
+[[push]]
+provision = "P011a"
+var = "ARVN.self_sufficiency.logistics"
+low = 0
+high = 2
+conf = "low"
+note = "Not self-sufficiency but its precondition in 1974: fuel for trucks and rounds for depots that the ration emptied; the dependence on Congress is unchanged"
 
 # ------------------------------------------------------------------ depends
 [[depend]]
