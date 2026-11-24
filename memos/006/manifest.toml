@@ -4,9 +4,9 @@
 memo = "006"
 title = "Phung Hoang (Phoenix) formalized and modernized from 1964; US unit rotation in place of individual replacement; a selected advisory corps on 18-month tours with 2026 training"
 received = "2026-11-24"
-status = "part2"
+status = "complete"
 version = "1.0.5"
-phases_changed = []
+phases_changed = ["P1", "P2", "P3", "P4", "P6"]
 links = ["002", "001"]           # 002 built the Special Branch, the census and the district chiefs that Phung Hoang sits on; 001's Aid Compliance Board is the lever the advisers carry
 
 [deviation]
