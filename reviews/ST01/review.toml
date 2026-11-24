@@ -1,8 +1,8 @@
 work = "ST01"
 kind = "ST"
-status = "open"
+status = "complete"
 after_memo = "011"
-done = [1]
+done = [1, 2]
 
 [[area]]
 slug = "air-war"
