@@ -1,0 +1,15 @@
+work = "ST01"
+kind = "ST"
+status = "open"
+after_memo = "011"
+done = [1]
+
+[[area]]
+slug = "air-war"
+name = "Air War"
+rerun = false
+
+[[area]]
+slug = "maritime-interdiction"
+name = "maritime interdiction"
+rerun = false
