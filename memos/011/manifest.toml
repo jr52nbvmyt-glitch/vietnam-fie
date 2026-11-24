@@ -1,0 +1,200 @@
+# Manifest for memorandum 011. Fill every field; `fie.py check` rejects blanks.
+# status and phases_changed are set by fie.py; leave them alone.
+
+memo = "011"
+title = "American Political Tolerance Package: the Watergate break-in never happens, a quarter of the historical draftees serve as volunteers, and the My Lai massacre does not happen"
+received = "2026-11-24"
+status = "part1"
+version = "1.0.6"
+phases_changed = []
+links = ["005", "010"]
+
+[deviation]
+part1 = "none"
+part2 = "none"
+part3 = "none"
+
+# The user's rulings, 24 Nov 2026, in the memorandum 011 thread [U]:
+#   1) "American Political Tolerance Package" is the name for the three items: three provisions.
+#   2) Watergate: the break-in never happens.
+#   3) Volunteers: reading A — the same men serve, a quarter of the historically inducted enlisted voluntarily instead; draft calls a quarter smaller; force size unchanged.
+#   4) My Lai: isolated and stipulated — only the Son My massacre of 16 Mar 1968 is removed, with no cause inside the war; other atrocities stay historical.
+
+[[provision]]
+id = "P011a"
+designation = "No Watergate: the Committee for the Re-election of the President's break-ins at the Democratic National Committee offices in the Watergate building, 28 May and 17 June 1972, never happen, and with them the arrests, the cover-up, the Senate Watergate Committee, the special prosecutor, the impeachment proceedings and the resignation; Richard Nixon serves his second term to 20 January 1977"
+category = "other"
+quantity = "Both break-ins removed [U]; everything that followed from them removed with them; the abuses before May 1972 (the 1969 wiretaps, the 1971 'plumbers') stay in the war but are never exposed by a Watergate investigation [E: D1 reading]"
+ceiling_spaces = "0 [U]"
+arrival = "1972-05-28"
+in_service = "Counterfactual removal of a historical event; no real-world equivalent"
+systems = ["SUSTAIN"]
+status = "active"
+
+[[provision]]
+id = "P011b"
+designation = "Volunteers in place of a quarter of the draft: of the men historically inducted by the Selective Service System from 1964 to the end of inductions in 1973, one in four enlists voluntarily instead; the same men serve, in the same services, specialties, terms and tours; Selective Service draft calls are a quarter smaller in every month"
+category = "institutional"
+quantity = "One quarter of historical inductions [U]: about 464,000 of the 1,857,304 men inducted Aug 1964 – Feb 1973 [D]; draft calls a quarter smaller in each year, from about 84,000 instead of 112,386 in 1964 to about 287,000 instead of 382,010 at the 1966 peak and about 37,000 instead of 49,514 in 1972 [D]"
+ceiling_spaces = "0 [U]"
+arrival = "1964-01-01"
+in_service = "Counterfactual change to the historical draft; no real-world equivalent"
+systems = ["SUSTAIN"]
+status = "active"
+
+[[provision]]
+id = "P011c"
+designation = "No My Lai: the killing of the villagers of Son My village (My Lai 4 and My Khe), Son Tinh District, Quang Ngai Province, by Company C, 1st Battalion, 20th Infantry and Company B, 4th Battalion, 3rd Infantry, 11th Infantry Brigade, Americal Division, on 16 March 1968 does not happen; isolated and stipulated, with no cause inside the war; other atrocities stay historical"
+category = "other"
+quantity = "One event removed [U]: the 347–504 villagers killed historically [H] live; the cover-up, the Ridenhour letters, the Hersh report, the Peers inquiry and the Calley court-martial do not occur [D]"
+ceiling_spaces = "0 [U]"
+arrival = "1968-03-16"
+in_service = "Counterfactual removal of a historical event; no real-world equivalent"
+systems = ["SECURE", "SUSTAIN"]
+status = "active"
+
+# ------------------------------------------------------------------ pushes
+[[push]]
+provision = "P011a"
+var = "US.political_tolerance.administration"
+low = 4
+high = 7
+conf = "medium"
+note = "From mid-1973 the President keeps his authority, his staff and his attention; the man who wrote Thieu his assurances is still in office to keep them, as far as Congress lets him"
+
+[[push]]
+provision = "P011a"
+var = "US.political_tolerance.congress"
+low = 2
+high = 4
+conf = "low"
+note = "A smaller 1974 midterm swing and no Republican collapse in 1973–74; Case–Church probably still passes, the War Powers override and the depth of the 1974–75 aid cuts are what is at stake"
+
+[[push]]
+provision = "P011a"
+var = "US.political_tolerance.public"
+low = 0
+high = 1
+conf = "medium"
+note = "The 'mistake' share stood at about 60% in 1971 and in 1973 before Watergate peaked; the scandal moved trust in the President, not opinion of the war"
+
+[[push]]
+provision = "P011a"
+var = "NEGOT.position"
+low = 1
+high = 3
+conf = "low"
+note = "Hanoi reads American paralysis in 1973–74 from Watergate; without it the threat of the B-52s returning is less obviously empty, though Case–Church still binds"
+
+[[push]]
+provision = "P011a"
+var = "GVN.political_stability"
+low = 0
+high = 2
+conf = "low"
+note = "Thieu's government keeps faith longer in the assurances it was given; the panic of 1975 starts from a firmer belief that Washington will act"
+
+[[push]]
+provision = "P011b"
+var = "US.political_tolerance.public"
+low = 1
+high = 3
+conf = "medium"
+note = "A quarter fewer induction notices in every town every month; fewer families whose son was taken against his will, fewer draftee dead; the draft was the war's sharpest domestic grievance"
+
+[[push]]
+provision = "P011b"
+var = "US.political_tolerance.congress"
+low = 0
+high = 2
+conf = "low"
+note = "Smaller draft calls take some heat out of the extension fights of 1967 and 1971 and of the constituency mail; Congress votes on the war for reasons the draft only sharpens"
+
+[[push]]
+provision = "P011b"
+var = "US.unit_quality"
+low = 1
+high = 3
+conf = "medium"
+note = "The same men in the same rifle squads, but a quarter of the Army's draftees now chose to be there; fewer reluctant men in the companies of 1969–71, when indiscipline peaked"
+
+[[push]]
+provision = "P011c"
+var = "POP.civilian_harm"
+low = -1
+high = -1
+conf = "high"
+note = "347–504 villagers of Son My live; a trace against the civilian dead of the whole war, which is the honest weight"
+
+[[push]]
+provision = "P011c"
+var = "US.credibility_gap"
+low = -3
+high = -1
+conf = "medium"
+note = "No cover-up to come apart in November 1969: the starkest single proof that MACV's reports could hide a massacre never reaches the press"
+
+[[push]]
+provision = "P011c"
+var = "US.political_tolerance.public"
+low = 0
+high = 2
+conf = "low"
+note = "Mass opinion sided with Calley in 1971; the damage My Lai did was to elite, press and congressional opinion and to the moral case against the war, which loses its emblem"
+
+[[push]]
+provision = "P011c"
+var = "US.unit_quality"
+low = -1
+high = 1
+conf = "low"
+note = "No massacre and no stain, but also no Peers inquiry and no reckoning with the command climate that produced it; direction uncertain"
+
+[[push]]
+provision = "P011c"
+var = "POP.gvn_legitimacy.I_corps"
+low = 0
+high = 1
+conf = "low"
+note = "One village in Quang Ngai not emptied by its allies; a trace in a province the Front had held for a generation"
+
+# ------------------------------------------------------------------ depends
+[[depend]]
+provision = "P011a"
+var = "US.political_tolerance"
+note = "Everything it buys is a change in what Washington will grant in 1973–75"
+
+[[depend]]
+provision = "P011a"
+var = "ARVN.self_sufficiency"
+note = "Aid money matters only as far as the RVNAF can turn it into fire, fuel and spares; the 1974 ration is where the provision bites"
+
+[[depend]]
+provision = "P011a"
+var = "HANOI.will"
+note = "The enforcement threat works only if the Politburo believes it; Resolution 21 and the 1975 calendar are the test"
+
+[[depend]]
+provision = "P011a"
+var = "US.credibility_gap"
+note = "A president whose word is believed at home can spend that credit on Saigon's behalf"
+
+[[depend]]
+provision = "P011b"
+var = "US.casualties"
+note = "The draftee dead are what made the draft a political wound; its effect scales with the casualty lists"
+
+[[depend]]
+provision = "P011b"
+var = "US.personnel_demand"
+note = "The size of the draft calls follows the size of the force; under no troop ceiling the calls are as large as history's, less a quarter"
+
+[[depend]]
+provision = "P011c"
+var = "POP.civilian_harm"
+note = "Removing one massacre changes nothing about the conditions that produce others; the effect depends on how isolated it really is"
+
+[[depend]]
+provision = "P011c"
+var = "US.unit_quality"
+note = "The NCO and officer reforms of memoranda 007, 009 and 010 already act on the Americal Division's companies; this removal sits on top of them"
