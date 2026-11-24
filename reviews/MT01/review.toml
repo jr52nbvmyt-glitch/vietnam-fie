@@ -1,0 +1,4 @@
+work = "MT01"
+kind = "MT"
+status = "open"
+after_memo = "007"
