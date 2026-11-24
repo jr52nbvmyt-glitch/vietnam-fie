@@ -3,7 +3,7 @@
 memo = "010"
 title = "NCO education to the 2026 US standard for every US and RVNAF regular NCO from 1957, each course a gate for the next promotion"
 received = "2026-11-24"
-status = "part1"
+status = "part2"
 version = "1.0.5"
 phases_changed = []
 links = ["006", "007", "009"]
@@ -143,3 +143,13 @@ note = "The schooled PF platoon leader matters only in a hamlet his platoon hold
 provision = "P010b"
 var = "GVN.admin_capacity"
 note = "Province and district chiefs control RF/PF manning and must release territorial NCOs to the courses (E03)"
+
+[[depend]]
+provision = "P010b"
+var = "STRIKE.responsiveness"
+note = "The American course teaches the squad leader to fix and call fire; his competence depends on fire the RVNAF does not own (F010-24)"
+
+[[depend]]
+provision = "P010b"
+var = "ARVN.self_sufficiency"
+note = "The schooled squad fights best with American fire and helicopters behind it; in 1974–75 it has been taught a way of war its army cannot supply (F010-24)"
