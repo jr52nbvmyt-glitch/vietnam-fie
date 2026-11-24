@@ -3,9 +3,9 @@
 memo = "008"
 title = "A South Vietnamese industrial base one generation above 1964, standing from 1 January 1964: metallurgy and machining; electronics manufacturing"
 received = "2026-11-24"
-status = "part2"
+status = "complete"
 version = "1.0.5"
-phases_changed = []
+phases_changed = ["P1", "P2", "P4", "P6"]
 links = ["004", "002", "006"]
 
 [deviation]
