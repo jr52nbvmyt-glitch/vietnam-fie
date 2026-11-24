@@ -6,8 +6,8 @@
 
 | Phase | Enemy | Allied | Both | Neither | Untagged |
 |---|---|---|---|---|---|
-| P1 | 7 | 17 | 4 | 3 | 11 |
-| P2 | 7 | 9 | 3 | 3 | 21 |
+| P1 | 7 | 15 | 4 | 3 | 15 |
+| P2 | 6 | 10 | 4 | 3 | 22 |
 | P3 | 6 | 3 | 0 | 0 | 9 |
 | P4 | 0 | 8 | 1 | 3 | 13 |
 | P5 | 6 | 3 | 0 | 0 | 3 |
@@ -85,40 +85,40 @@ The steelworks ran on electricity it did not make, and the Front found that out 
 
 On 19 October 1965 the PAVN B3 Front under Major General Chu Huy Man attacked the Special Forces camp at Plei Me, south of Pleiku, and the next day ambushed the ARVN relief column; the relief reached the camp at dusk on 25 October and the PAVN withdrew west towards the Chu Pong massif on the Cambodian border¹¹. The 1st Cavalry Division (Airmobile), newly arrived, was turned loose in pursuit.
 
+### The frontier battles of 1966–67: Masher/White Wing, the Hill Fights, Con Thien and Dak To
+*24 Jan 1966 – 23 Nov 1967 · The Bong Son plain and the An Lao valley, Binh Dinh Province; the hills northwest of Khe Sanh and Con Thien, Quang Tri Province; Dak To, Kontum Province · P2 · changed from history · EVCP02-3*
+
+Four battles of the frontier war are told here as one event, because each was won on the ground and none changed who chose the next. In **Masher/White Wing**, 24 January – 6 March 1966, the 1st Cavalry Division with the ARVN 22nd Division, an airborne brigade and the ROK Capital Division swept the Bong Son plain and the valleys behind it against the PAVN 3rd (Sao Vang) Division, about 6,000 men, while the Marines ran Double Eagle to the north¹².
+
 ### The mines of Dien Ban
 *1 Mar 1966 – 31 Dec 1967 · Dien Ban, Dai Loc and Duy Xuyen Districts, Quang Nam Province, south of Da Nang between Route 1 and the Song Thu Bon; Son Tinh and Binh Son Districts, Quang Ngai Province · P2 · new · EV009-2*
 
-The enemy's answer to the trained soldier was not to fight him; it was to kill him without fighting, and nowhere did that answer cost more than in the hamlets south of Da Nang. In late 1965 the command of the Quang Da Special Zone, under the Military Region 5 Party Committee, reviewed a year of contacts with ARVN battalions and American Marines in Dien Ban and Dai Loc, and concluded that its local-force companies were losing more than they gained in firefights with units that returned aimed fire in the first seconds and did not bunch up when they were hit¹².
+The enemy's answer to the trained soldier was not to fight him; it was to kill him without fighting, and nowhere did that answer cost more than in the hamlets south of Da Nang. In late 1965 the command of the Quang Da Special Zone, under the Military Region 5 Party Committee, reviewed a year of contacts with ARVN battalions and American Marines in Dien Ban and Dai Loc, and concluded that its local-force companies were losing more than they gained in firefights with units that returned aimed fire in the first seconds and did not bunch up when they were hit¹³.
 
 ### Operation OPEN ROAD
 *3–21 May 1966 · Route 13 from Chon Thanh to An Loc, the Xa Cam rubber and the Tau O crossing, Binh Long Province; Bau Bang, Binh Duong Province · P2 · new · EV007-3*
 
-The ambush that was never sprung on Route 13 is the clearest case in this war of what the officer reforms did and why no report showed it. In April 1966 the VC 9th Division ordered its 272nd Regiment, three battalions of about 1,500 men with 82mm mortars, 75mm recoilless rifles and RPD guns, to lay an ambush on Route 13 between Chon Thanh and An Loc for the next ARVN convoy to the Binh Long garrison, on the road where the regiment had broken relief columns in 1965¹³.
+The ambush that was never sprung on Route 13 is the clearest case in this war of what the officer reforms did and why no report showed it. In April 1966 the VC 9th Division ordered its 272nd Regiment, three battalions of about 1,500 men with 82mm mortars, 75mm recoilless rifles and RPD guns, to lay an ambush on Route 13 between Chon Thanh and An Loc for the next ARVN convoy to the Binh Long garrison, on the road where the regiment had broken relief columns in 1965¹⁴.
 
 ### The relief at Dien Ban
 *8–31 Aug 1966 · Dien Ban and Dai Loc Districts, Quang Nam Province, south of Da Nang between Route 1 and the Song Thu Bon · P2 · new · EV006-3*
 
-The relief at Dien Ban was the first time the enemy attacked an American battalion in the week it changed over, and it showed both halves of what unit rotation had done. The 1st Battalion, 9th Marines had come ashore at Da Nang in July 1965 and had spent a year in the hamlets of Dien Ban south of the airfield, the same companies under the same commander throughout¹⁴.
+The relief at Dien Ban was the first time the enemy attacked an American battalion in the week it changed over, and it showed both halves of what unit rotation had done. The 1st Battalion, 9th Marines had come ashore at Da Nang in July 1965 and had spent a year in the hamlets of Dien Ban south of the airfield, the same companies under the same commander throughout¹⁵.
 
 ### Operation STEADY HAND
 *14–19 Nov 1966 · Cai Be District, Dinh Tuong Province, between Route 4 and the Plain of Reeds; the hamlets of Hau My village · P2 · new · EV010-3*
 
-The rice was the reason for both sides. The Mekong flood of September and October 1966 had drowned much of the Plain of Reeds and the main-season crop in the districts north of Route 4, and the Front's Dinh Tuong provincial committee, its own stocks lost in the water, ordered the 263rd Main Force Battalion in late October to escort its rice levy in the hamlets of Cai Be as the harvest came in¹⁵.
+The rice was the reason for both sides. The Mekong flood of September and October 1966 had drowned much of the Plain of Reeds and the main-season crop in the districts north of Route 4, and the Front's Dinh Tuong provincial committee, its own stocks lost in the water, ordered the 263rd Main Force Battalion in late October to escort its rice levy in the hamlets of Cai Be as the harvest came in¹⁶.
 
 ### The Mo Duc raid and the Phoenix story
 *11 Feb – 30 Jun 1967 · Duc Thanh village, Mo Duc District, Quang Ngai Province; Saigon; Hanoi; Washington · P2 · new · EV006-4*
 
-The raid at Duc Thanh was what the method became where the night was not held, and it reached the American press within a month. By the end of 1966 the held belt had little left for the district centres to find, and the corps commanders and the CORDS planners wanted the same results from the contested provinces of I and II Corps, where the Front still ran most villages after dark¹⁴.
+The raid at Duc Thanh was what the method became where the night was not held, and it reached the American press within a month. By the end of 1966 the held belt had little left for the district centres to find, and the corps commanders and the CORDS planners wanted the same results from the contested provinces of I and II Corps, where the Front still ran most villages after dark¹⁵.
 
 ### The night of the relief at My Phuoc Tay
 *9–10 Mar 1967 · The PF post at Ap My Loi and the canal road to Cai Lay district town, My Phuoc Tay village, Cai Lay District, Dinh Tuong Province · P2 · new · EV008-4*
 
-This is the night the radio's second-order effect became visible, and the night that shows it best. By 1967 every Popular Forces post in the held belt of Dinh Tuong had a set on the district net, a PRC-25 from the Go Vap plant since the previous autumn, and a fresh battery every Thursday from the exchange at the district¹⁶.
-
-### Operation Buffalo and the siege of Con Thien
-*2 Jul – 31 Oct 1967 · Con Thien and "the Marketplace", Quang Tri Province, south of the DMZ · P2 · changed from history · EV000-36*
-
-Con Thien, a low hill 2 miles south of the DMZ and the western anchor of the planned strongpoint barrier, was the most exposed Marine position in the country, within range of PAVN artillery north of the Ben Hai. On 2 July 1967, at a place the Marines called the Marketplace, PAVN forces ambushed and nearly destroyed Company B, 1st Battalion, 9th Marines; it was the single worst day for the Marines in Vietnam, with 86 killed¹⁷.
+This is the night the radio's second-order effect became visible, and the night that shows it best. By 1967 every Popular Forces post in the held belt of Dinh Tuong had a set on the district net, a PRC-25 from the Go Vap plant since the previous autumn, and a fresh battery every Thursday from the exchange at the district¹⁷.
 
 ### The siege of Khe Sanh
 *21 Jan – 15 Apr 1968 · Khe Sanh Combat Base, Lang Vei and the surrounding hills, Quang Tri Province; Route 9 in Laos to Ban Houei Sane · P3 · changed from history · EV000-41*
@@ -133,7 +133,7 @@ Shortly after midnight on 30 January, a day early because of a confusion in cale
 ### The posts of Cai Lay at Tet
 *30 Jan – 2 Feb 1968 · Cai Lay and Cai Be Districts, Dinh Tuong Province; the post at Ap My Loi, My Phuoc Tay; the posts along the canal and Route 4 east to My Tho · P3 · new · EV010-4*
 
-The Front's battalions came through Cai Lay to attack My Tho, and most of the posts on the way were left alone. The 514th Local Force Battalion and the 261st and 263rd Main Force Battalions moved east toward the province capital on the nights of 29–31 January, along the canals north of Route 4, and the Dinh Tuong command's order was to isolate the posts on the route rather than take them, because the battalions needed to reach My Tho intact¹⁵.
+The Front's battalions came through Cai Lay to attack My Tho, and most of the posts on the way were left alone. The 514th Local Force Battalion and the 261st and 263rd Main Force Battalions moved east toward the province capital on the nights of 29–31 January, along the canals north of Route 4, and the Dinh Tuong command's order was to isolate the posts on the route rather than take them, because the battalions needed to reach My Tho intact¹⁶.
 
 ### The battle of Hue
 *31 Jan – 2 Mar 1968 · Hue, Thua Thien Province · P3 · changed from history · EV000-44*
@@ -148,7 +148,7 @@ The third phase of the general offensive began in mid-August with attacks by fir
 ### The self-defence hamlets
 *17 Aug – 31 Oct 1968 · Duc Hue and Trang Bang Districts, Hau Nghia Province; Can Duoc and Rach Kien, Long An Province; Cai Be and Cai Lay Districts, Dinh Tuong Province · P3 · new · EV009-4*
 
-The third offensive went for what the course did not reach, and in the provinces around Saigon that was the People's Self-Defense Force. COSVN's Military Affairs Committee, planning the offensive of August after two waves that had broken on the district towns' walls, ordered its subregions to avoid the RF and PF posts that had held in February and May and to strike the new self-defence groups of the mobilization law, whose members were townsmen and farmers with a Garand and three days' instruction¹².
+The third offensive went for what the course did not reach, and in the provinces around Saigon that was the People's Self-Defense Force. COSVN's Military Affairs Committee, planning the offensive of August after two waves that had broken on the district towns' walls, ordered its subregions to avoid the RF and PF posts that had held in February and May and to strike the new self-defence groups of the mobilization law, whose members were townsmen and farmers with a Garand and three days' instruction¹³.
 
 ### Commando Hunt and the growth of the Trail
 *10 Oct 1970 – Dec 1971 · The Laotian panhandle and northeastern Cambodia · P4 · changed from history · EV000-68*
@@ -239,6 +239,8 @@ By late April five PAVN corps, Group 232 and the 1st, 2nd, 3rd and 4th Corps, wi
 - **POS009-1** · vars: ARVN.effectiveness, RFPF.effectiveness, ENEMY.engagement_control · Basic training changes how the fights the enemy accepts go and how many wounded live after them, never which fights he accepts; in this war the ARVN of 1964–65 stands a band above history on the course, the carbine and the educated lieutenant together, and the enemy answers the trained soldier with the mine, the sapper and the untrained target (009 §4.P1, §4.P2; EV002-2, EV009-2, EV009-4)
 - **POS009-3** · vars: ARVN.desertion, ECON.inflation, VCI.strength · Training does not reach desertion, which follows the soldier's pay, rice and family; the trained deserter carries the course home, and a few hundred a year in the Saigon belt carry it to the Front's guerrillas (009 §4.P2; EV009-3)
 - **POS010-1** · vars: ARVN.effectiveness, RFPF.effectiveness, ENEMY.engagement_control · In this war every RVNAF and territorial NCO since 1957 has passed the course for his grade, and empty squads are given to corporals first class who passed the leader's course; this changes how squads and posts fight the fights the enemy accepts, never which fights he accepts, and the enemy answers by passing the units that keep the routine and attacking those that do not, so the gain appears as companies not destroyed and posts not attacked (010 F010-19, F010-25; EV010-3, EV010-4)
+- **POSCP02-1** · vars: ARVN.effectiveness, ENEMY.engagement_control · In this war the ARVN battalion of 1966–68 stands at the cap of the bands through four memoranda (007, 009, 010 and 004 before them), and the battalions broken in 1966–67 are about two-fifths to a half fewer than history's, a judgment whose factors overlap and whose upper bound is the "about half" of 010; any further provision on the battalion is measured in that running sum and not in the band, and none of it changes which fights the enemy accepts (CP02 §3, §5)
+- **POSCP02-2** · vars: ENEMY.engagement_control, POP.civilian_harm, VCI.strength · Every provision since 004 that improved the RVNAF below the company was answered by the enemy moving his war to what the provision did not reach: the relief, the borrowed district, the mine in the hamlet, the untrained self-defence group; the provisions' gain in the army is paid for in part by the unprotected population, and every later provision touching the army or the posts names the target the enemy moves to and estimates the cost there (CP02 §1, §6; EV008-4, EV009-2, EV009-4, EV010-4)
 
 ## Notes
 
@@ -253,12 +255,12 @@ By late April five PAVN corps, Group 232 and the 1st, 2nd, 3rd and 4th Corps, wi
 9. Source: "Battle of Dong Xoai" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Dong_Xoai — units, sequence, casualties by source, 173rd Airborne Brigade commitment, Medals of Honor
 10. From memorandum 008's record.
 11. Source: "Battle of Ia Drang" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Ia_Drang — Plei Me, LZ X-Ray and LZ Albany, units, B-52 support, casualties by source
-12. The exercise's own judgment (memo 009), not a measured figure.
-13. The exercise's own judgment (memo 007), not a measured figure.
-14. The exercise's own judgment (memo 006), not a measured figure.
-15. The exercise's own judgment (memo 010), not a measured figure.
-16. The exercise's own judgment (memo 008), not a measured figure.
-17. Source: "Con Thien" — Wikipedia, https://en.wikipedia.org/wiki/Con_Thien — Operation Buffalo, the Marketplace, September–October 1967 bombardment, supporting fires
+12. Source: "Operation Masher" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Masher — dates, units, casualties by source, displacement, renaming, aftermath
+13. The exercise's own judgment (memo 009), not a measured figure.
+14. The exercise's own judgment (memo 007), not a measured figure.
+15. The exercise's own judgment (memo 006), not a measured figure.
+16. The exercise's own judgment (memo 010), not a measured figure.
+17. The exercise's own judgment (memo 008), not a measured figure.
 18. Source: "Battle of Khe Sanh" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Khe_Sanh — siege dates, 26th Marines, PAVN divisions, Operation Niagara, air resupply, Lang Vei, Operation Pegasus, casualties by source, evacuation, the diversion debate
 19. Source: "Tet Offensive" (planning background) — Wikipedia, https://en.wikipedia.org/wiki/Tet_Offensive — Nguyen Chi Thanh, COSVN proposal, Revisionist Anti-Party Affair, October 1967 decision, Westmoreland's 21 Nov 1967 speech, MACV–CIA order-of-battle dispute
 20. Source: "Battle of Hue" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Hu%E1%BA%BF — dates, PAVN/VC, ARVN and US units, casualties by source, civilian dead and executions
