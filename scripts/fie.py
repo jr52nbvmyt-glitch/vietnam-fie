@@ -8,6 +8,7 @@ builds every generated view, so nothing is ever regenerated from memory.
 Standard library only (Python 3.11+). Run from anywhere inside the repository.
 
 Commands
+  boot COMMAND                        a thread's whole first turn in one call: sync main, status, rules, procedure, pack
   status                              version, config and exercise state (run first in every thread)
   new                                 open the next memorandum: memos/NNN/
   pack NNN --part 2|3                 build the context pack for Part 2 or Part 3
@@ -488,6 +489,110 @@ def review_tokens(prefix: str) -> list[str]:
 def review_done(token: str) -> bool:
     p = work_dir(token) / "review.toml"
     return p.exists() and load_toml(p).get("status") == "complete"
+
+
+def git_commit_push(msg: str) -> bool:
+    """Commit everything and push straight to main. Returns True on success."""
+    git("add", "-A")
+    if git("status", "--porcelain"):
+        r = subprocess.run(["git", "commit", "-q", "-m", msg], cwd=ROOT, capture_output=True, text=True)
+        if r.returncode:
+            subprocess.run(["git", "config", "user.name", "COMUSMACV (Claude)"], cwd=ROOT)
+            subprocess.run(["git", "config", "user.email", "noreply@anthropic.com"], cwd=ROOT)
+            r = subprocess.run(["git", "commit", "-q", "-m", msg], cwd=ROOT, capture_output=True, text=True)
+            if r.returncode:
+                print(f"COMMIT FAILED: {r.stderr.strip()}")
+                return False
+    for attempt in (1, 2):
+        r = subprocess.run(["git", "-c", "push.negotiate=true", "push", "origin", "HEAD:main"], cwd=ROOT,
+                           capture_output=True, text=True, timeout=300)
+        if r.returncode == 0:
+            print(f"Committed and pushed to main: {msg}")
+            return True
+        if "rejected" in r.stderr or "non-fast-forward" in r.stderr or "fetch first" in r.stderr:
+            print("PUSH REJECTED: main has moved — two pieces of work ran at once. Stop and tell the user; do not merge.")
+            return False
+    print(f"PUSH FAILED twice: {r.stderr.strip()[-300:]} — tell the user; the work is committed locally only.")
+    return False
+
+
+def open_work() -> tuple[str, str] | None:
+    """(kind, token) of unfinished work, if any."""
+    for t in memo_tokens():
+        st = load_toml(work_dir(t) / "manifest.toml").get("status", "open")
+        if st != "complete":
+            return ({"open": "part1", "part1": "part2", "part2": "part3"}[st], t)
+    for base in [ROOT / "reviews", ROOT / "revisions"]:
+        for d in sorted(base.glob("*")) if base.exists() else []:
+            rt = d / "review.toml"
+            if rt.exists() and load_toml(rt).get("status") != "complete":
+                return ("review", d.name)
+    have = [p for p in phase_ids() if parse_events(parse_chapter(read(CHAP / f"{p}.md"))[2])]
+    if 0 < len(have) < len(phase_ids()):
+        return ("baseline", "000")
+    return None
+
+
+def cmd_boot(a):
+    """Everything a thread's first turn needs, in one call: sync main, status, rules, the procedure, the pack."""
+    out = []
+    if git("rev-parse", "--abbrev-ref", "HEAD") != "main":
+        r = subprocess.run(["git", "checkout", "main"], cwd=ROOT, capture_output=True, text=True)
+        if r.returncode:
+            subprocess.run(["git", "checkout", "-b", "main", "origin/main"], cwd=ROOT, capture_output=True, text=True)
+    r = subprocess.run(["git", "pull", "--ff-only", "origin", "main"], cwd=ROOT, capture_output=True, text=True, timeout=300)
+    if r.returncode:
+        print("STOP: `git pull --ff-only origin main` failed — the record has diverged or is unreachable. Tell the user.\n" + r.stderr[-400:])
+        sys.exit(1)
+    print("=" * 30 + " STATUS")
+    cmd_status(None)
+    cmd = a.command.lower()
+    ow = open_work()
+    proc, pack = None, None
+    if cmd in ("provision", "new"):
+        proc = ["PART1.md"]
+        if ow:
+            print(f"\nNOTE: {ow[1]} is open ({ow[0]}). Ask the user whether to finish it first.")
+    elif cmd in ("continue", "c"):
+        if not ow:
+            print("\nNothing is open. Ask the user what to do.")
+        elif ow[0] in ("part2", "part3"):
+            proc = [f"PART{ow[0][-1]}.md"]
+            pack = (ow[1], int(ow[0][-1]))
+        elif ow[0] == "part1":
+            proc = ["PART1.md"]
+        elif ow[0] == "baseline":
+            proc = ["BASELINE.md"]
+        else:
+            tok = ow[1]
+            proc = [{"CP": "CHECKPOINT.md", "MT": "META.md", "TN": "TNA.md"}.get(tok[:2], "REVISIONS.md")]
+            if tok[:2] in ("CP", "MT"):
+                pack = (tok, 0)
+        if ow:
+            print(f"\nCONTINUE resumes {ow[1]} at {ow[0]}.")
+    else:
+        proc = [{"baseline": "BASELINE.md", "tna": "TNA.md", "checkpoint": "CHECKPOINT.md", "meta": "META.md",
+                 "veto": "REVISIONS.md", "erratum": "REVISIONS.md"}.get(cmd, "")]
+        if not proc[0]:
+            die(f"unknown command '{a.command}' (provision, continue, baseline, tna, checkpoint, meta, veto, erratum)")
+    files = ["rules/RULES.md", "rules/VOICE.md", "rules/CONFIG.toml", "schema/FORMATS.md"]
+    if proc and proc[0] == "PART1.md":
+        files.append("schema/VARIABLES.toml")
+    files += [f"procedures/{p}" for p in proc or []]
+    for f in files:
+        print("\n" + "=" * 30 + f" {f}\n" + read(ROOT / f))
+    if pack:
+        tok, part = pack
+        if part:
+            if (work_dir(tok) / "manifest.toml").exists():
+                build_all(quiet=True)
+                cmd_pack(argparse.Namespace(work=tok, part=part))
+                pth = BUILD / "packs" / f"PACK-{tok}-part{part}.md"
+        else:
+            cmd_pack(argparse.Namespace(work=tok, part=0))
+            pth = BUILD / "packs" / f"PACK-{tok}.md"
+        print("\n" + "=" * 30 + f" {rel(pth)}\n" + read(pth))
+    print("\n" + "=" * 30 + " END OF BOOT. Everything above is loaded: do not read these files again in this thread.")
 
 
 def cmd_status(_):
@@ -1413,8 +1518,11 @@ def cmd_finish(a):
             print(f"Created {rel(nxt)} from the template")
     build_all(quiet=True)
     print(f"\nFinished Part {part} of memo {tok}.")
+    if getattr(a, "push", False):
+        git_commit_push(f"Memo {tok} Part {part}: {m.get('title', '')}")
     print(f"Send the user: build/memos/{tok}/Part-{part}.md" + (f" · build/memos/{tok}/MEMO-{tok}.md · build/WAR-HISTORY.md · history/TRAJECTORY-LOG.md" if part == 3 else ""))
-    print(f"Then: git add -A && git commit -m \"Memo {tok} Part {part}\" && git push origin main")
+    if not getattr(a, "push", False):
+        print(f"Then: git add -A && git commit -m \"Memo {tok} Part {part}\" && git push origin main")
 
 
 # ----------------------------------------------------------------------------- baseline and reviews
@@ -1469,6 +1577,8 @@ def cmd_baseline(a):
         write(path, f"+++\n{fm_raw}\n+++\n{EVENT_HDR.sub(fix, body)}")
     write(HIST / ".last_work", "000\n")
     build_all(quiet=True)
+    if getattr(a, "push", False):
+        git_commit_push("Baseline finished")
     print("Baseline finished. Send the user build/WAR-HISTORY.md, then: git add -A && git commit -m \"Baseline\" && git push origin main")
 
 
@@ -1515,6 +1625,8 @@ def cmd_review(a):
     rt = read(d / "review.toml") if (d / "review.toml").exists() else f'work = "{tok}"\nkind = "{kind}"\nstatus = "open"\nafter_memo = "000"\n'
     write(d / "review.toml", re.sub(r'^status\s*=.*$', 'status = "complete"', rt, flags=re.M))
     build_all(quiet=True)
+    if getattr(a, "push", False):
+        git_commit_push(f"{tok} finished")
     print(f"\n{tok} finished. Send the user its reading copy in build/reviews/{tok}/; then git add -A && git commit -m \"{tok}\" && git push origin main")
 
 
@@ -1790,13 +1902,19 @@ def main():
         p = sp.add_parser(name)
         p.add_argument("work")
         p.add_argument("--part", type=int, required=True)
+        p.add_argument("--push", action="store_true", help="after a clean finish, commit and push to main")
         p.set_defaults(f=fn)
+    p = sp.add_parser("boot")
+    p.add_argument("command", help="provision | continue | baseline | tna | checkpoint | meta | veto | erratum")
+    p.set_defaults(f=cmd_boot)
     p = sp.add_parser("baseline")
+    p.add_argument("--push", action="store_true")
     g = p.add_mutually_exclusive_group(required=True)
     g.add_argument("--init", action="store_true")
     g.add_argument("--finish", action="store_true")
     p.set_defaults(f=cmd_baseline)
     p = sp.add_parser("review")
+    p.add_argument("--push", action="store_true")
     p.add_argument("work")
     g = p.add_mutually_exclusive_group(required=True)
     g.add_argument("--init", action="store_true")

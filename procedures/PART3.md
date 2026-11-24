@@ -1,4 +1,4 @@
-<!-- fie v1.0.3 -->
+<!-- fie v1.0.4 -->
 # Part 3 — §4 The course of the war · §5 Delta ledger · §6 Changed / not changed
 
 **Trigger:** `CONTINUE` when the open memorandum's status is `part2`.
@@ -9,13 +9,13 @@
 ## Steps
 
 1. This is a fresh thread. Do not read the part files: the pack carries this memorandum's own card, with its findings. Read `memos/NNN/manifest.toml`.
-2. `python3 scripts/fie.py pack NNN --part 3`, then read `build/packs/PACK-NNN-part3.md`.
+2. The pack (`build/packs/PACK-NNN-part3.md`) was printed by `boot`; it is already read.
 3. **Read the war.** The pack holds exact digests of every chapter — overview, every event's header, how the phase ends, end vector. From them decide which phases this provision materially changes (materiality rule below), then read those chapters in full, and the one before each for its ending. Small histories are read whole; the pack says which mode applies.
 4. **Write the changes to the war** into `memos/NNN/amend.md` in one Write call and apply them with `python3 scripts/fie.py amend NNN memos/NNN/amend.md`, which stages the chapters it touches — see *Changing the war*.
 5. For a small fix afterwards, edit the staged chapter in `memos/NNN/chapters/` directly; for anything larger, a second amend file.
 6. **Write `part3.md`** — see *The analysis*. Write §4.0 last of the §4 sections, after the chapters are edited, from the chapters.
 7. **End state.** If the war's end changes, edit `history/endstate.toml`: the fields, `last_changed = "NNN"`, and a new `[[history]]` entry (`by`, `rung`, `reason`).
-8. `python3 scripts/fie.py finish NNN --part 3`. It stamps the events you touched, promotes your chapters into `history/`, appends the log, positions and persons, and rebuilds the War History. Then commit, push, and send `build/memos/NNN/Part-3.md`, `build/WAR-HISTORY.md` and `history/TRAJECTORY-LOG.md`, and close.
+8. `python3 scripts/fie.py finish NNN --part 3 --push`. It stamps the events you touched, promotes your chapters into `history/`, appends the log, positions and persons, and rebuilds the War History, then commits and pushes. Then send `build/memos/NNN/Part-3.md`, `build/WAR-HISTORY.md` and `history/TRAJECTORY-LOG.md`, and close.
 
 ## Changing the war
 

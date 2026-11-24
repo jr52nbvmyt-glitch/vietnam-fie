@@ -1,4 +1,4 @@
-<!-- fie v1.0.3 -->
+<!-- fie v1.0.4 -->
 # Revisions — VETO and ERRATUM
 
 Finished parts are never edited. The war is changed only through its chapters; a finished record is corrected only by an erratum that points at it.
@@ -10,7 +10,7 @@ Finished parts are never edited. The war is changed only through its chapters; a
 3. Stage every chapter that must change: `python3 scripts/fie.py chapters Rnn Pk …`.
 4. Edit: the vetoed event becomes `CANCELLED`, its text saying it was vetoed. Rerun its consequences without it — every event that depended on it is altered or cancelled, and anything that now happens instead is a new event `EVRnn-k`. Update end vectors.
 5. Write `revisions/Rnn/part1.md`: what was vetoed, what changed in consequence (event by event), and the effect on the end state. If a settled position no longer holds, reverse it in a `<!-- positions -->` block. If the end state changes, edit `history/endstate.toml` (`by = "Rnn"`).
-6. `python3 scripts/fie.py review Rnn --finish`, commit, push, send the reading copy and `build/WAR-HISTORY.md`.
+6. `python3 scripts/fie.py review Rnn --finish --push`, send the reading copy and `build/WAR-HISTORY.md`.
 
 ## ERRATUM `<what is wrong>` — correct a finished record
 

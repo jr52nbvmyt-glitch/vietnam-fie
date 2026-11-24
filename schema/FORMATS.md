@@ -1,4 +1,4 @@
-<!-- fie v1.0.3 -->
+<!-- fie v1.0.4 -->
 # Record formats
 
 Everything `scripts/fie.py` reads is defined here. The script checks these formats; if a file breaks one, `fie.py check` says where. Read this before writing any part.

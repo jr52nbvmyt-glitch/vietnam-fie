@@ -3,7 +3,7 @@
 # scripts/fie.py reads this file: the floors below are the floors the checker enforces.
 # A value of "UNSET" blocks new memoranda until it is set (fie.py status reports it).
 
-version = "1.0.3"
+version = "1.0.4"
 
 era_default = "2026"              # provisions are 2026 configurations unless the provision names another era
 campaign_opens = "1964-01-01"     # COMUSMACV's opening date; no provision acts before its arrival date

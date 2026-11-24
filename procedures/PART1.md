@@ -1,4 +1,4 @@
-<!-- fie v1.0.3 -->
+<!-- fie v1.0.4 -->
 # Part 1 — Triage and §1 Provision dossier
 
 **Trigger:** a provision arrives and no memorandum is in progress.
@@ -17,7 +17,7 @@
 3. **Research the specifications.** Use web search and fetch: manufacturer data, service publications, official programme documents, reputable defence references. For an institutional or programme provision, the sources are its design, comparable real programmes, and the historical studies of the problem it addresses. Record every source you use in `sources.md` as `[S1] Title — publisher or URL — what it supports`, numbered in order of first use. Cite them in the text. Where no source gives a figure, estimate and tag `[E: basis]`. Never fabricate (A3a). **Budget the research:** about six searches or fetches per provision. Prefer one or two authoritative pages fetched over many searches; stop when every figure in D1–D8 has a source or an honest estimate. Search results stay in the context for the rest of the part, so each one costs again on every later tool call.
 4. **Write `memos/NNN/part1.md`** in one Write call, the whole part at once. The file exists from the template. For each provision, one section `## §1.<n> <full designation> — PNNNa` with all sixteen fields below as `### D<k> · <name>` headings. Never abbreviate a field, never write "as with the previous system" (C2, C3). Every figure carries a tag.
 5. **Card blocks.** D14, D15 and D16 are written inside their card blocks (the template places them), so the card takes them verbatim. After D16, fill `card:figures` with five to ten tagged bullets: the figures a later memorandum is most likely to need. Write card blocks to stand alone — a later memorandum sees only the card.
-6. `python3 scripts/fie.py finish NNN --part 1`, then commit, push, send `build/memos/NNN/Part-1.md`, and close (BOOTSTRAP, *Every turn*).
+6. `python3 scripts/fie.py finish NNN --part 1 --push`, then send `build/memos/NNN/Part-1.md`, and close (BOOTSTRAP, *Every turn*).
 
 ## The sixteen fields
 

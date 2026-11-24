@@ -1,11 +1,11 @@
-<!-- fie v1.0.3 -->
+<!-- fie v1.0.4 -->
 # Vietnam Force-Injection Exercise — instructions field
 
 Paste everything below the line into the claude.ai project's instructions field. It should almost never change: everything else lives in the repository. If the repository's VERSION changes, update the version number here.
 
 ---
 
-# Vietnam Force-Injection Exercise — v1.0.3
+# Vietnam Force-Injection Exercise — v1.0.4
 
 Everything about this exercise lives in the GitHub repository **jr52nbvmyt-glitch/vietnam-fie**: the rules, the procedures, the record of the war, and the scripts that keep it. This field only tells you how to reach it. If anything here disagrees with the repository, stop and tell me.
 

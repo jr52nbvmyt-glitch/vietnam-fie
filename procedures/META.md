@@ -1,4 +1,4 @@
-<!-- fie v1.0.3 -->
+<!-- fie v1.0.4 -->
 # META — Meta-checkpoint (B3)
 
 **Trigger:** `META` or `META-CHECKPOINT`, due after every `meta_every_checkpoints` checkpoints. Its own thread, two parts on `CONTINUE`. No new provision is introduced. This procedure carries the same authority as `rules/RULES.md`. **It is theater-specific** — its exploration dimensions are keyed to Vietnam.
@@ -48,4 +48,4 @@ Each item that produces substantive new analysis carries a **carriage directive*
 - A revised end-state call incorporating anything Part 1 or Part 2 changed (edit `history/endstate.toml`, `by = "MTnn"`, if it moves).
 - An honest assessment of the analysis's overall reliability — where it has been strongest, where weakest, and what the weaknesses imply for confidence in the current end-state call.
 - The count: *[N] contradictions found, [N] stale positions, [N] reversals, [N] standing directives issued, [N] dimensions explored.*
-- `python3 scripts/fie.py review MTnn --finish`, commit, push, send the reading copies (and `build/WAR-HISTORY.md` if chapters changed).
+- `python3 scripts/fie.py review MTnn --finish --push`, send the reading copies (and `build/WAR-HISTORY.md` if chapters changed).

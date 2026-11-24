@@ -1,4 +1,4 @@
-<!-- fie v1.0.3 -->
+<!-- fie v1.0.4 -->
 # CHECKPOINT — calibration of the analysis against the war it describes
 
 **Trigger:** `CHECKPOINT`, due every `checkpoint_every` complete memoranda (`fie.py status` says when). Its own thread, two parts on `CONTINUE`. No new provision is introduced.
@@ -26,4 +26,4 @@ A checkpoint costs the same every time: it reviews the memoranda since the last 
 11. **The bill.** What the force still lacks, ranked.
 12. **Phase redraw**, if a memorandum proposed one and the war warrants it (G2): edit `history/phases.toml` (rename, redate, add `P7`…, or set `retired = true`); run `python3 scripts/fie.py baseline --init`, which creates an empty chapter for any new phase and touches nothing else; stage every affected chapter and move events across by the CANCELLED/NEW rule in `procedures/PART3.md`; state in one line what each historical phase became.
 13. Any new settled position goes in a `<!-- positions -->` block; any correction to method in a `<!-- directives -->` block (`DIRCPnn-k`).
-14. `python3 scripts/fie.py review CPnn --finish`, commit, push, send the two reading copies and `build/WAR-HISTORY.md` if chapters changed, and close with the next memorandum number.
+14. `python3 scripts/fie.py review CPnn --finish --push`, send the two reading copies and `build/WAR-HISTORY.md` if chapters changed, and close with the next memorandum number.

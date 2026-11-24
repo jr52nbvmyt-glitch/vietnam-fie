@@ -1,5 +1,5 @@
-<!-- fie v1.0.3 -->
-# Design — Vietnam Force-Injection Exercise, v1.0.3
+<!-- fie v1.0.4 -->
+# Design — Vietnam Force-Injection Exercise, v1.0.4
 
 *Replaces the V2 project architecture. Written 21 November 2026 from the V2 problems briefing. Target model: Opus 5.5. Storage: this Git repository.*
 
@@ -129,6 +129,7 @@ The cost of a part is roughly its context multiplied by its tool calls, because 
 - **One amend file.** All of a memorandum's changes to the war go in one file applied by `fie.py amend`, instead of an edit call per change.
 - **Capped research.** About six searches or fetches per provision in Part 1.
 - **Effort by part.** Medium for research parts, high for reasoning parts.
+- **Fewer tool calls (v1.0.4).** Each call re-sends a fixed overhead of about 74,000 tokens. `fie.py boot` does a thread's whole first turn in one call (sync, status, rules, procedure, pack); `finish --push` checks, builds, commits and pushes in one; threads keep no task list. Target: about fifteen calls a part.
 
 ## 9. Starting up
 
