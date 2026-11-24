@@ -115,10 +115,13 @@
 | EV001-8 | P4 | 14 May – 9 Jul 1971 | The Commission placed under the Inspectorate | Saigon | NEW | 001 |
 | EV000-73 | P4 | Oct 1971 | Thieu's unopposed re-election | Republic of Vietnam | HIST | 000,001,007 |
 | EV000-74 | P5 | 30 Mar – 2 Apr 1972 | The Easter Offensive opens: the DMZ front | Quang Tri Province, from the DMZ to the Cua Viet and Camp Carroll | HIST-ALT | 000,003,007 |
+| EVMT01-1 | P5 | Apr – Aug 1972 | The northern districts of Binh Dinh | Hoai Nhon, Tam Quan and Hoai An districts, Binh Dinh Province | HIST-ALT | MT01 |
+| EVMT01-2 | P5 | Apr – Oct 1972 | The Delta during the offensive | Chuong Thien and Kien Giang provinces; the U Minh forest | HIST-ALT | MT01 |
 | EV000-75 | P5 | 5 Apr – 23 Oct 1972 | Freedom Train, Pocket Money and Linebacker | North Vietnam, Haiphong harbour and the approaches to the DMZ | HIST-ALT | 000,003,005 |
 | EV000-76 | P5 | 7 Apr – 18 Jun 1972 | Loc Ninh and the siege of An Loc | Loc Ninh and An Loc, Binh Long Province, on Route 13 | HIST-ALT | 000,003,005 |
 | EV000-77 | P5 | 24 Apr – 9 Jun 1972 | Tan Canh, Dak To and the battle of Kontum | Tan Canh, Dak To, Ben Het and Kontum city, Kontum Province | HIST-ALT | 000,005,007 |
 | EV000-78 | P5 | 27 Apr – 2 May 1972 | The fall of Quang Tri | Quang Tri City and Highway 1 south to the My Chanh River | HIST-ALT | 000,007 |
+| EVMT01-3 | P5 | Jun – Sep 1972 | The decree powers and the end of the hamlet elections | Saigon | HIST-ALT | MT01 |
 | EV000-79 | P5 | 28 Jun – 16 Sep 1972 | The recapture of Quang Tri City | Quang Tri Province south of the Thach Han River and the Quang Tri Citadel | HIST | 000 |
 | EV000-80 | P5 | Aug 1972 | The last American ground combat units leave | South Vietnam | HIST | 000 |
 | EV000-81 | P5 | 8 Oct – 13 Dec 1972 | The October agreement and Thieu's refusal | Paris, Saigon and Washington | HIST | 000 |
@@ -127,15 +130,16 @@
 | EV000-84 | P6 | 28 Jan – Dec 1973 | The ceasefire that never held | The countryside of South Vietnam | HIST-ALT | 000,006 |
 | EV000-85 | P6 | 12 Feb – 29 Mar 1973 | Operation Homecoming and the last American troops | Hanoi, Clark Air Base and Saigon | HIST | 000 |
 | EV000-86 | P6 | Jun – 7 Nov 1973 | Case–Church and the end of American combat in Indochina | Washington; Cambodia | HIST-ALT | 000,005 |
-| EV000-87 | P6 | Oct 1973 – 1974 | Resolution 21 and the North's rebuilding | Hanoi; the Laotian panhandle and the western Highlands | HIST | 000 |
+| EV000-87 | P6 | Oct 1973 – 1974 | Resolution 21 and the North's rebuilding | Hanoi; the Laotian panhandle and the western Highlands | HIST-ALT | 000,MT01 |
 | EV000-88 | P6 | Jan 1974 | Saigon declares the war resumed; the Paracels | Saigon; the Paracel Islands | HIST | 000 |
 | EV000-89 | P6 | 25 Jan – 9 Aug 1974 | The aid cuts and the shortages | South Vietnam and Washington | HIST-ALT | 000,004 |
 | EV000-90 | P6 | 12 Feb – 2 May 1974 | The ARVN's last offensives | Tri Phap, Dinh Tuong Province; Svay Rieng, Cambodia | HIST | 000 |
 | EV000-91 | P6 | 16 May – 10 Dec 1974 | The war of attrition of 1974 | The Iron Triangle; Thuong Duc, Duc Duc and Phu Loc in I Corps | HIST-ALT | 000,004,005,007 |
 | EV000-92 | P6 | 12 Dec 1974 – 6 Jan 1975 | The fall of Phuoc Long | Phuoc Long Province (Phuoc Binh and Song Be), III Corps | HIST-ALT | 000,005 |
 | EV000-93 | P6 | 10–12 Mar 1975 | The fall of Ban Me Thuot | Ban Me Thuot, Darlac Province | HIST | 000 |
-| EV000-94 | P6 | 13–30 Mar 1975 | The collapse of I Corps | Quang Tri, Hue and Da Nang | HIST-ALT | 000,006 |
+| EV000-94 | P6 | 13–30 Mar 1975 | The collapse of I Corps | Quang Tri, Hue and Da Nang | HIST-ALT | 000,006,MT01 |
 | EV000-95 | P6 | 14–25 Mar 1975 | The retreat from the Highlands | Pleiku and Kontum to the coast along Route 7, through Cheo Reo | HIST-ALT | 000,007 |
-| EV000-96 | P6 | 9–21 Apr 1975 | Xuan Loc | Xuan Loc, Long Khanh Province, northeast of Saigon | HIST-ALT | 000,004,007 |
+| EVMT01-4 | P6 | 25 Mar – 14 Apr 1975 | The Politburo's calendar: Saigon before the rains | Hanoi and the roads south | HIST-ALT | MT01 |
+| EV000-96 | P6 | 9–21 Apr 1975 | Xuan Loc | Xuan Loc, Long Khanh Province, northeast of Saigon | HIST-ALT | 000,004,007,MT01 |
 | EV000-97 | P6 | 10–28 Apr 1975 | Thieu resigns; the last governments of the Republic | Saigon and Washington | HIST | 000 |
 | EV000-98 | P6 | 29–30 Apr 1975 | The fall of Saigon | Saigon | HIST-ALT | 000,006 |

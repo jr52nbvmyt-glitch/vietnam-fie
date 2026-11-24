@@ -10,8 +10,8 @@
 | P2 | 4 | 7 | 2 | 1 | 22 |
 | P3 | 4 | 3 | 0 | 0 | 9 |
 | P4 | 0 | 5 | 1 | 2 | 13 |
-| P5 | 4 | 2 | 0 | 0 | 3 |
-| P6 | 5 | 2 | 0 | 1 | 8 |
+| P5 | 6 | 3 | 0 | 0 | 3 |
+| P6 | 7 | 2 | 0 | 1 | 7 |
 
 ## The enemy's decisions
 
@@ -130,6 +130,16 @@ The dry-season phases of Commando Hunt were the main US effort against the North
 
 The armour was seen before it crossed. From 12 March the Gulf watch, standing off the Quang Tri coast outside the SA-2s that the North had moved into and just north of the DMZ, tracked tracked-vehicle columns moving south at night on Route 1A and Route 101 from Vinh Linh toward the Ben Hai, and the panhandle watch tracked others moving east along Route 9 in Laos toward Khe Sanh⁴.
 
+### The northern districts of Binh Dinh
+*Apr – Aug 1972 · Hoai Nhon, Tam Quan and Hoai An districts, Binh Dinh Province · P5 · changed from history · EVMT01-1*
+
+While the world watched Quang Tri, Kontum and An Loc, the PAVN 3rd Division, the Yellow Star, came down out of the An Lao valley in April 1972 and took the three northern districts of Binh Dinh, Hoai Nhon, Tam Quan and Hoai An, from the 22nd Division's 40th and 41st Regiments and the province's Regional Forces; the district towns and the old American base at Landing Zone English were in its hands by the end of the month, and the districts were retaken over the summer. It was the only place in 1972 where the offensive reached a densely peopled coastal lowland and held it for months, and it 
+
+### The Delta during the offensive
+*Apr – Oct 1972 · Chuong Thien and Kien Giang provinces; the U Minh forest · P5 · changed from history · EVMT01-2*
+
+When the 21st Division left the Delta in April 1972 to fight its way up Route 13 toward An Loc, the regiments the PAVN and the Front had kept in the U Minh forest came out against the outposts of Chuong Thien and Kien Giang. Historically this is where the offensive reached the Delta's countryside: dozens of posts lost, districts cut off, and the government's figures for its own security falling for the first time since 1968.
+
 ### Loc Ninh and the siege of An Loc
 *7 Apr – 18 Jun 1972 · Loc Ninh and An Loc, Binh Long Province, on Route 13 · P5 · changed from history · EV000-76*
 
@@ -145,6 +155,11 @@ In the Central Highlands the PAVN 320th Division began pressing the firebases on
 
 On 27 April the PAVN renewed its attack on the 3rd Division's defence of Quang Tri City. Contradictory orders from the I Corps commander, Lieutenant General Hoang Xuan Lam, and from Giai left units moving in opposite directions, and on 1 May Giai ordered the city abandoned²¹.
 
+### Resolution 21 and the North's rebuilding
+*Oct 1973 – 1974 · Hanoi; the Laotian panhandle and the western Highlands · P6 · changed from history · EV000-87*
+
+In October 1973 the 21st Plenum of the Party Central Committee in Hanoi resolved that the revolution in the South must continue by the path of revolutionary violence, and that the PAVN should respond to Saigon's operations and prepare for a decisive offensive. The PAVN rebuilt through 1973 and 1974: it improved the strategic road along the western side of South Vietnam east of the Truong Son, extended the fuel pipeline into the South, built up stocks of ammunition and armour in the base areas and grouped its divisions into army corps, the 1st Corps in October 1973 and the 4th Corps on 20 J
+
 ### The war of attrition of 1974
 *16 May – 10 Dec 1974 · The Iron Triangle; Thuong Duc, Duc Duc and Phu Loc in I Corps · P6 · changed from history · EV000-91*
 
@@ -159,6 +174,11 @@ On 12 December 1974 the PAVN 4th Corps under Hoang Cam, with the 7th Division, t
 *13–30 Mar 1975 · Quang Tri, Hue and Da Nang · P6 · changed from history · EV000-94*
 
 On 13 March Thieu ordered Truong to give up most of I Corps and withdrew the Airborne Division towards Saigon as a reserve. On 20 March he ordered Truong to hold only Da Nang; on 29 March he ordered him to turn back and retake it, which Truong refused²⁴.
+
+### The Politburo's calendar: Saigon before the rains
+*25 Mar – 14 Apr 1975 · Hanoi and the roads south · P6 · changed from history · EVMT01-4*
+
+The date of the fall of Saigon was set in Hanoi between 25 March and 14 April, and it was set by the rains and by the road. On 25 March, with Hue abandoned and the Highlands column destroyed, the Politburo resolved to take Saigon before the rainy season, which in the southern provinces begins in May and turns the lowlands around the capital to mud; on 31 March, with Da Nang taken, it decided to do it in April; and on 14 April it named the operation the Ho Chi Minh Campaign.
 
 ### Xuan Loc
 *9–21 Apr 1975 · Xuan Loc, Long Khanh Province, northeast of Saigon · P6 · changed from history · EV000-96*
@@ -181,6 +201,9 @@ By late April five PAVN corps, Group 232 and the 1st, 2nd, 3rd and 4th Corps, wi
 - **POS006-2** · vars: US.unit_quality, US.casualties, ENEMY.engagement_control · Unit rotation makes the American battalion fight better in the contacts it gets and changes neither which contacts it gets nor the late-war breakdown of discipline; it gives the enemy a relief window to aim at, and it does not prevent atrocity (006 F006-6, F006-16, F006-19)
 - **POS007-1** · vars: ARVN.leadership, ARVN.effectiveness, ENEMY.engagement_control · In this war the ARVN's battalions from 1965–67 are commanded by officers a board chose on written criteria and two raters' reports, for eighteen months, with relief for cause; this puts ARVN effectiveness at the cap of the bands in 1966–68, and the enemy answers by declining the better battalion and attacking the unreformed unit beside it, so the gain appears as battalions not lost rather than in any metric (007 §4.P2; EV007-2, EV007-3)
 - **REVMT01-1** · reverses POS001-3 · vars: HANOI.will, ENEMY.engagement_control, PAVN.strength_south · Hanoi's commitment to armed reunification is fixed throughout and nothing in the force reaches it; the timing of its offensives is not fixed, and the schedule of the last campaign in particular was set week by week by the ARVN's behaviour in 1975 (the plan for 1976 accelerated after Phuoc Long and again after the Highlands, EV000-92); a memorandum that changes the ARVN, the PAVN's losses or the Republic's state on the eve of the offensive must test what it does to that schedule (MT01 M-6, M-10, M-12)
+- **POSMT01-2** · vars: PAVN.strength_south, ENEMY.regeneration · In this war the PAVN's killed and wounded in 1972 were about a tenth above the historical figure, concentrated in the 5th, 7th, 9th, 320th and 2nd Divisions at An Loc and Kontum; the North replaced the men within its 1973 flow and formed its corps on the historical dates, so the extra loss cost the 1974–75 divisions quality and not time (MT01 M-1; EV000-87)
+- **POSMT01-3** · vars: HANOI.will, PAVN.strength_south, ARVN.effectiveness, ENEMY.engagement_control · The date of the Republic's fall, 30 April 1975 within a window of about 27 April to the first days of May, is derived and not carried: it was set by Hanoi's resolution of 25 March to finish before the rains and by the 1st Corps' march, and only a delay of about three weeks or more in the collapse of I and II Corps would have moved it, by putting the assault into the rains; better ARVN units act on fights the PAVN bypasses and do not reach that threshold (MT01 M-12; EVMT01-4, EV000-96)
+- **POSMT01-4** · vars: POP.night_control, VCI.strength, POP.gvn_legitimacy, FIND.vci · The countryside at the end of 1972 is not history's: where a PAVN division sat in the peopled lowlands (northern Binh Dinh, Quang Tri) the gains of 1964–71 were lost, while the held belt of the Delta and the Saigon region kept its posts and files and stays one band better at night and against the infrastructure; the government's legitimacy returns to history's through the decrees of 1972 (MT01 M-4; EVMT01-1, EVMT01-2, EVMT01-3)
 
 ## Notes
 
