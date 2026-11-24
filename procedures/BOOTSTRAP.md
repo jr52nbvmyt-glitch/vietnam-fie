@@ -1,5 +1,5 @@
-<!-- fie v1.0.4 -->
-# Bootstrap — read on the first turn of every thread
+<!-- fie v1.0.5 -->
+# Bootstrap — printed by `fie.py boot` on the first turn of every thread
 
 The repository is the record. The conversation is scratch. Nothing you need may exist only in the conversation, and nothing in the record may come from memory.
 
@@ -8,7 +8,7 @@ The repository is the record. The conversation is scratch. Nothing you need may 
 1. **Find or attach the repository.** In a new-style project it is already cloned when the thread starts: find the clone (it holds `scripts/fie.py`). If it is not there, call `add_repo` with the owner and repo the project instructions name and `access: "push"`, run the clone command it returns, and call `register_repo_root`.
 2. **Boot, in one call:** `python3 scripts/fie.py boot <command>`, where the command is `provision`, `continue`, `baseline`, `tna`, `checkpoint`, `meta`, `veto` or `erratum` (table below). It checks out `main` and pulls it, runs the status check, and prints the rules, the voice guide, the settings, the formats, the procedure for this command, and — for Parts 2 and 3, checkpoints and meta-checkpoints — the context pack. **Everything it prints is read; do not open those files again in this thread.** If the pull fails, stop and tell me.
 3. **Act on the status it printed:**
-   - **Version**: its first two numbers must match the version the project instructions expect (1.0 matches 1.0.4). If not, stop and tell me.
+   - **Version**: its first two numbers must match the version the project instructions expect (1.0 matches 1.0.5). If not, stop and tell me.
    - **Config incomplete**: stop, list the unset values, and ask me for them. Never choose a constraint setting yourself.
    - **Uncommitted changes or unpushed commits**: an earlier turn was interrupted. Tell me in one line what they are, then commit and push them before anything else.
    - **In progress**: if my message is a new provision while a memorandum is open, tell me which part it is at and ask whether to finish it first.

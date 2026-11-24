@@ -1,4 +1,4 @@
-<!-- fie v1.0.4 -->
+<!-- fie v1.0.5 -->
 # Part 3 — §4 The course of the war · §5 Delta ledger · §6 Changed / not changed
 
 **Trigger:** `CONTINUE` when the open memorandum's status is `part2`.
@@ -15,13 +15,14 @@
 5. For a small fix afterwards, edit the staged chapter in `memos/NNN/chapters/` directly; for anything larger, a second amend file.
 6. **Write `part3.md`** — see *The analysis*. Write §4.0 last of the §4 sections, after the chapters are edited, from the chapters.
 7. **End state.** If the war's end changes, edit `history/endstate.toml`: the fields, `last_changed = "NNN"`, and a new `[[history]]` entry (`by`, `rung`, `reason`).
-8. `python3 scripts/fie.py finish NNN --part 3 --push`. It stamps the events you touched, promotes your chapters into `history/`, appends the log, positions and persons, and rebuilds the War History, then commits and pushes. Then send `build/memos/NNN/Part-3.md`, `build/WAR-HISTORY.md` and `history/TRAJECTORY-LOG.md`, and close.
+8. `python3 scripts/fie.py finish NNN --part 3 --push`. It stamps the events you touched, promotes your chapters into `history/`, appends the log, positions and persons, and rebuilds the War History, then commits and pushes. Then send `build/memos/NNN/Part-3.md`, `build/memos/NNN/CHANGES.md` (every event and passage this memorandum changed, before and after), `build/WAR-HISTORY.md` and `history/TRAJECTORY-LOG.md`, and close.
 
 ## Changing the war
 
 **The amend file.** One file, written once, holding every change this memorandum makes to the war as whole blocks:
 - `## EV000-14 · <title> · <date> · <place> · <origin> · NNN` and its full text — replaces that event wherever it is. Write the whole event as it now stands.
 - `## EVNNN-k · …` with a new ID — a new event, inserted by its date into the phase that date falls in.
+- **The first line of every event you create or change** is `*Initiative: enemy*`, `*Initiative: allied*`, `*Initiative: both*` or `*Initiative: neither*` — who chose that this event would happen, when and where. The script builds the enemy's war in sequence from these (`build/ENEMY.md`), so the enemy can be read as one campaign.
 - `## P2 · Overview`, `## P2 · How the phase ends` — replace those passages of chapter P2.
 - `## P2 · end_vector`, then lines like `"ARVN.effectiveness" = 2` — set those bands.
 

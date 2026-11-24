@@ -575,7 +575,7 @@ def cmd_boot(a):
                  "veto": "REVISIONS.md", "erratum": "REVISIONS.md"}.get(cmd, "")]
         if not proc[0]:
             die(f"unknown command '{a.command}' (provision, continue, baseline, tna, checkpoint, meta, veto, erratum)")
-    files = ["rules/RULES.md", "rules/VOICE.md", "rules/CONFIG.toml", "schema/FORMATS.md"]
+    files = ["procedures/BOOTSTRAP.md", "rules/RULES.md", "rules/VOICE.md", "rules/CONFIG.toml", "schema/FORMATS.md"]
     if proc and proc[0] == "PART1.md":
         files.append("schema/VARIABLES.toml")
     files += [f"procedures/{p}" for p in proc or []]
@@ -899,6 +899,7 @@ def pack_review(tok: str):
     parts.append("## Standing directives\n\n" + ("\n".join(register_lines("directives.md")) or "None."))
     parts.append("## Gap register (latest status)\n\n" + ("\n".join(latest_by_key(register_lines("gaps.md"))) or "None."))
     parts.append("## Provision index\n\n" + ("\n".join(provision_index_lines()) or "None."))
+    parts.append(build_enemy().replace("# The enemy's war", "## The enemy's war", 1).replace("\n## ", "\n### "))
     text = "\n\n".join(parts) + "\n"
     if len(text) > lim["pack_chars"]:
         print(f"WARNING: pack is {len(text):,} characters, over the {lim['pack_chars']:,} limit — read the cards in two passes")
@@ -1293,6 +1294,9 @@ def check_part(tok: str, part: int, stamping: bool = False) -> tuple[list, list,
                 per_phase_events[pid] = len(tev)
                 new_ops += sum(1 for e in tev if e.get("origin") == "NEW" and e.get("title", "").startswith("Operation"))
                 free += sum(1 for e in tev if e.get("origin") == "FREE")
+                for e in tev:
+                    if e.get("ok") and e.get("origin") != "CANCELLED" and not initiative(e):
+                        warnings.append(f"chapter {pid}: {e['id']} has no '*Initiative: enemy | allied | both | neither*' first line")
                 if len(tev) < fl["events_per_full_phase"]:
                     warnings.append(f"part3 {pid}: {len(tev)} events created or changed, below the floor of {fl['events_per_full_phase']}")
                 npar = sum(len(paragraphs(e["body"])) for e in tev) + len(paragraphs(sec))
@@ -1401,7 +1405,8 @@ def check_register_blocks(text: str, tok: str, errors: list):
     for name, pat in [("positions", r"- \*\*(?:POS|REV)" + re.escape(tok) + r"-\d+\*\* · "),
                       ("persons", r"- \*\*[^*]+\*\* · "),
                       ("directives", r"- \*\*DIR" + re.escape(tok) + r"-\d+\*\* · "),
-                      ("gaps", r"- \*\*G-\d+\*\* · ")]:
+                      ("gaps", r"- \*\*G-\d+\*\* · "),
+                      ("menu", r"- \*\*[^*]+\*\* · gaps: ")]:
         for b in block_bodies(text, name):
             for l in [x for x in b.splitlines() if x.strip()]:
                 if not re.match(pat, l):
@@ -1458,6 +1463,16 @@ def append_registers(text: str, tok: str, title: str):
             cur = cur.rstrip("\n") + "\n\n" + entry
         write(p, cur)
         print("Wrote the Trajectory Log entry")
+    menus = [l for b in block_bodies(text, "menu") for l in b.splitlines() if l.strip()]
+    if menus:
+        p = HIST / "menus.md"
+        cur = read(p) or "# Provision menus\n\nOne menu per review, newest last. Written by fie.py from menu blocks.\n"
+        head = f"## {tok} — {title}"
+        entry = f"{head}\n\n" + "\n".join(menus) + "\n"
+        pat = re.compile(r"^" + re.escape(head) + r"\n.*?(?=^## |\Z)", re.M | re.S)
+        cur = pat.sub(lambda _: entry + "\n", cur) if pat.search(cur) else cur.rstrip("\n") + "\n\n" + entry
+        write(p, cur)
+        print(f"Wrote a provision menu of {len(menus)} item(s)")
 
 
 def promote(tok: str):
@@ -1466,6 +1481,9 @@ def promote(tok: str):
         stamp_chapter(tok, pid, work_dir(tok) / "chapters" / f"{pid}.md")
     staged = staged_chapters(tok)
     for pid, txt in staged.items():
+        before = work_dir(tok) / "before" / f"{pid}.md"
+        if not before.exists() and read(CHAP / f"{pid}.md") != txt:
+            write(before, read(CHAP / f"{pid}.md"))
         write(CHAP / f"{pid}.md", txt)
     if staged:
         write(HIST / ".last_work", tok + "\n")
@@ -1520,7 +1538,7 @@ def cmd_finish(a):
     print(f"\nFinished Part {part} of memo {tok}.")
     if getattr(a, "push", False):
         git_commit_push(f"Memo {tok} Part {part}: {m.get('title', '')}")
-    print(f"Send the user: build/memos/{tok}/Part-{part}.md" + (f" · build/memos/{tok}/MEMO-{tok}.md · build/WAR-HISTORY.md · history/TRAJECTORY-LOG.md" if part == 3 else ""))
+    print(f"Send the user: build/memos/{tok}/Part-{part}.md" + (f" · build/memos/{tok}/CHANGES.md · build/WAR-HISTORY.md · history/TRAJECTORY-LOG.md" if part == 3 else ""))
     if not getattr(a, "push", False):
         print(f"Then: git add -A && git commit -m \"Memo {tok} Part {part}\" && git push origin main")
 
@@ -1793,6 +1811,108 @@ def for_reader(text: str, memo_sources: dict[int, str] | None = None) -> str:
     return body
 
 
+INITIATIVE_RE = re.compile(r"^\s*\*Initiative:\s*(enemy|allied|both|neither)\*", re.I)
+
+
+def initiative(ev: dict) -> str | None:
+    first = next((l for l in ev.get("body", "").splitlines() if l.strip()), "")
+    m = INITIATIVE_RE.match(first)
+    return m.group(1).lower() if m else None
+
+
+def first_sentences(text: str, n: int = 2) -> str:
+    t = " ".join(l.strip() for l in text.splitlines() if l.strip() and not INITIATIVE_RE.match(l) and not l.startswith("#"))
+    parts = re.split(r"(?<=[.!?])\s+", strip_comments(t))
+    return " ".join(parts[:n])[:600]
+
+
+def build_enemy() -> str:
+    rows, counts = [], {}
+    for p in phases():
+        _, _, body = parse_chapter(read(CHAP / f"{p['id']}.md"))
+        c = counts.setdefault(p["id"], {"enemy": 0, "allied": 0, "both": 0, "neither": 0, "untagged": 0})
+        for e in parse_events(body):
+            if not e.get("ok"):
+                continue
+            ini = initiative(e)
+            c[ini or "untagged"] += 1
+            if ini in ("enemy", "both") and e.get("origin") != "CANCELLED":
+                rows.append(f"### {e['title']}\n*{e['date']} · {e['place']} · {p['id']} · {ORIGIN_WORDS.get(e['origin'], e['origin'])} · {e['id']}*\n\n{first_sentences(e['body'])}")
+    table = "| Phase | Enemy | Allied | Both | Neither | Untagged |\n|---|---|---|---|---|---|\n" + "\n".join(
+        f"| {k} | {v['enemy']} | {v['allied']} | {v['both']} | {v['neither']} | {v['untagged']} |" for k, v in counts.items())
+    pos = [l for l in register_lines("positions.md") if re.search(r"HANOI\.|ENEMY\.|PAVN\.|VC\.|VCI\.", l)]
+    return ("# The enemy's war — Hanoi's decisions in sequence\n\n*Generated by fie.py from history/chapters: every event where the enemy held the initiative, "
+            "in order, so his campaign can be read as one campaign. Events are tagged by their first line, `*Initiative: enemy | allied | both | neither*`.*\n\n"
+            "## Who held the initiative, by phase\n\n" + table + "\n\n## The enemy's decisions\n\n" + ("\n\n".join(rows) or "No events tagged yet.")
+            + "\n\n## Settled positions about the enemy\n\n" + ("\n".join(pos) or "None.") + "\n")
+
+
+def build_changes(tok: str) -> str | None:
+    """Before and after for every chapter passage this work changed, from its before/ snapshots and its chapters."""
+    d = work_dir(tok)
+    after_dir, before_dir = d / "chapters", d / "before"
+    if not after_dir.exists():
+        return None
+    label = f"Memo {tok}" if re.fullmatch(r"\d{3}", tok) else tok
+    out = [f"# What changed in the war — {label}", "*Generated by fie.py from this work's chapters and the chapters as they stood before it. "
+           "New and changed events are given in full; the earlier text follows as a quotation.*"]
+    es = load_toml(HIST / "endstate.toml")
+    hist = es.get("history", [])
+    for i, h in enumerate(hist):
+        if h.get("by") == tok:
+            prev = hist[i - 1].get("rung") if i else "?"
+            out.append(f"## The end state\n\nRung ({prev}) → ({h.get('rung')}). {h.get('reason', '')}")
+    vrows = []
+    for pa in sorted(after_dir.glob("P*.md")):
+        pid = pa.stem
+        bt = read(before_dir / f"{pid}.md")
+        if not bt:
+            continue
+        bfm, _, bb = parse_chapter(bt)
+        afm, _, ab = parse_chapter(read(pa))
+        for k, v in afm.get("end_vector", {}).items():
+            ov = bfm.get("end_vector", {}).get(k, 0)
+            if v != ov:
+                vrows.append(f"| {pid} | {k} | {ov:+d} → {v:+d} |")
+    if vrows:
+        out.append("## Headline variables at each phase's end\n\n| Phase | Variable | Before → after |\n|---|---|---|\n" + "\n".join(vrows))
+    for pa in sorted(after_dir.glob("P*.md")):
+        pid = pa.stem
+        bt = read(before_dir / f"{pid}.md")
+        if not bt:
+            continue
+        _, _, bb = parse_chapter(bt)
+        _, _, ab = parse_chapter(read(pa))
+        old = {e["id"]: e for e in parse_events(bb)}
+        sec = []
+        for name in ["Overview", "How the phase ends"]:
+            def part(body, nm):
+                if nm == "Overview":
+                    t = re.search(r"^# .+$", body, re.M)
+                    f = re.search(r"^## ", body[t.end():], re.M) if t else None
+                    return body[t.end():t.end() + f.start()].strip() if t and f else ""
+                return (section(body, 2, "How the phase ends") or "").strip()
+            o, n = part(bb, name), part(ab, name)
+            if o != n:
+                sec.append(f"### {name} (changed)\n\n{n}\n\n" + "\n".join("> " + l for l in o.splitlines()))
+        for e in parse_events(ab):
+            if not e.get("ok") or tok not in e.get("works", []):
+                continue
+            o = old.get(e["id"])
+            kind = {"NEW": "New", "FREE": "New — free play", "CANCELLED": "No longer happens"}.get(e["origin"], "Changed")
+            if o is None and kind == "Changed":
+                kind = "New"
+            text = e["body"].strip()
+            block = f"### {kind}: {e['title']}\n*{e['date']} · {e['place']} · {e['id']}*\n\n{text}"
+            if o is not None and event_key_text(o) != event_key_text(e):
+                block += "\n\n**Before:**\n\n" + "\n".join("> " + l for l in o["body"].strip().splitlines())
+            sec.append(block)
+        if sec:
+            title = re.search(r"^# (.+)$", ab, re.M)
+            out.append(f"## {title.group(1) if title else pid}\n\n" + "\n\n".join(sec))
+    return "\n\n".join(out) + "\n" if len(out) > 2 else None
+
+
 def build_all(quiet: bool = False):
     BUILD.mkdir(exist_ok=True)
     say = (lambda *_: None) if quiet else print
@@ -1856,6 +1976,18 @@ def build_all(quiet: bool = False):
         if d.is_dir():
             for p in sorted(d.glob("part*.md")):
                 write(BUILD / "reviews" / d.name / p.name, for_reader(strip_comments(read(p)).strip() + "\n", source_lines(d / "sources.md")))
+    write(BUILD / "ENEMY.md", for_reader(build_enemy()))
+    menus = read(HIST / "menus.md")
+    if menus:
+        last = re.split(r"(?=^## )", menus, flags=re.M)[-1]
+        write(BUILD / "MENU.md", "# Next provisions — the latest menu\n\n*From the latest review's bill. Generated by fie.py.*\n\n" + last.replace("## ", "## From ", 1))
+    for base in [ROOT / "memos", ROOT / "reviews", ROOT / "revisions"]:
+        for d in sorted(base.glob("*")) if base.exists() else []:
+            if d.is_dir():
+                ch = build_changes(d.name)
+                if ch:
+                    dest = BUILD / ("memos" if base.name == "memos" else "reviews") / d.name / "CHANGES.md"
+                    write(dest, for_reader(ch, source_lines(d / "sources.md")))
     say("Built: build/INDEX.md, build/cards/, build/LEDGERS.md, build/EVENTS.md, build/WAR-HISTORY.md, build/memos/, build/reviews/")
 
 

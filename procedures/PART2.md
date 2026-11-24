@@ -1,4 +1,4 @@
-<!-- fie v1.0.4 -->
+<!-- fie v1.0.5 -->
 # Part 2 — §2 Integration and second-order effects · §3 Changes to existing forces
 
 **Trigger:** `CONTINUE` when the open memorandum's status is `part1`.

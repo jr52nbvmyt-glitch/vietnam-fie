@@ -1,4 +1,4 @@
-<!-- fie v1.0.4 -->
+<!-- fie v1.0.5 -->
 # Vietnam Force-Injection Exercise
 
 A long-running counterfactual: modern forces and capabilities are injected into the Vietnam War from 1 January 1964, one provision at a time, and COMUSMACV reports in numbered memoranda on how each one changes the war. This repository is the whole record — the rules, the procedures, the war as it now stands, every memorandum, and the scripts that keep the books.
@@ -35,7 +35,10 @@ Attach the repository to the project, put the workers on Opus 5.5 (high, or xhig
 
 - `build/memos/NNN/` — each memorandum, part by part, and complete as `MEMO-NNN.md`
 - `build/WAR-HISTORY.md` — the whole war as it now stands; ◆ marks what the latest memorandum changed
+- `build/memos/NNN/CHANGES.md` — what each memorandum did to the war: every changed event before and after, new and cancelled events, headline variables that moved
 - `history/TRAJECTORY-LOG.md` — one paragraph per memorandum: the arc of the war across all provisions
+- `build/ENEMY.md` — the enemy's war: every event where Hanoi held the initiative, in order
+- `build/MENU.md` — the latest review's menu of provisions that would bite hardest
 - `build/INDEX.md` — every provision in theater · `build/EVENTS.md` — every event · `build/LEDGERS.md` — what pushes each world variable
 
 ## Layout

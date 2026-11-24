@@ -1,4 +1,4 @@
-<!-- fie v1.0.4 -->
+<!-- fie v1.0.5 -->
 # Record formats
 
 Everything `scripts/fie.py` reads is defined here. The script checks these formats; if a file breaks one, `fie.py check` says where. Read this before writing any part.
@@ -10,7 +10,8 @@ Everything `scripts/fie.py` reads is defined here. The script checks these forma
 | `memos/NNN/manifest.toml` | The memorandum's structured facts: provisions, variables, phases changed | You, in Part 1; refined in Parts 2–3 |
 | `memos/NNN/sources.md` | Numbered sources for `[S#]` tags | You, in Part 1 (and later parts if needed) |
 | `memos/NNN/part1.md` · `part2.md` · `part3.md` | The memorandum, as written. Never edited after its part is finished | You |
-| `memos/NNN/chapters/Pk.md` | This memo's edited copy of each chapter it changes | `fie.py chapters` copies; you edit; `fie.py finish` stamps and promotes |
+| `memos/NNN/chapters/Pk.md` | This memo's edited copy of each chapter it changes | `fie.py amend` stages and applies; `fie.py finish` stamps and promotes |
+| `memos/NNN/before/Pk.md` | Each chapter as it stood before this memo changed it | `fie.py finish`, at promotion |
 | `history/chapters/Pk.md` | The war: one chapter per phase, the only copy of events | `fie.py finish` (promotion) and BASELINE |
 | `history/phases.toml` | Phase list and dates | Checkpoints (G2) |
 | `history/endstate.toml` | The end state of the war | You, when a part changes it |
@@ -82,6 +83,7 @@ HTML comments are invisible in the reading copies.
 | `<!-- directives -->` … `<!-- /directives -->` | Reviews | Lines appended to `history/directives.md` |
 | `<!-- gaps -->` … `<!-- /gaps -->` | TNA, reviews | Lines appended to `history/gaps.md` |
 | `<!-- swept -->` … `<!-- /swept -->` | Checkpoints | Variable IDs swept in the interaction sweep |
+| `<!-- menu -->` … `<!-- /menu -->` | TNA, checkpoints | Candidate provisions: `- **<provision>** · gaps: G-n, … · pushes: … · <why>`; the latest becomes `build/MENU.md` |
 
 Register lines are bullets in the register's own format (see the head of each register file).
 
@@ -142,5 +144,7 @@ An event header has five fields after the ID, separated by ` · `: title · date
 | `CANCELLED` | Historical, no longer happens (say why) |
 | `NEW` | Created by the provisions |
 | `FREE` | Free play (G4): caused by no provision and not historical |
+
+The first line of an event's text says who held the initiative: `*Initiative: enemy*`, `*Initiative: allied*`, `*Initiative: both*` or `*Initiative: neither*`. Required for every event a memorandum creates or changes.
 
 A historical accident is `HIST`, not `FREE`. Events stay in date order. An event is never deleted: mark it `CANCELLED`. You set the origin; the script maintains the works field, adding the current work to every event you create or change.

@@ -1,4 +1,4 @@
-<!-- fie v1.0.4 -->
+<!-- fie v1.0.5 -->
 # CHECKPOINT — calibration of the analysis against the war it describes
 
 **Trigger:** `CHECKPOINT`, due every `checkpoint_every` complete memoranda (`fie.py status` says when). Its own thread, two parts on `CONTINUE`. No new provision is introduced.
@@ -23,7 +23,7 @@ A checkpoint costs the same every time: it reviews the memoranda since the last 
 8. **Revised trajectory.** Where the war goes from here with the force currently held, phase by phase, ending in the A9 call and the reason the next rung is not reached. If the end state changes, edit `history/endstate.toml` and log it (`by = "CPnn"`).
 9. **Limiting factors.** The binding constraint on each line of effort, ranked by how directly it blocks the next rung.
 10. **Gap register review.** Every gap: its status, what moved it, what would close it. Updated lines go in a `<!-- gaps -->` block.
-11. **The bill.** What the force still lacks, ranked.
+11. **The bill.** What the force still lacks, ranked. Then turn it into a menu for me: five to eight real, 2026-era provisions that would bite hardest on the bill's top items, in a `<!-- menu -->` block, one line each — `- **<designation and quantity>** · gaps: G-3, G-7 · pushes: <VAR +n>, <VAR +n> · <one line: why this, why now>`. The script publishes the latest menu as `build/MENU.md`.
 12. **Phase redraw**, if a memorandum proposed one and the war warrants it (G2): edit `history/phases.toml` (rename, redate, add `P7`…, or set `retired = true`); run `python3 scripts/fie.py baseline --init`, which creates an empty chapter for any new phase and touches nothing else; stage every affected chapter and move events across by the CANCELLED/NEW rule in `procedures/PART3.md`; state in one line what each historical phase became.
 13. Any new settled position goes in a `<!-- positions -->` block; any correction to method in a `<!-- directives -->` block (`DIRCPnn-k`).
 14. `python3 scripts/fie.py review CPnn --finish --push`, send the two reading copies and `build/WAR-HISTORY.md` if chapters changed, and close with the next memorandum number.

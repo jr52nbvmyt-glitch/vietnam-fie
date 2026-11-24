@@ -1,5 +1,5 @@
-<!-- fie v1.0.4 -->
-# Design — Vietnam Force-Injection Exercise, v1.0.4
+<!-- fie v1.0.5 -->
+# Design — Vietnam Force-Injection Exercise, v1.0.5
 
 *Replaces the V2 project architecture. Written 21 November 2026 from the V2 problems briefing. Target model: Opus 5.5. Storage: this Git repository.*
 
