@@ -72,3 +72,8 @@ Format: `- **<Name>** · <role> · <origin: HIST or invented in <work>> · <one 
 - **Walter E. Pruitt** · Brigadier General, US Air Force, chief of the MACV Combined Targeting Cell 1964–68 · invented in 013 · Built the cell around Sorrell's coordinate cell from 5 August 1964, planned HAMMER FALL, and ran the restrike watch on the Red River
 - **Harlan J. Reese** · Captain, US Navy, deputy chief of the Combined Targeting Cell for the Navy 1964–67 · invented in 013 · Brought Task Force 77's targets into the cell and took the Red River ferries for the carriers
 - **James R. Ainsley** · Captain, US Air Force, F-105D pilot of the 388th Tactical Fighter Wing · invented in 013 · Shot down over Lang Son on 12 May 1966, taken by a Chinese gun crew inside the buffer and held at Pingxiang for eleven days before being handed to the North
+- **Brigadier General Harold M. Vance** · US Army · commander, MACV Joint Special Operations Command, from 15 August 1964; previously of the Special Warfare Center at Fort Bragg; read the falling raid yield of 1967 correctly and changed the command's measure in December (EV014-1, EV014-5)
+- **Colonel James E. Teague** · US Army · commander, 1st Special Forces Operational Detachment-Delta in Vietnam from September 1964; abandoned the partnered cordon in December 1964 (EV014-1)
+- **Captain Robert L. Ainsley** · US Army · G Squadron; lost with his team of five near the Ban Laboy ford, 11–14 July 1967 (EV014-4)
+- **Sergeant First Class Donald R. Keel** · US Army · the unit's first dead, killed at a doorway in Can Giuoc, 2 December 1964 (EV014-1)
+- **Major Nguyen Van Thuan** · ARVN · first squadron commander, 81st Special Group, from November 1969; formerly of the airborne division (EV014-8)

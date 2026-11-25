@@ -20,9 +20,9 @@ The area also turns on one thing the record does not hold. Between March 1965 an
 | Variable | P1 | P2 | P3 | P4 | P5 | P6 | 1974 snapshot | Held in |
 |---|---|---|---|---|---|---|---|---|
 | INFIL.sea | — | — | — | — | — | — | | study, not yet judged |
-| SANCT.cambodia | — | — | — | — | — | — | | study, not yet judged |
+| SANCT.cambodia | — | +1 to +3 against history (low) | — | — | — | — | | study (since 014) |
 | TRAIL.tonnage_arriving | -5% to +5% against history (low) | -10% to 0% against history (low) | -17% to -5% against history (low) | -5% to 0% against history (low) | -10% to 0% against history (low) | -20% to +20% against history (low) | -5% to 0% against history (low) | chapters |
-| ENEMY.regeneration | — | — | — | — | — | — | | study, not yet judged |
+| ENEMY.regeneration | — | 0 against history (low) | — | — | — | — | | study (since 014) |
 | INTL.communist_aid | — | — | — | — | — | — | | study, not yet judged |
 
 *Values in each variable's natural unit (schema/VARIABLES.toml): this war's figure with history's beside it, or the difference from history's figure; low, medium, high = confidence; unjudged = not yet judged. Headline variables and their facets live in the chapters' end vectors; the rest in the study. A study value set before R03 is on the retired −10..+10 scale until the study is next folded.*
@@ -153,6 +153,18 @@ The phase ends with the sanctuary worth to the enemy what it was worth historica
 
 ## Since this study
 
+#### Memo 014 — 1st Special Forces Operational Detachment-Delta (Delta Force) at full commitment, under a newly formed MACV joint special operations command from August 1964 · 2026-11-25
+<!-- since 014 -->
+**Memorandum 014 (Delta Force at full commitment and a MACV joint special operations command, August–September 1964) — entry of 25 November 2026.**
+
+The provision adds counting and no closing, which is this area's oldest finding. From September 1967 American teams could enter Cambodia on foot, without tactical air, without a forward air controller and with no exploitation force behind them, and those limits held until the incursion (¹⁸). Delta ran 61 such missions in 1969 beside SOG's 454 and counted what the Global Hawk's radar could not see under rubber: 94 cache sites, 31 of them under permanent roofing, 11 field hospitals, 4 vehicle parks and the Memot complex's three bunker belts. The study's and the record's position that the southern supply moved to Sihanoukville from June 1965 and was counted rather than stopped until Lon Nol closed it is confirmed from the ground: the teams found the caches the route filled and could do nothing to them.
+
+The second effect runs the other way and belongs here because it is about the sanctuary's value. Delta's raiding inside South Vietnam pushed the Front's senior apparatus across the Cambodian border between 1965 and 1967, so the sanctuary by 1968 held not only the base areas and the supply but the B-2 Front's administrative leadership. That raises what Cambodia is worth to the enemy and makes its loss in 1970 a heavier blow than the record had it — and the enemy answered by moving to Kratie six weeks before the incursion crossed.
+
+- value · SANCT.cambodia · P2 · Δ+1..+3 · low · the sanctuary now holds the senior apparatus of the upper Delta and the Saigon belt as well as the base areas, because the raid force drove it there
+- value · ENEMY.regeneration · P2 · Δ0..0 · low · committees reconstitute from Cambodia as they reconstituted from the base areas; the time to replace a province committee member is unchanged at weeks
+<!-- /since -->
+
 ---
 
 ---
@@ -178,3 +190,4 @@ The phase ends with the sanctuary worth to the enemy what it was worth historica
 15. Source: "1974 in the Vietnam War" — Wikipedia, https://en.wikipedia.org/wiki/1974_in_the_Vietnam_War — Paracels, ammunition and fuel cuts, Svay Rieng, Iron Triangle, aid levels, Murray's warnings, I Corps battles, Nixon's resignation, Hanoi's strategy conference, 1974 casualties
 16. Source: "Battle of Phuoc Long" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Phuoc_Long — dates, PAVN 4th Corps, ARVN defenders, losses, absence of US response
 17. The exercise's own judgment (memo 011), not a measured figure.
+18. From memorandum 014's record.

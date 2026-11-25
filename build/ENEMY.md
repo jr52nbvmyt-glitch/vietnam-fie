@@ -6,10 +6,10 @@
 
 | Phase | Enemy | Allied | Both | Neither | Untagged |
 |---|---|---|---|---|---|
-| P1 | 8 | 19 | 4 | 3 | 15 |
-| P2 | 7 | 14 | 6 | 3 | 21 |
-| P3 | 10 | 6 | 1 | 0 | 5 |
-| P4 | 0 | 8 | 1 | 4 | 12 |
+| P1 | 8 | 22 | 4 | 3 | 15 |
+| P2 | 7 | 16 | 7 | 3 | 21 |
+| P3 | 12 | 7 | 1 | 0 | 5 |
+| P4 | 0 | 9 | 1 | 6 | 11 |
 | P5 | 6 | 3 | 0 | 0 | 3 |
 | P6 | 8 | 3 | 1 | 3 | 5 |
 
@@ -140,10 +140,20 @@ The raid at Duc Thanh was what the method became where the night was not held, a
 
 This is the night the radio's second-order effect became visible, and the night that shows it best. By 1967 every Popular Forces post in the held belt of Dinh Tuong had a set on the district net, a PRC-25 from the Go Vap plant since the previous autumn, and a fresh battery every Thursday from the exchange at the district¹⁹.
 
+### The empty beds of Dinh Tuong
+*4 Sep – 14 Nov 1967 · Cai Lay, Cai Be and Giao Duc Districts, Dinh Tuong Province; Memot, Kampong Cham Province, Cambodia · P2 · new · EV014-5*
+
+This is the operation that taught the command what the unit had actually done, and it did so by failing for ten weeks. In the first week of September 1967 the National Fusion Centre gave the Can Tho squadron twenty-six addresses in the three upper districts of Dinh Tuong: the province committee's five surviving members, the finance section's chief, and twenty of the collectors and couriers who had been named in the ledgers taken in 1966.
+
 ### The siege of Khe Sanh
 *21 Jan – 15 Apr 1968 · Khe Sanh Combat Base, Lang Vei and the surrounding hills, Quang Tri Province; Route 9 in Laos to Ban Houei Sane · P3 · changed from history · EV000-41*
 
 In January 1968 the PAVN massed around the Marine base at Khe Sanh, in the northwest corner of Quang Tri Province astride Route 9 to Laos. The 304th and 325C Divisions were close in, with the 320th and 324th Divisions in the region²⁰.
+
+### Delta at Tet: the command posts in Saigon and the files at Hue
+*29 Jan – 8 Mar 1968 · Saigon (Districts 5, 6 and 8, the Phu Tho racetrack, Gia Dinh); Hue · P3 · new · EV014-6*
+
+In the ten days before Tet the unit raided eleven addresses in Gia Dinh and Saigon out of the task force's file and took two couriers of the city's sapper organisation, on 24 and 27 January. Neither knew anything about the timing of the offensive, and neither did the file.
 
 ### The Tet Offensive: the first wave
 *30–31 Jan 1968 · Saigon, Hue and the provincial and district capitals of South Vietnam · P3 · changed from history · EV000-42*
@@ -174,6 +184,11 @@ At 0320 on 31 January a sapper company and a local-force battalion of the Saigon
 *30 Apr – 15 Jun 1968 · Dai Do and the hamlets north of Dong Ha, Quang Tri Province; Saigon, Cholon and towns throughout the South; Kham Duc and Ngok Tavak, Quang Tin Province · P3 · changed from history · EVCP03-1*
 
 These three battles are told together because they showed one thing three ways. Hanoi kept the offensive going after February at a price it chose to pay, and none of the provisions reached the places it chose.
+
+### The ambush at Thanh Phu
+*18 June 1968 · Thanh Phu District, Kien Hoa Province · P3 · new · EV014-10*
+
+The unit's worst single hour in the Delta was the consequence the dossier had named and the record had been waiting for. In June 1968, with the Front's Kien Hoa committee reconstituting after its Tet losses, the Can Tho squadron raided on a file that had come to the task force through a Vietnamese province intelligence section rather than through the Special Branch.
 
 ### The third offensive
 *17 Aug – 23 Sep 1968 · Provincial towns and bases, especially in III Corps and the Central Highlands · P3 · changed from history · EV000-52*
@@ -288,6 +303,7 @@ The Republic that entered the rains of 1975 had lost the Highlands, Quang Tri, T
 - **POSCP03-1** · vars: STRIKE.responsiveness, PAVN.strength_south, TRAIL.tonnage_arriving · The unrestricted opening of the air war against the North in March 1965 disrupted the North's economy, air force and alliances more than any other act of the war and did not reach the war in the South: the South's needs were small, carried through Laos by labour, and the North replaced fuel and power with drums and diesels in a season, while the trucks Moscow sent in place of heavy plant went to the Trail. The divisions held at home in 1965 were the North's home-defence divisions on history's course too, and no formation reaches the South late by more than weeks (CP03 §5, the user's question of 25 Nov 2026)
 - **POSCP03-2** · vars: FIND.vci, ENEMY.engagement_control · A picture of the enemy's political organisation warns of where his political apparatus will act and not of when or in what strength his main forces will; at Tet 1968 the files held the caches, committees and guides of the uprising, the combined estimate read them as local, and MACV's judgment of the main effort and the Joint General Staff's leave order absorbed the warning, so the surprise was national and the change was confined to the corps centres of III and IV Corps (EV000-42, EV012-8; the user's question of 25 Nov 2026)
 - **POSCP03-3** · vars: POP.night_control, VCI.strength, FIND.vci · Night control judged by corps in units for the first time: the land, the police, the posts and the task force hold about 8–14 points more of III Corps' and 6–12 points more of IV Corps' rural people after dark than history's by the end of 1967, about six months to a year ahead of history's pacification there, and about 3–9 points more at the end of 1974; I and II Corps never move more than a few points, and those two corps decided 1972 and 1975 (CP03 §8; the user's question of 25 Nov 2026)
+- **POS014-1** · vars: FIND.vci, VCI.strength, SANCT.cambodia · In this war a night raid force on the Front's senior apparatus from 1964 drove that apparatus out of the provinces it administered and across the Cambodian border by 1967, where no allied instrument could reach it; the raid force's falling yield from 1967 measures that success and not its failure, and the displacement is never reported as a reduction in the Front's organisation (014 §4.P2, F014-19, F014-21; EV014-5, EV014-7)
 
 ## Notes
 

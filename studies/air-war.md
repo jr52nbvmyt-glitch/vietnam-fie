@@ -132,3 +132,17 @@ In 1975 the VNAF flew the Republic's last fights on fuel the appropriation had b
 [S2] "Operations Enhance and Enhance Plus" — Wikipedia, https://en.wikipedia.org/wiki/Operations_Enhance_and_Enhance_Plus — 234 F-5A and A-37, 32 C-130 and 277 UH-1H delivered from October 1972; the VNAF fourth largest air force in the world at the end of 1972.
 
 ## Since this study
+
+### Memo 014 — 1st Special Forces Operational Detachment-Delta (Delta Force) at full commitment, under a newly formed MACV joint special operations command from August 1964 · 2026-11-25
+<!-- since 014 -->
+**Memorandum 014 (Delta Force at full commitment and a MACV joint special operations command, August–September 1964) — entry of 25 November 2026.**
+
+The provision touches this area in one way and it is a way the study did not have: from 20 October 1965 reconnaissance teams of five worked the Laotian panhandle under Ambassador Sullivan's limits on depth, target and duration, and brought back coordinates measured from the ground (EV014-4). Of 94 missions in 1966–67, 71 were completed without the team being compromised; the product was 84 truck parks, 31 gun positions and 19 storage points measured to a few metres, about a third of them under canopy where neither the U-2S nor the Global Hawk can see anything at all (F014-11). Those points went into STEADY COUNT's track list and the coordinate cell's folders (EV003-3, EV005-1), and they are the first answer in this record to the study's own central limit: that the J's precision is decisive only where the enemy holds still long enough to be measured (POS005-1).
+
+They did not change what arrives. Group 559's answer to measurement was given in 1966 and never reversed: own nothing measurable (POS005-4). The teams' cueing taxed the flow by perhaps one to four points more than the radar alone, inside the width the chapters hold for Phases II to IV, and the chapters' TRAIL.tonnage_arriving values are not moved by this memorandum. The study's judgment that interdiction taxed and never stopped the flow stands and is reinforced from a new direction: a target measured by a man lying 400 metres from it fared no better than one measured from 60,000 feet, because the enemy's dispersal answers both (F014-8). The cost was nine Americans killed or missing in the panhandle in two years, including a whole team near the Ban Laboy ford in July 1967, to security battalions that had learned to hunt watchers.
+
+For the study's own values: SANCT.laos is unchanged — the sanctuary's value lay in the ground bar, and Delta crossed it only on SOG's terms and never with a force that could take anything. STRIKE.responsiveness gains a source rather than a speed.
+
+- value · SANCT.laos · P2 · Δ0..0 · low · reconnaissance under the ambassador's limits adds observation and no action; the ground bar is untouched (EV014-4)
+- value · SANCT.cambodia · P4 · Δ-2..0 · low · 61 foot reconnaissance missions in 1969 without air support or an exploitation force counted 94 cache sites and 11 hospitals, and the folders are part of why the incursion found the caches in days; COSVN went to Kratie on 19 March 1970 regardless (EV014-7, [M014·S3], [M014·S7])
+<!-- /since -->

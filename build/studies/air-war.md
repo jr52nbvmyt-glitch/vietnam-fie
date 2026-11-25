@@ -26,8 +26,8 @@ So the margin over history is large inside the air war and small outside it. Ove
 | STRIKE.responsiveness | — | — | — | — | — | — | | study, not yet judged |
 | TRAIL.capacity | — | — | — | — | — | — | | study, not yet judged |
 | TRAIL.tonnage_arriving | -5% to +5% against history (low) | -10% to 0% against history (low) | -17% to -5% against history (low) | -5% to 0% against history (low) | -10% to 0% against history (low) | -20% to +20% against history (low) | -5% to 0% against history (low) | chapters |
-| SANCT.laos | — | — | — | — | — | — | | study, not yet judged |
-| SANCT.cambodia | — | — | — | — | — | — | | study, not yet judged |
+| SANCT.laos | — | 0 against history (low) | — | — | — | — | | study (since 014) |
+| SANCT.cambodia | — | — | — | -2 to 0 against history (low) | — | — | | study (since 014) |
 | ARVN.effectiveness.fire_coordination | unjudged | unjudged | unjudged | unjudged | unjudged | unjudged | unjudged | chapters |
 | ARVN.self_sufficiency.fire_support | 0 to +2 against history (low) | -5 to +2 against history (low) | -5 to +2 against history (low) | -5 to +2 against history (low) | -8 to 0 against history (low) | +3 to +8 against history (low) | +3 to +5 against history (low) | chapters |
 | POP.civilian_harm | — | — | — | — | — | — | | study, not yet judged |
@@ -140,6 +140,20 @@ In 1975 the VNAF flew the Republic's last fights on fuel the appropriation had b
 
 ## Since this study
 
+#### Memo 014 — 1st Special Forces Operational Detachment-Delta (Delta Force) at full commitment, under a newly formed MACV joint special operations command from August 1964 · 2026-11-25
+<!-- since 014 -->
+**Memorandum 014 (Delta Force at full commitment and a MACV joint special operations command, August–September 1964) — entry of 25 November 2026.**
+
+The provision touches this area in one way and it is a way the study did not have: from 20 October 1965 reconnaissance teams of five worked the Laotian panhandle under Ambassador Sullivan's limits on depth, target and duration, and brought back coordinates measured from the ground. Of 94 missions in 1966–67, 71 were completed without the team being compromised; the product was 84 truck parks, 31 gun positions and 19 storage points measured to a few metres, about a third of them under canopy where neither the U-2S nor the Global Hawk can see anything at all. Those points went into STEADY COUNT's track list and the coordinate cell's folders, and they are the first answer in this record to the study's own central limit: that the J's precision is decisive only where the enemy holds still long enough to be measured.
+
+They did not change what arrives. Group 559's answer to measurement was given in 1966 and never reversed: own nothing measurable. The teams' cueing taxed the flow by perhaps one to four points more than the radar alone, inside the width the chapters hold for Phases II to IV, and the chapters' TRAIL.tonnage_arriving values are not moved by this memorandum. The study's judgment that interdiction taxed and never stopped the flow stands and is reinforced from a new direction: a target measured by a man lying 400 metres from it fared no better than one measured from 60,000 feet, because the enemy's dispersal answers both. The cost was nine Americans killed or missing in the panhandle in two years, including a whole team near the Ban Laboy ford in July 1967, to security battalions that had learned to hunt watchers.
+
+For the study's own values: SANCT.laos is unchanged — the sanctuary's value lay in the ground bar, and Delta crossed it only on SOG's terms and never with a force that could take anything. STRIKE.responsiveness gains a source rather than a speed.
+
+- value · SANCT.laos · P2 · Δ0..0 · low · reconnaissance under the ambassador's limits adds observation and no action; the ground bar is untouched
+- value · SANCT.cambodia · P4 · Δ-2..0 · low · 61 foot reconnaissance missions in 1969 without air support or an exploitation force counted 94 cache sites and 11 hospitals, and the folders are part of why the incursion found the caches in days; COSVN went to Kratie on 19 March 1970 regardless (EV014-7,¹⁸,¹⁸)
+<!-- /since -->
+
 ---
 
 ---
@@ -165,3 +179,4 @@ In 1975 the VNAF flew the Republic's last fights on fuel the appropriation had b
 15. The exercise's own judgment (MT01), not a measured figure.
 16. Source: "Operations Enhance and Enhance Plus" — Wikipedia, https://en.wikipedia.org/wiki/Operations_Enhance_and_Enhance_Plus — 234 F-5A and A-37, 32 C-130 and 277 UH-1H delivered from October 1972; the VNAF fourth largest air force in the world at the end of 1972.
 17. Source: "South Viet Nam Air Force - 1975 - Maintenance and Supply" — GlobalSecurity.org, https://www.globalsecurity.org/military/world/vietnam/rvn-vnaf-1975-1.htm — 224 aircraft placed in storage and flying hours cut by about 51% in 1974; about 1,484 aircraft at the end of December 1974.
+18. From memorandum 014's record.

@@ -156,3 +156,15 @@ The phase ends with the sanctuary worth to the enemy what it was worth historica
 [S2] "Sihanouk Trail" — Wikipedia, https://en.wikipedia.org/wiki/Sihanouk_Trail — seaborne share of supply estimated as high as 70 percent before the Cambodian route; first shipments to Sihanoukville in October (1965 by context); Unit K-20 credited with 29,000 tons of cargo December 1966 – April 1969; Sihanouk suspended the North's arms shipments through his ports by the summer of 1969.
 
 ## Since this study
+
+### Memo 014 — 1st Special Forces Operational Detachment-Delta (Delta Force) at full commitment, under a newly formed MACV joint special operations command from August 1964 · 2026-11-25
+<!-- since 014 -->
+**Memorandum 014 (Delta Force at full commitment and a MACV joint special operations command, August–September 1964) — entry of 25 November 2026.**
+
+The provision adds counting and no closing, which is this area's oldest finding. From September 1967 American teams could enter Cambodia on foot, without tactical air, without a forward air controller and with no exploitation force behind them, and those limits held until the incursion ([M014·S3]). Delta ran 61 such missions in 1969 beside SOG's 454 and counted what the Global Hawk's radar could not see under rubber: 94 cache sites, 31 of them under permanent roofing, 11 field hospitals, 4 vehicle parks and the Memot complex's three bunker belts (EV014-7). The study's and the record's position that the southern supply moved to Sihanoukville from June 1965 and was counted rather than stopped until Lon Nol closed it (POS003-2) is confirmed from the ground: the teams found the caches the route filled and could do nothing to them.
+
+The second effect runs the other way and belongs here because it is about the sanctuary's value. Delta's raiding inside South Vietnam pushed the Front's senior apparatus across the Cambodian border between 1965 and 1967 (EV014-5, C014-2), so the sanctuary by 1968 held not only the base areas and the supply but the B-2 Front's administrative leadership. That raises what Cambodia is worth to the enemy and makes its loss in 1970 a heavier blow than the record had it — and the enemy answered by moving to Kratie six weeks before the incursion crossed.
+
+- value · SANCT.cambodia · P2 · Δ+1..+3 · low · the sanctuary now holds the senior apparatus of the upper Delta and the Saigon belt as well as the base areas, because the raid force drove it there (EV014-5, F014-7)
+- value · ENEMY.regeneration · P2 · Δ0..0 · low · committees reconstitute from Cambodia as they reconstituted from the base areas; the time to replace a province committee member is unchanged at weeks (EV014-2, EV014-5)
+<!-- /since -->

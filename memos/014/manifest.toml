@@ -4,9 +4,9 @@
 memo = "014"
 title = "1st Special Forces Operational Detachment-Delta (Delta Force) at full commitment, under a newly formed MACV joint special operations command from August 1964"
 received = "2026-11-25"
-status = "part2"
+status = "complete"
 version = "1.0.6"
-phases_changed = []
+phases_changed = ["P1", "P2", "P3", "P4"]
 links = ["003", "006", "012", "013"]
 
 [deviation]
