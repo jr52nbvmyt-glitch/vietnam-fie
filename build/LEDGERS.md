@@ -32,9 +32,9 @@
 - P007a (memo 007) pushes -1 [old band ≈ -4..-2] — Law of war, the Army profession and escalation-of-force training reach every new platoon leader, including the wartime OCS classes
 - P009c (memo 009) pushes -1 [old band ≈ -4..-2] — Fire discipline and the conduct block reach the hamlet militia, whose conduct toward the population was the GVN's face in the countryside; small
 - P010a (memo 010) pushes -1 [old band ≈ -4..-2] — The squad leader is the man who controls fire in the hamlet and the detainee at the trail; small
-- P011c (memo 011) pushes -1 (high) — 347–504 villagers of Son My live; a trace against the civilian dead of the whole war, which is the honest weight
+- P011c (memo 011) pushes -1 [v1.0.6 scale] (high) — 347–504 villagers of Son My live; a trace against the civilian dead of the whole war, which is the honest weight
 - P011c (memo 011) depends — Removing one massacre changes nothing about the conditions that produce others; the effect depends on how isolated it really is
-- P012b (memo 012) pushes +0..+3 (low) — night raids on thin files in the contested belt kill and detain the wrong men; the 2026 discipline narrows but does not close this
+- P012b (memo 012) pushes +0..+3 [v1.0.6 scale] (low) — night raids on thin files in the contested belt kill and detain the wrong men; the 2026 discipline narrows but does not close this
 
 ## POP.gvn_legitimacy — Legitimacy of the Saigon government in the countryside
 *Higher means more rural acceptance of the GVN.*
@@ -43,8 +43,8 @@
 - P001b (memo 001) pushes +1 [old band ≈ +2..+4] — Visible prosecution of officials who prey on the population, if it reaches above the district level
 - P002a (memo 002) pushes +1 [old band ≈ +2..+4] — A policeman who settles disputes, records crime and arrests on evidence is the government's most frequent face in the village; the gain reverses where the police extort or torture
 - P002b (memo 002) pushes +1 [old band ≈ +2..+4] — The district chief is the government in the countryside; one who is resident, competent and not for sale changes what the government means in his district
-- P011c (memo 011) pushes +0..+1 (low) on POP.gvn_legitimacy.I_corps — One village in Quang Ngai not emptied by its allies; a trace in a province the Front had held for a generation
-- P012a (memo 012) pushes -3..+0 (low) — an American general commanding Vietnamese divisions hands the Front its 'puppet army' line and wounds nationalist officers; it acts on all facets equally because the charge is national, not local to one corps
+- P011c (memo 011) pushes +0..+1 [v1.0.6 scale] (low) on POP.gvn_legitimacy.I_corps — One village in Quang Ngai not emptied by its allies; a trace in a province the Front had held for a generation
+- P012a (memo 012) pushes -3..+0 [v1.0.6 scale] (low) — an American general commanding Vietnamese divisions hands the Front its 'puppet army' line and wounds nationalist officers; it acts on all facets equally because the charge is national, not local to one corps
 
 ## POP.land_tenure — Land tenure
 *Higher means more owner-cultivators with secure title.*
@@ -127,9 +127,9 @@
 - P007b (memo 007) depends — Coups make the promotion list and override the gate
 - P007c (memo 007) depends — A junta can suspend the board; a coup is a promotion list
 - P008a (memo 008) depends — State enterprises and licences change hands with each government
-- P011a (memo 011) pushes +0..+2 (low) — Thieu's government keeps faith longer in the assurances it was given; the panic of 1975 starts from a firmer belief that Washington will act
-- P012a (memo 012) pushes -3..+2 (low) — direction uncertain: command of troops was the generals' political capital, so OPCON constrains coups but threatens the corps commanders' fiefs
-- P012b (memo 012) pushes -2..+1 (low) — a raid arm and a national file are the strongest instruments in the country for whoever holds the palace; they deter some plots and arm others
+- P011a (memo 011) pushes +0..+2 [v1.0.6 scale] (low) — Thieu's government keeps faith longer in the assurances it was given; the panic of 1975 starts from a firmer belief that Washington will act
+- P012a (memo 012) pushes -3..+2 [v1.0.6 scale] (low) — direction uncertain: command of troops was the generals' political capital, so OPCON constrains coups but threatens the corps commanders' fiefs
+- P012b (memo 012) pushes -2..+1 [v1.0.6 scale] (low) — a raid arm and a national file are the strongest instruments in the country for whoever holds the palace; they deter some plots and arm others
 - P012a (memo 012) depends — a junta that changes every few months can withdraw its consent to combined command
 - P012b (memo 012) depends — a national target file is a weapon against the palace's rivals
 
@@ -148,27 +148,27 @@
 
 - P002a (memo 002) pushes -1 [old band ≈ -4..-2] — Village cadre identified and arrested on evidence, legal cadre forced underground; slow, cumulative and confined to villages the state holds
 - P006a (memo 006) pushes -1 [old band ≈ -4..-2] — Cadres above the hamlet named, arrested and tried from 1965 rather than 1968, where night security exists
-- P012b (memo 012) pushes -5..-2 (medium) — a raid force acting on fused intelligence within hours, night after night, removes cadres faster than the province committee can re-form a network, where night security lets it reach them
+- P012b (memo 012) pushes -5..-2 [v1.0.6 scale] (medium) — a raid force acting on fused intelligence within hours, night after night, removes cadres faster than the province committee can re-form a network, where night security lets it reach them
 
 ## VCI.tax_take — VC taxation
 *Higher means more revenue to the VC.*
 
 - P001a (memo 001) pushes -1 [old band ≈ -4..-2] — Owner-cultivators with a title to defend are harder to tax by consent; coercive taxation in VC-held hamlets is untouched
 - P002a (memo 002) pushes -1 [old band ≈ -4..-2] — Resource control on roads and waterways and a constable in the market town raise the cost of moving tax rice and cash
-- P012b (memo 012) pushes -4..-1 (low) — finance and supply cadres are high-value targets; their loss disrupts the tax collection and the rice purchase
+- P012b (memo 012) pushes -4..-1 [v1.0.6 scale] (low) — finance and supply cadres are high-value targets; their loss disrupts the tax collection and the rice purchase
 
 ## VC.recruitment — VC recruitment and conscription in the South
 *Higher means more recruits.*
 
 - P001a (memo 001) pushes -1 [old band ≈ -4..-2] — Removes the land argument that tied a family's sons to the revolution's victory; slow and partial, because conscription by the VCI does not depend on persuasion
 - P002a (memo 002) pushes -1 [old band ≈ -4..-2] — The family census shows which sons have gone to the forest and makes VC conscription in held villages visible and costly; confined to held villages, and partly offset by youths who leave before the census reaches them
-- P012b (memo 012) pushes -2..+0 (low) — the village cadres who recruit are taken in the held belt; offset where wrong-man raids give the Front a family to recruit from
+- P012b (memo 012) pushes -2..+0 [v1.0.6 scale] (low) — the village cadres who recruit are taken in the held belt; offset where wrong-man raids give the Front a family to recruit from
 
 ## VC.local_force — VC local force and guerrillas
 *Higher means stronger local force and guerrilla units.*
 
 - P004a (memo 004) pushes +1 [old band ≈ +2..+4] — Counter-direction: every outpost overrun gives the Front modern carbines and 5.56mm, so the local force rearms from our stocks rather than from the Trail
-- P012b (memo 012) pushes -3..-1 (low) — the local force and guerrillas lose the cadres who recruit, supply and direct them
+- P012b (memo 012) pushes -3..-1 [v1.0.6 scale] (low) — the local force and guerrillas lose the cadres who recruit, supply and direct them
 
 ## VC.main_force — VC main force
 *Higher means stronger southern main-force units.*
@@ -179,7 +179,7 @@
 *Higher means more PAVN combat power in RVN.*
 
 - P004c (memo 004) depends — PAVN infantry with RPD and PK is the enemy the belt-fed squad gun must match in the meeting engagement
-- P013a (memo 013) pushes -1..+0 (low) — The Politburo reads the opening strike as the prelude to an invasion and holds two to four divisions at home through 1965–66; the dispatch south is delayed by months, not cancelled (F013-13)
+- P013a (memo 013) pushes -1..+0 [v1.0.6 scale] (low) — The Politburo reads the opening strike as the prelude to an invasion and holds two to four divisions at home through 1965–66; the dispatch south is delayed by months, not cancelled (F013-13)
 
 ## ENEMY.engagement_control — Enemy control of engagements
 *Higher means the enemy decides more often whether, when and where battle happens.*
@@ -194,14 +194,14 @@
 - P008b (memo 008) depends — The enemy chooses which posts to attack and can wait out a battery or ambush the relief the call summons
 - P009b (memo 009) depends — The trained private acts only in the fights the enemy accepts; the enemy declines the battalion that does not break and ambushes what the course does not reach
 - P010b (memo 010) depends — The schooled squad leader acts only in the fights the enemy accepts
-- P012a (memo 012) pushes -3..-1 (low) — a combined reaction across sector boundaries removes some of the seams the enemy used to choose and break off battle
+- P012a (memo 012) pushes -3..-1 [v1.0.6 scale] (low) — a combined reaction across sector boundaries removes some of the seams the enemy used to choose and break off battle
 
 ## HANOI.will — Hanoi's commitment to armed reunification
 *Higher means more commitment.*
 
 - P001a (memo 001) pushes +1 [old band ≈ +2..+4] — Hanoi reads the reform as eroding its southern base and hurries its decision for military victory (F001-12)
 - P011a (memo 011) depends — The enforcement threat works only if the Politburo believes it; Resolution 21 and the 1975 calendar are the test
-- P013a (memo 013) pushes +0..+1 (low) — The Politburo mobilises the North against the blow as it did in 1965 historically; commitment to reunification is unchanged (G-14) and its urgency, if anything, rises
+- P013a (memo 013) pushes +0..+1 [v1.0.6 scale] (low) — The Politburo mobilises the North against the blow as it did in 1965 historically; commitment to reunification is unchanged (G-14) and its urgency, if anything, rises
 - P013a (memo 013) depends — Whether a blow to capacity reaches the Politburo's will is the provision's whole wager
 
 ## TRAIL.capacity — Trail system capacity
@@ -211,14 +211,14 @@
 - P005b (memo 005) pushes -1 [old band ≈ -4..-2] — Chokepoints and fords cut reliably in all weather; repair capacity and redundancy blunt it
 - P005b (memo 005) depends — The Trail's redundancy decides whether a cut chokepoint matters
 - P005d (memo 005) depends — A closed waterway matters only as far as the road net cannot carry what the boats did
-- P013a (memo 013) pushes -2..+0 (low) — The rail and road bridges between Hanoi and the panhandle fall at once; the Trail itself is porters and bicycles in 1965 and is barely touched
+- P013a (memo 013) pushes -2..+0 [v1.0.6 scale] (low) — The rail and road bridges between Hanoi and the panhandle fall at once; the Trail itself is porters and bicycles in 1965 and is barely touched
 - P013b (memo 013) depends — Strikes in the North cut supply only if the Trail's own capacity is the binding limit
 
 ## TRAIL.tonnage_arriving — Tonnage arriving in the South
 *Higher means more tonnage reaching RVN and the border base areas.*
 
 - P005d (memo 005) pushes -1 [old band ≈ -4..-2] — Rivers and coastal lighterage of the North's panhandle and Laotian waterways closed to boats
-- P013b (memo 013) pushes -2..+0 (low) — No pauses means no resupply surges in the stand-downs of May 1965, December 1965–January 1966 and the Tet truces; the panhandle approaches are struck continuously
+- P013b (memo 013) pushes -2..+0 [v1.0.6 scale] (low) — No pauses means no resupply surges in the stand-downs of May 1965, December 1965–January 1966 and the Tet truces; the panhandle approaches are struck continuously
 
 ## INFIL.sea — Seaborne and Sihanoukville infiltration
 *Higher means more supply arriving by sea or through Cambodian ports.*
@@ -231,7 +231,7 @@
 
 - P003b (memo 003) depends — From South Vietnamese airspace the radar looks 150–200 km into Cambodia and sees the road traffic from Sihanoukville to the border base areas; what it sees there cannot be attacked under the present constraints, but the argument over how the sanctuary is supplied is settled by evidence (F003-3, F003-17)
 - P005d (memo 005) depends — Sihanoukville and the Mekong into Cambodia are neutral waters
-- P013b (memo 013) pushes +0..+1 (low) — With the North's rail and road south battered without pause, Hanoi's freight for B-2 leans harder on the Chinese-flag ships to Sihanoukville that the record already opened in June 1965; the southern route gains as the northern one costs more
+- P013b (memo 013) pushes +0..+1 [v1.0.6 scale] (low) — With the North's rail and road south battered without pause, Hanoi's freight for B-2 leans harder on the Chinese-flag ships to Sihanoukville that the record already opened in June 1965; the southern route gains as the northern one costs more
 
 ## SANCT.laos — Value of the Laotian sanctuary to the enemy
 *Higher means more useful to the enemy.*
@@ -259,7 +259,7 @@
 - P001a (memo 001) pushes +1 [old band ≈ +2..+4] — Village land committees, a parcel map and a register of who tills what give the state its first census of the hamlet; volunteered information rises where titles are delivered and defended
 - P002a (memo 002) pushes +2 [old band ≈ +5..+7] — A single Special Branch holding the files, a resident constable who knows the hamlet, and a family census that makes a stranger visible; the VCI half of find-and-fix, not the main-force half
 - P006a (memo 006) pushes +1 [old band ≈ +2..+4] — Fused files, network analysis and exploitation of every arrest and rallier add the district-and-above cadre to what P002a's Special Branch already finds in the hamlet
-- P012b (memo 012) pushes +1..+3 (medium) — the record already names most of the infrastructure through the police and the district centres; national fusion and same-night exploitation add the province and region committees and the contested belt where files are thin
+- P012b (memo 012) pushes +1..+3 [v1.0.6 scale] (medium) — the record already names most of the infrastructure through the police and the district centres; national fusion and same-night exploitation add the province and region committees and the contested belt where files are thin
 - P012b (memo 012) depends — it rests on the district files of P006a's centres
 
 ## INTEL.penetration — Enemy penetration of the GVN and RVNAF
@@ -274,8 +274,8 @@
 - P006a (memo 006) depends — A fused file in a penetrated centre is the enemy's list of our informants
 - P007c (memo 007) depends — Board files and command lists are a target for enemy agents in the JGS
 - P008b (memo 008) depends — Plant workforces and signal depots are open to agents
-- P012a (memo 012) pushes +1..+3 (low) — a combined staff puts allied plans in front of Vietnamese officers, some of them the enemy's; the historical reason MACV withheld plans
-- P012b (memo 012) pushes -3..-1 (low) — a compartmented fusion centre with counter-intelligence vetting finds some of the agents inside the police and the RVNAF as a by-product of the network map
+- P012a (memo 012) pushes +1..+3 [v1.0.6 scale] (low) — a combined staff puts allied plans in front of Vietnamese officers, some of them the enemy's; the historical reason MACV withheld plans
+- P012b (memo 012) pushes -3..-1 [v1.0.6 scale] (low) — a compartmented fusion centre with counter-intelligence vetting finds some of the agents inside the police and the RVNAF as a by-product of the network map
 - P012b (memo 012) depends — a penetrated task force warns its targets
 
 ## FIX.capability — Fixing an enemy who chooses whether to fight
@@ -287,7 +287,7 @@
 - P004c (memo 004) pushes +1 [old band ≈ +2..+4] — Belt-fed base of fire inside the squad: the ARVN squad can hold an enemy in contact with 200-round belts instead of a 20-round BAR
 - P005c (memo 005) pushes +1 [old band ≈ +2..+4] — Heavy bombs placed hundreds rather than thousands of metres from friendly troops, when the coordinate is good
 - P006b (memo 006) pushes +1 [old band ≈ +2..+4] — A battalion whose men and leaders trained together holds the contact it gets, at night and in the ambush; it does not get more contacts
-- P012a (memo 012) pushes +2..+4 (medium) — one plan across corps and national boundaries closes the seams the main force slipped through between ARVN, ROK and US sectors
+- P012a (memo 012) pushes +2..+4 [v1.0.6 scale] (medium) — one plan across corps and national boundaries closes the seams the main force slipped through between ARVN, ROK and US sectors
 
 ## STRIKE.responsiveness — Speed from detection to effect
 *Higher means faster fires on located targets.*
@@ -312,8 +312,8 @@
 - P005a (memo 005) pushes +1 [old band ≈ +2..+4] — Twenty independently aimed 2,000 lb weapons a sortie in any weather against fixed targets, where Washington allows
 - P005b (memo 005) pushes +1 [old band ≈ +2..+4] — Bridges, ferries, depots and power plants struck in monsoon cloud with few sorties
 - P005d (memo 005) pushes +1 [old band ≈ +2..+4] — Inland waterways and coastal shipping south of the 20th parallel mined persistently
-- P013a (memo 013) pushes +3..+5 (low) — Power, fuel bulk storage, the rail bridges and the airfields fall in the first days, before the North has dispersed anything; the effect on capacity is large and on will uncertain
-- P013b (memo 013) pushes +2..+4 (low) — Restrike at the repair rate and choice of targets by the theater keep the bridges, power and rail down; the North still moves by night, by sea and by porter
+- P013a (memo 013) pushes +3..+5 [v1.0.6 scale] (low) — Power, fuel bulk storage, the rail bridges and the airfields fall in the first days, before the North has dispersed anything; the effect on capacity is large and on will uncertain
+- P013b (memo 013) pushes +2..+4 [v1.0.6 scale] (low) — Restrike at the repair rate and choice of targets by the theater keep the bridges, power and rail down; the North still moves by night, by sea and by porter
 
 ## AIR.north_defences — Air defence density over the North
 *Higher means denser and more lethal air defence.*
@@ -322,15 +322,15 @@
 - P003b (memo 003) depends — At 60,000 ft the RQ-4 is inside the SA-2 envelope; once the North has SA-2s it can look into the North only from outside their range
 - P005a (memo 005) depends — SA-2 and MiG-21 density sets loss rates over the North
 - P005b (memo 005) depends — The 15-mile glide falls inside the SA-2's reach; standoff protects against guns, not missiles
-- P013a (memo 013) pushes -3..-1 (low) — In March 1965 the North has no SA-2 site operational and about 50–60 MiGs at Phuc Yen; the opening blow catches the radar net and the fighter force on the ground, but Moscow then ships faster
-- P013b (memo 013) pushes -2..+0 (low) — No sanctuary for the SAM support, the MiG bases or the Hanoi gun belt; offset by Soviet resupply that grows with the threat
+- P013a (memo 013) pushes -3..-1 [v1.0.6 scale] (low) — In March 1965 the North has no SA-2 site operational and about 50–60 MiGs at Phuc Yen; the opening blow catches the radar net and the fighter force on the ground, but Moscow then ships faster
+- P013b (memo 013) pushes -2..+0 [v1.0.6 scale] (low) — No sanctuary for the SAM support, the MiG bases or the Hanoi gun belt; offset by Soviet resupply that grows with the threat
 
 ## AIR.losses — US aircraft losses
 *Higher means more aircraft lost.*
 
 - P003a (memo 003) pushes -1 [old band ≈ -4..-2] — An electronic order of battle of the North's radars, and later of its SA-2 sites, built before the strike forces need it; routes planned around what is known rather than learned by losses
 - P005a (memo 005) pushes -1 [old band ≈ -4..-2] — Modern defensive suite and release outside the light AAA envelope; SA-2 still lethal
-- P013b (memo 013) pushes -3..+0 (low) — The SAM sites can be struck while being built and the MiG airfields at Phuc Yen and Kep from 1965, two years before history; route packages flown on the theater's timing rather than Washington's
+- P013b (memo 013) pushes -3..+0 [v1.0.6 scale] (low) — The SAM sites can be struck while being built and the MiG airfields at Phuc Yen and Kep from 1965, two years before history; route packages flown on the theater's timing rather than Washington's
 
 ## ARVN.effectiveness — ARVN combat effectiveness
 *Higher means more effective ARVN units in combat.*
@@ -346,8 +346,8 @@
 - P008b (memo 008) pushes +1 [old band ≈ +2..+4] — Communications down to squad and outpost, and repair turnaround measured in days
 - P009b (memo 009) pushes +1 [old band ≈ +2..+4] — Every regular recruit trained to a common, demanding standard, and none sent to a unit untrained; marksmanship with P004a and P004c
 - P010b (memo 010) pushes +1 [old band ≈ +2..+4] — Every regular squad and platoon led by an NCO schooled for his job, in an army whose NCO corps was its thinnest layer; with P009b the trained private now has a trained corporal
-- P012a (memo 012) pushes +2..+5 (medium) on ARVN.effectiveness.fire_coordination — one fire-support coordination system across the four nations' sectors; ARVN units can draw US and allied fires through a combined centre rather than through an adviser's radio
-- P012a (memo 012) pushes +1..+3 (low) on ARVN.effectiveness.combined_arms — combined operations planned by one staff put ARVN infantry beside US and ROK armour and artillery on one plan, with ARVN staff officers in the planning
+- P012a (memo 012) pushes +2..+5 [v1.0.6 scale] (medium) on ARVN.effectiveness.fire_coordination — one fire-support coordination system across the four nations' sectors; ARVN units can draw US and allied fires through a combined centre rather than through an adviser's radio
+- P012a (memo 012) pushes +1..+3 [v1.0.6 scale] (low) on ARVN.effectiveness.combined_arms — combined operations planned by one staff put ARVN infantry beside US and ROK armour and artillery on one plan, with ARVN staff officers in the planning
 
 ## ARVN.leadership — RVNAF officer selection and quality
 *Higher means better officers, selected on merit.*
@@ -366,7 +366,7 @@
 - P008a (memo 008) depends — Technical-service officers who run depots and accept output
 - P009b (memo 009) depends — The drill sergeant is an NCO and the training centre commander an officer; P007b and P007c decide whether they are good ones
 - P010b (memo 010) depends — The 2026 NCO model presumes officers who delegate; P007b and P007c decide whether the lieutenant lets the sergeant lead
-- P012a (memo 012) pushes +0..+2 (low) — a corps commander who must answer for a written order is measured, and the combined commander's relief requests feed the selection board's files
+- P012a (memo 012) pushes +0..+2 [v1.0.6 scale] (low) — a corps commander who must answer for a written order is measured, and the combined commander's relief requests feed the selection board's files
 - P012a (memo 012) depends — operational control is worth what the ARVN commanders who execute it are worth
 
 ## ARVN.desertion — RVNAF desertion
@@ -391,9 +391,9 @@
 - P008b (memo 008) pushes +2 [old band ≈ +5..+7] — Radios, batteries, wire and signal repair made and done in country; the 1974–75 battery and parts famine eased
 - P010b (memo 010) pushes +1 [old band ≈ +2..+4] — Senior and master courses teach maintenance, supply, training management and readiness reporting at company and battalion; the sergeants who keep trucks and radios running
 - P010b (memo 010) depends — The schooled squad fights best with American fire and helicopters behind it; in 1974–75 it has been taught a way of war its army cannot supply (F010-24)
-- P011a (memo 011) pushes +0..+2 (low) on ARVN.self_sufficiency.logistics — Not self-sufficiency but its precondition in 1974: fuel for trucks and rounds for depots that the ration emptied; the dependence on Congress is unchanged
+- P011a (memo 011) pushes +0..+2 [v1.0.6 scale] (low) on ARVN.self_sufficiency.logistics — Not self-sufficiency but its precondition in 1974: fuel for trucks and rounds for depots that the ration emptied; the dependence on Congress is unchanged
 - P011a (memo 011) depends — Aid money matters only as far as the RVNAF can turn it into fire, fuel and spares; the 1974 ration is where the provision bites
-- P012a (memo 012) pushes -4..+0 (medium) on ARVN.self_sufficiency.fire_support — an ARVN that plans and fights inside a combined staff learns to depend on it; the staff and its fires leave with the Americans
+- P012a (memo 012) pushes -4..+0 [v1.0.6 scale] (medium) on ARVN.self_sufficiency.fire_support — an ARVN that plans and fights inside a combined staff learns to depend on it; the staff and its fires leave with the Americans
 
 ## RFPF.effectiveness — Regional and Popular Forces
 *Higher means more effective territorial forces.*
@@ -416,7 +416,7 @@
 ## VNAF.capability — South Vietnamese Air Force
 *Higher means more capable VNAF.*
 
-- P011a (memo 011) pushes +1..+3 (low) on VNAF.capability.maintenance — A larger FY1975 appropriation buys fuel and imported parts, the two things the domestic base could not stretch; fewer aircraft and helicopters grounded in the second half of 1974
+- P011a (memo 011) pushes +1..+3 [v1.0.6 scale] (low) on VNAF.capability.maintenance — A larger FY1975 appropriation buys fuel and imported parts, the two things the domestic base could not stretch; fewer aircraft and helicopters grounded in the second half of 1974
 
 ## ADVISE.leverage — Advisory leverage
 *Higher means advisors can change more RVNAF decisions.*
@@ -438,7 +438,7 @@
 - P008b (memo 008) depends — Issue of radios to the territorial forces and the hamlets is an RVNAF allocation decision
 - P009b (memo 009) depends — Advisers at the centres must be able to stop the diversion of recruits to units before the course ends
 - P010b (memo 010) depends — Advisers must keep the course gates from being waived for the commander's favourites and stop units withholding men from school
-- P012a (memo 012) pushes +3..+6 (medium) — operational control replaces persuasion: the combined commander can task an ARVN division, and an adviser's report reaches a commander with authority over the counterpart
+- P012a (memo 012) pushes +3..+6 [v1.0.6 scale] (medium) — operational control replaces persuasion: the combined commander can task an ARVN division, and an adviser's report reaches a commander with authority over the counterpart
 - P012a (memo 012) depends — the advisers are the combined command's eyes in the ARVN units it commands
 - P012b (memo 012) depends — the Vietnamese agencies share their files only when someone can make them
 
@@ -485,8 +485,8 @@
 - P009a (memo 009) depends — The basic course is only as good as the unit that receives the man; P006b unit rotation keeps him with the men he trained beside
 - P010a (memo 010) pushes +1 [old band ≈ +2..+4] — Every sergeant, staff sergeant and platoon sergeant schooled for his grade before he holds it; the instant NCOs of 1967–71 get the Basic Leader Course before their sixth stripe; the gain is largest exactly when the NCO corps thinned
 - P010a (memo 010) depends — The educated sergeant is only as useful as the squad he keeps; P006b unit rotation decides whether he stays with it
-- P011b (memo 011) pushes +1..+3 (medium) — The same men in the same rifle squads, but a quarter of the Army's draftees now chose to be there; fewer reluctant men in the companies of 1969–71, when indiscipline peaked
-- P011c (memo 011) pushes -1..+1 (low) — No massacre and no stain, but also no Peers inquiry and no reckoning with the command climate that produced it; direction uncertain
+- P011b (memo 011) pushes +1..+3 [v1.0.6 scale] (medium) — The same men in the same rifle squads, but a quarter of the Army's draftees now chose to be there; fewer reluctant men in the companies of 1969–71, when indiscipline peaked
+- P011c (memo 011) pushes -1..+1 [v1.0.6 scale] (low) — No massacre and no stain, but also no Peers inquiry and no reckoning with the command climate that produced it; direction uncertain
 - P011c (memo 011) depends — The NCO and officer reforms of memoranda 007, 009 and 010 already act on the Americal Division's companies; this removal sits on top of them
 
 ## MED.survival — Casualty survival
@@ -552,17 +552,17 @@
 - P008b (memo 008) depends — Semiconductors, crystals and licences after 1973 are bought with appropriated dollars
 - P009a (memo 009) depends — Two more weeks in the pipeline for every soldier during the 1965–66 build-up
 - P010a (memo 010) depends — Men in school and gated promotions during a build-up without reserve mobilisation
-- P011a (memo 011) pushes +4..+7 (medium) on US.political_tolerance.administration — From mid-1973 the President keeps his authority, his staff and his attention; the man who wrote Thieu his assurances is still in office to keep them, as far as Congress lets him
-- P011a (memo 011) pushes +2..+4 (low) on US.political_tolerance.congress — A smaller 1974 midterm swing and no Republican collapse in 1973–74; Case–Church probably still passes, the War Powers override and the depth of the 1974–75 aid cuts are what is at stake
-- P011a (memo 011) pushes +0..+1 (medium) on US.political_tolerance.public — The 'mistake' share stood at about 60% in 1971 and in 1973 before Watergate peaked; the scandal moved trust in the President, not opinion of the war
-- P011b (memo 011) pushes +1..+3 (medium) on US.political_tolerance.public — A quarter fewer induction notices in every town every month; fewer families whose son was taken against his will, fewer draftee dead; the draft was the war's sharpest domestic grievance
-- P011b (memo 011) pushes +0..+2 (low) on US.political_tolerance.congress — Smaller draft calls take some heat out of the extension fights of 1967 and 1971 and of the constituency mail; Congress votes on the war for reasons the draft only sharpens
-- P011c (memo 011) pushes +0..+2 (low) on US.political_tolerance.public — Mass opinion sided with Calley in 1971; the damage My Lai did was to elite, press and congressional opinion and to the moral case against the war, which loses its emblem
+- P011a (memo 011) pushes +4..+7 [v1.0.6 scale] (medium) on US.political_tolerance.administration — From mid-1973 the President keeps his authority, his staff and his attention; the man who wrote Thieu his assurances is still in office to keep them, as far as Congress lets him
+- P011a (memo 011) pushes +2..+4 [v1.0.6 scale] (low) on US.political_tolerance.congress — A smaller 1974 midterm swing and no Republican collapse in 1973–74; Case–Church probably still passes, the War Powers override and the depth of the 1974–75 aid cuts are what is at stake
+- P011a (memo 011) pushes +0..+1 [v1.0.6 scale] (medium) on US.political_tolerance.public — The 'mistake' share stood at about 60% in 1971 and in 1973 before Watergate peaked; the scandal moved trust in the President, not opinion of the war
+- P011b (memo 011) pushes +1..+3 [v1.0.6 scale] (medium) on US.political_tolerance.public — A quarter fewer induction notices in every town every month; fewer families whose son was taken against his will, fewer draftee dead; the draft was the war's sharpest domestic grievance
+- P011b (memo 011) pushes +0..+2 [v1.0.6 scale] (low) on US.political_tolerance.congress — Smaller draft calls take some heat out of the extension fights of 1967 and 1971 and of the constituency mail; Congress votes on the war for reasons the draft only sharpens
+- P011c (memo 011) pushes +0..+2 [v1.0.6 scale] (low) on US.political_tolerance.public — Mass opinion sided with Calley in 1971; the damage My Lai did was to elite, press and congressional opinion and to the moral case against the war, which loses its emblem
 - P011a (memo 011) depends — Everything it buys is a change in what Washington will grant in 1973–75
 - P012a (memo 012) depends — an American command over the whole war is an American war in Washington's eyes
 - P012b (memo 012) depends — Congress tolerates a counter-network campaign only while it is seen as policing, not killing
-- P013a (memo 013) pushes -2..+1 (low) on US.political_tolerance.administration — Johnson takes the whole escalation in one step instead of by increments; it buys him nothing with the critics and spends the option of escalation at once
-- P013b (memo 013) pushes -1..+0 (low) on US.political_tolerance.public — No pauses means no visible peace gestures, and strikes inside Hanoi put the capital's civilian dead on American television from 1965 rather than from Salisbury's dispatches of December 1966; the public facet only, Congress and the Administration are judged by P013a
+- P013a (memo 013) pushes -2..+1 [v1.0.6 scale] (low) on US.political_tolerance.administration — Johnson takes the whole escalation in one step instead of by increments; it buys him nothing with the critics and spends the option of escalation at once
+- P013b (memo 013) pushes -1..+0 [v1.0.6 scale] (low) on US.political_tolerance.public — No pauses means no visible peace gestures, and strikes inside Hanoi put the capital's civilian dead on American television from 1965 rather than from Salisbury's dispatches of December 1966; the public facet only, Congress and the Administration are judged by P013a
 - P013a (memo 013) depends — Washington still decides whether the bombing happens
 
 ## US.credibility_gap — The credibility gap
@@ -572,16 +572,16 @@
 - P002b (memo 002) pushes -1 [old band ≈ -4..-2] — An Inspectorate that verifies province reporting gives MACV a check on figures produced by the men rated on them (A13)
 - P006a (memo 006) pushes +1 [old band ≈ +2..+4] — An American-designed targeting programme is a press story from 1965, whatever its rules
 - P006c (memo 006) pushes -1 [old band ≈ -4..-2] — Advisers with protected careers and language report what they see
-- P011c (memo 011) pushes -3..-1 (medium) — No cover-up to come apart in November 1969: the starkest single proof that MACV's reports could hide a massacre never reaches the press
+- P011c (memo 011) pushes -3..-1 [v1.0.6 scale] (medium) — No cover-up to come apart in November 1969: the starkest single proof that MACV's reports could hide a massacre never reaches the press
 - P011a (memo 011) depends — A president whose word is believed at home can spend that credit on Saigon's behalf
-- P012b (memo 012) pushes +0..+3 (low) — an American-led killing-and-capture campaign inside the population is the story the press will tell about it, as it told it about Phoenix
+- P012b (memo 012) pushes +0..+3 [v1.0.6 scale] (low) — an American-led killing-and-capture campaign inside the population is the story the press will tell about it, as it told it about Phoenix
 
 ## INTL.communist_aid — Soviet and Chinese aid to the North
 *Higher means more aid.*
 
 - P005b (memo 005) pushes +1 [old band ≈ +2..+4] — Fixed infrastructure that dies in one strike is replaced by Soviet and Chinese pontoon bridging, trucks, AAA and engineer troops
 - P005d (memo 005) depends — Haiphong mining prohibited until 1972 under the modelled constraint
-- P013a (memo 013) pushes +1..+3 (low) — Kosygin is in Hanoi in February 1965; a blow on the whole list accelerates the Soviet air-defence package and Chinese engineer and AAA troops
+- P013a (memo 013) pushes +1..+3 [v1.0.6 scale] (low) — Kosygin is in Hanoi in February 1965; a blow on the whole list accelerates the Soviet air-defence package and Chinese engineer and AAA troops
 - P013b (memo 013) depends — The campaign's ceiling is set by how fast Moscow and Beijing replace what is destroyed
 
 ## INTL.chinese_intervention_risk — Risk of Chinese intervention
@@ -591,13 +591,13 @@
 - P003b (memo 003) depends — A Gulf of Tonkin orbit, reachable only by satellite control (E01), runs within radar sight of Hainan; a loss there is an incident with China as well as with Hanoi
 - P005b (memo 005) depends — Strikes near the Chinese border and on Hanoi remain constrained
 - P005d (memo 005) depends — Mining near the Chinese coast and of Soviet-flag shipping is politically bounded
-- P013a (memo 013) pushes +1..+3 (low) — Strikes at Hanoi in the first week and a 15-mile buffer bring US aircraft to the edge of Chinese airspace in the year Beijing is deciding how far to commit
-- P013b (memo 013) pushes +1..+2 (medium) — A 15-mile buffer instead of history's 25–30 nautical miles puts the northeast rail line's strikes inside Beijing's warning radius
+- P013a (memo 013) pushes +1..+3 [v1.0.6 scale] (low) — Strikes at Hanoi in the first week and a 15-mile buffer bring US aircraft to the edge of Chinese airspace in the year Beijing is deciding how far to commit
+- P013b (memo 013) pushes +1..+2 [v1.0.6 scale] (medium) — A 15-mile buffer instead of history's 25–30 nautical miles puts the northeast rail line's strikes inside Beijing's warning radius
 
 ## INTL.allied_forces — Third-country forces
 *Higher means more and better ROK, Australian, Thai and other contributions.*
 
-- P012a (memo 012) pushes +1..+3 (medium) — the ROK divisions and the Australian task force are employed on the combined plan instead of in national enclaves; their size is unchanged
+- P012a (memo 012) pushes +1..+3 [v1.0.6 scale] (medium) — the ROK divisions and the Australian task force are employed on the combined plan instead of in national enclaves; their size is unchanged
 - P012a (memo 012) depends — Seoul's and Canberra's consent and their contingents
 - P012b (memo 012) depends — the Korean and Australian raid elements and analysts arrive with their contingents
 
@@ -609,11 +609,11 @@
 - P004a (memo 004) depends — Weapons-for-money and Chieu Hoi rewards meet a market in which a modern carbine is the most valuable thing a man can carry
 - P006a (memo 006) pushes +1 [old band ≈ +2..+4] — Targeted offers to named cadres and exploitation of each rallier's knowledge
 - P006a (memo 006) depends — Ralliers are the richest source of the network map
-- P012b (memo 012) pushes +1..+3 (medium) — a cadre who knows his network is being rolled up has a reason to rally before the raid; the task force turns ralliers into sources
+- P012b (memo 012) pushes +1..+3 [v1.0.6 scale] (medium) — a cadre who knows his network is being rolled up has a reason to rally before the raid; the task force turns ralliers into sources
 - P012b (memo 012) depends — ralliers are the richest source on the infrastructure
 
 ## NEGOT.position — US and GVN negotiating position
 *Higher means stronger position against Hanoi.*
 
-- P011a (memo 011) pushes +1..+3 (low) — Hanoi reads American paralysis in 1973–74 from Watergate; without it the threat of the B-52s returning is less obviously empty, though Case–Church still binds
-- P013b (memo 013) pushes -1..+2 (low) — No pauses removes the bargaining chips Washington spent on pauses that bought nothing; it also removes the gestures that kept the allies quiet
+- P011a (memo 011) pushes +1..+3 [v1.0.6 scale] (low) — Hanoi reads American paralysis in 1973–74 from Watergate; without it the threat of the B-52s returning is less obviously empty, though Case–Church still binds
+- P013b (memo 013) pushes -1..+2 [v1.0.6 scale] (low) — No pauses removes the bargaining chips Washington spent on pauses that bought nothing; it also removes the gestures that kept the allies quiet

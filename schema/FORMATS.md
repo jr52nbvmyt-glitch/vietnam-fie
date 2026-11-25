@@ -1,4 +1,4 @@
-<!-- fie v1.0.7 -->
+<!-- fie v1.0.8 -->
 # Record formats
 
 Everything `scripts/fie.py` reads is defined here. The script checks these formats; if a file breaks one, `fie.py check` says where. Read this before writing any part.
@@ -112,7 +112,7 @@ A causal chain is a paragraph that opens `**C005-1** [lag]`, where lag is `immed
 
 See `templates/manifest.toml`. Fields the script reads: `memo`, `title`, `received`, `status` (script-owned), `phases_changed` (script-owned, via `fie.py chapters`), `links`, `[deviation]`, `[[provision]]` (`id`, `designation`, `category`, `quantity`, `ceiling_spaces`, `arrival`, `in_service`, `systems`, `status`), `[[push]]` (`provision`, `var`, `band`, `note`), `[[depend]]` (`provision`, `var`, `note`), and optional `[[status_change]]` (`provision`, `status`, `date`, `note`).
 
-Variables and facets come from `schema/VARIABLES.toml`. From v1.0.6 a push is a range: `low`, `high` (whole numbers, −10 ≤ low ≤ high ≤ +10), `conf` (low · medium · high) and `note`. Memoranda 001–010 wrote `band` on the old −3..+3 scale; those stay as written and the script reads them as ±1 → ±2..±4, ±2 → ±5..±7, ±3 → ±8..±10. A new memorandum may not write `band`.
+Variables and facets come from `schema/VARIABLES.toml`, each with its natural unit (`kind`, `unit`, `better`, and `rungs` for a ladder). From v1.0.8 (R03) a push is the provision's own change in that unit, other things equal: `dlow`, `dhigh` (numbers in the unit; percentage points for a share; rungs for a ladder), or `plow`, `phigh` (a percentage of history's figure), with `at = "Pk"` (the phase by whose end the change is measured), `conf` (low · medium · high) and `note`. Example: `{ provision = "P014a", var = "POP.night_control.IV_corps", dlow = 4, dhigh = 9, at = "P2", conf = "medium", note = "the PF hold 4–9 points more of the Delta's rural population after dark by the end of 1967" }`. Memoranda 001–010 wrote `band` on the −3..+3 scale and memoranda 011–013 wrote `low`, `high` on the −10..+10 scale; those stay as written and the script shows them marked with their scale. A new memorandum writes neither.
 
 ## 7. Chapters (`history/chapters/Pk.md`)
 
@@ -124,13 +124,15 @@ dates = "Aug 1965 – Dec 1967"
 last_revised = "005"
 
 [end_vector]
-"POP.night_control" = { low = 2, high = 4, conf = "medium", hist = "about 45–50% of the rural population [H]", est = "about 55–60% [X-005]", note = "the PF hold the Delta hamlets at night; I Corps unchanged" }
-"POP.night_control.IV_corps" = { low = 4, high = 6, conf = "medium", note = "…" }
-"ARVN.effectiveness" = { low = 5, high = 7, conf = "medium", binding = "anti_armor", note = "…" }
+"POP.night_control" = { hist = 67.2, src = "[R03·S3]", low = 70, high = 75, conf = "medium", binding = "IV_corps", note = "the PF hold the Delta hamlets at night; I Corps unchanged" }
+"POP.night_control.IV_corps" = { dlow = 6, dhigh = 12, conf = "medium", note = "…" }
+"VCI.strength" = { plow = -45, phigh = -30, conf = "medium", note = "…" }
 "ARVN.effectiveness.anti_armor" = { conf = "unjudged" }
-# … every headline variable (vector = true) and each of its facets, as ranges against the historical state at the phase's end.
-# conf: low | medium | high | converted (from the old bands, not yet re-judged) | unjudged (no low/high).
-# binding: the facet that decides outcomes; required once any facet is judged. hist/est: hard-tier variables, together.
+# … every headline variable (vector = true) and each of its facets, in the variable's unit (schema/VARIABLES.toml):
+#   hist + src: history's figure at the phase's end and its source ([H40], [R03·S1], [E: basis]) — together or not at all;
+#   one range: low/high (this war's figure), dlow/dhigh (difference from history's figure) or plow/phigh (% of history's figure);
+#   conf: low | medium | high | unjudged (no range); was: the value on the retired −10..+10 scale, kept for the record;
+#   binding: the facet that decides outcomes; required once any facet is judged.
 
 # Phase VI only (its snapshot date in history/phases.toml): the same keys at the end of 1974.
 [snapshot]

@@ -6,25 +6,25 @@
 
 | Phase | Variable | Before → after |
 |---|---|---|
-| P1 | POP.night_control | +1 (old band ≈ +2..+4) → +2..+4 (converted) |
+| P1 | POP.night_control | +1 (old band ≈ +2..+4) → +2..+4 (converted, v1.0.6 scale) |
 | P1 | POP.night_control.I_corps | — → unjudged |
 | P1 | POP.night_control.II_corps | — → unjudged |
 | P1 | POP.night_control.III_corps | — → unjudged |
 | P1 | POP.night_control.IV_corps | — → unjudged |
-| P1 | POP.displacement | +0 (old band ≈ +0) → +0 (converted) |
-| P1 | POP.gvn_legitimacy | +1 (old band ≈ +2..+4) → +2..+4 (converted) |
+| P1 | POP.displacement | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P1 | POP.gvn_legitimacy | +1 (old band ≈ +2..+4) → +2..+4 (converted, v1.0.6 scale) |
 | P1 | POP.gvn_legitimacy.I_corps | — → unjudged |
 | P1 | POP.gvn_legitimacy.II_corps | — → unjudged |
 | P1 | POP.gvn_legitimacy.III_corps | — → unjudged |
 | P1 | POP.gvn_legitimacy.IV_corps | — → unjudged |
-| P1 | GVN.political_stability | +0 (old band ≈ +0) → +0 (converted) |
-| P1 | VCI.strength | -1 (old band ≈ -4..-2) → -4..-2 (converted) |
-| P1 | ENEMY.engagement_control | +0 (old band ≈ +0) → +0 (converted) |
-| P1 | HANOI.will | +0 (old band ≈ +0) → +0 (converted) |
-| P1 | TRAIL.tonnage_arriving | +0 (old band ≈ +0) → +0 (converted) |
-| P1 | FIND.main_force | +1 (old band ≈ +2..+4) → +2..+4 (converted) |
-| P1 | FIND.vci | +2 (old band ≈ +5..+7) → +5..+7 (converted) |
-| P1 | ARVN.effectiveness | +2 (old band ≈ +5..+7) → +5..+7 (converted) |
+| P1 | GVN.political_stability | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P1 | VCI.strength | -1 (old band ≈ -4..-2) → -4..-2 (converted, v1.0.6 scale) |
+| P1 | ENEMY.engagement_control | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P1 | HANOI.will | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P1 | TRAIL.tonnage_arriving | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P1 | FIND.main_force | +1 (old band ≈ +2..+4) → +2..+4 (converted, v1.0.6 scale) |
+| P1 | FIND.vci | +2 (old band ≈ +5..+7) → +5..+7 (converted, v1.0.6 scale) |
+| P1 | ARVN.effectiveness | +2 (old band ≈ +5..+7) → +5..+7 (converted, v1.0.6 scale) |
 | P1 | ARVN.effectiveness.small_unit | — → unjudged |
 | P1 | ARVN.effectiveness.combined_arms | — → unjudged |
 | P1 | ARVN.effectiveness.anti_armor | — → unjudged |
@@ -32,36 +32,36 @@
 | P1 | ARVN.effectiveness.fire_coordination | — → unjudged |
 | P1 | ARVN.effectiveness.mobile_defence | — → unjudged |
 | P1 | ARVN.effectiveness.night_ops | — → unjudged |
-| P1 | ARVN.self_sufficiency | +0 (old band ≈ +0) → +0 (converted) |
+| P1 | ARVN.self_sufficiency | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
 | P1 | ARVN.self_sufficiency.maintenance | — → unjudged |
 | P1 | ARVN.self_sufficiency.logistics | — → unjudged |
 | P1 | ARVN.self_sufficiency.fire_support | — → unjudged |
 | P1 | ARVN.self_sufficiency.replacement | — → unjudged |
-| P1 | US.casualties | +0 (old band ≈ +0) → +0 (converted) |
-| P1 | US.political_tolerance | +0 (old band ≈ +0) → +0 (converted) |
+| P1 | US.casualties | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P1 | US.political_tolerance | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
 | P1 | US.political_tolerance.public | — → unjudged |
 | P1 | US.political_tolerance.congress | — → unjudged |
 | P1 | US.political_tolerance.administration | — → unjudged |
-| P1 | NEGOT.position | +0 (old band ≈ +0) → +0 (converted) |
-| P2 | POP.night_control | +1 (old band ≈ +2..+4) → +2..+4 (converted) |
+| P1 | NEGOT.position | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P2 | POP.night_control | +1 (old band ≈ +2..+4) → +2..+4 (converted, v1.0.6 scale) |
 | P2 | POP.night_control.I_corps | — → unjudged |
 | P2 | POP.night_control.II_corps | — → unjudged |
 | P2 | POP.night_control.III_corps | — → unjudged |
 | P2 | POP.night_control.IV_corps | — → unjudged |
-| P2 | POP.displacement | +0 (old band ≈ +0) → +0 (converted) |
-| P2 | POP.gvn_legitimacy | +1 (old band ≈ +2..+4) → +2..+4 (converted) |
+| P2 | POP.displacement | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P2 | POP.gvn_legitimacy | +1 (old band ≈ +2..+4) → +2..+4 (converted, v1.0.6 scale) |
 | P2 | POP.gvn_legitimacy.I_corps | — → unjudged |
 | P2 | POP.gvn_legitimacy.II_corps | — → unjudged |
 | P2 | POP.gvn_legitimacy.III_corps | — → unjudged |
 | P2 | POP.gvn_legitimacy.IV_corps | — → unjudged |
-| P2 | GVN.political_stability | +0 (old band ≈ +0) → +0 (converted) |
-| P2 | VCI.strength | -2 (old band ≈ -7..-5) → -7..-5 (converted) |
-| P2 | ENEMY.engagement_control | +0 (old band ≈ +0) → +0 (converted) |
-| P2 | HANOI.will | +0 (old band ≈ +0) → +0 (converted) |
-| P2 | TRAIL.tonnage_arriving | +0 (old band ≈ +0) → +0 (converted) |
-| P2 | FIND.main_force | +1 (old band ≈ +2..+4) → +2..+4 (converted) |
-| P2 | FIND.vci | +3 (old band ≈ +8..+10) → +8..+10 (converted) |
-| P2 | ARVN.effectiveness | +3 (old band ≈ +8..+10) → +8..+10 (converted) |
+| P2 | GVN.political_stability | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P2 | VCI.strength | -2 (old band ≈ -7..-5) → -7..-5 (converted, v1.0.6 scale) |
+| P2 | ENEMY.engagement_control | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P2 | HANOI.will | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P2 | TRAIL.tonnage_arriving | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P2 | FIND.main_force | +1 (old band ≈ +2..+4) → +2..+4 (converted, v1.0.6 scale) |
+| P2 | FIND.vci | +3 (old band ≈ +8..+10) → +8..+10 (converted, v1.0.6 scale) |
+| P2 | ARVN.effectiveness | +3 (old band ≈ +8..+10) → +8..+10 (converted, v1.0.6 scale) |
 | P2 | ARVN.effectiveness.small_unit | — → unjudged |
 | P2 | ARVN.effectiveness.combined_arms | — → unjudged |
 | P2 | ARVN.effectiveness.anti_armor | — → unjudged |
@@ -69,36 +69,36 @@
 | P2 | ARVN.effectiveness.fire_coordination | — → unjudged |
 | P2 | ARVN.effectiveness.mobile_defence | — → unjudged |
 | P2 | ARVN.effectiveness.night_ops | — → unjudged |
-| P2 | ARVN.self_sufficiency | +0 (old band ≈ +0) → +0 (converted) |
+| P2 | ARVN.self_sufficiency | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
 | P2 | ARVN.self_sufficiency.maintenance | — → unjudged |
 | P2 | ARVN.self_sufficiency.logistics | — → unjudged |
 | P2 | ARVN.self_sufficiency.fire_support | — → unjudged |
 | P2 | ARVN.self_sufficiency.replacement | — → unjudged |
-| P2 | US.casualties | +0 (old band ≈ +0) → +0 (converted) |
-| P2 | US.political_tolerance | +0 (old band ≈ +0) → +0 (converted) |
+| P2 | US.casualties | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P2 | US.political_tolerance | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
 | P2 | US.political_tolerance.public | — → unjudged |
 | P2 | US.political_tolerance.congress | — → unjudged |
 | P2 | US.political_tolerance.administration | — → unjudged |
-| P2 | NEGOT.position | +0 (old band ≈ +0) → +0 (converted) |
-| P3 | POP.night_control | +1 (old band ≈ +2..+4) → +2..+4 (converted) |
+| P2 | NEGOT.position | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P3 | POP.night_control | +1 (old band ≈ +2..+4) → +2..+4 (converted, v1.0.6 scale) |
 | P3 | POP.night_control.I_corps | — → unjudged |
 | P3 | POP.night_control.II_corps | — → unjudged |
 | P3 | POP.night_control.III_corps | — → unjudged |
 | P3 | POP.night_control.IV_corps | — → unjudged |
-| P3 | POP.displacement | +0 (old band ≈ +0) → +0 (converted) |
-| P3 | POP.gvn_legitimacy | +1 (old band ≈ +2..+4) → +2..+4 (converted) |
+| P3 | POP.displacement | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P3 | POP.gvn_legitimacy | +1 (old band ≈ +2..+4) → +2..+4 (converted, v1.0.6 scale) |
 | P3 | POP.gvn_legitimacy.I_corps | — → unjudged |
 | P3 | POP.gvn_legitimacy.II_corps | — → unjudged |
 | P3 | POP.gvn_legitimacy.III_corps | — → unjudged |
 | P3 | POP.gvn_legitimacy.IV_corps | — → unjudged |
-| P3 | GVN.political_stability | +0 (old band ≈ +0) → +0 (converted) |
-| P3 | VCI.strength | -2 (old band ≈ -7..-5) → -7..-5 (converted) |
-| P3 | ENEMY.engagement_control | -1 (old band ≈ -4..-2) → -4..-2 (converted) |
-| P3 | HANOI.will | +0 (old band ≈ +0) → +0 (converted) |
-| P3 | TRAIL.tonnage_arriving | +0 (old band ≈ +0) → +0 (converted) |
-| P3 | FIND.main_force | +1 (old band ≈ +2..+4) → +2..+4 (converted) |
-| P3 | FIND.vci | +3 (old band ≈ +8..+10) → +8..+10 (converted) |
-| P3 | ARVN.effectiveness | +3 (old band ≈ +8..+10) → +8..+10 (converted) |
+| P3 | GVN.political_stability | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P3 | VCI.strength | -2 (old band ≈ -7..-5) → -7..-5 (converted, v1.0.6 scale) |
+| P3 | ENEMY.engagement_control | -1 (old band ≈ -4..-2) → -4..-2 (converted, v1.0.6 scale) |
+| P3 | HANOI.will | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P3 | TRAIL.tonnage_arriving | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P3 | FIND.main_force | +1 (old band ≈ +2..+4) → +2..+4 (converted, v1.0.6 scale) |
+| P3 | FIND.vci | +3 (old band ≈ +8..+10) → +8..+10 (converted, v1.0.6 scale) |
+| P3 | ARVN.effectiveness | +3 (old band ≈ +8..+10) → +8..+10 (converted, v1.0.6 scale) |
 | P3 | ARVN.effectiveness.small_unit | — → unjudged |
 | P3 | ARVN.effectiveness.combined_arms | — → unjudged |
 | P3 | ARVN.effectiveness.anti_armor | — → unjudged |
@@ -106,36 +106,36 @@
 | P3 | ARVN.effectiveness.fire_coordination | — → unjudged |
 | P3 | ARVN.effectiveness.mobile_defence | — → unjudged |
 | P3 | ARVN.effectiveness.night_ops | — → unjudged |
-| P3 | ARVN.self_sufficiency | +0 (old band ≈ +0) → +0 (converted) |
+| P3 | ARVN.self_sufficiency | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
 | P3 | ARVN.self_sufficiency.maintenance | — → unjudged |
 | P3 | ARVN.self_sufficiency.logistics | — → unjudged |
 | P3 | ARVN.self_sufficiency.fire_support | — → unjudged |
 | P3 | ARVN.self_sufficiency.replacement | — → unjudged |
-| P3 | US.casualties | +0 (old band ≈ +0) → +0 (converted) |
-| P3 | US.political_tolerance | +0 (old band ≈ +0) → +0 (converted) |
+| P3 | US.casualties | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P3 | US.political_tolerance | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
 | P3 | US.political_tolerance.public | — → unjudged |
 | P3 | US.political_tolerance.congress | — → unjudged |
 | P3 | US.political_tolerance.administration | — → unjudged |
-| P3 | NEGOT.position | +0 (old band ≈ +0) → +0 (converted) |
-| P4 | POP.night_control | +1 (old band ≈ +2..+4) → +2..+4 (converted) |
+| P3 | NEGOT.position | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P4 | POP.night_control | +1 (old band ≈ +2..+4) → +2..+4 (converted, v1.0.6 scale) |
 | P4 | POP.night_control.I_corps | — → unjudged |
 | P4 | POP.night_control.II_corps | — → unjudged |
 | P4 | POP.night_control.III_corps | — → unjudged |
 | P4 | POP.night_control.IV_corps | — → unjudged |
-| P4 | POP.displacement | +0 (old band ≈ +0) → +0 (converted) |
-| P4 | POP.gvn_legitimacy | +1 (old band ≈ +2..+4) → +2..+4 (converted) |
+| P4 | POP.displacement | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P4 | POP.gvn_legitimacy | +1 (old band ≈ +2..+4) → +2..+4 (converted, v1.0.6 scale) |
 | P4 | POP.gvn_legitimacy.I_corps | — → unjudged |
 | P4 | POP.gvn_legitimacy.II_corps | — → unjudged |
 | P4 | POP.gvn_legitimacy.III_corps | — → unjudged |
 | P4 | POP.gvn_legitimacy.IV_corps | — → unjudged |
-| P4 | GVN.political_stability | +0 (old band ≈ +0) → +0 (converted) |
-| P4 | VCI.strength | -1 (old band ≈ -4..-2) → -4..-2 (converted) |
-| P4 | ENEMY.engagement_control | -1 (old band ≈ -4..-2) → -4..-2 (converted) |
-| P4 | HANOI.will | +0 (old band ≈ +0) → +0 (converted) |
-| P4 | TRAIL.tonnage_arriving | +0 (old band ≈ +0) → +0 (converted) |
-| P4 | FIND.main_force | +1 (old band ≈ +2..+4) → +2..+4 (converted) |
-| P4 | FIND.vci | +2 (old band ≈ +5..+7) → +5..+7 (converted) |
-| P4 | ARVN.effectiveness | +2 (old band ≈ +5..+7) → +5..+7 (converted) |
+| P4 | GVN.political_stability | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P4 | VCI.strength | -1 (old band ≈ -4..-2) → -4..-2 (converted, v1.0.6 scale) |
+| P4 | ENEMY.engagement_control | -1 (old band ≈ -4..-2) → -4..-2 (converted, v1.0.6 scale) |
+| P4 | HANOI.will | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P4 | TRAIL.tonnage_arriving | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P4 | FIND.main_force | +1 (old band ≈ +2..+4) → +2..+4 (converted, v1.0.6 scale) |
+| P4 | FIND.vci | +2 (old band ≈ +5..+7) → +5..+7 (converted, v1.0.6 scale) |
+| P4 | ARVN.effectiveness | +2 (old band ≈ +5..+7) → +5..+7 (converted, v1.0.6 scale) |
 | P4 | ARVN.effectiveness.small_unit | — → unjudged |
 | P4 | ARVN.effectiveness.combined_arms | — → unjudged |
 | P4 | ARVN.effectiveness.anti_armor | — → unjudged |
@@ -143,36 +143,36 @@
 | P4 | ARVN.effectiveness.fire_coordination | — → unjudged |
 | P4 | ARVN.effectiveness.mobile_defence | — → unjudged |
 | P4 | ARVN.effectiveness.night_ops | — → unjudged |
-| P4 | ARVN.self_sufficiency | +0 (old band ≈ +0) → +0 (converted) |
+| P4 | ARVN.self_sufficiency | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
 | P4 | ARVN.self_sufficiency.maintenance | — → unjudged |
 | P4 | ARVN.self_sufficiency.logistics | — → unjudged |
 | P4 | ARVN.self_sufficiency.fire_support | — → unjudged |
 | P4 | ARVN.self_sufficiency.replacement | — → unjudged |
-| P4 | US.casualties | +0 (old band ≈ +0) → +0 (converted) |
-| P4 | US.political_tolerance | +0 (old band ≈ +0) → +0 (converted) |
+| P4 | US.casualties | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P4 | US.political_tolerance | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
 | P4 | US.political_tolerance.public | — → unjudged |
 | P4 | US.political_tolerance.congress | — → unjudged |
 | P4 | US.political_tolerance.administration | — → unjudged |
-| P4 | NEGOT.position | +0 (old band ≈ +0) → +0 (converted) |
-| P5 | POP.night_control | +1 (old band ≈ +2..+4) → +2..+4 (converted) |
+| P4 | NEGOT.position | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P5 | POP.night_control | +1 (old band ≈ +2..+4) → +2..+4 (converted, v1.0.6 scale) |
 | P5 | POP.night_control.I_corps | — → unjudged |
 | P5 | POP.night_control.II_corps | — → unjudged |
 | P5 | POP.night_control.III_corps | — → unjudged |
 | P5 | POP.night_control.IV_corps | — → unjudged |
-| P5 | POP.displacement | +0 (old band ≈ +0) → +0 (converted) |
-| P5 | POP.gvn_legitimacy | +0 (old band ≈ +0) → +0 (converted) |
+| P5 | POP.displacement | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P5 | POP.gvn_legitimacy | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
 | P5 | POP.gvn_legitimacy.I_corps | — → unjudged |
 | P5 | POP.gvn_legitimacy.II_corps | — → unjudged |
 | P5 | POP.gvn_legitimacy.III_corps | — → unjudged |
 | P5 | POP.gvn_legitimacy.IV_corps | — → unjudged |
-| P5 | GVN.political_stability | +0 (old band ≈ +0) → +0 (converted) |
-| P5 | VCI.strength | -1 (old band ≈ -4..-2) → -4..-2 (converted) |
-| P5 | ENEMY.engagement_control | -1 (old band ≈ -4..-2) → -4..-2 (converted) |
-| P5 | HANOI.will | +0 (old band ≈ +0) → +0 (converted) |
-| P5 | TRAIL.tonnage_arriving | +0 (old band ≈ +0) → +0 (converted) |
-| P5 | FIND.main_force | +1 (old band ≈ +2..+4) → +2..+4 (converted) |
-| P5 | FIND.vci | +1 (old band ≈ +2..+4) → +2..+4 (converted) |
-| P5 | ARVN.effectiveness | +1 (old band ≈ +2..+4) → +2..+4 (converted) |
+| P5 | GVN.political_stability | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P5 | VCI.strength | -1 (old band ≈ -4..-2) → -4..-2 (converted, v1.0.6 scale) |
+| P5 | ENEMY.engagement_control | -1 (old band ≈ -4..-2) → -4..-2 (converted, v1.0.6 scale) |
+| P5 | HANOI.will | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P5 | TRAIL.tonnage_arriving | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P5 | FIND.main_force | +1 (old band ≈ +2..+4) → +2..+4 (converted, v1.0.6 scale) |
+| P5 | FIND.vci | +1 (old band ≈ +2..+4) → +2..+4 (converted, v1.0.6 scale) |
+| P5 | ARVN.effectiveness | +1 (old band ≈ +2..+4) → +2..+4 (converted, v1.0.6 scale) |
 | P5 | ARVN.effectiveness.small_unit | — → unjudged |
 | P5 | ARVN.effectiveness.combined_arms | — → unjudged |
 | P5 | ARVN.effectiveness.anti_armor | — → unjudged |
@@ -180,36 +180,36 @@
 | P5 | ARVN.effectiveness.fire_coordination | — → unjudged |
 | P5 | ARVN.effectiveness.mobile_defence | — → unjudged |
 | P5 | ARVN.effectiveness.night_ops | — → unjudged |
-| P5 | ARVN.self_sufficiency | -1 (old band ≈ -4..-2) → -4..-2 (converted) |
+| P5 | ARVN.self_sufficiency | -1 (old band ≈ -4..-2) → -4..-2 (converted, v1.0.6 scale) |
 | P5 | ARVN.self_sufficiency.maintenance | — → unjudged |
 | P5 | ARVN.self_sufficiency.logistics | — → unjudged |
 | P5 | ARVN.self_sufficiency.fire_support | — → unjudged |
 | P5 | ARVN.self_sufficiency.replacement | — → unjudged |
-| P5 | US.casualties | +0 (old band ≈ +0) → +0 (converted) |
-| P5 | US.political_tolerance | +0 (old band ≈ +0) → +0 (converted) |
+| P5 | US.casualties | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P5 | US.political_tolerance | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
 | P5 | US.political_tolerance.public | — → unjudged |
 | P5 | US.political_tolerance.congress | — → unjudged |
 | P5 | US.political_tolerance.administration | — → unjudged |
-| P5 | NEGOT.position | +0 (old band ≈ +0) → +0 (converted) |
-| P6 | POP.night_control | +0 (old band ≈ +0) → +0 (converted) |
+| P5 | NEGOT.position | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P6 | POP.night_control | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
 | P6 | POP.night_control.I_corps | — → unjudged |
 | P6 | POP.night_control.II_corps | — → unjudged |
 | P6 | POP.night_control.III_corps | — → unjudged |
 | P6 | POP.night_control.IV_corps | — → unjudged |
-| P6 | POP.displacement | +0 (old band ≈ +0) → +0 (converted) |
-| P6 | POP.gvn_legitimacy | +0 (old band ≈ +0) → +0 (converted) |
+| P6 | POP.displacement | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P6 | POP.gvn_legitimacy | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
 | P6 | POP.gvn_legitimacy.I_corps | — → unjudged |
 | P6 | POP.gvn_legitimacy.II_corps | — → unjudged |
 | P6 | POP.gvn_legitimacy.III_corps | — → unjudged |
 | P6 | POP.gvn_legitimacy.IV_corps | — → unjudged |
-| P6 | GVN.political_stability | +0 (old band ≈ +0) → +0 (converted) |
-| P6 | VCI.strength | +0 (old band ≈ +0) → +0 (converted) |
-| P6 | ENEMY.engagement_control | +0 (old band ≈ +0) → +0 (converted) |
-| P6 | HANOI.will | +0 (old band ≈ +0) → +0 (converted) |
-| P6 | TRAIL.tonnage_arriving | +0 (old band ≈ +0) → +0 (converted) |
-| P6 | FIND.main_force | +0 (old band ≈ +0) → +0 (converted) |
-| P6 | FIND.vci | +0 (old band ≈ +0) → +0 (converted) |
-| P6 | ARVN.effectiveness | +0 (old band ≈ +0) → +0 (converted) |
+| P6 | GVN.political_stability | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P6 | VCI.strength | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P6 | ENEMY.engagement_control | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P6 | HANOI.will | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P6 | TRAIL.tonnage_arriving | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P6 | FIND.main_force | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P6 | FIND.vci | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P6 | ARVN.effectiveness | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
 | P6 | ARVN.effectiveness.small_unit | — → unjudged |
 | P6 | ARVN.effectiveness.combined_arms | — → unjudged |
 | P6 | ARVN.effectiveness.anti_armor | — → unjudged |
@@ -217,17 +217,17 @@
 | P6 | ARVN.effectiveness.fire_coordination | — → unjudged |
 | P6 | ARVN.effectiveness.mobile_defence | — → unjudged |
 | P6 | ARVN.effectiveness.night_ops | — → unjudged |
-| P6 | ARVN.self_sufficiency | +0 (old band ≈ +0) → +0 (converted) |
+| P6 | ARVN.self_sufficiency | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
 | P6 | ARVN.self_sufficiency.maintenance | — → unjudged |
 | P6 | ARVN.self_sufficiency.logistics | — → unjudged |
 | P6 | ARVN.self_sufficiency.fire_support | — → unjudged |
 | P6 | ARVN.self_sufficiency.replacement | — → unjudged |
-| P6 | US.casualties | +0 (old band ≈ +0) → +0 (converted) |
-| P6 | US.political_tolerance | +0 (old band ≈ +0) → +0 (converted) |
+| P6 | US.casualties | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
+| P6 | US.political_tolerance | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
 | P6 | US.political_tolerance.public | — → unjudged |
 | P6 | US.political_tolerance.congress | — → unjudged |
 | P6 | US.political_tolerance.administration | — → unjudged |
-| P6 | NEGOT.position | +0 (old band ≈ +0) → +0 (converted) |
+| P6 | NEGOT.position | +0 (old band ≈ +0) → +0 (converted, v1.0.6 scale) |
 | P6 (snapshot) | POP.night_control | — → unjudged |
 | P6 (snapshot) | POP.night_control.I_corps | — → unjudged |
 | P6 (snapshot) | POP.night_control.II_corps | — → unjudged |

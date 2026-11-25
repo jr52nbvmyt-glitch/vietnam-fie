@@ -1,51 +1,58 @@
 # World variables — the controlled vocabulary through which provisions interact.
 #
 # Provisions rarely act on each other directly; they act on the same parts of the
-# war. Each provision's manifest declares which variables it PUSHES (with a range)
+# war. Each provision's manifest declares which variables it PUSHES (with a change)
 # and which it DEPENDS ON. scripts/fie.py routes earlier provisions to a new memo
 # by shared variables, and builds a ledger per variable.
 #
-# THE SCALE (from v1.0.6). Every value is a judgment, never a measurement (A12, A13),
-# written as a range on a scale of −10 to +10 with a confidence and a note:
-#   0 no effect · ±1 a trace · ±2 to ±4 noticeable · ±5 to ±7 substantial · ±8 to ±10 transformative
-#   ±10 is reserved for a different war on that variable, not a strong effect.
-#   low ≤ high; the width of the range is the uncertainty, and a range may cross zero
-#   when the direction itself is uncertain.
-#   conf: "low" | "medium" | "high" — how far the record supports the range;
-#         "converted" — mechanically converted from the −3..+3 bands of v1.0.5 and not yet re-judged;
-#         "unjudged" — not yet judged (facets and the 1974 snapshot start here); no low or high.
-#   note: one line saying what the range means on the ground — the mechanism, not a restatement.
-# For a provision's push: its own contribution, other things equal.
-# For a phase end vector: the state at the end of the phase relative to the
-# historical state at the same date.
-# "higher" says what a positive value means for that variable.
+# NATURAL UNITS (from v1.0.8, revisions/R03). Every variable is measured in a unit of
+# the war itself, never on an abstract scale. Every value is still a judgment, never a
+# measurement (A12, A13): a range in the unit, with a confidence and a note.
+#   kind = "count"  — a quantity (tons a year, thousands of men, dollars, minutes)
+#   kind = "share"  — a percentage of the stated whole; changes are in percentage points
+#   kind = "months" — a duration in months
+#   kind = "ladder" — ordered rungs, listed in `rungs`; values are rung numbers
+#   better = "higher" | "lower" — which direction favours the allies
+#   unit — what one unit is. A faceted variable gives each facet its own unit.
 #
-# The old bands (v1.0.5 and earlier) are history and stay as written in memoranda
-# 001–010. The script reads them through this mapping: 0 → 0..0 · ±1 → ±2..±4 ·
-# ±2 → ±5..±7 · ±3 → ±8..±10 (revisions/R01).
+# A VALUE (a chapter's end-vector or snapshot entry) is an inline table:
+#   hist  = history's figure at the phase's end date (a number, or a rung)       } together,
+#   src   = its provenance: [H…], [S…], [M005·S2] or [R03·S1]                     } or both absent
+#   low, high   = this war's figure as a range in the unit — the preferred form; or
+#   dlow, dhigh = this war's difference from history in the unit, used while hist is
+#                 unresearched (a share's difference is in percentage points); or
+#   plow, phigh = this war's difference from history as a percentage of history's figure
+#   conf  = "low" | "medium" | "high" — how far the record supports the range;
+#           "unjudged" — not yet judged in units (no range)
+#   was   = the value on the retired scale, kept for the record (v1.0.6 and earlier)
+#   binding = the facet that decides outcomes, on a faceted parent once any facet is judged
+#   note  = one line: the mechanism on the ground, not a restatement of the figure
+# The width of the range is the uncertainty. Small error is expected and honest; a range
+# that says exactly what it means on the ground is worth more than a precise-looking one.
 #
-# TIERS (vector variables). tier = "hard": the variable has a real unit (unit = …)
-# and published historical figures. A chapter's end-vector entry for it carries
-# hist = "<history's figure for the phase's end date> [H…]" once that anchor has been
-# researched, and then est = "<this war's figure> [X-NNN]" beside it: the range stays
-# the judgment, the figures say what it means. tier = "semi": a proxy unit exists but
-# the sources are thin; hist/est are optional. tier = "soft": no honest unit; the
-# range and note carry it alone. An est figure is an exercise judgment forever (A13a).
+# A PUSH (a provision's manifest, memoranda 014 on) is the provision's own contribution,
+# other things equal, as a change in the unit at a stated phase:
+#   { var, dlow, dhigh, at = "Pk", conf, note }  (or plow/phigh as % of history's figure;
+#   for a ladder, dlow/dhigh are rungs, or months earlier (−) or later (+) with `months = true`)
+#
+# THE RETIRED SCALES. The −3..+3 bands (memoranda 001–010) and the −10..+10 ranges
+# (memoranda 011–013, and every chapter value before R03) are history and stay as
+# written in those memoranda; the script shows them marked with their scale. A chapter
+# value on the −10..+10 scale is kept only in `was`.
 #
 # FACETS. A variable whose parts fail separately has facets: sub-variables with IDs
-# "<variable>.<facet>", on the same scale. A provision that acts on one facet pushes
+# "<variable>.<facet>", each with its own unit. A provision that acts on one facet pushes
 # that facet, not the parent. In a phase end vector, a faceted vector variable carries
 # its parent and every facet; the parent remains a judgment, not an average, and once
-# any facet is judged it names its binding facet (binding = "<facet>"): the one that
-# decides outcomes. Facets start "unjudged" and are judged only where the record
-# holds evidence. Routing treats a facet as its parent.
+# any facet is judged it names its binding facet. Routing treats a facet as its parent.
 #
 # vector = true marks the headline variables every phase chapter carries in its
 # end vector (and in the snapshot of a phase that has one). The ripple rule compares these.
 #
-# Adding a variable or a facet is a version change: bump VERSION and every version header.
+# Adding a variable or a facet, or changing a unit, is a version change: bump VERSION
+# and every version header.
 
-version = "1.0.7"
+version = "1.0.8"
 
 # ----------------------------------------------------------------- population
 [[var]]
@@ -55,13 +62,14 @@ higher = "more hamlets held by the GVN after dark"
 indicators = "VCI tax collection; PF night ambush and patrol rate; hamlet officials sleeping in the hamlet; HES only with its A13 caveat"
 systems = ["SECURE"]
 vector = true
-tier = "hard"
-unit = "share of the rural population living in hamlets the GVN holds after dark (HES A–C hamlets, cited only with the A13 caveat)"
+kind = "share"
+unit = "% of the rural population living in hamlets the GVN holds after dark (HES A–C, cited only with the A13 caveat)"
+better = "higher"
 facets = [
-  { id = "I_corps", name = "I Corps: the five northern provinces" },
-  { id = "II_corps", name = "II Corps: the Central Highlands and the central coast" },
-  { id = "III_corps", name = "III Corps: the provinces around Saigon" },
-  { id = "IV_corps", name = "IV Corps: the Mekong Delta" },
+  { id = "I_corps", name = "I Corps: the five northern provinces", unit = "% of I Corps' rural population in hamlets the GVN holds after dark", kind = "share" },
+  { id = "II_corps", name = "II Corps: the Central Highlands and the central coast", unit = "% of II Corps' rural population in hamlets the GVN holds after dark", kind = "share" },
+  { id = "III_corps", name = "III Corps: the provinces around Saigon", unit = "% of III Corps' rural population in hamlets the GVN holds after dark", kind = "share" },
+  { id = "IV_corps", name = "IV Corps: the Mekong Delta", unit = "% of IV Corps' rural population in hamlets the GVN holds after dark", kind = "share" },
 ]
 
 [[var]]
@@ -71,8 +79,9 @@ higher = "more refugees and more rural depopulation"
 indicators = "refugee registrations; urban population growth; abandoned hamlets in free-fire areas"
 systems = ["SECURE", "STRIKE"]
 vector = true
-tier = "hard"
-unit = "refugees registered in the RVN, cumulative, at the date"
+kind = "count"
+unit = "refugees registered in the RVN, cumulative at the date, thousands"
+better = "lower"
 
 [[var]]
 id = "POP.civilian_harm"
@@ -81,6 +90,9 @@ higher = "more civilian deaths and injuries"
 indicators = "province hospital admissions by cause; claims paid; enemy terror incidents"
 systems = ["STRIKE", "SECURE"]
 vector = false
+kind = "count"
+unit = "civilian dead and wounded in the South from all sides' operations, thousands a year"
+better = "lower"
 
 [[var]]
 id = "POP.gvn_legitimacy"
@@ -89,12 +101,14 @@ higher = "more rural acceptance of the GVN"
 indicators = "voluntary intelligence from the population; rice sold to the GVN rather than taxed by the VC; voluntary RF/PF enlistment"
 systems = ["SECURE", "SUBVERT"]
 vector = true
-tier = "soft"
+kind = "share"
+unit = "% of the rural population that prefers the GVN to the Front (survey from 1970; estimated before)"
+better = "higher"
 facets = [
-  { id = "I_corps", name = "I Corps: the five northern provinces" },
-  { id = "II_corps", name = "II Corps: the Central Highlands and the central coast" },
-  { id = "III_corps", name = "III Corps: the provinces around Saigon" },
-  { id = "IV_corps", name = "IV Corps: the Mekong Delta" },
+  { id = "I_corps", name = "I Corps: the five northern provinces", unit = "% of I Corps' rural population preferring the GVN", kind = "share" },
+  { id = "II_corps", name = "II Corps: the Central Highlands and the central coast", unit = "% of II Corps' rural population preferring the GVN", kind = "share" },
+  { id = "III_corps", name = "III Corps: the provinces around Saigon", unit = "% of III Corps' rural population preferring the GVN", kind = "share" },
+  { id = "IV_corps", name = "IV Corps: the Mekong Delta", unit = "% of IV Corps' rural population preferring the GVN", kind = "share" },
 ]
 
 [[var]]
@@ -104,6 +118,9 @@ higher = "more owner-cultivators with secure title"
 indicators = "titles distributed and still held; rents actually paid to absentee landlords"
 systems = ["SECURE"]
 vector = false
+kind = "share"
+unit = "% of riceland worked by owner-cultivators"
+better = "higher"
 
 [[var]]
 id = "POP.rural_economy"
@@ -112,6 +129,9 @@ higher = "more rice production and market access"
 indicators = "paddy output; rice reaching provincial markets; fertiliser and credit uptake"
 systems = ["SECURE", "SUSTAIN"]
 vector = false
+kind = "count"
+unit = "paddy production, million tonnes a year"
+better = "higher"
 
 # ------------------------------------------------------------------- economy
 [[var]]
@@ -121,6 +141,9 @@ higher = "more inflation"
 indicators = "Saigon retail price index; piaster black-market rate"
 systems = ["SUSTAIN"]
 vector = false
+kind = "share"
+unit = "rise in the Saigon retail price index, % a year"
+better = "lower"
 
 [[var]]
 id = "ECON.rice_denial"
@@ -129,6 +152,9 @@ higher = "less rice reaching the VC and PAVN in the South"
 indicators = "enemy rice caches found; enemy rations in captured documents; prisoner reports of hunger"
 systems = ["SECURE", "INTERDICT"]
 vector = false
+kind = "count"
+unit = "rice the enemy in the South obtains from Southern sources, thousand tonnes a year"
+better = "lower"
 
 # ---------------------------------------------------------------- government
 [[var]]
@@ -138,6 +164,9 @@ higher = "more functioning administration"
 indicators = "district officials resident and working; budgets executed; village elections held and respected"
 systems = ["SECURE", "ADVISE"]
 vector = false
+kind = "share"
+unit = "% of villages with an elected council resident in the village"
+better = "higher"
 
 [[var]]
 id = "GVN.corruption"
@@ -146,6 +175,9 @@ higher = "more corruption"
 indicators = "US supplies on the black market; sale of offices; ghost soldiers on unit rolls"
 systems = ["ADVISE", "SUSTAIN"]
 vector = false
+kind = "share"
+unit = "% of the RVNAF's paid strength that is ghost or ornamental soldiers"
+better = "lower"
 
 [[var]]
 id = "GVN.political_stability"
@@ -154,7 +186,9 @@ higher = "more stable government and junta cohesion"
 indicators = "coups and coup attempts; Buddhist and student unrest; cabinet turnover"
 systems = ["ADVISE"]
 vector = true
-tier = "soft"
+kind = "count"
+unit = "changes of government in the phase: coups, coup attempts and forced resignations of the head of government"
+better = "lower"
 
 [[var]]
 id = "GVN.police"
@@ -163,6 +197,9 @@ higher = "more capable and present rural police"
 indicators = "police resident in villages; arrests that lead to convictions; identity-card coverage"
 systems = ["SECURE", "SUBVERT"]
 vector = false
+kind = "count"
+unit = "National Police strength, thousands"
+better = "higher"
 
 # ------------------------------------------------------------ VC and the VCI
 [[var]]
@@ -172,8 +209,9 @@ higher = "a stronger, better-functioning VCI"
 indicators = "documents captured from village and district committees; tax receipts; cadre replacement rate"
 systems = ["SUBVERT", "SECURE"]
 vector = true
-tier = "semi"
-unit = "estimated VCI cadre in the South"
+kind = "count"
+unit = "VCI cadre in the South, thousands"
+better = "lower"
 
 [[var]]
 id = "VCI.tax_take"
@@ -182,6 +220,9 @@ higher = "more revenue to the VC"
 indicators = "captured tax ledgers; prisoner and defector reports"
 systems = ["SUBVERT", "SECURE"]
 vector = false
+kind = "count"
+unit = "revenue the Front collects in the South, billion piastres a year"
+better = "lower"
 
 [[var]]
 id = "VC.recruitment"
@@ -190,6 +231,9 @@ higher = "more recruits"
 indicators = "southern-born share of captured soldiers; age of captured guerrillas"
 systems = ["SECURE", "SUBVERT"]
 vector = false
+kind = "count"
+unit = "recruits the Front raises in the South, thousands a year"
+better = "lower"
 
 [[var]]
 id = "VC.local_force"
@@ -198,6 +242,9 @@ higher = "stronger local force and guerrilla units"
 indicators = "incidents initiated by local units; mines and booby traps encountered"
 systems = ["SECURE", "FIX"]
 vector = false
+kind = "count"
+unit = "VC local-force and guerrilla strength, thousands"
+better = "lower"
 
 [[var]]
 id = "VC.main_force"
@@ -206,6 +253,9 @@ higher = "stronger southern main-force units"
 indicators = "regimental strengths from documents; southern share of main-force fillers"
 systems = ["FIX", "STRIKE"]
 vector = false
+kind = "count"
+unit = "VC main-force strength, thousands"
+better = "lower"
 
 # ------------------------------------------------------- PAVN and Hanoi
 [[var]]
@@ -215,6 +265,9 @@ higher = "more PAVN combat power in RVN"
 indicators = "identified PAVN regiments in country; infiltration groups traced to units"
 systems = ["FIX", "STRIKE"]
 vector = false
+kind = "count"
+unit = "PAVN troops in the South and the border base areas, thousands"
+better = "lower"
 
 [[var]]
 id = "ENEMY.engagement_control"
@@ -223,8 +276,9 @@ higher = "the enemy decides more often whether, when and where battle happens"
 indicators = "share of contacts initiated by the enemy; share of contacts broken off by the enemy"
 systems = ["FIND", "FIX"]
 vector = true
-tier = "semi"
-unit = "share of engagements initiated by the enemy"
+kind = "share"
+unit = "% of engagements of platoon size or larger that the enemy initiates"
+better = "lower"
 
 [[var]]
 id = "ENEMY.regeneration"
@@ -233,6 +287,9 @@ higher = "faster rebuilding of mauled units"
 indicators = "time from a unit's mauling to its reappearance at strength"
 systems = ["INTERDICT"]
 vector = false
+kind = "months"
+unit = "months for a mauled enemy regiment to return to combat"
+better = "lower"
 
 [[var]]
 id = "HANOI.will"
@@ -241,7 +298,15 @@ higher = "more commitment"
 indicators = "Politburo resolutions; mobilisation decrees; negotiating posture"
 systems = ["STRIKE", "SUBVERT"]
 vector = true
-tier = "soft"
+kind = "ladder"
+unit = "Hanoi's commitment, on the ladder below"
+better = "lower"
+rungs = [
+  "1 · would accept a divided Vietnam for the foreseeable future",
+  "2 · would accept a settlement that leaves the RVN standing for a decent interval",
+  "3 · fights and negotiates for reunification, adjusting its timing to the cost",
+  "4 · fights for reunification at any cost and on any timetable",
+]
 
 # ----------------------------------------------- the Trail and infiltration
 [[var]]
@@ -251,6 +316,9 @@ higher = "more throughput capacity on the Trail"
 indicators = "road kilometres; truck parks; repair tempo after strikes"
 systems = ["INTERDICT"]
 vector = false
+kind = "count"
+unit = "tons a day the Trail system can deliver at the dry season's peak"
+better = "lower"
 
 [[var]]
 id = "TRAIL.tonnage_arriving"
@@ -259,8 +327,9 @@ higher = "more tonnage reaching RVN and the border base areas"
 indicators = "tonnage estimates at the exits of the Trail; cache sizes; enemy ammunition expenditure"
 systems = ["INTERDICT"]
 vector = true
-tier = "hard"
-unit = "tons a year arriving in the South and the border base areas by the Trail (contested CIA and MACV ranges)"
+kind = "count"
+unit = "tons a year arriving in the South and the border base areas by the Trail (contested CIA and Air Force estimates)"
+better = "lower"
 
 [[var]]
 id = "INFIL.personnel"
@@ -269,6 +338,9 @@ higher = "more infiltrators arriving"
 indicators = "infiltration groups detected; binh tram logs; prisoner interrogations"
 systems = ["INTERDICT"]
 vector = false
+kind = "count"
+unit = "infiltrators arriving in the South, thousands a year"
+better = "lower"
 
 [[var]]
 id = "INFIL.sea"
@@ -277,6 +349,9 @@ higher = "more supply arriving by sea or through Cambodian ports"
 indicators = "trawlers intercepted; Cambodian port receipts; Market Time detections"
 systems = ["INTERDICT"]
 vector = false
+kind = "count"
+unit = "tons a year reaching the enemy by sea and through Cambodian ports"
+better = "lower"
 
 [[var]]
 id = "SANCT.cambodia"
@@ -285,6 +360,9 @@ higher = "more useful to the enemy"
 indicators = "base-area activity; supply through Sihanoukville"
 systems = ["INTERDICT"]
 vector = false
+kind = "count"
+unit = "enemy main-force battalions based in Cambodia"
+better = "lower"
 
 [[var]]
 id = "SANCT.laos"
@@ -293,6 +371,9 @@ higher = "more useful to the enemy"
 indicators = "base-area activity; Trail traffic counts"
 systems = ["INTERDICT"]
 vector = false
+kind = "count"
+unit = "enemy logistic personnel in Laos (Group 559 and attached), thousands"
+better = "lower"
 
 # ------------------------------------------------------------ find and fix
 [[var]]
@@ -302,8 +383,9 @@ higher = "better ability to locate PAVN and VC main-force units"
 indicators = "share of contacts initiated by friendly forces on located units; time from detection to contact"
 systems = ["FIND"]
 vector = true
-tier = "semi"
-unit = "share of main-force contacts initiated by friendly forces on units already located"
+kind = "share"
+unit = "% of main-force contacts the allies initiate on units already located"
+better = "higher"
 
 [[var]]
 id = "FIND.vci"
@@ -312,8 +394,9 @@ higher = "better ability to identify VCI members inside the population"
 indicators = "VCI neutralised who were on a pre-existing target list, at district level or above"
 systems = ["FIND", "SUBVERT"]
 vector = true
-tier = "semi"
-unit = "VCI neutralised a year who were on a pre-existing target list, district level or above"
+kind = "count"
+unit = "VCI neutralised a year who were on a prior target list, district level or above, thousands"
+better = "higher"
 
 [[var]]
 id = "INTEL.penetration"
@@ -322,6 +405,9 @@ higher = "more enemy agents inside the GVN and RVNAF"
 indicators = "compromised operations; agents uncovered"
 systems = ["FIND", "ADVISE"]
 vector = false
+kind = "count"
+unit = "enemy agents inside the GVN and RVNAF, thousands"
+better = "lower"
 
 [[var]]
 id = "FIX.capability"
@@ -330,6 +416,9 @@ higher = "better ability to hold an enemy in place once found"
 indicators = "share of contacts that develop into engagements on friendly terms"
 systems = ["FIX"]
 vector = false
+kind = "share"
+unit = "% of located main-force units engaged before they break contact"
+better = "higher"
 
 [[var]]
 id = "STRIKE.responsiveness"
@@ -338,6 +427,9 @@ higher = "faster fires on located targets"
 indicators = "minutes from request to rounds or ordnance on target"
 systems = ["STRIKE"]
 vector = false
+kind = "count"
+unit = "minutes from a located target to fire on it (median, by the target type named in the note)"
+better = "lower"
 
 # -------------------------------------------------- the air war in the North
 [[var]]
@@ -347,6 +439,9 @@ higher = "more effect on the North's capacity and will"
 indicators = "rail and port throughput in the North; imports; repair crews diverted"
 systems = ["STRIKE", "INTERDICT"]
 vector = false
+kind = "share"
+unit = "% of the North's 1964 power-generating and bulk-fuel capacity out of action"
+better = "higher"
 
 [[var]]
 id = "AIR.north_defences"
@@ -355,6 +450,9 @@ higher = "denser and more lethal air defence"
 indicators = "SA-2 sites; AAA counts; MiG sorties"
 systems = ["STRIKE"]
 vector = false
+kind = "count"
+unit = "air-defence guns in the North, thousands, with SA-2 battalions named in the note"
+better = "lower"
 
 [[var]]
 id = "AIR.losses"
@@ -363,6 +461,9 @@ higher = "more aircraft lost"
 indicators = "loss rate per 1,000 sorties by area"
 systems = ["STRIKE"]
 vector = false
+kind = "count"
+unit = "US aircraft lost over the North and Laos in the phase"
+better = "lower"
 
 # --------------------------------------------------------- RVNAF and advice
 [[var]]
@@ -372,16 +473,17 @@ higher = "more effective ARVN units in combat"
 indicators = "outcomes of ARVN-only engagements; weapons lost against weapons captured"
 systems = ["ADVISE", "FIX"]
 vector = true
-tier = "semi"
-unit = "weapons lost to weapons captured in ARVN-only engagements"
+kind = "count"
+unit = "ARVN weapons lost per 100 enemy weapons captured, ARVN-only engagements"
+better = "lower"
 facets = [
-  { id = "small_unit", name = "Small-unit and counter-guerrilla infantry" },
-  { id = "combined_arms", name = "Combined arms: infantry, armor and artillery together" },
-  { id = "anti_armor", name = "Anti-armor" },
-  { id = "urban", name = "Urban combat" },
-  { id = "fire_coordination", name = "Air-ground and fire-support coordination" },
-  { id = "mobile_defence", name = "Mobile defence and withdrawal under pressure" },
-  { id = "night_ops", name = "Night operations" },
+  { id = "small_unit", name = "Small-unit and counter-guerrilla infantry", unit = "% of company-and-below contacts the ARVN initiates", kind = "share" },
+  { id = "combined_arms", name = "Combined arms: infantry, armor and artillery together", unit = "% of battalion-and-larger ARVN attacks that take their objective without US ground forces", kind = "share" },
+  { id = "anti_armor", name = "Anti-armor", unit = "% of PAVN armoured attacks stopped short of their objective without US air", kind = "share" },
+  { id = "urban", name = "Urban combat", unit = "days to clear a battalion-size enemy lodgement in a town", kind = "count" },
+  { id = "fire_coordination", name = "Air-ground and fire-support coordination", unit = "minutes from an ARVN call for fire to rounds on target", kind = "count" },
+  { id = "mobile_defence", name = "Mobile defence and withdrawal under pressure", unit = "% of ARVN withdrawals under pressure completed with the unit intact", kind = "share" },
+  { id = "night_ops", name = "Night operations", unit = "% of ARVN ambushes and patrols conducted at night", kind = "share" },
 ]
 
 [[var]]
@@ -391,6 +493,9 @@ higher = "better officers, selected on merit"
 indicators = "promotions on merit; commanders relieved for cause; officer casualties in the lead"
 systems = ["ADVISE"]
 vector = false
+kind = "share"
+unit = "% of ARVN battalion commanders rated effective by their advisers"
+better = "higher"
 
 [[var]]
 id = "ARVN.desertion"
@@ -399,6 +504,9 @@ higher = "more desertion"
 indicators = "desertion rates by unit and month"
 systems = ["ADVISE"]
 vector = false
+kind = "count"
+unit = "RVNAF deserters, thousands a year"
+better = "lower"
 
 [[var]]
 id = "ARVN.self_sufficiency"
@@ -407,12 +515,14 @@ higher = "more able to fight, maintain and supply itself without US combat suppo
 indicators = "maintenance rates; logistics without US contractors; fire support without US air"
 systems = ["ADVISE", "SUSTAIN"]
 vector = true
-tier = "soft"
+kind = "share"
+unit = "% of the RVNAF's fire support (artillery and air) delivered by the RVNAF itself"
+better = "higher"
 facets = [
-  { id = "maintenance", name = "Maintenance" },
-  { id = "logistics", name = "Logistics and distribution" },
-  { id = "fire_support", name = "Organic fire support" },
-  { id = "replacement", name = "Replacement and training pipeline" },
+  { id = "maintenance", name = "Maintenance", unit = "% of the RVNAF's major equipment operational", kind = "share" },
+  { id = "logistics", name = "Logistics and distribution", unit = "days of supply held at division level", kind = "count" },
+  { id = "fire_support", name = "Organic fire support", unit = "% of the RVNAF's fire support delivered by its own guns and aircraft", kind = "share" },
+  { id = "replacement", name = "Replacement and training pipeline", unit = "% of authorised strength present for duty in the manoeuvre battalions", kind = "share" },
 ]
 
 [[var]]
@@ -422,10 +532,13 @@ higher = "more effective territorial forces"
 indicators = "outposts lost; night operations; weapons lost"
 systems = ["SECURE", "ADVISE"]
 vector = false
+kind = "share"
+unit = "% of attacked RF and PF outposts that hold"
+better = "higher"
 facets = [
-  { id = "outpost_defence", name = "Outpost defence" },
-  { id = "night_patrol", name = "Night patrol and ambush" },
-  { id = "reaction", name = "Reaction and relief when attacked" },
+  { id = "outpost_defence", name = "Outpost defence", unit = "% of attacked outposts that hold", kind = "share" },
+  { id = "night_patrol", name = "Night patrol and ambush", unit = "night ambushes and patrols a month per PF platoon", kind = "count" },
+  { id = "reaction", name = "Reaction and relief when attacked", unit = "hours for relief to reach an attacked outpost", kind = "count" },
 ]
 
 [[var]]
@@ -435,11 +548,14 @@ higher = "more capable VNAF"
 indicators = "sorties flown; mission-capable rates; close support without US controllers"
 systems = ["ADVISE", "STRIKE"]
 vector = false
+kind = "count"
+unit = "VNAF combat sorties a month, thousands"
+better = "higher"
 facets = [
-  { id = "close_support", name = "Close air support" },
-  { id = "lift", name = "Lift: transport and helicopters" },
-  { id = "maintenance", name = "Maintenance and sortie rate" },
-  { id = "survivability", name = "Survivability against air defence" },
+  { id = "close_support", name = "Close air support", unit = "VNAF close-support sorties a month, thousands", kind = "count" },
+  { id = "lift", name = "Lift: transport and helicopters", unit = "VNAF helicopter flying hours a month, thousands", kind = "count" },
+  { id = "maintenance", name = "Maintenance and sortie rate", unit = "% of VNAF aircraft operational", kind = "share" },
+  { id = "survivability", name = "Survivability against air defence", unit = "VNAF aircraft lost per 1,000 sorties", kind = "count" },
 ]
 
 [[var]]
@@ -449,6 +565,9 @@ higher = "advisors can change more RVNAF decisions"
 indicators = "advice acted on; commanders replaced at US request"
 systems = ["ADVISE"]
 vector = false
+kind = "share"
+unit = "% of advisers' recommendations their counterparts adopt"
+better = "higher"
 
 # ------------------------------------------------- US force and sustainment
 [[var]]
@@ -458,6 +577,9 @@ higher = "more spaces consumed"
 indicators = "spaces against the ceiling; specialist shortages"
 systems = ["SUSTAIN"]
 vector = false
+kind = "count"
+unit = "US military personnel in Vietnam, thousands"
+better = "lower"
 
 [[var]]
 id = "US.casualties"
@@ -466,8 +588,9 @@ higher = "more US killed and wounded"
 indicators = "weekly US killed in action and died of wounds"
 systems = ["SUSTAIN"]
 vector = true
-tier = "hard"
-unit = "US killed in action and died of wounds a year"
+kind = "count"
+unit = "US killed by hostile action in the calendar year in which the phase ends (Phase I: 1965)"
+better = "lower"
 
 [[var]]
 id = "US.unit_quality"
@@ -476,6 +599,9 @@ higher = "better US units"
 indicators = "replacement turbulence; disciplinary rates; fragging and drug cases"
 systems = ["SUSTAIN"]
 vector = false
+kind = "share"
+unit = "% of a US rifle company's men more than three months in country"
+better = "higher"
 
 [[var]]
 id = "MED.survival"
@@ -484,6 +610,9 @@ higher = "more wounded survive (US and RVNAF)"
 indicators = "died-of-wounds rate; time to surgical care"
 systems = ["SUSTAIN"]
 vector = false
+kind = "share"
+unit = "% of wounded reaching medical care who survive"
+better = "higher"
 
 [[var]]
 id = "LOG.ports"
@@ -492,6 +621,9 @@ higher = "more port capacity and clearance"
 indicators = "tons cleared per day at Cam Ranh Bay, Da Nang, Qui Nhon, Nha Trang, Saigon"
 systems = ["SUSTAIN"]
 vector = false
+kind = "count"
+unit = "port clearance in the South, thousand short tons a month"
+better = "higher"
 
 [[var]]
 id = "LOG.distribution"
@@ -500,6 +632,9 @@ higher = "better road, rail and air distribution"
 indicators = "convoy losses; road kilometres open; days of supply forward"
 systems = ["SUSTAIN"]
 vector = false
+kind = "count"
+unit = "tons a day moved inland by road, rail and coastal shipping, thousands"
+better = "higher"
 
 [[var]]
 id = "LOG.helicopter_hours"
@@ -508,6 +643,9 @@ higher = "more lift hours available"
 indicators = "hours flown against hours requested"
 systems = ["SUSTAIN", "FIX"]
 vector = false
+kind = "count"
+unit = "helicopter flying hours a month in the South, thousands"
+better = "higher"
 
 [[var]]
 id = "LOG.engineers"
@@ -516,6 +654,9 @@ higher = "more engineer effort available"
 indicators = "engineer battalions free of base construction"
 systems = ["SUSTAIN"]
 vector = false
+kind = "count"
+unit = "engineer battalions in the theater"
+better = "higher"
 
 # -------------------------------------------- politics and the outside world
 [[var]]
@@ -525,12 +666,20 @@ higher = "more time and money Washington will grant"
 indicators = "appropriations; troop decisions; congressional votes; polling"
 systems = ["SUSTAIN"]
 vector = true
-tier = "hard"
-unit = "share of Americans telling Gallup that sending troops to Vietnam was not a mistake"
+kind = "ladder"
+unit = "what Washington will grant the war, on the ladder below"
+better = "higher"
+rungs = [
+  "1 · nothing further: aid ends",
+  "2 · money only, and less of it",
+  "3 · money, no forces",
+  "4 · forces held or reduced on Washington's own schedule",
+  "5 · forces increased on the commander's request",
+]
 facets = [
-  { id = "public", name = "Public opinion" },
-  { id = "congress", name = "Congress and appropriations" },
-  { id = "administration", name = "The administration" },
+  { id = "public", name = "Public opinion", unit = "% telling Gallup that sending troops to Vietnam was not a mistake", kind = "share" },
+  { id = "congress", name = "Congress and appropriations", unit = "US military aid appropriated for the RVNAF in the fiscal year, $ million", kind = "count" },
+  { id = "administration", name = "The administration", unit = "the President's line, rung 1–5: 1 abandons · 2 withdraws regardless · 3 withdraws on terms and supports with money · 4 supports with money and the threat of force · 5 escalates", kind = "ladder" },
 ]
 
 [[var]]
@@ -540,6 +689,9 @@ higher = "wider gap between what MACV reports and what the press reports"
 indicators = "press contradiction of MACV claims; leaks"
 systems = ["SUBVERT"]
 vector = false
+kind = "share"
+unit = "% of Americans who believe the administration is not telling the truth about the war"
+better = "lower"
 
 [[var]]
 id = "INTL.communist_aid"
@@ -548,6 +700,9 @@ higher = "more aid"
 indicators = "imports through Haiphong and the Chinese rail line; SA-2 deliveries"
 systems = ["INTERDICT"]
 vector = false
+kind = "count"
+unit = "Soviet and Chinese military and economic aid to the North, $ million a year"
+better = "lower"
 
 [[var]]
 id = "INTL.chinese_intervention_risk"
@@ -556,6 +711,9 @@ higher = "greater risk"
 indicators = "Chinese troop deployments in the North; Beijing's statements"
 systems = ["STRIKE"]
 vector = false
+kind = "count"
+unit = "Chinese military personnel in the North, thousands"
+better = "lower"
 
 [[var]]
 id = "INTL.allied_forces"
@@ -564,6 +722,9 @@ higher = "more and better ROK, Australian, Thai and other contributions"
 indicators = "troops deployed; operations conducted"
 systems = ["SECURE", "FIX"]
 vector = false
+kind = "count"
+unit = "third-country forces in the South, thousands"
+better = "higher"
 
 [[var]]
 id = "SUBVERT.defection"
@@ -572,6 +733,9 @@ higher = "more real defectors from the VC and PAVN"
 indicators = "Chieu Hoi returnees who bring weapons or name cadre; defections of cadre at district level or above"
 systems = ["SUBVERT"]
 vector = false
+kind = "count"
+unit = "Chieu Hoi ralliers, thousands a year"
+better = "higher"
 
 [[var]]
 id = "NEGOT.position"
@@ -580,4 +744,13 @@ higher = "stronger position against Hanoi"
 indicators = "Hanoi's concessions; terms on offer; who is asking for talks"
 systems = ["STRIKE", "SUBVERT"]
 vector = true
-tier = "soft"
+kind = "ladder"
+unit = "the state of the negotiation, on the ladder below"
+better = "higher"
+rungs = [
+  "1 · no talks",
+  "2 · talks without agreed terms",
+  "3 · an agreement with US forces out and the PAVN in place",
+  "4 · an agreement with mutual withdrawal",
+  "5 · an agreement with enforcement",
+]

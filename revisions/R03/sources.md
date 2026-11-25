@@ -1,0 +1,9 @@
+# Sources — Revision R03 (natural units)
+
+One line per source, cited in the chapters' end vectors as `[R03·S1]` and so on. Figures from the existing record are cited by their own tags ([H40], [H72] and others).
+
+[S1] E. E. Moïse, "Selected Statistics on the Vietnam War, With a Few from Iraq" — Clemson University, https://edmoise.sites.clemson.edu/VNStats.html — US military personnel in Vietnam and US killed by hostile action by year, 1964–72 (1965: 1,369; 1971: 1,380; 1972: 300); Gallup "mistake" series (Dec 1967: 46% mistake, 44% not; Dec 1968: 49% mistake, 41% not)
+[S2] Gallup, "Iraq Versus Vietnam: A Comparison of Public Opinion" (2005) — https://news.gallup.com/poll/18097/iraq-versus-vietnam-comparison-public-opinion.aspx — the "mistake" question first asked in August 1965; about six months into large-scale involvement, 24% mistake and about 60% not a mistake; 1971 and 1973, 60% mistake
+[S3] "South Viet-Nam Background Data, January 1971" — Michigan State University Vietnam Project archive, http://vietnamproject.archives.msu.edu/recordFiles/159-547-3251/UA17-95_001118.pdf — HES share of the population A–C ("relatively secure"): Jan 1968 67.2%, Mar 1968 61.0%, Oct 1968 69.8%, Jun 1969 85.6%, Oct 1969 92.0%, Nov 1970 95.0% (OCR partly garbled; read as shown)
+[S4] E. E. Moïse, "In the Villages: Pacification" (annotated bibliography) — Clemson University, https://edmoise.sites.clemson.edu/villages.html — HES data of 31 Dec 1968: 76.3% of the population in the A–C categories; 30 Sep 1968 66.8%
+[S5] T. C. Thayer (ed.), *A Systems Analysis View of the Vietnam War, 1965–1972*, vol. 4, *Allied Ground and Naval Operations* (OASD Systems Analysis, 1975) — DTIC ADA051610, https://apps.dtic.mil/sti/pdfs/ADA051610.pdf — 1966 sample of 56 fire fights: the enemy attacked in 37 (66%); sample of 68 engagements Oct 1966–May 1968: the enemy initiated 46 (68%); "up to 85%" in an earlier study

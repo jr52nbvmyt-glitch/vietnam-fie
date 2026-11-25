@@ -6,16 +6,16 @@
 
 | Phase | Variable | Before → after |
 |---|---|---|
-| P1 | GVN.political_stability | +0 (converted) → -1..+1 (low) |
-| P1 | VCI.strength | -4..-2 (converted) → -5..-3 (medium) |
-| P1 | FIND.vci | +5..+7 (converted) → +4..+7 (medium) |
-| P2 | VCI.strength | -7..-5 (converted) → -8..-6 (medium) |
-| P2 | ENEMY.engagement_control | +0 (converted) → -1..+0 (low) |
-| P2 | FIND.vci | +8..+10 (converted) → +6..+9 (medium) |
-| P2 | ARVN.self_sufficiency.fire_support | -1..+1 (low) → -2..+1 (low) |
-| P3 | VCI.strength | -7..-5 (converted) → -8..-6 (medium) |
-| P3 | FIND.vci | +8..+10 (converted) → +6..+9 (medium) |
-| P3 | ARVN.self_sufficiency.fire_support | -1..+1 (low) → -2..+1 (low) |
+| P1 | GVN.political_stability | +0 (converted, v1.0.6 scale) → -1..+1 (low, v1.0.6 scale) |
+| P1 | VCI.strength | -4..-2 (converted, v1.0.6 scale) → -5..-3 (medium, v1.0.6 scale) |
+| P1 | FIND.vci | +5..+7 (converted, v1.0.6 scale) → +4..+7 (medium, v1.0.6 scale) |
+| P2 | VCI.strength | -7..-5 (converted, v1.0.6 scale) → -8..-6 (medium, v1.0.6 scale) |
+| P2 | ENEMY.engagement_control | +0 (converted, v1.0.6 scale) → -1..+0 (low, v1.0.6 scale) |
+| P2 | FIND.vci | +8..+10 (converted, v1.0.6 scale) → +6..+9 (medium, v1.0.6 scale) |
+| P2 | ARVN.self_sufficiency.fire_support | -1..+1 (low, v1.0.6 scale) → -2..+1 (low, v1.0.6 scale) |
+| P3 | VCI.strength | -7..-5 (converted, v1.0.6 scale) → -8..-6 (medium, v1.0.6 scale) |
+| P3 | FIND.vci | +8..+10 (converted, v1.0.6 scale) → +6..+9 (medium, v1.0.6 scale) |
+| P3 | ARVN.self_sufficiency.fire_support | -1..+1 (low, v1.0.6 scale) → -2..+1 (low, v1.0.6 scale) |
 
 ## Phase I — The advisory war and escalation (Jan 1964 – Jul 1965)
 

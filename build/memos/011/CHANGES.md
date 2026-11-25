@@ -10,49 +10,49 @@ Rung (a) → (b). No Watergate: Nixon in office, FY1975 aid about $950M, Thieu r
 
 | Phase | Variable | Before → after |
 |---|---|---|
-| P3 | US.political_tolerance | +0 (converted) → +0..+1 (low) |
-| P3 | US.political_tolerance.public | unjudged → +0..+2 (low) |
-| P4 | US.political_tolerance | +0 (converted) → +0..+2 (low) |
-| P4 | US.political_tolerance.public | unjudged → +1..+3 (medium) |
-| P4 | US.political_tolerance.congress | unjudged → +0..+1 (low) |
-| P6 | POP.night_control | +0 (converted) → +6..+9 (low) |
-| P6 | POP.displacement | +0 (converted) → +0..+4 (low) |
-| P6 | POP.gvn_legitimacy | +0 (converted) → +3..+6 (low) |
-| P6 | GVN.political_stability | +0 (converted) → +5..+8 (low) |
-| P6 | VCI.strength | +0 (converted) → -6..-3 (low) |
-| P6 | ENEMY.engagement_control | +0 (converted) → -2..+1 (low) |
-| P6 | HANOI.will | +0 (converted) → +0 (medium) |
-| P6 | TRAIL.tonnage_arriving | +0 (converted) → +2..+5 (low) |
-| P6 | ARVN.effectiveness | +0 (converted) → +3..+6 (low) |
-| P6 | ARVN.self_sufficiency | +0 (converted) → +2..+4 (low) |
-| P6 | ARVN.self_sufficiency.logistics | unjudged → +2..+4 (low) |
-| P6 | ARVN.self_sufficiency.fire_support | unjudged → +1..+3 (low) |
-| P6 | US.casualties | +0 (converted) → +0 (high) |
-| P6 | US.political_tolerance | +0 (converted) → +2..+4 (low) |
-| P6 | US.political_tolerance.public | unjudged → +0..+1 (medium) |
-| P6 | US.political_tolerance.congress | unjudged → +2..+4 (medium) |
-| P6 | US.political_tolerance.administration | unjudged → +5..+8 (medium) |
-| P6 | NEGOT.position | +0 (converted) → +2..+5 (low) |
-| P6 (snapshot) | POP.night_control | unjudged → +1..+3 (low) |
-| P6 (snapshot) | POP.displacement | unjudged → -1..+0 (low) |
-| P6 (snapshot) | POP.gvn_legitimacy | unjudged → +0..+1 (low) |
-| P6 (snapshot) | GVN.political_stability | unjudged → +0..+2 (low) |
-| P6 (snapshot) | VCI.strength | unjudged → -3..-1 (low) |
-| P6 (snapshot) | ENEMY.engagement_control | unjudged → +0..+1 (low) |
-| P6 (snapshot) | HANOI.will | unjudged → +0 (medium) |
-| P6 (snapshot) | TRAIL.tonnage_arriving | unjudged → -1..+0 (low) |
-| P6 (snapshot) | FIND.main_force | unjudged → +0 (low) |
-| P6 (snapshot) | FIND.vci | unjudged → +1..+2 (low) |
-| P6 (snapshot) | ARVN.effectiveness | unjudged → +1..+3 (low) |
-| P6 (snapshot) | ARVN.self_sufficiency | unjudged → +1..+3 (low) |
-| P6 (snapshot) | ARVN.self_sufficiency.logistics | unjudged → +2..+4 (low) |
-| P6 (snapshot) | ARVN.self_sufficiency.fire_support | unjudged → +1..+2 (low) |
-| P6 (snapshot) | US.casualties | unjudged → +0 (high) |
-| P6 (snapshot) | US.political_tolerance | unjudged → +2..+4 (low) |
-| P6 (snapshot) | US.political_tolerance.public | unjudged → +0..+1 (medium) |
-| P6 (snapshot) | US.political_tolerance.congress | unjudged → +2..+4 (medium) |
-| P6 (snapshot) | US.political_tolerance.administration | unjudged → +5..+8 (medium) |
-| P6 (snapshot) | NEGOT.position | unjudged → +1..+3 (low) |
+| P3 | US.political_tolerance | +0 (converted, v1.0.6 scale) → +0..+1 (low, v1.0.6 scale) |
+| P3 | US.political_tolerance.public | unjudged → +0..+2 (low, v1.0.6 scale) |
+| P4 | US.political_tolerance | +0 (converted, v1.0.6 scale) → +0..+2 (low, v1.0.6 scale) |
+| P4 | US.political_tolerance.public | unjudged → +1..+3 (medium, v1.0.6 scale) |
+| P4 | US.political_tolerance.congress | unjudged → +0..+1 (low, v1.0.6 scale) |
+| P6 | POP.night_control | +0 (converted, v1.0.6 scale) → +6..+9 (low, v1.0.6 scale) |
+| P6 | POP.displacement | +0 (converted, v1.0.6 scale) → +0..+4 (low, v1.0.6 scale) |
+| P6 | POP.gvn_legitimacy | +0 (converted, v1.0.6 scale) → +3..+6 (low, v1.0.6 scale) |
+| P6 | GVN.political_stability | +0 (converted, v1.0.6 scale) → +5..+8 (low, v1.0.6 scale) |
+| P6 | VCI.strength | +0 (converted, v1.0.6 scale) → -6..-3 (low, v1.0.6 scale) |
+| P6 | ENEMY.engagement_control | +0 (converted, v1.0.6 scale) → -2..+1 (low, v1.0.6 scale) |
+| P6 | HANOI.will | +0 (converted, v1.0.6 scale) → +0 (medium, v1.0.6 scale) |
+| P6 | TRAIL.tonnage_arriving | +0 (converted, v1.0.6 scale) → +2..+5 (low, v1.0.6 scale) |
+| P6 | ARVN.effectiveness | +0 (converted, v1.0.6 scale) → +3..+6 (low, v1.0.6 scale) |
+| P6 | ARVN.self_sufficiency | +0 (converted, v1.0.6 scale) → +2..+4 (low, v1.0.6 scale) |
+| P6 | ARVN.self_sufficiency.logistics | unjudged → +2..+4 (low, v1.0.6 scale) |
+| P6 | ARVN.self_sufficiency.fire_support | unjudged → +1..+3 (low, v1.0.6 scale) |
+| P6 | US.casualties | +0 (converted, v1.0.6 scale) → +0 (high, v1.0.6 scale) |
+| P6 | US.political_tolerance | +0 (converted, v1.0.6 scale) → +2..+4 (low, v1.0.6 scale) |
+| P6 | US.political_tolerance.public | unjudged → +0..+1 (medium, v1.0.6 scale) |
+| P6 | US.political_tolerance.congress | unjudged → +2..+4 (medium, v1.0.6 scale) |
+| P6 | US.political_tolerance.administration | unjudged → +5..+8 (medium, v1.0.6 scale) |
+| P6 | NEGOT.position | +0 (converted, v1.0.6 scale) → +2..+5 (low, v1.0.6 scale) |
+| P6 (snapshot) | POP.night_control | unjudged → +1..+3 (low, v1.0.6 scale) |
+| P6 (snapshot) | POP.displacement | unjudged → -1..+0 (low, v1.0.6 scale) |
+| P6 (snapshot) | POP.gvn_legitimacy | unjudged → +0..+1 (low, v1.0.6 scale) |
+| P6 (snapshot) | GVN.political_stability | unjudged → +0..+2 (low, v1.0.6 scale) |
+| P6 (snapshot) | VCI.strength | unjudged → -3..-1 (low, v1.0.6 scale) |
+| P6 (snapshot) | ENEMY.engagement_control | unjudged → +0..+1 (low, v1.0.6 scale) |
+| P6 (snapshot) | HANOI.will | unjudged → +0 (medium, v1.0.6 scale) |
+| P6 (snapshot) | TRAIL.tonnage_arriving | unjudged → -1..+0 (low, v1.0.6 scale) |
+| P6 (snapshot) | FIND.main_force | unjudged → +0 (low, v1.0.6 scale) |
+| P6 (snapshot) | FIND.vci | unjudged → +1..+2 (low, v1.0.6 scale) |
+| P6 (snapshot) | ARVN.effectiveness | unjudged → +1..+3 (low, v1.0.6 scale) |
+| P6 (snapshot) | ARVN.self_sufficiency | unjudged → +1..+3 (low, v1.0.6 scale) |
+| P6 (snapshot) | ARVN.self_sufficiency.logistics | unjudged → +2..+4 (low, v1.0.6 scale) |
+| P6 (snapshot) | ARVN.self_sufficiency.fire_support | unjudged → +1..+2 (low, v1.0.6 scale) |
+| P6 (snapshot) | US.casualties | unjudged → +0 (high, v1.0.6 scale) |
+| P6 (snapshot) | US.political_tolerance | unjudged → +2..+4 (low, v1.0.6 scale) |
+| P6 (snapshot) | US.political_tolerance.public | unjudged → +0..+1 (medium, v1.0.6 scale) |
+| P6 (snapshot) | US.political_tolerance.congress | unjudged → +2..+4 (medium, v1.0.6 scale) |
+| P6 (snapshot) | US.political_tolerance.administration | unjudged → +5..+8 (medium, v1.0.6 scale) |
+| P6 (snapshot) | NEGOT.position | unjudged → +1..+3 (low, v1.0.6 scale) |
 
 ## Phase III — Tet and its aftermath (Jan 1968 – Dec 1968)
 

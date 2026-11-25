@@ -1,4 +1,4 @@
-<!-- fie v1.0.7 -->
+<!-- fie v1.0.8 -->
 # Vietnam Force-Injection Exercise
 
 A long-running counterfactual: modern forces and capabilities are injected into the Vietnam War from 1 January 1964, one provision at a time, and COMUSMACV reports in numbered memoranda on how each one changes the war. This repository is the whole record — the rules, the procedures, the war as it now stands, every memorandum, and the scripts that keep the books.

@@ -6,18 +6,18 @@
 
 | Phase | Variable | Before → after |
 |---|---|---|
-| P1 | TRAIL.tonnage_arriving | +0 (converted) → -1..+1 (low) |
-| P1 | ARVN.self_sufficiency | +0 (converted) → +0 (converted) |
-| P1 | ARVN.self_sufficiency.fire_support | unjudged → +0..+1 (low) |
-| P2 | TRAIL.tonnage_arriving | +0 (converted) → -1..+0 (low) |
-| P2 | ARVN.self_sufficiency | +0 (converted) → +0 (converted) |
-| P2 | ARVN.self_sufficiency.fire_support | unjudged → -1..+1 (low) |
-| P3 | TRAIL.tonnage_arriving | +0 (converted) → -1..+0 (low) |
-| P3 | ARVN.self_sufficiency | +0 (converted) → +0 (converted) |
-| P3 | ARVN.self_sufficiency.fire_support | unjudged → -1..+1 (low) |
-| P4 | TRAIL.tonnage_arriving | +0 (converted) → -1..+0 (low) |
-| P4 | ARVN.self_sufficiency | +0 (converted) → +0 (converted) |
-| P4 | ARVN.self_sufficiency.fire_support | unjudged → -2..+1 (low) |
-| P5 | TRAIL.tonnage_arriving | +0 (converted) → -1..+0 (low) |
-| P5 | ARVN.self_sufficiency | -4..-2 (converted) → -4..-2 (converted) |
-| P5 | ARVN.self_sufficiency.fire_support | unjudged → -3..+0 (low) |
+| P1 | TRAIL.tonnage_arriving | +0 (converted, v1.0.6 scale) → -1..+1 (low, v1.0.6 scale) |
+| P1 | ARVN.self_sufficiency | +0 (converted, v1.0.6 scale) → +0 (converted, v1.0.6 scale) |
+| P1 | ARVN.self_sufficiency.fire_support | unjudged → +0..+1 (low, v1.0.6 scale) |
+| P2 | TRAIL.tonnage_arriving | +0 (converted, v1.0.6 scale) → -1..+0 (low, v1.0.6 scale) |
+| P2 | ARVN.self_sufficiency | +0 (converted, v1.0.6 scale) → +0 (converted, v1.0.6 scale) |
+| P2 | ARVN.self_sufficiency.fire_support | unjudged → -1..+1 (low, v1.0.6 scale) |
+| P3 | TRAIL.tonnage_arriving | +0 (converted, v1.0.6 scale) → -1..+0 (low, v1.0.6 scale) |
+| P3 | ARVN.self_sufficiency | +0 (converted, v1.0.6 scale) → +0 (converted, v1.0.6 scale) |
+| P3 | ARVN.self_sufficiency.fire_support | unjudged → -1..+1 (low, v1.0.6 scale) |
+| P4 | TRAIL.tonnage_arriving | +0 (converted, v1.0.6 scale) → -1..+0 (low, v1.0.6 scale) |
+| P4 | ARVN.self_sufficiency | +0 (converted, v1.0.6 scale) → +0 (converted, v1.0.6 scale) |
+| P4 | ARVN.self_sufficiency.fire_support | unjudged → -2..+1 (low, v1.0.6 scale) |
+| P5 | TRAIL.tonnage_arriving | +0 (converted, v1.0.6 scale) → -1..+0 (low, v1.0.6 scale) |
+| P5 | ARVN.self_sufficiency | -4..-2 (converted, v1.0.6 scale) → -4..-2 (converted, v1.0.6 scale) |
+| P5 | ARVN.self_sufficiency.fire_support | unjudged → -3..+0 (low, v1.0.6 scale) |

@@ -1,4 +1,4 @@
-<!-- fie v1.0.7 -->
+<!-- fie v1.0.8 -->
 # Vietnam Force-Injection Exercise — instructions field
 
 Paste everything below the line into the claude.ai project's instructions field. It should almost never change: everything else lives in the repository. If the repository's VERSION changes, update the version number here.

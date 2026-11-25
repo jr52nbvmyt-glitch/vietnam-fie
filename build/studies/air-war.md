@@ -15,24 +15,24 @@ So the margin over history is large inside the air war and small outside it. Ove
 
 | Variable | P1 | P2 | P3 | P4 | P5 | P6 | 1974 snapshot | Held in |
 |---|---|---|---|---|---|---|---|---|
-| AIR.north_effect | +3..+5 (low) | +3..+5 (low) | +2..+4 (low) | +0 (medium) | +1..+3 (medium) | +0 (medium) | | study (ST01, since 013) |
-| AIR.north_defences | -3..-1 (low) | -1..+1 (low) | -1..+1 (low) | +0 (low) | -1..+0 (low) | +0 (low) | | study (ST01, since 013) |
-| AIR.losses | -3..-1 (low) | -2..+0 (low) | -1..+1 (low) | -1..+0 (low) | -2..-1 (medium) | +0 (medium) | | study (ST01, since 013) |
-| VNAF.capability | +0..+1 (low) | +0..+1 (low) | +0..+1 (low) | +0..+1 (low) | +0..+1 (low) | +3..+6 (low) | | study (ST01) |
-| VNAF.capability.close_support | — | — | — | — | — | +0..+1 (low) | | study (ST01) |
-| VNAF.capability.lift | — | — | — | — | — | +2..+4 (low) | | study (ST01) |
-| VNAF.capability.maintenance | — | — | — | — | — | +2..+4 (low) | | study (ST01) |
+| AIR.north_effect | +3..+5 (low, v1.0.6 scale) | +3..+5 (low, v1.0.6 scale) | +2..+4 (low, v1.0.6 scale) | +0 (medium, v1.0.6 scale) | +1..+3 (medium, v1.0.6 scale) | +0 (medium, v1.0.6 scale) | | study (ST01, since 013) |
+| AIR.north_defences | -3..-1 (low, v1.0.6 scale) | -1..+1 (low, v1.0.6 scale) | -1..+1 (low, v1.0.6 scale) | +0 (low, v1.0.6 scale) | -1..+0 (low, v1.0.6 scale) | +0 (low, v1.0.6 scale) | | study (ST01, since 013) |
+| AIR.losses | -3..-1 (low, v1.0.6 scale) | -2..+0 (low, v1.0.6 scale) | -1..+1 (low, v1.0.6 scale) | -1..+0 (low, v1.0.6 scale) | -2..-1 (medium, v1.0.6 scale) | +0 (medium, v1.0.6 scale) | | study (ST01, since 013) |
+| VNAF.capability | +0..+1 (low, v1.0.6 scale) | +0..+1 (low, v1.0.6 scale) | +0..+1 (low, v1.0.6 scale) | +0..+1 (low, v1.0.6 scale) | +0..+1 (low, v1.0.6 scale) | +3..+6 (low, v1.0.6 scale) | | study (ST01) |
+| VNAF.capability.close_support | — | — | — | — | — | +0..+1 (low, v1.0.6 scale) | | study (ST01) |
+| VNAF.capability.lift | — | — | — | — | — | +2..+4 (low, v1.0.6 scale) | | study (ST01) |
+| VNAF.capability.maintenance | — | — | — | — | — | +2..+4 (low, v1.0.6 scale) | | study (ST01) |
 | VNAF.capability.survivability | — | — | — | — | — | — | | study, not yet judged |
-| STRIKE.responsiveness | +0..+1 (low) | +1..+3 (low) | +2..+4 (medium) | +2..+4 (medium) | +3..+5 (medium) | +0..+1 (low) | | study (ST01) |
-| TRAIL.capacity | +0 (low) | +1..+3 (medium) | +1..+3 (medium) | +1..+3 (medium) | +1..+3 (low) | +1..+3 (low) | | study (ST01) |
-| TRAIL.tonnage_arriving | -1..+1 (low) | -1..+0 (low) | -1..+0 (low) | -1..+0 (low) | -1..+0 (low) | +2..+5 (low) | -1..+0 (low) | chapters |
-| SANCT.laos | +0 (low) | +0 (low) | -1..+0 (low) | +0 (low) | +0 (low) | +0 (low) | | study (ST01) |
+| STRIKE.responsiveness | +0..+1 (low, v1.0.6 scale) | +1..+3 (low, v1.0.6 scale) | +2..+4 (medium, v1.0.6 scale) | +2..+4 (medium, v1.0.6 scale) | +3..+5 (medium, v1.0.6 scale) | +0..+1 (low, v1.0.6 scale) | | study (ST01) |
+| TRAIL.capacity | +0 (low, v1.0.6 scale) | +1..+3 (medium, v1.0.6 scale) | +1..+3 (medium, v1.0.6 scale) | +1..+3 (medium, v1.0.6 scale) | +1..+3 (low, v1.0.6 scale) | +1..+3 (low, v1.0.6 scale) | | study (ST01) |
+| TRAIL.tonnage_arriving | -5% to +5% against history (low) | -10% to 0% against history (low) | -17% to -5% against history (low) | -5% to 0% against history (low) | -10% to 0% against history (low) | -20% to +20% against history (low) | -5% to 0% against history (low) | chapters |
+| SANCT.laos | +0 (low, v1.0.6 scale) | +0 (low, v1.0.6 scale) | -1..+0 (low, v1.0.6 scale) | +0 (low, v1.0.6 scale) | +0 (low, v1.0.6 scale) | +0 (low, v1.0.6 scale) | | study (ST01) |
 | SANCT.cambodia | — | — | — | — | — | — | | study, not yet judged |
 | ARVN.effectiveness.fire_coordination | unjudged | unjudged | unjudged | unjudged | unjudged | unjudged | unjudged | chapters |
-| ARVN.self_sufficiency.fire_support | +0..+1 (low) | -2..+1 (low) | -2..+1 (low) | -2..+1 (low) | -3..+0 (low) | +1..+3 (low) | +1..+2 (low) | chapters |
+| ARVN.self_sufficiency.fire_support | 0 to +2 against history (low) | -5 to +2 against history (low) | -5 to +2 against history (low) | -5 to +2 against history (low) | -8 to 0 against history (low) | +3 to +8 against history (low) | +3 to +5 against history (low) | chapters |
 | POP.civilian_harm | — | — | — | — | — | — | | study, not yet judged |
 
-*Ranges against the historical state at each phase's end (−10..+10; low, medium, high = confidence; unjudged = not yet judged). Headline variables and their facets live in the chapters' end vectors; the rest in the study.*
+*Values in each variable's natural unit (schema/VARIABLES.toml): this war's figure with history's beside it, or the difference from history's figure; low, medium, high = confidence; unjudged = not yet judged. Headline variables and their facets live in the chapters' end vectors; the rest in the study. A study value set before R03 is on the retired −10..+10 scale until the study is next folded.*
 
 ## P1 · Phase I — The advisory war and escalation (Jan 1964 – Jul 1965)
 

@@ -1,4 +1,4 @@
-<!-- fie v1.0.7 -->
+<!-- fie v1.0.8 -->
 # Design — Vietnam Force-Injection Exercise, v1.0.5
 
 *Replaces the V2 project architecture. Written 21 November 2026 from the V2 problems briefing. Target model: Opus 5.5. Storage: this Git repository.*
@@ -57,7 +57,7 @@ Each phase is a chapter of prose with events as headed entries: `## EV005-3 · O
 
 ### Interactions through world variables
 
-`schema/VARIABLES.toml` defines 57 world variables (night control of hamlets, displacement, VCI strength, Trail tonnage arriving, ARVN self-sufficiency, US political tolerance…). Each provision declares which it pushes, as a range on −10..+10 with a confidence (v1.0.6; the old −3..+3 bands of memoranda 001–010 are read through a fixed mapping); variables whose parts fail separately (ARVN effectiveness, the territorial forces, the VNAF, self-sufficiency, American tolerance, and night control and legitimacy by corps region) have facets; and which it depends on. The Part 2 pack routes earlier memoranda by shared variables, weighting cross-dependencies (one provision pushes what another relies on) above parallel pushes. That is how artillery that displaces the population meets a pacification programme that depends on it staying put — which routing by functional system could not see. `fie.py grep` is the second net.
+`schema/VARIABLES.toml` defines 57 world variables (night control of hamlets, displacement, VCI strength, Trail tonnage arriving, ARVN self-sufficiency, US political tolerance…). Each provision declares which it pushes, as a change in the variable's natural unit with a confidence (v1.0.8, R03: tons a year, percent of the rural population, thousands of cadre, a named ladder of positions; the −3..+3 bands of memoranda 001–010 and the −10..+10 ranges of 011–013 stay as written, marked with their scale); variables whose parts fail separately (ARVN effectiveness, the territorial forces, the VNAF, self-sufficiency, American tolerance, and night control and legitimacy by corps region) have facets; and which it depends on. The Part 2 pack routes earlier memoranda by shared variables, weighting cross-dependencies (one provision pushes what another relies on) above parallel pushes. That is how artillery that displaces the population meets a pacification programme that depends on it staying put — which routing by functional system could not see. `fie.py grep` is the second net.
 
 ### Provenance
 
@@ -147,7 +147,7 @@ A memorandum sees the war through one provision. Some questions are about an are
 |---|---|
 | A study is its own file, `studies/<slug>.md`, never written into the chapters | The chapters are the war and are already long; a study is a reading of the war, kept beside it |
 | It describes: no event added, altered or cancelled; the end state untouched | The war changes only through provisions, revisions and checkpoints. A study that found the record inconsistent writes a question for an erratum or a checkpoint instead of a third version |
-| Its judgments go where the record keeps judgments | A headline facet into the chapters' end vectors, and only while it is unjudged or converted; anything else into the study's own values. One copy of every value |
+| Its judgments go where the record keeps judgments | A headline facet into the chapters' end vectors, and only while it is unjudged; anything else into the study's own values. One copy of every value |
 | Tags route it | A study's tags are variables. Part 1 loads the studies a provision touches; Part 2 judges the pushes against them and must say when a provision contradicts one; Part 3 adds a dated entry through the script |
 | Checkpoints fold | Entries accumulate between checkpoints; a checkpoint folds them into the text and values, answers the study's questions, and flags a study that has drifted too far to fold for a fresh run |
 

@@ -6,17 +6,17 @@
 
 | Phase | Variable | Before → after |
 |---|---|---|
-| P1 | HANOI.will | +0 (converted) → +0..+1 (low) |
-| P1 | NEGOT.position | +0 (converted) → +0 (low) |
-| P2 | HANOI.will | +0 (converted) → +0..+1 (low) |
-| P2 | TRAIL.tonnage_arriving | -1..+0 (low) → -1..+0 (low) |
-| P2 | US.political_tolerance | +0 (converted) → -1..+0 (low) |
-| P2 | US.political_tolerance.public | unjudged → -1..+0 (low) |
-| P2 | NEGOT.position | +0 (converted) → +0 (low) |
-| P3 | HANOI.will | +0 (converted) → +0 (low) |
-| P3 | US.political_tolerance | +0..+1 (low) → -1..+1 (low) |
-| P3 | US.political_tolerance.public | +0..+2 (low) → -1..+2 (low) |
-| P3 | NEGOT.position | +0 (converted) → -1..+0 (low) |
+| P1 | HANOI.will | +0 (converted, v1.0.6 scale) → +0..+1 (low, v1.0.6 scale) |
+| P1 | NEGOT.position | +0 (converted, v1.0.6 scale) → +0 (low, v1.0.6 scale) |
+| P2 | HANOI.will | +0 (converted, v1.0.6 scale) → +0..+1 (low, v1.0.6 scale) |
+| P2 | TRAIL.tonnage_arriving | -1..+0 (low, v1.0.6 scale) → -1..+0 (low, v1.0.6 scale) |
+| P2 | US.political_tolerance | +0 (converted, v1.0.6 scale) → -1..+0 (low, v1.0.6 scale) |
+| P2 | US.political_tolerance.public | unjudged → -1..+0 (low, v1.0.6 scale) |
+| P2 | NEGOT.position | +0 (converted, v1.0.6 scale) → +0 (low, v1.0.6 scale) |
+| P3 | HANOI.will | +0 (converted, v1.0.6 scale) → +0 (low, v1.0.6 scale) |
+| P3 | US.political_tolerance | +0..+1 (low, v1.0.6 scale) → -1..+1 (low, v1.0.6 scale) |
+| P3 | US.political_tolerance.public | +0..+2 (low, v1.0.6 scale) → -1..+2 (low, v1.0.6 scale) |
+| P3 | NEGOT.position | +0 (converted, v1.0.6 scale) → -1..+0 (low, v1.0.6 scale) |
 
 ## Phase I — The advisory war and escalation (Jan 1964 – Jul 1965)
 

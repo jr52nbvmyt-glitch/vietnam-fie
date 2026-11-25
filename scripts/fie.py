@@ -190,18 +190,32 @@ def parent(v: str) -> str:
     return ".".join(str(v).split(".")[:2])
 
 
-def var_tier(v: str) -> str:
-    return next((x.get("tier", "") for x in variables() if x["id"] == v), "")
+def var_def(k: str) -> dict:
+    """The definition of a variable or facet: kind, unit, better and (for a ladder) rungs."""
+    for x in variables():
+        if x["id"] == k:
+            return x
+        for f in x.get("facets", []):
+            if f"{x['id']}.{f['id']}" == k:
+                d = dict(f)
+                if d.get("kind") == "ladder" and "rungs" not in d:
+                    d["rungs"] = re.findall(r"(\d+) [a-z]", d.get("unit", ""))
+                return d
+    return {}
 
 
-# The scale (v1.0.6): ranges on -10..+10 with a confidence and a note. Old whole-number bands
-# (-3..+3, memoranda 001-010) are history and are read through LEGACY.
+# The scales. From v1.0.8 (R03) every value is in its variable's natural unit (schema/VARIABLES.toml).
+# The retired scales are history: whole-number bands (-3..+3, memoranda 001-010) read through LEGACY,
+# and -10..+10 ranges (memoranda 011-013, and chapter values before R03, now kept in `was`).
 SCALE = 10
 LEGACY = {0: (0, 0), 1: (2, 4), 2: (5, 7), 3: (8, 10)}
 LEGACY_LAST_MEMO = 10
-CONFS = ("low", "medium", "high", "converted", "unjudged")
+SCALE_LAST_MEMO = 13
+CONFS = ("low", "medium", "high", "unjudged")
 PUSH_CONFS = ("low", "medium", "high")
-VAL_ORDER = ("low", "high", "conf", "binding", "hist", "est", "note")
+VAL_ORDER = ("hist", "src", "low", "high", "dlow", "dhigh", "plow", "phigh", "conf", "binding", "was", "note")
+FORMS = (("low", "high"), ("dlow", "dhigh"), ("plow", "phigh"))
+SRC_RE = re.compile(r"\[(?:H\d*|S\d+|M\d{3}(?:·S\d+)?|R\d{2}·S\d+|E: [^\]]+)\]")
 
 
 def legacy_range(b: int) -> tuple[int, int]:
@@ -209,44 +223,100 @@ def legacy_range(b: int) -> tuple[int, int]:
     return (lo, hi) if b >= 0 else (-hi, -lo)
 
 
-def rng(v) -> tuple[int, int] | None:
-    """(low, high) of a value in either form — a v1.0.6 table or an old band — or None if unjudged."""
+def num(x) -> bool:
+    return isinstance(x, (int, float)) and not isinstance(x, bool)
+
+
+def form(v) -> tuple[str, str] | None:
+    """Which form a value or push is written in: absolute (low/high), difference (dlow/dhigh) or percent (plow/phigh)."""
+    if isinstance(v, dict):
+        for f in FORMS:
+            if f[0] in v or f[1] in v:
+                return f
+    return None
+
+
+def rng(v):
+    """(low, high) of a value in whatever form it is written, or None if unjudged. Comparable only within one form."""
     if isinstance(v, bool):
         return None
     if isinstance(v, int):
         return legacy_range(v)
-    if isinstance(v, dict) and isinstance(v.get("low"), int) and isinstance(v.get("high"), int):
-        return (v["low"], v["high"])
+    f = form(v)
+    if f and num(v.get(f[0])) and num(v.get(f[1])):
+        return (v[f[0]], v[f[1]])
     return None
 
 
-def push_range(x: dict) -> tuple[int, int] | None:
+def vkey(v):
+    """Everything that makes a value what it is, for telling whether it moved."""
+    if not isinstance(v, dict):
+        return v
+    return tuple((k, v.get(k)) for k in ("hist", "low", "high", "dlow", "dhigh", "plow", "phigh", "conf"))
+
+
+def push_range(x: dict):
     return rng(x["band"]) if "band" in x else rng(x)
 
 
-def mid(r: tuple[int, int] | None) -> float:
+def mid(r) -> float:
     return 0.0 if r is None else (r[0] + r[1]) / 2
 
 
-def fmt_rng(r: tuple[int, int] | None) -> str:
+def n(x) -> str:
+    if isinstance(x, float) and x.is_integer():
+        x = int(x)
+    return f"{x:,}" if isinstance(x, int) else str(x)
+
+
+def sn(x) -> str:
+    return ("+" if num(x) and x > 0 else "") + n(x)
+
+
+def fmt_rng(r) -> str:
     if r is None:
         return "unjudged"
     return f"{r[0]:+d}" if r[0] == r[1] else f"{r[0]:+d}..{r[1]:+d}"
 
 
 def fmt_val(v) -> str:
+    """A value as a reader sees it: this war's figure (or its difference from history), and history's figure."""
     if v is None:
         return "—"
     if isinstance(v, int) and not isinstance(v, bool):
         return f"{v:+d} (old band ≈ {fmt_rng(legacy_range(v))})"
-    conf = v.get("conf", "") if isinstance(v, dict) else ""
-    return fmt_rng(rng(v)) + (f" ({conf})" if conf and conf != "unjudged" else "")
+    if not isinstance(v, dict):
+        return str(v)
+    hist = f"history {n(v['hist'])}" if "hist" in v else ""
+    f = form(v)
+    if v.get("conf") == "converted" or (f and f[0] == "low" and "hist" not in v and "src" not in v):
+        r = rng(v)
+        return (fmt_rng(r) if r else "unjudged") + f" ({v.get('conf', '')}, v1.0.6 scale)"
+    if f is None or v.get("conf") == "unjudged":
+        return "unjudged" + (f" ({hist})" if hist else "")
+    a, b = v.get(f[0]), v.get(f[1])
+    if f[0] == "low":
+        s = n(a) if a == b else f"{n(a)}–{n(b)}"
+    elif f[0] == "dlow":
+        s = (sn(a) if a == b else f"{sn(a)} to {sn(b)}") + " against history"
+    else:
+        s = (f"{sn(a)}%" if a == b else f"{sn(a)}% to {sn(b)}%") + " against history"
+    tail = [x for x in (hist if f[0] == "low" else "", v.get("conf", "")) if x]
+    return s + (f" ({'; '.join(tail)})" if tail else "")
 
 
 def fmt_push(x: dict) -> str:
     if "band" in x:
         return f"{int(x['band']):+d} [old band ≈ {fmt_rng(legacy_range(int(x['band'])))}]"
-    return fmt_rng(push_range(x)) + (f" ({x['conf']})" if x.get("conf") else "")
+    f = form(x)
+    if f and f[0] == "low":
+        return fmt_rng(push_range(x)) + " [v1.0.6 scale]" + (f" ({x['conf']})" if x.get("conf") else "")
+    a, b = (x.get(f[0]), x.get(f[1])) if f else (None, None)
+    pct = "%" if f and f[0] == "plow" else ""
+    s = f"{sn(a)}{pct}" if a == b else f"{sn(a)}{pct} to {sn(b)}{pct}"
+    unit = var_def(x.get("var", "")).get("unit", "")
+    return s + (f" months" if x.get("months") else (f" of history's figure" if pct else f" [{unit}]")) \
+        + (f" by the end of {x['at']}" if x.get("at") else "") + (f" ({x['conf']})" if x.get("conf") else "")
 
 
 def toml_value(x) -> str:
@@ -273,36 +343,53 @@ def dump_front_matter(fm: dict) -> str:
 
 
 def check_value(label: str, k: str, v, errors: list, warnings: list):
-    """Validate one end-vector or snapshot entry on the v1.0.6 scale."""
+    """Validate one end-vector, snapshot or study value in natural units (v1.0.8)."""
     if isinstance(v, int) and not isinstance(v, bool):
-        errors.append(f"{label}: {k} = {v} is an old band; from v1.0.6 write {{ low = …, high = …, conf = …, note = … }}")
+        errors.append(f"{label}: {k} = {v} is an old band; from v1.0.8 write {{ hist, src, low, high, conf, note }} in the variable's unit")
         return
     if not isinstance(v, dict):
-        errors.append(f"{label}: {k} must be an inline table {{ low, high, conf, note }}")
+        errors.append(f"{label}: {k} must be an inline table {{ hist, src, low, high, conf, note }}")
         return
     unknown = [x for x in v if x not in VAL_ORDER]
     if unknown:
         errors.append(f"{label}: {k} has unknown field(s) {', '.join(unknown)}")
+    d = var_def(k)
+    kind = d.get("kind", "count")
     conf = v.get("conf")
-    if conf not in CONFS:
+    if conf == "converted":
+        errors.append(f"{label}: {k} conf 'converted' was retired at R03: judge it in units or mark it unjudged")
+    elif conf not in CONFS:
         errors.append(f"{label}: {k} conf {conf!r} must be one of {', '.join(CONFS)}")
+    forms = [f for f in FORMS if f[0] in v or f[1] in v]
     if conf == "unjudged":
-        if "low" in v or "high" in v:
-            errors.append(f"{label}: {k} is unjudged but carries low/high")
-    else:
-        lo, hi = v.get("low"), v.get("high")
-        if not (isinstance(lo, int) and isinstance(hi, int)) or isinstance(lo, bool) or isinstance(hi, bool):
-            errors.append(f"{label}: {k} needs whole-number low and high")
-        elif not (-SCALE <= lo <= hi <= SCALE):
-            errors.append(f"{label}: {k} range {lo}..{hi} must satisfy -{SCALE} ≤ low ≤ high ≤ {SCALE}")
-        if conf in ("low", "medium", "high") and not str(v.get("note", "")).strip():
-            warnings.append(f"{label}: {k} is judged but has no note saying what the range means")
-    if ("hist" in v) != ("est" in v) and conf != "unjudged":
-        errors.append(f"{label}: {k} carries one of hist/est without the other — the anchor and this war's figure go together")
-    if "hist" in v and not re.search(r"\[(?:H\d*|S\d+|M\d{3}(?:·S\d+)?)\]", str(v["hist"])):
-        errors.append(f"{label}: {k} hist needs a historical provenance tag ([H], [H3], [M005·S2])")
-    if "est" in v and not re.search(r"\[X-" + WORK_RE + r"\]", str(v["est"])):
-        errors.append(f"{label}: {k} est is an exercise judgment and needs an [X-NNN] tag (A13a)")
+        if forms:
+            errors.append(f"{label}: {k} is unjudged but carries a range")
+    elif conf in PUSH_CONFS:
+        if len(forms) != 1:
+            errors.append(f"{label}: {k} needs exactly one range: low/high (this war's figure), dlow/dhigh (difference from history) or plow/phigh (% of history's figure)")
+        else:
+            f = forms[0]
+            lo, hi = v.get(f[0]), v.get(f[1])
+            if not (num(lo) and num(hi)):
+                errors.append(f"{label}: {k} needs numbers for {f[0]} and {f[1]}")
+            elif lo > hi:
+                errors.append(f"{label}: {k} {f[0]} {lo} is above {f[1]} {hi}")
+            elif f[0] == "low" and kind == "share" and not (0 <= lo and hi <= 100):
+                errors.append(f"{label}: {k} is a share: {lo}..{hi} must lie within 0..100")
+            elif f[0] == "low" and kind == "ladder" and not (1 <= lo and hi <= len(d.get("rungs", [])) and float(lo).is_integer() and float(hi).is_integer()):
+                errors.append(f"{label}: {k} is a ladder: low and high are rung numbers 1..{len(d.get('rungs', []))}")
+            if f[0] == "low" and "hist" not in v:
+                errors.append(f"{label}: {k} gives this war's figure (low/high) without history's figure beside it — add hist and src, or write the difference from history (dlow/dhigh or plow/phigh)")
+            if f[0] == "plow" and "hist" not in v and not str(v.get("note", "")).strip():
+                warnings.append(f"{label}: {k} gives a percentage of history's figure with neither the figure nor a note")
+        if not str(v.get("note", "")).strip():
+            warnings.append(f"{label}: {k} is judged but has no note saying what the range means on the ground")
+    if ("hist" in v) != ("src" in v):
+        errors.append(f"{label}: {k} carries one of hist/src without the other — history's figure goes with its source")
+    if "hist" in v and not num(v["hist"]):
+        errors.append(f"{label}: {k} hist must be a number in the unit (history's figure at the phase's end)")
+    if "src" in v and not SRC_RE.search(str(v["src"])):
+        errors.append(f"{label}: {k} src needs a provenance tag ([H40], [S3], [M005·S2], [R03·S1] or [E: basis])")
 
 
 def check_vector(label: str, vec: dict, errors: list, warnings: list):
@@ -614,7 +701,7 @@ def sources_defined(token: str) -> set[int]:
 
 STUDIES = ROOT / "studies"
 STUDY_REQUIRED = ["Summary", "Judgments", "Questions for the record", "Sources", "Since this study"]
-VALUE_LINE = re.compile(r"^-\s*value\s*·\s*(\S+)\s*·\s*(P\d+)\s*·\s*([+-]?\d+)\s*\.\.\s*([+-]?\d+)\s*·\s*(low|medium|high)\s*·\s*(.+)$")
+VALUE_LINE = re.compile(r"^-\s*value\s*·\s*(\S+)\s*·\s*(P\d+)\s*·\s*(Δ?)\s*([+-]?[\d,]*\.?\d+)\s*\.\.\s*([+-]?[\d,]*\.?\d+)\s*·\s*(low|medium|high)\s*·\s*(.+)$")
 QUESTION_LINE = re.compile(r"^- \*\*Q-\d+\*\* · (?:ERRATUM|CHECKPOINT|RESOLVED|STANDS)\b[^·]* · \S")
 STUDY_BLOCK = re.compile(r"<!--\s*study\s+([a-z0-9-]+)\s*-->(.*?)<!--\s*/study\s*-->", re.S)
 AGAINST_RE = re.compile(r"<!--\s*against\s+([a-z0-9-]+)\s*:\s*(consistent|contradicts)\s*-->")
@@ -669,8 +756,12 @@ def value_lines(text: str) -> list[tuple[str, str, dict]]:
     for line in text.splitlines():
         m = VALUE_LINE.match(line.strip())
         if m:
-            out.append((m.group(1), m.group(2), {"low": int(m.group(3)), "high": int(m.group(4)), "conf": m.group(5),
-                                                   "note": m.group(6).strip()}))
+            def f_(s):
+                x = float(s.replace(",", ""))
+                return int(x) if x.is_integer() else x
+            lo_k, hi_k = ("dlow", "dhigh") if m.group(3) else ("low", "high")
+            out.append((m.group(1), m.group(2), {lo_k: f_(m.group(4)), hi_k: f_(m.group(5)), "conf": m.group(6),
+                                                   "note": m.group(7).strip()}))
     return out
 
 
@@ -712,9 +803,10 @@ def values_table(fm: dict, body: str, only: set[str] | None = None) -> str:
     if not rows:
         return "No tagged variables."
     return ("| Variable | " + " | ".join(ph) + " | 1974 snapshot | Held in |\n|---|" + "---|" * (len(ph) + 2) + "\n"
-            + "\n".join(rows) + "\n\n*Ranges against the historical state at each phase's end (−10..+10; low, medium, high = "
-            "confidence; unjudged = not yet judged). Headline variables and their facets live in the chapters' end vectors; "
-            "the rest in the study.*")
+            + "\n".join(rows) + "\n\n*Values in each variable's natural unit (schema/VARIABLES.toml): this war's figure with history's beside it, "
+            "or the difference from history's figure; low, medium, high = confidence; unjudged = not yet judged. "
+            "Headline variables and their facets live in the chapters' end vectors; the rest in the study. A study value "
+            "set before R03 is on the retired −10..+10 scale until the study is next folded.*")
 
 
 def study_sources(body: str) -> dict[int, str]:
@@ -867,9 +959,10 @@ def check_study(text: str, slug: str, label: str, errors: list, warnings: list, 
     if unj_named:
         warnings.append(f"{label}: {len(unj_named)} tagged facet(s) unjudged in every phase and not named in '## Judgments' "
                         f"({', '.join(unj_named[:5])}{'…' if len(unj_named) > 5 else ''}) — judge them where the record holds evidence, or say why not")
-    conv = [k for k in keys & vk if any(((chap[p].get("end_vector") or {}).get(k) or {}).get("conf") == "converted" for p in ph)]
+    conv = [k for k in keys & vk if any("was" in (((chap[p].get("end_vector") or {}).get(k) or {})) and
+                                        ((chap[p].get("end_vector") or {}).get(k) or {}).get("conf") == "unjudged" for p in ph)]
     if conv:
-        warnings.append(f"{label}: {len(conv)} tagged headline value(s) still 'converted' in some phase ({', '.join(conv[:5])}) — re-judge them if the study's evidence bears on them (DIRR01-2)")
+        warnings.append(f"{label}: {len(conv)} tagged headline value(s) not yet judged in units in some phase ({', '.join(conv[:5])}) — judge them if the study's evidence bears on them (R03)")
 
 
 def check_study_chapters(tok: str, errors: list, warnings: list, keys: set[str] | None = None):
@@ -889,7 +982,7 @@ def check_study_chapters(tok: str, errors: list, warnings: list, keys: set[str] 
                 if v == o:
                     continue
                 oc = o.get("conf") if isinstance(o, dict) else None
-                if oc in ("unjudged", "converted"):
+                if oc in ("unjudged",):
                     pass
                 elif isinstance(o, dict) and isinstance(v, dict) and {x: y for x, y in v.items() if x != "binding"} == {x: y for x, y in o.items() if x != "binding"}:
                     pass
@@ -925,17 +1018,17 @@ def check_study_blocks(text: str, tok: str, label: str, errors: list, required: 
         for l in [x for x in body.splitlines() if re.match(r"\s*-\s*value\b", x)]:
             m = VALUE_LINE.match(l.strip())
             if not m:
-                errors.append(f"{label}: study {slug} value line should read '- value · <key> · <Pk> · <low>..<high> · <low|medium|high> · <note>': “{l.strip()[:80]}”")
+                errors.append(f"{label}: study {slug} value line should read '- value · <key> · <Pk> · <low>..<high> (in the unit; Δ<low>..<high> for a difference from history) · <low|medium|high> · <note>': “{l.strip()[:80]}”")
                 continue
-            k, pid, lo, hi = m.group(1), m.group(2), int(m.group(3)), int(m.group(4))
+            k, pid, lo, hi = m.group(1), m.group(2), float(m.group(4).replace(",", "")), float(m.group(5).replace(",", ""))
             if k in vk:
                 errors.append(f"{label}: study {slug} value line for {k}: a headline variable or facet is judged in the chapter's end vector, not in a study entry (the script records the chapter's move in the entry itself)")
             elif k not in keys:
                 errors.append(f"{label}: study {slug} value line for {k}: not covered by the study's tags")
             if pid not in ph:
                 errors.append(f"{label}: study {slug} value line for {k}: {pid} is not a current phase")
-            if not -SCALE <= lo <= hi <= SCALE:
-                errors.append(f"{label}: study {slug} value line for {k}: {lo}..{hi} must satisfy -{SCALE} ≤ low ≤ high ≤ {SCALE}")
+            if lo > hi:
+                errors.append(f"{label}: study {slug} value line for {k}: {lo}..{hi} — low is above high")
 
 
 def append_study_entries(text: str, tok: str, title: str):
@@ -1188,7 +1281,7 @@ def studies_pack_section(vars_: set[str], part: int) -> tuple[list[str], str]:
     else:
         intro = ("## Studies to update\n\nPart 3 closes with a `<!-- study <slug> -->` … `<!-- /study -->` block for each study below: "
                  "what changed in the area and which events show it, and a value line for any value the study holds that moves "
-                 "(`- value · <key> · <Pk> · <low>..<high> · <conf> · <note>`). The script adds the chapter moves itself.")
+                 "(`- value · <key> · <Pk> · <low>..<high> · <conf> · <note>`, in the variable's unit; `Δ<low>..<high>` for a difference from history). The script adds the chapter moves itself.")
         body = "\n\n".join(f"### {s_}\n\n" + values_table(*(lambda t: (t[0], t[2]))(parse_chapter(study_text(s_))), only=pars) for s_ in slugs)
     return slugs, f"<!-- studies: {','.join(slugs)} -->\n" + intro + "\n\n" + body
 
@@ -1381,16 +1474,20 @@ def cmd_status(_):
     me = config()["meta_every_checkpoints"]
     if len(cps) - me * len(mts) >= me:
         print("META-CHECKPOINT DUE")
-    hard = [v for v in vector_ids() if var_tier(v) == "hard"]
-    got = conv = facets_j = facets_all = 0
+    got = judged = total = facets_j = facets_all = 0
     for p_ in have:
-        vec = parse_chapter(read(CHAP / f"{p_}.md"))[0].get("end_vector", {})
-        got += sum(1 for v in hard if isinstance(vec.get(v), dict) and "hist" in vec[v])
-        conv += sum(1 for v in vector_ids() if isinstance(vec.get(v), dict) and vec[v].get("conf") == "converted")
-        fks = [k for k in vec if k not in vector_ids()]
-        facets_all += len(fks)
-        facets_j += sum(1 for k in fks if isinstance(vec.get(k), dict) and vec[k].get("conf") not in ("unjudged", None))
-    print(f"Scale v1.0.6: hard anchors researched {got}/{len(hard) * len(have)} · headline values still 'converted' {conv} · facets judged {facets_j}/{facets_all}")
+        fm_ = parse_chapter(read(CHAP / f"{p_}.md"))[0]
+        for sec in ("end_vector", "snapshot"):
+            vec = fm_.get(sec) or {}
+            if not vec:
+                continue
+            total += sum(1 for v in vector_ids() if v in vec)
+            got += sum(1 for v in vector_ids() if isinstance(vec.get(v), dict) and "hist" in vec[v])
+            judged += sum(1 for v in vector_ids() if isinstance(vec.get(v), dict) and vec[v].get("conf") in PUSH_CONFS)
+            fks = [k for k in vec if k not in vector_ids()]
+            facets_all += len(fks)
+            facets_j += sum(1 for k in fks if isinstance(vec.get(k), dict) and vec[k].get("conf") in PUSH_CONFS)
+    print(f"Units v1.0.8: headline values judged in units {judged}/{total} · history's figure entered {got}/{total} · facets judged {facets_j}/{facets_all}")
     sl = study_slugs()
     if sl:
         waiting = sum(len(since_entries(parse_chapter(study_text(x))[2])) for x in sl)
@@ -1443,8 +1540,9 @@ def memo_vars(m: dict) -> tuple[dict, set]:
     push = {}
     for p in m.get("push", []):
         if p.get("var"):
-            # routing weight: the push's midpoint on the old band's footing (a v1.0.6 midpoint of 3 weighs as a band of 1)
-            push[parent(p["var"])] = max(push.get(parent(p["var"]), 0), abs(mid(push_range(p))) / 3)
+            # routing weight: an old push by its midpoint on the band's footing; a push in units by its confidence
+            w = abs(mid(push_range(p))) / 3 if ("band" in p or "low" in p) else {"high": 1.0, "medium": 0.8, "low": 0.6}.get(p.get("conf"), 0.6)
+            push[parent(p["var"])] = max(push.get(parent(p["var"]), 0), w)
     dep = {parent(d["var"]) for d in m.get("depend", []) if d.get("var")}
     return push, dep
 
@@ -1938,15 +2036,29 @@ def check_manifest(tok: str, m: dict, errors: list, warnings: list):
         if "band" in x:
             b = x.get("band")
             if int(tok) > LEGACY_LAST_MEMO:
-                errors.append(f"manifest push {j + 1} ({x.get('var')}): 'band' is the old −3..+3 scale; from v1.0.6 write low, high and conf (schema/VARIABLES.toml)")
+                errors.append(f"manifest push {j + 1} ({x.get('var')}): 'band' is the old −3..+3 scale; from v1.0.8 write dlow, dhigh (or plow, phigh), at and conf in the variable's unit (schema/VARIABLES.toml)")
             elif not isinstance(b, int) or not -3 <= b <= 3 or b == 0:
                 errors.append(f"manifest push {j + 1} ({x.get('var')}): band {b!r} must be a whole number from -3 to 3, not 0")
-        else:
+        elif int(tok) <= SCALE_LAST_MEMO:
             lo, hi = x.get("low"), x.get("high")
             if not (isinstance(lo, int) and isinstance(hi, int)) or not -SCALE <= lo <= hi <= SCALE:
                 errors.append(f"manifest push {j + 1} ({x.get('var')}): low {lo!r} and high {hi!r} must be whole numbers with -{SCALE} ≤ low ≤ high ≤ {SCALE}")
-            elif lo == hi == 0:
-                errors.append(f"manifest push {j + 1} ({x.get('var')}): a push of 0..0 moves nothing — drop it or make it a depend")
+            if x.get("conf") not in PUSH_CONFS:
+                errors.append(f"manifest push {j + 1} ({x.get('var')}): conf {x.get('conf')!r} must be one of {', '.join(PUSH_CONFS)}")
+        else:
+            f = form(x)
+            if f is None or f[0] == "low":
+                errors.append(f"manifest push {j + 1} ({x.get('var')}): from v1.0.8 a push is a change in the variable's unit: dlow and dhigh, or plow and phigh (% of history's figure), with at = \"Pk\" (schema/VARIABLES.toml)")
+            else:
+                lo, hi = x.get(f[0]), x.get(f[1])
+                if not (num(lo) and num(hi)) or lo > hi:
+                    errors.append(f"manifest push {j + 1} ({x.get('var')}): {f[0]} {lo!r} and {f[1]} {hi!r} must be numbers with {f[0]} ≤ {f[1]}")
+                elif lo == hi == 0:
+                    errors.append(f"manifest push {j + 1} ({x.get('var')}): a push of 0 moves nothing — drop it or make it a depend")
+            if x.get("at") and x.get("at") not in phase_ids():
+                errors.append(f"manifest push {j + 1} ({x.get('var')}): at {x.get('at')!r} is not a current phase")
+            elif not x.get("at"):
+                warnings.append(f"manifest push {j + 1} ({x.get('var')}): no 'at' — say by the end of which phase the change is measured")
             if x.get("conf") not in PUSH_CONFS:
                 errors.append(f"manifest push {j + 1} ({x.get('var')}): conf {x.get('conf')!r} must be one of {', '.join(PUSH_CONFS)}")
             if facet_map().get(x.get("var")):
@@ -2183,8 +2295,8 @@ def check_part(tok: str, part: int, stamping: bool = False) -> tuple[list, list,
                         errors.append(f"chapter {pid}: new event {e['id']} should be numbered EV{tok}-n")
                 oldv = parse_chapter(read(CHAP / f"{pid}.md"))[0].get("end_vector", {})
                 newv = parse_chapter(staged[pid])[0].get("end_vector", {})
-                moved = [f"{k} {fmt_rng(rng(oldv.get(k)))}→{fmt_rng(rng(newv.get(k)))}" for k in newv
-                         if rng(newv.get(k)) is not None and rng(newv.get(k)) != rng(oldv.get(k))]
+                moved = [f"{k} {fmt_val(oldv.get(k))}→{fmt_val(newv.get(k))}" for k in newv
+                         if rng(newv.get(k)) is not None and vkey(newv.get(k)) != vkey(oldv.get(k))]
                 if moved and i + 1 < len(phs) and phs[i + 1] not in staged:
                     nsec = section(text, 2, f"§4.{phs[i + 1]} ") or ""
                     ripple.append(f"{pid}→{phs[i + 1]}")
@@ -2466,7 +2578,7 @@ def cmd_finish(a):
 
 def cmd_baseline(a):
     if a.init:
-        vec = "\n".join(f'"{v}" = {{ low = 0, high = 0, conf = "high", note = "the historical state" }}' for v in vector_keys())
+        vec = "\n".join(f'"{v}" = {{ dlow = 0, dhigh = 0, conf = "high", note = "the historical state" }}' for v in vector_keys())
         for p in phases():
             path = CHAP / f"{p['id']}.md"
             if path.exists():
@@ -2496,7 +2608,8 @@ def cmd_baseline(a):
         for e in evs:
             if e.get("ok") and (e["origin"] != "HIST" or not e["id"].startswith("EV000-")):
                 errors.append(f"{rel(path)}: baseline event {e['id']} must be EV000-n with origin HIST")
-        if any(rng(v) not in (None, (0, 0)) for v in fm.get("end_vector", {}).values()):
+        if any(form(v) != ("dlow", "dhigh") and rng(v) is not None or (form(v) == ("dlow", "dhigh") and rng(v) != (0, 0))
+               for v in fm.get("end_vector", {}).values()):
             errors.append(f"{rel(path)}: baseline end_vector must be all zeros (it is the historical state)")
         if words(body) < 600:
             warnings.append(f"{rel(path)}: {words(body)} words — thin for a baseline chapter")
@@ -2601,7 +2714,16 @@ def mark_events(body: str, token: str) -> str:
 
 def vector_line(fm: dict) -> str:
     v = fm.get("end_vector", {})
-    moved = [f"{k} {fmt_rng(rng(val))}" for k, val in v.items() if rng(val) not in (None, (0, 0))]
+    def differs(val):
+        r = rng(val)
+        if r is None:
+            return False
+        if form(val) is None or (form(val)[0] == "low" and "hist" not in val):
+            return r != (0, 0)
+        if form(val)[0] == "low":
+            return "hist" not in val or r != (val["hist"], val["hist"])
+        return r != (0, 0)
+    moved = [f"{k} {fmt_val(val)}" for k, val in v.items() if differs(val)]
     return "*End of phase against the historical state: " + (" · ".join(moved) if moved else "as historical on every headline variable") + ".*"
 
 

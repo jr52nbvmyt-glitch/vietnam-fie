@@ -1,4 +1,4 @@
-<!-- fie v1.0.7 -->
+<!-- fie v1.0.8 -->
 # Part 3 — §4 The course of the war · §5 Delta ledger · §6 Changed / not changed
 
 **Trigger:** `CONTINUE` when the open memorandum's status is `part2`.
@@ -38,7 +38,7 @@ The chapters are the only copy of the war. You change them; you never retell the
 - **An event that moves into another phase:** `CANCELLED` where it was, with a pointer; `NEW` where it now falls, citing the old ID.
 - **Prefer changing the war to adding to it.** The war has only so many battles. Where a provision changes how an existing event goes, alter that event rather than adding a parallel one; the floor counts events created *or* changed.
 - **Keep events in date order**, and keep the overview and `## How the phase ends` consistent with them.
-- **Update the phase's `end_vector`**: for each headline variable you change, its range at the phase's end against the historical state at the same date, on the −10..+10 scale (`schema/VARIABLES.toml`), with its confidence and a note that says what the range means on the ground. An entry still marked `converted` that this memorandum's evidence bears on is re-judged, not left. Where the provision acts on a facet, judge the facet (from `unjudged`) and have the parent name its binding facet. For a hard-tier variable whose entry carries `hist` (history's figure for that date), give `est`, this war's figure, tagged `[X-NNN]`. If a range moves, the next phase must answer it (ripple rule).
+- **Update the phase's `end_vector`**: for each headline variable you change, its value at the phase's end in the variable's natural unit (`schema/VARIABLES.toml`, v1.0.8): this war's figure as `low`/`high` where the entry carries `hist` (history's figure for that date), otherwise the difference from history as `dlow`/`dhigh` or `plow`/`phigh`, with its confidence and a note that says what the figure means on the ground. Where you can research history's figure, add `hist` and `src` and write this war's figure beside it. An entry that is `unjudged` with a `was` (a value on the retired scale) that this memorandum's evidence bears on is judged in units, not left. Where the provision acts on a facet, judge the facet and have the parent name its binding facet. If a value moves, the next phase must answer it (ripple rule).
 - **The snapshot.** A phase with a snapshot date (Phase VI: end of 1974) carries a second vector, `[snapshot]`, before its last offensive. A memorandum that revises that phase judges the snapshot's headline variables: the end vector is taken after the fall and cannot show what the fall erased (DIRMT01-3).
 - Figures the exercise generates carry `[X-NNN]`; historical ones `[H]`; earlier memoranda's `[M…]`.
 

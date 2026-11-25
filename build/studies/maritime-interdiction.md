@@ -19,13 +19,13 @@ The area also turns on one thing the record does not hold. Between March 1965 an
 
 | Variable | P1 | P2 | P3 | P4 | P5 | P6 | 1974 snapshot | Held in |
 |---|---|---|---|---|---|---|---|---|
-| INFIL.sea | -5..-3 (medium) | -1..+1 (low) | -1..+0 (low) | +0 (medium) | +0 (low) | +0 (low) | | study (ST01) |
-| SANCT.cambodia | +1..+3 (low) | +2..+5 (low) | +1..+3 (low) | -1..+0 (low) | +0 (low) | +0 (low) | | study (ST01, since 013) |
-| TRAIL.tonnage_arriving | -1..+1 (low) | -1..+0 (low) | -1..+0 (low) | -1..+0 (low) | -1..+0 (low) | +2..+5 (low) | -1..+0 (low) | chapters |
-| ENEMY.regeneration | — | +0..+2 (low) | — | -1..+0 (low) | +0 (low) | +0 (low) | | study (ST01) |
-| INTL.communist_aid | +1..+3 (low) | +2..+4 (low) | +1..+3 (low) | +0 (low) | +0 (medium) | +1..+3 (low) | | study (ST01, since 013) |
+| INFIL.sea | -5..-3 (medium, v1.0.6 scale) | -1..+1 (low, v1.0.6 scale) | -1..+0 (low, v1.0.6 scale) | +0 (medium, v1.0.6 scale) | +0 (low, v1.0.6 scale) | +0 (low, v1.0.6 scale) | | study (ST01) |
+| SANCT.cambodia | +1..+3 (low, v1.0.6 scale) | +2..+5 (low, v1.0.6 scale) | +1..+3 (low, v1.0.6 scale) | -1..+0 (low, v1.0.6 scale) | +0 (low, v1.0.6 scale) | +0 (low, v1.0.6 scale) | | study (ST01, since 013) |
+| TRAIL.tonnage_arriving | -5% to +5% against history (low) | -10% to 0% against history (low) | -17% to -5% against history (low) | -5% to 0% against history (low) | -10% to 0% against history (low) | -20% to +20% against history (low) | -5% to 0% against history (low) | chapters |
+| ENEMY.regeneration | — | +0..+2 (low, v1.0.6 scale) | — | -1..+0 (low, v1.0.6 scale) | +0 (low, v1.0.6 scale) | +0 (low, v1.0.6 scale) | | study (ST01) |
+| INTL.communist_aid | +1..+3 (low, v1.0.6 scale) | +2..+4 (low, v1.0.6 scale) | +1..+3 (low, v1.0.6 scale) | +0 (low, v1.0.6 scale) | +0 (medium, v1.0.6 scale) | +1..+3 (low, v1.0.6 scale) | | study (ST01, since 013) |
 
-*Ranges against the historical state at each phase's end (−10..+10; low, medium, high = confidence; unjudged = not yet judged). Headline variables and their facets live in the chapters' end vectors; the rest in the study.*
+*Values in each variable's natural unit (schema/VARIABLES.toml): this war's figure with history's beside it, or the difference from history's figure; low, medium, high = confidence; unjudged = not yet judged. Headline variables and their facets live in the chapters' end vectors; the rest in the study. A study value set before R03 is on the retired −10..+10 scale until the study is next folded.*
 
 ## P1 · Phase I — The advisory war and escalation (Jan 1964 – Jul 1965)
 
