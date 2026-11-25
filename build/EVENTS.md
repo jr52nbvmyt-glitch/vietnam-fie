@@ -10,6 +10,7 @@
 | EV008-1 | P1 | 1 Jan 1964 – 31 Jul 1965 | The Directorate of Defence Industry and the domestic share | The Bien Hoa industrial zone, Bien Hoa Province; the Go Vap and Thu Duc works, Gia Dinh Province; the Joint General Staff and the Aid Compliance Board, Saigon | NEW | 008 |
 | EV009-1 | P1 | 1 Jan 1964 – 31 Jul 1965 | The ten-week cycle and the course number | The Quang Trung Training Center at Hoc Mon, Gia Dinh Province; the national and division training centres; the RF/PF training centres of the provinces; the Muster Service and the Commission, Saigon | NEW | 009 |
 | EV010-1 | P1 | 1 Jan 1964 – 31 Jul 1965 | The academy at Dong De and the gate | The National NCO Academy at Dong De, Nha Trang, Khanh Hoa Province; the division NCO schools; the RF/PF training centres; the Joint General Staff, Saigon | NEW | 010 |
+| EV012-1 | P1 | 1 Jan – 31 Mar 1964 | The combined command stands up, and Khanh's coup tests it | Saigon; the Joint General Staff compound and the MACV headquarters at Tan Son Nhut; the four corps headquarters at Da Nang, Pleiku, Bien Hoa and Can Tho | NEW | 012 |
 | EV003-1 | P1 | 6 Jan – 30 Jun 1964 | Operation TIDE TABLE | The II Corps coast from Qui Nhon to Cam Ranh Bay (Binh Dinh, Phu Yen and Khanh Hoa Provinces) and the Ca Mau coast of An Xuyen Province | NEW | 003,CP01 |
 | EV004-1 | P1 | 6 Jan – 30 Jun 1964 | Operation IRON GATE | Saigon port and Tan Son Nhut; the Quang Trung Training Center at Hoc Mon, Gia Dinh Province; the division training centres and the province RF/PF training camps of IV and III Corps, then countrywide | NEW | 004,CP01 |
 | EV000-1 | P1 | 30 Jan 1964 | Khanh's coup | Saigon | HIST-ALT | 000,001,002,CP01,007 |
@@ -20,6 +21,7 @@
 | EV001-3 | P1 | 9 Jun – 14 Jul 1964 | The Can Giuoc killings | Can Giuoc and Can Duoc Districts, Long An Province | NEW | 001,CP01 |
 | EVCP01-3 | P1 | 6 Jul 1964 – 12 May 1965 | The camps, the bases and the towns: Nam Dong, Bien Hoa and Song Be | Nam Dong CIDG camp west of Da Nang; Bien Hoa air base; Song Be and Phuoc Binh, Phuoc Long Province | HIST-ALT | CP01 |
 | EV000-2 | P1 | 6 Jul 1964 | The battle of Nam Dong | Nam Dong CIDG camp, about 50 km west of Da Nang near the Laotian border | CANCELLED | 000,CP01 |
+| EV012-2 | P1 | 20 Jul – 18 Dec 1964 | Operation DRY SEASON: the Can Giuoc security section | Can Giuoc, Can Duoc and Rach Kien Districts, Long An Province; the Rung Sat edge of Nha Be, Gia Dinh Province | NEW | 012 |
 | EV000-3 | P1 | 2–11 Aug 1964 | The Gulf of Tonkin incidents and the Southeast Asia Resolution | Gulf of Tonkin and Washington | HIST-ALT | 000,003,CP01 |
 | EVCP02-1 | P1 | 16 Aug 1964 – mid-1965 | Saigon's autumn of 1964: the Vung Tau Charter, the September coup and Hop Tac | Saigon, Hue and Da Nang; the Hop Tac ring of Gia Dinh, Bien Hoa and Long An Provinces | HIST-ALT | CP02 |
 | EV000-4 | P1 | 16 Aug – 14 Sep 1964 | The Vung Tau Charter crisis and the September coup attempt | Saigon, Hue and Da Nang | CANCELLED | 000,001,002,CP01,CP02 |
@@ -31,6 +33,7 @@
 | EVCP01-1 | P1 | 19 Dec 1964 – 19 Jun 1965 | Saigon's governments and the war in the city | Saigon | HIST-ALT | CP01,CP02 |
 | EV000-8 | P1 | 19–24 Dec 1964 | The Brink Hotel bombing and the purge of the High National Council | Saigon | CANCELLED | 000,CP01 |
 | EV000-9 | P1 | 28 Dec 1964 – 1 Jan 1965 | The battle of Binh Gia | Binh Gia, Phuoc Tuy Province | HIST-ALT | 000,004,CP01,010 |
+| EV012-3 | P1 | 8 Jan – 30 Jul 1965 | The red cards: Seoul, Canberra and the combined command | Seoul; Canberra; Saigon; Bien Hoa air base; Di An, Bien Hoa Province | NEW | 012 |
 | EV000-10 | P1 | 27 Jan – 25 Feb 1965 | The fall of Khanh | Saigon | CANCELLED | 000,CP01 |
 | EVCP01-2 | P1 | 7 Feb – 28 Jul 1965 | The American escalation: Flaming Dart, Rolling Thunder, the Marines and the July decision | Pleiku and Qui Nhon; North Vietnam; Da Nang; Washington | HIST-ALT | CP01,CP02 |
 | EV000-11 | P1 | 7–11 Feb 1965 | Pleiku, Qui Nhon and Flaming Dart | Camp Holloway and Pleiku, Pleiku Province; Qui Nhon, Binh Dinh Province; southern North Vietnam | CANCELLED | 000,CP01 |
@@ -48,12 +51,14 @@
 | EV000-20 | P1 | 18 Jun 1965 | The first Arc Light strike | Near Ben Cat, Binh Duong Province | CANCELLED | 000,005,CP02 |
 | EV000-21 | P1 | 28 Jul 1965 | The July decision | Washington | CANCELLED | 000,CP01 |
 | EV002-3 | P2 | Aug 1965 – Jun 1966 | The war on the district chiefs | The Delta, the provinces around Saigon and the coastal Centre | NEW | 002 |
+| EV012-4 | P2 | 2 Aug 1965 – 30 Jun 1966 | Operation FOLLOW THROUGH | Cu Chi and Trang Bang Districts, Hau Nghia Province; Hoc Mon District, Gia Dinh Province; the Ho Bo and Boi Loi woods and the Filhol rubber, Binh Duong Province | NEW | 012 |
 | EVCP01-4 | P2 | 18 Aug 1965 – 14 May 1967 | The big-unit war: Starlite, A Shau, Hastings, Long Tan, Attleboro, Cedar Falls and Junction City | The Van Tuong peninsula and the DMZ in I Corps; the A Shau valley; Phuoc Tuy; War Zone C and the Iron Triangle in III Corps | HIST-ALT | CP01 |
 | EV000-22 | P2 | 18–24 Aug 1965 | Operation Starlite | Van Tuong peninsula, south of Chu Lai, Quang Ngai Province | CANCELLED | 000,CP01 |
 | EV007-2 | P2 | 1 Sep 1965 – 30 Jun 1966 | The command lists and the thirty-day reviews | The Joint General Staff, Saigon; the corps and division headquarters; the Command and General Staff College at Dalat | NEW | 007 |
 | EV008-3 | P2 | 3 Oct 1965 – 31 Dec 1967 | The Da Nhim line | The 230 kV line from the Da Nhim station at Don Duong, Tuyen Duc Province, through Di Linh in Lam Dong and Long Khanh to the Thu Duc and Bien Hoa substations | NEW | 008 |
 | EV000-23 | P2 | 19 Oct – 18 Nov 1965 | Plei Me and the Ia Drang | Plei Me CIDG camp and the Ia Drang valley below the Chu Pong massif, Pleiku Province | HIST-ALT | 000,004,007,009 |
 | EV002-4 | P2 | 15 Nov 1965 – 30 Apr 1966 | Operation NIGHT LANTERN | Can Giuoc and Can Duoc Districts, Long An Province | NEW | 002,006 |
+| EV012-5 | P2 | 15 Nov 1965 – 2 Apr 1966 | The II Corps list and its abandonment | Tuy An and Song Cau Districts, Phu Yen Province; Phu My and Phu Cat Districts, Binh Dinh Province; Qui Nhon | NEW | 012 |
 | EV003-3 | P2 | 6 Dec 1965 – 30 Apr 1966 | Operation STEADY COUNT | Mu Gia and Ban Karai passes; Routes 23, 911 and 912 south to Tchepone; the Laotian panhandle | NEW | 003 |
 | EV001-6 | P2 | 10 Jan – 30 Jun 1966 | Operation GOLDEN SHEAF | Phong Dinh and Chuong Thien Provinces, along the Xa No canal from Can Tho to Vi Thanh | NEW | 001 |
 | EVCP02-3 | P2 | 24 Jan 1966 – 23 Nov 1967 | The frontier battles of 1966–67: Masher/White Wing, the Hill Fights, Con Thien and Dak To | The Bong Son plain and the An Lao valley, Binh Dinh Province; the hills northwest of Khe Sanh and Con Thien, Quang Tri Province; Dak To, Kontum Province | HIST-ALT | CP02 |
@@ -69,6 +74,7 @@
 | EVCP02-4 | P2 | 29 Jun 1966 – Dec 1967 | The air war over the North and the barrier, 1966–67: the POL strikes, Bolo and Muscle Shoals | Hanoi and Haiphong; the DMZ and the Laotian panhandle; Nakhon Phanom, Thailand | HIST-ALT | CP02 |
 | EV000-27 | P2 | 29 Jun 1966 | The POL strikes | Hanoi and Haiphong petroleum storage areas | CANCELLED | 000,003,CP02 |
 | EV003-4 | P2 | Jul 1966 – Nov 1967 | The Sihanoukville count | Sihanoukville (Kompong Som), Route 4 and Kompong Speu, and the roads to the base areas of the Fishhook and the Parrot's Beak, Cambodia; Tan Son Nhut and Washington | NEW | 003 |
+| EV012-6 | P2 | 1 Jul 1966 – 31 Dec 1967 | The Delta corps | Can Tho, Phong Dinh Province; Dinh Tuong and Kien Hoa Provinces; Dong Tam base, Dinh Tuong Province | NEW | 012 |
 | EV004-3 | P2 | 12 Jul – 19 Dec 1966 | The lot numbers | Cao Lanh and the Plain of Reeds, Kien Phong Province; the 9th Division ammunition supply point at Sa Dec; Cholon; and the Special Court for Corruption, Saigon | NEW | 004 |
 | EV000-28 | P2 | 15 Jul – 3 Aug 1966 | Operation Hastings | Song Ngan valley, the Rockpile and Hill 208, Quang Tri Province, south of the DMZ | CANCELLED | 000,CP01 |
 | EV006-3 | P2 | 8–31 Aug 1966 | The relief at Dien Ban | Dien Ban and Dai Loc Districts, Quang Nam Province, south of Da Nang between Route 1 and the Song Thu Bon | NEW | 006 |
@@ -95,8 +101,10 @@
 | EV000-41 | P3 | 21 Jan – 15 Apr 1968 | The siege of Khe Sanh | Khe Sanh Combat Base, Lang Vei and the surrounding hills, Quang Tri Province; Route 9 in Laos to Ban Houei Sane | HIST-ALT | 000,003,005 |
 | EV000-42 | P3 | 30–31 Jan 1968 | The Tet Offensive: the first wave | Saigon, Hue and the provincial and district capitals of South Vietnam | HIST-ALT | 000,001,002,004,006,007,009 |
 | EV010-4 | P3 | 30 Jan – 2 Feb 1968 | The posts of Cai Lay at Tet | Cai Lay and Cai Be Districts, Dinh Tuong Province; the post at Ap My Loi, My Phuoc Tay; the posts along the canal and Route 4 east to My Tho | NEW | 010 |
+| EV012-8 | P3 | 30 Jan – 4 Feb 1968 | Tet without guides in Hoc Mon | Hoc Mon and Go Vap Districts, Gia Dinh Province; the approaches to Tan Son Nhut from Ba Queo and Vinh Loc | NEW | 012 |
 | EV000-43 | P3 | 31 Jan – 7 Mar 1968 | The battle for Saigon and the attack on the US embassy | Saigon, Cholon and Tan Son Nhut | HIST | 000 |
-| EV000-44 | P3 | 31 Jan – 2 Mar 1968 | The battle of Hue | Hue, Thua Thien Province | HIST-ALT | 000,002,004,006 |
+| EV000-44 | P3 | 31 Jan – 27 Feb 1968 | The battle of Hue | Hue, Thua Thien Province | HIST-ALT | 000,002,004,006,012 |
+| EV012-7 | P3 | 31 Jan – 3 Feb 1968 | The attack on the combined headquarters | The Combined Operations Command compound and the Joint General Staff compound, Tan Son Nhut, Saigon | NEW | 012 |
 | EV000-45 | P3 | 20 Feb – 31 Mar 1968 | The reinforcement request and the decision of 31 March | Saigon and Washington | HIST | 000 |
 | EV000-46 | P3 | 16 Mar 1968 | The My Lai massacre | Son My village (My Lai 4 and My Khe), Son Tinh District, Quang Ngai Province | CANCELLED | 011 |
 | EV000-47 | P3 | 30 Apr – 3 May 1968 | The battle of Dai Do | Dai Do and the hamlets north of Dong Ha on the Cua Viet, Quang Tri Province | HIST | 000 |

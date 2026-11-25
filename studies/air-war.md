@@ -181,3 +181,10 @@ In 1975 the VNAF flew the Republic's last fights on fuel the appropriation had b
 [S2] "Operations Enhance and Enhance Plus" — Wikipedia, https://en.wikipedia.org/wiki/Operations_Enhance_and_Enhance_Plus — 234 F-5A and A-37, 32 C-130 and 277 UH-1H delivered from October 1972; the VNAF fourth largest air force in the world at the end of 1972.
 
 ## Since this study
+
+### Memo 012 — Combined US–RVN–ROK–Australian operations command; combined interagency task force against the VCI · 2026-11-25
+<!-- since 012 -->
+Memorandum 012 (a combined US, Vietnamese, Korean and Australian operations command from 1 January 1964, P012a, and a combined task force against the infrastructure, P012b) touches the air war in the South through one mechanism: the combined fire-support centres, which route American air, Arc Light and the B-52J's close-support boxes to ARVN units through one switchboard by plan rather than by an adviser's request (EC012-3, F012-5). It shows at work in one dated event. At Hue in February 1968 a single fire centre in the Citadel took every call for naval gunfire, artillery and the aircraft the weather allowed, and the battle ended on 27 February rather than 2 March (EV000-44). The memorandum widens the Republic's own fire support to −2..+1 in Phases II and III, on the finding that the switchboard makes American fire more available to the ARVN and no more owned (F012-26). It leaves *ARVN.effectiveness.fire_coordination* unjudged for the reason the study gave (Q-5). Its night raids push *POP.civilian_harm* (0..+3), which remains without a holder (Q-6). It changes nothing over the North, on the Trail or in the VNAF.
+
+*Chapter values Memo 012 moved on this study's variables: P2 ARVN.self_sufficiency.fire_support -1..+1 (low) → -2..+1 (low); P3 ARVN.self_sufficiency.fire_support -1..+1 (low) → -2..+1 (low).*
+<!-- /since -->

@@ -4,9 +4,9 @@
 memo = "012"
 title = "Combined US–RVN–ROK–Australian operations command; combined interagency task force against the VCI"
 received = "2026-11-24"
-status = "part2"
+status = "complete"
 version = "1.0.6"
-phases_changed = []
+phases_changed = ["P1", "P2", "P3"]
 links = ["002", "006"]
 
 [deviation]
