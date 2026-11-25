@@ -1,0 +1,10 @@
+work = "ST03"
+kind = "ST"
+status = "complete"
+after_memo = "015"
+done = [1]
+
+[[area]]
+slug = "us-and-arvn-small-arms-and-individual-weapons-ag"
+name = "US and ARVN small arms and individual weapons against the enemy's and against history"
+rerun = true
