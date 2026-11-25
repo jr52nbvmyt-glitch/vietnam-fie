@@ -4,7 +4,7 @@
 memo = "014"
 title = "1st Special Forces Operational Detachment-Delta (Delta Force) at full commitment, under a newly formed MACV joint special operations command from August 1964"
 received = "2026-11-25"
-status = "part1"
+status = "part2"
 version = "1.0.6"
 phases_changed = []
 links = ["003", "006", "012", "013"]
@@ -40,11 +40,38 @@ status = "active"
 [[push]]
 provision = "P014a"
 var = "FIND.vci"
-dlow = 0.05
-dhigh = 0.25
+dlow = 0.04
+dhigh = 0.15
 at = "P2"
 conf = "low"
-note = "50–250 more listed cadre at district level or above taken a year by 1967; Delta takes the top of the list (province, region and COSVN sections) where the combined task force's raid forces cannot reach, but its numbers are small"
+note = "40–150 more listed cadre at district level or above taken a year by 1967, revised down from Part 1's 50–250 on the sustained raid rate of 25–50 a month rather than the surge rate of 40–120 (F014-13); Delta takes the top of the list where the task force's raid forces cannot reach, and there are six assault troops forward"
+
+[[push]]
+provision = "P014a"
+var = "VCI.strength"
+dlow = -0.4
+dhigh = 0
+at = "P2"
+conf = "low"
+note = "0–400 fewer VCI cadre in the South by the end of 1967: the senior cadre Delta takes, less those the task force would have taken anyway and less the replacements the Front promotes within weeks"
+
+[[push]]
+provision = "P014a"
+var = "SUBVERT.defection"
+dlow = 0
+dhigh = 0.3
+at = "P2"
+conf = "low"
+note = "0–300 more Chieu Hoi ralliers a year by 1967: a raid that takes a province committee member alive with his files produces named approaches to the cadre under him, which a killing does not"
+
+[[push]]
+provision = "P014a"
+var = "US.casualties"
+dlow = 5
+dhigh = 25
+at = "P2"
+conf = "low"
+note = "5–25 more Americans killed by hostile action in 1967: Delta's own losses on raids, on cross-border reconnaissance from October 1965 and in helicopter losses, against SOG's 79 Special Forces killed or missing in 1968 scaled to Delta's smaller teams; the unit prevents no American deaths elsewhere"
 
 [[push]]
 provision = "P014a"
@@ -67,11 +94,11 @@ note = "0–4% less tonnage arriving by 1967 from road-watch and target-cueing t
 [[push]]
 provision = "P014a"
 var = "SANCT.cambodia"
-dlow = -3
+dlow = -2
 dhigh = 0
 at = "P4"
 conf = "low"
-note = "0–3 fewer main-force battalions based in Cambodia by 1971, from reconnaissance from 1967 and target-finding for the bombing of 1969 and the incursion of May 1970; Delta cannot enter Cambodia on the ground except as history's forces did"
+note = "0–2 fewer main-force battalions based in Cambodia by 1971, revised down against the maritime study and POS003-2, which hold that the sanctuary's value lay in the ground bar that nothing in the force changes, from reconnaissance from 1967 and target-finding for the bombing of 1969 and the incursion of May 1970; Delta cannot enter Cambodia on the ground except as history's forces did"
 
 [[push]]
 provision = "P014a"
@@ -136,6 +163,11 @@ note = "the size and density of Group 559's security forces in Laos set what a t
 provision = "P014a"
 var = "AIR.north_defences"
 note = "any raid into the North flies through the North's air defences"
+
+[[depend]]
+provision = "P014a"
+var = "POP.night_control"
+note = "a raid needs a source in the hamlet and a hamlet the government enters; outside the held belt the files are thin and the target is warned"
 
 [[depend]]
 provision = "P014b"

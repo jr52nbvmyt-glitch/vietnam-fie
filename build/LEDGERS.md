@@ -19,6 +19,7 @@
 - P010b (memo 010) depends — The schooled PF platoon leader matters only in a hamlet his platoon holds after dark and a reaction force that comes when he calls
 - P012b (memo 012) depends — an arrest team or a raid force reaches a hamlet at night only where the GVN holds it or can enter it in strength
 - P012a (memo 012) depends — ARVN battalions tasked to the combined plan leave the districts whose night they held
+- P014a (memo 014) depends — a raid needs a source in the hamlet and a hamlet the government enters; outside the held belt the files are thin and the target is warned
 
 ## POP.civilian_harm — Civilian harm from all sides' operations
 *Higher means more civilian deaths and injuries.*
@@ -142,6 +143,7 @@
 - P002b (memo 002) depends — A district chief governs through the police as well as the Popular Forces (P002a)
 - P006a (memo 006) depends — Phung Hoang is a coordinating layer over P002a's Special Branch; without it there is nothing to coordinate
 - P012b (memo 012) depends — the police-based half acts through the Special Branch and the Police Field Force of P002a
+- P014b (memo 014) depends — arrests inside the South go through the National Police and the 1964 police statute; the headquarters needs them for warrants and detention
 
 ## VCI.strength — The VC infrastructure
 *Higher means a stronger, better-functioning VCI.*
@@ -149,6 +151,7 @@
 - P002a (memo 002) pushes -1 [old band ≈ -4..-2] — Village cadre identified and arrested on evidence, legal cadre forced underground; slow, cumulative and confined to villages the state holds
 - P006a (memo 006) pushes -1 [old band ≈ -4..-2] — Cadres above the hamlet named, arrested and tried from 1965 rather than 1968, where night security exists
 - P012b (memo 012) pushes -5..-2 [v1.0.6 scale] (medium) — a raid force acting on fused intelligence within hours, night after night, removes cadres faster than the province committee can re-form a network, where night security lets it reach them
+- P014a (memo 014) pushes -0.4 to 0 [VCI cadre in the South, thousands] by the end of P2 (low) — 0–400 fewer VCI cadre in the South by the end of 1967: the senior cadre Delta takes, less those the task force would have taken anyway and less the replacements the Front promotes within weeks
 
 ## VCI.tax_take — VC taxation
 *Higher means more revenue to the VC.*
@@ -219,6 +222,7 @@
 
 - P005d (memo 005) pushes -1 [old band ≈ -4..-2] — Rivers and coastal lighterage of the North's panhandle and Laotian waterways closed to boats
 - P013b (memo 013) pushes -2..+0 [v1.0.6 scale] (low) — No pauses means no resupply surges in the stand-downs of May 1965, December 1965–January 1966 and the Tet truces; the panhandle approaches are struck continuously
+- P014a (memo 014) pushes -4% to 0% of history's figure by the end of P2 (low) — 0–4% less tonnage arriving by 1967 from road-watch and target-cueing teams in Laos from October 1965 within history's depth limits, added to SOG's; the teams find targets, the air strikes them
 
 ## INFIL.sea — Seaborne and Sihanoukville infiltration
 *Higher means more supply arriving by sea or through Cambodian ports.*
@@ -232,6 +236,7 @@
 - P003b (memo 003) depends — From South Vietnamese airspace the radar looks 150–200 km into Cambodia and sees the road traffic from Sihanoukville to the border base areas; what it sees there cannot be attacked under the present constraints, but the argument over how the sanctuary is supplied is settled by evidence (F003-3, F003-17)
 - P005d (memo 005) depends — Sihanoukville and the Mekong into Cambodia are neutral waters
 - P013b (memo 013) pushes +0..+1 [v1.0.6 scale] (low) — With the North's rail and road south battered without pause, Hanoi's freight for B-2 leans harder on the Chinese-flag ships to Sihanoukville that the record already opened in June 1965; the southern route gains as the northern one costs more
+- P014a (memo 014) pushes -2 to 0 [enemy main-force battalions based in Cambodia] by the end of P4 (low) — 0–2 fewer main-force battalions based in Cambodia by 1971, revised down against the maritime study and POS003-2, which hold that the sanctuary's value lay in the ground bar that nothing in the force changes, from reconnaissance from 1967 and target-finding for the bombing of 1969 and the incursion of May 1970; Delta cannot enter Cambodia on the ground except as history's forces did
 
 ## SANCT.laos — Value of the Laotian sanctuary to the enemy
 *Higher means more useful to the enemy.*
@@ -239,6 +244,7 @@
 - P003b (memo 003) depends — Tracks in Laos can be struck only within the Laotian rules; standoff radar can see into the sanctuary but cannot authorise action there
 - P005d (memo 005) depends — Laotian waterways may be mined from the air; the ground sanctuary stays
 - P013b (memo 013) depends — Laos targets stay with the ambassador; what the North sends past the 17th parallel is fought there under the old rules
+- P014a (memo 014) depends — the size and density of Group 559's security forces in Laos set what a team can do there before it is found
 
 ## FIND.main_force — Finding the main force
 *Higher means better ability to locate PAVN and VC main-force units.*
@@ -252,6 +258,8 @@
 - P005c (memo 005) depends — Close support needs a coordinate the 1965 infantryman cannot generate
 - P012a (memo 012) depends — a combined plan needs a located enemy to act on
 - P013a (memo 013) depends — Targeting and battle-damage assessment rest on the U-2S and RQ-4B of memo 003 over the North
+- P014a (memo 014) pushes 0 to +2 [% of main-force contacts the allies initiate on units already located] by the end of P2 (low) — 0–2 points more of main-force contacts begun on units already located, from long-range reconnaissance in the base areas inside the South; a few dozen teams against the whole PAVN and VC order of battle
+- P014a (memo 014) depends — reconnaissance tasking and raids on headquarters depend on the U-2S and RQ-4B imagery and the signals intelligence already in the record
 
 ## FIND.vci — Identifying the VCI
 *Higher means better ability to identify VCI members inside the population.*
@@ -261,6 +269,9 @@
 - P006a (memo 006) pushes +1 [old band ≈ +2..+4] — Fused files, network analysis and exploitation of every arrest and rallier add the district-and-above cadre to what P002a's Special Branch already finds in the hamlet
 - P012b (memo 012) pushes +1..+3 [v1.0.6 scale] (medium) — the record already names most of the infrastructure through the police and the district centres; national fusion and same-night exploitation add the province and region committees and the contested belt where files are thin
 - P012b (memo 012) depends — it rests on the district files of P006a's centres
+- P014a (memo 014) pushes +0.04 to +0.15 [VCI neutralised a year who were on a prior target list, district level or above, thousands] by the end of P2 (low) — 40–150 more listed cadre at district level or above taken a year by 1967, revised down from Part 1's 50–250 on the sustained raid rate of 25–50 a month rather than the surge rate of 40–120 (F014-13); Delta takes the top of the list where the task force's raid forces cannot reach, and there are six assault troops forward
+- P014b (memo 014) pushes 0 to +0.1 [VCI neutralised a year who were on a prior target list, district level or above, thousands] by the end of P2 (low) — 0–100 more listed cadre taken a year by 1967 from deconfliction with the combined task force, so that Delta and the task force do not raid the same target or burn each other's sources
+- P014a (memo 014) depends — Delta's targets come from the combined task force's files and the National Fusion Centre; it finishes targets others find
 
 ## INTEL.penetration — Enemy penetration of the GVN and RVNAF
 *Higher means more enemy agents inside the GVN and RVNAF.*
@@ -277,6 +288,7 @@
 - P012a (memo 012) pushes +1..+3 [v1.0.6 scale] (low) — a combined staff puts allied plans in front of Vietnamese officers, some of them the enemy's; the historical reason MACV withheld plans
 - P012b (memo 012) pushes -3..-1 [v1.0.6 scale] (low) — a compartmented fusion centre with counter-intelligence vetting finds some of the agents inside the police and the RVNAF as a by-product of the network map
 - P012b (memo 012) depends — a penetrated task force warns its targets
+- P014a (memo 014) depends — a raid force acting on targets shared with Vietnamese services is compromised in proportion to the enemy agents inside them; history's SOG lost teams to this
 
 ## FIX.capability — Fixing an enemy who chooses whether to fight
 *Higher means better ability to hold an enemy in place once found.*
@@ -303,6 +315,7 @@
 - P010b (memo 010) depends — The American course teaches the squad leader to fix and call fire; his competence depends on fire the RVNAF does not own (F010-24)
 - P012a (memo 012) depends — the combined fire-support system distributes fires that must exist
 - P013a (memo 013) depends — The opening strike needs the JDAM and B-52J of memo 005 to put weight on the whole list at once in the northeast monsoon
+- P014a (memo 014) depends — teams that find a target in the base areas or on the Trail depend on air and artillery reaching it before it moves
 
 ## AIR.north_effect — Effect of the air campaign against the North
 *Higher means more effect on the North's capacity and will.*
@@ -324,6 +337,7 @@
 - P005b (memo 005) depends — The 15-mile glide falls inside the SA-2's reach; standoff protects against guns, not missiles
 - P013a (memo 013) pushes -3..-1 [v1.0.6 scale] (low) — In March 1965 the North has no SA-2 site operational and about 50–60 MiGs at Phuc Yen; the opening blow catches the radar net and the fighter force on the ground, but Moscow then ships faster
 - P013b (memo 013) pushes -2..+0 [v1.0.6 scale] (low) — No sanctuary for the SAM support, the MiG bases or the Hanoi gun belt; offset by Soviet resupply that grows with the threat
+- P014a (memo 014) depends — any raid into the North flies through the North's air defences
 
 ## AIR.losses — US aircraft losses
 *Higher means more aircraft lost.*
@@ -441,6 +455,7 @@
 - P012a (memo 012) pushes +3..+6 [v1.0.6 scale] (medium) — operational control replaces persuasion: the combined commander can task an ARVN division, and an adviser's report reaches a commander with authority over the counterpart
 - P012a (memo 012) depends — the advisers are the combined command's eyes in the ARVN units it commands
 - P012b (memo 012) depends — the Vietnamese agencies share their files only when someone can make them
+- P014b (memo 014) depends — deconfliction with the Joint General Staff and the GVN's services depends on what the Americans can persuade them to share
 
 ## US.personnel_demand — Demand on US personnel spaces
 *Higher means more spaces consumed.*
@@ -459,6 +474,8 @@
 - P010b (memo 010) pushes +1 [old band ≈ +2..+4] — Advisers at the NCO academy and schools; small
 - P010a (memo 010) depends — The gate holds promotions in the years the NCO corps was shortest
 - P011b (memo 011) depends — The size of the draft calls follows the size of the force; under no troop ceiling the calls are as large as history's, less a quarter
+- P014a (memo 014) pushes +1 to +1.5 [US military personnel in Vietnam, thousands] by the end of P2 (medium) — 1,000–1,500 more US personnel in Vietnam, the whole unit
+- P014b (memo 014) pushes +0.25 to +0.45 [US military personnel in Vietnam, thousands] by the end of P1 (medium) — 250–450 more US personnel in the headquarters and its liaison cells from August 1964
 
 ## US.casualties — US casualty rate
 *Higher means more US killed and wounded.*
@@ -472,6 +489,7 @@
 - P009a (memo 009) pushes -1 [old band ≈ -4..-2] — Fewer American dead from extremity hemorrhage and from individual-skill failures; modest in total, real in lives
 - P010a (memo 010) pushes -1 [old band ≈ -4..-2] — Squad and platoon fights are NCOs' fights; better land navigation, fire control, patrol-base discipline and leader-stakes medical drill; modest in total
 - P011b (memo 011) depends — The draftee dead are what made the draft a political wound; its effect scales with the casualty lists
+- P014a (memo 014) pushes +5 to +25 [US killed by hostile action in the calendar year in which the phase ends (Phase I: 1965)] by the end of P2 (low) — 5–25 more Americans killed by hostile action in 1967: Delta's own losses on raids, on cross-border reconnaissance from October 1965 and in helicopter losses, against SOG's 79 Special Forces killed or missing in 1968 scaled to Delta's smaller teams; the unit prevents no American deaths elsewhere
 
 ## US.unit_quality — US unit quality
 *Higher means better US units.*
@@ -527,6 +545,7 @@
 - P009b (memo 009) depends — The RVNAF's wounded waited longer for evacuation than the American; the tourniquet's value rises with the wait and its cost in limbs rises with it
 - P012a (memo 012) depends — combined reaction across sectors runs on lift
 - P012b (memo 012) depends — the raid cycle runs on dedicated lift at night
+- P014a (memo 014) depends — beyond its own aviation squadron, insertion, extraction and recovery need theater lift; without the 160th SOAR it competes for Army and Air Force helicopters
 
 ## LOG.engineers — Engineer capacity
 *Higher means more engineer effort available.*
@@ -564,6 +583,7 @@
 - P013a (memo 013) pushes -2..+1 [v1.0.6 scale] (low) on US.political_tolerance.administration — Johnson takes the whole escalation in one step instead of by increments; it buys him nothing with the critics and spends the option of escalation at once
 - P013b (memo 013) pushes -1..+0 [v1.0.6 scale] (low) on US.political_tolerance.public — No pauses means no visible peace gestures, and strikes inside Hanoi put the capital's civilian dead on American television from 1965 rather than from Salisbury's dispatches of December 1966; the public facet only, Congress and the Administration are judged by P013a
 - P013a (memo 013) depends — Washington still decides whether the bombing happens
+- P014b (memo 014) depends — raids into the North and across the borders are decided in Washington; the headquarters works within what Washington grants
 
 ## US.credibility_gap — The credibility gap
 *Higher means wider gap between what MACV reports and what the press reports.*
@@ -611,6 +631,7 @@
 - P006a (memo 006) depends — Ralliers are the richest source of the network map
 - P012b (memo 012) pushes +1..+3 [v1.0.6 scale] (medium) — a cadre who knows his network is being rolled up has a reason to rally before the raid; the task force turns ralliers into sources
 - P012b (memo 012) depends — ralliers are the richest source on the infrastructure
+- P014a (memo 014) pushes 0 to +0.3 [Chieu Hoi ralliers, thousands a year] by the end of P2 (low) — 0–300 more Chieu Hoi ralliers a year by 1967: a raid that takes a province committee member alive with his files produces named approaches to the cadre under him, which a killing does not
 
 ## NEGOT.position — US and GVN negotiating position
 *Higher means stronger position against Hanoi.*
