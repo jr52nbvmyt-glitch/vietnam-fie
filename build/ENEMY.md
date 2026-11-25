@@ -6,12 +6,12 @@
 
 | Phase | Enemy | Allied | Both | Neither | Untagged |
 |---|---|---|---|---|---|
-| P1 | 8 | 22 | 4 | 3 | 15 |
-| P2 | 7 | 16 | 7 | 3 | 21 |
+| P1 | 9 | 23 | 4 | 3 | 15 |
+| P2 | 8 | 20 | 7 | 3 | 19 |
 | P3 | 12 | 7 | 1 | 0 | 5 |
-| P4 | 0 | 9 | 1 | 6 | 11 |
+| P4 | 0 | 11 | 1 | 6 | 11 |
 | P5 | 6 | 3 | 0 | 0 | 3 |
-| P6 | 8 | 3 | 1 | 3 | 5 |
+| P6 | 9 | 3 | 1 | 3 | 5 |
 
 ## The enemy's decisions
 
@@ -45,40 +45,45 @@ The Ninth Plenum of the Lao Dong Party Central Committee, in December 1963, had 
 
 Hanoi did not give up the sea at once. After TIDE TABLE's first half-year Group 125 paused through the summer of 1964, and in September, while the Global Hawk orbit was still held in the Gulf of Tonkin after the August crisis, it sent two trawlers south⁴.
 
+### The night under the cloud at Hoai Nhon
+*14–15 Dec 1964 · The PF post at Tam Quan and the district town of Hoai Nhon, Binh Dinh Province; Qui Nhon airfield · P1 · new · EV015-2*
+
+The night that ended the gunship's work below the cloud came in the first north-east monsoon of the war. At 2310 on 14 December the post at Tam Quan, on Route 1 north of Bong Son, called Hoai Nhon district that it was under attack by a company of the 2nd Regiment of the Front's Military Region 5⁵.
+
 ### Saigon's governments and the war in the city
 *19 Dec 1964 – 19 Jun 1965 · Saigon · P1 · changed from history · EVCP01-1*
 
-Six months of Saigon's politics are told here as one event, because they were one process: the generals unmaking every government they made, while the Front's city teams showed they could strike anywhere in the capital. In the week before Christmas 1964 the Young Turks, with Khanh's acquiescence, dissolved the High National Council and arrested several of its members; Taylor dressed the officers down, Khanh attacked him publicly, and the Mission's relations with the junta reached their lowest point⁵.
+Six months of Saigon's politics are told here as one event, because they were one process: the generals unmaking every government they made, while the Front's city teams showed they could strike anywhere in the capital. In the week before Christmas 1964 the Young Turks, with Khanh's acquiescence, dissolved the High National Council and arrested several of its members; Taylor dressed the officers down, Khanh attacked him publicly, and the Mission's relations with the junta reached their lowest point⁶.
 
 ### The battle of Binh Gia
 *28 Dec 1964 – 1 Jan 1965 · Binh Gia, Phuoc Tuy Province · P1 · changed from history · EV000-9*
 
-Binh Gia, a Catholic village of northern refugees in Phuoc Tuy Province east of Saigon, was the site of the Viet Cong's first large set-piece battle. The attackers were the 271st and 272nd Regiments (then called the 1st and 2nd), the nucleus of the forming 9th Division, with the 80th Artillery Detachment and local battalions of the B-2 Front, an estimated 1,800 men⁶.
+Binh Gia, a Catholic village of northern refugees in Phuoc Tuy Province east of Saigon, was the site of the Viet Cong's first large set-piece battle. The attackers were the 271st and 272nd Regiments (then called the 1st and 2nd), the nucleus of the forming 9th Division, with the 80th Artillery Detachment and local battalions of the B-2 Front, an estimated 1,800 men⁷.
 
 ### The American escalation: Flaming Dart, the opening strike, the Marines and the July decision
 *7 Feb – 28 Jul 1965 · Pleiku and Qui Nhon; North Vietnam; Da Nang; Washington · P1 · changed from history · EVCP01-2*
 
-The six months in which the United States went from an advisory war to a war of its own are told here as one event, because each step made the next one. At 01:50 on 7 February 1965, while McGeorge Bundy was in Saigon and Kosygin in Hanoi, about 300 men of the 30th Company of the VC 409th Sapper Battalion attacked Camp Holloway and the advisers' compound at Pleiku, killing seven Americans and wounding 104 and destroying 10 aircraft⁷.
+The six months in which the United States went from an advisory war to a war of its own are told here as one event, because each step made the next one. At 01:50 on 7 February 1965, while McGeorge Bundy was in Saigon and Kosygin in Hanoi, about 300 men of the 30th Company of the VC 409th Sapper Battalion attacked Camp Holloway and the advisers' compound at Pleiku, killing seven Americans and wounding 104 and destroying 10 aircraft⁸.
 
 ### Moscow, Beijing and the rebuilt sky
 *10 Mar – 31 Jul 1965 · Moscow; Beijing; Hanoi; the frontier crossing at Pingxiang and Dong Dang; the airfields of Mengzi and Ningming in Yunnan and Guangxi · P1 · new · EV013-2*
 
-The answer to HAMMER FALL was decided in three capitals, and each decided for its own reasons. In Hanoi the Politburo under Le Duan, at its meeting of 25–27 March, ordered the North onto a war footing, the dispersal of every factory, depot and fuel store that could be moved, and a militia of the whole people for air defence and repair; and, reading the strike as the preparation for a landing, held the 308th and 312th Divisions and two regiments of the 320th in the delta and on the coast through the summer instead of preparing them for the South⁸.
+The answer to HAMMER FALL was decided in three capitals, and each decided for its own reasons. In Hanoi the Politburo under Le Duan, at its meeting of 25–27 March, ordered the North onto a war footing, the dispersal of every factory, depot and fuel store that could be moved, and a militia of the whole people for air defence and repair; and, reading the strike as the preparation for a landing, held the 308th and 312th Divisions and two regiments of the 320th in the delta and on the coast through the summer instead of preparing them for the South⁹.
 
 ### The battle of Ba Gia
 *28–31 May 1965 · Ba Gia, Son Tinh District, Quang Ngai Province · P1 · changed from history · EV000-17*
 
-On 29 May 1965 the VC 1st Regiment of the forming 2nd Division (40th, 60th and 90th Battalions, with the 45th Independent Battalion and local force battalions), directed by PAVN Major General Chu Huy Man, overran the outpost at Loc Tho near Ba Gia, about 10 km from Quang Ngai, and ambushed the ARVN 1st Battalion, 51st Infantry Regiment as it came to help⁹. On the historical course the battalion was destroyed.
+On 29 May 1965 the VC 1st Regiment of the forming 2nd Division (40th, 60th and 90th Battalions, with the 45th Independent Battalion and local force battalions), directed by PAVN Major General Chu Huy Man, overran the outpost at Loc Tho near Ba Gia, about 10 km from Quang Ngai, and ambushed the ARVN 1st Battalion, 51st Infantry Regiment as it came to help¹⁰. On the historical course the battalion was destroyed.
 
 ### The battle of Dong Xoai
 *9–13 Jun 1965 · Dong Xoai district town and CIDG camp, Phuoc Long Province · P1 · changed from history · EV000-18*
 
-Late on 9 June 1965 the VC 272nd Regiment, with a battalion of the 273rd, a 75mm recoilless rifle company, an 82mm mortar company, a flamethrower company and anti-aircraft machine guns, attacked the district headquarters and CIDG camp at Dong Xoai; the 271st Regiment lay in reserve in the Thuan Loi rubber plantation. The camp was held by Special Forces Detachment A-342, nine men of Navy Seabee Team 1104, three CIDG companies, the 111th Regional Force Company and militia, with six armoured cars and two 105mm howitzers¹⁰.
+Late on 9 June 1965 the VC 272nd Regiment, with a battalion of the 273rd, a 75mm recoilless rifle company, an 82mm mortar company, a flamethrower company and anti-aircraft machine guns, attacked the district headquarters and CIDG camp at Dong Xoai; the 271st Regiment lay in reserve in the Thuan Loi rubber plantation. The camp was held by Special Forces Detachment A-342, nine men of Navy Seabee Team 1104, three CIDG companies, the 111th Regional Force Company and militia, with six armoured cars and two 105mm howitzers¹¹.
 
 ### The restrike watch on the Red River
 *1 Aug 1965 – 31 Dec 1966 · The Paul Doumer, Long Bien and Chuong Duong crossings at Hanoi; the Canal des Rapides and Bac Giang bridges on the northeast railway; the ferries at Phu Ly and Ninh Binh; the MACV Combined Targeting Cell, Tan Son Nhut · P2 · new · EV013-3*
 
-This event is told at length because it shows what the provision did once the opening strike was over, and why its measure of success fell as its success grew. From August 1965 the Combined Targeting Cell ran the northern campaign on a single list of about 300 targets and a daily repair list, and the Red River crossings at Hanoi were its pattern⁸.
+This event is told at length because it shows what the provision did once the opening strike was over, and why its measure of success fell as its success grew. From August 1965 the Combined Targeting Cell ran the northern campaign on a single list of about 300 targets and a daily repair list, and the Red River crossings at Hanoi were its pattern⁹.
 
 ### The big-unit war: Starlite, A Shau, Hastings, Long Tan, Attleboro, Cedar Falls and Junction City
 *18 Aug 1965 – 14 May 1967 · The Van Tuong peninsula and the DMZ in I Corps; the A Shau valley; Phuoc Tuy; War Zone C and the Iron Triangle in III Corps · P2 · changed from history · EVCP01-4*
@@ -88,57 +93,62 @@ The big-unit battles of 1965–67 are told here together, because together they 
 ### The Da Nhim line
 *3 Oct 1965 – 31 Dec 1967 · The 230 kV line from the Da Nhim station at Don Duong, Tuyen Duc Province, through Di Linh in Lam Dong and Long Khanh to the Thu Duc and Bien Hoa substations · P2 · new · EV008-3*
 
-The steelworks ran on electricity it did not make, and the Front found that out in its second year. The melt shop drew 70–100 MW at peak, about half from the line that brought the Da Nhim hydro station's power 250 kilometres down from the Lang Biang plateau to Thu Duc and the rest from the 66 MW thermal station at Thu Duc¹¹.
+The steelworks ran on electricity it did not make, and the Front found that out in its second year. The melt shop drew 70–100 MW at peak, about half from the line that brought the Da Nhim hydro station's power 250 kilometres down from the Lang Biang plateau to Thu Duc and the rest from the 66 MW thermal station at Thu Duc¹².
 
 ### Plei Me and the Ia Drang
 *19 Oct – 18 Nov 1965 · Plei Me CIDG camp and the Ia Drang valley below the Chu Pong massif, Pleiku Province · P2 · changed from history · EV000-23*
 
-On 19 October 1965 the PAVN B3 Front under Major General Chu Huy Man attacked the Special Forces camp at Plei Me, south of Pleiku, and the next day ambushed the ARVN relief column; the relief reached the camp at dusk on 25 October and the PAVN withdrew west towards the Chu Pong massif on the Cambodian border¹². The 1st Cavalry Division (Airmobile), newly arrived, was turned loose in pursuit.
+On 19 October 1965 the PAVN B3 Front under Major General Chu Huy Man attacked the Special Forces camp at Plei Me, south of Pleiku, and the next day ambushed the ARVN relief column; the relief reached the camp at dusk on 25 October and the PAVN withdrew west towards the Chu Pong massif on the Cambodian border¹³. The 1st Cavalry Division (Airmobile), newly arrived, was turned loose in pursuit.
 
 ### The II Corps list and its abandonment
 *15 Nov 1965 – 2 Apr 1966 · Tuy An and Song Cau Districts, Phu Yen Province; Phu My and Phu Cat Districts, Binh Dinh Province; Qui Nhon · P2 · new · EV012-5*
 
-The II Corps task group was formed at Qui Nhon in November 1965, as the ROK Capital Division settled into its area around Qui Nhon and Phu Cat¹³. It worked on thinner ground than any other.
+The II Corps task group was formed at Qui Nhon in November 1965, as the ROK Capital Division settled into its area around Qui Nhon and Phu Cat¹⁴. It worked on thinner ground than any other.
 
 ### The frontier battles of 1966–67: Masher/White Wing, the Hill Fights, Con Thien and Dak To
 *24 Jan 1966 – 23 Nov 1967 · The Bong Son plain and the An Lao valley, Binh Dinh Province; the hills northwest of Khe Sanh and Con Thien, Quang Tri Province; Dak To, Kontum Province · P2 · changed from history · EVCP02-3*
 
-Four battles of the frontier war are told here as one event, because each was won on the ground and none changed who chose the next. In **Masher/White Wing**, 24 January – 6 March 1966, the 1st Cavalry Division with the ARVN 22nd Division, an airborne brigade and the ROK Capital Division swept the Bong Son plain and the valleys behind it against the PAVN 3rd (Sao Vang) Division, about 6,000 men, while the Marines ran Double Eagle to the north¹⁴.
+Four battles of the frontier war are told here as one event, because each was won on the ground and none changed who chose the next. In **Masher/White Wing**, 24 January – 6 March 1966, the 1st Cavalry Division with the ARVN 22nd Division, an airborne brigade and the ROK Capital Division swept the Bong Son plain and the valleys behind it against the PAVN 3rd (Sao Vang) Division, about 6,000 men, while the Marines ran Double Eagle to the north¹⁵.
 
 ### The mines of Dien Ban
 *1 Mar 1966 – 31 Dec 1967 · Dien Ban, Dai Loc and Duy Xuyen Districts, Quang Nam Province, south of Da Nang between Route 1 and the Song Thu Bon; Son Tinh and Binh Son Districts, Quang Ngai Province · P2 · new · EV009-2*
 
-The enemy's answer to the trained soldier was not to fight him; it was to kill him without fighting, and nowhere did that answer cost more than in the hamlets south of Da Nang. In late 1965 the command of the Quang Da Special Zone, under the Military Region 5 Party Committee, reviewed a year of contacts with ARVN battalions and American Marines in Dien Ban and Dai Loc, and concluded that its local-force companies were losing more than they gained in firefights with units that returned aimed fire in the first seconds and did not bunch up when they were hit¹⁵.
+The enemy's answer to the trained soldier was not to fight him; it was to kill him without fighting, and nowhere did that answer cost more than in the hamlets south of Da Nang. In late 1965 the command of the Quang Da Special Zone, under the Military Region 5 Party Committee, reviewed a year of contacts with ARVN battalions and American Marines in Dien Ban and Dai Loc, and concluded that its local-force companies were losing more than they gained in firefights with units that returned aimed fire in the first seconds and did not bunch up when they were hit¹⁶.
 
 ### Operation OPEN ROAD
 *3–21 May 1966 · Route 13 from Chon Thanh to An Loc, the Xa Cam rubber and the Tau O crossing, Binh Long Province; Bau Bang, Binh Duong Province · P2 · new · EV007-3*
 
-The ambush that was never sprung on Route 13 is the clearest case in this war of what the officer reforms did and why no report showed it. In April 1966 the VC 9th Division ordered its 272nd Regiment, three battalions of about 1,500 men with 82mm mortars, 75mm recoilless rifles and RPD guns, to lay an ambush on Route 13 between Chon Thanh and An Loc for the next ARVN convoy to the Binh Long garrison, on the road where the regiment had broken relief columns in 1965¹⁶.
+The ambush that was never sprung on Route 13 is the clearest case in this war of what the officer reforms did and why no report showed it. In April 1966 the VC 9th Division ordered its 272nd Regiment, three battalions of about 1,500 men with 82mm mortars, 75mm recoilless rifles and RPD guns, to lay an ambush on Route 13 between Chon Thanh and An Loc for the next ARVN convoy to the Binh Long garrison, on the road where the regiment had broken relief columns in 1965¹⁷.
 
 ### The buffer's edge: Dong Dang and the Chinese guns
 *12 May – 30 Sep 1966 · The northeast railway from Kep through Lang Son to Dong Dang; the frontier at Pingxiang, Guangxi; Washington and Warsaw · P2 · new · EV013-5*
 
-The northeast railway carried about a third of the North's imports from China, and the provision let the cell strike it to within 15 miles of the frontier. From the autumn of 1965 that meant the yards at Kep and Bac Giang and the bridges north of Lang Son, struck weekly by F-105Ds from Takhli and monthly by Js⁸.
+The northeast railway carried about a third of the North's imports from China, and the provision let the cell strike it to within 15 miles of the frontier. From the autumn of 1965 that meant the yards at Kep and Bac Giang and the bridges north of Lang Son, struck weekly by F-105Ds from Takhli and monthly by Js⁹.
 
 ### The relief at Dien Ban
 *8–31 Aug 1966 · Dien Ban and Dai Loc Districts, Quang Nam Province, south of Da Nang between Route 1 and the Song Thu Bon · P2 · new · EV006-3*
 
-The relief at Dien Ban was the first time the enemy attacked an American battalion in the week it changed over, and it showed both halves of what unit rotation had done. The 1st Battalion, 9th Marines had come ashore at Da Nang in July 1965 and had spent a year in the hamlets of Dien Ban south of the airfield, the same companies under the same commander throughout¹⁷.
+The relief at Dien Ban was the first time the enemy attacked an American battalion in the week it changed over, and it showed both halves of what unit rotation had done. The 1st Battalion, 9th Marines had come ashore at Da Nang in July 1965 and had spent a year in the hamlets of Dien Ban south of the airfield, the same companies under the same commander throughout¹⁸.
+
+### The monsoon nights of Binh Dinh
+*15 Oct – 31 Dec 1966 · Hoai Nhon, Phu My and Tam Quan Districts, Binh Dinh Province; the posts on Route 1 and the coastal railway from Bong Son to Phu Cat · P2 · new · EV015-4*
+
+This is the season that shows where the night war went when the gunship took the clear nights from it. By October 1966 the posts of the Delta and the Saigon belt within the gunship net were seldom assaulted on clear nights, and in the coastal lowlands of II Corps the Front's Military Region 5 had drawn the conclusion its Delta regions had drawn two years earlier.
 
 ### Operation STEADY HAND
 *14–19 Nov 1966 · Cai Be District, Dinh Tuong Province, between Route 4 and the Plain of Reeds; the hamlets of Hau My village · P2 · new · EV010-3*
 
-The rice was the reason for both sides. The Mekong flood of September and October 1966 had drowned much of the Plain of Reeds and the main-season crop in the districts north of Route 4, and the Front's Dinh Tuong provincial committee, its own stocks lost in the water, ordered the 263rd Main Force Battalion in late October to escort its rice levy in the hamlets of Cai Be as the harvest came in¹⁸.
+The rice was the reason for both sides. The Mekong flood of September and October 1966 had drowned much of the Plain of Reeds and the main-season crop in the districts north of Route 4, and the Front's Dinh Tuong provincial committee, its own stocks lost in the water, ordered the 263rd Main Force Battalion in late October to escort its rice levy in the hamlets of Cai Be as the harvest came in¹⁹.
 
 ### The Mo Duc raid and the Phoenix story
 *11 Feb – 30 Jun 1967 · Duc Thanh village, Mo Duc District, Quang Ngai Province; Saigon; Hanoi; Washington · P2 · new · EV006-4*
 
-The raid at Duc Thanh was what the method became where the night was not held, and it reached the American press within a month. By the end of 1966 the held belt had little left for the district centres to find, and the corps commanders and the CORDS planners wanted the same results from the contested provinces of I and II Corps, where the Front still ran most villages after dark¹⁷.
+The raid at Duc Thanh was what the method became where the night was not held, and it reached the American press within a month. By the end of 1966 the held belt had little left for the district centres to find, and the corps commanders and the CORDS planners wanted the same results from the contested provinces of I and II Corps, where the Front still ran most villages after dark¹⁸.
 
 ### The night of the relief at My Phuoc Tay
 *9–10 Mar 1967 · The PF post at Ap My Loi and the canal road to Cai Lay district town, My Phuoc Tay village, Cai Lay District, Dinh Tuong Province · P2 · new · EV008-4*
 
-This is the night the radio's second-order effect became visible, and the night that shows it best. By 1967 every Popular Forces post in the held belt of Dinh Tuong had a set on the district net, a PRC-25 from the Go Vap plant since the previous autumn, and a fresh battery every Thursday from the exchange at the district¹⁹.
+This is the night the radio's second-order effect became visible, and the night that shows it best. By 1967 every Popular Forces post in the held belt of Dinh Tuong had a set on the district net, a PRC-25 from the Go Vap plant since the previous autumn, and a fresh battery every Thursday from the exchange at the district²⁰.
 
 ### The empty beds of Dinh Tuong
 *4 Sep – 14 Nov 1967 · Cai Lay, Cai Be and Giao Duc Districts, Dinh Tuong Province; Memot, Kampong Cham Province, Cambodia · P2 · new · EV014-5*
@@ -148,7 +158,7 @@ This is the operation that taught the command what the unit had actually done, a
 ### The siege of Khe Sanh
 *21 Jan – 15 Apr 1968 · Khe Sanh Combat Base, Lang Vei and the surrounding hills, Quang Tri Province; Route 9 in Laos to Ban Houei Sane · P3 · changed from history · EV000-41*
 
-In January 1968 the PAVN massed around the Marine base at Khe Sanh, in the northwest corner of Quang Tri Province astride Route 9 to Laos. The 304th and 325C Divisions were close in, with the 320th and 324th Divisions in the region²⁰.
+In January 1968 the PAVN massed around the Marine base at Khe Sanh, in the northwest corner of Quang Tri Province astride Route 9 to Laos. The 304th and 325C Divisions were close in, with the 320th and 324th Divisions in the region²¹.
 
 ### Delta at Tet: the command posts in Saigon and the files at Hue
 *29 Jan – 8 Mar 1968 · Saigon (Districts 5, 6 and 8, the Phu Tho racetrack, Gia Dinh); Hue · P3 · new · EV014-6*
@@ -158,12 +168,12 @@ In the ten days before Tet the unit raided eleven addresses in Gia Dinh and Saig
 ### The Tet Offensive: the first wave
 *30–31 Jan 1968 · Saigon, Hue and the provincial and district capitals of South Vietnam · P3 · changed from history · EV000-42*
 
-Shortly after midnight on 30 January, a day early because of a confusion in calendars, VC and PAVN forces attacked Nha Trang, Ban Me Thuot, Kontum, Hoi An, Tuy Hoa, Da Nang, Qui Nhon and Pleiku in I and II Corps²¹. The warning was not fully heeded: half the ARVN was on holiday leave for Tet.
+Shortly after midnight on 30 January, a day early because of a confusion in calendars, VC and PAVN forces attacked Nha Trang, Ban Me Thuot, Kontum, Hoi An, Tuy Hoa, Da Nang, Qui Nhon and Pleiku in I and II Corps²². The warning was not fully heeded: half the ARVN was on holiday leave for Tet.
 
 ### The posts of Cai Lay at Tet
 *30 Jan – 2 Feb 1968 · Cai Lay and Cai Be Districts, Dinh Tuong Province; the post at Ap My Loi, My Phuoc Tay; the posts along the canal and Route 4 east to My Tho · P3 · new · EV010-4*
 
-The Front's battalions came through Cai Lay to attack My Tho, and most of the posts on the way were left alone. The 514th Local Force Battalion and the 261st and 263rd Main Force Battalions moved east toward the province capital on the nights of 29–31 January, along the canals north of Route 4, and the Dinh Tuong command's order was to isolate the posts on the route rather than take them, because the battalions needed to reach My Tho intact¹⁸.
+The Front's battalions came through Cai Lay to attack My Tho, and most of the posts on the way were left alone. The 514th Local Force Battalion and the 261st and 263rd Main Force Battalions moved east toward the province capital on the nights of 29–31 January, along the canals north of Route 4, and the Dinh Tuong command's order was to isolate the posts on the route rather than take them, because the battalions needed to reach My Tho intact¹⁹.
 
 ### Tet without guides in Hoc Mon
 *30 Jan – 4 Feb 1968 · Hoc Mon and Go Vap Districts, Gia Dinh Province; the approaches to Tan Son Nhut from Ba Queo and Vinh Loc · P3 · new · EV012-8*
@@ -173,12 +183,12 @@ The battalions that attacked Saigon from the northwest at Tet came down the corr
 ### The battle of Hue
 *31 Jan – 27 Feb 1968 · Hue, Thua Thien Province · P3 · changed from history · EV000-44*
 
-In the early hours of 31 January the PAVN 4th, 5th and 6th Regiments with the 1st, 2nd and 12th Sapper Battalions, under a Hue City Front command, took almost all of Hue, the old imperial capital, except the ARVN 1st Division headquarters in the northeast corner of the Citadel and the MACV advisory compound south of the Perfume River²². Brigadier General Ngo Quang Truong held his headquarters with his staff and the Hac Bao Reconnaissance Company, and brought in the 3rd Regiment, the 4th Battalion, 2nd Regiment, the 1st Airborne Task Force (2nd and 7th Airborne Battalions), Vietnamese Marin
+In the early hours of 31 January the PAVN 4th, 5th and 6th Regiments with the 1st, 2nd and 12th Sapper Battalions, under a Hue City Front command, took almost all of Hue, the old imperial capital, except the ARVN 1st Division headquarters in the northeast corner of the Citadel and the MACV advisory compound south of the Perfume River²³. Brigadier General Ngo Quang Truong held his headquarters with his staff and the Hac Bao Reconnaissance Company, and brought in the 3rd Regiment, the 4th Battalion, 2nd Regiment, the 1st Airborne Task Force (2nd and 7th Airborne Battalions), Vietnamese Marin
 
 ### The attack on the combined headquarters
 *31 Jan – 3 Feb 1968 · The Combined Operations Command compound and the Joint General Staff compound, Tan Son Nhut, Saigon · P3 · new · EV012-7*
 
-At 0320 on 31 January a sapper company and a local-force battalion of the Saigon–Gia Dinh sub-regions attacked the Combined Operations Command compound on the northern edge of Tan Son Nhut, at the same hour as the attacks on the Joint General Staff compound, the air base's west gate and the embassy²³. The compound was held by the combined headquarters security battalion, a mixed unit of a Vietnamese military police company, an American military police company and a Korean security platoon.
+At 0320 on 31 January a sapper company and a local-force battalion of the Saigon–Gia Dinh sub-regions attacked the Combined Operations Command compound on the northern edge of Tan Son Nhut, at the same hour as the attacks on the Joint General Staff compound, the air base's west gate and the embassy²⁴. The compound was held by the combined headquarters security battalion, a mixed unit of a Vietnamese military police company, an American military police company and a Korean security platoon.
 
 ### The May fighting: Dai Do, the second wave in Saigon and Kham Duc
 *30 Apr – 15 Jun 1968 · Dai Do and the hamlets north of Dong Ha, Quang Tri Province; Saigon, Cholon and towns throughout the South; Kham Duc and Ngok Tavak, Quang Tin Province · P3 · changed from history · EVCP03-1*
@@ -193,22 +203,22 @@ The unit's worst single hour in the Delta was the consequence the dossier had na
 ### The third offensive
 *17 Aug – 23 Sep 1968 · Provincial towns and bases, especially in III Corps and the Central Highlands · P3 · changed from history · EV000-52*
 
-The third phase of the general offensive began in mid-August with attacks by fire and ground assaults on towns and bases, including attacks around Tay Ninh in III Corps. It was weaker than its predecessors: the local forces that had carried the attacks of February and May were largely gone, and the main forces would not commit themselves against American firepower in the same way again²¹.
+The third phase of the general offensive began in mid-August with attacks by fire and ground assaults on towns and bases, including attacks around Tay Ninh in III Corps. It was weaker than its predecessors: the local forces that had carried the attacks of February and May were largely gone, and the main forces would not commit themselves against American firepower in the same way again²².
 
 ### The self-defence hamlets
 *17 Aug – 31 Oct 1968 · Duc Hue and Trang Bang Districts, Hau Nghia Province; Can Duoc and Rach Kien, Long An Province; Cai Be and Cai Lay Districts, Dinh Tuong Province · P3 · new · EV009-4*
 
-The third offensive went for what the course did not reach, and in the provinces around Saigon that was the People's Self-Defense Force. COSVN's Military Affairs Committee, planning the offensive of August after two waves that had broken on the district towns' walls, ordered its subregions to avoid the RF and PF posts that had held in February and May and to strike the new self-defence groups of the mobilization law, whose members were townsmen and farmers with a Garand and three days' instruction¹⁵.
+The third offensive went for what the course did not reach, and in the provinces around Saigon that was the People's Self-Defense Force. COSVN's Military Affairs Committee, planning the offensive of August after two waves that had broken on the district towns' walls, ordered its subregions to avoid the RF and PF posts that had held in February and May and to strike the new self-defence groups of the mobilization law, whose members were townsmen and farmers with a Garand and three days' instruction¹⁶.
 
 ### The bombing halt, the talks and the American election
 *31 Oct – 13 Nov 1968 · Washington, Paris and Saigon · P3 · changed from history · EV000-53*
 
-In October Hanoi signalled that it would accept the Saigon government at the table if the bombing stopped. On 31 October Johnson announced the end of all bombing of North Vietnam from 1 November, ending Rolling Thunder²⁴²⁵.
+In October Hanoi signalled that it would accept the Saigon government at the table if the bombing stopped. On 31 October Johnson announced the end of all bombing of North Vietnam from 1 November, ending Rolling Thunder²⁵²⁶.
 
 ### Commando Hunt and the growth of the Trail
 *10 Oct 1970 – Dec 1971 · The Laotian panhandle and northeastern Cambodia · P4 · changed from history · EV000-68*
 
-The dry-season phases of Commando Hunt were the main US effort against the North's logistics after 1968. Phase V, from 10 October 1970 to 30 April 1971, claimed 16,266 trucks destroyed, a figure Seventh Air Force itself lowered to 11,000; in Phase VII the AC-130E gunships were credited with 7,335 of 10,689 trucks claimed²⁶.
+The dry-season phases of Commando Hunt were the main US effort against the North's logistics after 1968. Phase V, from 10 October 1970 to 30 April 1971, claimed 16,266 trucks destroyed, a figure Seventh Air Force itself lowered to 11,000; in Phase VII the AC-130E gunships were credited with 7,335 of 10,689 trucks claimed²⁷.
 
 ### The Easter Offensive opens: the DMZ front
 *30 Mar – 2 Apr 1972 · Quang Tri Province, from the DMZ to the Cua Viet and Camp Carroll · P5 · changed from history · EV000-74*
@@ -228,42 +238,47 @@ When the 21st Division left the Delta in April 1972 to fight its way up Route 13
 ### Loc Ninh and the siege of An Loc
 *7 Apr – 18 Jun 1972 · Loc Ninh and An Loc, Binh Long Province, on Route 13 · P5 · changed from history · EV000-76*
 
-On 5 April the 5th Division of the PAVN B-2 Front attacked Loc Ninh, on Route 13 near the Cambodian border, and overran it on the afternoon of 7 April; the 9th Division took the Quan Loi base camp that evening, and the 7th Division cut Route 13 south of An Loc at the Tau O bridge with its 141st, 165th and 209th Regiments. An Loc, the provincial capital 100 km north of Saigon, was cut off by 8 April²⁷.
+On 5 April the 5th Division of the PAVN B-2 Front attacked Loc Ninh, on Route 13 near the Cambodian border, and overran it on the afternoon of 7 April; the 9th Division took the Quan Loi base camp that evening, and the 7th Division cut Route 13 south of An Loc at the Tau O bridge with its 141st, 165th and 209th Regiments. An Loc, the provincial capital 100 km north of Saigon, was cut off by 8 April²⁸.
 
 ### Tan Canh, Dak To and the battle of Kontum
 *24 Apr – 9 Jun 1972 · Tan Canh, Dak To, Ben Het and Kontum city, Kontum Province · P5 · changed from history · EV000-77*
 
-In the Central Highlands the PAVN 320th Division began pressing the firebases on Rocket Ridge in early April, and on 24 April the 2nd Division's 1st and 66th Regiments, with the D10 Sapper Battalion and tanks, overran the ARVN bases at Tan Canh and Dak To II, held by the 42nd and 47th Regiments of the 22nd Division; the division "ceased to exist as a fighting unit", and its commander, Colonel Le Duc Dat, disappeared²⁸. Tan Canh fell in a day, to tanks and infantry already inside the wire before dawn, and nothing in the J reached a fight of that kind²⁹.
+In the Central Highlands the PAVN 320th Division began pressing the firebases on Rocket Ridge in early April, and on 24 April the 2nd Division's 1st and 66th Regiments, with the D10 Sapper Battalion and tanks, overran the ARVN bases at Tan Canh and Dak To II, held by the 42nd and 47th Regiments of the 22nd Division; the division "ceased to exist as a fighting unit", and its commander, Colonel Le Duc Dat, disappeared²⁹. Tan Canh fell in a day, to tanks and infantry already inside the wire before dawn, and nothing in the J reached a fight of that kind³⁰.
 
 ### The fall of Quang Tri
 *27 Apr – 2 May 1972 · Quang Tri City and Highway 1 south to the My Chanh River · P5 · changed from history · EV000-78*
 
-On 27 April the PAVN renewed its attack on the 3rd Division's defence of Quang Tri City. Contradictory orders from the I Corps commander, Lieutenant General Hoang Xuan Lam, and from Giai left units moving in opposite directions, and on 1 May Giai ordered the city abandoned³⁰.
+On 27 April the PAVN renewed its attack on the 3rd Division's defence of Quang Tri City. Contradictory orders from the I Corps commander, Lieutenant General Hoang Xuan Lam, and from Giai left units moving in opposite directions, and on 1 May Giai ordered the city abandoned³¹.
 
 ### Resolution 21 and the North's rebuilding
 *Oct 1973 – 1974 · Hanoi; the Laotian panhandle and the western Highlands · P6 · changed from history · EV000-87*
 
 In October 1973 the 21st Plenum of the Party Central Committee in Hanoi resolved that the revolution in the South must continue by the path of revolutionary violence, and that the PAVN should respond to Saigon's operations and prepare for a decisive offensive. The PAVN rebuilt through 1973 and 1974: it improved the strategic road along the western side of South Vietnam east of the Truong Son, extended the fuel pipeline into the South, built up stocks of ammunition and armour in the base areas and grouped its divisions into army corps, the 1st Corps in October 1973 and the 4th Corps on 20 J
 
+### The rice war of Chuong Thien
+*15 Mar – 30 Jun 1974 · Long My, Kien Hung and Kien Thien Districts, Chuong Thien Province; the U Minh edge of An Xuyen; Binh Thuy air base · P6 · new · EV015-8*
+
+The campaign was the Front's own and it had an author. In February 1974 the Military Region 9 Party Committee, short of rice after a 1973 harvest it had not been able to tax and with its main-force regiments living on half rations in the U Minh, decided on its own reckoning, before Hanoi's directives for the year reached it, to open a campaign against the posts of Chuong Thien in the dry season: to take the posts that guarded the canals, collect the spring harvest in the villages behind them, and feed its regiments to the monsoon⁵.
+
 ### The war of attrition of 1974
 *16 May – 10 Dec 1974 · The Iron Triangle; Thuong Duc, Duc Duc and Phu Loc in I Corps · P6 · changed from history · EV000-91*
 
-From May 1974 the PAVN took the initiative with a series of "strategic raids" designed to grind down the ARVN and test its reserves. In III Corps the PAVN 9th Division attacked Rach Bap in the Iron Triangle from 16 May; the ARVN retook it only in November³¹.
+From May 1974 the PAVN took the initiative with a series of "strategic raids" designed to grind down the ARVN and test its reserves. In III Corps the PAVN 9th Division attacked Rach Bap in the Iron Triangle from 16 May; the ARVN retook it only in November³².
 
 ### The fall of Phuoc Long
 *12 Dec 1974 – 6 Jan 1975 · Phuoc Long Province (Phuoc Binh and Song Be), III Corps · P6 · changed from history · EV000-92*
 
-On 12 December 1974 the PAVN 4th Corps under Hoang Cam, with the 7th Division, the new 3rd Division and independent regiments including the 141st, 165th, 201st and 271st, and two armoured companies with 14 T-54s, attacked Phuoc Long Province on the Cambodian border. It was defended mainly by Regional Force battalions, reinforced by the 1st and 2nd Battalions, 7th Regiment and the 1st Battalion, 9th Regiment of the 5th Division and the 81st Airborne Ranger Battalion³².
+On 12 December 1974 the PAVN 4th Corps under Hoang Cam, with the 7th Division, the new 3rd Division and independent regiments including the 141st, 165th, 201st and 271st, and two armoured companies with 14 T-54s, attacked Phuoc Long Province on the Cambodian border. It was defended mainly by Regional Force battalions, reinforced by the 1st and 2nd Battalions, 7th Regiment and the 1st Battalion, 9th Regiment of the 5th Division and the 81st Airborne Ranger Battalion³³.
 
 ### The defence of I Corps
 *13 Mar – 18 Apr 1975 · Quang Tri, Hue, Quang Ngai, Quang Tin and Da Nang · P6 · changed from history · EV000-94*
 
-Historically, on 13 March Thieu ordered Truong to give up most of I Corps and withdrew the Airborne Division towards Saigon as a reserve; on 20 March he ordered him to hold only Da Nang; on 29 March he ordered him to turn back and retake it, which Truong refused³³. The contradictory orders, given as the PAVN 2nd Corps with the 304th, 324th and 325th Divisions attacked from the north and west and the 2nd Division and 52nd Brigade struck in Quang Ngai and Quang Tin, broke I Corps; Hue was abandoned on 25 March, about 6,000 soldiers of the 2nd Division deserted on 28 March, and the PAVN enter
+Historically, on 13 March Thieu ordered Truong to give up most of I Corps and withdrew the Airborne Division towards Saigon as a reserve; on 20 March he ordered him to hold only Da Nang; on 29 March he ordered him to turn back and retake it, which Truong refused³⁴. The contradictory orders, given as the PAVN 2nd Corps with the 304th, 324th and 325th Divisions attacked from the north and west and the 2nd Division and 52nd Brigade struck in Quang Ngai and Quang Tin, broke I Corps; Hue was abandoned on 25 March, about 6,000 soldiers of the 2nd Division deserted on 28 March, and the PAVN enter
 
 ### The battle for the Highlands
 *14 Mar – 19 Apr 1975 · Pleiku and Kontum; Phuoc An on Route 21; Route 19 through the Mang Yang pass to An Khe · P6 · changed from history · EV000-95*
 
-Historically, on 14 March at Cam Ranh, Thieu ordered Phu to abandon Pleiku and Kontum and pull II Corps back to the coast; the chief of the Joint General Staff, General Cao Van Vien, warned against Route 19 because of the French disaster at the Mang Yang Pass in 1954, and Thieu chose Route 7, a disused road in poor condition³⁴. The retreat was ordered verbally and kept secret; some 400,000 civilians joined the columns, the PAVN ambushed them near Cheo Reo, and only the 6th Ranger Battalion and the 19th Armoured Cavalry Squadron arrived in good order; an estimated 155,000 civilians were kil
+Historically, on 14 March at Cam Ranh, Thieu ordered Phu to abandon Pleiku and Kontum and pull II Corps back to the coast; the chief of the Joint General Staff, General Cao Van Vien, warned against Route 19 because of the French disaster at the Mang Yang Pass in 1954, and Thieu chose Route 7, a disused road in poor condition³⁵. The retreat was ordered verbally and kept secret; some 400,000 civilians joined the columns, the PAVN ambushed them near Cheo Reo, and only the 6th Ranger Battalion and the 19th Armoured Cavalry Squadron arrived in good order; an estimated 155,000 civilians were kil
 
 ### The Politburo's calendar: Saigon after the rains
 *25 Mar – 14 Apr 1975 · Hanoi and the roads south · P6 · changed from history · EVMT01-4*
@@ -273,7 +288,7 @@ Historically the date of the fall of Saigon was set in Hanoi between 25 March an
 ### Operation SOUTHERN WALL and the rains
 *1 May – 31 Dec 1975 · Da Nang, Qui Nhon and the central coast; Saigon; Hanoi and the strategic road · P6 · new · EV011-3*
 
-The Republic that entered the rains of 1975 had lost the Highlands, Quang Tri, Thua Thien, Quang Ngai, Quang Tin and Phuoc Long, about a third of its army's infantry and most of the heavy equipment of II Corps and the 1st and 2nd Divisions; it held III and IV Corps whole, Da Nang and the Quang Nam lowlands, and the coast from Qui Nhon south³⁵. Its general reserve, the Airborne and Marine Divisions, was at Da Nang, five hundred kilometres from the capital the next offensive would aim at.
+The Republic that entered the rains of 1975 had lost the Highlands, Quang Tri, Thua Thien, Quang Ngai, Quang Tin and Phuoc Long, about a third of its army's infantry and most of the heavy equipment of II Corps and the 1st and 2nd Divisions; it held III and IV Corps whole, Da Nang and the Quang Nam lowlands, and the coast from Qui Nhon south³⁶. Its general reserve, the Airborne and Marine Divisions, was at Da Nang, five hundred kilometres from the capital the next offensive would aim at.
 
 ## Settled positions about the enemy
 
@@ -304,6 +319,7 @@ The Republic that entered the rains of 1975 had lost the Highlands, Quang Tri, T
 - **POSCP03-2** · vars: FIND.vci, ENEMY.engagement_control · A picture of the enemy's political organisation warns of where his political apparatus will act and not of when or in what strength his main forces will; at Tet 1968 the files held the caches, committees and guides of the uprising, the combined estimate read them as local, and MACV's judgment of the main effort and the Joint General Staff's leave order absorbed the warning, so the surprise was national and the change was confined to the corps centres of III and IV Corps (EV000-42, EV012-8; the user's question of 25 Nov 2026)
 - **POSCP03-3** · vars: POP.night_control, VCI.strength, FIND.vci · Night control judged by corps in units for the first time: the land, the police, the posts and the task force hold about 8–14 points more of III Corps' and 6–12 points more of IV Corps' rural people after dark than history's by the end of 1967, about six months to a year ahead of history's pacification there, and about 3–9 points more at the end of 1974; I and II Corps never move more than a few points, and those two corps decided 1972 and 1975 (CP03 §8; the user's question of 25 Nov 2026)
 - **POS014-1** · vars: FIND.vci, VCI.strength, SANCT.cambodia · In this war a night raid force on the Front's senior apparatus from 1964 drove that apparatus out of the provinces it administered and across the Cambodian border by 1967, where no allied instrument could reach it; the raid force's falling yield from 1967 measures that success and not its failure, and the displacement is never reported as a reduction in the Front's organisation (014 §4.P2, F014-19, F014-21; EV014-5, EV014-7)
+- **POS015-3** · vars: RFPF.effectiveness, POP.night_control, STRIKE.responsiveness, ENEMY.engagement_control · In this war from 1964 the Front does not assault a covered post on a clear night within the gunship net, and it moves its night attacks to the monsoon cloud, to the posts beyond the net and into the hamlets; on the coast of I and II Corps the monsoon nights are the Front's until the VNAF's radar gunships cover them from 1969 (015 EV015-1, EV015-2, EV015-4)
 
 ## Notes
 
@@ -311,34 +327,35 @@ The Republic that entered the rains of 1975 had lost the Highlands, Quang Tri, T
 2. The exercise's own judgment (memo 001), not a measured figure.
 3. Source: "Gulf of Tonkin incident" — Wikipedia, https://en.wikipedia.org/wiki/Gulf_of_Tonkin_incident (draws on the 2001 NSA history by R. J. Hanyok, declassified 2005) — 2 and 4 Aug 1964 actions, DESOTO and OPLAN 34A, Pierce Arrow, resolution
 4. The exercise's own judgment (memo 003), not a measured figure.
-5. Source: "September 1964 South Vietnamese coup attempt" — Wikipedia, https://en.wikipedia.org/wiki/September_1964_South_Vietnamese_coup_attempt — triumvirate, coup of 13–14 Sep, aftermath
-6. Source: "Battle of Binh Gia" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Binh_Gia (draws on MACV reporting and A. J. Birtle, US Army Center of Military History, 2024) — dates, VC 271st/272nd Regiments, ARVN Ranger and 4th Marine Battalion losses, US helicopter losses, VC claims
-7. Source: "Attack on Camp Holloway" — Wikipedia, https://en.wikipedia.org/wiki/Attack_on_Camp_Holloway — 409th Battalion attack, US casualties, aircraft losses, Flaming Dart strikes, Qui Nhon bombing
-8. The exercise's own judgment (memo 013), not a measured figure.
-9. Source: "Battle of Ba Gia" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Ba_Gia (draws on Birtle, US Army Center of Military History) — units, sequence, casualties by source, July 1965 loss of the post
-10. Source: "Battle of Dong Xoai" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Dong_Xoai — units, sequence, casualties by source, 173rd Airborne Brigade commitment, Medals of Honor
-11. From memorandum 008's record.
-12. Source: "Battle of Ia Drang" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Ia_Drang — Plei Me, LZ X-Ray and LZ Albany, units, B-52 support, casualties by source
-13. From memorandum 012's record.
-14. Source: "Operation Masher" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Masher — dates, units, casualties by source, displacement, renaming, aftermath
-15. The exercise's own judgment (memo 009), not a measured figure.
-16. The exercise's own judgment (memo 007), not a measured figure.
-17. The exercise's own judgment (memo 006), not a measured figure.
-18. The exercise's own judgment (memo 010), not a measured figure.
-19. The exercise's own judgment (memo 008), not a measured figure.
-20. Source: "Battle of Khe Sanh" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Khe_Sanh — siege dates, 26th Marines, PAVN divisions, Operation Niagara, air resupply, Lang Vei, Operation Pegasus, casualties by source, evacuation, the diversion debate
-21. Source: "Tet Offensive" (planning background) — Wikipedia, https://en.wikipedia.org/wiki/Tet_Offensive — Nguyen Chi Thanh, COSVN proposal, Revisionist Anti-Party Affair, October 1967 decision, Westmoreland's 21 Nov 1967 speech, MACV–CIA order-of-battle dispute
-22. Source: "Battle of Hue" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Hu%E1%BA%BF — dates, PAVN/VC, ARVN and US units, casualties by source, civilian dead and executions
-23. The exercise's own judgment (memo 012), not a measured figure.
-24. Source: "Operation Rolling Thunder" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Rolling_Thunder — first strike, restricted zones and route packages, 1965 sortie and loss figures, first SA-2 loss, VPAF growth, Operation Bolo, cumulative tonnage
-25. Source: "Paris Peace Accords" — Wikipedia, https://en.wikipedia.org/wiki/Paris_Peace_Accords — opening of the Paris talks, 31 Oct 1968 halt, table dispute, Chennault affair, PRG, secret Kissinger talks from 4 Aug 1969
-26. Source: "Operation Commando Hunt" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Commando_Hunt — phases and dates, Igloo White, truck claims and CIA doubts, AC-130, losses, Trail growth, outcome
-27. Source: "Battle of An Loc" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_An_L%E1%BB%99c — Loc Ninh, PAVN 5th, 7th and 9th Divisions, ARVN 5th and 21st Divisions, air support, anti-tank weapons, casualties by source, end of the siege
-28. Source: "Battle of Kontum" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Kontum — Tan Canh and Dak To, PAVN 2nd and 320th Divisions, 23rd Division, Vann, TOW, B-52s, casualties by source
-29. The exercise's own judgment (memo 005), not a measured figure.
-30. Source: "First Battle of Quang Tri" — Wikipedia, https://en.wikipedia.org/wiki/First_Battle_of_Quang_Tri — PAVN 304th, 308th and 324B Divisions, 3rd Division, Camp Carroll, Dong Ha bridge, fall of Quang Tri, shelling of Highway 1
-31. Source: "1974 in the Vietnam War" — Wikipedia, https://en.wikipedia.org/wiki/1974_in_the_Vietnam_War — Paracels, ammunition and fuel cuts, Svay Rieng, Iron Triangle, aid levels, Murray's warnings, I Corps battles, Nixon's resignation, Hanoi's strategy conference, 1974 casualties
-32. Source: "Battle of Phuoc Long" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Phuoc_Long — dates, PAVN 4th Corps, ARVN defenders, losses, absence of US response
-33. Source: "Hue–Da Nang Campaign" — Wikipedia, https://en.wikipedia.org/wiki/Hue%E2%80%93Da_Nang_Campaign — Thieu's orders to Truong, fall of Quang Tri, Hue and Da Nang, PAVN 2nd Corps, ARVN losses
-34. Source: "Battle of Ban Me Thuot" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Ban_Me_Thuot — Campaign 275, PAVN divisions, deception, ARVN defenders, losses, Thieu's decision at Cam Ranh, the Route 7 retreat
-35. The exercise's own judgment (memo 011), not a measured figure.
+5. The exercise's own judgment (memo 015), not a measured figure.
+6. Source: "September 1964 South Vietnamese coup attempt" — Wikipedia, https://en.wikipedia.org/wiki/September_1964_South_Vietnamese_coup_attempt — triumvirate, coup of 13–14 Sep, aftermath
+7. Source: "Battle of Binh Gia" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Binh_Gia (draws on MACV reporting and A. J. Birtle, US Army Center of Military History, 2024) — dates, VC 271st/272nd Regiments, ARVN Ranger and 4th Marine Battalion losses, US helicopter losses, VC claims
+8. Source: "Attack on Camp Holloway" — Wikipedia, https://en.wikipedia.org/wiki/Attack_on_Camp_Holloway — 409th Battalion attack, US casualties, aircraft losses, Flaming Dart strikes, Qui Nhon bombing
+9. The exercise's own judgment (memo 013), not a measured figure.
+10. Source: "Battle of Ba Gia" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Ba_Gia (draws on Birtle, US Army Center of Military History) — units, sequence, casualties by source, July 1965 loss of the post
+11. Source: "Battle of Dong Xoai" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Dong_Xoai — units, sequence, casualties by source, 173rd Airborne Brigade commitment, Medals of Honor
+12. From memorandum 008's record.
+13. Source: "Battle of Ia Drang" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Ia_Drang — Plei Me, LZ X-Ray and LZ Albany, units, B-52 support, casualties by source
+14. From memorandum 012's record.
+15. Source: "Operation Masher" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Masher — dates, units, casualties by source, displacement, renaming, aftermath
+16. The exercise's own judgment (memo 009), not a measured figure.
+17. The exercise's own judgment (memo 007), not a measured figure.
+18. The exercise's own judgment (memo 006), not a measured figure.
+19. The exercise's own judgment (memo 010), not a measured figure.
+20. The exercise's own judgment (memo 008), not a measured figure.
+21. Source: "Battle of Khe Sanh" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Khe_Sanh — siege dates, 26th Marines, PAVN divisions, Operation Niagara, air resupply, Lang Vei, Operation Pegasus, casualties by source, evacuation, the diversion debate
+22. Source: "Tet Offensive" (planning background) — Wikipedia, https://en.wikipedia.org/wiki/Tet_Offensive — Nguyen Chi Thanh, COSVN proposal, Revisionist Anti-Party Affair, October 1967 decision, Westmoreland's 21 Nov 1967 speech, MACV–CIA order-of-battle dispute
+23. Source: "Battle of Hue" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Hu%E1%BA%BF — dates, PAVN/VC, ARVN and US units, casualties by source, civilian dead and executions
+24. The exercise's own judgment (memo 012), not a measured figure.
+25. Source: "Operation Rolling Thunder" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Rolling_Thunder — first strike, restricted zones and route packages, 1965 sortie and loss figures, first SA-2 loss, VPAF growth, Operation Bolo, cumulative tonnage
+26. Source: "Paris Peace Accords" — Wikipedia, https://en.wikipedia.org/wiki/Paris_Peace_Accords — opening of the Paris talks, 31 Oct 1968 halt, table dispute, Chennault affair, PRG, secret Kissinger talks from 4 Aug 1969
+27. Source: "Operation Commando Hunt" — Wikipedia, https://en.wikipedia.org/wiki/Operation_Commando_Hunt — phases and dates, Igloo White, truck claims and CIA doubts, AC-130, losses, Trail growth, outcome
+28. Source: "Battle of An Loc" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_An_L%E1%BB%99c — Loc Ninh, PAVN 5th, 7th and 9th Divisions, ARVN 5th and 21st Divisions, air support, anti-tank weapons, casualties by source, end of the siege
+29. Source: "Battle of Kontum" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Kontum — Tan Canh and Dak To, PAVN 2nd and 320th Divisions, 23rd Division, Vann, TOW, B-52s, casualties by source
+30. The exercise's own judgment (memo 005), not a measured figure.
+31. Source: "First Battle of Quang Tri" — Wikipedia, https://en.wikipedia.org/wiki/First_Battle_of_Quang_Tri — PAVN 304th, 308th and 324B Divisions, 3rd Division, Camp Carroll, Dong Ha bridge, fall of Quang Tri, shelling of Highway 1
+32. Source: "1974 in the Vietnam War" — Wikipedia, https://en.wikipedia.org/wiki/1974_in_the_Vietnam_War — Paracels, ammunition and fuel cuts, Svay Rieng, Iron Triangle, aid levels, Murray's warnings, I Corps battles, Nixon's resignation, Hanoi's strategy conference, 1974 casualties
+33. Source: "Battle of Phuoc Long" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Phuoc_Long — dates, PAVN 4th Corps, ARVN defenders, losses, absence of US response
+34. Source: "Hue–Da Nang Campaign" — Wikipedia, https://en.wikipedia.org/wiki/Hue%E2%80%93Da_Nang_Campaign — Thieu's orders to Truong, fall of Quang Tri, Hue and Da Nang, PAVN 2nd Corps, ARVN losses
+35. Source: "Battle of Ban Me Thuot" — Wikipedia, https://en.wikipedia.org/wiki/Battle_of_Ban_Me_Thuot — Campaign 275, PAVN divisions, deception, ARVN defenders, losses, Thieu's decision at Cam Ranh, the Route 7 retreat
+36. The exercise's own judgment (memo 011), not a measured figure.

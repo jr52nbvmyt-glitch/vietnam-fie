@@ -4,9 +4,9 @@
 memo = "015"
 title = "Gunship replacement: every US and RVNAF AC-47, AC-119 and AC-130 removed; 64 AC-130J Ghostrider to the USAF from 1964 and 48 AC-130U Spooky II to the VNAF from 1967"
 received = "2026-11-25"
-status = "part2"
+status = "complete"
 version = "1.0.6"
-phases_changed = []
+phases_changed = ["P1", "P2", "P4", "P6"]
 links = ["003", "005", "012", "013"]
 
 [deviation]

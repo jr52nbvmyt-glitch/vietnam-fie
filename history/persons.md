@@ -77,3 +77,6 @@ Format: `- **<Name>** · <role> · <origin: HIST or invented in <work>> · <one 
 - **Captain Robert L. Ainsley** · US Army · G Squadron; lost with his team of five near the Ban Laboy ford, 11–14 July 1967 (EV014-4)
 - **Sergeant First Class Donald R. Keel** · US Army · the unit's first dead, killed at a doorway in Can Giuoc, 2 December 1964 (EV014-1)
 - **Major Nguyen Van Thuan** · ARVN · first squadron commander, 81st Special Group, from November 1969; formerly of the airborne division (EV014-8)
+- **Pham Quang Khiem** · Lieutenant colonel, VNAF, commander of the 81st Gunship Wing from 1967; a C-47 squadron commander who flew Farm Gate's observer seat in the Ghostriders in 1964 · invented in 015 · Built the VNAF's gunship wing, withdrew the 817th from Cambodia in 1970, and kept the radar technicians from transfer
+- **Le Minh Tuan** · Captain, VNAF, fire-control officer of the 817th Squadron · invented in 015 · Flew the first Vietnamese gunship sortie, over the post at Hiep Hoa on 19–20 August 1967, speaking to the post's commander in his own language
+- **Thomas R. Gaither** · Major, USAF, aircraft commander in the 14th Air Commando Squadron · invented in 015 · Took Ghostrider 63 under the monsoon cloud over Tam Quan on 14 December 1964 and brought it home burning; the wing forbade attacks below 3,500 feet two days later

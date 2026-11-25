@@ -168,3 +168,10 @@ The second effect runs the other way and belongs here because it is about the sa
 - value · SANCT.cambodia · P2 · Δ+1..+3 · low · the sanctuary now holds the senior apparatus of the upper Delta and the Saigon belt as well as the base areas, because the raid force drove it there (EV014-5, F014-7)
 - value · ENEMY.regeneration · P2 · Δ0..0 · low · committees reconstitute from Cambodia as they reconstituted from the base areas; the time to replace a province committee member is unchanged at weeks (EV014-2, EV014-5)
 <!-- /since -->
+
+### Memo 015 — Gunship replacement: every US and RVNAF AC-47, AC-119 and AC-130 removed; 64 AC-130J Ghostrider to the USAF from 1964 and 48 AC-130U Spooky II to the VNAF from 1967 · 2026-11-25
+<!-- since 015 -->
+**Memorandum 015 (25 Nov 2026): no change in the area.** The gunships touch the study's area only at the land end of the Cambodian route, and only from May 1970, when the 817th flew Route 7 and Route 13 for four months and was withdrawn after losing an aircraft near Snuol (EV015-7). By then Sihanoukville was closed by Lon Nol's coup and the sea route was long given up; nothing in the study's account of either changes, and it holds no value this memorandum moves.
+
+*Chapter values Memo 015 moved on this study's variables: P2 TRAIL.tonnage_arriving -10% to 0% against history (low) → -12% to -1% against history (low); P4 TRAIL.tonnage_arriving -5% to 0% against history (low) → -10% to -2% against history (low).*
+<!-- /since -->

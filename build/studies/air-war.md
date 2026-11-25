@@ -17,20 +17,20 @@ So the margin over history is large inside the air war and small outside it. Ove
 |---|---|---|---|---|---|---|---|---|
 | AIR.north_effect | — | — | — | — | — | — | | study, not yet judged |
 | AIR.north_defences | — | — | — | — | — | — | | study, not yet judged |
-| AIR.losses | — | — | — | — | — | — | | study, not yet judged |
+| AIR.losses | — | — | — | -2 to +2 against history (low) | — | — | | study (since 015) |
 | VNAF.capability | — | — | — | — | — | — | | study, not yet judged |
-| VNAF.capability.close_support | — | — | — | — | — | — | | study, not yet judged |
+| VNAF.capability.close_support | — | — | — | +0.3 to +0.8 against history (medium) | — | — | | study (since 015) |
 | VNAF.capability.lift | — | — | — | — | — | — | | study, not yet judged |
-| VNAF.capability.maintenance | — | — | — | — | — | — | | study, not yet judged |
+| VNAF.capability.maintenance | — | — | — | -4 to 0 against history (low) | — | — | | study (since 015) |
 | VNAF.capability.survivability | — | — | — | — | — | — | | study, not yet judged |
-| STRIKE.responsiveness | — | — | — | — | — | — | | study, not yet judged |
-| TRAIL.capacity | — | — | — | — | — | — | | study, not yet judged |
-| TRAIL.tonnage_arriving | -5% to +5% against history (low) | -10% to 0% against history (low) | -17% to -5% against history (low) | -5% to 0% against history (low) | -10% to 0% against history (low) | -20% to +20% against history (low) | -5% to 0% against history (low) | chapters |
+| STRIKE.responsiveness | — | -20 to -5 against history (medium) | — | — | — | -15 to -3 against history (low) | | study (since 015) |
+| TRAIL.capacity | — | 0 to +3 against history (low) | — | — | — | — | | study (since 015) |
+| TRAIL.tonnage_arriving | -5% to +5% against history (low) | -12% to -1% against history (low) | -17% to -5% against history (low) | -10% to -2% against history (low) | -10% to 0% against history (low) | -20% to +20% against history (low) | -5% to 0% against history (low) | chapters |
 | SANCT.laos | — | 0 against history (low) | — | — | — | — | | study (since 014) |
 | SANCT.cambodia | — | — | — | -2 to 0 against history (low) | — | — | | study (since 014) |
 | ARVN.effectiveness.fire_coordination | unjudged | unjudged | unjudged | unjudged | unjudged | unjudged | unjudged | chapters |
-| ARVN.self_sufficiency.fire_support | 0 to +2 against history (low) | -5 to +2 against history (low) | -5 to +2 against history (low) | -5 to +2 against history (low) | -8 to 0 against history (low) | +3 to +8 against history (low) | +3 to +5 against history (low) | chapters |
-| POP.civilian_harm | — | — | — | — | — | — | | study, not yet judged |
+| ARVN.self_sufficiency.fire_support | 0 to +2 against history (low) | -5 to +2 against history (low) | -5 to +2 against history (low) | -3 to +6 against history (low) | -8 to 0 against history (low) | +5 to +12 against history (low) | +5 to +10 against history (low) | chapters |
+| POP.civilian_harm | — | +0.2 to +1.5 against history (low) | — | — | — | — | | study (since 015) |
 
 *Values in each variable's natural unit (schema/VARIABLES.toml): this war's figure with history's beside it, or the difference from history's figure; low, medium, high = confidence; unjudged = not yet judged. Headline variables and their facets live in the chapters' end vectors; the rest in the study. A study value set before R03 is on the retired −10..+10 scale until the study is next folded.*
 
@@ -152,6 +152,20 @@ For the study's own values: SANCT.laos is unchanged — the sanctuary's value la
 
 - value · SANCT.laos · P2 · Δ0..0 · low · reconnaissance under the ambassador's limits adds observation and no action; the ground bar is untouched
 - value · SANCT.cambodia · P4 · Δ-2..0 · low · 61 foot reconnaissance missions in 1969 without air support or an exploitation force counted 94 cache sites and 11 hospitals, and the folders are part of why the incursion found the caches in days; COSVN went to Kratie on 19 March 1970 regardless (EV014-7,¹⁸,¹⁸)
+<!-- /since -->
+
+#### Memo 015 — Gunship replacement: every US and RVNAF AC-47, AC-119 and AC-130 removed; 64 AC-130J Ghostrider to the USAF from 1964 and 48 AC-130U Spooky II to the VNAF from 1967 · 2026-11-25
+<!-- since 015 -->
+**Memorandum 015 (25 Nov 2026): the gunships replaced, and the second clause of G-12 changed.** Every fixed-wing gunship of the war is removed; 64 AC-130J Ghostriders fly from January 1964 and 48 VNAF AC-130U Spooky IIs from 1967. The study's verdict that air power did nothing against an attack on a post at night, and that none of it was Vietnamese, no longer holds as written: from 1964 a post on a clear night within the net had a gunship over it in 15–30 minutes, and from 1969 the VNAF's radar gunships answered about two-thirds of the posts through cloud and kept doing so after 1973. The study's first clause stands and gains a sentence: the gunships could not fly over the PAVN's divisions in 1974–75. On the Trail the Ubon Ghostriders worked the Global Hawk's tracks from December 1965, and Commando Hunt's net loss at the peak rose to about 10–13% with no change in what arrived. The VNAF at the end of 1975 can lift, resupply, strike with unguided bombs, and hold a post at night; it still cannot break a siege.
+- value · STRIKE.responsiveness · P2 · Δ-20..-5 · medium · night fire on a post under attack: the gunship over it 15–30 minutes after the call, and clearance in about 12 minutes from July 1964
+- value · STRIKE.responsiveness · P6 · Δ-15..-3 · low · the VNAF's gunships answer the Delta's posts at night after 1973; nothing American answers anything
+- value · VNAF.capability.close_support · P4 · Δ0.3..0.8 · medium · 700–850 gunship sorties a month at the wing's best in 1970–71, each worth hours of night fire
+- value · VNAF.capability.maintenance · P4 · Δ-4..0 · low · the gunship wing takes the VNAF's scarcest avionics technicians; the A-1 squadrons are two to three points less often operational
+- value · AIR.losses · P4 · Δ-2..+2 · low · two Ghostriders lost over the panhandle in 1970–71 against history's AC-130 losses there; more aircraft on the Trail, flying higher
+- value · TRAIL.capacity · P2 · Δ0..+3 · low · canopy bypasses built a year early against the gunships, on top of the J's braided net
+- value · POP.civilian_harm · P2 · Δ0.2..1.5 · low · fire beside the hamlets at night under the district chief's clearance
+
+*Chapter values Memo 015 moved on this study's variables: P2 TRAIL.tonnage_arriving -10% to 0% against history (low) → -12% to -1% against history (low); P4 ARVN.self_sufficiency.fire_support -5 to +2 against history (low) → -3 to +6 against history (low); P4 TRAIL.tonnage_arriving -5% to 0% against history (low) → -10% to -2% against history (low); P6 ARVN.self_sufficiency.fire_support +3 to +8 against history (low) → +5 to +12 against history (low); P6 snapshot ARVN.self_sufficiency.fire_support +3 to +5 against history (low) → +5 to +10 against history (low).*
 <!-- /since -->
 
 ---
