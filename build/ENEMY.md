@@ -7,8 +7,8 @@
 | Phase | Enemy | Allied | Both | Neither | Untagged |
 |---|---|---|---|---|---|
 | P1 | 8 | 19 | 4 | 3 | 15 |
-| P2 | 7 | 13 | 6 | 3 | 22 |
-| P3 | 9 | 6 | 1 | 0 | 5 |
+| P2 | 7 | 14 | 6 | 3 | 21 |
+| P3 | 10 | 6 | 1 | 0 | 5 |
 | P4 | 0 | 8 | 1 | 4 | 12 |
 | P5 | 6 | 3 | 0 | 0 | 3 |
 | P6 | 8 | 3 | 1 | 3 | 5 |
@@ -170,6 +170,11 @@ In the early hours of 31 January the PAVN 4th, 5th and 6th Regiments with the 1s
 
 At 0320 on 31 January a sapper company and a local-force battalion of the Saigon–Gia Dinh sub-regions attacked the Combined Operations Command compound on the northern edge of Tan Son Nhut, at the same hour as the attacks on the Joint General Staff compound, the air base's west gate and the embassy²³. The compound was held by the combined headquarters security battalion, a mixed unit of a Vietnamese military police company, an American military police company and a Korean security platoon.
 
+### The May fighting: Dai Do, the second wave in Saigon and Kham Duc
+*30 Apr – 15 Jun 1968 · Dai Do and the hamlets north of Dong Ha, Quang Tri Province; Saigon, Cholon and towns throughout the South; Kham Duc and Ngok Tavak, Quang Tin Province · P3 · changed from history · EVCP03-1*
+
+These three battles are told together because they showed one thing three ways. Hanoi kept the offensive going after February at a price it chose to pay, and none of the provisions reached the places it chose.
+
 ### The third offensive
 *17 Aug – 23 Sep 1968 · Provincial towns and bases, especially in III Corps and the Central Highlands · P3 · changed from history · EV000-52*
 
@@ -280,6 +285,9 @@ The Republic that entered the rains of 1975 had lost the Highlands, Quang Tri, T
 - **REV011-1** · reverses POSMT01-3 · vars: HANOI.will, PAVN.strength_south, ARVN.effectiveness, ENEMY.engagement_control · The method of POSMT01-3 stands: the date of the fall is derived from Hanoi's calendar, and only a delay of about three weeks or more in the collapse of I and II Corps moves it. What is reversed is the date. In this war the collapse came three to five weeks late, because Thieu gave no withdrawal order on 13–14 March 1975; the Politburo put the assault on Saigon back to the dry season of 1975–76, and the fall is expected between February and May 1976 (011; EVMT01-4, EV000-94, EV000-95)
 - **POS012-1** · vars: VCI.strength, FIND.vci, POP.night_control · In this war a combined interagency task force with lift, raid teams and cross-province warrants from 1964 broke the Front's district government of the held belt from its edge in 1965–67, about a third to a half of the district layer in 12–18 provinces beyond what the police and the district centres had done; it reached committees beyond the held belt only as far as helicopter and warrant, never into the base areas, and its gains hold only where the posts hold the night (012 F012-27; EV012-4)
 - **POS013-1** · vars: AIR.north_effect, TRAIL.tonnage_arriving, HANOI.will · In this war the air campaign against the North was run from Saigon from 2 March 1965 on the theater's own list, without zones around Hanoi or Haiphong and without pauses, and opened with a strike that destroyed the North's power, bulk fuel, great bridges, jet base and Haiphong's cranes in a week; it did not reduce the flow to the South beyond the record's trace, and it did not move Hanoi's will; the restrictions on bombing the North were never the war's binding constraint (013 F013-7, F013-18; EV013-1, EV013-3)
+- **POSCP03-1** · vars: STRIKE.responsiveness, PAVN.strength_south, TRAIL.tonnage_arriving · The unrestricted opening of the air war against the North in March 1965 disrupted the North's economy, air force and alliances more than any other act of the war and did not reach the war in the South: the South's needs were small, carried through Laos by labour, and the North replaced fuel and power with drums and diesels in a season, while the trucks Moscow sent in place of heavy plant went to the Trail. The divisions held at home in 1965 were the North's home-defence divisions on history's course too, and no formation reaches the South late by more than weeks (CP03 §5, the user's question of 25 Nov 2026)
+- **POSCP03-2** · vars: FIND.vci, ENEMY.engagement_control · A picture of the enemy's political organisation warns of where his political apparatus will act and not of when or in what strength his main forces will; at Tet 1968 the files held the caches, committees and guides of the uprising, the combined estimate read them as local, and MACV's judgment of the main effort and the Joint General Staff's leave order absorbed the warning, so the surprise was national and the change was confined to the corps centres of III and IV Corps (EV000-42, EV012-8; the user's question of 25 Nov 2026)
+- **POSCP03-3** · vars: POP.night_control, VCI.strength, FIND.vci · Night control judged by corps in units for the first time: the land, the police, the posts and the task force hold about 8–14 points more of III Corps' and 6–12 points more of IV Corps' rural people after dark than history's by the end of 1967, about six months to a year ahead of history's pacification there, and about 3–9 points more at the end of 1974; I and II Corps never move more than a few points, and those two corps decided 1972 and 1975 (CP03 §8; the user's question of 25 Nov 2026)
 
 ## Notes
 

@@ -4,49 +4,16 @@ area = "maritime interdiction"
 slug = "maritime-interdiction"
 tags = ["INFIL.sea", "SANCT.cambodia", "TRAIL.tonnage_arriving", "ENEMY.regeneration", "INTL.communist_aid"]            # variables and facets from schema/VARIABLES.toml that this area covers; a variable covers its facets
 written = "ST01"     # the study run that wrote this text
-as_of = "011"       # the last memorandum the text reflects
-folded = ""          # the last checkpoint (or revision) that folded since-entries into the text
-rerun = false        # set by a checkpoint when the study has drifted enough to need a fresh STUDY run
-rerun_reason = ""
+as_of = "013"       # the last memorandum the text reflects
+folded = "CP03"          # the last checkpoint (or revision) that folded since-entries into the text
+rerun = true        # set by a checkpoint when the study has drifted enough to need a fresh STUDY run
+rerun_reason = "R03 retired the −10..+10 scale: every study value was on it, and judging them in natural units, with the since-entries of memoranda 012 and 013, is a new study rather than a fold (CP03)"
 
 # The study's own judgments, for variables and facets that are NOT headline variables (those live in the
 # chapters' end vectors and are judged there with an amend file). One table per phase, as at the phase's end
 # against the historical state: "<key>" = { low, high, conf, note } and, where a real indicator exists,
 # ind = "<figure> [H3]" or "<figure> [X-ST01]".
 [values]
-
-[values.P1]
-"INFIL.sea" = { low = -5, high = -3, conf = "medium", note = "the trawler route to the II Corps and Ca Mau coasts is seen from February 1964 and given up in Hanoi by January 1965, about a year before Market Time closed it historically; Sihanoukville has landed one arms cargo by the phase's end", ind = "14 trawlers tracked Feb–Dec 1964, 5 intercepted, 7 turned back, 2 landed [X-003]; history: 86 of 89 voyages reached shore in 1962–65, about 8,000 tons [S1]" }
-"SANCT.cambodia" = { low = 1, high = 3, conf = "low", note = "the port, the Cambodian truckers and the depots behind the Fishhook and the Parrot's Beak are a working supply terminus from late June 1965, about eighteen months before history's on the record's dating (Q-1)" }
-"INTL.communist_aid" = { low = 0, high = 0, conf = "low", note = "Chinese negotiators arrange the Sihanoukville passage; the aid is rerouted, not enlarged" }
-
-[values.P2]
-"INFIL.sea" = { low = -1, high = 1, conf = "low", note = "by December 1967 both wars have the sea closed and Sihanoukville running; here the port carried what history's trawlers carried in 1965–66, so the route changed and the volume did not", ind = "9,000–13,000 tons Sihanoukville to the border, Jul 1965 – Feb 1967 [X-003]; history: about three-quarters of the enemy's resupply by sea at the start of 1966, about a tenth by early 1967 [S1]" }
-"SANCT.cambodia" = { low = 2, high = 4, conf = "medium", note = "the principal external line into III and IV Corps from mid-1965 rather than late 1966 (POS003-2), counted from 1967 and untouchable: the quarantine and the depot strikes asked for in April 1967 are refused" }
-"ENEMY.regeneration" = { low = 0, high = 2, conf = "low", note = "the main force of III and IV Corps refits from depots fed by a port it could not use historically until later; the record shows no unit's rebuilding time, so the range is the direction and not a measure" }
-"INTL.communist_aid" = { low = 1, high = 2, conf = "low", note = "Soviet and Chinese pontoon bridging, trucks and engineers replace crossings the J cuts from 1966, and Moscow sends trucks for the coastal lighterage the estuary field closes in 1967 (F005-18)" }
-
-[values.P3]
-"INFIL.sea" = { low = -1, high = 0, conf = "low", note = "no trawler and no Market Time engagement of 1968 in the record (Q-3); Sihanoukville runs as historically, counted" }
-"SANCT.cambodia" = { low = 1, high = 3, conf = "low", note = "the same port and the same depots feed the III Corps offensives of 1968; measured, not touched" }
-
-[values.P4]
-"INFIL.sea" = { low = 0, high = 0, conf = "medium", note = "Lon Nol closes Sihanoukville on history's date in March 1970 (EV000-64); after it the sea and the Cambodian ports carry nothing in either war" }
-"SANCT.cambodia" = { low = -1, high = 0, conf = "low", note = "Menu kills the measured structures in a season and the incursion goes in on a map, finding its caches in ten days and about a tenth more of them; the Liberation Route replaces the port as historically" }
-"ENEMY.regeneration" = { low = -1, high = 0, conf = "low", note = "a tenth more of the caches lost, and lost in the first ten days; the recovery in III and IV Corps is delayed as historically, a little longer" }
-"INTL.communist_aid" = { low = 0, high = 0, conf = "low", note = "no difference from history in the record" }
-
-[values.P5]
-"INFIL.sea" = { low = 0, high = 0, conf = "low", note = "no sea or Cambodian-port supply in either war" }
-"SANCT.cambodia" = { low = 0, high = 0, conf = "low", note = "An Loc is attacked out of Cambodia as historically; the Global Hawk watches the roads and the sanctuary is worth to the enemy what it was" }
-"ENEMY.regeneration" = { low = 0, high = 0, conf = "low", note = "the PAVN's 1972 losses about a tenth above history's are replaced within the 1973 flow, costing quality and not time (POSMT01-2)" }
-"INTL.communist_aid" = { low = 0, high = 0, conf = "medium", note = "Pocket Money closes Haiphong on history's date with 27 ships inside; the supply moves to the Chinese rail crossings at Dong Dang and Lao Cai as historically", ind = "about 900 Quickstrikes by the Js on the first night and about 11,000 more mines in the following weeks [H68] [X-005]" }
-
-[values.P6]
-"INFIL.sea" = { low = 0, high = 0, conf = "low", note = "the record has no seaborne supply after 1970; the North's last campaign moves by the strategic road and the pipeline" }
-"SANCT.cambodia" = { low = 0, high = 0, conf = "low", note = "the whole of Indochina is sanctuary by statute from 15 August 1973; the ARVN's raid on Svay Rieng in 1974 is history's" }
-"ENEMY.regeneration" = { low = 0, high = 0, conf = "low", note = "the corps form on the historical dates (POSMT01-2); the rains of 1975 are time the PAVN uses to refit, as the Republic uses them" }
-"INTL.communist_aid" = { low = 1, high = 3, conf = "low", note = "Moscow ships most of the 130mm ammunition and tank replacements planned for 1976 in the autumn of 1975; Beijing sends rice and trucks and no more (EV011-3); the 1973–74 deliveries are not in the record (Q-6)" }
 +++
 # maritime interdiction — the war as it stands after memorandum 011
 
@@ -84,6 +51,8 @@ Two historical events changed as a result. The trawler that Lieutenant James Bow
 
 What this phase changed was the route of heavy weapons into the coastal provinces of II Corps and the lower Delta, and the timing of the Cambodian line. What it did not change was the volume. The record says so plainly: TIDE TABLE "did not starve the Front", and the weapons the sea would have landed in 1965 reached it more slowly by a longer road (EV003-1, EV003-2). Memorandum 003's verdict on itself is the right one for the area. It was the cleanest thing the aircraft did in the whole war, and the most important consequence of Phase I that they caused was to close a route the command could intercept and open one it could not touch [M003].
 
+**Memorandum 013 (folded at CP03).** Haiphong's port took its one strike on the night of 2–3 March 1965. About forty cranes, the transit sheds and the port's substation were destroyed, no ship was hit, and the port worked by lighter thereafter, unmined until Pocket Money in May 1972 (EV013-1). Moscow and Beijing answered faster than they had answered history's gradual campaign. Beijing refused Moscow an air corridor and slowed its shipments by rail (EV013-2).
+
 ## P2 · Phase II — The main force war (Aug 1965 – Dec 1967)
 
 Phase II is the phase of the port. The sea is quiet in the record from the summer of 1965, and the maritime war moves in two directions at once: south and west into Cambodia, where it can only watch, and north into the estuaries of the North's panhandle, where for the first time it can strike.
@@ -101,6 +70,8 @@ The maritime war turned north in February 1967. On the 26th Washington authorise
 The cargo did not stop, and that is the phase's second lesson. It moved to wooden junks, to sampans under tow and to trucks on Route 1A and Route 15; by the autumn the radar's count of southbound truck movements below Vinh was about 25–30 percent higher than in 1966, while the tonnage counted into the panhandle was about the same (F005-5) [X-005]. The North paid in labour, perhaps 15,000–25,000 more porters and road workers on Route Package 1 in 1967, and in nights its trucks spent in the open where the radar could count them [X-005]. Hanoi asked Moscow for wooden-hulled craft and for minesweeping help, and got trucks, which was what it needed (F005-18) [X-005]. The aid of its allies grew, a little, to replace what the mines and the J's crossing strikes took (P005b) [M005]. The field stayed until the bombing halt of November 1968, and the record's own judgment of how much less arrived in the South because of it is "very little" [X-005].
 
 The enemy's initiative in the phase was the decision not to return to the sea. Nothing in the record forced it after January 1965: Group 125 still had its trawlers, and Market Time was historically never so tight that no trawler got through [S1]. Hanoi chose a line it could not lose over a line it could, and in Phase II that choice paid. The phase ends with the war's central sanctuary measured, supplied, and exactly as safe as history's.
+
+**Memorandum 013 (folded at CP03).** With the North's own rail and road struck without pause, Hanoi leaned harder on the Sihanoukville route for the B-2 Front (F013-6). That adds perhaps a tenth to a fifth to what the count of 1966–67 measured, inside the range the record already gives that count (EV003-4). The study's judgment that the provisions changed the route of the external supply, not its volume, stands.
 
 ## P3 · Phase III — Tet and its aftermath (Jan 1968 – Dec 1968)
 
@@ -158,6 +129,8 @@ The phase ends with the sanctuary worth to the enemy what it was worth historica
 
 ## Judgments
 
+**Values withdrawn at CP03 (R03).** The study's 21 values were written on the −10..+10 scale, which R03 retired on 25 November 2026. No mapping from that scale to the variables' natural units exists, and checkpoint CP03 did not invent one: it withdrew the values from `[values]` (they are kept in `reviews/CP03/before-studies/`, and the judgments below still describe them in words) and advised a fresh STUDY of this area in units. Until it runs, the study's account of the area stands and its values are unjudged.
+
 **Chapter end vectors.** This study judged no chapter entry. The area's one headline variable, *TRAIL.tonnage_arriving*, was judged in every phase by the study of the air war in this run (ST01 Part 1) and is not re-judged here. The study's reading agrees with it: in Phase I the sea route closed and Sihanoukville opened early, so the route changed and the tonnage did not (EV003-1, EV003-2), and in Phases II–V the maritime campaigns (the estuary field, Pocket Money) moved cargo onto roads without a measurable change in what reached the South (EV005-3, EV000-75). The study tags no headline facet and names no binding facet; none of its variables has facets.
 
 **INFIL.sea** (study-held, every phase). P1 −5..−3 medium: the trawler route was seen from 18 February 1964 and abandoned by January 1965, with fourteen trawlers tracked in the year, five intercepted, seven turned back and two landed (EV003-1, EV003-2) [X-003], against history's 86 of 89 voyages reaching shore in 1962–65 [S1]; the value is held at −5..−3 rather than lower because Sihanoukville, which the variable also covers, landed its first arms cargo before the phase ended. P2 −1..+1 low: at the end of 1967 both wars have the sea closed and the port running, and this war's port carried 9,000–13,000 tons in July 1965 – February 1967 [X-003] where history's sea route was still carrying about three-quarters of the enemy's resupply at the start of 1966 [S1]; the study reads that as substitution, not reduction. P3 −1..0 low: the record has no seaborne attempt of 1968 (Q-3). P4 0..0 medium: Lon Nol closes the port on history's date (EV000-64). P5 and P6 0..0 low: no sea or Cambodian-port supply in either war, and the record says nothing of the patrols.
@@ -170,12 +143,12 @@ The phase ends with the sanctuary worth to the enemy what it was worth historica
 
 ## Questions for the record
 
-- **Q-1** · CHECKPOINT · The historical start of the arms traffic through Sihanoukville is dated two ways in finished records: the Theater Needs Assessment (reviews/TNA/part1.md, G-11) gives October 1965 [TNA S14], while EV003-2 (history/chapters/P1.md) says the arrangement "historically … took shape in late 1966" and dates this war's first cargo, late June 1965, "about eighteen months early", as does memorandum 003 Part 3 and the latest status of G-11. If October 1965 is history's date, the provisions brought the port forward by about four months, not eighteen, and SANCT.cambodia in P1–P2 should sit lower; the next checkpoint should settle the date and restate EV003-2, POS003-2 and G-11 on it. (The tonnages are not in conflict: EV003-4's 21,600 tons is arms and ammunition in the Hak Ly records, the TNA's 29,000 tons is all cargo credited to Unit K-20 [S2].)
-- **Q-2** · ERRATUM · EV003-4 (history/chapters/P2.md), created by memorandum 003, has no initiative line, which schema/FORMATS.md §7 requires on every event a memorandum creates; the event's content reads as *Initiative: allied* (the count was the command's).
-- **Q-3** · CHECKPOINT · The record carries no seaborne infiltration attempt and no Market Time engagement after January 1965, and neither carries nor cancels the historical attempts that continued after it (80 voyages attempted from March 1965 to April 1975, 14 reaching shore with under 800 tons, and the four-trawler night of 1 March 1968 [S1]); EV003-2's "increasingly nothing to find" implies fewer attempts without saying so. INFIL.sea in P3–P6 is judged at low confidence for that reason. A checkpoint should state whether Group 125 sent trawlers after 1965 in this war, and the cost of the patrols to the coastal fishing economy that the Theater Needs Assessment asked to have measured.
-- **Q-4** · CHECKPOINT · The riverine and coastal forces of the Republic and the United States after 1965 (Game Warden, the Vietnamese Navy's River Assault Groups, the turnover of Market Time's cutters and craft in 1969–70) appear in memoranda 001, 002, 003, 005 and 010 with assigned roles and in no chapter event, and the Delta's waterborne supply from the Mekong border (the Hong Ngu purchasing agent of EV004-3 is the record's only trace of it) is unnarrated; INFIL.sea, as defined, does not clearly cover river traffic from Cambodia into IV Corps. Whether the variable covers it, and whether the war in the Delta's rivers needs a study of its own, are questions for the checkpoint.
-- **Q-5** · CHECKPOINT · Historically Sihanouk suspended the North's arms shipments through his ports in the summer of 1969 [S2]; EV000-64 (history/chapters/P4.md, HIST) has Lon Nol close Sihanoukville in March 1970 and does not mention the 1969 suspension. In a war where the traffic was a measured fact from March 1967 (EV003-4), the checkpoint should state whether the 1969 suspension happened, earlier, or not at all.
-- **Q-6** · CHECKPOINT · The Soviet and Chinese deliveries to the North in 1973–74 remain absent from the record despite DIRMT01-10, while EV011-3 brings the 1976 deliveries forward to the autumn of 1975 [X-011]; INTL.communist_aid in P6 is judged on 1975 alone, and its 1974 state is unknown.
+- **Q-1** · STANDS · left to the re-run of this study. Asked: The historical start of the arms traffic through Sihanoukville is dated two ways in finished records: the Theater Needs Assessment (reviews/TNA/part1.md, G-11) gives October 1965 [TNA S14], while EV003-2 (history/chapters/P1.md) says the arrangement "historically … took shape in late 1966" and dates this war's first cargo, late June 1965, "about eighteen months early", as does memorandum 003 Part 3 and the latest status of G-11. If October 1965 is history's date, the provisions brought the port forward by about four months, not eighteen, and SANCT.cambodia in P1–P2 should sit lower; the next checkpoint should settle the date and restate EV003-2, POS003-2 and G-11 on it. (The tonnages are not in conflict: EV003-4's 21,600 tons is arms and ammunition in the Hak Ly records, the TNA's 29,000 tons is all cargo credited to Unit K-20 [S2].)
+- **Q-2** · RESOLVED · CP03 staged Phase II and added the initiative line, *Initiative: allied*, to EV003-4. Asked: EV003-4 (history/chapters/P2.md), created by memorandum 003, has no initiative line, which schema/FORMATS.md §7 requires on every event a memorandum creates; the event's content reads as *Initiative: allied* (the count was the command's).
+- **Q-3** · STANDS · carried to the gap register. Asked: The record carries no seaborne infiltration attempt and no Market Time engagement after January 1965, and neither carries nor cancels the historical attempts that continued after it (80 voyages attempted from March 1965 to April 1975, 14 reaching shore with under 800 tons, and the four-trawler night of 1 March 1968 [S1]); EV003-2's "increasingly nothing to find" implies fewer attempts without saying so. INFIL.sea in P3–P6 is judged at low confidence for that reason. A checkpoint should state whether Group 125 sent trawlers after 1965 in this war, and the cost of the patrols to the coastal fishing economy that the Theater Needs Assessment asked to have measured.
+- **Q-4** · STANDS · carried to the gap register. Asked: The riverine and coastal forces of the Republic and the United States after 1965 (Game Warden, the Vietnamese Navy's River Assault Groups, the turnover of Market Time's cutters and craft in 1969–70) appear in memoranda 001, 002, 003, 005 and 010 with assigned roles and in no chapter event, and the Delta's waterborne supply from the Mekong border (the Hong Ngu purchasing agent of EV004-3 is the record's only trace of it) is unnarrated; INFIL.sea, as defined, does not clearly cover river traffic from Cambodia into IV Corps. Whether the variable covers it, and whether the war in the Delta's rivers needs a study of its own, are questions for the checkpoint.
+- **Q-5** · STANDS · left to the re-run. Asked: Historically Sihanouk suspended the North's arms shipments through his ports in the summer of 1969 [S2]; EV000-64 (history/chapters/P4.md, HIST) has Lon Nol close Sihanoukville in March 1970 and does not mention the 1969 suspension. In a war where the traffic was a measured fact from March 1967 (EV003-4), the checkpoint should state whether the 1969 suspension happened, earlier, or not at all.
+- **Q-6** · STANDS · left to the re-run (DIRMT01-10 still applies). Asked: The Soviet and Chinese deliveries to the North in 1973–74 remain absent from the record despite DIRMT01-10, while EV011-3 brings the 1976 deliveries forward to the autumn of 1975 [X-011]; INTL.communist_aid in P6 is judged on 1975 alone, and its 1974 state is unknown.
 
 ## Sources
 
@@ -183,14 +156,3 @@ The phase ends with the sanctuary worth to the enemy what it was worth historica
 [S2] "Sihanouk Trail" — Wikipedia, https://en.wikipedia.org/wiki/Sihanouk_Trail — seaborne share of supply estimated as high as 70 percent before the Cambodian route; first shipments to Sihanoukville in October (1965 by context); Unit K-20 credited with 29,000 tons of cargo December 1966 – April 1969; Sihanouk suspended the North's arms shipments through his ports by the summer of 1969.
 
 ## Since this study
-
-### Memo 013 — The air campaign against the North unrestricted: an opening strike on the full target list on 2 March 1965, and MACV targeting authority with standing restrike, no Hanoi or Haiphong zones, one strike on Haiphong's port, a 15-mile Chinese buffer and no pauses · 2026-11-25
-<!-- since 013 -->
-Memorandum 013 touches the study's area through Haiphong and through the Soviet and Chinese supply. Haiphong's port took its one strike on the night of 2–3 March 1965. About forty cranes, the transit sheds and the port's substation were destroyed, no ship was hit, and the port worked by lighter thereafter, unmined until Pocket Money in May 1972 (EV013-1). Moscow and Beijing answered the opening strike faster than they had answered history's gradual campaign: SA-2s, technicians, diesels and trucks from Moscow, railway troops and gun divisions from Beijing. Beijing refused Moscow an air corridor and slowed its shipments by rail (EV013-2, EV013-5). With the North's own rail and road struck without pause, Hanoi leaned harder on the Sihanoukville route for the B-2 Front (F013-6). By my judgment that adds a tenth to a fifth to what the count of 1966–67 measured, inside the range the record already gives that count (EV003-4). The study's judgment that the provisions changed the route of the external supply and not its volume stands. Pocket Money in 1972 closed a port whose cranes had never been rebuilt, and it bit as history's did.
-- value · INTL.communist_aid · P1 · 1..3 · low · Soviet missiles, technicians, diesels and trucks accelerated after HAMMER FALL; Chinese railway troops and gun divisions from June 1965 (EV013-2)
-- value · INTL.communist_aid · P2 · 2..4 · low · Soviet and Chinese aid sustained a dispersed North and its rebuilt air defence; about 200,000 tons of Chinese rice in 1966 (EV013-2, EV013-5)
-- value · INTL.communist_aid · P3 · 1..3 · low · the allies' air defence over the delta at about history's density through the summer of 1968 (EV013-6)
-- value · SANCT.cambodia · P2 · 2..5 · low · Hanoi's southern freight leaned harder on Sihanoukville while the northern routes were struck without pause (F013-6)
-
-*Chapter values Memo 013 moved on this study's variables: P2 TRAIL.tonnage_arriving -1..+0 (low) → -1..+0 (low).*
-<!-- /since -->

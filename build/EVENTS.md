@@ -78,7 +78,7 @@
 | EV009-3 | P2 | 18 Jun – 31 Dec 1966 | The devaluation and the trained deserters | Saigon; Gia Dinh, Hau Nghia and Long An Provinces; the Quang Trung Training Center and the 25th Division's districts around Duc Hoa and Cu Chi | NEW | 009 |
 | EVCP02-4 | P2 | 29 Jun 1966 – Dec 1967 | The air war over the North and the barrier, 1966–67: the fuel that was gone, Bolo and Muscle Shoals | Hanoi and Haiphong; the DMZ and the Laotian panhandle; Nakhon Phanom, Thailand | HIST-ALT | CP02,013 |
 | EV000-27 | P2 | 29 Jun 1966 | The POL strikes | Hanoi and Haiphong petroleum storage areas | CANCELLED | 000,003,CP02 |
-| EV003-4 | P2 | Jul 1966 – Nov 1967 | The Sihanoukville count | Sihanoukville (Kompong Som), Route 4 and Kompong Speu, and the roads to the base areas of the Fishhook and the Parrot's Beak, Cambodia; Tan Son Nhut and Washington | NEW | 003 |
+| EV003-4 | P2 | Jul 1966 – Nov 1967 | The Sihanoukville count | Sihanoukville (Kompong Som), Route 4 and Kompong Speu, and the roads to the base areas of the Fishhook and the Parrot's Beak, Cambodia; Tan Son Nhut and Washington | NEW | 003,CP03 |
 | EV012-6 | P2 | 1 Jul 1966 – 31 Dec 1967 | The Delta corps | Can Tho, Phong Dinh Province; Dinh Tuong and Kien Hoa Provinces; Dong Tam base, Dinh Tuong Province | NEW | 012 |
 | EV004-3 | P2 | 12 Jul – 19 Dec 1966 | The lot numbers | Cao Lanh and the Plain of Reeds, Kien Phong Province; the 9th Division ammunition supply point at Sa Dec; Cholon; and the Special Court for Corruption, Saigon | NEW | 004 |
 | EV000-28 | P2 | 15 Jul – 3 Aug 1966 | Operation Hastings | Song Ngan valley, the Rockpile and Hill 208, Quang Tri Province, south of the DMZ | CANCELLED | 000,CP01 |
@@ -104,20 +104,21 @@
 | EV000-39 | P2 | 8 Sep – Dec 1967 | The barrier and Muscle Shoals | The DMZ and the Laotian panhandle; Nakhon Phanom, Thailand | CANCELLED | 000,003,CP02 |
 | EV000-40 | P2 | 3–23 Nov 1967 | The battle of Dak To | Dak To and Hills 1338, 724 and 875, Kontum Province | CANCELLED | 000,CP02 |
 | EV000-41 | P3 | 21 Jan – 15 Apr 1968 | The siege of Khe Sanh | Khe Sanh Combat Base, Lang Vei and the surrounding hills, Quang Tri Province; Route 9 in Laos to Ban Houei Sane | HIST-ALT | 000,003,005 |
-| EV000-42 | P3 | 30–31 Jan 1968 | The Tet Offensive: the first wave | Saigon, Hue and the provincial and district capitals of South Vietnam | HIST-ALT | 000,001,002,004,006,007,009 |
+| EV000-42 | P3 | 30–31 Jan 1968 | The Tet Offensive: the first wave | Saigon, Hue and the provincial and district capitals of South Vietnam | HIST-ALT | 000,001,002,004,006,007,009,CP03 |
 | EV010-4 | P3 | 30 Jan – 2 Feb 1968 | The posts of Cai Lay at Tet | Cai Lay and Cai Be Districts, Dinh Tuong Province; the post at Ap My Loi, My Phuoc Tay; the posts along the canal and Route 4 east to My Tho | NEW | 010 |
 | EV012-8 | P3 | 30 Jan – 4 Feb 1968 | Tet without guides in Hoc Mon | Hoc Mon and Go Vap Districts, Gia Dinh Province; the approaches to Tan Son Nhut from Ba Queo and Vinh Loc | NEW | 012 |
 | EV000-43 | P3 | 31 Jan – 7 Mar 1968 | The battle for Saigon and the attack on the US embassy | Saigon, Cholon and Tan Son Nhut | HIST | 000 |
-| EV000-44 | P3 | 31 Jan – 27 Feb 1968 | The battle of Hue | Hue, Thua Thien Province | HIST-ALT | 000,002,004,006,012 |
+| EV000-44 | P3 | 31 Jan – 27 Feb 1968 | The battle of Hue | Hue, Thua Thien Province | HIST-ALT | 000,002,004,006,012,CP03 |
 | EV012-7 | P3 | 31 Jan – 3 Feb 1968 | The attack on the combined headquarters | The Combined Operations Command compound and the Joint General Staff compound, Tan Son Nhut, Saigon | NEW | 012 |
 | EV000-45 | P3 | 20 Feb – 31 Mar 1968 | The reinforcement request and the decision of 31 March | Saigon and Washington | HIST-ALT | 000,013 |
 | EV000-46 | P3 | 16 Mar 1968 | The My Lai massacre | Son My village (My Lai 4 and My Khe), Son Tinh District, Quang Ngai Province | CANCELLED | 011 |
 | EV013-6 | P3 | 1 Apr – 31 Oct 1968 | The summer north of the 19th parallel | Hanoi, Haiphong and the Red River delta; the northeast railway; Route Package 1 and the coastal road to Vinh; the MACV Combined Targeting Cell, Tan Son Nhut | NEW | 013 |
-| EV000-47 | P3 | 30 Apr – 3 May 1968 | The battle of Dai Do | Dai Do and the hamlets north of Dong Ha on the Cua Viet, Quang Tri Province | HIST | 000 |
+| EVCP03-1 | P3 | 30 Apr – 15 Jun 1968 | The May fighting: Dai Do, the second wave in Saigon and Kham Duc | Dai Do and the hamlets north of Dong Ha, Quang Tri Province; Saigon, Cholon and towns throughout the South; Kham Duc and Ngok Tavak, Quang Tin Province | HIST-ALT | CP03 |
+| EV000-47 | P3 | 30 Apr – 3 May 1968 | The battle of Dai Do | Dai Do and the hamlets north of Dong Ha on the Cua Viet, Quang Tri Province | CANCELLED | 000,CP03 |
 | EV000-48 | P3 | May 1968 | The Paris talks open | Paris | CANCELLED | 000,013 |
-| EV000-49 | P3 | 5 May – 15 Jun 1968 | The May offensive in Saigon | Saigon and its outskirts, and towns throughout the South | HIST | 000 |
-| EV000-50 | P3 | 10–12 May 1968 | The evacuation of Kham Duc | Kham Duc Special Forces camp and Ngok Tavak, Quang Tin Province | HIST | 000 |
-| EV000-51 | P3 | 10 Jun – 11 Jul 1968 | Abrams takes command; mobilization in the South; Khe Sanh abandoned | Saigon and Quang Tri Province | HIST-ALT | 000,004,005,007,009,010 |
+| EV000-49 | P3 | 5 May – 15 Jun 1968 | The May offensive in Saigon | Saigon and its outskirts, and towns throughout the South | CANCELLED | 000,CP03 |
+| EV000-50 | P3 | 10–12 May 1968 | The evacuation of Kham Duc | Kham Duc Special Forces camp and Ngok Tavak, Quang Tin Province | CANCELLED | 000,CP03 |
+| EV000-51 | P3 | 10 Jun – 11 Jul 1968 | Abrams takes command; mobilization in the South; Khe Sanh abandoned | Saigon and Quang Tri Province | HIST-ALT | 000,004,005,007,009,010,CP03 |
 | EV000-52 | P3 | 17 Aug – 23 Sep 1968 | The third offensive | Provincial towns and bases, especially in III Corps and the Central Highlands | HIST-ALT | 000,001,007 |
 | EV009-4 | P3 | 17 Aug – 31 Oct 1968 | The self-defence hamlets | Duc Hue and Trang Bang Districts, Hau Nghia Province; Can Duoc and Rach Kien, Long An Province; Cai Be and Cai Lay Districts, Dinh Tuong Province | NEW | 009,010 |
 | EV000-53 | P3 | 31 Oct – 13 Nov 1968 | The bombing halt, the talks and the American election | Washington, Paris and Saigon | HIST-ALT | 000,013 |
