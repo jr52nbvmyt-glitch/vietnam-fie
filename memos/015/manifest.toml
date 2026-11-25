@@ -1,0 +1,221 @@
+# Manifest for memorandum 015. Fill every field; `fie.py check` rejects blanks.
+# status and phases_changed are set by fie.py; leave them alone.
+
+memo = "015"
+title = "Gunship replacement: every US and RVNAF AC-47, AC-119 and AC-130 removed; 64 AC-130J Ghostrider to the USAF from 1964 and 48 AC-130U Spooky II to the VNAF from 1967"
+received = "2026-11-25"
+status = "part1"
+version = "1.0.6"
+phases_changed = []
+links = ["003", "005", "012", "013"]
+
+[deviation]
+part1 = "none"
+part2 = "none"
+part3 = "none"
+
+[[provision]]
+id = "P015a"
+designation = "Lockheed Martin AC-130J Ghostrider gunship, Block 30 in its 2026 configuration (MC-130J airframe, Precision Strike Package: GAU-23/A 30mm chain gun, 105mm cannon, MX-20 and MX-25 electro-optical and infrared turrets with laser designators, wing stations for GBU-39/B Small Diameter Bombs and AGM-114 Hellfire, a ten-tube common launch tube for AGM-176 Griffin and GBU-69/B Small Glide Munition, AN/ALR-56M, AN/AAR-47 and AN/ALE-47 self-protection), replacing every USAF AC-47, AC-119 and AC-130 of the war, which with their programmes and infrastructure do not exist; missions suggested by the provision: close air support, armed overwatch and Trail interdiction"
+category = "air"
+quantity = "64 aircraft [U]"
+ceiling_spaces = "~1,900–2,400 in Southeast Asia, of whom ~1,100–1,500 in RVN [E: D2; about 1.5 crews of nine per aircraft and about 15–20 maintainers per aircraft, split between Phan Rang or Nha Trang and Ubon; no ceiling (CONFIG troop_ceiling = NONE)]"
+arrival = "1964-01-01"
+in_service = "initial operational capability September 2017; Block 30 first combat mission June 2019 [S2]"
+systems = ["STRIKE", "FIX", "INTERDICT", "SECURE"]
+status = "active"
+
+[[provision]]
+id = "P015b"
+designation = "Lockheed/Boeing AC-130U Spooky II gunship (C-130H airframe; GAU-12/U 25mm Gatling gun, 40mm Bofors L/60 and 105mm M102 howitzer on trainable mounts, AN/APQ-180 synthetic-aperture strike radar, all-light-level television, infrared detection set, laser designators, dual-target fire control, armour and electronic countermeasures) in its final service configuration, to the Vietnamese Air Force from 1 January 1967, replacing every VNAF AC-47 and AC-119 of the war, which with their programmes and infrastructure do not exist"
+category = "air"
+quantity = "48 aircraft [U]"
+ceiling_spaces = "~250–450 US personnel in RVN, of whom ~150–300 military [E: D2; a training and advisory detachment and contractor field teams, falling after 1970; the crews and maintainers are VNAF; no ceiling (CONFIG)]"
+arrival = "1967-01-01"
+in_service = "deployed 1995, last retired 26 June 2020 [S3]"
+systems = ["STRIKE", "FIX", "SECURE", "ADVISE"]
+status = "active"
+
+# ------------------------------------------------------------------ P015a pushes
+[[push]]
+provision = "P015a"
+var = "STRIKE.responsiveness"
+dlow = -20
+dhigh = -5
+at = "P2"
+conf = "medium"
+note = "5–20 minutes faster median from an outpost or unit in night contact to fire on the attacker: a standing night orbit over each corps answers from overhead in minutes where history's AC-47 answered from ground alert or a distant orbit; daylight fire support unchanged"
+
+[[push]]
+provision = "P015a"
+var = "RFPF.effectiveness.outpost_defence"
+dlow = 2
+dhigh = 7
+at = "P2"
+conf = "low"
+note = "2–7 points more of the attacked RF and PF outposts hold: the attack on an outpost is a night attack, and a gunship over it by the second hour turns the assault into a withdrawal under fire; bounded by the share of attacks a gunship can reach in time"
+
+[[push]]
+provision = "P015a"
+var = "RFPF.effectiveness.reaction"
+dlow = -1.5
+dhigh = -0.3
+at = "P2"
+conf = "low"
+note = "relief by fire reaches an attacked outpost 20 minutes to an hour and a half sooner where the gunship net covers it; ground relief itself no faster"
+
+[[push]]
+provision = "P015a"
+var = "TRAIL.tonnage_arriving"
+plow = -10
+phigh = -3
+at = "P4"
+conf = "low"
+note = "3–10% fewer tons a year arrive by the Trail by 1971: more gunships, on the Trail from 1965–66 rather than 1967–69, with standoff Griffin and SDB shots at night against trucks the radar of P003 cues; the Trail's slack and its repair absorb most of it, as they absorbed history's claims"
+
+[[push]]
+provision = "P015a"
+var = "US.casualties"
+dlow = -400
+dhigh = -80
+at = "P2"
+conf = "low"
+note = "80–400 fewer Americans killed by hostile action in 1967: night fire over US units and Special Forces camps in contact, less the gunship crews' own losses"
+
+[[push]]
+provision = "P015a"
+var = "AIR.losses"
+dlow = -8
+dhigh = 4
+at = "P4"
+conf = "low"
+note = "between eight fewer and four more aircraft lost over Laos in 1969–71: the J flies higher and shoots from further out than the AC-130A, but there are more of them on the Trail and each loss is a nine-man crew"
+
+[[push]]
+provision = "P015a"
+var = "US.personnel_demand"
+dlow = 1.1
+dhigh = 1.5
+at = "P2"
+conf = "medium"
+note = "1,100–1,500 more US personnel in RVN for the in-country gunship squadrons and their maintenance, against history's gunship force"
+
+# ------------------------------------------------------------------ P015b pushes
+[[push]]
+provision = "P015b"
+var = "ARVN.self_sufficiency.fire_support"
+dlow = 2
+dhigh = 6
+at = "P4"
+conf = "low"
+note = "2–6 points more of the RVNAF's fire support delivered by its own aircraft by 1971: about 400–800 VNAF gunship sorties a month, each worth several hours of night fire, in place of US gunship and tactical air at night"
+
+[[push]]
+provision = "P015b"
+var = "VNAF.capability.close_support"
+dlow = 0.3
+dhigh = 0.8
+at = "P4"
+conf = "medium"
+note = "300–800 more VNAF close-support sorties a month by 1971: 48 aircraft at 45–65% operational flying about one sortie a day each, against history's VNAF AC-47 and AC-119 squadrons from 1969"
+
+[[push]]
+provision = "P015b"
+var = "VNAF.capability.maintenance"
+dlow = -4
+dhigh = 0
+at = "P4"
+conf = "low"
+note = "0–4 points fewer of all VNAF aircraft operational: the AC-130U's sensor and fire-control system draws the VNAF's best electronic and avionics technicians away from the rest of the fleet"
+
+[[push]]
+provision = "P015b"
+var = "RFPF.effectiveness.outpost_defence"
+dlow = 2
+dhigh = 6
+at = "P4"
+conf = "low"
+note = "2–6 points more of the attacked RF and PF outposts hold by 1971: a Vietnamese gunship over a Vietnamese outpost, answering a Vietnamese call on a Vietnamese net, with radar fire through monsoon cloud"
+
+[[push]]
+provision = "P015b"
+var = "ARVN.effectiveness.fire_coordination"
+dlow = -15
+dhigh = -3
+at = "P5"
+conf = "low"
+note = "3–15 minutes faster from an ARVN call for fire to rounds on target at night by 1972: the gunship crew and the ground unit share a language, a net and a chain of command"
+
+[[push]]
+provision = "P015b"
+var = "ARVN.self_sufficiency.fire_support"
+dlow = 3
+dhigh = 8
+at = "P6"
+conf = "low"
+note = "3–8 points more of the RVNAF's fire support its own by the end of 1974, if the U is flown and maintained after the Americans leave; bounded by the SA-7 and radar AAA that historically drove VNAF aircraft above useful altitudes"
+
+[[push]]
+provision = "P015b"
+var = "US.personnel_demand"
+dlow = 0.15
+dhigh = 0.3
+at = "P2"
+conf = "medium"
+note = "150–300 more US military in RVN for the gunship training and advisory detachment from 1967"
+
+# ------------------------------------------------------------------ depends
+[[depend]]
+provision = "P015a"
+var = "FIND.main_force"
+note = "a gunship kills what is found; at night over a contact the finding is done by the men in contact, but on the Trail and over base areas it needs the radar and sensors of P003 to cue it"
+
+[[depend]]
+provision = "P015a"
+var = "SANCT.laos"
+note = "Trail interdiction depends on the ambassador in Vientiane clearing the gunships' armed reconnaissance areas in Laos"
+
+[[depend]]
+provision = "P015a"
+var = "AIR.north_defences"
+note = "the gunship's survival on the Trail ends when 37mm, 57mm, radar-laid guns, the SA-7 and the SA-2 move south, as they did in 1971–72"
+
+[[depend]]
+provision = "P015a"
+var = "LOG.distribution"
+note = "30mm and 105mm ammunition, Griffin and SDB, and JP-8 at Phan Rang, Nha Trang and Ubon"
+
+[[depend]]
+provision = "P015a"
+var = "ENEMY.engagement_control"
+note = "the gunship pays off where the enemy attacks at night and stays in contact; where he breaks contact before dark it has nothing to shoot"
+
+[[depend]]
+provision = "P015a"
+var = "TRAIL.capacity"
+note = "how many trucks a night move, and how much slack the Trail has, decides whether trucks killed become tons denied"
+
+[[depend]]
+provision = "P015b"
+var = "VNAF.capability.maintenance"
+note = "the U's sensors, radar and fire control need avionics technicians the VNAF did not have in 1967"
+
+[[depend]]
+provision = "P015b"
+var = "ARVN.self_sufficiency.maintenance"
+note = "after 1973 the U flies only as long as the RVNAF's own depots and the aid appropriation keep it in spares"
+
+[[depend]]
+provision = "P015b"
+var = "US.political_tolerance"
+note = "the aid appropriation pays for its fuel, ammunition and spares after the Americans leave"
+
+[[depend]]
+provision = "P015b"
+var = "ADVISE.leverage"
+note = "the training and advisory detachment that builds the VNAF squadrons from 1967"
+
+[[depend]]
+provision = "P015b"
+var = "POP.civilian_harm"
+note = "a 105mm and 40mm night gun in Vietnamese hands over populated hamlets: discipline of fire decides whether it holds or loses the hamlet"
