@@ -4,7 +4,7 @@
 memo = "015"
 title = "Gunship replacement: every US and RVNAF AC-47, AC-119 and AC-130 removed; 64 AC-130J Ghostrider to the USAF from 1964 and 48 AC-130U Spooky II to the VNAF from 1967"
 received = "2026-11-25"
-status = "part1"
+status = "part2"
 version = "1.0.6"
 phases_changed = []
 links = ["003", "005", "012", "013"]
@@ -163,6 +163,57 @@ dhigh = 0.3
 at = "P2"
 conf = "medium"
 note = "150–300 more US military in RVN for the gunship training and advisory detachment from 1967"
+
+
+[[push]]
+provision = "P015a"
+var = "POP.civilian_harm"
+dlow = 0.2
+dhigh = 1.5
+at = "P2"
+conf = "low"
+note = "200–1,500 more civilian dead and wounded a year by 1967: the Front fights its night attacks from inside the hamlets and from their edges, and a 105mm and a 30mm fired at night beside a hamlet kill the people in it; partly offset by posts that do not fall and the reprisals that do not follow"
+
+[[push]]
+provision = "P015a"
+var = "ENEMY.engagement_control"
+dlow = -3
+dhigh = 0
+at = "P2"
+conf = "low"
+note = "0–3 points fewer of the platoon-and-larger engagements initiated by the enemy by 1967: he stops assaulting covered posts on clear nights, and the share falls only as far as he does not move the same attacks to cloudy nights and uncovered places"
+
+[[push]]
+provision = "P015a"
+var = "POP.night_control.IV_corps"
+dlow = 0
+dhigh = 2
+at = "P2"
+conf = "low"
+note = "0–2 points more of the Delta's rural population in hamlets held after dark by 1967: posts that hold keep their hamlets only where the PF go out from them at night, which the gunship does not make them do (POS008-4)"
+
+[[push]]
+provision = "P015b"
+var = "POP.night_control.IV_corps"
+dlow = 1
+dhigh = 4
+at = "P6"
+conf = "low"
+note = "1–4 points more of the Delta's rural population in hamlets held after dark at the end of 1974: the land-grabbing attacks of 1973–74 on the posts meet a Vietnamese gunship with a radar on most nights the Americans used to cover"
+
+[[push]]
+provision = "P015b"
+var = "RFPF.effectiveness.outpost_defence"
+dlow = 3
+dhigh = 8
+at = "P6"
+conf = "low"
+note = "3–8 points more of the attacked RF and PF outposts hold in 1973–74, measured at the end of 1974: history's territorial war after the cease-fire was fought with no night fire from the air at all"
+
+[[depend]]
+provision = "P015a"
+var = "POP.night_control"
+note = "a post that holds keeps its hamlet only if the PF leave the wire at night; the gunship protects the post, not the hamlet"
 
 # ------------------------------------------------------------------ depends
 [[depend]]

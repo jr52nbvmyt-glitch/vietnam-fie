@@ -20,6 +20,9 @@
 - P012b (memo 012) depends — an arrest team or a raid force reaches a hamlet at night only where the GVN holds it or can enter it in strength
 - P012a (memo 012) depends — ARVN battalions tasked to the combined plan leave the districts whose night they held
 - P014a (memo 014) depends — a raid needs a source in the hamlet and a hamlet the government enters; outside the held belt the files are thin and the target is warned
+- P015a (memo 015) pushes 0 to +2 [% of IV Corps' rural population in hamlets the GVN holds after dark] by the end of P2 (low) on POP.night_control.IV_corps — 0–2 points more of the Delta's rural population in hamlets held after dark by 1967: posts that hold keep their hamlets only where the PF go out from them at night, which the gunship does not make them do (POS008-4)
+- P015b (memo 015) pushes +1 to +4 [% of IV Corps' rural population in hamlets the GVN holds after dark] by the end of P6 (low) on POP.night_control.IV_corps — 1–4 points more of the Delta's rural population in hamlets held after dark at the end of 1974: the land-grabbing attacks of 1973–74 on the posts meet a Vietnamese gunship with a radar on most nights the Americans used to cover
+- P015a (memo 015) depends — a post that holds keeps its hamlet only if the PF leave the wire at night; the gunship protects the post, not the hamlet
 
 ## POP.civilian_harm — Civilian harm from all sides' operations
 *Higher means more civilian deaths and injuries.*
@@ -36,6 +39,8 @@
 - P011c (memo 011) pushes -1 [v1.0.6 scale] (high) — 347–504 villagers of Son My live; a trace against the civilian dead of the whole war, which is the honest weight
 - P011c (memo 011) depends — Removing one massacre changes nothing about the conditions that produce others; the effect depends on how isolated it really is
 - P012b (memo 012) pushes +0..+3 [v1.0.6 scale] (low) — night raids on thin files in the contested belt kill and detain the wrong men; the 2026 discipline narrows but does not close this
+- P015a (memo 015) pushes +0.2 to +1.5 [civilian dead and wounded in the South from all sides' operations, thousands a year] by the end of P2 (low) — 200–1,500 more civilian dead and wounded a year by 1967: the Front fights its night attacks from inside the hamlets and from their edges, and a 105mm and a 30mm fired at night beside a hamlet kill the people in it; partly offset by posts that do not fall and the reprisals that do not follow
+- P015b (memo 015) depends — a 105mm and 40mm night gun in Vietnamese hands over populated hamlets: discipline of fire decides whether it holds or loses the hamlet
 
 ## POP.gvn_legitimacy — Legitimacy of the Saigon government in the countryside
 *Higher means more rural acceptance of the GVN.*
@@ -198,6 +203,8 @@
 - P009b (memo 009) depends — The trained private acts only in the fights the enemy accepts; the enemy declines the battalion that does not break and ambushes what the course does not reach
 - P010b (memo 010) depends — The schooled squad leader acts only in the fights the enemy accepts
 - P012a (memo 012) pushes -3..-1 [v1.0.6 scale] (low) — a combined reaction across sector boundaries removes some of the seams the enemy used to choose and break off battle
+- P015a (memo 015) pushes -3 to 0 [% of engagements of platoon size or larger that the enemy initiates] by the end of P2 (low) — 0–3 points fewer of the platoon-and-larger engagements initiated by the enemy by 1967: he stops assaulting covered posts on clear nights, and the share falls only as far as he does not move the same attacks to cloudy nights and uncovered places
+- P015a (memo 015) depends — the gunship pays off where the enemy attacks at night and stays in contact; where he breaks contact before dark it has nothing to shoot
 
 ## HANOI.will — Hanoi's commitment to armed reunification
 *Higher means more commitment.*
@@ -216,6 +223,7 @@
 - P005d (memo 005) depends — A closed waterway matters only as far as the road net cannot carry what the boats did
 - P013a (memo 013) pushes -2..+0 [v1.0.6 scale] (low) — The rail and road bridges between Hanoi and the panhandle fall at once; the Trail itself is porters and bicycles in 1965 and is barely touched
 - P013b (memo 013) depends — Strikes in the North cut supply only if the Trail's own capacity is the binding limit
+- P015a (memo 015) depends — how many trucks a night move, and how much slack the Trail has, decides whether trucks killed become tons denied
 
 ## TRAIL.tonnage_arriving — Tonnage arriving in the South
 *Higher means more tonnage reaching RVN and the border base areas.*
@@ -223,6 +231,7 @@
 - P005d (memo 005) pushes -1 [old band ≈ -4..-2] — Rivers and coastal lighterage of the North's panhandle and Laotian waterways closed to boats
 - P013b (memo 013) pushes -2..+0 [v1.0.6 scale] (low) — No pauses means no resupply surges in the stand-downs of May 1965, December 1965–January 1966 and the Tet truces; the panhandle approaches are struck continuously
 - P014a (memo 014) pushes -4% to 0% of history's figure by the end of P2 (low) — 0–4% less tonnage arriving by 1967 from road-watch and target-cueing teams in Laos from October 1965 within history's depth limits, added to SOG's; the teams find targets, the air strikes them
+- P015a (memo 015) pushes -10% to -3% of history's figure by the end of P4 (low) — 3–10% fewer tons a year arrive by the Trail by 1971: more gunships, on the Trail from 1965–66 rather than 1967–69, with standoff Griffin and SDB shots at night against trucks the radar of P003 cues; the Trail's slack and its repair absorb most of it, as they absorbed history's claims
 
 ## INFIL.sea — Seaborne and Sihanoukville infiltration
 *Higher means more supply arriving by sea or through Cambodian ports.*
@@ -245,6 +254,7 @@
 - P005d (memo 005) depends — Laotian waterways may be mined from the air; the ground sanctuary stays
 - P013b (memo 013) depends — Laos targets stay with the ambassador; what the North sends past the 17th parallel is fought there under the old rules
 - P014a (memo 014) depends — the size and density of Group 559's security forces in Laos set what a team can do there before it is found
+- P015a (memo 015) depends — Trail interdiction depends on the ambassador in Vientiane clearing the gunships' armed reconnaissance areas in Laos
 
 ## FIND.main_force — Finding the main force
 *Higher means better ability to locate PAVN and VC main-force units.*
@@ -260,6 +270,7 @@
 - P013a (memo 013) depends — Targeting and battle-damage assessment rest on the U-2S and RQ-4B of memo 003 over the North
 - P014a (memo 014) pushes 0 to +2 [% of main-force contacts the allies initiate on units already located] by the end of P2 (low) — 0–2 points more of main-force contacts begun on units already located, from long-range reconnaissance in the base areas inside the South; a few dozen teams against the whole PAVN and VC order of battle
 - P014a (memo 014) depends — reconnaissance tasking and raids on headquarters depend on the U-2S and RQ-4B imagery and the signals intelligence already in the record
+- P015a (memo 015) depends — a gunship kills what is found; at night over a contact the finding is done by the men in contact, but on the Trail and over base areas it needs the radar and sensors of P003 to cue it
 
 ## FIND.vci — Identifying the VCI
 *Higher means better ability to identify VCI members inside the population.*
@@ -316,6 +327,7 @@
 - P012a (memo 012) depends — the combined fire-support system distributes fires that must exist
 - P013a (memo 013) depends — The opening strike needs the JDAM and B-52J of memo 005 to put weight on the whole list at once in the northeast monsoon
 - P014a (memo 014) depends — teams that find a target in the base areas or on the Trail depend on air and artillery reaching it before it moves
+- P015a (memo 015) pushes -20 to -5 [minutes from a located target to fire on it (median, by the target type named in the note)] by the end of P2 (medium) — 5–20 minutes faster median from an outpost or unit in night contact to fire on the attacker: a standing night orbit over each corps answers from overhead in minutes where history's AC-47 answered from ground alert or a distant orbit; daylight fire support unchanged
 
 ## AIR.north_effect — Effect of the air campaign against the North
 *Higher means more effect on the North's capacity and will.*
@@ -338,6 +350,7 @@
 - P013a (memo 013) pushes -3..-1 [v1.0.6 scale] (low) — In March 1965 the North has no SA-2 site operational and about 50–60 MiGs at Phuc Yen; the opening blow catches the radar net and the fighter force on the ground, but Moscow then ships faster
 - P013b (memo 013) pushes -2..+0 [v1.0.6 scale] (low) — No sanctuary for the SAM support, the MiG bases or the Hanoi gun belt; offset by Soviet resupply that grows with the threat
 - P014a (memo 014) depends — any raid into the North flies through the North's air defences
+- P015a (memo 015) depends — the gunship's survival on the Trail ends when 37mm, 57mm, radar-laid guns, the SA-7 and the SA-2 move south, as they did in 1971–72
 
 ## AIR.losses — US aircraft losses
 *Higher means more aircraft lost.*
@@ -345,6 +358,7 @@
 - P003a (memo 003) pushes -1 [old band ≈ -4..-2] — An electronic order of battle of the North's radars, and later of its SA-2 sites, built before the strike forces need it; routes planned around what is known rather than learned by losses
 - P005a (memo 005) pushes -1 [old band ≈ -4..-2] — Modern defensive suite and release outside the light AAA envelope; SA-2 still lethal
 - P013b (memo 013) pushes -3..+0 [v1.0.6 scale] (low) — The SAM sites can be struck while being built and the MiG airfields at Phuc Yen and Kep from 1965, two years before history; route packages flown on the theater's timing rather than Washington's
+- P015a (memo 015) pushes -8 to +4 [US aircraft lost over the North and Laos in the phase] by the end of P4 (low) — between eight fewer and four more aircraft lost over Laos in 1969–71: the J flies higher and shoots from further out than the AC-130A, but there are more of them on the Trail and each loss is a nine-man crew
 
 ## ARVN.effectiveness — ARVN combat effectiveness
 *Higher means more effective ARVN units in combat.*
@@ -362,6 +376,7 @@
 - P010b (memo 010) pushes +1 [old band ≈ +2..+4] — Every regular squad and platoon led by an NCO schooled for his job, in an army whose NCO corps was its thinnest layer; with P009b the trained private now has a trained corporal
 - P012a (memo 012) pushes +2..+5 [v1.0.6 scale] (medium) on ARVN.effectiveness.fire_coordination — one fire-support coordination system across the four nations' sectors; ARVN units can draw US and allied fires through a combined centre rather than through an adviser's radio
 - P012a (memo 012) pushes +1..+3 [v1.0.6 scale] (low) on ARVN.effectiveness.combined_arms — combined operations planned by one staff put ARVN infantry beside US and ROK armour and artillery on one plan, with ARVN staff officers in the planning
+- P015b (memo 015) pushes -15 to -3 [minutes from an ARVN call for fire to rounds on target] by the end of P5 (low) on ARVN.effectiveness.fire_coordination — 3–15 minutes faster from an ARVN call for fire to rounds on target at night by 1972: the gunship crew and the ground unit share a language, a net and a chain of command
 
 ## ARVN.leadership — RVNAF officer selection and quality
 *Higher means better officers, selected on merit.*
@@ -408,6 +423,9 @@
 - P011a (memo 011) pushes +0..+2 [v1.0.6 scale] (low) on ARVN.self_sufficiency.logistics — Not self-sufficiency but its precondition in 1974: fuel for trucks and rounds for depots that the ration emptied; the dependence on Congress is unchanged
 - P011a (memo 011) depends — Aid money matters only as far as the RVNAF can turn it into fire, fuel and spares; the 1974 ration is where the provision bites
 - P012a (memo 012) pushes -4..+0 [v1.0.6 scale] (medium) on ARVN.self_sufficiency.fire_support — an ARVN that plans and fights inside a combined staff learns to depend on it; the staff and its fires leave with the Americans
+- P015b (memo 015) pushes +2 to +6 [% of the RVNAF's fire support delivered by its own guns and aircraft] by the end of P4 (low) on ARVN.self_sufficiency.fire_support — 2–6 points more of the RVNAF's fire support delivered by its own aircraft by 1971: about 400–800 VNAF gunship sorties a month, each worth several hours of night fire, in place of US gunship and tactical air at night
+- P015b (memo 015) pushes +3 to +8 [% of the RVNAF's fire support delivered by its own guns and aircraft] by the end of P6 (low) on ARVN.self_sufficiency.fire_support — 3–8 points more of the RVNAF's fire support its own by the end of 1974, if the U is flown and maintained after the Americans leave; bounded by the SA-7 and radar AAA that historically drove VNAF aircraft above useful altitudes
+- P015b (memo 015) depends on ARVN.self_sufficiency.maintenance — after 1973 the U flies only as long as the RVNAF's own depots and the aid appropriation keep it in spares
 
 ## RFPF.effectiveness — Regional and Popular Forces
 *Higher means more effective territorial forces.*
@@ -426,11 +444,18 @@
 - P009c (memo 009) pushes +1 [old band ≈ +2..+4] — Every territorial recruit trained, on the rifle he carries, with first aid and night discipline; the historical training lag of up to 60% in 1964 closed
 - P009c (memo 009) depends — Six weeks gives the individual skills; the platoon's competence still rests on its leader and its support
 - P010b (memo 010) pushes +1 [old band ≈ +2..+4] — Every RF and PF squad and platoon leader schooled for his grade (E03); the 1964 PF leadership training that ran 60% behind is filled by the gate
+- P015a (memo 015) pushes +2 to +7 [% of attacked outposts that hold] by the end of P2 (low) on RFPF.effectiveness.outpost_defence — 2–7 points more of the attacked RF and PF outposts hold: the attack on an outpost is a night attack, and a gunship over it by the second hour turns the assault into a withdrawal under fire; bounded by the share of attacks a gunship can reach in time
+- P015a (memo 015) pushes -1.5 to -0.3 [hours for relief to reach an attacked outpost] by the end of P2 (low) on RFPF.effectiveness.reaction — relief by fire reaches an attacked outpost 20 minutes to an hour and a half sooner where the gunship net covers it; ground relief itself no faster
+- P015b (memo 015) pushes +2 to +6 [% of attacked outposts that hold] by the end of P4 (low) on RFPF.effectiveness.outpost_defence — 2–6 points more of the attacked RF and PF outposts hold by 1971: a Vietnamese gunship over a Vietnamese outpost, answering a Vietnamese call on a Vietnamese net, with radar fire through monsoon cloud
+- P015b (memo 015) pushes +3 to +8 [% of attacked outposts that hold] by the end of P6 (low) on RFPF.effectiveness.outpost_defence — 3–8 points more of the attacked RF and PF outposts hold in 1973–74, measured at the end of 1974: history's territorial war after the cease-fire was fought with no night fire from the air at all
 
 ## VNAF.capability — South Vietnamese Air Force
 *Higher means more capable VNAF.*
 
 - P011a (memo 011) pushes +1..+3 [v1.0.6 scale] (low) on VNAF.capability.maintenance — A larger FY1975 appropriation buys fuel and imported parts, the two things the domestic base could not stretch; fewer aircraft and helicopters grounded in the second half of 1974
+- P015b (memo 015) pushes +0.3 to +0.8 [VNAF close-support sorties a month, thousands] by the end of P4 (medium) on VNAF.capability.close_support — 300–800 more VNAF close-support sorties a month by 1971: 48 aircraft at 45–65% operational flying about one sortie a day each, against history's VNAF AC-47 and AC-119 squadrons from 1969
+- P015b (memo 015) pushes -4 to 0 [% of VNAF aircraft operational] by the end of P4 (low) on VNAF.capability.maintenance — 0–4 points fewer of all VNAF aircraft operational: the AC-130U's sensor and fire-control system draws the VNAF's best electronic and avionics technicians away from the rest of the fleet
+- P015b (memo 015) depends on VNAF.capability.maintenance — the U's sensors, radar and fire control need avionics technicians the VNAF did not have in 1967
 
 ## ADVISE.leverage — Advisory leverage
 *Higher means advisors can change more RVNAF decisions.*
@@ -456,6 +481,7 @@
 - P012a (memo 012) depends — the advisers are the combined command's eyes in the ARVN units it commands
 - P012b (memo 012) depends — the Vietnamese agencies share their files only when someone can make them
 - P014b (memo 014) depends — deconfliction with the Joint General Staff and the GVN's services depends on what the Americans can persuade them to share
+- P015b (memo 015) depends — the training and advisory detachment that builds the VNAF squadrons from 1967
 
 ## US.personnel_demand — Demand on US personnel spaces
 *Higher means more spaces consumed.*
@@ -476,6 +502,8 @@
 - P011b (memo 011) depends — The size of the draft calls follows the size of the force; under no troop ceiling the calls are as large as history's, less a quarter
 - P014a (memo 014) pushes +1 to +1.5 [US military personnel in Vietnam, thousands] by the end of P2 (medium) — 1,000–1,500 more US personnel in Vietnam, the whole unit
 - P014b (memo 014) pushes +0.25 to +0.45 [US military personnel in Vietnam, thousands] by the end of P1 (medium) — 250–450 more US personnel in the headquarters and its liaison cells from August 1964
+- P015a (memo 015) pushes +1.1 to +1.5 [US military personnel in Vietnam, thousands] by the end of P2 (medium) — 1,100–1,500 more US personnel in RVN for the in-country gunship squadrons and their maintenance, against history's gunship force
+- P015b (memo 015) pushes +0.15 to +0.3 [US military personnel in Vietnam, thousands] by the end of P2 (medium) — 150–300 more US military in RVN for the gunship training and advisory detachment from 1967
 
 ## US.casualties — US casualty rate
 *Higher means more US killed and wounded.*
@@ -490,6 +518,7 @@
 - P010a (memo 010) pushes -1 [old band ≈ -4..-2] — Squad and platoon fights are NCOs' fights; better land navigation, fire control, patrol-base discipline and leader-stakes medical drill; modest in total
 - P011b (memo 011) depends — The draftee dead are what made the draft a political wound; its effect scales with the casualty lists
 - P014a (memo 014) pushes +5 to +25 [US killed by hostile action in the calendar year in which the phase ends (Phase I: 1965)] by the end of P2 (low) — 5–25 more Americans killed by hostile action in 1967: Delta's own losses on raids, on cross-border reconnaissance from October 1965 and in helicopter losses, against SOG's 79 Special Forces killed or missing in 1968 scaled to Delta's smaller teams; the unit prevents no American deaths elsewhere
+- P015a (memo 015) pushes -400 to -80 [US killed by hostile action in the calendar year in which the phase ends (Phase I: 1965)] by the end of P2 (low) — 80–400 fewer Americans killed by hostile action in 1967: night fire over US units and Special Forces camps in contact, less the gunship crews' own losses
 
 ## US.unit_quality — US unit quality
 *Higher means better US units.*
@@ -532,6 +561,7 @@
 - P004c (memo 004) depends — Linked ammunition, spare barrels, links and feed parts
 - P008a (memo 008) pushes +1 [old band ≈ +2..+4] — Vehicle and engine rebuild, bridge girders and culverts, rail repair steel made in country; faster return of the network after sabotage
 - P008a (memo 008) depends — Bridging, wire and rebuilt vehicles are worth what reaches the districts over interdicted roads
+- P015a (memo 015) depends — 30mm and 105mm ammunition, Griffin and SDB, and JP-8 at Phan Rang, Nha Trang and Ubon
 
 ## LOG.helicopter_hours — Helicopter hours available
 *Higher means more lift hours available.*
@@ -584,6 +614,7 @@
 - P013b (memo 013) pushes -1..+0 [v1.0.6 scale] (low) on US.political_tolerance.public — No pauses means no visible peace gestures, and strikes inside Hanoi put the capital's civilian dead on American television from 1965 rather than from Salisbury's dispatches of December 1966; the public facet only, Congress and the Administration are judged by P013a
 - P013a (memo 013) depends — Washington still decides whether the bombing happens
 - P014b (memo 014) depends — raids into the North and across the borders are decided in Washington; the headquarters works within what Washington grants
+- P015b (memo 015) depends — the aid appropriation pays for its fuel, ammunition and spares after the Americans leave
 
 ## US.credibility_gap — The credibility gap
 *Higher means wider gap between what MACV reports and what the press reports.*
