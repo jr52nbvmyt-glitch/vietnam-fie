@@ -179,6 +179,7 @@
 *Higher means more PAVN combat power in RVN.*
 
 - P004c (memo 004) depends — PAVN infantry with RPD and PK is the enemy the belt-fed squad gun must match in the meeting engagement
+- P013a (memo 013) pushes -1..+0 (low) — The Politburo reads the opening strike as the prelude to an invasion and holds two to four divisions at home through 1965–66; the dispatch south is delayed by months, not cancelled (F013-13)
 
 ## ENEMY.engagement_control — Enemy control of engagements
 *Higher means the enemy decides more often whether, when and where battle happens.*
@@ -200,6 +201,8 @@
 
 - P001a (memo 001) pushes +1 [old band ≈ +2..+4] — Hanoi reads the reform as eroding its southern base and hurries its decision for military victory (F001-12)
 - P011a (memo 011) depends — The enforcement threat works only if the Politburo believes it; Resolution 21 and the 1975 calendar are the test
+- P013a (memo 013) pushes +0..+1 (low) — The Politburo mobilises the North against the blow as it did in 1965 historically; commitment to reunification is unchanged (G-14) and its urgency, if anything, rises
+- P013a (memo 013) depends — Whether a blow to capacity reaches the Politburo's will is the provision's whole wager
 
 ## TRAIL.capacity — Trail system capacity
 *Higher means more throughput capacity on the Trail.*
@@ -208,11 +211,14 @@
 - P005b (memo 005) pushes -1 [old band ≈ -4..-2] — Chokepoints and fords cut reliably in all weather; repair capacity and redundancy blunt it
 - P005b (memo 005) depends — The Trail's redundancy decides whether a cut chokepoint matters
 - P005d (memo 005) depends — A closed waterway matters only as far as the road net cannot carry what the boats did
+- P013a (memo 013) pushes -2..+0 (low) — The rail and road bridges between Hanoi and the panhandle fall at once; the Trail itself is porters and bicycles in 1965 and is barely touched
+- P013b (memo 013) depends — Strikes in the North cut supply only if the Trail's own capacity is the binding limit
 
 ## TRAIL.tonnage_arriving — Tonnage arriving in the South
 *Higher means more tonnage reaching RVN and the border base areas.*
 
 - P005d (memo 005) pushes -1 [old band ≈ -4..-2] — Rivers and coastal lighterage of the North's panhandle and Laotian waterways closed to boats
+- P013b (memo 013) pushes -2..+0 (low) — No pauses means no resupply surges in the stand-downs of May 1965, December 1965–January 1966 and the Tet truces; the panhandle approaches are struck continuously
 
 ## INFIL.sea — Seaborne and Sihanoukville infiltration
 *Higher means more supply arriving by sea or through Cambodian ports.*
@@ -225,12 +231,14 @@
 
 - P003b (memo 003) depends — From South Vietnamese airspace the radar looks 150–200 km into Cambodia and sees the road traffic from Sihanoukville to the border base areas; what it sees there cannot be attacked under the present constraints, but the argument over how the sanctuary is supplied is settled by evidence (F003-3, F003-17)
 - P005d (memo 005) depends — Sihanoukville and the Mekong into Cambodia are neutral waters
+- P013b (memo 013) pushes +0..+1 (low) — With the North's rail and road south battered without pause, Hanoi's freight for B-2 leans harder on the Chinese-flag ships to Sihanoukville that the record already opened in June 1965; the southern route gains as the northern one costs more
 
 ## SANCT.laos — Value of the Laotian sanctuary to the enemy
 *Higher means more useful to the enemy.*
 
 - P003b (memo 003) depends — Tracks in Laos can be struck only within the Laotian rules; standoff radar can see into the sanctuary but cannot authorise action there
 - P005d (memo 005) depends — Laotian waterways may be mined from the air; the ground sanctuary stays
+- P013b (memo 013) depends — Laos targets stay with the ambassador; what the North sends past the 17th parallel is fought there under the old rules
 
 ## FIND.main_force — Finding the main force
 *Higher means better ability to locate PAVN and VC main-force units.*
@@ -243,6 +251,7 @@
 - P005b (memo 005) depends — Coordinates of the target are the binding input
 - P005c (memo 005) depends — Close support needs a coordinate the 1965 infantryman cannot generate
 - P012a (memo 012) depends — a combined plan needs a located enemy to act on
+- P013a (memo 013) depends — Targeting and battle-damage assessment rest on the U-2S and RQ-4B of memo 003 over the North
 
 ## FIND.vci — Identifying the VCI
 *Higher means better ability to identify VCI members inside the population.*
@@ -293,6 +302,7 @@
 - P008b (memo 008) depends — A call for help is worth what the artillery and reaction force behind it can do
 - P010b (memo 010) depends — The American course teaches the squad leader to fix and call fire; his competence depends on fire the RVNAF does not own (F010-24)
 - P012a (memo 012) depends — the combined fire-support system distributes fires that must exist
+- P013a (memo 013) depends — The opening strike needs the JDAM and B-52J of memo 005 to put weight on the whole list at once in the northeast monsoon
 
 ## AIR.north_effect — Effect of the air campaign against the North
 *Higher means more effect on the North's capacity and will.*
@@ -302,6 +312,8 @@
 - P005a (memo 005) pushes +1 [old band ≈ +2..+4] — Twenty independently aimed 2,000 lb weapons a sortie in any weather against fixed targets, where Washington allows
 - P005b (memo 005) pushes +1 [old band ≈ +2..+4] — Bridges, ferries, depots and power plants struck in monsoon cloud with few sorties
 - P005d (memo 005) pushes +1 [old band ≈ +2..+4] — Inland waterways and coastal shipping south of the 20th parallel mined persistently
+- P013a (memo 013) pushes +3..+5 (low) — Power, fuel bulk storage, the rail bridges and the airfields fall in the first days, before the North has dispersed anything; the effect on capacity is large and on will uncertain
+- P013b (memo 013) pushes +2..+4 (low) — Restrike at the repair rate and choice of targets by the theater keep the bridges, power and rail down; the North still moves by night, by sea and by porter
 
 ## AIR.north_defences — Air defence density over the North
 *Higher means denser and more lethal air defence.*
@@ -310,12 +322,15 @@
 - P003b (memo 003) depends — At 60,000 ft the RQ-4 is inside the SA-2 envelope; once the North has SA-2s it can look into the North only from outside their range
 - P005a (memo 005) depends — SA-2 and MiG-21 density sets loss rates over the North
 - P005b (memo 005) depends — The 15-mile glide falls inside the SA-2's reach; standoff protects against guns, not missiles
+- P013a (memo 013) pushes -3..-1 (low) — In March 1965 the North has no SA-2 site operational and about 50–60 MiGs at Phuc Yen; the opening blow catches the radar net and the fighter force on the ground, but Moscow then ships faster
+- P013b (memo 013) pushes -2..+0 (low) — No sanctuary for the SAM support, the MiG bases or the Hanoi gun belt; offset by Soviet resupply that grows with the threat
 
 ## AIR.losses — US aircraft losses
 *Higher means more aircraft lost.*
 
 - P003a (memo 003) pushes -1 [old band ≈ -4..-2] — An electronic order of battle of the North's radars, and later of its SA-2 sites, built before the strike forces need it; routes planned around what is known rather than learned by losses
 - P005a (memo 005) pushes -1 [old band ≈ -4..-2] — Modern defensive suite and release outside the light AAA envelope; SA-2 still lethal
+- P013b (memo 013) pushes -3..+0 (low) — The SAM sites can be struck while being built and the MiG airfields at Phuc Yen and Kep from 1965, two years before history; route packages flown on the theater's timing rather than Washington's
 
 ## ARVN.effectiveness — ARVN combat effectiveness
 *Higher means more effective ARVN units in combat.*
@@ -487,6 +502,7 @@
 - P006b (memo 006) depends — Whole units and their equipment move at each relief
 - P008a (memo 008) depends — Scrap, alloying metals, coke, electrodes, explosives for filling and machine tools all arrive by sea
 - P008b (memo 008) depends — Transistors, crystals, zinc, manganese dioxide and copper arrive by sea
+- P013b (memo 013) depends — The theater's own air bases and fuel in Thailand and the South set the sortie rate
 
 ## LOG.distribution — In-country distribution
 *Higher means better road, rail and air distribution.*
@@ -545,6 +561,9 @@
 - P011a (memo 011) depends — Everything it buys is a change in what Washington will grant in 1973–75
 - P012a (memo 012) depends — an American command over the whole war is an American war in Washington's eyes
 - P012b (memo 012) depends — Congress tolerates a counter-network campaign only while it is seen as policing, not killing
+- P013a (memo 013) pushes -2..+1 (low) on US.political_tolerance.administration — Johnson takes the whole escalation in one step instead of by increments; it buys him nothing with the critics and spends the option of escalation at once
+- P013b (memo 013) pushes -1..+0 (low) on US.political_tolerance.public — No pauses means no visible peace gestures, and strikes inside Hanoi put the capital's civilian dead on American television from 1965 rather than from Salisbury's dispatches of December 1966; the public facet only, Congress and the Administration are judged by P013a
+- P013a (memo 013) depends — Washington still decides whether the bombing happens
 
 ## US.credibility_gap — The credibility gap
 *Higher means wider gap between what MACV reports and what the press reports.*
@@ -562,6 +581,8 @@
 
 - P005b (memo 005) pushes +1 [old band ≈ +2..+4] — Fixed infrastructure that dies in one strike is replaced by Soviet and Chinese pontoon bridging, trucks, AAA and engineer troops
 - P005d (memo 005) depends — Haiphong mining prohibited until 1972 under the modelled constraint
+- P013a (memo 013) pushes +1..+3 (low) — Kosygin is in Hanoi in February 1965; a blow on the whole list accelerates the Soviet air-defence package and Chinese engineer and AAA troops
+- P013b (memo 013) depends — The campaign's ceiling is set by how fast Moscow and Beijing replace what is destroyed
 
 ## INTL.chinese_intervention_risk — Risk of Chinese intervention
 *Higher means greater risk.*
@@ -570,6 +591,8 @@
 - P003b (memo 003) depends — A Gulf of Tonkin orbit, reachable only by satellite control (E01), runs within radar sight of Hainan; a loss there is an incident with China as well as with Hanoi
 - P005b (memo 005) depends — Strikes near the Chinese border and on Hanoi remain constrained
 - P005d (memo 005) depends — Mining near the Chinese coast and of Soviet-flag shipping is politically bounded
+- P013a (memo 013) pushes +1..+3 (low) — Strikes at Hanoi in the first week and a 15-mile buffer bring US aircraft to the edge of Chinese airspace in the year Beijing is deciding how far to commit
+- P013b (memo 013) pushes +1..+2 (medium) — A 15-mile buffer instead of history's 25–30 nautical miles puts the northeast rail line's strikes inside Beijing's warning radius
 
 ## INTL.allied_forces — Third-country forces
 *Higher means more and better ROK, Australian, Thai and other contributions.*
@@ -593,3 +616,4 @@
 *Higher means stronger position against Hanoi.*
 
 - P011a (memo 011) pushes +1..+3 (low) — Hanoi reads American paralysis in 1973–74 from Watergate; without it the threat of the B-52s returning is less obviously empty, though Case–Church still binds
+- P013b (memo 013) pushes -1..+2 (low) — No pauses removes the bargaining chips Washington spent on pauses that bought nothing; it also removes the gestures that kept the allies quiet

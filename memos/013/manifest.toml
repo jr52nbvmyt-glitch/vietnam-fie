@@ -4,7 +4,7 @@
 memo = "013"
 title = "The air campaign against the North unrestricted: an opening strike on the full target list on 2 March 1965, and MACV targeting authority with standing restrike, no Hanoi or Haiphong zones, one strike on Haiphong's port, a 15-mile Chinese buffer and no pauses"
 received = "2026-11-25"
-status = "part1"
+status = "part2"
 version = "1.0.6"
 phases_changed = []
 links = ["003", "005"]
@@ -120,11 +120,27 @@ note = "No pauses means no resupply surges in the stand-downs of May 1965, Decem
 
 [[push]]
 provision = "P013b"
-var = "INFIL.sea"
+var = "SANCT.cambodia"
 low = 0
 high = 1
 conf = "low"
-note = "With the port struck once and the mining held to 1972, Soviet and Chinese freight moves by sea through Haiphong by lighter, and more of the war's supply comes that way"
+note = "With the North's rail and road south battered without pause, Hanoi's freight for B-2 leans harder on the Chinese-flag ships to Sihanoukville that the record already opened in June 1965; the southern route gains as the northern one costs more"
+
+[[push]]
+provision = "P013b"
+var = "US.political_tolerance.public"
+low = -1
+high = 0
+conf = "low"
+note = "No pauses means no visible peace gestures, and strikes inside Hanoi put the capital's civilian dead on American television from 1965 rather than from Salisbury's dispatches of December 1966; the public facet only, Congress and the Administration are judged by P013a"
+
+[[push]]
+provision = "P013a"
+var = "HANOI.will"
+low = 0
+high = 1
+conf = "low"
+note = "The Politburo mobilises the North against the blow as it did in 1965 historically; commitment to reunification is unchanged (G-14) and its urgency, if anything, rises"
 
 [[push]]
 provision = "P013b"
@@ -182,3 +198,11 @@ note = "Strikes in the North cut supply only if the Trail's own capacity is the 
 provision = "P013b"
 var = "SANCT.laos"
 note = "Laos targets stay with the ambassador; what the North sends past the 17th parallel is fought there under the old rules"
+
+[[push]]
+provision = "P013a"
+var = "PAVN.strength_south"
+low = -1
+high = 0
+conf = "low"
+note = "The Politburo reads the opening strike as the prelude to an invasion and holds two to four divisions at home through 1965–66; the dispatch south is delayed by months, not cancelled (F013-13)"
