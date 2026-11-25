@@ -23,7 +23,7 @@ phase_redraw = "AT_CHECKPOINT"    # AT_CHECKPOINT = memos may propose a redraw; 
 # "Loosened" is not a value: say which constraints are suspended.
 # ---------------------------------------------------------------------------
 [constraints]
-bombing_north   = "MODELLED"   # restricted and prohibited zones around Hanoi and Haiphong; Washington target approval
+bombing_north   = "SUSPENDED"  # restricted and prohibited zones around Hanoi and Haiphong; Washington target approval. SUSPENDED by the user's provision of memorandum 013 (set 25 Nov 2026), with its terms: MACV chooses the targets in the North and holds standing permission to restrike; no restricted or prohibited zone around Hanoi or around Haiphong except that Haiphong's port infrastructure may be struck once only (everything else at and around Haiphong is open to strike and restrike); a 15-mile buffer along the Chinese border stays; Washington still decides whether the bombing happens and when it opens (2 March 1965, history's date; planning from the Gulf of Tonkin incident, August 1964), but the pauses and bombing suspensions within the campaign do not happen; Laos targets stay with the ambassador in Vientiane
 haiphong_mining = "MODELLED"   # mining of Haiphong and the northern ports (historically prohibited until May 1972)
 laos_ground     = "MODELLED"   # US/ARVN ground operations into Laos (historically barred; Lam Son 719 in 1971 was ARVN-only)
 cambodia_ground = "MODELLED"   # ground operations into the Cambodian base areas (historically barred until May 1970)

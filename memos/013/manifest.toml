@@ -1,0 +1,184 @@
+# Manifest for memorandum 013. Fill every field; `fie.py check` rejects blanks.
+# status and phases_changed are set by fie.py; leave them alone.
+
+memo = "013"
+title = "The air campaign against the North unrestricted: an opening strike on the full target list on 2 March 1965, and MACV targeting authority with standing restrike, no Hanoi or Haiphong zones, one strike on Haiphong's port, a 15-mile Chinese buffer and no pauses"
+received = "2026-11-25"
+status = "part1"
+version = "1.0.6"
+phases_changed = []
+links = ["003", "005"]
+
+[deviation]
+part1 = "none"
+part2 = "none"
+part3 = "none"
+
+[[provision]]
+id = "P013a"
+designation = "Opening strike of the air campaign against the Democratic Republic of Vietnam, 2 March 1965: a planned decapitating first blow on the 2026 model of the opening nights of DESERT STORM (17 January 1991) and IRAQI FREEDOM (March 2003), against the whole of the Joint Chiefs' target list in one compressed opening, planned by MACV and CINCPAC from the Gulf of Tonkin incident in August 1964, flown by the in-theater and carrier air forces with the B-52J, the GBU-31 and GBU-38 JDAM, the U-2S and the RQ-4B already in the record, against the command and control, air defence, airfields, power, fuel, transport and war industry of the North, with Haiphong's port infrastructure struck once and the port mined only in May 1972"
+category = "air"
+quantity = "one opening strike on the full target list, the JCS 94-target list of 1964 and its additions [U]; first strike on 2 March 1965 [U]"
+ceiling_spaces = "none in RVN beyond the air units the record already holds; the strike is flown from Thailand, Guam, Okinawa and the carriers of TF 77 [E: basing of the 1965 air campaign]"
+arrival = "1965-03-02"
+in_service = "planning from August 1964 (Gulf of Tonkin) [U]; the model is the opening of DESERT STORM, 17 January 1991"
+systems = ["STRIKE", "INTERDICT"]
+status = "active"
+
+[[provision]]
+id = "P013b"
+designation = "Standing authorities for the air campaign against the North, from 2 March 1965: COMUSMACV selects the targets north of the DMZ in place of Washington's weekly approval; standing permission to restrike any target; no restricted or prohibited zone around Hanoi or Haiphong; Haiphong's port infrastructure struck once only, everything else at and around Haiphong open; a 15-mile buffer along the Chinese border; no pauses or suspensions within the campaign; Washington keeps the decision whether to bomb at all; Laos targets stay with the ambassador; mining of the northern ports as historical, May 1972"
+category = "institutional"
+quantity = "one authority, held by COMUSMACV for the duration of the campaign [U]; buffer 15 miles [U]"
+ceiling_spaces = "~60–120 in an expanded MACV targeting and battle-damage cell at Tan Son Nhut [E: the Seventh Air Force and MACV J-2 targeting staffs of 1966–67]"
+arrival = "1965-03-02"
+in_service = "historical authorities of the 1972 LINEBACKER campaigns as the nearest precedent [H]"
+systems = ["STRIKE", "INTERDICT"]
+status = "active"
+
+# ------------------------------------------------------------------ P013a pushes
+[[push]]
+provision = "P013a"
+var = "AIR.north_effect"
+low = 3
+high = 5
+conf = "low"
+note = "Power, fuel bulk storage, the rail bridges and the airfields fall in the first days, before the North has dispersed anything; the effect on capacity is large and on will uncertain"
+
+[[push]]
+provision = "P013a"
+var = "AIR.north_defences"
+low = -3
+high = -1
+conf = "low"
+note = "In March 1965 the North has no SA-2 site operational and about 50–60 MiGs at Phuc Yen; the opening blow catches the radar net and the fighter force on the ground, but Moscow then ships faster"
+
+[[push]]
+provision = "P013a"
+var = "TRAIL.capacity"
+low = -2
+high = 0
+conf = "low"
+note = "The rail and road bridges between Hanoi and the panhandle fall at once; the Trail itself is porters and bicycles in 1965 and is barely touched"
+
+[[push]]
+provision = "P013a"
+var = "INTL.communist_aid"
+low = 1
+high = 3
+conf = "low"
+note = "Kosygin is in Hanoi in February 1965; a blow on the whole list accelerates the Soviet air-defence package and Chinese engineer and AAA troops"
+
+[[push]]
+provision = "P013a"
+var = "INTL.chinese_intervention_risk"
+low = 1
+high = 3
+conf = "low"
+note = "Strikes at Hanoi in the first week and a 15-mile buffer bring US aircraft to the edge of Chinese airspace in the year Beijing is deciding how far to commit"
+
+[[push]]
+provision = "P013a"
+var = "US.political_tolerance.administration"
+low = -2
+high = 1
+conf = "low"
+note = "Johnson takes the whole escalation in one step instead of by increments; it buys him nothing with the critics and spends the option of escalation at once"
+
+# ------------------------------------------------------------------ P013b pushes
+[[push]]
+provision = "P013b"
+var = "AIR.north_effect"
+low = 2
+high = 4
+conf = "low"
+note = "Restrike at the repair rate and choice of targets by the theater keep the bridges, power and rail down; the North still moves by night, by sea and by porter"
+
+[[push]]
+provision = "P013b"
+var = "AIR.losses"
+low = -3
+high = 0
+conf = "low"
+note = "The SAM sites can be struck while being built and the MiG airfields at Phuc Yen and Kep from 1965, two years before history; route packages flown on the theater's timing rather than Washington's"
+
+[[push]]
+provision = "P013b"
+var = "AIR.north_defences"
+low = -2
+high = 0
+conf = "low"
+note = "No sanctuary for the SAM support, the MiG bases or the Hanoi gun belt; offset by Soviet resupply that grows with the threat"
+
+[[push]]
+provision = "P013b"
+var = "TRAIL.tonnage_arriving"
+low = -2
+high = 0
+conf = "low"
+note = "No pauses means no resupply surges in the stand-downs of May 1965, December 1965–January 1966 and the Tet truces; the panhandle approaches are struck continuously"
+
+[[push]]
+provision = "P013b"
+var = "INFIL.sea"
+low = 0
+high = 1
+conf = "low"
+note = "With the port struck once and the mining held to 1972, Soviet and Chinese freight moves by sea through Haiphong by lighter, and more of the war's supply comes that way"
+
+[[push]]
+provision = "P013b"
+var = "INTL.chinese_intervention_risk"
+low = 1
+high = 2
+conf = "medium"
+note = "A 15-mile buffer instead of history's 25–30 nautical miles puts the northeast rail line's strikes inside Beijing's warning radius"
+
+[[push]]
+provision = "P013b"
+var = "NEGOT.position"
+low = -1
+high = 2
+conf = "low"
+note = "No pauses removes the bargaining chips Washington spent on pauses that bought nothing; it also removes the gestures that kept the allies quiet"
+
+# ------------------------------------------------------------------ depends
+[[depend]]
+provision = "P013a"
+var = "FIND.main_force"
+note = "Targeting and battle-damage assessment rest on the U-2S and RQ-4B of memo 003 over the North"
+
+[[depend]]
+provision = "P013a"
+var = "STRIKE.responsiveness"
+note = "The opening strike needs the JDAM and B-52J of memo 005 to put weight on the whole list at once in the northeast monsoon"
+
+[[depend]]
+provision = "P013a"
+var = "HANOI.will"
+note = "Whether a blow to capacity reaches the Politburo's will is the provision's whole wager"
+
+[[depend]]
+provision = "P013a"
+var = "US.political_tolerance"
+note = "Washington still decides whether the bombing happens"
+
+[[depend]]
+provision = "P013b"
+var = "INTL.communist_aid"
+note = "The campaign's ceiling is set by how fast Moscow and Beijing replace what is destroyed"
+
+[[depend]]
+provision = "P013b"
+var = "LOG.ports"
+note = "The theater's own air bases and fuel in Thailand and the South set the sortie rate"
+
+[[depend]]
+provision = "P013b"
+var = "TRAIL.capacity"
+note = "Strikes in the North cut supply only if the Trail's own capacity is the binding limit"
+
+[[depend]]
+provision = "P013b"
+var = "SANCT.laos"
+note = "Laos targets stay with the ambassador; what the North sends past the 17th parallel is fought there under the old rules"
