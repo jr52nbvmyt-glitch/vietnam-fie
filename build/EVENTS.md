@@ -45,7 +45,7 @@
 | EV013-1 | P1 | 2–9 Mar 1965 | Operation HAMMER FALL: the opening strike on the North | Phuc Yen airfield, Hanoi (Bach Mai, the Citadel, Yen Phu, Duc Giang and the Paul Doumer bridge), Haiphong port and Thuong Ly, Nam Dinh, the Ham Rong bridge at Thanh Hoa, Vinh; Andersen Air Force Base, Guam; Yankee Station; Korat and Takhli, Thailand | NEW | 013 |
 | EV014-9 | P1 | 7 March 1965 | The restricted area over Trung Lap | Trung Lap and Phu Hoa Dong, Hau Nghia Province | NEW | 014 |
 | EV000-13 | P1 | 8 Mar – 6 May 1965 | The Marines land at Da Nang | Da Nang, Quang Nam Province | CANCELLED | 000,CP01 |
-| EV006-2 | P1 | 8 Mar – 30 Jun 1965 | Operation STILL WATER | Hoc Mon and Go Vap Districts, Gia Dinh Province, inside the Hop Tac ring northwest of Saigon | NEW | 006,CP02 |
+| EV006-2 | P1 | 8 Mar – 30 Jun 1965 | Operation STILL WATER | Hoc Mon and Go Vap Districts, Gia Dinh Province, inside the Hop Tac ring northwest of Saigon | NEW | 006,CP02,R04 |
 | EV013-2 | P1 | 10 Mar – 31 Jul 1965 | Moscow, Beijing and the rebuilt sky | Moscow; Beijing; Hanoi; the frontier crossing at Pingxiang and Dong Dang; the airfields of Mengzi and Ningming in Yunnan and Guangxi | NEW | 013 |
 | EV000-14 | P1 | 30 Mar 1965 | The bombing of the US embassy | Saigon | CANCELLED | 000,CP01 |
 | EVCP02-2 | P1 | 3 Apr – 27 Jul 1965 | The air war of 1965: the Thanh Hoa Bridge, the missiles and the first Arc Light | Thanh Hoa (Ham Rong) and the Hanoi region, North Vietnam; Andersen Air Force Base, Guam; Ben Cat, Binh Duong Province | HIST-ALT | CP02,013 |
@@ -81,7 +81,7 @@
 | EV000-26 | P2 | 10 Mar – 19 Jun 1966 | The Buddhist uprising | Da Nang and Hue | HIST-ALT | 000,002,007 |
 | EV004-2 | P2 | 4 Apr – 30 Oct 1966 | The Regional Force companies go to the corps | Chuong Thien, Ba Xuyen and Bac Lieu Provinces, IV Corps, and the edge of the U Minh forest | NEW | 004,008 |
 | EV005-2 | P2 | 12 Apr – 31 Oct 1966 | Operation HARD CROSSING | Mu Gia pass and Route 15; Ban Karai pass and Route 912; the Xe Bang Fai crossings and the Ban Laboy ford; the Laotian panhandle south to Tchepone | NEW | 005 |
-| EV007-3 | P2 | 3–21 May 1966 | Operation OPEN ROAD | Route 13 from Chon Thanh to An Loc, the Xa Cam rubber and the Tau O crossing, Binh Long Province; Bau Bang, Binh Duong Province | NEW | 007,009 |
+| EV007-3 | P2 | 3–21 May 1966 | Operation OPEN ROAD | Route 13 from Chon Thanh to An Loc, the Xa Cam rubber and the Tau O crossing, Binh Long Province; Bau Bang, Binh Duong Province | NEW | 007,009,R04 |
 | EV013-5 | P2 | 12 May – 30 Sep 1966 | The buffer's edge: Dong Dang and the Chinese guns | The northeast railway from Kep through Lang Son to Dong Dang; the frontier at Pingxiang, Guangxi; Washington and Warsaw | NEW | 013 |
 | EV009-3 | P2 | 18 Jun – 31 Dec 1966 | The devaluation and the trained deserters | Saigon; Gia Dinh, Hau Nghia and Long An Provinces; the Quang Trung Training Center and the 25th Division's districts around Duc Hoa and Cu Chi | NEW | 009 |
 | EVCP02-4 | P2 | 29 Jun 1966 – Dec 1967 | The air war over the North and the barrier, 1966–67: the fuel that was gone, Bolo and Muscle Shoals | Hanoi and Haiphong; the DMZ and the Laotian panhandle; Nakhon Phanom, Thailand | HIST-ALT | CP02,013 |

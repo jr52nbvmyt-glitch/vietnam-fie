@@ -184,6 +184,11 @@ Checked and found consistent: the American historical baseline (M16 to US units 
 
 ## Since this study
 
+#### R04 — Revision · 2026-11-25
+<!-- since R04 -->
+Erratum E04 and revision R04 answer this study's Q-1. The Regional Forces never drew the M249: P004c's negative specification keeps the BAR at the outpost, EC004-10 recalled the squad guns the province chiefs diverted, and EV000-42's lent gun at Cai Lay is the only squad gun in RF hands in the chapters¹. EV006-2 now has the Hoc Mon and Go Vap RF companies holding STILL WATER's cordons with M4A1 carbines and BARs, and EV007-3 has the rear RF company at Bau Bang putting its BARs, not two M249s, into the treeline. The study's Phase II passage on Bau Bang should read accordingly. Its point holds and is sharper for the correction: the RF losses fell from about 40 to about 32 because of the territorial course, not the weapon⁶, and the 272nd Regiment was answering the territorials' training. In this war the territorials fought the whole of 1964–69 with the carbine and the Browning, the outpost's automatic weapon never changed, and the squad gun's margin belongs to the regular infantry alone. No study-held value changes.
+<!-- /since -->
+
 ---
 
 ---
