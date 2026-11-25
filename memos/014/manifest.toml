@@ -1,0 +1,153 @@
+# Manifest for memorandum 014. Fill every field; `fie.py check` rejects blanks.
+# status and phases_changed are set by fie.py; leave them alone.
+
+memo = "014"
+title = "1st Special Forces Operational Detachment-Delta (Delta Force) at full commitment, under a newly formed MACV joint special operations command from August 1964"
+received = "2026-11-25"
+status = "part1"
+version = "1.0.6"
+phases_changed = []
+links = ["003", "006", "012", "013"]
+
+[deviation]
+part1 = "none"
+part2 = "none"
+part3 = "none"
+
+[[provision]]
+id = "P014a"
+designation = "1st Special Forces Operational Detachment-Delta (SFOD-D, Delta Force), US Army, in its 2026 configuration and at full strength: the whole unit committed to Vietnam, with its assault squadrons, its reconnaissance and surveillance squadron, its organic aviation squadron and its support squadrons, without the wider JSOC package (no 160th SOAR, no dedicated JSOC ISR wing); missions: hunting PAVN and VC leadership and the infrastructure, COSVN and the base areas, POW recovery, raids into the North and reconnaissance, across the borders only where and when history's forces went"
+category = "ground"
+quantity = "the whole unit, full commitment [U]; ~1,000–1,500 personnel of whom ~250–350 operators [E: open-source estimates of Delta's strength, D1]"
+ceiling_spaces = "~1,000–1,500 [E: the whole unit; no ceiling (CONFIG troop_ceiling = NONE)]"
+arrival = "1964-09-01"
+in_service = "activated 19 November 1977 [S]; the 2026 unit is the reference configuration [U]"
+systems = ["FIND", "FIX", "STRIKE", "SUBVERT"]
+status = "active"
+
+[[provision]]
+id = "P014b"
+designation = "MACV Joint Special Operations Command (MACV-JSOC), newly formed after the Gulf of Tonkin incident: a joint headquarters under COMUSMACV that commands SFOD-D and the special operations units the user will assign to it later, with standing liaison to MACV J-2 and J-3, MACV-SOG, the CIA station, the Combined Interagency Task Force of memorandum 012, the Joint General Staff and the US Mission, for logistics, targeting and deconfliction"
+category = "institutional"
+quantity = "one headquarters, formed August 1964 [U]; ~250–450 personnel [E: D2]"
+ceiling_spaces = "~250–450 [E: a joint task force headquarters at the scale of the early JSOC of 1980–81; no ceiling (CONFIG)]"
+arrival = "1964-08-15"
+in_service = "JSOC established 15 December 1980 [S]; MACV-SOG, the nearest period precedent, formed 24 January 1964 [S]"
+systems = ["FIND", "FIX", "STRIKE", "SUSTAIN"]
+status = "active"
+
+# ------------------------------------------------------------------ P014a pushes
+[[push]]
+provision = "P014a"
+var = "FIND.vci"
+dlow = 0.05
+dhigh = 0.25
+at = "P2"
+conf = "low"
+note = "50–250 more listed cadre at district level or above taken a year by 1967; Delta takes the top of the list (province, region and COSVN sections) where the combined task force's raid forces cannot reach, but its numbers are small"
+
+[[push]]
+provision = "P014a"
+var = "FIND.main_force"
+dlow = 0
+dhigh = 2
+at = "P2"
+conf = "low"
+note = "0–2 points more of main-force contacts begun on units already located, from long-range reconnaissance in the base areas inside the South; a few dozen teams against the whole PAVN and VC order of battle"
+
+[[push]]
+provision = "P014a"
+var = "TRAIL.tonnage_arriving"
+plow = -4
+phigh = 0
+at = "P2"
+conf = "low"
+note = "0–4% less tonnage arriving by 1967 from road-watch and target-cueing teams in Laos from October 1965 within history's depth limits, added to SOG's; the teams find targets, the air strikes them"
+
+[[push]]
+provision = "P014a"
+var = "SANCT.cambodia"
+dlow = -3
+dhigh = 0
+at = "P4"
+conf = "low"
+note = "0–3 fewer main-force battalions based in Cambodia by 1971, from reconnaissance from 1967 and target-finding for the bombing of 1969 and the incursion of May 1970; Delta cannot enter Cambodia on the ground except as history's forces did"
+
+[[push]]
+provision = "P014a"
+var = "US.personnel_demand"
+dlow = 1.0
+dhigh = 1.5
+at = "P2"
+conf = "medium"
+note = "1,000–1,500 more US personnel in Vietnam, the whole unit"
+
+# ------------------------------------------------------------------ P014b pushes
+[[push]]
+provision = "P014b"
+var = "US.personnel_demand"
+dlow = 0.25
+dhigh = 0.45
+at = "P1"
+conf = "medium"
+note = "250–450 more US personnel in the headquarters and its liaison cells from August 1964"
+
+[[push]]
+provision = "P014b"
+var = "FIND.vci"
+dlow = 0
+dhigh = 0.1
+at = "P2"
+conf = "low"
+note = "0–100 more listed cadre taken a year by 1967 from deconfliction with the combined task force, so that Delta and the task force do not raid the same target or burn each other's sources"
+
+# ------------------------------------------------------------------ depends
+[[depend]]
+provision = "P014a"
+var = "LOG.helicopter_hours"
+note = "beyond its own aviation squadron, insertion, extraction and recovery need theater lift; without the 160th SOAR it competes for Army and Air Force helicopters"
+
+[[depend]]
+provision = "P014a"
+var = "INTEL.penetration"
+note = "a raid force acting on targets shared with Vietnamese services is compromised in proportion to the enemy agents inside them; history's SOG lost teams to this"
+
+[[depend]]
+provision = "P014a"
+var = "FIND.vci"
+note = "Delta's targets come from the combined task force's files and the National Fusion Centre; it finishes targets others find"
+
+[[depend]]
+provision = "P014a"
+var = "FIND.main_force"
+note = "reconnaissance tasking and raids on headquarters depend on the U-2S and RQ-4B imagery and the signals intelligence already in the record"
+
+[[depend]]
+provision = "P014a"
+var = "STRIKE.responsiveness"
+note = "teams that find a target in the base areas or on the Trail depend on air and artillery reaching it before it moves"
+
+[[depend]]
+provision = "P014a"
+var = "SANCT.laos"
+note = "the size and density of Group 559's security forces in Laos set what a team can do there before it is found"
+
+[[depend]]
+provision = "P014a"
+var = "AIR.north_defences"
+note = "any raid into the North flies through the North's air defences"
+
+[[depend]]
+provision = "P014b"
+var = "ADVISE.leverage"
+note = "deconfliction with the Joint General Staff and the GVN's services depends on what the Americans can persuade them to share"
+
+[[depend]]
+provision = "P014b"
+var = "GVN.police"
+note = "arrests inside the South go through the National Police and the 1964 police statute; the headquarters needs them for warrants and detention"
+
+[[depend]]
+provision = "P014b"
+var = "US.political_tolerance"
+note = "raids into the North and across the borders are decided in Washington; the headquarters works within what Washington grants"
