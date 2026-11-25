@@ -183,3 +183,14 @@ The phase ends with the sanctuary worth to the enemy what it was worth historica
 [S2] "Sihanouk Trail" — Wikipedia, https://en.wikipedia.org/wiki/Sihanouk_Trail — seaborne share of supply estimated as high as 70 percent before the Cambodian route; first shipments to Sihanoukville in October (1965 by context); Unit K-20 credited with 29,000 tons of cargo December 1966 – April 1969; Sihanouk suspended the North's arms shipments through his ports by the summer of 1969.
 
 ## Since this study
+
+### Memo 013 — The air campaign against the North unrestricted: an opening strike on the full target list on 2 March 1965, and MACV targeting authority with standing restrike, no Hanoi or Haiphong zones, one strike on Haiphong's port, a 15-mile Chinese buffer and no pauses · 2026-11-25
+<!-- since 013 -->
+Memorandum 013 touches the study's area through Haiphong and through the Soviet and Chinese supply. Haiphong's port took its one strike on the night of 2–3 March 1965. About forty cranes, the transit sheds and the port's substation were destroyed, no ship was hit, and the port worked by lighter thereafter, unmined until Pocket Money in May 1972 (EV013-1). Moscow and Beijing answered the opening strike faster than they had answered history's gradual campaign: SA-2s, technicians, diesels and trucks from Moscow, railway troops and gun divisions from Beijing. Beijing refused Moscow an air corridor and slowed its shipments by rail (EV013-2, EV013-5). With the North's own rail and road struck without pause, Hanoi leaned harder on the Sihanoukville route for the B-2 Front (F013-6). By my judgment that adds a tenth to a fifth to what the count of 1966–67 measured, inside the range the record already gives that count (EV003-4). The study's judgment that the provisions changed the route of the external supply and not its volume stands. Pocket Money in 1972 closed a port whose cranes had never been rebuilt, and it bit as history's did.
+- value · INTL.communist_aid · P1 · 1..3 · low · Soviet missiles, technicians, diesels and trucks accelerated after HAMMER FALL; Chinese railway troops and gun divisions from June 1965 (EV013-2)
+- value · INTL.communist_aid · P2 · 2..4 · low · Soviet and Chinese aid sustained a dispersed North and its rebuilt air defence; about 200,000 tons of Chinese rice in 1966 (EV013-2, EV013-5)
+- value · INTL.communist_aid · P3 · 1..3 · low · the allies' air defence over the delta at about history's density through the summer of 1968 (EV013-6)
+- value · SANCT.cambodia · P2 · 2..5 · low · Hanoi's southern freight leaned harder on Sihanoukville while the northern routes were struck without pause (F013-6)
+
+*Chapter values Memo 013 moved on this study's variables: P2 TRAIL.tonnage_arriving -1..+0 (low) → -1..+0 (low).*
+<!-- /since -->

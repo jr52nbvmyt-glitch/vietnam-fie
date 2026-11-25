@@ -188,3 +188,19 @@ Memorandum 012 (a combined US, Vietnamese, Korean and Australian operations comm
 
 *Chapter values Memo 012 moved on this study's variables: P2 ARVN.self_sufficiency.fire_support -1..+1 (low) → -2..+1 (low); P3 ARVN.self_sufficiency.fire_support -1..+1 (low) → -2..+1 (low).*
 <!-- /since -->
+
+### Memo 013 — The air campaign against the North unrestricted: an opening strike on the full target list on 2 March 1965, and MACV targeting authority with standing restrike, no Hanoi or Haiphong zones, one strike on Haiphong's port, a 15-mile Chinese buffer and no pauses · 2026-11-25
+<!-- since 013 -->
+Memorandum 013 (bombing of the North SUSPENDED on stated terms from 2 March 1965: an opening strike on the whole target list, P013a, and the theater's own targets with standing restrike, no zones around Hanoi or Haiphong, one strike on Haiphong's port, a 15-mile Chinese buffer and no pauses, P013b) changes the study's area more than any memorandum since 005. The folders that the study describes as unstruck until 1972 were struck in a single night: Operation HAMMER FALL, 2–9 March 1965, took the North's power, bulk fuel, the Doumer and Ham Rong bridges, Phuc Yen and most of the 921st Regiment's MiG-17s, the warning and fire-control radars and Haiphong's cranes, for no bombers and seven tactical aircraft lost (EV013-1). The SA-2 sites were struck as they were built and the first missile kill came on 22 August rather than 24 July (EVCP02-2). The restrike watch kept the Red River crossings at Hanoi closed to rail on about 290 of 517 days in 1965–66, and its count of targets destroyed fell from about 140 a month to about 35 as the North stopped owning anything worth a GBU-31 (EV013-3, F013-12). The POL strikes of June 1966 were never flown, Bolo killed three MiG-21s rather than seven, and the VPAF fought from Chinese airfields (EVCP02-4, EV013-2). There was no Christmas pause and no partial halt; the summer of 1968 over Hanoi cost about 40 aircraft history never risked (EV013-4, EV013-6). Rolling Thunder lost about 810–880 aircraft rather than 922 (EV000-53), which answers Q-1: the record now states the northern campaign's losses in this war. The study's central judgment stands and is strengthened: the flow south was taxed, never stopped, and the bombing of the North did not reach it at all (F013-7). The kit rationing of F013-8 fell on the northern restrike, not on HARD CROSSING or the siege box.
+- value · AIR.north_effect · P1 · 3..5 · low · HAMMER FALL destroyed the North's power, bulk fuel, great bridges and jet base in a week (EV013-1)
+- value · AIR.north_effect · P2 · 3..5 · low · the restrike watch kept the Red River crossings closed to rail more days than not; the North dispersed everything else (EV013-3)
+- value · AIR.north_effect · P3 · 2..4 · low · the summer over the whole North finished the dispersal; the halt of 1 November on history's date (EV013-6, EV000-53)
+- value · AIR.north_defences · P1 · -3..-1 · low · MiG-17s destroyed on the ground, radars in the first cells, SA-2 sites struck as built (EV013-1, EVCP02-2)
+- value · AIR.north_defences · P2 · -1..1 · low · Moscow's missiles and Beijing's guns rebuilt the sky to about history's density; the MiGs fought from China (EV013-2, EVCP02-4)
+- value · AIR.north_defences · P3 · -1..1 · low · about history's density over the delta in 1968, its fighters still based in China (EV013-6)
+- value · AIR.losses · P1 · -3..-1 · low · about 15–40 fewer aircraft lost over the North in March–July 1965 (EVCP02-2)
+- value · AIR.losses · P2 · -2..0 · low · about 40–90 fewer lost over the North in 1966–67 (EVCP02-4, EV000-53)
+- value · AIR.losses · P3 · -1..1 · low · about 30–40 more lost over Hanoi in the summer of 1968, where history's campaign never went (EV013-6)
+
+*Chapter values Memo 013 moved on this study's variables: P2 TRAIL.tonnage_arriving -1..+0 (low) → -1..+0 (low).*
+<!-- /since -->

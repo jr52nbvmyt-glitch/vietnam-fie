@@ -35,13 +35,15 @@
 | EV000-9 | P1 | 28 Dec 1964 – 1 Jan 1965 | The battle of Binh Gia | Binh Gia, Phuoc Tuy Province | HIST-ALT | 000,004,CP01,010 |
 | EV012-3 | P1 | 8 Jan – 30 Jul 1965 | The red cards: Seoul, Canberra and the combined command | Seoul; Canberra; Saigon; Bien Hoa air base; Di An, Bien Hoa Province | NEW | 012 |
 | EV000-10 | P1 | 27 Jan – 25 Feb 1965 | The fall of Khanh | Saigon | CANCELLED | 000,CP01 |
-| EVCP01-2 | P1 | 7 Feb – 28 Jul 1965 | The American escalation: Flaming Dart, Rolling Thunder, the Marines and the July decision | Pleiku and Qui Nhon; North Vietnam; Da Nang; Washington | HIST-ALT | CP01,CP02 |
+| EVCP01-2 | P1 | 7 Feb – 28 Jul 1965 | The American escalation: Flaming Dart, the opening strike, the Marines and the July decision | Pleiku and Qui Nhon; North Vietnam; Da Nang; Washington | HIST-ALT | CP01,CP02,013 |
 | EV000-11 | P1 | 7–11 Feb 1965 | Pleiku, Qui Nhon and Flaming Dart | Camp Holloway and Pleiku, Pleiku Province; Qui Nhon, Binh Dinh Province; southern North Vietnam | CANCELLED | 000,CP01 |
 | EV000-12 | P1 | 2 Mar 1965 | Rolling Thunder begins | North Vietnam, south of the 20th parallel | CANCELLED | 000,CP01 |
+| EV013-1 | P1 | 2–9 Mar 1965 | Operation HAMMER FALL: the opening strike on the North | Phuc Yen airfield, Hanoi (Bach Mai, the Citadel, Yen Phu, Duc Giang and the Paul Doumer bridge), Haiphong port and Thuong Ly, Nam Dinh, the Ham Rong bridge at Thanh Hoa, Vinh; Andersen Air Force Base, Guam; Yankee Station; Korat and Takhli, Thailand | NEW | 013 |
 | EV000-13 | P1 | 8 Mar – 6 May 1965 | The Marines land at Da Nang | Da Nang, Quang Nam Province | CANCELLED | 000,CP01 |
 | EV006-2 | P1 | 8 Mar – 30 Jun 1965 | Operation STILL WATER | Hoc Mon and Go Vap Districts, Gia Dinh Province, inside the Hop Tac ring northwest of Saigon | NEW | 006,CP02 |
+| EV013-2 | P1 | 10 Mar – 31 Jul 1965 | Moscow, Beijing and the rebuilt sky | Moscow; Beijing; Hanoi; the frontier crossing at Pingxiang and Dong Dang; the airfields of Mengzi and Ningming in Yunnan and Guangxi | NEW | 013 |
 | EV000-14 | P1 | 30 Mar 1965 | The bombing of the US embassy | Saigon | CANCELLED | 000,CP01 |
-| EVCP02-2 | P1 | 3 Apr – 27 Jul 1965 | The air war of 1965: the Thanh Hoa Bridge, the missiles and the first Arc Light | Thanh Hoa (Ham Rong) and the Hanoi region, North Vietnam; Andersen Air Force Base, Guam; Ben Cat, Binh Duong Province | HIST-ALT | CP02 |
+| EVCP02-2 | P1 | 3 Apr – 27 Jul 1965 | The air war of 1965: the Thanh Hoa Bridge, the missiles and the first Arc Light | Thanh Hoa (Ham Rong) and the Hanoi region, North Vietnam; Andersen Air Force Base, Guam; Ben Cat, Binh Duong Province | HIST-ALT | CP02,013 |
 | EV000-15 | P1 | 3 Apr – 27 Jul 1965 | The Thanh Hoa Bridge and the northern air defences | Thanh Hoa (Ham Rong), Thanh Hoa Province, and the Hanoi region | CANCELLED | 000,003,005,CP02 |
 | EV001-5 | P1 | 6 Apr – 11 May 1965 | The Vinh Long suspension | Vinh Long Province | NEW | 001,CP01 |
 | EV000-16 | P1 | 10–12 May 1965 | The battle of Song Be | Song Be (Phuoc Long province capital) and Phuoc Binh, Phuoc Long Province | CANCELLED | 000,CP01 |
@@ -51,6 +53,7 @@
 | EV000-20 | P1 | 18 Jun 1965 | The first Arc Light strike | Near Ben Cat, Binh Duong Province | CANCELLED | 000,005,CP02 |
 | EV000-21 | P1 | 28 Jul 1965 | The July decision | Washington | CANCELLED | 000,CP01 |
 | EV002-3 | P2 | Aug 1965 – Jun 1966 | The war on the district chiefs | The Delta, the provinces around Saigon and the coastal Centre | NEW | 002 |
+| EV013-3 | P2 | 1 Aug 1965 – 31 Dec 1966 | The restrike watch on the Red River | The Paul Doumer, Long Bien and Chuong Duong crossings at Hanoi; the Canal des Rapides and Bac Giang bridges on the northeast railway; the ferries at Phu Ly and Ninh Binh; the MACV Combined Targeting Cell, Tan Son Nhut | NEW | 013 |
 | EV012-4 | P2 | 2 Aug 1965 – 30 Jun 1966 | Operation FOLLOW THROUGH | Cu Chi and Trang Bang Districts, Hau Nghia Province; Hoc Mon District, Gia Dinh Province; the Ho Bo and Boi Loi woods and the Filhol rubber, Binh Duong Province | NEW | 012 |
 | EVCP01-4 | P2 | 18 Aug 1965 – 14 May 1967 | The big-unit war: Starlite, A Shau, Hastings, Long Tan, Attleboro, Cedar Falls and Junction City | The Van Tuong peninsula and the DMZ in I Corps; the A Shau valley; Phuoc Tuy; War Zone C and the Iron Triangle in III Corps | HIST-ALT | CP01 |
 | EV000-22 | P2 | 18–24 Aug 1965 | Operation Starlite | Van Tuong peninsula, south of Chu Lai, Quang Ngai Province | CANCELLED | 000,CP01 |
@@ -60,6 +63,7 @@
 | EV002-4 | P2 | 15 Nov 1965 – 30 Apr 1966 | Operation NIGHT LANTERN | Can Giuoc and Can Duoc Districts, Long An Province | NEW | 002,006 |
 | EV012-5 | P2 | 15 Nov 1965 – 2 Apr 1966 | The II Corps list and its abandonment | Tuy An and Song Cau Districts, Phu Yen Province; Phu My and Phu Cat Districts, Binh Dinh Province; Qui Nhon | NEW | 012 |
 | EV003-3 | P2 | 6 Dec 1965 – 30 Apr 1966 | Operation STEADY COUNT | Mu Gia and Ban Karai passes; Routes 23, 911 and 912 south to Tchepone; the Laotian panhandle | NEW | 003 |
+| EV013-4 | P2 | 24 Dec 1965 – 31 Jan 1966 | Christmas without a pause | Hanoi and the panhandle of North Vietnam; Washington; Warsaw, Rangoon and Moscow | NEW | 013 |
 | EV001-6 | P2 | 10 Jan – 30 Jun 1966 | Operation GOLDEN SHEAF | Phong Dinh and Chuong Thien Provinces, along the Xa No canal from Can Tho to Vi Thanh | NEW | 001 |
 | EVCP02-3 | P2 | 24 Jan 1966 – 23 Nov 1967 | The frontier battles of 1966–67: Masher/White Wing, the Hill Fights, Con Thien and Dak To | The Bong Son plain and the An Lao valley, Binh Dinh Province; the hills northwest of Khe Sanh and Con Thien, Quang Tri Province; Dak To, Kontum Province | HIST-ALT | CP02 |
 | EV000-24 | P2 | 24 Jan – 6 Mar 1966 | Operation Masher/White Wing | Bong Son plain and the Kim Son and An Lao valleys, Binh Dinh Province | CANCELLED | 000,001,CP02 |
@@ -70,8 +74,9 @@
 | EV004-2 | P2 | 4 Apr – 30 Oct 1966 | The Regional Force companies go to the corps | Chuong Thien, Ba Xuyen and Bac Lieu Provinces, IV Corps, and the edge of the U Minh forest | NEW | 004,008 |
 | EV005-2 | P2 | 12 Apr – 31 Oct 1966 | Operation HARD CROSSING | Mu Gia pass and Route 15; Ban Karai pass and Route 912; the Xe Bang Fai crossings and the Ban Laboy ford; the Laotian panhandle south to Tchepone | NEW | 005 |
 | EV007-3 | P2 | 3–21 May 1966 | Operation OPEN ROAD | Route 13 from Chon Thanh to An Loc, the Xa Cam rubber and the Tau O crossing, Binh Long Province; Bau Bang, Binh Duong Province | NEW | 007,009 |
+| EV013-5 | P2 | 12 May – 30 Sep 1966 | The buffer's edge: Dong Dang and the Chinese guns | The northeast railway from Kep through Lang Son to Dong Dang; the frontier at Pingxiang, Guangxi; Washington and Warsaw | NEW | 013 |
 | EV009-3 | P2 | 18 Jun – 31 Dec 1966 | The devaluation and the trained deserters | Saigon; Gia Dinh, Hau Nghia and Long An Provinces; the Quang Trung Training Center and the 25th Division's districts around Duc Hoa and Cu Chi | NEW | 009 |
-| EVCP02-4 | P2 | 29 Jun 1966 – Dec 1967 | The air war over the North and the barrier, 1966–67: the POL strikes, Bolo and Muscle Shoals | Hanoi and Haiphong; the DMZ and the Laotian panhandle; Nakhon Phanom, Thailand | HIST-ALT | CP02 |
+| EVCP02-4 | P2 | 29 Jun 1966 – Dec 1967 | The air war over the North and the barrier, 1966–67: the fuel that was gone, Bolo and Muscle Shoals | Hanoi and Haiphong; the DMZ and the Laotian panhandle; Nakhon Phanom, Thailand | HIST-ALT | CP02,013 |
 | EV000-27 | P2 | 29 Jun 1966 | The POL strikes | Hanoi and Haiphong petroleum storage areas | CANCELLED | 000,003,CP02 |
 | EV003-4 | P2 | Jul 1966 – Nov 1967 | The Sihanoukville count | Sihanoukville (Kompong Som), Route 4 and Kompong Speu, and the roads to the base areas of the Fishhook and the Parrot's Beak, Cambodia; Tan Son Nhut and Washington | NEW | 003 |
 | EV012-6 | P2 | 1 Jul 1966 – 31 Dec 1967 | The Delta corps | Can Tho, Phong Dinh Province; Dinh Tuong and Kien Hoa Provinces; Dong Tam base, Dinh Tuong Province | NEW | 012 |
@@ -105,16 +110,17 @@
 | EV000-43 | P3 | 31 Jan – 7 Mar 1968 | The battle for Saigon and the attack on the US embassy | Saigon, Cholon and Tan Son Nhut | HIST | 000 |
 | EV000-44 | P3 | 31 Jan – 27 Feb 1968 | The battle of Hue | Hue, Thua Thien Province | HIST-ALT | 000,002,004,006,012 |
 | EV012-7 | P3 | 31 Jan – 3 Feb 1968 | The attack on the combined headquarters | The Combined Operations Command compound and the Joint General Staff compound, Tan Son Nhut, Saigon | NEW | 012 |
-| EV000-45 | P3 | 20 Feb – 31 Mar 1968 | The reinforcement request and the decision of 31 March | Saigon and Washington | HIST | 000 |
+| EV000-45 | P3 | 20 Feb – 31 Mar 1968 | The reinforcement request and the decision of 31 March | Saigon and Washington | HIST-ALT | 000,013 |
 | EV000-46 | P3 | 16 Mar 1968 | The My Lai massacre | Son My village (My Lai 4 and My Khe), Son Tinh District, Quang Ngai Province | CANCELLED | 011 |
+| EV013-6 | P3 | 1 Apr – 31 Oct 1968 | The summer north of the 19th parallel | Hanoi, Haiphong and the Red River delta; the northeast railway; Route Package 1 and the coastal road to Vinh; the MACV Combined Targeting Cell, Tan Son Nhut | NEW | 013 |
 | EV000-47 | P3 | 30 Apr – 3 May 1968 | The battle of Dai Do | Dai Do and the hamlets north of Dong Ha on the Cua Viet, Quang Tri Province | HIST | 000 |
-| EV000-48 | P3 | May 1968 | The Paris talks open | Paris | HIST | 000 |
+| EV000-48 | P3 | May 1968 | The Paris talks open | Paris | CANCELLED | 000,013 |
 | EV000-49 | P3 | 5 May – 15 Jun 1968 | The May offensive in Saigon | Saigon and its outskirts, and towns throughout the South | HIST | 000 |
 | EV000-50 | P3 | 10–12 May 1968 | The evacuation of Kham Duc | Kham Duc Special Forces camp and Ngok Tavak, Quang Tin Province | HIST | 000 |
 | EV000-51 | P3 | 10 Jun – 11 Jul 1968 | Abrams takes command; mobilization in the South; Khe Sanh abandoned | Saigon and Quang Tri Province | HIST-ALT | 000,004,005,007,009,010 |
 | EV000-52 | P3 | 17 Aug – 23 Sep 1968 | The third offensive | Provincial towns and bases, especially in III Corps and the Central Highlands | HIST-ALT | 000,001,007 |
 | EV009-4 | P3 | 17 Aug – 31 Oct 1968 | The self-defence hamlets | Duc Hue and Trang Bang Districts, Hau Nghia Province; Can Duoc and Rach Kien, Long An Province; Cai Be and Cai Lay Districts, Dinh Tuong Province | NEW | 009,010 |
-| EV000-53 | P3 | 31 Oct – 5 Nov 1968 | The bombing halt and the American election | Washington, Paris and Saigon | HIST | 000 |
+| EV000-53 | P3 | 31 Oct – 13 Nov 1968 | The bombing halt, the talks and the American election | Washington, Paris and Saigon | HIST-ALT | 000,013 |
 | EV000-54 | P3 | 1 Nov 1968 – Jan 1969 | The Accelerated Pacification Campaign and Phoenix | The countryside of South Vietnam | HIST-ALT | 000,001,002,006 |
 | EV003-5 | P3 | 1 Nov – 31 Dec 1968 | The halt measured | The coastal road and railway from Thanh Hoa to Vinh and Dong Hoi, Route 15 to the Mu Gia pass, and the ferries at Quang Khe, North Vietnam | NEW | 003 |
 | EV000-55 | P3 | 15 Nov 1968 | Commando Hunt begins | The Laotian panhandle | HIST-ALT | 000,003,005 |

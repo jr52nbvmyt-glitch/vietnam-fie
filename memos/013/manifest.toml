@@ -4,9 +4,9 @@
 memo = "013"
 title = "The air campaign against the North unrestricted: an opening strike on the full target list on 2 March 1965, and MACV targeting authority with standing restrike, no Hanoi or Haiphong zones, one strike on Haiphong's port, a 15-mile Chinese buffer and no pauses"
 received = "2026-11-25"
-status = "part2"
+status = "complete"
 version = "1.0.6"
-phases_changed = []
+phases_changed = ["P1", "P2", "P3"]
 links = ["003", "005"]
 
 [deviation]
