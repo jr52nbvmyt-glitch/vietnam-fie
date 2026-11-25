@@ -4,7 +4,7 @@
 memo = "012"
 title = "Combined US–RVN–ROK–Australian operations command; combined interagency task force against the VCI"
 received = "2026-11-24"
-status = "part1"
+status = "part2"
 version = "1.0.6"
 phases_changed = []
 links = ["002", "006"]
@@ -91,7 +91,7 @@ var = "POP.gvn_legitimacy"
 low = -3
 high = 0
 conf = "low"
-note = "an American general commanding Vietnamese divisions hands the Front its 'puppet army' line and wounds nationalist officers; it acts on all facets alike because the charge is national, not local to one corps"
+note = "an American general commanding Vietnamese divisions hands the Front its 'puppet army' line and wounds nationalist officers; it acts on all facets equally because the charge is national, not local to one corps"
 
 [[push]]
 provision = "P012a"
@@ -273,3 +273,38 @@ note = "the Vietnamese agencies share their files only when someone can make the
 provision = "P012b"
 var = "SUBVERT.defection"
 note = "ralliers are the richest source on the infrastructure"
+
+# ---------------------------------------------------------------- refined in Part 2
+[[push]]
+provision = "P012b"
+var = "GVN.political_stability"
+low = -2
+high = 1
+conf = "low"
+note = "a raid arm and a national file are the strongest instruments in the country for whoever holds the palace; they deter some plots and arm others"
+
+[[push]]
+provision = "P012b"
+var = "VC.recruitment"
+low = -2
+high = 0
+conf = "low"
+note = "the village cadres who recruit are taken in the held belt; offset where wrong-man raids give the Front a family to recruit from"
+
+[[push]]
+provision = "P012a"
+var = "ARVN.leadership"
+low = 0
+high = 2
+conf = "low"
+note = "a corps commander who must answer for a written order is measured, and the combined commander's relief requests feed the selection board's files"
+
+[[depend]]
+provision = "P012a"
+var = "POP.night_control"
+note = "ARVN battalions tasked to the combined plan leave the districts whose night they held"
+
+[[depend]]
+provision = "P012b"
+var = "INTL.allied_forces"
+note = "the Korean and Australian raid elements and analysts arrive with their contingents"
