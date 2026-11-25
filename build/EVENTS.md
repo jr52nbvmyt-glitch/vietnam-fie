@@ -43,7 +43,7 @@
 | EV014-2 | P1 | 9 Feb – 18 Apr 1965 | Operation NIGHT HERON: the Long An province committee | Can Giuoc, Can Duoc and Rach Kien Districts, Long An Province; the Rung Sat edge of Nha Be, Gia Dinh Province | NEW | 014 |
 | EV000-12 | P1 | 2 Mar 1965 | Rolling Thunder begins | North Vietnam, south of the 20th parallel | CANCELLED | 000,CP01 |
 | EV013-1 | P1 | 2–9 Mar 1965 | Operation HAMMER FALL: the opening strike on the North | Phuc Yen airfield, Hanoi (Bach Mai, the Citadel, Yen Phu, Duc Giang and the Paul Doumer bridge), Haiphong port and Thuong Ly, Nam Dinh, the Ham Rong bridge at Thanh Hoa, Vinh; Andersen Air Force Base, Guam; Yankee Station; Korat and Takhli, Thailand | NEW | 013 |
-| EV014-9 | P1 | 7 March 1965 | The restricted area over Trung Lap | Trung Lap and Phu Hoa Dong, Hau Nghia Province | NEW | 014 |
+| EV014-9 | P1 | 7 March 1965 | The restricted area over Trung Lap | Trung Lap and Phu Hoa Dong, Hau Nghia Province | NEW | 014,CP04 |
 | EV000-13 | P1 | 8 Mar – 6 May 1965 | The Marines land at Da Nang | Da Nang, Quang Nam Province | CANCELLED | 000,CP01 |
 | EV006-2 | P1 | 8 Mar – 30 Jun 1965 | Operation STILL WATER | Hoc Mon and Go Vap Districts, Gia Dinh Province, inside the Hop Tac ring northwest of Saigon | NEW | 006,CP02,R04 |
 | EV013-2 | P1 | 10 Mar – 31 Jul 1965 | Moscow, Beijing and the rebuilt sky | Moscow; Beijing; Hanoi; the frontier crossing at Pingxiang and Dong Dang; the airfields of Mengzi and Ningming in Yunnan and Guangxi | NEW | 013 |
@@ -69,7 +69,7 @@
 | EV014-4 | P2 | 20 Oct 1965 – 31 Dec 1967 | The road watch: Delta in Laos | The Laotian panhandle: Routes 9, 92 and 912, the Ban Laboy ford, the Mu Gia and Ban Karai passes | NEW | 014 |
 | EV002-4 | P2 | 15 Nov 1965 – 30 Apr 1966 | Operation NIGHT LANTERN | Can Giuoc and Can Duoc Districts, Long An Province | NEW | 002,006,015 |
 | EV012-5 | P2 | 15 Nov 1965 – 2 Apr 1966 | The II Corps list and its abandonment | Tuy An and Song Cau Districts, Phu Yen Province; Phu My and Phu Cat Districts, Binh Dinh Province; Qui Nhon | NEW | 012 |
-| EV003-3 | P2 | 6 Dec 1965 – 30 Apr 1966 | Operation STEADY COUNT | Mu Gia and Ban Karai passes; Routes 23, 911 and 912 south to Tchepone; the Laotian panhandle | NEW | 003,015 |
+| EV003-3 | P2 | 6 Dec 1965 – 30 Apr 1966 | Operation STEADY COUNT | Mu Gia and Ban Karai passes; Routes 23, 911 and 912 south to Tchepone; the Laotian panhandle | NEW | 003,015,CP04 |
 | EV015-3 | P2 | 6 Dec 1965 – 30 Apr 1967 | Operation NIGHT LEDGER: the gunships on the panhandle's tracks | The Laotian panhandle from the Mu Gia pass to Tchepone and the Ban Laboy ford; Ubon Royal Thai Air Force Base; the exploitation cell at Tan Son Nhut | NEW | 015 |
 | EV013-4 | P2 | 24 Dec 1965 – 31 Jan 1966 | Christmas without a pause | Hanoi and the panhandle of North Vietnam; Washington; Warsaw, Rangoon and Moscow | NEW | 013 |
 | EV001-6 | P2 | 10 Jan – 30 Jun 1966 | Operation GOLDEN SHEAF | Phong Dinh and Chuong Thien Provinces, along the Xa No canal from Can Tho to Vi Thanh | NEW | 001,015 |
@@ -138,15 +138,15 @@
 | EV000-53 | P3 | 31 Oct – 13 Nov 1968 | The bombing halt, the talks and the American election | Washington, Paris and Saigon | HIST-ALT | 000,013 |
 | EV000-54 | P3 | 1 Nov 1968 – Jan 1969 | The Accelerated Pacification Campaign and Phoenix | The countryside of South Vietnam | HIST-ALT | 000,001,002,006 |
 | EV003-5 | P3 | 1 Nov – 31 Dec 1968 | The halt measured | The coastal road and railway from Thanh Hoa to Vinh and Dong Hoi, Route 15 to the Mu Gia pass, and the ferries at Quang Khe, North Vietnam | NEW | 003 |
-| EV000-55 | P3 | 15 Nov 1968 | Commando Hunt begins | The Laotian panhandle | HIST-ALT | 000,003,005 |
+| EV000-55 | P3 | 15 Nov 1968 | Commando Hunt begins | The Laotian panhandle | HIST-ALT | 000,003,005,CP04 |
 | EV010-5 | P4 | 1 Jan 1969 – 31 Dec 1971 | The sergeants of the drawdown | US Army and Marine Corps units in I, II and III Corps, especially the 23rd (Americal) Infantry Division at Chu Lai and LZ Baldy, Quang Tin and Quang Nam Provinces; the NCO academies in the United States | NEW | 010,011 |
 | EV014-7 | P4 | 1 Jan 1969 – 30 Jun 1970 | The Cambodian folders | Base Areas 350, 351, 352, 353, 609 and 740, the Fishhook and the Parrot's Beak; Memot and Snoul, Kampong Cham Province; Kratie | NEW | 014 |
-| EV000-56 | P4 | 20 Jan – Mar 1969 | Nixon takes office; Vietnamization | Washington and Saigon | HIST | 000 |
+| EV000-56 | P4 | 20 Jan – Mar 1969 | Nixon takes office; Vietnamization | Washington and Saigon | HIST-ALT | 000,004,CP04 |
 | EV000-57 | P4 | 23 Feb – Mar 1969 | The post-Tet offensive | Saigon, Da Nang and installations throughout the South | HIST | 000 |
-| EV000-58 | P4 | 18 Mar 1969 – 26 May 1970 | Operation Menu | Base Areas 350, 351, 352, 353, 609 and 740, eastern Cambodia | HIST-ALT | 000,005,011 |
+| EV000-58 | P4 | 18 Mar 1969 – 26 May 1970 | Operation Menu | Base Areas 350, 351, 352, 353, 609 and 740, eastern Cambodia | HIST-ALT | 000,005,011,CP04 |
 | EV000-59 | P4 | 13–20 May 1969 | Hamburger Hill | Ap Bia Mountain (Hill 937), A Shau valley, Thua Thien Province | HIST | 000 |
 | EV000-60 | P4 | 8 Jun – Dec 1969 | Midway, the first withdrawals and the Nixon Doctrine | Midway Island; Guam; South Vietnam | HIST-ALT | 000,006 |
-| EV000-61 | P4 | Jul – 2 Sep 1969 | COSVN Resolution 9 and the death of Ho Chi Minh | COSVN headquarters and Hanoi | HIST-ALT | 000,001,002 |
+| EV000-61 | P4 | Jul – 2 Sep 1969 | COSVN Resolution 9 and the death of Ho Chi Minh | COSVN headquarters and Hanoi | HIST-ALT | 000,001,002,CP04 |
 | EV008-6 | P4 | 1 Jul 1969 – 31 Dec 1971 | The closed loop | The Bien Hoa rebuild works and the Go Vap signal depot; the ARVN depots at Long Binh and Da Nang; the 1st and 3rd Area Logistics Commands | NEW | 008 |
 | EV015-6 | P4 | 1 Jul 1969 – 31 Dec 1971 | The night net changes hands | Bien Hoa, Binh Thuy, Nha Trang and Da Nang air bases; the posts of the four corps | NEW | 015 |
 | EV000-62 | P4 | 4 Aug 1969 – Feb 1970 | The secret Paris channel opens | Paris | HIST | 000 |
@@ -156,23 +156,23 @@
 | EV008-7 | P4 | 1 Feb 1970 – 30 Jun 1971 | The handover of the call at Long My | Long My District, Chuong Thien Province; the Vi Thanh sector operations centre; the district's territorial artillery platoon | NEW | 008,010,015 |
 | EV000-64 | P4 | 18 Mar – Apr 1970 | Sihanouk falls; the PAVN turns on Cambodia | Phnom Penh and eastern Cambodia | HIST | 000 |
 | EV000-65 | P4 | 26 Mar 1970 | Land to the Tiller | Republic of Vietnam | CANCELLED | 000,001 |
-| EV000-66 | P4 | 29 Apr – 30 Jun 1970 | The Cambodian incursion | The Parrot's Beak and the Fishhook, eastern Cambodia | HIST-ALT | 000,003 |
+| EV000-66 | P4 | 29 Apr – 30 Jun 1970 | The Cambodian incursion | The Parrot's Beak and the Fishhook, eastern Cambodia | HIST-ALT | 000,003,CP04 |
 | EV015-7 | P4 | 10 May – 30 Sep 1970 | Route 7 and the 817th over Cambodia | Route 7 from Krek to Snuol and Route 13 north to Kratie, Kampong Cham and Kratie Provinces, Cambodia; Bien Hoa air base | NEW | 015 |
 | EV000-67 | P4 | 1–23 Jul 1970 | Fire Support Base Ripcord | Fire Support Base Ripcord, near the A Shau valley, Thua Thien Province | HIST | 000 |
 | EV000-68 | P4 | 10 Oct 1970 – Dec 1971 | Commando Hunt and the growth of the Trail | The Laotian panhandle and northeastern Cambodia | HIST-ALT | 000,003,005,015 |
-| EV010-6 | P4 | 1 Nov 1970 – 30 Jun 1971 | The National Day decree and the gate | The Presidential Palace and the Joint General Staff, Saigon; the National NCO Academy at Dong De, Nha Trang; the corps and division headquarters | NEW | 010 |
+| EV010-6 | P4 | 1 Nov 1970 – 30 Jun 1971 | The National Day decree and the gate | The Presidential Palace and the Joint General Staff, Saigon; the National NCO Academy at Dong De, Nha Trang; the corps and division headquarters | NEW | 010,CP04 |
 | EV000-69 | P4 | 21 Nov 1970 | The Son Tay raid | Son Tay prison camp, about 37 km west of Hanoi | CANCELLED | 014 |
 | EV000-70 | P4 | 29 Dec 1970 | The Cooper–Church amendment | Washington | HIST | 000 |
 | EV014-11 | P4 | 29 Dec 1970 – 31 Dec 1971 | Cooper–Church takes the teams out | The Laotian panhandle; the Cambodian base areas; Tan Son Nhut | NEW | 014 |
 | EV000-71 | P4 | 8 Feb – 25 Mar 1971 | Lam Son 719 | Route 9 from Khe Sanh to Tchepone, the Laotian panhandle (Base Areas 604 and 611) | HIST-ALT | 000,003,005,007 |
 | EV000-72 | P4 | 29 Mar – 30 Jun 1971 | The war on trial at home | Washington and New York | HIST-ALT | 000,002,006,011 |
-| EV001-8 | P4 | 14 May – 9 Jul 1971 | The Commission placed under the Inspectorate | Saigon | NEW | 001 |
+| EV001-8 | P4 | 14 May – 9 Jul 1971 | The Commission placed under the Inspectorate | Saigon | NEW | 001,CP04 |
 | EV000-73 | P4 | Oct 1971 | Thieu's unopposed re-election | Republic of Vietnam | HIST | 000,001,007 |
 | EV000-74 | P5 | 30 Mar – 2 Apr 1972 | The Easter Offensive opens: the DMZ front | Quang Tri Province, from the DMZ to the Cua Viet and Camp Carroll | HIST-ALT | 000,003,007 |
 | EVMT01-1 | P5 | Apr – Aug 1972 | The northern districts of Binh Dinh | Hoai Nhon, Tam Quan and Hoai An districts, Binh Dinh Province | HIST-ALT | MT01 |
-| EVMT01-2 | P5 | Apr – Oct 1972 | The Delta during the offensive | Chuong Thien and Kien Giang provinces; the U Minh forest | HIST-ALT | MT01 |
+| EVMT01-2 | P5 | Apr – Oct 1972 | The Delta during the offensive | Chuong Thien and Kien Giang provinces; the U Minh forest | HIST-ALT | MT01,CP04 |
 | EV000-75 | P5 | 5 Apr – 23 Oct 1972 | Freedom Train, Pocket Money and Linebacker | North Vietnam, Haiphong harbour and the approaches to the DMZ | HIST-ALT | 000,003,005 |
-| EV000-76 | P5 | 7 Apr – 18 Jun 1972 | Loc Ninh and the siege of An Loc | Loc Ninh and An Loc, Binh Long Province, on Route 13 | HIST-ALT | 000,003,005 |
+| EV000-76 | P5 | 7 Apr – 18 Jun 1972 | Loc Ninh and the siege of An Loc | Loc Ninh and An Loc, Binh Long Province, on Route 13 | HIST-ALT | 000,003,005,CP04 |
 | EV000-77 | P5 | 24 Apr – 9 Jun 1972 | Tan Canh, Dak To and the battle of Kontum | Tan Canh, Dak To, Ben Het and Kontum city, Kontum Province | HIST-ALT | 000,005,007 |
 | EV000-78 | P5 | 27 Apr – 2 May 1972 | The fall of Quang Tri | Quang Tri City and Highway 1 south to the My Chanh River | HIST-ALT | 000,007 |
 | EVMT01-3 | P5 | Jun – Sep 1972 | The decree powers and the end of the hamlet elections | Saigon | HIST-ALT | MT01 |

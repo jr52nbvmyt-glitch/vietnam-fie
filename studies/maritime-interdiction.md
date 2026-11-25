@@ -4,16 +4,22 @@ area = "maritime interdiction"
 slug = "maritime-interdiction"
 tags = ["INFIL.sea", "SANCT.cambodia", "TRAIL.tonnage_arriving", "ENEMY.regeneration", "INTL.communist_aid"]            # variables and facets from schema/VARIABLES.toml that this area covers; a variable covers its facets
 written = "ST01"     # the study run that wrote this text
-as_of = "013"       # the last memorandum the text reflects
-folded = "CP03"          # the last checkpoint (or revision) that folded since-entries into the text
+as_of = "015"       # the last memorandum the text reflects
+folded = "CP04"          # the last checkpoint (or revision) that folded since-entries into the text
 rerun = true        # set by a checkpoint when the study has drifted enough to need a fresh STUDY run
-rerun_reason = "R03 retired the −10..+10 scale: every study value was on it, and judging them in natural units, with the since-entries of memoranda 012 and 013, is a new study rather than a fold (CP03)"
+rerun_reason = "R03 retired the −10..+10 scale: every study value was on it, and judging them in natural units is a new study rather than a fold (CP03). CP04 folded the entries of memoranda 014 and 015 and carried three values in units; the 21 retired values are still unjudged, so the re-run stays advised"
 
 # The study's own judgments, for variables and facets that are NOT headline variables (those live in the
 # chapters' end vectors and are judged there with an amend file). One table per phase, as at the phase's end
 # against the historical state: "<key>" = { low, high, conf, note } and, where a real indicator exists,
 # ind = "<figure> [H3]" or "<figure> [X-ST01]".
 [values]
+[values.P2]
+"SANCT.cambodia" = { dlow = 0, dhigh = 1, conf = "low", note = "main-force battalions based in Cambodia: the province and region committees Delta drove to Memot (EV014-5) are cadres and couriers, not battalions, and add at most a security battalion; re-judged at CP04 from memorandum 014's +1 to +3, which counted the apparatus in a unit that does not hold it" }
+"ENEMY.regeneration" = { dlow = 0, dhigh = 0, conf = "low", note = "months for a mauled regiment: unchanged; the committees reconstituted from Cambodia in weeks as they had from the base areas (EV014-2, EV014-5), and no main-force regiment's rebuilding moved" }
+
+[values.P4]
+"SANCT.cambodia" = { dlow = -2, dhigh = 0, conf = "low", note = "main-force battalions based in Cambodia at the end of 1971: Delta's 61 foot missions of 1969 counted the caches the incursion took in days, and COSVN had gone to Kratie on 19 March 1970 regardless (EV014-7, EV000-66); carried from the air-war study's entry for memorandum 014" }
 +++
 # maritime interdiction — the war as it stands after memorandum 011
 
@@ -30,6 +36,8 @@ Against the North itself the area holds two mining campaigns, both by B-52Js lay
 The net, at its true weight in both directions, is this. The provisions changed the *route* of the enemy's external supply into the southern half of the country, early and decisively, and did not change its *volume*. The headline judgment on tonnage arriving, which sits in the chapters and was set by the study of the air war, reads the same: −1..+1 in Phase I, where the sea closed and the port opened (TRAIL.tonnage_arriving, P1). What the early closure bought was real but specific: a year of heavy weapons denied to the coastal provinces of II Corps and the lower Delta in 1964, a trawler crew's knowledge of two years of landings, and the war's central sanctuary measured three years before history measured it. What it cost was the conversion of an interceptable line into an untouchable one, eighteen months sooner. After 1970 there is nothing left at sea to interdict in either war, and from Phase IV to the end of the record the area converges on history, through events the record carries: the closure of the port, the incursion, the Liberation Route, and the statute of August 1973.
 
 The area also turns on one thing the record does not hold. Between March 1965 and the end of the war the Market Time patrols, the Coast Guard cutters, the Swift boats, the Vietnamese Navy's coastal and riverine forces and the Game Warden river patrols fought a long war of boardings and inspections that appears in no chapter. History's trawlers kept coming in small numbers after 1965, and the Navy fought several of them, most famously on 1 March 1968 [S1]; this record neither carries those engagements nor cancels them. The study judges the later phases on what the record holds and says where it is silent (Q-3, Q-4).
+
+Memoranda 014 and 015, folded at CP04, add counting and no closing, which is this area's oldest finding. Delta's teams counted from the ground in 1969 what the radar could not see under the rubber of the Cambodian base areas, and could do nothing to it (EV014-7). Delta's raids inside the Republic also changed what the Cambodian sanctuary held. From 1967 it held the senior apparatus of the upper Delta and the Saigon belt as well as the base areas and the supply, because the raids drove the committees across the border (EV014-5, POS014-1). Memorandum 015's gunships touched the area only at the land end of the Cambodian route, after Sihanoukville had closed.
 
 ## P1 · Phase I — The advisory war and escalation (Jan 1964 – Jul 1965)
 
@@ -73,6 +81,8 @@ The enemy's initiative in the phase was the decision not to return to the sea. N
 
 **Memorandum 013 (folded at CP03).** With the North's own rail and road struck without pause, Hanoi leaned harder on the Sihanoukville route for the B-2 Front (F013-6). That adds perhaps a tenth to a fifth to what the count of 1966–67 measured, inside the range the record already gives that count (EV003-4). The study's judgment that the provisions changed the route of the external supply, not its volume, stands.
 
+**Folded at CP04: the apparatus moves to the sanctuary.** Delta's raids took 61 province and region committee members out of the Saigon belt and the upper Delta in 1966–67 (EV014-3). In April 1967 COSVN issued the three-sentence rule, and by September the committees of the upper Delta were found to be living at Memot, inside Cambodia, and visiting their districts four or five nights every second month (EV014-5). This raised what Cambodia was worth to the enemy. It was now the seat of the B-2 Front's administration of the provinces closest to Saigon, as well as the end of the Sihanoukville route the study traces. The time to replace a province committee member did not change: it was weeks, as before, with region cadres sent down. The study's judgment that the route was counted and not stopped is unchanged; what the route fed now included the government of the Front's best provinces.
+
 ## P3 · Phase III — Tet and its aftermath (Jan 1968 – Dec 1968)
 
 The maritime war is quiet in Phase III, and the reason is that both of its lines had settled before the year began. The sea had been given up for three years, and Sihanoukville was running as it ran historically, now counted.
@@ -98,6 +108,8 @@ The incursion of 29 April to 30 June 1970 was the one moment in the record when 
 The enemy's answer was his own and was the historical one. The loss of the port and of the caches threw the whole burden of supplying the southern half of the country onto the Trail; the PAVN seized Attapeu and Saravane in Laos and opened a "Liberation Route" through northeastern Cambodia to the Mekong, and the Global Hawk watched it being built from the summer of 1970, as it had watched Sihanoukville, and could not stop it either (EV000-64, EV000-66) [H55] [X-003]. The incursion delayed the PAVN's recovery in III and IV Corps, and the southern half of the country was quieter for more than a year [H55]. On the record's evidence, the delay was a little longer than history's, because a tenth more was lost and lost faster, but the chapters give no date for the recovery, and the study holds that judgment loosely.
 
 From the summer of 1970 there was nothing at sea or in the Cambodian ports for anyone to interdict, in either war. The record carries none of the historical transfer of the Market Time cutters and craft to Vietnamese crews, which ran from May 1969 to August 1970 [S1], and none of the Vietnamese Navy's riverine war of the drawdown years (Q-4). The study judges the sea route's value at nil from 1970 because both wars had closed it, not because the record shows the patrols that kept it closed.
+
+**Folded at CP04: the counting from the ground, and the 817th on Route 7.** From September 1967 American teams could enter Cambodia on foot, without tactical air, without a forward air controller and with no exploitation force behind them [M014]. Delta ran 61 such missions in 1969 beside SOG's 454 and counted 94 cache sites, 31 of them under permanent roofing, 11 field hospitals, 4 vehicle parks and the Memot complex's three bunker belts (EV014-7). The record's position that the southern supply moved to Sihanoukville from June 1965 and was counted rather than stopped until Lon Nol closed the port (POS003-2) is confirmed from the ground. The folders are part of why the incursion found the caches in days, and COSVN had moved to Kratie on 19 March 1970, six weeks before the incursion crossed. The 817th flew Route 7 and Route 13 for four months from May 1970 and was withdrawn to the Delta after losing an aircraft near Snuol (EV015-7). By then Sihanoukville was closed and the sea route long given up.
 
 ## P5 · Phase V — The Easter Offensive and Linebacker (Jan 1972 – Dec 1972)
 
@@ -129,6 +141,8 @@ The phase ends with the sanctuary worth to the enemy what it was worth historica
 
 ## Judgments
 
+**Values carried at CP04.** Memorandum 014's two value lines are carried in units. *SANCT.cambodia* in P2 is re-judged from +1 to +3 battalions to 0 to +1, because the apparatus the raids drove into Cambodia is committees and couriers, not main-force battalions; what it changed is the sanctuary's political value, which this variable does not measure. *ENEMY.regeneration* in P2 is carried at 0 to 0 months. The study of the air war's line for *SANCT.cambodia* in P4, −2 to 0 battalions, is carried here, where the variable's one copy is held. The 21 values withdrawn at CP03 are still withdrawn, and the re-run stays advised.
+
 **Values withdrawn at CP03 (R03).** The study's 21 values were written on the −10..+10 scale, which R03 retired on 25 November 2026. No mapping from that scale to the variables' natural units exists, and checkpoint CP03 did not invent one: it withdrew the values from `[values]` (they are kept in `reviews/CP03/before-studies/`, and the judgments below still describe them in words) and advised a fresh STUDY of this area in units. Until it runs, the study's account of the area stands and its values are unjudged.
 
 **Chapter end vectors.** This study judged no chapter entry. The area's one headline variable, *TRAIL.tonnage_arriving*, was judged in every phase by the study of the air war in this run (ST01 Part 1) and is not re-judged here. The study's reading agrees with it: in Phase I the sea route closed and Sihanoukville opened early, so the route changed and the tonnage did not (EV003-1, EV003-2), and in Phases II–V the maritime campaigns (the estuary field, Pocket Money) moved cargo onto roads without a measurable change in what reached the South (EV005-3, EV000-75). The study tags no headline facet and names no binding facet; none of its variables has facets.
@@ -156,22 +170,3 @@ The phase ends with the sanctuary worth to the enemy what it was worth historica
 [S2] "Sihanouk Trail" — Wikipedia, https://en.wikipedia.org/wiki/Sihanouk_Trail — seaborne share of supply estimated as high as 70 percent before the Cambodian route; first shipments to Sihanoukville in October (1965 by context); Unit K-20 credited with 29,000 tons of cargo December 1966 – April 1969; Sihanouk suspended the North's arms shipments through his ports by the summer of 1969.
 
 ## Since this study
-
-### Memo 014 — 1st Special Forces Operational Detachment-Delta (Delta Force) at full commitment, under a newly formed MACV joint special operations command from August 1964 · 2026-11-25
-<!-- since 014 -->
-**Memorandum 014 (Delta Force at full commitment and a MACV joint special operations command, August–September 1964) — entry of 25 November 2026.**
-
-The provision adds counting and no closing, which is this area's oldest finding. From September 1967 American teams could enter Cambodia on foot, without tactical air, without a forward air controller and with no exploitation force behind them, and those limits held until the incursion ([M014·S3]). Delta ran 61 such missions in 1969 beside SOG's 454 and counted what the Global Hawk's radar could not see under rubber: 94 cache sites, 31 of them under permanent roofing, 11 field hospitals, 4 vehicle parks and the Memot complex's three bunker belts (EV014-7). The study's and the record's position that the southern supply moved to Sihanoukville from June 1965 and was counted rather than stopped until Lon Nol closed it (POS003-2) is confirmed from the ground: the teams found the caches the route filled and could do nothing to them.
-
-The second effect runs the other way and belongs here because it is about the sanctuary's value. Delta's raiding inside South Vietnam pushed the Front's senior apparatus across the Cambodian border between 1965 and 1967 (EV014-5, C014-2), so the sanctuary by 1968 held not only the base areas and the supply but the B-2 Front's administrative leadership. That raises what Cambodia is worth to the enemy and makes its loss in 1970 a heavier blow than the record had it — and the enemy answered by moving to Kratie six weeks before the incursion crossed.
-
-- value · SANCT.cambodia · P2 · Δ+1..+3 · low · the sanctuary now holds the senior apparatus of the upper Delta and the Saigon belt as well as the base areas, because the raid force drove it there (EV014-5, F014-7)
-- value · ENEMY.regeneration · P2 · Δ0..0 · low · committees reconstitute from Cambodia as they reconstituted from the base areas; the time to replace a province committee member is unchanged at weeks (EV014-2, EV014-5)
-<!-- /since -->
-
-### Memo 015 — Gunship replacement: every US and RVNAF AC-47, AC-119 and AC-130 removed; 64 AC-130J Ghostrider to the USAF from 1964 and 48 AC-130U Spooky II to the VNAF from 1967 · 2026-11-25
-<!-- since 015 -->
-**Memorandum 015 (25 Nov 2026): no change in the area.** The gunships touch the study's area only at the land end of the Cambodian route, and only from May 1970, when the 817th flew Route 7 and Route 13 for four months and was withdrawn after losing an aircraft near Snuol (EV015-7). By then Sihanoukville was closed by Lon Nol's coup and the sea route was long given up; nothing in the study's account of either changes, and it holds no value this memorandum moves.
-
-*Chapter values Memo 015 moved on this study's variables: P2 TRAIL.tonnage_arriving -10% to 0% against history (low) → -12% to -1% against history (low); P4 TRAIL.tonnage_arriving -5% to 0% against history (low) → -10% to -2% against history (low).*
-<!-- /since -->

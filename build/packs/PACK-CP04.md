@@ -8,67 +8,54 @@ Phase **P4** (rotating through P1, P2, P3, P4, P5, P6).
 
 ## Interaction sweep — suggested variables
 
-### ARVN.self_sufficiency
-- P004a (memo 004) depends — M855A1, optics, batteries and URG-I parts all come from the United States; the RVNAF cannot make or repair them at depth, so the rearmament deepens the supply dependence that 1973–75 punished
-- P005c (memo 005) pushes -1 [old band ≈ -4..-2] — Defence of besieged positions is built around an American bomber and American coordinates the RVNAF can never own
-- P006c (memo 006) pushes -1 [old band ≈ -4..-2] — An adviser qualified and trusted to call American air and artillery becomes the advised unit's means of fire; better advising of fire deepens the dependence the withdrawal punishes, unless the adviser is directed to train Vietnamese observers to replace him
-- P007b (memo 007) pushes +1 [old band ≈ +2..+4] — Staff, logistics and fire-support officers educated to run their own systems
-- P008a (memo 008) pushes +2 [old band ≈ +5..+7] — Spares, rebuild, cartridge cases and shell bodies made and turned around in country; filling, fuel and major systems still imported
-- P008b (memo 008) pushes +2 [old band ≈ +5..+7] — Radios, batteries, wire and signal repair made and done in country; the 1974–75 battery and parts famine eased
-- P010b (memo 010) pushes +1 [old band ≈ +2..+4] — Senior and master courses teach maintenance, supply, training management and readiness reporting at company and battalion; the sergeants who keep trucks and radios running
-- P010b (memo 010) depends — The schooled squad fights best with American fire and helicopters behind it; in 1974–75 it has been taught a way of war its army cannot supply (F010-24)
-- P011a (memo 011) pushes +0..+2 [v1.0.6 scale] (low) on ARVN.self_sufficiency.logistics — Not self-sufficiency but its precondition in 1974: fuel for trucks and rounds for depots that the ration emptied; the dependence on Congress is unchanged
-- P011a (memo 011) depends — Aid money matters only as far as the RVNAF can turn it into fire, fuel and spares; the 1974 ration is where the provision bites
-- P012a (memo 012) pushes -4..+0 [v1.0.6 scale] (medium) on ARVN.self_sufficiency.fire_support — an ARVN that plans and fights inside a combined staff learns to depend on it; the staff and its fires leave with the Americans
-- P015b (memo 015) pushes +2 to +6 [% of the RVNAF's fire support delivered by its own guns and aircraft] by the end of P4 (low) on ARVN.self_sufficiency.fire_support — 2–6 points more of the RVNAF's fire support delivered by its own aircraft by 1971: about 400–800 VNAF gunship sorties a month, each worth several hours of night fire, in place of US gunship and tactical air at night
-- P015b (memo 015) pushes +3 to +8 [% of the RVNAF's fire support delivered by its own guns and aircraft] by the end of P6 (low) on ARVN.self_sufficiency.fire_support — 3–8 points more of the RVNAF's fire support its own by the end of 1974, if the U is flown and maintained after the Americans leave; bounded by the SA-7 and radar AAA that historically drove VNAF aircraft above useful altitudes
-- P015b (memo 015) depends on ARVN.self_sufficiency.maintenance — after 1973 the U flies only as long as the RVNAF's own depots and the aid appropriation keep it in spares
+### LOG.distribution
+- P003b (memo 003) depends — Air base security and fuel at Bien Hoa and Da Nang; an aircraft on the ramp is exposed to mortars
+- P004c (memo 004) pushes -1 [old band ≈ -4..-2] — Linked 5.56mm and spare barrels in quantity down a road net the enemy cuts; small per gun, large across 6,000 squads
+- P004a (memo 004) depends — Ammunition, batteries, optics spares and replacement carbines must reach districts and outposts over interdicted roads
+- P004b (memo 004) depends — Match 7.62mm ammunition and scope spares in a second calibre at squad level
+- P004c (memo 004) depends — Linked ammunition, spare barrels, links and feed parts
+- P008a (memo 008) pushes +1 [old band ≈ +2..+4] — Vehicle and engine rebuild, bridge girders and culverts, rail repair steel made in country; faster return of the network after sabotage
+- P008a (memo 008) depends — Bridging, wire and rebuilt vehicles are worth what reaches the districts over interdicted roads
+- P015a (memo 015) depends — 30mm and 105mm ammunition, Griffin and SDB, and JP-8 at Phan Rang, Nha Trang and Ubon
 
-### US.casualties
-- P004a (memo 004) pushes -1 [old band ≈ -4..-2] — Fewer men lost in the first seconds of the meeting engagement; the rifle that does not jam in the Hill 881 sense
-- P004a (memo 004) depends — The fraction of US deaths taken from small arms in the first seconds of contact, against the much larger fraction from mines, booby traps, mortars and RPGs that no rifle touches
-- P005c (memo 005) pushes -1 [old band ≈ -4..-2] — Closer, faster heavy fire in defence of besieged positions
-- P006b (memo 006) pushes -1 [old band ≈ -4..-2] — Collective training and stable leaders cut the losses of the new man; the unit's first month in a new area offsets part of it
-- P006b (memo 006) depends — Losses within a tour are refilled by individuals; heavy losses return the unit to individual replacement in practice
-- P007a (memo 007) pushes -1 [old band ≈ -4..-2] — Better-trained platoon and company leaders lose fewer men to ambush, mines and errors of fire support; modest
-- P009a (memo 009) pushes -1 [old band ≈ -4..-2] — Fewer American dead from extremity hemorrhage and from individual-skill failures; modest in total, real in lives
-- P010a (memo 010) pushes -1 [old band ≈ -4..-2] — Squad and platoon fights are NCOs' fights; better land navigation, fire control, patrol-base discipline and leader-stakes medical drill; modest in total
-- P011b (memo 011) depends — The draftee dead are what made the draft a political wound; its effect scales with the casualty lists
-- P014a (memo 014) pushes +5 to +25 [US killed by hostile action in the calendar year in which the phase ends (Phase I: 1965)] by the end of P2 (low) — 5–25 more Americans killed by hostile action in 1967: Delta's own losses on raids, on cross-border reconnaissance from October 1965 and in helicopter losses, against SOG's 79 Special Forces killed or missing in 1968 scaled to Delta's smaller teams; the unit prevents no American deaths elsewhere
-- P015a (memo 015) pushes -400 to -80 [US killed by hostile action in the calendar year in which the phase ends (Phase I: 1965)] by the end of P2 (low) — 80–400 fewer Americans killed by hostile action in 1967: night fire over US units and Special Forces camps in contact, less the gunship crews' own losses
+### FIND.vci
+- P001a (memo 001) pushes +1 [old band ≈ +2..+4] — Village land committees, a parcel map and a register of who tills what give the state its first census of the hamlet; volunteered information rises where titles are delivered and defended
+- P002a (memo 002) pushes +2 [old band ≈ +5..+7] — A single Special Branch holding the files, a resident constable who knows the hamlet, and a family census that makes a stranger visible; the VCI half of find-and-fix, not the main-force half
+- P006a (memo 006) pushes +1 [old band ≈ +2..+4] — Fused files, network analysis and exploitation of every arrest and rallier add the district-and-above cadre to what P002a's Special Branch already finds in the hamlet
+- P012b (memo 012) pushes +1..+3 [v1.0.6 scale] (medium) — the record already names most of the infrastructure through the police and the district centres; national fusion and same-night exploitation add the province and region committees and the contested belt where files are thin
+- P012b (memo 012) depends — it rests on the district files of P006a's centres
+- P014a (memo 014) pushes +0.04 to +0.15 [VCI neutralised a year who were on a prior target list, district level or above, thousands] by the end of P2 (low) — 40–150 more listed cadre at district level or above taken a year by 1967, revised down from Part 1's 50–250 on the sustained raid rate of 25–50 a month rather than the surge rate of 40–120 (F014-13); Delta takes the top of the list where the task force's raid forces cannot reach, and there are six assault troops forward
+- P014b (memo 014) pushes 0 to +0.1 [VCI neutralised a year who were on a prior target list, district level or above, thousands] by the end of P2 (low) — 0–100 more listed cadre taken a year by 1967 from deconfliction with the combined task force, so that Delta and the task force do not raid the same target or burn each other's sources
+- P014a (memo 014) depends — Delta's targets come from the combined task force's files and the National Fusion Centre; it finishes targets others find
 
-### LOG.helicopter_hours
-- P001b (memo 001) depends — Musters of posts off the roads are flown in
-- P001a (memo 001) depends — Land teams and survey parties reach contested villages by air
-- P002a (memo 002) depends — Field Force companies and identity teams reach villages off the roads by air
-- P003b (memo 003) depends — The reaction to a radar track in the South is an airmobile force; in 1964 there are few helicopter hours to spend on it
-- P006c (memo 006) depends — Medevac and resupply for the advised unit come through the adviser
-- P009a (memo 009) depends — The tourniquet buys the wounded man an hour or two; the Dustoff and the surgical bed decide whether he uses it
-- P009b (memo 009) depends — The RVNAF's wounded waited longer for evacuation than the American; the tourniquet's value rises with the wait and its cost in limbs rises with it
-- P012a (memo 012) depends — combined reaction across sectors runs on lift
-- P012b (memo 012) depends — the raid cycle runs on dedicated lift at night
-- P014a (memo 014) depends — beyond its own aviation squadron, insertion, extraction and recovery need theater lift; without the 160th SOAR it competes for Army and Air Force helicopters
+### ECON.inflation
+- P001a (memo 001) pushes +1 [old band ≈ +2..+4] — Cash share of landlord compensation enters a war economy; small against aid flows, but positive
+- P002a (memo 002) depends — A police pay statute fixed in piasters is eroded by the inflation of 1966-68; a constable paid less than a labourer begins to live on the village again
+- P002b (memo 002) depends — The pay and allowance reform that makes an honest chief possible loses its value as prices rise
+- P008a (memo 008) pushes -1 [old band ≈ -4..-2] — Domestic production absorbs piasters and replaces some imports; modest against the war's spending
+- P008a (memo 008) depends — Piaster wages of 35,000-50,000 workers and domestic prices against free American stocks; the 1973-74 oil shock raises the thermal station's fuel bill
+- P009b (memo 009) depends — Desertion follows pay and the family; a trained soldier whose pay no longer feeds his family deserts with his training (DIRMT01-9)
+- P009c (memo 009) depends — The territorial soldier's pay and his family's safety decide whether the trained man stays in his platoon
+- P010b (memo 010) depends — An educated sergeant whose pay no longer feeds his family deserts or moonlights with his education (DIRMT01-9)
 
-### GVN.admin_capacity
-- P001b (memo 001) pushes +1 [old band ≈ +2..+4] — Budgets executed as voted; province and district funds reaching their purpose
-- P001a (memo 001) depends — Province land services and village committees must exist and work
-- P002b (memo 002) pushes +2 [old band ≈ +5..+7] — Chiefs chosen for ability, kept long enough to learn a province, and inspected by a body they do not command: the single largest lever on provincial administration
-- P002a (memo 002) depends — Courts, prosecutors and the province and district chief direct and protect the police
-- P006a (memo 006) depends — The district chief runs the DIOCC; the magistrates decide the cases
-- P007c (memo 007) depends — Province and district chiefs are drawn from the same officer pool
-- P008a (memo 008) depends — Contracting, quality acceptance and allocation run through ministries
-- P009c (memo 009) depends — District and province chiefs control RF/PF recruiting and release men to the centres
-- P010b (memo 010) depends — Province and district chiefs control RF/PF manning and must release territorial NCOs to the courses (E03)
+### AIR.north_defences
+- P003a (memo 003) depends — The U-2 is safe from guns and MiG-17s at 70,000 ft; it is not safe from the SA-2 once the SA-2 arrives
+- P003b (memo 003) depends — At 60,000 ft the RQ-4 is inside the SA-2 envelope; once the North has SA-2s it can look into the North only from outside their range
+- P005a (memo 005) depends — SA-2 and MiG-21 density sets loss rates over the North
+- P005b (memo 005) depends — The 15-mile glide falls inside the SA-2's reach; standoff protects against guns, not missiles
+- P013a (memo 013) pushes -3..-1 [v1.0.6 scale] (low) — In March 1965 the North has no SA-2 site operational and about 50–60 MiGs at Phuc Yen; the opening blow catches the radar net and the fighter force on the ground, but Moscow then ships faster
+- P013b (memo 013) pushes -2..+0 [v1.0.6 scale] (low) — No sanctuary for the SAM support, the MiG bases or the Hanoi gun belt; offset by Soviet resupply that grows with the threat
+- P014a (memo 014) depends — any raid into the North flies through the North's air defences
+- P015a (memo 015) depends — the gunship's survival on the Trail ends when 37mm, 57mm, radar-laid guns, the SA-7 and the SA-2 move south, as they did in 1971–72
 
-### SUBVERT.defection
-- P001a (memo 001) pushes +1 [old band ≈ +2..+4] — Southern-born guerrillas and their families can now keep land the Front gave them without the Front; slow and confined to areas the government can reach
-- P002a (memo 002) pushes +1 [old band ≈ +2..+4] — A resident constable and a Special Branch officer are a door a frightened cadre can walk through at night; Special Branch, not the Army, debriefs and turns ralliers
-- P004a (memo 004) depends — Weapons-for-money and Chieu Hoi rewards meet a market in which a modern carbine is the most valuable thing a man can carry
-- P006a (memo 006) pushes +1 [old band ≈ +2..+4] — Targeted offers to named cadres and exploitation of each rallier's knowledge
-- P006a (memo 006) depends — Ralliers are the richest source of the network map
-- P012b (memo 012) pushes +1..+3 [v1.0.6 scale] (medium) — a cadre who knows his network is being rolled up has a reason to rally before the raid; the task force turns ralliers into sources
-- P012b (memo 012) depends — ralliers are the richest source on the infrastructure
-- P014a (memo 014) pushes 0 to +0.3 [Chieu Hoi ralliers, thousands a year] by the end of P2 (low) — 0–300 more Chieu Hoi ralliers a year by 1967: a raid that takes a province committee member alive with his files produces named approaches to the cadre under him, which a killing does not
+### US.credibility_gap
+- P001b (memo 001) pushes -1 [old band ≈ -4..-2] — Independent musters and audits give MACV strength and expenditure figures that do not pass through the reporting chain (G-10)
+- P002b (memo 002) pushes -1 [old band ≈ -4..-2] — An Inspectorate that verifies province reporting gives MACV a check on figures produced by the men rated on them (A13)
+- P006a (memo 006) pushes +1 [old band ≈ +2..+4] — An American-designed targeting programme is a press story from 1965, whatever its rules
+- P006c (memo 006) pushes -1 [old band ≈ -4..-2] — Advisers with protected careers and language report what they see
+- P011c (memo 011) pushes -3..-1 [v1.0.6 scale] (medium) — No cover-up to come apart in November 1969: the starkest single proof that MACV's reports could hide a massacre never reaches the press
+- P011a (memo 011) depends — A president whose word is believed at home can spend that credit on Saigon's behalf
+- P012b (memo 012) pushes +0..+3 [v1.0.6 scale] (low) — an American-led killing-and-capture campaign inside the population is the story the press will tell about it, as it told it about Phoenix
 
 ## Causal chains from these memoranda
 

@@ -9,7 +9,7 @@
 | P1 | 9 | 23 | 4 | 3 | 15 |
 | P2 | 8 | 20 | 7 | 3 | 19 |
 | P3 | 12 | 7 | 1 | 0 | 5 |
-| P4 | 0 | 11 | 1 | 6 | 11 |
+| P4 | 1 | 13 | 1 | 7 | 7 |
 | P5 | 6 | 3 | 0 | 0 | 3 |
 | P6 | 9 | 3 | 1 | 3 | 5 |
 
@@ -214,6 +214,11 @@ The third offensive went for what the course did not reach, and in the provinces
 *31 Oct – 13 Nov 1968 · Washington, Paris and Saigon · P3 · changed from history · EV000-53*
 
 In October Hanoi signalled that it would accept the Saigon government at the table if the bombing stopped. On 31 October Johnson announced the end of all bombing of North Vietnam from 1 November, ending Rolling Thunder²⁵²⁶.
+
+### COSVN Resolution 9 and the death of Ho Chi Minh
+*Jul – 2 Sep 1969 · COSVN headquarters and Hanoi · P4 · changed from history · EV000-61*
+
+In July 1969 COSVN issued Resolution 9, which accepted that the 1968 offensives had not produced the uprising and directed a return to protracted war: small-unit and sapper attacks, economy of force, the rebuilding of the infrastructure, and a campaign against Vietnamization and pacification, while main forces were preserved in the sanctuaries. It was a decision taken in the light of losses and on the movement's own reading of its position, and it set the pattern of the enemy's war in the South until 1971.
 
 ### Commando Hunt and the growth of the Trail
 *10 Oct 1970 – Dec 1971 · The Laotian panhandle and northeastern Cambodia · P4 · changed from history · EV000-68*
