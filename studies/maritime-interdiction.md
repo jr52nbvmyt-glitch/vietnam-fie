@@ -170,3 +170,8 @@ The phase ends with the sanctuary worth to the enemy what it was worth historica
 [S2] "Sihanouk Trail" — Wikipedia, https://en.wikipedia.org/wiki/Sihanouk_Trail — seaborne share of supply estimated as high as 70 percent before the Cambodian route; first shipments to Sihanoukville in October (1965 by context); Unit K-20 credited with 29,000 tons of cargo December 1966 – April 1969; Sihanouk suspended the North's arms shipments through his ports by the summer of 1969.
 
 ## Since this study
+
+### R05 — Revision · 2026-11-25
+<!-- since R05 -->
+R05 merged the sea route's closing (EV003-2) into TIDE TABLE (EV003-1), which now runs from January 1964 to June 1965 and tells the turned-back trawlers, the Central Military Commission's decision and the first arms cargo at Sihanoukville in late June 1965 in one event. The Sihanoukville count (EV003-4) is unchanged in substance and shorter. The old ID remains as a stub. No study-held value changes.
+<!-- /since -->

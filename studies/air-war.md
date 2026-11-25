@@ -159,3 +159,8 @@ In 1975 the VNAF flew the Republic's last fights on fuel the appropriation had b
 [S2] "Operations Enhance and Enhance Plus" — Wikipedia, https://en.wikipedia.org/wiki/Operations_Enhance_and_Enhance_Plus — 234 F-5A and A-37, 32 C-130 and 277 UH-1H delivered from October 1972; the VNAF fourth largest air force in the world at the end of 1972.
 
 ## Since this study
+
+### R05 — Revision · 2026-11-25
+<!-- since R05 -->
+R05 merged several of the events this study cites, without changing any of them. STEADY COUNT (EV003-3), NIGHT LEDGER (EV015-3) and Delta's road watch (EV014-4) are now one event, EVR05-5, which keeps CP04's finding that trucks crossed a reopened ford at the foot of Mu Gia about twenty hours after HARD CROSSING's first night. The estuary field (EV005-3) is now part of EV005-2, and the coordinate cell (EV005-1) is part of HAMMER FALL (EV013-1). The absent Christmas pause (EV013-4) and the buffer's test (EV013-5) are part of EVCP02-4, and Moscow's and Beijing's answer of 1965 (EV013-2) is part of EVCP02-2. The old IDs remain in the chapters as stubs pointing to their new events. No study-held value changes. The study's third question, whether EV003-3 and EV005-2 can stand side by side, now concerns one event and its sequel (EVR05-5, EV005-2), which tell the ford and the braided net in order.
+<!-- /since -->

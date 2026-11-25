@@ -197,3 +197,8 @@ Checked and found consistent: the American historical baseline (M16 to US units 
 [S3] Wikipedia, "NLF and PAVN logistics and equipment" (the early mixed inventory of French, captured and Chinese weapons; PAVN refitting with the AK-47; the SKS passed to guerrillas; the RPD; RPG-2/B40 and RPG-7/B41; the M1 carbine as a common weapon captured from the ARVN; the inventory mostly standardized by 1970 even at village level), https://en.wikipedia.org/wiki/NLF_and_PAVN_logistics_and_equipment
 
 ## Since this study
+
+### R05 — Revision · 2026-11-25
+<!-- since R05 -->
+R05 gave the record's restated small-arms figures once, with the rifles' share named: Dong Xoai's allied dead at about 230–240, of which the carbines and squad guns account for about 115; the Ia Drang's American dead at about 165–170, of which the squad guns account for about 30; Tet's ARVN killed at about 2,150, of which the rifles account for about 290; and Hue at about 370 ARVN and 200 American dead, of which the rifles account for about 85. The posts of the held belt hold about nineteen attacks in twenty, the combined figure for the carbine, the radio and the course. STILL WATER (EV006-2) is now part of EVR05-3 and keeps R04's correction: the RF cordons carried carbines and BARs, and the territorials never drew the squad gun. Bau Bang (EV007-3) keeps the same correction. No study-held value changes.
+<!-- /since -->

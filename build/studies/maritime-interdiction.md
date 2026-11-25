@@ -161,6 +161,11 @@ The phase ends with the sanctuary worth to the enemy what it was worth historica
 
 ## Since this study
 
+#### R05 — Revision · 2026-11-25
+<!-- since R05 -->
+R05 merged the sea route's closing into TIDE TABLE, which now runs from January 1964 to June 1965 and tells the turned-back trawlers, the Central Military Commission's decision and the first arms cargo at Sihanoukville in late June 1965 in one event. The Sihanoukville count is unchanged in substance and shorter. The old ID remains as a stub. No study-held value changes.
+<!-- /since -->
+
 ---
 
 ---
