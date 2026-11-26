@@ -1,4 +1,4 @@
-<!-- fie v1.0.8 -->
+<!-- fie v1.0.9 -->
 # Revisions — VETO and ERRATUM
 
 Finished parts are never edited. The war is changed only through its chapters; a finished record is corrected only by an erratum that points at it.

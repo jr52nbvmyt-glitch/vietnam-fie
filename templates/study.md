@@ -18,6 +18,10 @@ rerun_reason = ""
 
 ## Summary — the state of the area now
 
+## Primer — AREA explained
+
+## Inventory — AREA by branch and force
+
 PHASE_SECTIONS
 
 ## Judgments

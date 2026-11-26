@@ -1,4 +1,4 @@
-<!-- fie v1.0.8 -->
+<!-- fie v1.0.9 -->
 # Voice — what the memoranda should sound like
 
 **Nothing in this file is part of the record.** The places, people and events below are illustrations of register, invented or simplified for the purpose. Never take a fact from this file. Read it once per thread, with RULES.md, and write to it.
@@ -42,6 +42,25 @@ The second version makes the same argument. It puts it on the ground, follows on
 An illustrative chronicle paragraph (invented):
 
 > The relief column left Ba Ria at first light on the 30th, two Ranger battalions in trucks with a platoon of M113s leading, and it never reached the village. The regiment had not stayed to defend Binh Gia; it had left a company there and laid its ambush on the road the relief had to use, in rubber where the carriers could not leave the track. The first carrier burned at 0820. By noon the Rangers were holding a perimeter around their own trucks and asking for helicopters that the gunfire made it impossible to land. The lesson Hanoi took from that day was not that its regiments could beat the ARVN in the field. It was that they could choose the field, and that the ARVN would keep driving down the road to it.
+
+## Studies
+
+A study is read by someone who wants to learn the subject, not only to follow this war through it (R06). Write it as a good teacher and a good historian together.
+
+- **Teach before you tell.** The primer explains the area as if the reader had never met it: what a thing is, what it does, who used it and how, and why. A reader should be able to name what an infantry squad carried, or what a squadron flew, before the war's changes to it begin.
+- **Everything that was there, not only what changed.** The weapon no memorandum replaced was still in the soldier's hands; teach it with the same care as the one that was replaced.
+- **Count it.** The inventory gives exact quantities by branch and force, from the record where it holds them and from sourced history otherwise, with estimates marked as estimates. A reader should never have to guess how many of anything there were.
+- **Tables for comparisons, scenes for stories.** A comparison of weapons, aircraft, ranges, rates or figures goes in a table. A narrative passage is a scene: one person's point of view, at a named place and moment, showing the point happen.
+
+**Asserted — do not write like this:**
+> The carbine was outgunned by the AK-47 in the close fighting of the Delta, and the M16 restored the balance.
+
+**Shown — write like this (invented):**
+> The point man saw the muzzle flash before he heard it, from a dike forty metres off, and fired back until the carbine's magazine ran out. Behind the dike the other man was still firing. When the squad leader crawled up with the BAR, the man behind the dike had changed magazines twice.
+
+and put the comparison itself in a table: weapon, cartridge, effective range, magazine, rate of fire, who carried it.
+
+---
 
 ## The commander
 

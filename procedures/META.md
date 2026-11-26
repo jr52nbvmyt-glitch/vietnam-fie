@@ -1,4 +1,4 @@
-<!-- fie v1.0.8 -->
+<!-- fie v1.0.9 -->
 # META — Meta-checkpoint (B3)
 
 **Trigger:** `META` or `META-CHECKPOINT`, due after every `meta_every_checkpoints` checkpoints. Its own thread, two parts on `CONTINUE`. No new provision is introduced. This procedure carries the same authority as `rules/RULES.md`. **It is theater-specific** — its exploration dimensions are keyed to Vietnam.

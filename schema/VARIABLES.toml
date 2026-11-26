@@ -52,7 +52,7 @@
 # Adding a variable or a facet, or changing a unit, is a version change: bump VERSION
 # and every version header.
 
-version = "1.0.8"
+version = "1.0.9"
 
 # ----------------------------------------------------------------- population
 [[var]]

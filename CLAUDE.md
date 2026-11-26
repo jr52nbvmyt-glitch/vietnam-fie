@@ -1,5 +1,5 @@
-<!-- fie v1.0.8 -->
-# Vietnam Force-Injection Exercise — repository v1.0.8
+<!-- fie v1.0.9 -->
+# Vietnam Force-Injection Exercise — repository v1.0.9
 
 This repository is the exercise's whole record. On any turn where you are unsure what to do, run `python3 scripts/fie.py status` and read `procedures/BOOTSTRAP.md`.
 
@@ -7,4 +7,4 @@ This repository is the exercise's whole record. On any turn where you are unsure
 - Write each piece of content once, into its file. Never edit a finished part, a register in `history/`, or anything in `build/`.
 - Start a thread with `python3 scripts/fie.py boot <command>` (one call). Every part ends with `fie.py finish … --push`, then send the file it names. Main only: no branches, no pull requests.
 - One piece of work at a time. Project memory is never a source for anything in the record.
-- Studies (`studies/`, `procedures/STUDY.md`) describe an area of the war; they never change it. Memoranda write against them and add entries to them through the script.
+- Studies (`studies/`, `procedures/STUDY.md`) teach an area, count its inventory, and describe the war in it; they never change it. Memoranda write against them and add entries to them through the script.
