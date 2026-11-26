@@ -1,0 +1,10 @@
+work = "ST04"
+kind = "ST"
+status = "complete"
+after_memo = "015"
+done = [1]
+
+[[area]]
+slug = "air-war"
+name = "Air War"
+rerun = true

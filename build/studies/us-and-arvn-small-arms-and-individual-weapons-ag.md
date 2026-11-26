@@ -22,7 +22,7 @@ The enemy answered the rifle within a season. He stopped assaulting rearmed post
 | ARVN.effectiveness.combined_arms | unjudged | unjudged | unjudged | unjudged | unjudged | unjudged | unjudged | chapters |
 | ARVN.effectiveness.anti_armor | unjudged | unjudged | unjudged | unjudged | unjudged | unjudged | unjudged | chapters |
 | ARVN.effectiveness.urban | unjudged | unjudged | unjudged | unjudged | unjudged | unjudged | unjudged | chapters |
-| ARVN.effectiveness.fire_coordination | unjudged | unjudged | unjudged | -10 to 0 against history (low) | unjudged | unjudged | unjudged | chapters |
+| ARVN.effectiveness.fire_coordination | -4 to -3 against history (low) | -6 to -4 against history (low) | -6 to -4 against history (low) | -10 to 0 against history (low) | unjudged | unjudged | unjudged | chapters |
 | ARVN.effectiveness.mobile_defence | unjudged | unjudged | unjudged | -3 to +3 against history (low) | unjudged | unjudged | unjudged | chapters |
 | ARVN.effectiveness.night_ops | unjudged | unjudged | unjudged | unjudged | unjudged | unjudged | unjudged | chapters |
 | RFPF.effectiveness | +4 to +10 against history (low) | +6 to +14 against history (low) | +6 to +14 against history (low) | +3 to +9 against history (low) | +3 to +9 against history (low) | +4 to +11 against history (low) | | study (CP04) |
