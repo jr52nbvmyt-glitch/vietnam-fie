@@ -1,0 +1,80 @@
+# Manifest for memorandum 016. Fill every field; `fie.py check` rejects blanks.
+# status and phases_changed are set by fie.py; leave them alone.
+
+memo = "016"
+title = "Glock 21 pistol with tritium night sights and SureFire X300 Turbo light: every US and RVNAF handgun replaced from 1964, and the standard handgun of the National Police"
+received = "2026-11-26"
+status = "part1"
+version = "1.0.6"
+phases_changed = []              # set by `fie.py chapters 016 P2 P3 …`
+links = ["002", "004", "006", "009", "010"]
+
+[deviation]                      # G6: "none", or describe the structural deviation in that part
+part1 = "none"
+part2 = "none"
+part3 = "none"
+
+# One [[provision]] per system. Letters a, b, c … in order.
+[[provision]]
+id = "P016a"
+designation = "Glock 21 Gen5 MOS .45 Auto pistol in its 2026 configuration (13-round magazine, Glock factory tritium night sights (GNS), accessory rail) with a SureFire X300T Turbo weapon light (650 lumens, 66,000 candela, two 123A lithium cells) mounted on every pistol, carried in a light-bearing duty holster; replacing every M1911A1, M1917, .38 revolver and other handgun of the US forces in Southeast Asia and of the RVNAF (ARVN, VNAF, VNN, VNMC, Regional and Popular Forces), and issued as the standard handgun of the National Police and the National Police Field Force; the police keep their historical long arms (E05)"
+category = "ground"
+quantity = "about 55,000–60,000 pistols and lights in theater in 1964, rising to about 230,000–250,000 at the 1969–72 peak, plus a 10% float [E: D1; about one pistol per eight US personnel in theater, one per ten RVNAF regulars, one per twenty-five territorials and one per National Policeman, against the strengths in S6, S7 and the record]"
+ceiling_spaces = "~40–60 [E: D2; a US armament and training detachment for the RVNAF and police issue in 1964, absorbed into the existing advisory structure after 1966; no ceiling (CONFIG troop_ceiling = NONE)]"
+arrival = "1964-01-01"
+in_service = "Glock 21 introduced 1990; Gen5 G21 announced February 2023 [S1] [S3]; SureFire X300T Turbo introduced 2021 [E: manufacturer release history]"
+systems = ["SECURE", "FIX", "SUBVERT"]
+status = "active"
+
+[[push]]
+provision = "P016a"
+var = "US.casualties"
+dlow = -15
+dhigh = -10
+at = "P2"
+conf = "low"
+note = "10–15 fewer Americans killed by hostile action in 1967: tunnel and bunker clearers who now carry 13 rounds with a light on the gun and a free hand, and the few men in each close fight whose rifle is empty or jammed at arm's length; low confidence, it could plausibly be half or double"
+
+[[push]]
+provision = "P016a"
+var = "FIND.vci"
+dlow = 0.10
+dhigh = 0.15
+at = "P3"
+conf = "low"
+note = "100–150 more listed VCI a year taken alive or killed in night cordons and house searches by 1969, because the constable at the door now has a light on his pistol and can see whom he is arresting; the list, not the pistol, decides who is taken, so the effect is small"
+
+[[depend]]
+provision = "P016a"
+var = "GVN.police"
+note = "the police half of the issue scales with National Police strength, about 16,000 in 1963 [S6]"
+
+[[depend]]
+provision = "P016a"
+var = "ARVN.effectiveness.night_ops"
+note = "a light on the pistol is worth what the unit's night routine makes of it; a unit that does not go out after dark gains nothing"
+
+[[depend]]
+provision = "P016a"
+var = "POP.night_control"
+note = "the constable's night work in the hamlet happens only where the GVN already holds it after dark"
+
+[[depend]]
+provision = "P016a"
+var = "RFPF.effectiveness.outpost_defence"
+note = "pistols lost with overrun posts and killed officials arm the Front's security sections; the loss rate follows the post's"
+
+[[depend]]
+provision = "P016a"
+var = "VCI.strength"
+note = "the pistol is the assassin's and the cadre's weapon: captured Glocks go to the Front's security sections"
+
+[[depend]]
+provision = "P016a"
+var = "LOG.distribution"
+note = "123A lithium cells, Glock magazines and spare parts move inland with the rest of the small-arms resupply"
+
+[[depend]]
+provision = "P016a"
+var = "ARVN.self_sufficiency.maintenance"
+note = "RVNAF and police armourers keep the pistols and lights; the lights are replaced, not repaired"
