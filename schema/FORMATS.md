@@ -112,7 +112,7 @@ A causal chain is a paragraph that opens `**C005-1** [lag]`, where lag is `immed
 
 See `templates/manifest.toml`. Fields the script reads: `memo`, `title`, `received`, `status` (script-owned), `phases_changed` (script-owned, via `fie.py chapters`), `links`, `[deviation]`, `[[provision]]` (`id`, `designation`, `category`, `quantity`, `ceiling_spaces`, `arrival`, `in_service`, `systems`, `status`), `[[push]]` (`provision`, `var`, `band`, `note`), `[[depend]]` (`provision`, `var`, `note`), and optional `[[status_change]]` (`provision`, `status`, `date`, `note`).
 
-Variables and facets come from `schema/VARIABLES.toml`, each with its natural unit (`kind`, `unit`, `better`, and `rungs` for a ladder). From v1.0.8 (R03) a push is the provision's own change in that unit, other things equal: `dlow`, `dhigh` (numbers in the unit; percentage points for a share; rungs for a ladder), or `plow`, `phigh` (a percentage of history's figure), with `at = "Pk"` (the phase by whose end the change is measured), `conf` (low · medium · high) and `note`. Example: `{ provision = "P014a", var = "POP.night_control.IV_corps", dlow = 4, dhigh = 9, at = "P2", conf = "medium", note = "the PF hold 4–9 points more of the Delta's rural population after dark by the end of 1967" }`. Memoranda 001–010 wrote `band` on the −3..+3 scale and memoranda 011–013 wrote `low`, `high` on the −10..+10 scale; those stay as written and the script shows them marked with their scale. A new memorandum writes neither.
+Variables and facets come from `schema/VARIABLES.toml`, each with its natural unit (`kind`, `unit`, `better`, and `rungs` for a ladder). From v1.0.8 (R03) a push is the provision's own change in that unit, other things equal: `dlow`, `dhigh` (numbers in the unit; percentage points for a share; rungs for a ladder), or `plow`, `phigh` (a percentage of history's figure), with `at = "Pk"` (the phase by whose end the change is measured), `conf` (low · medium · high) and `note`. From v1.0.9 the range is narrow, around the best estimate, and `conf` carries the real uncertainty (RULES A12b). Example: `{ provision = "P014a", var = "POP.night_control.IV_corps", dlow = 6, dhigh = 8, at = "P2", conf = "medium", note = "the PF hold 6–8 points more of the Delta's rural population after dark by the end of 1967" }`. Memoranda 001–010 wrote `band` on the −3..+3 scale and memoranda 011–013 wrote `low`, `high` on the −10..+10 scale; those stay as written and the script shows them marked with their scale. A new memorandum writes neither.
 
 ## 7. Chapters (`history/chapters/Pk.md`)
 
@@ -125,8 +125,8 @@ last_revised = "005"
 
 [end_vector]
 "POP.night_control" = { hist = 67.2, src = "[R03·S3]", low = 70, high = 75, conf = "medium", binding = "IV_corps", note = "the PF hold the Delta hamlets at night; I Corps unchanged" }
-"POP.night_control.IV_corps" = { dlow = 6, dhigh = 12, conf = "medium", note = "…" }
-"VCI.strength" = { plow = -45, phigh = -30, conf = "medium", note = "…" }
+"POP.night_control.IV_corps" = { dlow = 8, dhigh = 11, conf = "medium", note = "…" }
+"VCI.strength" = { plow = -40, phigh = -34, conf = "medium", note = "…" }
 "ARVN.effectiveness.anti_armor" = { conf = "unjudged" }
 # … every headline variable (vector = true) and each of its facets, in the variable's unit (schema/VARIABLES.toml):
 #   hist + src: history's figure at the phase's end and its source ([H40], [R03·S1], [E: basis]) — together or not at all;

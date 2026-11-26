@@ -27,8 +27,10 @@
 #   was   = the value on the retired scale, kept for the record (v1.0.6 and earlier)
 #   binding = the facet that decides outcomes, on a faceted parent once any facet is judged
 #   note  = one line: the mechanism on the ground, not a restatement of the figure
-# The width of the range is the uncertainty. Small error is expected and honest; a range
-# that says exactly what it means on the ground is worth more than a precise-looking one.
+# From v1.0.9 (R07, RULES A12b) the range is presented narrow, around the best estimate:
+# about a fifth of its midpoint, a share about 5 points, a difference about a third of its
+# larger end. The real uncertainty is carried by conf, never by widening the range; where
+# it is much wider than the range shown, the note says so once.
 #
 # A PUSH (a provision's manifest, memoranda 014 on) is the provision's own contribution,
 # other things equal, as a change in the unit at a stated phase:

@@ -29,6 +29,7 @@ The second version makes the same argument. It puts it on the ground, follows on
 - **One concrete case per argument.** A hamlet, a district chief, a battalion, a night. If the argument cannot be shown anywhere, ask whether it is true.
 - **Commit.** State the judgment once, at its real weight, with one honest qualification if one is needed — not three. "I am fairly sure" is a qualification; "it may potentially in some circumstances" is fog.
 - **The enemy is a mind, not a variable.** He reads the same situation, wants something, and chooses. Say what he concludes and why he is right or wrong.
+- **Narrow ranges, plain confidence.** "About 230–250 dead, low confidence" reads; "150–300" does not (RULES A12b). Say the confidence in a word, once.
 - **Numbers carry weight only when they are few.** One figure a paragraph that the reader remembers beats six they skim.
 
 ## Chronicle (Part 3, the chapters, §4.0)
