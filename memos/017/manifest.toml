@@ -1,0 +1,136 @@
+# Manifest for memorandum 017. Fill every field; `fie.py check` rejects blanks.
+# status and phases_changed are set by fie.py; leave them alone.
+
+memo = "017"
+title = "US Army Intelligence Support Activity (ISA) at undivided commitment, attached to MACV-JSOC from September 1964, with eight cleared heritage Vietnamese interpreters"
+received = "2026-11-26"
+status = "part1"
+version = "1.0.6"
+phases_changed = []
+links = ["002", "003", "006", "012", "014"]
+
+[deviation]
+part1 = "none"
+part2 = "none"
+part3 = "none"
+
+[[provision]]
+id = "P017a"
+designation = "US Army Intelligence Support Activity (USAISA, 'the Activity', Task Force Orange), in its 2026 configuration and at full strength: the whole unit committed to Vietnam, with its operations (clandestine human intelligence and close-target reconnaissance) squadron, its signals intelligence squadron, its mission support and communications squadron, its analysis, medical and logistics detachments and its small fleet of manned special-mission aircraft, attached to the MACV Joint Special Operations Command of memorandum 014 (P014b) to find targets for SFOD-D (P014a) and, second, for the combined task force against the infrastructure of memorandum 012 (P012b), MACV J-2 on request; without the wider JSOC package (no 160th SOAR, no dedicated JSOC drone wing, no national systems beyond the space_constellations condition); with eight TS/SCI-cleared heritage Vietnamese-speaking interpreters attached from arrival; across the borders only where and when history's forces went"
+category = "isr"
+quantity = "the whole unit, undivided commitment [U]; ~360–440 personnel [E: open-source growth from about 100 in 1981 to a three-squadron unit with an aviation element and support detachments, D1], plus 8 TS/SCI-cleared heritage Vietnamese interpreters [U]"
+ceiling_spaces = "~370–450 [E: the whole unit and its eight interpreters; no ceiling (CONFIG troop_ceiling = NONE)]"
+arrival = "1964-09-01"
+in_service = "Field Operations Group formed summer 1980; USAISA activated 3 March 1981 [S1]; under JSOC from 2003 [S1]; the 2026 unit is the reference configuration [U]"
+systems = ["FIND", "SUBVERT", "STRIKE", "INTERDICT"]
+status = "active"
+
+# ------------------------------------------------------------------ P017a pushes
+[[push]]
+provision = "P017a"
+var = "FIND.vci"
+dlow = 0.08
+dhigh = 0.10
+at = "P2"
+conf = "low"
+note = "80–100 more listed cadre at district level or above neutralised a year by 1967: the Activity supplies the addresses the raid force lacked (F014-4) from recruited sources, courier tracking and close-target reconnaissance; by 1967 the senior apparatus has largely moved beyond reach (POS014-1), so the 1967 gain is about half the 1965–66 rate; low confidence, it could plausibly be half or double"
+
+[[push]]
+provision = "P017a"
+var = "VCI.strength"
+dlow = -0.35
+dhigh = -0.28
+at = "P2"
+conf = "low"
+note = "280–350 fewer VCI cadre in the South by the end of 1967, the senior layer taken faster than the Front can promote and train replacements, against an infrastructure in the tens of thousands"
+
+[[push]]
+provision = "P017a"
+var = "FIND.main_force"
+dlow = 1.5
+dhigh = 2
+at = "P2"
+conf = "low"
+note = "1.5–2 points more of main-force contacts begun on units already located by the end of 1967: 2026 direction-finding and collection against regimental and division radio nets from the Activity's own aircraft, added to history's ARDF; the radio net locates the headquarters, not the battalions under canopy (POS003-1), and the enemy's radio discipline caps the gain"
+
+[[push]]
+provision = "P017a"
+var = "INTEL.penetration"
+plow = -4
+phigh = -3
+at = "P2"
+conf = "low"
+note = "3–4% fewer enemy agents inside the GVN and RVNAF by 1967: the Activity's source validation and its reading of the enemy's own reporting traffic expose agents in the channels the task force and Delta use; it is not a counter-intelligence service and the mass of penetration is untouched"
+
+[[push]]
+provision = "P017a"
+var = "TRAIL.tonnage_arriving"
+plow = -2
+phigh = -1
+at = "P2"
+conf = "low"
+note = "1–2% less tonnage arriving by 1967 from collection against the binh tram and Group 559 nets in Laos from October 1965, cueing strikes on truck parks and storage; the Trail's own landlines and couriers carry most of its control traffic"
+
+[[push]]
+provision = "P017a"
+var = "US.casualties"
+dlow = 2
+dhigh = 3
+at = "P2"
+conf = "low"
+note = "2–3 more Americans killed by hostile action in 1967: the Activity's losses on low-level aircraft sorties, close-target reconnaissance and cross-border work"
+
+[[push]]
+provision = "P017a"
+var = "US.personnel_demand"
+dlow = 0.37
+dhigh = 0.45
+at = "P1"
+conf = "medium"
+note = "370–450 more US personnel in Vietnam from September 1964, the whole unit and its eight interpreters"
+
+# ------------------------------------------------------------------ depends
+[[depend]]
+provision = "P017a"
+var = "INTEL.penetration"
+note = "sources run through Vietnamese hands, and interpreters drawn from the RVNAF, are compromised in proportion to the enemy agents inside the GVN and RVNAF"
+
+[[depend]]
+provision = "P017a"
+var = "POP.night_control"
+note = "recruiting and meeting sources needs hamlets the government enters; outside the held belt the Activity has signals and nothing else"
+
+[[depend]]
+provision = "P017a"
+var = "LOG.helicopter_hours"
+note = "close-target reconnaissance and source meetings off the road net need theater lift beyond its own fixed-wing aircraft"
+
+[[depend]]
+provision = "P017a"
+var = "FIND.vci"
+note = "its human intelligence feeds and is fed by the combined task force's files [M012] and the Phung Hoang centres [M006]"
+
+[[depend]]
+provision = "P017a"
+var = "FIND.main_force"
+note = "its collection is tasked and fused with the U-2S and RQ-4B imagery and moving-target data [M003] and history's ARDF"
+
+[[depend]]
+provision = "P017a"
+var = "STRIKE.responsiveness"
+note = "a fix on a moving headquarters is worth what reaches it before the next move"
+
+[[depend]]
+provision = "P017a"
+var = "SANCT.laos"
+note = "collection and teams in Laos operate within the ambassador's limits and against Group 559's security"
+
+[[depend]]
+provision = "P017a"
+var = "GVN.police"
+note = "arrests that follow its findings inside the South go through the National Police and the 1964 police statute [M002]"
+
+[[depend]]
+provision = "P017a"
+var = "US.political_tolerance"
+note = "clandestine American collection in Laos, Cambodia and the North is decided in Washington and is a standing exposure risk"
