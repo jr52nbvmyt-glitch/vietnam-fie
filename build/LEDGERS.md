@@ -23,6 +23,7 @@
 - P015a (memo 015) pushes 0 to +2 [% of IV Corps' rural population in hamlets the GVN holds after dark] by the end of P2 (low) on POP.night_control.IV_corps — 0–2 points more of the Delta's rural population in hamlets held after dark by 1967: posts that hold keep their hamlets only where the PF go out from them at night, which the gunship does not make them do (POS008-4)
 - P015b (memo 015) pushes +1 to +4 [% of IV Corps' rural population in hamlets the GVN holds after dark] by the end of P6 (low) on POP.night_control.IV_corps — 1–4 points more of the Delta's rural population in hamlets held after dark at the end of 1974: the land-grabbing attacks of 1973–74 on the posts meet a Vietnamese gunship with a radar on most nights the Americans used to cover
 - P015a (memo 015) depends — a post that holds keeps its hamlet only if the PF leave the wire at night; the gunship protects the post, not the hamlet
+- P016a (memo 016) depends — the constable's night work in the hamlet happens only where the GVN already holds it after dark
 
 ## POP.civilian_harm — Civilian harm from all sides' operations
 *Higher means more civilian deaths and injuries.*
@@ -41,6 +42,7 @@
 - P012b (memo 012) pushes +0..+3 [v1.0.6 scale] (low) — night raids on thin files in the contested belt kill and detain the wrong men; the 2026 discipline narrows but does not close this
 - P015a (memo 015) pushes +0.2 to +1.5 [civilian dead and wounded in the South from all sides' operations, thousands a year] by the end of P2 (low) — 200–1,500 more civilian dead and wounded a year by 1967: the Front fights its night attacks from inside the hamlets and from their edges, and a 105mm and a 30mm fired at night beside a hamlet kill the people in it; partly offset by posts that do not fall and the reprisals that do not follow
 - P015b (memo 015) depends — a 105mm and 40mm night gun in Vietnamese hands over populated hamlets: discipline of fire decides whether it holds or loses the hamlet
+- P016a (memo 016) pushes -0.2 to -0.15 [civilian dead and wounded in the South from all sides' operations, thousands a year] by the end of P2 (low) — 150–200 fewer civilian dead and wounded a year by 1967 from night shootings by allied soldiers and police: the man at the checkpoint, the curfew patrol and the searcher in a hut at night now see who is in front of them before they fire; against tens of thousands a year from all causes, a trace; low confidence, it could plausibly be half or double
 
 ## POP.gvn_legitimacy — Legitimacy of the Saigon government in the countryside
 *Higher means more rural acceptance of the GVN.*
@@ -149,6 +151,7 @@
 - P006a (memo 006) depends — Phung Hoang is a coordinating layer over P002a's Special Branch; without it there is nothing to coordinate
 - P012b (memo 012) depends — the police-based half acts through the Special Branch and the Police Field Force of P002a
 - P014b (memo 014) depends — arrests inside the South go through the National Police and the 1964 police statute; the headquarters needs them for warrants and detention
+- P016a (memo 016) depends — the police half of the issue scales with National Police strength, about 16,000 in 1963 [S6]
 
 ## VCI.strength — The VC infrastructure
 *Higher means a stronger, better-functioning VCI.*
@@ -157,6 +160,7 @@
 - P006a (memo 006) pushes -1 [old band ≈ -4..-2] — Cadres above the hamlet named, arrested and tried from 1965 rather than 1968, where night security exists
 - P012b (memo 012) pushes -5..-2 [v1.0.6 scale] (medium) — a raid force acting on fused intelligence within hours, night after night, removes cadres faster than the province committee can re-form a network, where night security lets it reach them
 - P014a (memo 014) pushes -0.4 to 0 [VCI cadre in the South, thousands] by the end of P2 (low) — 0–400 fewer VCI cadre in the South by the end of 1967: the senior cadre Delta takes, less those the task force would have taken anyway and less the replacements the Front promotes within weeks
+- P016a (memo 016) depends — the pistol is the assassin's and the cadre's weapon: captured Glocks go to the Front's security sections
 
 ## VCI.tax_take — VC taxation
 *Higher means more revenue to the VC.*
@@ -283,6 +287,7 @@
 - P014a (memo 014) pushes +0.04 to +0.15 [VCI neutralised a year who were on a prior target list, district level or above, thousands] by the end of P2 (low) — 40–150 more listed cadre at district level or above taken a year by 1967, revised down from Part 1's 50–250 on the sustained raid rate of 25–50 a month rather than the surge rate of 40–120 (F014-13); Delta takes the top of the list where the task force's raid forces cannot reach, and there are six assault troops forward
 - P014b (memo 014) pushes 0 to +0.1 [VCI neutralised a year who were on a prior target list, district level or above, thousands] by the end of P2 (low) — 0–100 more listed cadre taken a year by 1967 from deconfliction with the combined task force, so that Delta and the task force do not raid the same target or burn each other's sources
 - P014a (memo 014) depends — Delta's targets come from the combined task force's files and the National Fusion Centre; it finishes targets others find
+- P016a (memo 016) pushes +0.1 to +0.15 [VCI neutralised a year who were on a prior target list, district level or above, thousands] by the end of P3 (low) — 100–150 more listed VCI a year taken alive or killed in night cordons and house searches by 1969, because the constable at the door now has a light on his pistol and can see whom he is arresting; the list, not the pistol, decides who is taken, so the effect is small
 
 ## INTEL.penetration — Enemy penetration of the GVN and RVNAF
 *Higher means more enemy agents inside the GVN and RVNAF.*
@@ -300,6 +305,7 @@
 - P012b (memo 012) pushes -3..-1 [v1.0.6 scale] (low) — a compartmented fusion centre with counter-intelligence vetting finds some of the agents inside the police and the RVNAF as a by-product of the network map
 - P012b (memo 012) depends — a penetrated task force warns its targets
 - P014a (memo 014) depends — a raid force acting on targets shared with Vietnamese services is compromised in proportion to the enemy agents inside them; history's SOG lost teams to this
+- P016a (memo 016) depends — the pistols, cells and magazines in police and district armouries are as safe as the men who sign for them
 
 ## FIX.capability — Fixing an enemy who chooses whether to fight
 *Higher means better ability to hold an enemy in place once found.*
@@ -377,6 +383,7 @@
 - P012a (memo 012) pushes +2..+5 [v1.0.6 scale] (medium) on ARVN.effectiveness.fire_coordination — one fire-support coordination system across the four nations' sectors; ARVN units can draw US and allied fires through a combined centre rather than through an adviser's radio
 - P012a (memo 012) pushes +1..+3 [v1.0.6 scale] (low) on ARVN.effectiveness.combined_arms — combined operations planned by one staff put ARVN infantry beside US and ROK armour and artillery on one plan, with ARVN staff officers in the planning
 - P015b (memo 015) pushes -15 to -3 [minutes from an ARVN call for fire to rounds on target] by the end of P5 (low) on ARVN.effectiveness.fire_coordination — 3–15 minutes faster from an ARVN call for fire to rounds on target at night by 1972: the gunship crew and the ground unit share a language, a net and a chain of command
+- P016a (memo 016) depends on ARVN.effectiveness.night_ops — a light on the pistol is worth what the unit's night routine makes of it; a unit that does not go out after dark gains nothing
 
 ## ARVN.leadership — RVNAF officer selection and quality
 *Higher means better officers, selected on merit.*
@@ -426,6 +433,7 @@
 - P015b (memo 015) pushes +2 to +6 [% of the RVNAF's fire support delivered by its own guns and aircraft] by the end of P4 (low) on ARVN.self_sufficiency.fire_support — 2–6 points more of the RVNAF's fire support delivered by its own aircraft by 1971: about 400–800 VNAF gunship sorties a month, each worth several hours of night fire, in place of US gunship and tactical air at night
 - P015b (memo 015) pushes +3 to +8 [% of the RVNAF's fire support delivered by its own guns and aircraft] by the end of P6 (low) on ARVN.self_sufficiency.fire_support — 3–8 points more of the RVNAF's fire support its own by the end of 1974, if the U is flown and maintained after the Americans leave; bounded by the SA-7 and radar AAA that historically drove VNAF aircraft above useful altitudes
 - P015b (memo 015) depends on ARVN.self_sufficiency.maintenance — after 1973 the U flies only as long as the RVNAF's own depots and the aid appropriation keep it in spares
+- P016a (memo 016) depends on ARVN.self_sufficiency.maintenance — RVNAF and police armourers keep the pistols and lights; the lights are replaced, not repaired
 
 ## RFPF.effectiveness — Regional and Popular Forces
 *Higher means more effective territorial forces.*
@@ -448,6 +456,7 @@
 - P015a (memo 015) pushes -1.5 to -0.3 [hours for relief to reach an attacked outpost] by the end of P2 (low) on RFPF.effectiveness.reaction — relief by fire reaches an attacked outpost 20 minutes to an hour and a half sooner where the gunship net covers it; ground relief itself no faster
 - P015b (memo 015) pushes +2 to +6 [% of attacked outposts that hold] by the end of P4 (low) on RFPF.effectiveness.outpost_defence — 2–6 points more of the attacked RF and PF outposts hold by 1971: a Vietnamese gunship over a Vietnamese outpost, answering a Vietnamese call on a Vietnamese net, with radar fire through monsoon cloud
 - P015b (memo 015) pushes +3 to +8 [% of attacked outposts that hold] by the end of P6 (low) on RFPF.effectiveness.outpost_defence — 3–8 points more of the attacked RF and PF outposts hold in 1973–74, measured at the end of 1974: history's territorial war after the cease-fire was fought with no night fire from the air at all
+- P016a (memo 016) depends on RFPF.effectiveness.outpost_defence — pistols lost with overrun posts and killed officials arm the Front's security sections; the loss rate follows the post's
 
 ## VNAF.capability — South Vietnamese Air Force
 *Higher means more capable VNAF.*
@@ -519,6 +528,7 @@
 - P011b (memo 011) depends — The draftee dead are what made the draft a political wound; its effect scales with the casualty lists
 - P014a (memo 014) pushes +5 to +25 [US killed by hostile action in the calendar year in which the phase ends (Phase I: 1965)] by the end of P2 (low) — 5–25 more Americans killed by hostile action in 1967: Delta's own losses on raids, on cross-border reconnaissance from October 1965 and in helicopter losses, against SOG's 79 Special Forces killed or missing in 1968 scaled to Delta's smaller teams; the unit prevents no American deaths elsewhere
 - P015a (memo 015) pushes -400 to -80 [US killed by hostile action in the calendar year in which the phase ends (Phase I: 1965)] by the end of P2 (low) — 80–400 fewer Americans killed by hostile action in 1967: night fire over US units and Special Forces camps in contact, less the gunship crews' own losses
+- P016a (memo 016) pushes -15 to -10 [US killed by hostile action in the calendar year in which the phase ends (Phase I: 1965)] by the end of P2 (low) — 10–15 fewer Americans killed by hostile action in 1967: tunnel and bunker clearers who now carry 13 rounds with a light on the gun and a free hand, and the few men in each close fight whose rifle is empty or jammed at arm's length; low confidence, it could plausibly be half or double
 
 ## US.unit_quality — US unit quality
 *Higher means better US units.*
@@ -562,6 +572,7 @@
 - P008a (memo 008) pushes +1 [old band ≈ +2..+4] — Vehicle and engine rebuild, bridge girders and culverts, rail repair steel made in country; faster return of the network after sabotage
 - P008a (memo 008) depends — Bridging, wire and rebuilt vehicles are worth what reaches the districts over interdicted roads
 - P015a (memo 015) depends — 30mm and 105mm ammunition, Griffin and SDB, and JP-8 at Phan Rang, Nha Trang and Ubon
+- P016a (memo 016) depends — 123A lithium cells, Glock magazines and spare parts move inland with the rest of the small-arms resupply
 
 ## LOG.helicopter_hours — Helicopter hours available
 *Higher means more lift hours available.*
@@ -663,6 +674,7 @@
 - P012b (memo 012) pushes +1..+3 [v1.0.6 scale] (medium) — a cadre who knows his network is being rolled up has a reason to rally before the raid; the task force turns ralliers into sources
 - P012b (memo 012) depends — ralliers are the richest source on the infrastructure
 - P014a (memo 014) pushes 0 to +0.3 [Chieu Hoi ralliers, thousands a year] by the end of P2 (low) — 0–300 more Chieu Hoi ralliers a year by 1967: a raid that takes a province committee member alive with his files produces named approaches to the cadre under him, which a killing does not
+- P016a (memo 016) depends — a rallier who comes in at night meets a light and a man who can see his empty hands
 
 ## NEGOT.position — US and GVN negotiating position
 *Higher means stronger position against Hanoi.*

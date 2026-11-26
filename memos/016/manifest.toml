@@ -4,7 +4,7 @@
 memo = "016"
 title = "Glock 21 pistol with tritium night sights and SureFire X300 Turbo light: every US and RVNAF handgun replaced from 1964, and the standard handgun of the National Police"
 received = "2026-11-26"
-status = "part1"
+status = "part2"
 version = "1.0.6"
 phases_changed = []              # set by `fie.py chapters 016 P2 P3 …`
 links = ["002", "004", "006", "009", "010"]
@@ -78,3 +78,22 @@ note = "123A lithium cells, Glock magazines and spare parts move inland with the
 provision = "P016a"
 var = "ARVN.self_sufficiency.maintenance"
 note = "RVNAF and police armourers keep the pistols and lights; the lights are replaced, not repaired"
+
+[[push]]
+provision = "P016a"
+var = "POP.civilian_harm"
+dlow = -0.20
+dhigh = -0.15
+at = "P2"
+conf = "low"
+note = "150–200 fewer civilian dead and wounded a year by 1967 from night shootings by allied soldiers and police: the man at the checkpoint, the curfew patrol and the searcher in a hut at night now see who is in front of them before they fire; against tens of thousands a year from all causes, a trace; low confidence, it could plausibly be half or double"
+
+[[depend]]
+provision = "P016a"
+var = "SUBVERT.defection"
+note = "a rallier who comes in at night meets a light and a man who can see his empty hands"
+
+[[depend]]
+provision = "P016a"
+var = "INTEL.penetration"
+note = "the pistols, cells and magazines in police and district armouries are as safe as the men who sign for them"
