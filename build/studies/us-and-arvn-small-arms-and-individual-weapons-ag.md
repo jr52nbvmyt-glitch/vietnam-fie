@@ -36,7 +36,7 @@ The enemy answered the rifle within a season. He stopped assaulting rearmed post
 | ARVN.self_sufficiency.replacement | unjudged | unjudged | unjudged | 0 to +3 against history (low) | unjudged | unjudged | unjudged | chapters |
 | ENEMY.engagement_control | unjudged | 61–66 (history 66; low) | 63–68 (history 68; low) | -4 to +1 against history (low) | unjudged | -5 to +2 against history (low) | 0 to +3 against history (low) | chapters |
 | FIX.capability | — | — | — | — | — | — | | study, not yet judged |
-| US.casualties | 1,250–1,335 (history 1,369; low) | 8,450–9,070 (history 9,378; low) | 14,450–14,560 (history 14,592; low) | 1,340–1,385 (history 1,380; low) | unjudged (history 300) | 0 (history 2; high) | 0 (history 0; high) | chapters |
+| US.casualties | 1,250–1,335 (history 1,369; low) | 8,435–9,060 (history 9,378; low) | 14,450–14,560 (history 14,592; low) | 1,340–1,385 (history 1,380; low) | unjudged (history 300) | 0 (history 2; high) | 0 (history 0; high) | chapters |
 | VC.main_force | — | — | — | — | — | — | | study, not yet judged |
 | VC.local_force | — | — | — | — | — | — | | study, not yet judged |
 | INTL.communist_aid | — | — | — | — | — | — | | study, not yet judged |
@@ -429,6 +429,13 @@ Also checked and found consistent: the American historical baseline (the M14, th
 
 ## Since this study
 
+#### Memo 016 — Glock 21 pistol with tritium night sights and SureFire X300 Turbo light: every US and RVNAF handgun replaced from 1964, and the standard handgun of the National Police · 2026-11-26
+<!-- since 016 -->
+Memorandum 016 changed the pistol row of this study's tables from January 1964. Every M1911A1, M1917,.38 revolver, French pistol and special-purpose pistol of the US forces and the RVNAF, and the National Police's revolvers, gave way to the Glock 21 Gen5 in.45 Auto with Glock's tritium night sights and a SureFire X300T Turbo light: 13 rounds, 1,095 g loaded, 650 lumens and 66,000 candela on two 123A cells⁴¹⁴¹. About 60,000–65,000 were issued by the end of 1964 and about 235,000–245,000 were in hands at the peak. The police keep the carbine and shotgun (E05); the CIDG, PRUs, militia and PSDF keep what they had; about 9,000 of the old pistols went to village chiefs and the Combat Youth. The cartridge is the same.45 ball as the M1911A1 and M3A1. The pistol's effects are at the door, the tunnel and the last metres: the tunnel teams lost about a third fewer men in 1966–67, about 10–15 fewer Americans died in 1967, about 150–200 fewer civilians a year were shot at night, and about 100–150 more cadres a year were taken alive. The costs were the light used as a torch on ambush, about 100–120 more negligent discharges in 1964, and about 1,000–1,200 Glocks with the Front by the end of 1965, some used to kill district chiefs. POS004-1 holds for the pistol more strongly than for the rifle. The study holds no value the pistol moves.
+
+*Chapter values Memo 016 moved on this study's variables: P2 US.casualties 8,450–9,070 (history 9,378; low) → 8,435–9,060 (history 9,378; low).*
+<!-- /since -->
+
 ---
 
 ---
@@ -477,3 +484,4 @@ Also checked and found consistent: the American historical baseline (the M14, th
 38. The exercise's own judgment (memo 011), not a measured figure.
 39. Source: "1974 in the Vietnam War" — Wikipedia, https://en.wikipedia.org/wiki/1974_in_the_Vietnam_War — Paracels, ammunition and fuel cuts, Svay Rieng, Iron Triangle, aid levels, Murray's warnings, I Corps battles, Nixon's resignation, Hanoi's strategy conference, 1974 casualties
 40. Stipulated in the provision.
+41. From memorandum 016's record.

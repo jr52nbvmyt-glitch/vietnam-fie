@@ -13,13 +13,14 @@
 | EV010-1 | P1 | 1 Jan 1964 – 31 Jul 1965 | The academy at Dong De and the gate | The National NCO Academy at Dong De, Nha Trang, Khanh Hoa Province; the division NCO schools; the RF/PF training centres; the Joint General Staff, Saigon | CANCELLED | 010,R05 |
 | EV012-1 | P1 | 1 Jan – 31 Mar 1964 | The combined command stands up, and Khanh's coup tests it | Saigon; the Joint General Staff compound and the MACV headquarters at Tan Son Nhut; the four corps headquarters at Da Nang, Pleiku, Bien Hoa and Can Tho | CANCELLED | 012,R05 |
 | EV003-1 | P1 | 6 Jan 1964 – 30 Jun 1965 | Operation TIDE TABLE | The II Corps coast from Qui Nhon to Cam Ranh Bay and the Ca Mau coast; Haiphong and the Gulf of Tonkin; Phnom Penh and Sihanoukville (Kompong Som), Cambodia | NEW | 003,CP01,R05 |
-| EV004-1 | P1 | 6 Jan – 30 Jun 1964 | Operation IRON GATE | Saigon port and Tan Son Nhut; the Quang Trung Training Center at Hoc Mon, Gia Dinh Province; the division training centres and the province RF/PF training camps of IV and III Corps, then countrywide | NEW | 004,CP01,R05 |
+| EV004-1 | P1 | 6 Jan – 30 Jun 1964 | Operation IRON GATE | Saigon port and Tan Son Nhut; the Quang Trung Training Center at Hoc Mon, Gia Dinh Province; the division training centres and the province RF/PF training camps of IV and III Corps, then countrywide | NEW | 016 |
 | EV015-1 | P1 | 8 Jan – 16 Dec 1964 | The gunship wing's first year | Bien Hoa, Nha Trang, Da Nang and Qui Nhon air bases; the posts of Long An, Dinh Tuong, Kien Hoa and Vinh Long; Tam Quan and Hoai Nhon, Binh Dinh Province | NEW | 015,R05 |
 | EV000-1 | P1 | 30 Jan 1964 | Khanh's coup | Saigon | HIST-ALT | 000,001,002,CP01,007,R05 |
-| EV002-2 | P1 | 1 Mar 1964 – 31 Jul 1965 | The first posts and the Front's answer | The Delta along the Bassac and the Mekong, the provinces around Saigon, and the coastal Centre from Quang Nam to Binh Dinh | NEW | 002,004,CP01,006,008,009,R05 |
+| EV002-2 | P1 | 1 Mar 1964 – 31 Jul 1965 | The first posts and the Front's answer | The Delta along the Bassac and the Mekong, the provinces around Saigon, and the coastal Centre from Quang Nam to Binh Dinh | NEW | 016 |
 | EV005-1 | P1 | 3 Mar 1964 – 30 Jun 1965 | The coordinate cell and the first folders | Tan Son Nhut air base, Saigon; Andersen Air Force Base, Guam; the Laotian panhandle and North Vietnam below the 20th parallel | CANCELLED | 005,R05 |
 | EVR05-2 | P1 | 16 Mar 1964 – 11 May 1965 | The titles, the musters and the Vinh Long suspension | An Giang, Phong Dinh, Vinh Long, Gia Dinh, Bien Hoa and Long An, and the coast from Quang Nam to Binh Dinh; the ARVN and territorial units of IV Corps, then countrywide | NEW | R05 |
 | EV001-2 | P1 | 16 Mar – 31 Dec 1964 | The first titling teams | An Giang, Phong Dinh, Vinh Long, Gia Dinh, Bien Hoa and Long An Provinces, and the coast from Quang Nam to Binh Dinh | CANCELLED | 001,CP01,R05 |
+| EV016-1 | P1 | 1 Apr – 31 Dec 1964 | The lamps on the guns: the first season | The PF posts and police posts of Long An, Dinh Tuong and Kien Hoa; the National Police stations of the Delta towns; the COSVN security directorate in Tay Ninh; Bien Hoa air base | NEW | 016 |
 | EV001-4 | P1 | 7 Apr – 31 Dec 1964 | The dawn musters | ARVN 7th, 9th and 21st Divisions and the Regional and Popular Forces of the Delta, then countrywide | CANCELLED | 001,CP01,R05 |
 | EVR05-3 | P1 | 9 Jun 1964 – 30 Jun 1965 | The hunt for the committees: Can Giuoc, the Rach Cat and Hoc Mon | Can Giuoc, Can Duoc and Rach Kien Districts, Long An Province; the Rung Sat edge of Nha Be and the Hoc Mon and Go Vap Districts, Gia Dinh Province; Trung Lap, Hau Nghia Province | NEW | R05 |
 | EV001-3 | P1 | 9 Jun – 14 Jul 1964 | The Can Giuoc killings | Can Giuoc and Can Duoc Districts, Long An Province | CANCELLED | 001,CP01,R05 |
@@ -60,7 +61,7 @@
 | EV000-19 | P1 | 12–19 Jun 1965 | Quat resigns; the Thieu–Ky government | Saigon | CANCELLED | 000,CP01 |
 | EV000-20 | P1 | 18 Jun 1965 | The first Arc Light strike | Near Ben Cat, Binh Duong Province | CANCELLED | 000,005,CP02 |
 | EV000-21 | P1 | 28 Jul 1965 | The July decision | Washington | CANCELLED | 000,CP01 |
-| EV002-3 | P2 | Aug 1965 – Jun 1966 | The war on the district chiefs | The Delta, the provinces around Saigon and the coastal Centre | NEW | 002,R05 |
+| EV002-3 | P2 | Aug 1965 – Jun 1966 | The war on the district chiefs | The Delta, the provinces around Saigon and the coastal Centre | NEW | 016 |
 | EV013-3 | P2 | 1 Aug 1965 – 31 Dec 1966 | The restrike watch on the Red River | The Paul Doumer, Long Bien and Chuong Duong crossings at Hanoi; the Canal des Rapides and Bac Giang bridges on the northeast railway; the ferries at Phu Ly and Ninh Binh; the MACV Combined Targeting Cell, Tan Son Nhut | NEW | 013,R05 |
 | EV014-3 | P2 | 1 Aug 1965 – 31 Dec 1967 | The rhythm of the raid, 1965–1967 | The Saigon belt (Gia Dinh, Long An, Hau Nghia, Bien Hoa), the upper Delta (Dinh Tuong, Kien Hoa, Vinh Long, Phong Dinh) and the coastal lowlands of Binh Dinh and Quang Ngai | CANCELLED | 014,R05 |
 | EVR05-4 | P2 | 2 Aug 1965 – 31 Dec 1967 | The committees driven out: FOLLOW THROUGH, NIGHT LANTERN and the empty beds | Hoc Mon, Cu Chi and Trang Bang; Can Giuoc and Can Duoc, Long An; Cai Lay, Cai Be and Giao Duc, Dinh Tuong; Memot, Cambodia; the towns of the Delta | NEW | R05 |
@@ -78,6 +79,7 @@
 | EV015-3 | P2 | 6 Dec 1965 – 30 Apr 1967 | Operation NIGHT LEDGER: the gunships on the panhandle's tracks | The Laotian panhandle from the Mu Gia pass to Tchepone and the Ban Laboy ford; Ubon Royal Thai Air Force Base; the exploitation cell at Tan Son Nhut | CANCELLED | 015,R05 |
 | EVCP02-4 | P2 | 24 Dec 1965 – Dec 1967 | The air war over the North, 1966–67: no pause, no fuel, the buffer's edge, Bolo and Muscle Shoals | Hanoi and Haiphong; the northeast railway and the frontier at Pingxiang; the DMZ and the Laotian panhandle; Nakhon Phanom, Thailand; Washington | HIST-ALT | CP02,013,R05 |
 | EV013-4 | P2 | 24 Dec 1965 – 31 Jan 1966 | Christmas without a pause | Hanoi and the panhandle of North Vietnam; Washington; Warsaw, Rangoon and Moscow | CANCELLED | 013,R05 |
+| EV016-2 | P2 | 8 Jan 1966 – 31 Dec 1967 | The tunnel teams of Cu Chi and the Ho Bo woods | Cu Chi District, Hau Nghia Province; the Ho Bo and Boi Loi woods, the Filhol rubber and the Iron Triangle, Binh Duong Province | NEW | 016 |
 | EV001-6 | P2 | 10 Jan – 30 Jun 1966 | Operation GOLDEN SHEAF | Phong Dinh and Chuong Thien Provinces, along the Xa No canal from Can Tho to Vi Thanh | NEW | 001,015,R05 |
 | EVCP02-3 | P2 | 24 Jan 1966 – 23 Nov 1967 | The frontier battles of 1966–67: Masher/White Wing, the Hill Fights, Con Thien and Dak To | The Bong Son plain and the An Lao valley, Binh Dinh Province; the hills northwest of Khe Sanh and Con Thien, Quang Tri Province; Dak To, Kontum Province | HIST-ALT | CP02,R05 |
 | EV000-24 | P2 | 24 Jan – 6 Mar 1966 | Operation Masher/White Wing | Bong Son plain and the Kim Son and An Lao valleys, Binh Dinh Province | CANCELLED | 000,001,CP02 |
@@ -116,6 +118,7 @@
 | EV000-36 | P2 | 2 Jul – 31 Oct 1967 | Operation Buffalo and the siege of Con Thien | Con Thien and "the Marketplace", Quang Tri Province, south of the DMZ | CANCELLED | 000,005,CP02 |
 | EV000-37 | P2 | 6 Jul 1967 – Jan 1968 | Hanoi decides on a general offensive | Hanoi and COSVN | HIST-ALT | 000,001,004,R05 |
 | EV008-5 | P2 | 14 Aug – 20 Dec 1967 | The Phu Cat lot | A firing position of the 22nd Division's artillery on Route 1 south of Phu Cat, Binh Dinh Province; the Bien Hoa arsenal; the Special Court for Corruption, Saigon | CANCELLED | 008,R05 |
+| EV016-3 | P2 | 14–15 Aug 1967 | The night check at Tan Thoi Nhi | Tan Thoi Nhi village, Hoc Mon District, Gia Dinh Province; the Hoc Mon district station and its centre | NEW | 016 |
 | EV000-38 | P2 | 3 Sep 1967 | The constitution and the presidential election | Republic of Vietnam | HIST | 000 |
 | EV014-5 | P2 | 4 Sep – 14 Nov 1967 | The empty beds of Dinh Tuong | Cai Lay, Cai Be and Giao Duc Districts, Dinh Tuong Province; Memot, Kampong Cham Province, Cambodia | CANCELLED | 014,R05 |
 | EV000-39 | P2 | 8 Sep – Dec 1967 | The barrier and Muscle Shoals | The DMZ and the Laotian panhandle; Nakhon Phanom, Thailand | CANCELLED | 000,003,CP02 |

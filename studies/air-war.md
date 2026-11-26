@@ -433,3 +433,11 @@ The attack had an author: Lieutenant General Tran Van Tra argued it in Hanoi in 
 [S19] "Vietnam: The Helicopter War" — The Vietnam Center and Archive, Texas Tech University, https://www.vietnam.ttu.edu/exhibits/helicopter/overview.php — nearly 12,000 helicopters, more than 7,000 Hueys, over 5,000 lost.
 
 ## Since this study
+
+### Memo 016 — Glock 21 pistol with tritium night sights and SureFire X300 Turbo light: every US and RVNAF handgun replaced from 1964, and the standard handgun of the National Police · 2026-11-26
+<!-- since 016 -->
+Memorandum 016 touches this study's area only through civilian harm, and from the ground rather than the air. The light on every soldier's and policeman's pistol means a man at a checkpoint, on curfew patrol or at a door at night lights the person in front of him before he fires, and about 150–200 fewer South Vietnamese civilians a year were killed or wounded that way from 1967 (EV016-3, F016-15). The figure is a judgment on rates, at low confidence. Downed aircrew carry the Glock in place of the revolver, which changes neither the losses over the North and Laos nor the rescues.
+- value · POP.civilian_harm · P2 · Δ0.6..0.85 · low · the study's +0.8 to +1 thousand a year above history less about 150–200 a year fewer civilians shot at night by allied soldiers and police who now light before they fire (EV016-3)
+- value · POP.civilian_harm · P3 · Δ0.6..0.85 · low · the same reduction carried through 1968; Tet's civilian harm came from fire in the towns, which a pistol does not touch
+- value · POP.civilian_harm · P4 · Δ0.4..0.65 · low · the study's +0.6 to +0.8 less the same 150–200 a year in a wider held belt
+<!-- /since -->

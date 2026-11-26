@@ -4,9 +4,9 @@
 memo = "016"
 title = "Glock 21 pistol with tritium night sights and SureFire X300 Turbo light: every US and RVNAF handgun replaced from 1964, and the standard handgun of the National Police"
 received = "2026-11-26"
-status = "part2"
+status = "complete"
 version = "1.0.6"
-phases_changed = []              # set by `fie.py chapters 016 P2 P3 …`
+phases_changed = ["P1", "P2"]
 links = ["002", "004", "006", "009", "010"]
 
 [deviation]                      # G6: "none", or describe the structural deviation in that part
@@ -40,9 +40,9 @@ provision = "P016a"
 var = "FIND.vci"
 dlow = 0.10
 dhigh = 0.15
-at = "P3"
+at = "P2"
 conf = "low"
-note = "100–150 more listed VCI a year taken alive or killed in night cordons and house searches by 1969, because the constable at the door now has a light on his pistol and can see whom he is arresting; the list, not the pistol, decides who is taken, so the effect is small"
+note = "100–150 more listed VCI a year taken alive or killed in night cordons and house searches by 1967, because the constable at the door now has a light on his pistol and can see whom he is arresting; the list, not the pistol, decides who is taken, so the effect is small"
 
 [[depend]]
 provision = "P016a"

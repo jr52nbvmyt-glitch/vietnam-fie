@@ -438,3 +438,10 @@ Also checked and found consistent: the American historical baseline (the M14, th
 [S15] Wikipedia, "RPG-2" (40mm tube, 80–82mm warhead, effective range 100–150 m, up to about 180 mm of armour; the Vietnamese B40), https://en.wikipedia.org/wiki/RPG-2
 
 ## Since this study
+
+### Memo 016 — Glock 21 pistol with tritium night sights and SureFire X300 Turbo light: every US and RVNAF handgun replaced from 1964, and the standard handgun of the National Police · 2026-11-26
+<!-- since 016 -->
+Memorandum 016 changed the pistol row of this study's tables from January 1964. Every M1911A1, M1917, .38 revolver, French pistol and special-purpose pistol of the US forces and the RVNAF, and the National Police's revolvers, gave way to the Glock 21 Gen5 in .45 Auto with Glock's tritium night sights and a SureFire X300T Turbo light: 13 rounds, 1,095 g loaded, 650 lumens and 66,000 candela on two 123A cells [M016·S1] [M016·S2]. About 60,000–65,000 were issued by the end of 1964 and about 235,000–245,000 were in hands at the peak (EV004-1, F016-1). The police keep the carbine and shotgun (E05); the CIDG, PRUs, militia and PSDF keep what they had; about 9,000 of the old pistols went to village chiefs and the Combat Youth (EV004-1). The cartridge is the same .45 ball as the M1911A1 and M3A1. The pistol's effects are at the door, the tunnel and the last metres: the tunnel teams lost about a third fewer men in 1966–67 (EV016-2), about 10–15 fewer Americans died in 1967, about 150–200 fewer civilians a year were shot at night, and about 100–150 more cadres a year were taken alive (EV016-3, F016-15). The costs were the light used as a torch on ambush, about 100–120 more negligent discharges in 1964 (EV016-1, F016-7), and about 1,000–1,200 Glocks with the Front by the end of 1965, some used to kill district chiefs (EV002-2, EV002-3, F016-14). POS004-1 holds for the pistol more strongly than for the rifle. The study holds no value the pistol moves.
+
+*Chapter values Memo 016 moved on this study's variables: P2 US.casualties 8,450–9,070 (history 9,378; low) → 8,435–9,060 (history 9,378; low).*
+<!-- /since -->

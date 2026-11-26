@@ -30,7 +30,7 @@ The margin over history is therefore large inside the air war and small outside 
 | SANCT.cambodia | — | — | — | — | — | — | | study, not yet judged |
 | ARVN.effectiveness.fire_coordination | -4 to -3 against history (low) | -6 to -4 against history (low) | -6 to -4 against history (low) | -10 to 0 against history (low) | unjudged | unjudged | unjudged | chapters |
 | ARVN.self_sufficiency.fire_support | 0 to +2 against history (low) | -5 to +2 against history (low) | -5 to +2 against history (low) | -3 to +6 against history (low) | -8 to 0 against history (low) | +5 to +12 against history (low) | +5 to +10 against history (low) | chapters |
-| POP.civilian_harm | +0.5 to +0.6 against history (low) | +0.8 to +1 against history (low) | +0.8 to +1 against history (low) | +0.6 to +0.8 against history (low) | — | — | | study (ST04) |
+| POP.civilian_harm | +0.5 to +0.6 against history (low) | +0.6 to +0.85 against history (low) | +0.6 to +0.85 against history (low) | +0.4 to +0.65 against history (low) | — | — | | study (ST04, since 016) |
 | LOG.helicopter_hours | — | — | — | — | — | — | | study, not yet judged |
 
 *Values in each variable's natural unit (schema/VARIABLES.toml): this war's figure with history's beside it, or the difference from history's figure; low, medium, high = confidence; unjudged = not yet judged. Headline variables and their facets live in the chapters' end vectors; the rest in the study. A study value set before R03 is on the retired −10..+10 scale until the study is next folded.*
@@ -389,6 +389,14 @@ The attack had an author: Lieutenant General Tran Van Tra argued it in Hanoi in 
 ¹⁷ "Vietnam: The Helicopter War" — The Vietnam Center and Archive, Texas Tech University, https://www.vietnam.ttu.edu/exhibits/helicopter/overview.php — nearly 12,000 helicopters, more than 7,000 Hueys, over 5,000 lost.
 
 ## Since this study
+
+#### Memo 016 — Glock 21 pistol with tritium night sights and SureFire X300 Turbo light: every US and RVNAF handgun replaced from 1964, and the standard handgun of the National Police · 2026-11-26
+<!-- since 016 -->
+Memorandum 016 touches this study's area only through civilian harm, and from the ground rather than the air. The light on every soldier's and policeman's pistol means a man at a checkpoint, on curfew patrol or at a door at night lights the person in front of him before he fires, and about 150–200 fewer South Vietnamese civilians a year were killed or wounded that way from 1967. The figure is a judgment on rates, at low confidence. Downed aircrew carry the Glock in place of the revolver, which changes neither the losses over the North and Laos nor the rescues.
+- value · POP.civilian_harm · P2 · Δ0.6..0.85 · low · the study's +0.8 to +1 thousand a year above history less about 150–200 a year fewer civilians shot at night by allied soldiers and police who now light before they fire
+- value · POP.civilian_harm · P3 · Δ0.6..0.85 · low · the same reduction carried through 1968; Tet's civilian harm came from fire in the towns, which a pistol does not touch
+- value · POP.civilian_harm · P4 · Δ0.4..0.65 · low · the study's +0.6 to +0.8 less the same 150–200 a year in a wider held belt
+<!-- /since -->
 
 ---
 
