@@ -702,7 +702,8 @@ def sources_defined(token: str) -> set[int]:
 STUDIES = ROOT / "studies"
 STUDY_REQUIRED = ["Summary", "Judgments", "Questions for the record", "Sources", "Since this study"]
 # From v1.0.9 (R06) a study written or re-run by a STUDY run teaches its subject and counts it: these two
-# sections are required of a staged study, and a checkpoint folding an older study is warned, not refused.
+# sections are required when a STUDY run finishes a part (teaching=True); a checkpoint or revision folding an
+# older study is warned, not refused.
 STUDY_TEACHING = ["Primer", "Inventory"]
 VALUE_LINE = re.compile(r"^-\s*value\s*·\s*(\S+)\s*·\s*(P\d+)\s*·\s*(Δ?)\s*([+-]?[\d,]*\.?\d+)\s*\.\.\s*([+-]?[\d,]*\.?\d+)\s*·\s*(low|medium|high)\s*·\s*(.+)$")
 QUESTION_LINE = re.compile(r"^- \*\*Q-\d+\*\* · (?:ERRATUM|CHECKPOINT|RESOLVED|STANDS)\b[^·]* · \S")
@@ -872,7 +873,7 @@ def study_drift(slug: str) -> dict:
     return {"entries": len(entries), "drift": drift, "chapter_moves": moved, "contradicted_by": contra, "advise": advise}
 
 
-def check_study(text: str, slug: str, label: str, errors: list, warnings: list, tok: str | None = None, folding: bool = False):
+def check_study(text: str, slug: str, label: str, errors: list, warnings: list, tok: str | None = None, folding: bool = False, teaching: bool = False):
     sc = config().get("studies", {})
     fm, _, body = parse_chapter(text)
     if not fm:
@@ -927,7 +928,7 @@ def check_study(text: str, slug: str, label: str, errors: list, warnings: list, 
             errors.append(f"{label}: '## {h}' is missing")
     for h in STUDY_TEACHING:
         if not any(x.startswith(h) for x in heads):
-            (warnings if folding else errors).append(f"{label}: '## {h}' is missing — from v1.0.9 (R06) a study teaches its subject and gives a complete inventory (procedures/STUDY.md, step 5)")
+            (errors if teaching else warnings).append(f"{label}: '## {h}' is missing — from v1.0.9 (R06) a study teaches its subject and gives a complete inventory (procedures/STUDY.md, step 5)")
     inv = section(body, 2, "Inventory") or ""
     if any(x.startswith("Inventory") for x in heads) and not re.search(r"^\|.*\|\s*$", inv, re.M):
         errors.append(f"{label}: '## Inventory' has no table — the inventory is counted in tables, by branch and force")
@@ -1175,7 +1176,7 @@ def cmd_study(a):
     sp_ = work_dir(tok) / "studies" / f"{slug}.md"
     errors, warnings = [], []
     txt = read(sp_)
-    check_study(txt, slug, f"study {slug}", errors, warnings, tok=tok, folding=True)
+    check_study(txt, slug, f"study {slug}", errors, warnings, tok=tok, folding=True, teaching=True)
     fm = parse_chapter(txt)[0]
     if fm.get("written") != tok:
         errors.append(f"study {slug}: written = '{fm.get('written')}', expected '{tok}'")
